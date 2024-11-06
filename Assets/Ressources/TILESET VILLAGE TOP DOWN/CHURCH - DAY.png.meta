@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CHURCH - DAY_0: 4384995870930939774
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

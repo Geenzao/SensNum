@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WATER TILE - DAY_0: 923171958975928453
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

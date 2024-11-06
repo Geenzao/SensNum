@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TILESET VILLAGE TOP DOWN_0: -4310662636233499089
+      TILESET VILLAGE TOP DOWN_1: -5365948084897010431
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

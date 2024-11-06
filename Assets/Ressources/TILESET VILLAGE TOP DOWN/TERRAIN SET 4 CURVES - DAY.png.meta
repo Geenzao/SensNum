@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TERRAIN SET 4 CURVES - DAY_0: -6941330569843980002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GRASS DETAIL 3 - NIGHT_0: 875030229304687381
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
