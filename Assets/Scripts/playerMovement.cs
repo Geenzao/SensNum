@@ -19,6 +19,37 @@ public class playerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
+        //Si on veut bouger seulement verticalement et horizontalement
+        /* 
+        if (moveX != 0 && moveY != 0)
+        {
+            moveX = 0;
+            moveY = 0;
+        }
+        else
+        {
+            if (moveY != 0 && moveX == 0)
+            {
+                moveX = 0;
+                if (moveY < 0)
+                {
+                    animator_anim.SetInteger("whereLooking", 0); // Bas
+                }
+                else
+                {
+                    animator_anim.SetInteger("whereLooking", 2); // Haut
+                }
+            }
+            else if (moveX != 0 && moveY == 0)
+            {
+                moveY = 0;
+                animator_anim.SetInteger("whereLooking", 1); // Côté
+                transform.localScale = new Vector3(Mathf.Sign(moveX), 1, 1); // Rotation côté
+            }
+        }
+        */
+
+        //Si on veut bouger dans toutes les directions
         if (moveY < 0)
         {
             animator_anim.SetInteger("whereLooking", 0); // Bas
@@ -46,4 +77,8 @@ public class playerMovement : MonoBehaviour
         }
     }
 }
+
+        
+
+
 
