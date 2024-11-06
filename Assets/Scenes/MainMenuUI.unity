@@ -206,6 +206,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
+      propertyPath: SystemPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
+      propertyPath: 'SystemPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4096228869629052847, guid: 25d5ecff682596749a277a72feafc6e5, type: 3}
+    - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
+      propertyPath: 'SystemPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3466573157439882229, guid: a930509f2e6093d408d01921e5970242, type: 3}
     - target: {fileID: 6071805488983983202, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -259,5 +271,5 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 772910414}
   - {fileID: 8152894093871375121}
+  - {fileID: 772910414}

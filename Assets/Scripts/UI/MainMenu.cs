@@ -5,11 +5,14 @@ using static GameManager;
 
 public class MainMenu : Menu
 {
+    [SerializeField] private string levelToLoad;
 
-    //Tout les boutons du menu principal:
     [Header("Boutons")]
     [SerializeField] private Button buttonPlay;
     [SerializeField] private Button buttonSettings;
+
+    [Header("Panel")]
+    [SerializeField] private GameObject panelSettings;
 
     protected override void Start()
     {
@@ -20,7 +23,10 @@ public class MainMenu : Menu
             TriggerVisibility(true);
         }
 
-        //buttonContinue.onClick.AddListener(OnContinueButtonClicked);
+        buttonPlay.onClick.AddListener(OnPlayButtonClicked);
+        buttonSettings.onClick.AddListener(OnSettingsButtonClicked);
+
+        DesactivateAllPanel();
     }
 
     protected override void TriggerVisibility(bool visible)
@@ -36,5 +42,20 @@ public class MainMenu : Menu
             TriggerVisibility(true); //true
         else
             TriggerVisibility(false);
+    }
+
+    private void OnPlayButtonClicked()
+    {
+        GameManager.Instance.LoadLevel(levelToLoad);
+    }
+
+    private void OnSettingsButtonClicked()
+    {
+        panelSettings.SetActive(!panelSettings.activeSelf);
+    }
+
+    private void DesactivateAllPanel()
+    {
+        panelSettings.SetActive(false);
     }
 }
