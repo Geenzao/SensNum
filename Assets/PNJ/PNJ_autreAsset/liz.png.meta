@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 81e0e2d74d25f0d40bf7f577375eb2b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7784398144006018321
+    second: liz_0
+  - first:
+      213: 2448513936121761234
+    second: liz_1
+  - first:
+      213: 6539416663948748142
+    second: liz_2
+  - first:
+      213: 2857848731243835911
+    second: liz_3
+  - first:
+      213: -9118363748272181596
+    second: liz_4
+  - first:
+      213: -3929501375122399724
+    second: liz_5
+  - first:
+      213: -1300689229885006317
+    second: liz_6
+  - first:
+      213: -5728812596617609216
+    second: liz_7
+  - first:
+      213: -7316479756283066732
+    second: liz_8
+  - first:
+      213: 6652781109851317240
+    second: liz_9
+  - first:
+      213: -365357189288045082
+    second: liz_10
+  - first:
+      213: 1369306410308002583
+    second: liz_11
+  - first:
+      213: -7121990945735856703
+    second: liz_12
+  - first:
+      213: 1347757738368444159
+    second: liz_13
+  - first:
+      213: 4276694368674507501
+    second: liz_14
+  - first:
+      213: 8174021559955834803
+    second: liz_15
+  - first:
+      213: 7944401853989160872
+    second: liz_16
+  - first:
+      213: -4992329970628865823
+    second: liz_17
+  - first:
+      213: -3049222624914540474
+    second: liz_18
+  - first:
+      213: 1482123386514963969
+    second: liz_19
+  - first:
+      213: -8464976441041426193
+    second: liz_20
+  - first:
+      213: -9209000374194146374
+    second: liz_21
+  - first:
+      213: 8087601533728024694
+    second: liz_22
+  - first:
+      213: 7243386537482801916
+    second: liz_23
+  - first:
+      213: -5277606852690209757
+    second: liz_24
+  - first:
+      213: -8632190585333600064
+    second: liz_25
+  - first:
+      213: 204395610329499309
+    second: liz_26
+  - first:
+      213: 9035136938715236503
+    second: liz_27
+  - first:
+      213: 1979056288501167311
+    second: liz_28
+  - first:
+      213: -734041624696105097
+    second: liz_29
+  - first:
+      213: 1795755715558682550
+    second: liz_30
+  - first:
+      213: 2112695922050738486
+    second: liz_31
+  - first:
+      213: -5020332455286762696
+    second: liz_32
+  - first:
+      213: -5861195532433632126
+    second: liz_33
+  - first:
+      213: -3700904057777672742
+    second: liz_34
+  - first:
+      213: 3615521616042043755
+    second: liz_35
+  - first:
+      213: 4013806330915052191
+    second: liz_36
+  - first:
+      213: 9046861601912687344
+    second: liz_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: liz_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 140
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11550b35edcb70c60800000000000000
+      internalID: 7784398144006018321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 140
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd812eb37edaf120800000000000000
+      internalID: 2448513936121761234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 140
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e656fecfecca0ca50800000000000000
+      internalID: 6539416663948748142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 140
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702f69f874e19a720800000000000000
+      internalID: 2857848731243835911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 121
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aeef6b6b70157180800000000000000
+      internalID: -9118363748272181596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 121
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e9b67915b9779c0800000000000000
+      internalID: -3929501375122399724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_6
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 121
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e1789690603fde0800000000000000
+      internalID: -1300689229885006317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_7
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 121
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00003d1cb4b2f70b0800000000000000
+      internalID: -5728812596617609216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 121
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49649601d64a67a90800000000000000
+      internalID: -7316479756283066732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 121
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3ed15eb2d635c50800000000000000
+      internalID: 6652781109851317240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_10
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 121
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5d954729dfdeaf0800000000000000
+      internalID: -365357189288045082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_11
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 121
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713e21fdce0c00310800000000000000
+      internalID: 1369306410308002583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_12
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 121
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdadd108fa992d90800000000000000
+      internalID: -7121990945735856703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_13
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 121
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff62cb6b58234b210800000000000000
+      internalID: 1347757738368444159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_14
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 121
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deae1c19eded95b30800000000000000
+      internalID: 4276694368674507501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_15
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 120
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b74d8b0d45ff6170800000000000000
+      internalID: 8174021559955834803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 92
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a78afb156f204e60800000000000000
+      internalID: 7944401853989160872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 93
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0512b975ea7bab0800000000000000
+      internalID: -4992329970628865823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 93
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64872e89d2cfea5d0800000000000000
+      internalID: -3049222624914540474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_19
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 91
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ef58e0e5f819410800000000000000
+      internalID: 1482123386514963969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_20
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 67
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8eca7b6cc568a80800000000000000
+      internalID: -8464976441041426193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_21
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 67
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3f7b773fe033080800000000000000
+      internalID: -9209000374194146374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_22
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 65
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67863c6bebeec3070800000000000000
+      internalID: 8087601533728024694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_23
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 65
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf25281cdada58460800000000000000
+      internalID: 7243386537482801916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_24
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 67
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3249b39878c22c6b0800000000000000
+      internalID: -5277606852690209757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_25
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 67
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c038bfd56c443880800000000000000
+      internalID: -8632190585333600064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_26
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 41
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6c65389b826d200800000000000000
+      internalID: 204395610329499309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_27
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 41
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798c121fc21436d70800000000000000
+      internalID: 9035136938715236503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_28
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 39
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc47d9a7535077b10800000000000000
+      internalID: 1979056288501167311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_29
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 40
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77753ad080920d5f0800000000000000
+      internalID: -734041624696105097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_30
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 40
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfa0491f4ecbe810800000000000000
+      internalID: 1795755715558682550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_31
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 41
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63920406fbdc15d10800000000000000
+      internalID: 2112695922050738486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 41
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83394441b32345ab0800000000000000
+      internalID: -5020332455286762696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_33
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 41
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284df2a97b9d8aea0800000000000000
+      internalID: -5861195532433632126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_34
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add2c502e5fb3acc0800000000000000
+      internalID: -3700904057777672742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_35
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 13
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b69aee101c9ec2230800000000000000
+      internalID: 3615521616042043755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_36
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 12
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ad7678797e3b730800000000000000
+      internalID: 4013806330915052191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: liz_37
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 13
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa8022d1b8ec8d70800000000000000
+      internalID: 9046861601912687344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      liz_0: 7784398144006018321
+      liz_1: 2448513936121761234
+      liz_10: -365357189288045082
+      liz_11: 1369306410308002583
+      liz_12: -7121990945735856703
+      liz_13: 1347757738368444159
+      liz_14: 4276694368674507501
+      liz_15: 8174021559955834803
+      liz_16: 7944401853989160872
+      liz_17: -4992329970628865823
+      liz_18: -3049222624914540474
+      liz_19: 1482123386514963969
+      liz_2: 6539416663948748142
+      liz_20: -8464976441041426193
+      liz_21: -9209000374194146374
+      liz_22: 8087601533728024694
+      liz_23: 7243386537482801916
+      liz_24: -5277606852690209757
+      liz_25: -8632190585333600064
+      liz_26: 204395610329499309
+      liz_27: 9035136938715236503
+      liz_28: 1979056288501167311
+      liz_29: -734041624696105097
+      liz_3: 2857848731243835911
+      liz_30: 1795755715558682550
+      liz_31: 2112695922050738486
+      liz_32: -5020332455286762696
+      liz_33: -5861195532433632126
+      liz_34: -3700904057777672742
+      liz_35: 3615521616042043755
+      liz_36: 4013806330915052191
+      liz_37: 9046861601912687344
+      liz_4: -9118363748272181596
+      liz_5: -3929501375122399724
+      liz_6: -1300689229885006317
+      liz_7: -5728812596617609216
+      liz_8: -7316479756283066732
+      liz_9: 6652781109851317240
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: e0ada6ffeea83f948b191296bc6ed36b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7394462312032429828
+    second: karl_0
+  - first:
+      213: -6660088658593175723
+    second: karl_1
+  - first:
+      213: 4622707393203461446
+    second: karl_2
+  - first:
+      213: -5977659274504336105
+    second: karl_3
+  - first:
+      213: 4838459883015963174
+    second: karl_4
+  - first:
+      213: 5088783731930193927
+    second: karl_5
+  - first:
+      213: 7240635701298565404
+    second: karl_6
+  - first:
+      213: 3166782787019309024
+    second: karl_7
+  - first:
+      213: -6756204240773696105
+    second: karl_8
+  - first:
+      213: 3175203708971726696
+    second: karl_9
+  - first:
+      213: 5584768363644434916
+    second: karl_10
+  - first:
+      213: -2839300828198241599
+    second: karl_11
+  - first:
+      213: -1825129295803078580
+    second: karl_12
+  - first:
+      213: 6012998229045227946
+    second: karl_13
+  - first:
+      213: 4643730087839123502
+    second: karl_14
+  - first:
+      213: -7792175174709533112
+    second: karl_15
+  - first:
+      213: -2976776763585142325
+    second: karl_16
+  - first:
+      213: 1635410031468298013
+    second: karl_17
+  - first:
+      213: -7825841986793689747
+    second: karl_18
+  - first:
+      213: -4465500488352142954
+    second: karl_19
+  - first:
+      213: 5308107085840755694
+    second: karl_20
+  - first:
+      213: 1184430158716975191
+    second: karl_21
+  - first:
+      213: -2991930350445663388
+    second: karl_22
+  - first:
+      213: 4337385844854064567
+    second: karl_23
+  - first:
+      213: -788041745963658334
+    second: karl_24
+  - first:
+      213: 7325933357322918573
+    second: karl_25
+  - first:
+      213: -6798050123777756353
+    second: karl_26
+  - first:
+      213: -8255435906800284014
+    second: karl_27
+  - first:
+      213: 2178698059407393822
+    second: karl_28
+  - first:
+      213: 372628060937476842
+    second: karl_29
+  - first:
+      213: 8748238889838399016
+    second: karl_30
+  - first:
+      213: -985382999413269199
+    second: karl_31
+  - first:
+      213: -5850296658992001319
+    second: karl_32
+  - first:
+      213: -1693669242433313258
+    second: karl_33
+  - first:
+      213: 8551717799588050573
+    second: karl_34
+  - first:
+      213: -2936827379019131057
+    second: karl_35
+  - first:
+      213: 5359604739239237798
+    second: karl_36
+  - first:
+      213: 1115487850306668364
+    second: karl_37
+  - first:
+      213: 8245064002764197702
+    second: karl_38
+  - first:
+      213: 225395185451798699
+    second: karl_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: karl_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 141
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf81b4a64b7916990800000000000000
+      internalID: -7394462312032429828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 141
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55722f3d6ac9293a0800000000000000
+      internalID: -6660088658593175723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 141
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64dd678c1e7272040800000000000000
+      internalID: 4622707393203461446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 141
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d89d29f861b0da0800000000000000
+      internalID: -5977659274504336105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 121
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622052bd0a9a52340800000000000000
+      internalID: 4838459883015963174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_5
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 121
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7006c78b7ddfe9640800000000000000
+      internalID: 5088783731930193927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 121
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1199ebcec7eb7460800000000000000
+      internalID: 7240635701298565404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 121
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef7b1d9a2ca2fb20800000000000000
+      internalID: 3166782787019309024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 121
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79532b6f9042d32a0800000000000000
+      internalID: -6756204240773696105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 121
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86733ca43f6901c20800000000000000
+      internalID: 3175203708971726696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_10
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 121
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9bdd3cc35118d40800000000000000
+      internalID: 5584768363644434916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 121
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca75c4a0f6c898d0800000000000000
+      internalID: -2839300828198241599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 121
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48af7e4396dba6e0800000000000000
+      internalID: -1825129295803078580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_13
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 120
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa13b45f706727350800000000000000
+      internalID: 6012998229045227946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_14
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 120
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28c17e49e7d17040800000000000000
+      internalID: 4643730087839123502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_15
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 120
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84622db96f1acd390800000000000000
+      internalID: -7792175174709533112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_16
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 120
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1eede1e4d50b6d0800000000000000
+      internalID: -2976776763585142325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 119
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f37c342c422b610800000000000000
+      internalID: 1635410031468298013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_18
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 92
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d23d41d26056390800000000000000
+      internalID: -7825841986793689747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_19
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 93
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699ef6f07fa5702c0800000000000000
+      internalID: -4465500488352142954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_20
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 93
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeba541654f2aa940800000000000000
+      internalID: 5308107085840755694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_21
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 92
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758b59734f0ff6010800000000000000
+      internalID: 1184430158716975191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_22
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 67
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46be9fcb2378a76d0800000000000000
+      internalID: -2991930350445663388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_23
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 67
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b58558027d713c30800000000000000
+      internalID: 4337385844854064567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_24
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 65
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a358af05305015f0800000000000000
+      internalID: -788041745963658334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_25
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 65
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daada63f291faa560800000000000000
+      internalID: 7325933357322918573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_26
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 67
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f333de61e6978a1a0800000000000000
+      internalID: -6798050123777756353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_27
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 67
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e0a2d28ccce6d80800000000000000
+      internalID: -8255435906800284014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_28
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 41
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e148fcf775a4c3e10800000000000000
+      internalID: 2178698059407393822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_29
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 41
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea55854f37db2500800000000000000
+      internalID: 372628060937476842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 39
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e431f8becf76970800000000000000
+      internalID: 8748238889838399016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_31
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 40
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d534002673352f0800000000000000
+      internalID: -985382999413269199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_32
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 40
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de80225f229fcea0800000000000000
+      internalID: -5850296658992001319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_33
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 41
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616e1c52cc0ee78e0800000000000000
+      internalID: -1693669242433313258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_34
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 41
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86b4df970ecda670800000000000000
+      internalID: 8551717799588050573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_35
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 41
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f475cea0f0b4e37d0800000000000000
+      internalID: -2936827379019131057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_36
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8dada2d14216a40800000000000000
+      internalID: 5359604739239237798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_37
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c470bcc2a420b7f00800000000000000
+      internalID: 1115487850306668364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_38
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 12
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fce1bb60a5c6270800000000000000
+      internalID: 8245064002764197702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karl_39
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba010fa1ab3c02300800000000000000
+      internalID: 225395185451798699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      karl_0: -7394462312032429828
+      karl_1: -6660088658593175723
+      karl_10: 5584768363644434916
+      karl_11: -2839300828198241599
+      karl_12: -1825129295803078580
+      karl_13: 6012998229045227946
+      karl_14: 4643730087839123502
+      karl_15: -7792175174709533112
+      karl_16: -2976776763585142325
+      karl_17: 1635410031468298013
+      karl_18: -7825841986793689747
+      karl_19: -4465500488352142954
+      karl_2: 4622707393203461446
+      karl_20: 5308107085840755694
+      karl_21: 1184430158716975191
+      karl_22: -2991930350445663388
+      karl_23: 4337385844854064567
+      karl_24: -788041745963658334
+      karl_25: 7325933357322918573
+      karl_26: -6798050123777756353
+      karl_27: -8255435906800284014
+      karl_28: 2178698059407393822
+      karl_29: 372628060937476842
+      karl_3: -5977659274504336105
+      karl_30: 8748238889838399016
+      karl_31: -985382999413269199
+      karl_32: -5850296658992001319
+      karl_33: -1693669242433313258
+      karl_34: 8551717799588050573
+      karl_35: -2936827379019131057
+      karl_36: 5359604739239237798
+      karl_37: 1115487850306668364
+      karl_38: 8245064002764197702
+      karl_39: 225395185451798699
+      karl_4: 4838459883015963174
+      karl_5: 5088783731930193927
+      karl_6: 7240635701298565404
+      karl_7: 3166782787019309024
+      karl_8: -6756204240773696105
+      karl_9: 3175203708971726696
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 55618a66c33abbf44848113a35d36c42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8867955459145582967
+    second: Vitor_0
+  - first:
+      213: 5651427516361318248
+    second: Vitor_1
+  - first:
+      213: -2333533669329393172
+    second: Vitor_2
+  - first:
+      213: 2164457356844071525
+    second: Vitor_3
+  - first:
+      213: -2586436891845047704
+    second: Vitor_4
+  - first:
+      213: -838558809006567061
+    second: Vitor_5
+  - first:
+      213: -9087731716424109767
+    second: Vitor_6
+  - first:
+      213: -6330643483551554398
+    second: Vitor_7
+  - first:
+      213: 5438688229565133276
+    second: Vitor_8
+  - first:
+      213: -5594388783700598285
+    second: Vitor_9
+  - first:
+      213: 8842802802547914115
+    second: Vitor_10
+  - first:
+      213: -4076867964704165319
+    second: Vitor_11
+  - first:
+      213: 6395959518673845947
+    second: Vitor_12
+  - first:
+      213: 2004178993845354345
+    second: Vitor_13
+  - first:
+      213: -548101569949305691
+    second: Vitor_14
+  - first:
+      213: 4279964600131139345
+    second: Vitor_15
+  - first:
+      213: -7492025967513506506
+    second: Vitor_16
+  - first:
+      213: -5087917342993894271
+    second: Vitor_17
+  - first:
+      213: -3295396773806637242
+    second: Vitor_18
+  - first:
+      213: -3691428150700883029
+    second: Vitor_19
+  - first:
+      213: -8723817134468888836
+    second: Vitor_20
+  - first:
+      213: -5321797389472446586
+    second: Vitor_21
+  - first:
+      213: 4477338373942405145
+    second: Vitor_22
+  - first:
+      213: 8679840379022475680
+    second: Vitor_23
+  - first:
+      213: -7629387323317886634
+    second: Vitor_24
+  - first:
+      213: -3334139368370538551
+    second: Vitor_25
+  - first:
+      213: 6340900850590503968
+    second: Vitor_26
+  - first:
+      213: 3073610193494137633
+    second: Vitor_27
+  - first:
+      213: -9056454377165113960
+    second: Vitor_28
+  - first:
+      213: -5901975167244542376
+    second: Vitor_29
+  - first:
+      213: 4113309353443458754
+    second: Vitor_30
+  - first:
+      213: 1386111050662851486
+    second: Vitor_31
+  - first:
+      213: -3111273579223372671
+    second: Vitor_32
+  - first:
+      213: 2534101792452587382
+    second: Vitor_33
+  - first:
+      213: 1027466287815393805
+    second: Vitor_34
+  - first:
+      213: 2827642105983348867
+    second: Vitor_35
+  - first:
+      213: 2994650818223228512
+    second: Vitor_36
+  - first:
+      213: 8371549063068827319
+    second: Vitor_37
+  - first:
+      213: 5623647688478909602
+    second: Vitor_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vitor_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 140
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779cb52718e411b70800000000000000
+      internalID: 8867955459145582967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 139
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f95923267ed6e40800000000000000
+      internalID: 5651427516361318248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 139
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce92538cd7f9d9fd0800000000000000
+      internalID: -2333533669329393172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 140
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56afb2e8f72b90e10800000000000000
+      internalID: 2164457356844071525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 121
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a4c93b9512b1cd0800000000000000
+      internalID: -2586436891845047704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 121
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6193e1c437dc54f0800000000000000
+      internalID: -838558809006567061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 121
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9317d7c1724e1e180800000000000000
+      internalID: -9087731716424109767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_7
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 121
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4a44bfa490528a0800000000000000
+      internalID: -6330643483551554398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 121
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1f35f112a1a7b40800000000000000
+      internalID: 5438688229565133276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 121
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1a814aa0dbc52b0800000000000000
+      internalID: -5594388783700598285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_10
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 121
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38572b83c42f7ba70800000000000000
+      internalID: 8842802802547914115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 121
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93273afaf2e0c67c0800000000000000
+      internalID: -4076867964704165319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_12
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 121
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe35548b4303c850800000000000000
+      internalID: 6395959518673845947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_13
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 121
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fb3722d2640db10800000000000000
+      internalID: 2004178993845354345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_14
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 121
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a4765ea680c468f0800000000000000
+      internalID: -548101569949305691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_15
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 121
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117301aa02d756b30800000000000000
+      internalID: 4279964600131139345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_16
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 120
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63dea56b31af60890800000000000000
+      internalID: -7492025967513506506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_17
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 92
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184bc4c22261469b0800000000000000
+      internalID: -5087917342993894271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_18
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 93
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f794f08166442d0800000000000000
+      internalID: -3295396773806637242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_19
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 93
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3c89ba7a965ccc0800000000000000
+      internalID: -3691428150700883029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_20
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 91
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf604867986cee680800000000000000
+      internalID: -8723817134468888836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 67
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687c4e9687d2526b0800000000000000
+      internalID: -5321797389472446586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_22
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 67
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918ef067783b22e30800000000000000
+      internalID: 4477338373942405145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_23
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 65
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a10ab246dcf47870800000000000000
+      internalID: 8679840379022475680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_24
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 65
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 651e4c3d6a8fe1690800000000000000
+      internalID: -7629387323317886634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_25
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 67
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7f0a4d8e1cab1d0800000000000000
+      internalID: -3334139368370538551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_26
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 67
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0245b636ab76ff750800000000000000
+      internalID: 6340900850590503968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 41
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12bdc31bf28a7aa20800000000000000
+      internalID: 3073610193494137633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 41
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895ba842ab2015280800000000000000
+      internalID: -9056454377165113960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_29
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 39
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e563bfad8f71ea0800000000000000
+      internalID: -5901975167244542376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 40
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cef94f4019651930800000000000000
+      internalID: 4113309353443458754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_31
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 40
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93b00a18a47c3310800000000000000
+      internalID: 1386111050662851486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_32
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 41
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c2557f92982d4d0800000000000000
+      internalID: -3111273579223372671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_33
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 41
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f21db6720fa2320800000000000000
+      internalID: 2534101792452587382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_34
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 41
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d020def152b424e00800000000000000
+      internalID: 1027466287815393805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_35
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380331f838dcd3720800000000000000
+      internalID: 2827642105983348867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_36
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 13
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06647868d032f8920800000000000000
+      internalID: 2994650818223228512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_37
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 12
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7beb8fbb487bd2470800000000000000
+      internalID: 8371549063068827319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vitor_38
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 13
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a46bbdf6c53b0e40800000000000000
+      internalID: 5623647688478909602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vitor_0: 8867955459145582967
+      Vitor_1: 5651427516361318248
+      Vitor_10: 8842802802547914115
+      Vitor_11: -4076867964704165319
+      Vitor_12: 6395959518673845947
+      Vitor_13: 2004178993845354345
+      Vitor_14: -548101569949305691
+      Vitor_15: 4279964600131139345
+      Vitor_16: -7492025967513506506
+      Vitor_17: -5087917342993894271
+      Vitor_18: -3295396773806637242
+      Vitor_19: -3691428150700883029
+      Vitor_2: -2333533669329393172
+      Vitor_20: -8723817134468888836
+      Vitor_21: -5321797389472446586
+      Vitor_22: 4477338373942405145
+      Vitor_23: 8679840379022475680
+      Vitor_24: -7629387323317886634
+      Vitor_25: -3334139368370538551
+      Vitor_26: 6340900850590503968
+      Vitor_27: 3073610193494137633
+      Vitor_28: -9056454377165113960
+      Vitor_29: -5901975167244542376
+      Vitor_3: 2164457356844071525
+      Vitor_30: 4113309353443458754
+      Vitor_31: 1386111050662851486
+      Vitor_32: -3111273579223372671
+      Vitor_33: 2534101792452587382
+      Vitor_34: 1027466287815393805
+      Vitor_35: 2827642105983348867
+      Vitor_36: 2994650818223228512
+      Vitor_37: 8371549063068827319
+      Vitor_38: 5623647688478909602
+      Vitor_4: -2586436891845047704
+      Vitor_5: -838558809006567061
+      Vitor_6: -9087731716424109767
+      Vitor_7: -6330643483551554398
+      Vitor_8: 5438688229565133276
+      Vitor_9: -5594388783700598285
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

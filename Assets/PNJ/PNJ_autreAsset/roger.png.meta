@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 8d4dd462235877947adc4c92346db181
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2757257197129405055
+    second: roger_0
+  - first:
+      213: -3597974983306773266
+    second: roger_1
+  - first:
+      213: 1874728784569523625
+    second: roger_2
+  - first:
+      213: 2030706190853569614
+    second: roger_3
+  - first:
+      213: -6341690205074983584
+    second: roger_4
+  - first:
+      213: -2627297417399145318
+    second: roger_5
+  - first:
+      213: -7535789672695744934
+    second: roger_6
+  - first:
+      213: 823855915757422026
+    second: roger_7
+  - first:
+      213: 8935515684158563042
+    second: roger_8
+  - first:
+      213: -469749106657824604
+    second: roger_9
+  - first:
+      213: -7044754269045494420
+    second: roger_10
+  - first:
+      213: -6980760997653092625
+    second: roger_11
+  - first:
+      213: -3141823220761651414
+    second: roger_12
+  - first:
+      213: -5817370790198365393
+    second: roger_13
+  - first:
+      213: -1768656173767714639
+    second: roger_14
+  - first:
+      213: -7020899390663494790
+    second: roger_15
+  - first:
+      213: 1457273923048755280
+    second: roger_16
+  - first:
+      213: -5289310687012312277
+    second: roger_17
+  - first:
+      213: 1427789770311614181
+    second: roger_18
+  - first:
+      213: -1447569191216703503
+    second: roger_19
+  - first:
+      213: 492704597856782479
+    second: roger_20
+  - first:
+      213: -4286159902860195792
+    second: roger_21
+  - first:
+      213: 3318416341441697688
+    second: roger_22
+  - first:
+      213: -2715834868803143354
+    second: roger_23
+  - first:
+      213: -7872368382116824481
+    second: roger_24
+  - first:
+      213: 264455134787820467
+    second: roger_25
+  - first:
+      213: -7596194423505009556
+    second: roger_26
+  - first:
+      213: 8313715494195451124
+    second: roger_27
+  - first:
+      213: 1800763362610750137
+    second: roger_28
+  - first:
+      213: -7167994154059439457
+    second: roger_29
+  - first:
+      213: -8303203954126302139
+    second: roger_30
+  - first:
+      213: 2906112530207422172
+    second: roger_31
+  - first:
+      213: 478763455749006076
+    second: roger_32
+  - first:
+      213: -7661932852063673214
+    second: roger_33
+  - first:
+      213: -9153776718391395720
+    second: roger_34
+  - first:
+      213: 5501004070648626438
+    second: roger_35
+  - first:
+      213: 3991390215404488378
+    second: roger_36
+  - first:
+      213: -8718368137554132514
+    second: roger_37
+  - first:
+      213: -6262306195963236130
+    second: roger_38
+  - first:
+      213: 5320579090663478352
+    second: roger_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: roger_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 140
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72994defceb34620800000000000000
+      internalID: 2757257197129405055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 140
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecf149c0dc611ec0800000000000000
+      internalID: -3597974983306773266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 140
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad577695ef540a10800000000000000
+      internalID: 1874728784569523625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 140
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c730d75848e2c10800000000000000
+      internalID: 2030706190853569614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 121
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0657ee2bb5acdf7a0800000000000000
+      internalID: -6341690205074983584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 121
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c6f9c3be6f98bd0800000000000000
+      internalID: -2627297417399145318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_6
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 121
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a56b9e0183f7b6790800000000000000
+      internalID: -7535789672695744934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 121
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac543d4279cee6b00800000000000000
+      internalID: 823855915757422026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 121
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2e33f1c24510c70800000000000000
+      internalID: 8935515684158563042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 121
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a07a142dad1b79f0800000000000000
+      internalID: -469749106657824604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_10
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 121
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d60a721510c3e90800000000000000
+      internalID: -7044754269045494420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_11
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 122
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe66cf8bbda5f1f90800000000000000
+      internalID: -6980760997653092625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_12
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 121
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a279d634d600664d0800000000000000
+      internalID: -3141823220761651414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 121
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f233e7b861c844fa0800000000000000
+      internalID: -5817370790198365393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_14
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 121
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b816c8a4987477e0800000000000000
+      internalID: -1768656173767714639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_15
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 121
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73feb7d331c09e90800000000000000
+      internalID: -7020899390663494790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 121
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050d2cb79e6493410800000000000000
+      internalID: 1457273923048755280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_17
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 120
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b24f144f79896b0800000000000000
+      internalID: -5289310687012312277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_18
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 92
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee3c593b3780d310800000000000000
+      internalID: 1427789770311614181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_19
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 93
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f79ab97d7339ebe0800000000000000
+      internalID: -1447569191216703503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_20
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 93
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f888476a83076d600800000000000000
+      internalID: 492704597856782479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_21
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 91
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038ce7307408484c0800000000000000
+      internalID: -4286159902860195792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_22
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 67
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897db70b4126d0e20800000000000000
+      internalID: 3318416341441697688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_23
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 67
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6497e50739a6f4ad0800000000000000
+      internalID: -2715834868803143354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_24
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 65
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5af8e28aaabfb290800000000000000
+      internalID: -7872368382116824481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_25
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 65
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb5e004b888ba300800000000000000
+      internalID: 264455134787820467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_26
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 67
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c644e2e0b65e49690800000000000000
+      internalID: -7596194423505009556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_27
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 67
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f45e2ba130406370800000000000000
+      internalID: 8313715494195451124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_28
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 41
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2a3f8ccb89df810800000000000000
+      internalID: 1800763362610750137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_29
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 41
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92e5376b4b268c90800000000000000
+      internalID: -7167994154059439457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_30
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 39
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 544dea8fef715cc80800000000000000
+      internalID: -8303203954126302139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_31
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 40
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd63350f2f5945820800000000000000
+      internalID: 2906112530207422172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_32
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 40
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2ab5f83d8e4a600800000000000000
+      internalID: 478763455749006076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_33
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 41
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28469db6aa85ba590800000000000000
+      internalID: -7661932852063673214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_34
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 41
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a3a0bc29047f080800000000000000
+      internalID: -9153776718391395720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_35
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 41
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d3df28e0e775c40800000000000000
+      internalID: 5501004070648626438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_36
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 12
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6872de044446730800000000000000
+      internalID: 3991390215404488378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_37
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 13
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1800cee52220780800000000000000
+      internalID: -8718368137554132514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_38
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 12
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed032e2a1b1d719a0800000000000000
+      internalID: -6262306195963236130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roger_39
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 13
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0541e5a4e7e76d940800000000000000
+      internalID: 5320579090663478352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      roger_0: 2757257197129405055
+      roger_1: -3597974983306773266
+      roger_10: -7044754269045494420
+      roger_11: -6980760997653092625
+      roger_12: -3141823220761651414
+      roger_13: -5817370790198365393
+      roger_14: -1768656173767714639
+      roger_15: -7020899390663494790
+      roger_16: 1457273923048755280
+      roger_17: -5289310687012312277
+      roger_18: 1427789770311614181
+      roger_19: -1447569191216703503
+      roger_2: 1874728784569523625
+      roger_20: 492704597856782479
+      roger_21: -4286159902860195792
+      roger_22: 3318416341441697688
+      roger_23: -2715834868803143354
+      roger_24: -7872368382116824481
+      roger_25: 264455134787820467
+      roger_26: -7596194423505009556
+      roger_27: 8313715494195451124
+      roger_28: 1800763362610750137
+      roger_29: -7167994154059439457
+      roger_3: 2030706190853569614
+      roger_30: -8303203954126302139
+      roger_31: 2906112530207422172
+      roger_32: 478763455749006076
+      roger_33: -7661932852063673214
+      roger_34: -9153776718391395720
+      roger_35: 5501004070648626438
+      roger_36: 3991390215404488378
+      roger_37: -8718368137554132514
+      roger_38: -6262306195963236130
+      roger_39: 5320579090663478352
+      roger_4: -6341690205074983584
+      roger_5: -2627297417399145318
+      roger_6: -7535789672695744934
+      roger_7: 823855915757422026
+      roger_8: 8935515684158563042
+      roger_9: -469749106657824604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
