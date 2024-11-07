@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static GameManager;
 
-//TODO : bloquer les mouvement du joueur quand le dialogue est lanc 
+//TODO : bloquer les mouvement du joueur quand le dialogue est lancé
 
 
 public class dialogueManager : Singleton<dialogueManager>
