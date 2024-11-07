@@ -6,12 +6,14 @@ using static GameManager;
 public class MainMenu : Menu
 {
     [SerializeField] private string levelToLoad;
+    [SerializeField] private GameObject titre;
 
     [Header("Boutons")]
     [SerializeField] private Button buttonPlay;
     [SerializeField] private Button buttonSettings;
 
     [Header("Panel")]
+    [SerializeField] private GameObject panelGeneral;
     [SerializeField] private GameObject panelSettings;
 
     protected override void Start()
@@ -32,6 +34,7 @@ public class MainMenu : Menu
     protected override void TriggerVisibility(bool visible)
     {
         base.TriggerVisibility(visible);
+        panelGeneral.SetActive(visible);
     }
 
 
@@ -46,6 +49,7 @@ public class MainMenu : Menu
 
     private void OnPlayButtonClicked()
     {
+        GameManager.Instance.UnloadLevel("Start");
         GameManager.Instance.LoadLevel(levelToLoad);
     }
 

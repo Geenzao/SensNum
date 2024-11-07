@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 public class Options : MonoBehaviour
 {
+    [Header("Button")]
+    [SerializeField] private Button quitButton;
+
     [Header("Scrollbar")]
     [SerializeField] private Scrollbar volumeButtonsScrollbar;
     [SerializeField] private Scrollbar volumeMusicScrollbar;
@@ -24,6 +27,8 @@ public class Options : MonoBehaviour
 
         HandleMusicVolumeChanged(_paramVolumeMusic.GetParam());
         //\todo [buttons volume]
+
+        quitButton.onClick.AddListener(OnQuitButtonClicked);
 
         //On Settings update
         _paramVolumeMusic.OnUpdate.AddListener(HandleMusicVolumeChanged);
@@ -82,5 +87,10 @@ public class Options : MonoBehaviour
         if (!_qualityDropdown.IsActive())
             return;
         _paramGlobalQuality.UpdateParam(val);
+    }
+
+    private void OnQuitButtonClicked()
+    {
+        gameObject.SetActive(false);
     }
 }

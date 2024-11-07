@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Village/Village.unity
     guid: 3e3959c7aa3c8b64683e5cc90f6bdbac
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 72be8747fa3231b459df719aa2e710c9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
