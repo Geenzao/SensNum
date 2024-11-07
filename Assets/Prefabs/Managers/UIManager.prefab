@@ -2234,7 +2234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fffd92085d99a734793852857adc62d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ScenePNJ
+  levelToLoad: Village
   buttonPlay: {fileID: 8586759795469309026}
   buttonSettings: {fileID: 8287535509179806272}
   panelSettings: {fileID: 8288971935386594743}
