@@ -2,30 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static GameManager;
 
 //TODO : bloquer les mouvement du joueur quand le dialogue est lanc 
 
 
-public class dialogueManager : MonoBehaviour
+public class dialogueManager : Singleton<dialogueManager>
 {
-    public Text dialogueTextUI; //texte qui serra modifi  avec les phrases des PNJ
-    public GameObject dialoguePanelUI; //Object UI du dialogue, ex : paneau gris ou appara t les phrase
-    //public GameObject PanelUITextInteraction;
+
+    [SerializeField] private Text dialogueTextUI; //texte qui serra modifi  avec les phrases des PNJ
+    [SerializeField] private GameObject dialoguePanelUI; //Object UI du dialogue, ex : paneau gris ou appara t les phrase
+    [SerializeField] private GameObject PanelUITextInteraction;
 
     private bool isDialogueActive = false;
     private Queue<string> qSentences;
 
-    public static dialogueManager instance;
-
-    private void Awake()
+    private void Start()
     {
-
-        if (instance != null)
-        {
-            Debug.LogWarning("Attention plusieur instance de DialogueManager");
-            return;
-        }
-        instance = this;
+        PanelUITextInteraction.SetActive(false);
+        dialoguePanelUI.SetActive(false);
 
         qSentences = new Queue<string>();
     }
@@ -45,9 +40,7 @@ public class dialogueManager : MonoBehaviour
         qSentences.Clear();
         //On affiche l'UI du dialogue
         dialoguePanelUI.SetActive(true);
-
         int nbInteraction = diag.getInteractionCount();
-        print("Dans le manager" + nbInteraction);
         if (nbInteraction < diag.tabDialogue.Length)
         {
             foreach (string sentence in diag.tabDialogue[nbInteraction].sentences)
@@ -66,6 +59,16 @@ public class dialogueManager : MonoBehaviour
             }
         }
         DisplayNextSentence();
+    }
+
+    public void ShowPanelInteraction()
+    {
+        PanelUITextInteraction.SetActive(true);
+    }
+
+    public void HidePanelInteraction()
+    {
+        PanelUITextInteraction.SetActive(true);
     }
 
     public void DisplayNextSentence()

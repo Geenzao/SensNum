@@ -16,7 +16,6 @@ public class Dialogue
 public class dialoguePNJ : MonoBehaviour
 {
     public Dialogue[] tabDialogue;
-    public GameObject TextToucheInteractionUI; //Pour que le joueur puisse savoir qu'il peut interagir avec l'objet avec la touche E
 
     // Compteur pour suivre le nombre d'interactions avec le PNJ
     private int interactionCount = 0;
@@ -24,9 +23,9 @@ public class dialoguePNJ : MonoBehaviour
 
     void Update()
     {
-        if (dialogueManager.instance.fctisDialogueActive() == false && range == true && Input.GetKeyDown(KeyCode.E))
+        if (dialogueManager.Instance.fctisDialogueActive() == false && range == true && Input.GetKeyDown(KeyCode.E))
         {
-            dialogueManager.instance.StartDialogue(this);
+            dialogueManager.Instance.StartDialogue(this);
             incrementeInteractionCount(); // Incr mente le compteur d'interactions pour signifier qu'on a lanc  le premier dialogue
         }
     }
@@ -36,7 +35,7 @@ public class dialoguePNJ : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             range = true;
-            TextToucheInteractionUI.SetActive(true);
+            dialogueManager.Instance.ShowPanelInteraction();
         }
     }
 
@@ -45,8 +44,8 @@ public class dialoguePNJ : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             range = false;
-            TextToucheInteractionUI.SetActive(false);
-            dialogueManager.instance.EndDialogue();
+            dialogueManager.Instance.HidePanelInteraction();
+            dialogueManager.Instance.EndDialogue();
         }
     }
 
