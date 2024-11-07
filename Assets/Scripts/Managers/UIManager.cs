@@ -22,7 +22,8 @@ public class UIManager : Singleton<UIManager>
     {
         None,
         MainMenu,
-        PauseMenu
+        PauseMenu,
+        OptionsMenu
     }
 
     //\brief Currently displayed menu
