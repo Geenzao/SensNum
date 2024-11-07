@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: HOUSE 2 - DAY_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 7641400466965163759, guid: 85a335efa926898448b43e7e755bf5cf, type: 3}
+  m_Sprite: {fileID: 7641400466965163759, guid: 0368b596c5cdb1c4fb861908bddba365, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

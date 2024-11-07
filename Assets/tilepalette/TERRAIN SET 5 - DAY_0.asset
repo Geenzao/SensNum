@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: TERRAIN SET 5 - DAY_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -7945934606359450049, guid: 1f0e827baea38234783c973c7ae581e6, type: 3}
+  m_Sprite: {fileID: -7945934606359450049, guid: d1e9a2d80d14ddb469eba9f6a4a8ae55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: WATER TILE - DAY_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 923171958975928453, guid: 09fdb45179da3804da39561ba76f4953, type: 3}
+  m_Sprite: {fileID: 923171958975928453, guid: a9e080be9dea2fd48b118de6da4d7db9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

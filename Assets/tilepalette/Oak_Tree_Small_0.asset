@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Oak_Tree_Small_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 3812054951403657284, guid: 32a830a04c0a66546b730712262c22d9, type: 3}
+  m_Sprite: {fileID: 3812054951403657284, guid: 3a1b604ebd748914090858287b3cbdf8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
