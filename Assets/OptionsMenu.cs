@@ -45,7 +45,7 @@ public class OptionsMenu : Menu
     {
         base.Start();
 
-        if (UIManager.CurrentMenuState == UIManager.MenuState.OptionMenu)
+        if (UIManager.CurrentMenuState == UIManager.MenuState.PauseMenu)
         {
             TriggerVisibility(true);
         }
@@ -73,7 +73,7 @@ public class OptionsMenu : Menu
     protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
     {
         base.HandleMenuStateChanged(newMS, oldMS);
-        if (newMS == UIManager.MenuState.OptionMenu)
+        if (newMS == UIManager.MenuState.PauseMenu)
             TriggerVisibility(true); //true
         else
             TriggerVisibility(false);
