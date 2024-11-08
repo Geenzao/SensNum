@@ -94,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _globalQuality: {fileID: 3932479403393905673}
   _volumeMusic: {fileID: 6341149526059277924}
+  _volumeSounds: {fileID: 9139381777786195857}
   _vignetteIntensity: {fileID: 4390852816328675533}
 --- !u!1 &4810810495100100211
 GameObject:
@@ -185,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb5049c2246054469dddbc5252a4ad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _key: VolumeMusic
+  _key: volumeMusic
   _defaultValue: 0.5
   _audioMixer: {fileID: 24100000, guid: 3f8f5b0d51eecfe4a9bc1ff759e88911, type: 2}
 --- !u!1 &6706464040733588028
@@ -250,6 +251,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2719611235590005227}
+  - {fileID: 2519077842456908910}
   m_Father: {fileID: 889428862694550543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8024158928442634094
@@ -285,3 +287,50 @@ Transform:
   - {fileID: 2174975622152492862}
   m_Father: {fileID: 889428862694550543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9141891708613218865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2519077842456908910}
+  - component: {fileID: 9139381777786195857}
+  m_Layer: 0
+  m_Name: Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2519077842456908910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141891708613218865}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3427879829148905334}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9139381777786195857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141891708613218865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6e7554ea69d3545ba25d07bf9be1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _key: volumeSound
+  _defaultValue: 0.5
+  _audioMixer: {fileID: 24100000, guid: 3f8f5b0d51eecfe4a9bc1ff759e88911, type: 2}

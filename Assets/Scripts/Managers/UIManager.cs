@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using static GameManager;
 
@@ -23,7 +24,7 @@ public class UIManager : Singleton<UIManager>
         None,
         MainMenu,
         PauseMenu,
-        OptionsMenu
+        OptionMenu
     }
 
     //\brief Currently displayed menu
@@ -89,6 +90,7 @@ public class UIManager : Singleton<UIManager>
         _currentMenuState = newMS;
 
         OnMenuStateChanged.Invoke(_currentMenuState, previousMenuState);
+        Debug.LogWarning("Menu state changed to " + _currentMenuState);
     }
 
     //public static VirtualKeyboard VirtualKeyboard
