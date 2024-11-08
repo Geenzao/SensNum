@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class playerMovement : MonoBehaviour
+public class playerMovement : Singleton<playerMovement>
 {
     public float f_moveSpeed;
     private Vector3 vector3_moveDirection;
 
     private Animator animator_anim;
+
 
     // Start is called before the first frame update
     void Start()
@@ -49,33 +50,48 @@ public class playerMovement : MonoBehaviour
         }
         */
 
-        //Si on veut bouger dans toutes les directions
-        if (moveY < 0)
+        if(f_moveSpeed!=0)
         {
-            animator_anim.SetInteger("whereLooking", 0); // Bas
-        }
-        else if (moveY > 0)
-        {
-            animator_anim.SetInteger("whereLooking", 2); // Haut
-        }
-        else if (moveX != 0)
-        {
-            animator_anim.SetInteger("whereLooking", 1); // Côté
-            transform.localScale = new Vector3(Mathf.Sign(moveX), 1, 1); // Rotation côté
-        }
+            //Si on veut bouger dans toutes les directions
+            if (moveY < 0)
+            {
+                animator_anim.SetInteger("whereLooking", 0); // Bas
+            }
+            else if (moveY > 0)
+            {
+                animator_anim.SetInteger("whereLooking", 2); // Haut
+            }
+            else if (moveX != 0)
+            {
+                animator_anim.SetInteger("whereLooking", 1); // Côté
+                transform.localScale = new Vector3(Mathf.Sign(moveX), 1, 1); // Rotation côté
+            }
 
-        vector3_moveDirection = new Vector3(moveX, moveY, 0).normalized;
+            vector3_moveDirection = new Vector3(moveX, moveY, 0).normalized;
 
-        if (vector3_moveDirection != Vector3.zero)
-        {
-            animator_anim.SetBool("isMooving", true);
-            transform.position += vector3_moveDirection * f_moveSpeed * Time.deltaTime;
-        }
-        else
-        {
-            animator_anim.SetBool("isMooving", false);
+            if (vector3_moveDirection != Vector3.zero)
+            {
+                animator_anim.SetBool("isMooving", true);
+                transform.position += vector3_moveDirection * f_moveSpeed * Time.deltaTime;
+            }
+            else
+            {
+                animator_anim.SetBool("isMooving", false);
+            }
         }
     }
+
+    //Ces fonction servent à stoper le player au niveau de ses mouvements
+    public void StopPlayerMouvement()
+    {
+        f_moveSpeed = 0;
+    }
+
+    public void ActivePlayerMouvement()
+    {
+        f_moveSpeed = 5.0f;
+    }
+
 }
 
         
