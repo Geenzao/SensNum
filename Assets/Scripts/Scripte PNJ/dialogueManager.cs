@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static GameManager;
+
 
 //TODO : bloquer les mouvement du joueur quand le dialogue est lancé
 
@@ -10,7 +12,7 @@ using static GameManager;
 public class dialogueManager : Singleton<dialogueManager>
 {
 
-    [SerializeField] private Text dialogueTextUI; //texte qui serra modifi  avec les phrases des PNJ
+    public TextMeshProUGUI dialogueTextUI; //texte qui serra modifi  avec les phrases des PNJ
     [SerializeField] private GameObject dialoguePanelUI; //Object UI du dialogue, ex : paneau gris ou appara t les phrase
     [SerializeField] private GameObject PanelUITextInteraction;
 
@@ -35,6 +37,7 @@ public class dialogueManager : Singleton<dialogueManager>
 
     public void StartDialogue(dialoguePNJ diag)
     {
+        playerMovement.Instance.StopPlayerMouvement();
         //PanelUITextInteraction.SetActive(false);
         isDialogueActive = true;
         qSentences.Clear();
@@ -68,7 +71,7 @@ public class dialogueManager : Singleton<dialogueManager>
 
     public void HidePanelInteraction()
     {
-        PanelUITextInteraction.SetActive(true);
+        PanelUITextInteraction.SetActive(false);
     }
 
     public void DisplayNextSentence()
@@ -99,6 +102,7 @@ public class dialogueManager : Singleton<dialogueManager>
         //PanelUITextInteraction.SetActive(true);
         dialoguePanelUI.SetActive(false);
         isDialogueActive = false;
+        playerMovement.Instance.ActivePlayerMouvement();
     }
 
     public bool fctisDialogueActive()
