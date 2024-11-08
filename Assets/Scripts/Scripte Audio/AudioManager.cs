@@ -20,7 +20,7 @@ using UnityEngine.Audio;
  */
 
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : Singleton<AudioManager>
 {
     //Pour stocker les musiques qui seront jouer en boucle en fond
     public AudioClip[] tabMusics;
@@ -33,18 +33,8 @@ public class AudioManager : MonoBehaviour
     //pour suivre la musique qui est jouer
     private int musicIndex;
     // Sauvegarde de la position de la musique
-    private float lastPosition = 0f;        
+    private float lastPosition = 0f;
 
-
-    public static AudioManager instance;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-    }
 
     void Start()
     {

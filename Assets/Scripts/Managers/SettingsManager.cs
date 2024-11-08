@@ -13,6 +13,7 @@ namespace Settings
     {
         [SerializeField] private GlobalQuality _globalQuality;
         [SerializeField] private VolumeMusic _volumeMusic;
+        [SerializeField] private VolumeSounds _volumeSounds;
         [SerializeField] private VignetteIntensity _vignetteIntensity;
 
         public static T GetSettingOfType<T>() where T : class
@@ -30,6 +31,10 @@ namespace Settings
             else if (Instance._volumeMusic.GetType() == typeof(T))
             {
                 return Instance._volumeMusic as T;
+            }
+            else if (Instance._volumeSounds.GetType() == typeof(T))
+            {
+                return Instance._volumeSounds as T;
             }
             else if (Instance._vignetteIntensity.GetType() == typeof(T))
             {
