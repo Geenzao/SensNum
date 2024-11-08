@@ -292,7 +292,7 @@ public class GameManager : Singleton<GameManager>
             case GameState.PAUSED:
                 {
                     _gameState = GameState.PAUSED;
-                    Time.timeScale = 1;
+                    Time.timeScale = 0;
                     break;
                 }
             case GameState.DIALOG:

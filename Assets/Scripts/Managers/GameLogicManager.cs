@@ -41,7 +41,7 @@ public class GameLogicManager : MonoBehaviour
         }
         else if (newGS == GameManager.GameState.PAUSED)
         {
-            UIManager.Instance.UpdateMenuState(UIManager.MenuState.OptionMenu);
+            UIManager.Instance.UpdateMenuState(UIManager.MenuState.PauseMenu);
         }
         //else if (newGS == GameManager.GameState.FROZEN)
         //{
