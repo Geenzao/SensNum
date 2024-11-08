@@ -1,11 +1,11 @@
-﻿using Settings.Audio;
+using Settings.Audio;
 using Settings.Graphics;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
 
-public class Options : MonoBehaviour
+public class OptionsMenu : Menu
 {
     [Header("Button")]
     [SerializeField] private Button quitButton;
@@ -13,6 +13,9 @@ public class Options : MonoBehaviour
     [Header("Scrollbar")]
     [SerializeField] private Scrollbar volumeSoundScrollbar;
     [SerializeField] private Scrollbar volumeMusicScrollbar;
+
+    [Header("Panel")]
+    [SerializeField] private GameObject panelOptions;
 
     //[Header("Dropdown")]
     //[SerializeField] private TMPro.TMP_Dropdown _qualityDropdown;
@@ -38,9 +41,15 @@ public class Options : MonoBehaviour
         //_paramGlobalQuality.OnUpdate.AddListener(HandleGlobalQualityChanged);
     }
 
-    // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
+
+        if (UIManager.CurrentMenuState == UIManager.MenuState.OptionMenu)
+        {
+            TriggerVisibility(true);
+        }
+
         var settingsGlobalQuality = Settings.SettingsManager.GetSettingOfType<GlobalQuality>();
         var settingsMusicVolume = Settings.SettingsManager.GetSettingOfType<VolumeMusic>();
         var settingsSoundVolume = Settings.SettingsManager.GetSettingOfType<VolumeSounds>();
@@ -52,24 +61,23 @@ public class Options : MonoBehaviour
         //Init music volume
         volumeMusicScrollbar.value = 0.3f;
         volumeSoundScrollbar.value = 0.3f;
-
-
-        //Init graphics dropdown
-        //_qualityDropdown.ClearOptions();
-        //List<TMPro.TMP_Dropdown.OptionData> tabOptions = new();
-        //foreach (string preset in settingsGlobalQuality.QualitySettingsName)
-        //{
-        //    tabOptions.Add(new TMPro.TMP_Dropdown.OptionData(preset));
-        //}
-        //_qualityDropdown.AddOptions(tabOptions);
-        //_qualityDropdown.value = settingsGlobalQuality.GetParam();
-        //_qualityDropdown.onValueChanged.AddListener(HandleQualityDropdownValueChanged);
     }
 
-    //private void HandleGlobalQualityChanged(int newVal)
-    //{
-    //    _qualityDropdown.value = newVal;
-    //}
+    protected override void TriggerVisibility(bool visible)
+    {
+        base.TriggerVisibility(visible);
+        panelOptions.SetActive(visible);
+    }
+
+
+    protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
+    {
+        base.HandleMenuStateChanged(newMS, oldMS);
+        if (newMS == UIManager.MenuState.OptionMenu)
+            TriggerVisibility(true); //true
+        else
+            TriggerVisibility(false);
+    }
 
     private void HandleMusicVolumeChanged(float newVal)
     {
@@ -95,15 +103,9 @@ public class Options : MonoBehaviour
         _paramVolumeSounds.UpdateParam(val);
     }
 
-    //private void HandleQualityDropdownValueChanged(int val)
-    //{
-    //    if (!_qualityDropdown.IsActive())
-    //        return;
-    //    _paramGlobalQuality.UpdateParam(val);
-    //}
-
     private void OnQuitButtonClicked()
     {
         gameObject.SetActive(false);
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
     }
 }
