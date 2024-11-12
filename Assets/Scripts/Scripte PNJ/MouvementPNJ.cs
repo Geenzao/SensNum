@@ -1,7 +1,8 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
-// Ce script déplace les PNJ en suivant un parcours aller-retour entre deux points, avec des pauses obligatoires en mode idle.
+// Ce script déplace les PNJ en suivant un parcours aller-retour entre deux points ou plus, avec des pauses obligatoires en mode idle.
 
 public class MouvementPNJ : MonoBehaviour
 {
@@ -36,23 +37,30 @@ public class MouvementPNJ : MonoBehaviour
 
     void Update()
     {
-        //Si quelqu'un veut faire pas bouger un PNJ, alors il a juste a ne mettre qu'un seul point
-        if(ThisPNJDontWalk) return;
+        //NOTE : Si quelqu'un veut faire pas bouger un PNJ, alors il a juste a ne mettre qu'un seul point
 
-        if (isWalking)
+        if(ThisPNJDontWalk)
         {
-            MoveToNextDestination();
+            SetWalkingState(false);
+
         }
         else
         {
-            // Compte à rebours pendant l'idle
-            idleTimer += Time.deltaTime;
-            if (idleTimer >= idleDuration)
+            if (isWalking)
             {
-                // Fin de l'idle, passage en mode marche
-                idleTimer = 0f;
-                currentDestinationIndex = (currentDestinationIndex + 1) % tabPointDestination.Length; // Changer de point de destination
-                SetWalkingState(true);
+                MoveToNextDestination();
+            }
+            else
+            {
+                // Compte à rebours pendant l'idle
+                idleTimer += Time.deltaTime;
+                if (idleTimer >= idleDuration)
+                {
+                    // Fin de l'idle, passage en mode marche
+                    idleTimer = 0f;
+                    currentDestinationIndex = (currentDestinationIndex + 1) % tabPointDestination.Length; // Changer de point de destination
+                    SetWalkingState(true);
+                }
             }
         }
     }
@@ -94,5 +102,15 @@ public class MouvementPNJ : MonoBehaviour
         {
             UpdateSpriteDirection(); // Met à jour la direction au début de la marche
         }
+    }
+
+    public void PnjTalk()
+    {
+        ThisPNJDontWalk = true;
+    }
+
+    public void PnjDontTalk()
+    {
+        ThisPNJDontWalk = false;
     }
 }
