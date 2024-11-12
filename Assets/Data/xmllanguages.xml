@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<languages>
+	<language name="English" code="en" />
+	<language name="Francais" code="fr" />
+	<words>
+		<!-- UI -->
+		<word id="settings">
+			<en>Settings</en>
+			<fr>Options</fr>
+		</word>
+		<word id="MainMenu_Title">
+			<en>the three rivers</en>
+			<fr>Les trois rivières</fr>
+		</word>
+		<word id="play">
+			<en>play</en>
+			<fr>jouer</fr>
+		</word>
+		<word id="music">
+			<en>music</en>
+			<fr>musique</fr>
+		</word>
+		<word id="sound">
+			<en>sound</en>
+			<fr>son</fr>
+		</word>
+		<word id="interaction_key">
+			<en>E for interaction</en>
+			<fr>E pour interagir</fr>
+		</word>
+
+		<!-- PNJ -->
+		<!-- pnj_youngman -->
+		<word id="pnj_youngman_0_0">
+			<en>Who are you ?</en>
+			<fr>Qui es-tu ?</fr>
+		</word>
+		<word id="pnj_youngman_0_1">
+			<en>You're not welcome here !</en>
+			<fr>Tu n'as rien à faire dans notre village !</fr>
+		</word>
+		<word id="pnj_youngman_0_2">
+			<en>Go away !</en>
+			<fr>Va-t'en !</fr>
+		</word>
+		<word id="pnj_youngman_1_0">
+			<en>You're not a member of the militia jeep group ?</en>
+			<fr>Tu ne fais pas partie du groupe des miliciens en jeep ?</fr>
+		</word>
+		<word id="pnj_youngman_1_1">
+			<en>Sorry for my rude welcome…</en>
+			<fr>Désolé pour mon accueil brutal…</fr>
+		</word>
+		<word id="pnj_youngman_1_2">
+			<en>We're on edge for a few days now.</en>
+			<fr>Nous sommes sur les nerfs depuis quelques jours.</fr>
+		</word>
+		<word id="pnj_youngman_1_3">
+			<en>Since these militia came and cut down trees.</en>
+			<fr>Depuis que ces miliciens sont venus et ont abattu des arbres.</fr>
+		</word>
+		<word id="pnj_youngman_1_4">
+			<en>To dig the ground, in search of precious materials.</en>
+			<fr>Pour creuser le sol, à la recherche de matières premières précieuses.</fr>
+		</word>
+		<word id="pnj_youngman_1_5">
+			<en>We're searching for a way to drive them away.</en>
+			<fr>Nous cherchons un moyen pour chasser ces miliciens.</fr>
+		</word>
+		<word id="pnj_youngman_2_0">
+			<en>We're searching for a way to drive them away. Can you help us ?</en>
+			<fr>Nous cherchons un moyen pour chasser ces miliciens. Peux-tu nous aider ?</fr>
+		</word>
+	</words>
+</languages>

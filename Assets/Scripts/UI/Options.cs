@@ -4,9 +4,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Options : MonoBehaviour
 {
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI title;
+    [SerializeField] private TextMeshProUGUI music;
+    [SerializeField] private TextMeshProUGUI sound;
+
     [Header("Button")]
     [SerializeField] private Button quitButton;
 
@@ -52,6 +58,17 @@ public class Options : MonoBehaviour
         //Init music volume
         volumeMusicScrollbar.value = 0.3f;
         volumeSoundScrollbar.value = 0.3f;
+
+        // Charger les textes en fonction de la langue sélectionnée
+        if (LanguageManager.Instance != null)
+        {
+            LanguageManager.Instance.LoadLanguageFile();
+            UpdateTexts();
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
+        }
 
 
         //Init graphics dropdown
@@ -105,5 +122,12 @@ public class Options : MonoBehaviour
     private void OnQuitButtonClicked()
     {
         gameObject.SetActive(false);
+    }
+
+    private void UpdateTexts()
+    {
+        title.text = LanguageManager.Instance.GetText("settings");
+        music.text = LanguageManager.Instance.GetText("music");
+        sound.text = LanguageManager.Instance.GetText("sound");
     }
 }

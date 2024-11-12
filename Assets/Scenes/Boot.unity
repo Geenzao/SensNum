@@ -208,7 +208,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: SystemPrefabs.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[0]'
@@ -232,6 +232,10 @@ PrefabInstance:
       objectReference: {fileID: 2562941371845500108, guid: 96949962b31acda4482b1c6333a65754, type: 3}
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[5]'
+      value: 
+      objectReference: {fileID: 856070185844271781, guid: e39491ad4fa131e4e9e999dbb081c410, type: 3}
+    - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
+      propertyPath: 'SystemPrefabs.Array.data[6]'
       value: 
       objectReference: {fileID: 9054475828954094131, guid: aef1e102125ea9d4281e8d66f6582e74, type: 3}
     - target: {fileID: 6071805488983983202, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}

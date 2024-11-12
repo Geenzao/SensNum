@@ -47,14 +47,14 @@ public class UIManager : Singleton<UIManager>
         GameManager.Instance.OnGameStateChanged.AddListener(HandleGameStateChanged);
         GameManager.Instance.OnLoadingEnded.AddListener(HandleLoadingEnded);
     }
-    private void HandleGameStateChanged(GameManager.GameState currentState, GameManager.GameState previousState)
+    private void HandleGameStateChanged(GameState currentState, GameState previousState)
     {
-        if (currentState == GameManager.GameState.PREGAME && previousState == GameManager.GameState.RUNNING)
+        if (currentState == GameState.PREGAME && previousState == GameState.RUNNING)
         {
             _UICamera.gameObject.SetActive(false);
             UpdateMenuState(MenuState.MainMenu);
         }
-        else if (currentState == GameManager.GameState.PAUSED)
+        else if (currentState == GameState.PAUSED)
         {
             UpdateMenuState(MenuState.PauseMenu);
         }
@@ -66,7 +66,7 @@ public class UIManager : Singleton<UIManager>
 
     private void HandleLoadingEnded(string lvlName)
     {
-        if (GameManager.CurrentGameState == GameManager.GameState.PREGAME)
+        if (CurrentGameState == GameState.PREGAME)
         {
             _UICamera.gameObject.SetActive(false);
         }

@@ -15,11 +15,47 @@ public class Dialogue
 
 public class dialoguePNJ : MonoBehaviour
 {
-    public Dialogue[] tabDialogue;
+    public List<Dialogue> listDialogue = new List<Dialogue>();
 
+    //Récupère le tag du PNJ
+    private string tag = "";
     // Compteur pour suivre le nombre d'interactions avec le PNJ
     private int interactionCount = 0;
     private bool range = false; //pour savoir si le joueur est assez proche
+
+    void Start()
+    {
+        tag = gameObject.tag;
+        InitializeDialogue();
+    }
+
+    void InitializeDialogue()
+    {
+        int i = 0;
+        while (true)
+        {
+            List<string> sentences = new List<string>();
+            int j = 0;
+            while (true)
+            {
+                string key = $"pnj_{tag}_{i}_{j}";
+                string text = LanguageManager.Instance.GetText(key);
+                if (text == key) // Si le texte retourné est la clé, cela signifie qu'il n'y a plus de texte pour cette catégorie
+                {
+                    break;
+                }
+                sentences.Add(text);
+                j++;
+            }
+            if (sentences.Count == 0) // Si aucune phrase n'a été ajoutée, on arrête la boucle
+            {
+                break;
+            }
+            Dialogue dialogue = new Dialogue { sentences = sentences.ToArray() };
+            listDialogue.Add(dialogue);
+            i++;
+        }
+    }
 
     void Update()
     {
@@ -57,7 +93,7 @@ public class dialoguePNJ : MonoBehaviour
     public void incrementeInteractionCount()
     {
         // a ne sert   rien d'incr menter   l'infini
-        if (interactionCount + 1 < tabDialogue.Length + 1)
+        if (interactionCount + 1 < listDialogue.Count + 1)
             interactionCount++;
     }
 

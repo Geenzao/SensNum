@@ -4,9 +4,15 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class OptionsMenu : Menu
 {
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI title;
+    [SerializeField] private TextMeshProUGUI music;
+    [SerializeField] private TextMeshProUGUI sound;
+
     [Header("Button")]
     [SerializeField] private Button quitButton;
 
@@ -61,6 +67,17 @@ public class OptionsMenu : Menu
         //Init music volume
         volumeMusicScrollbar.value = 0.3f;
         volumeSoundScrollbar.value = 0.3f;
+
+        // Charger les textes en fonction de la langue sélectionnée
+        if (LanguageManager.Instance != null)
+        {
+            LanguageManager.Instance.LoadLanguageFile();
+            UpdateTexts();
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
+        }
     }
 
     protected override void TriggerVisibility(bool visible)
@@ -107,5 +124,12 @@ public class OptionsMenu : Menu
     {
         gameObject.SetActive(false);
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
+    }
+
+    private void UpdateTexts()
+    {
+        title.text = LanguageManager.Instance.GetText("settings");
+        music.text = LanguageManager.Instance.GetText("music");
+        sound.text = LanguageManager.Instance.GetText("sound");
     }
 }
