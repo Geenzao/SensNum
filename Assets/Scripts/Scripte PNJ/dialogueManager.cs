@@ -6,9 +6,6 @@ using UnityEngine.UI;
 using static GameManager;
 
 
-//TODO : bloquer les mouvement du joueur quand le dialogue est lancé
-
-
 public class dialogueManager : Singleton<dialogueManager>
 {
 
@@ -18,6 +15,8 @@ public class dialogueManager : Singleton<dialogueManager>
 
     private bool isDialogueActive = false;
     private Queue<string> qSentences;
+
+    private dialoguePNJ dialoguePnjRef = null;
 
     private void Start()
     {
@@ -38,7 +37,14 @@ public class dialogueManager : Singleton<dialogueManager>
     public void StartDialogue(dialoguePNJ diag)
     {
         playerMovement.Instance.StopPlayerMouvement();
-        //PanelUITextInteraction.SetActive(false);
+        dialoguePnjRef = diag;
+        //On dit au Pnj de s'arrêter parce que le joueur lui parle
+        if (dialoguePnjRef != null && dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>())
+            dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>().PnjTalk();
+        else
+            Debug.LogWarning("Il y a un problèùe avec le scripte MouvementPNJ");
+
+
         isDialogueActive = true;
         qSentences.Clear();
         //On affiche l'UI du dialogue
@@ -99,10 +105,15 @@ public class dialogueManager : Singleton<dialogueManager>
 
     public void EndDialogue()
     {
-        //PanelUITextInteraction.SetActive(true);
         dialoguePanelUI.SetActive(false);
         isDialogueActive = false;
         playerMovement.Instance.ActivePlayerMouvement();
+        //On dit au Pnj de reprendre la marche
+        if (dialoguePnjRef != null && dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>())
+            dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>().PnjDontTalk();
+        else
+            Debug.LogWarning("Il y a un problèùe avec le scripte MouvementPNJ");
+
     }
 
     public bool fctisDialogueActive()
