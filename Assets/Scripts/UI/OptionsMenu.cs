@@ -4,9 +4,17 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class OptionsMenu : Menu
 {
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI title;
+    [SerializeField] private TextMeshProUGUI music;
+    [SerializeField] private TextMeshProUGUI sound;
+    [SerializeField] private TextMeshProUGUI language;
+
+
     [Header("Button")]
     [SerializeField] private Button quitButton;
 
@@ -14,13 +22,12 @@ public class OptionsMenu : Menu
     [SerializeField] private Scrollbar volumeSoundScrollbar;
     [SerializeField] private Scrollbar volumeMusicScrollbar;
 
+    [Header("Dropdown")]
+    [SerializeField] private TMP_Dropdown languageDropdown;
+
     [Header("Panel")]
     [SerializeField] private GameObject panelOptions;
 
-    //[Header("Dropdown")]
-    //[SerializeField] private TMPro.TMP_Dropdown _qualityDropdown;
-
-    //private GlobalQuality _paramGlobalQuality;
     private VolumeMusic _paramVolumeMusic;
     private VolumeSounds _paramVolumeSounds;
 
@@ -39,6 +46,10 @@ public class OptionsMenu : Menu
         _paramVolumeMusic.OnUpdate.AddListener(HandleMusicVolumeChanged);
         _paramVolumeSounds.OnUpdate.AddListener(HandleSoundVolumeChanged);
         //_paramGlobalQuality.OnUpdate.AddListener(HandleGlobalQualityChanged);
+
+        languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
+
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
     }
 
     protected override void Start()
@@ -61,12 +72,61 @@ public class OptionsMenu : Menu
         //Init music volume
         volumeMusicScrollbar.value = 0.3f;
         volumeSoundScrollbar.value = 0.3f;
+
+        // Charger les textes en fonction de la langue s�lectionn�e
+        if (LanguageManager.Instance != null)
+        {
+            UpdateTexts();
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
+        }
+
+        InitializeLanguageDropdown();
     }
 
     protected override void TriggerVisibility(bool visible)
     {
         base.TriggerVisibility(visible);
         panelOptions.SetActive(visible);
+    }
+
+    private void InitializeLanguageDropdown()
+    {
+        List<CTuple<string, string>> languages = LanguageManager.Instance.GetLanguages();
+        languageDropdown.ClearOptions();
+
+        List<string> options = new List<string>();
+        int currentLanguageIndex = 0;
+
+        for (int i = 0; i < languages.Count; i++)
+        {
+            CTuple<string, string> language = languages[i];
+            options.Add(language.Item1);
+
+            if (language.Item2 == LanguageManager.Instance.GetCurrentLanguage())
+            {
+                currentLanguageIndex = i;
+            }
+        }
+        languageDropdown.AddOptions(options);
+        languageDropdown.value = currentLanguageIndex;
+        languageDropdown.RefreshShownValue();
+    }
+
+    private void OnLanguageDropdownValueChanged(int index)
+    {
+        var selectedLanguage = languageDropdown.options[index].text;
+        var languages = LanguageManager.Instance.GetLanguages();
+        foreach (var language in languages)
+        {
+            if (language.Item1 == selectedLanguage)
+            {
+                LanguageManager.Instance.SetLanguage(language.Item2);
+                break;
+            }
+        }
     }
 
 
@@ -106,6 +166,14 @@ public class OptionsMenu : Menu
     private void OnQuitButtonClicked()
     {
         gameObject.SetActive(false);
-        UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
+        GameManager.Instance.UpdateGameState(GameManager.GameState.RUNNING);
+    }
+
+    private void UpdateTexts()
+    {
+        title.text = LanguageManager.Instance.GetText("settings");
+        music.text = LanguageManager.Instance.GetText("music");
+        sound.text = LanguageManager.Instance.GetText("sound");
+        language.text = LanguageManager.Instance.GetText("language");
     }
 }

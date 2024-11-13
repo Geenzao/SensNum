@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static GameManager;
@@ -6,7 +7,11 @@ using static GameManager;
 public class MainMenu : Menu
 {
     [SerializeField] private string levelToLoad;
-    [SerializeField] private GameObject titre;
+
+    [Header("Text")]
+    [SerializeField] private TextMeshProUGUI titre;
+    [SerializeField] private TextMeshProUGUI play;
+    [SerializeField] private TextMeshProUGUI settings;
 
     [Header("Boutons")]
     [SerializeField] private Button buttonPlay;
@@ -15,6 +20,11 @@ public class MainMenu : Menu
     [Header("Panel")]
     [SerializeField] private GameObject panelGeneral;
     [SerializeField] private GameObject panelSettings;
+
+    private void Awake()
+    {
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+    }
 
     protected override void Start()
     {
@@ -29,6 +39,15 @@ public class MainMenu : Menu
         buttonSettings.onClick.AddListener(OnSettingsButtonClicked);
 
         DesactivateAllPanel();
+
+        if (LanguageManager.Instance != null)
+        {
+            UpdateTexts();
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
+        }
     }
 
     protected override void TriggerVisibility(bool visible)
@@ -36,7 +55,6 @@ public class MainMenu : Menu
         base.TriggerVisibility(visible);
         panelGeneral.SetActive(visible);
     }
-
 
     protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
     {
@@ -61,5 +79,18 @@ public class MainMenu : Menu
     private void DesactivateAllPanel()
     {
         panelSettings.SetActive(false);
+    }
+
+    private void UpdateTexts()
+    {
+        if (titre == null || play == null || settings == null)
+        {
+            Debug.LogError("Text elements are not assigned in the inspector.");
+            return;
+        }
+
+        titre.text = LanguageManager.Instance.GetText("MainMenu_Title");
+        play.text = LanguageManager.Instance.GetText("play");
+        settings.text = LanguageManager.Instance.GetText("settings");
     }
 }

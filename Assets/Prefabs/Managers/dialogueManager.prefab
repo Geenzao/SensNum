@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b794630448eb2a1428143c28124b394a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionKey: {fileID: 1162902787124964253}
   dialogueTextUI: {fileID: 8193030006981055994}
   dialoguePanelUI: {fileID: 7526746375874234501}
   PanelUITextInteraction: {fileID: 1492341249973502845}

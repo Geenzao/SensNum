@@ -8,7 +8,7 @@ using static GameManager;
 
 public class dialogueManager : Singleton<dialogueManager>
 {
-
+    public TextMeshProUGUI interactionKey;
     public TextMeshProUGUI dialogueTextUI; //texte qui serra modifi  avec les phrases des PNJ
     [SerializeField] private GameObject dialoguePanelUI; //Object UI du dialogue, ex : paneau gris ou appara t les phrase
     [SerializeField] private GameObject PanelUITextInteraction;
@@ -17,6 +17,11 @@ public class dialogueManager : Singleton<dialogueManager>
     private Queue<string> qSentences;
 
     private dialoguePNJ dialoguePnjRef = null;
+
+    private void Awake()
+    {
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+    }
 
     private void Start()
     {
@@ -38,31 +43,30 @@ public class dialogueManager : Singleton<dialogueManager>
     {
         playerMovement.Instance.StopPlayerMouvement();
         dialoguePnjRef = diag;
-        //On dit au Pnj de s'arrêter parce que le joueur lui parle
+        // On dit au Pnj de s'arrÃªter parce que le joueur lui parle
         if (dialoguePnjRef != null && dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>())
             dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>().PnjTalk();
         else
-            Debug.LogWarning("Il y a un problèùe avec le scripte MouvementPNJ");
-
+            Debug.LogWarning("Il y a un problÃ¨me avec le scripte MouvementPNJ");
 
         isDialogueActive = true;
         qSentences.Clear();
-        //On affiche l'UI du dialogue
+        // On affiche l'UI du dialogue
         dialoguePanelUI.SetActive(true);
         int nbInteraction = diag.getInteractionCount();
-        if (nbInteraction < diag.tabDialogue.Length)
+        if (nbInteraction < diag.listDialogue.Count)
         {
-            foreach (string sentence in diag.tabDialogue[nbInteraction].sentences)
+            foreach (string sentence in diag.listDialogue[nbInteraction].sentences)
             {
                 qSentences.Enqueue(sentence);
             }
         }
         else
         {
-            //ICI  a veut dire qu'il y a une erreur dans le nombre de dialogue.
-            //En cas d'erreur, on repete le dernier dialogue du PNJ en boucle
-            nbInteraction = diag.tabDialogue.Length - 1;
-            foreach (string sentence in diag.tabDialogue[nbInteraction].sentences)
+            // ICI Ã§a veut dire qu'il y a une erreur dans le nombre de dialogue.
+            // En cas d'erreur, on rÃ©pÃ¨te le dernier dialogue du PNJ en boucle
+            nbInteraction = diag.listDialogue.Count - 1;
+            foreach (string sentence in diag.listDialogue[nbInteraction].sentences)
             {
                 qSentences.Enqueue(sentence);
             }
@@ -112,12 +116,17 @@ public class dialogueManager : Singleton<dialogueManager>
         if (dialoguePnjRef != null && dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>())
             dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>().PnjDontTalk();
         else
-            Debug.LogWarning("Il y a un problèùe avec le scripte MouvementPNJ");
+            Debug.LogWarning("Il y a un problï¿½me avec le scripte MouvementPNJ");
 
     }
 
     public bool fctisDialogueActive()
     {
         return isDialogueActive;
+    }
+
+    public void UpdateTexts()
+    {
+        interactionKey.text = LanguageManager.Instance.GetText("interaction_key");
     }
 }
