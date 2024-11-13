@@ -18,14 +18,17 @@ public class dialogueManager : Singleton<dialogueManager>
 
     private dialoguePNJ dialoguePnjRef = null;
 
+    private void Awake()
+    {
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+    }
+
     private void Start()
     {
         PanelUITextInteraction.SetActive(false);
         dialoguePanelUI.SetActive(false);
 
         qSentences = new Queue<string>();
-
-        interactionKey.text = LanguageManager.Instance.GetText("interaction_key");
     }
 
     private void Update()
@@ -120,5 +123,10 @@ public class dialogueManager : Singleton<dialogueManager>
     public bool fctisDialogueActive()
     {
         return isDialogueActive;
+    }
+
+    public void UpdateTexts()
+    {
+        interactionKey.text = LanguageManager.Instance.GetText("interaction_key");
     }
 }

@@ -23,6 +23,11 @@ public class dialoguePNJ : MonoBehaviour
     private int interactionCount = 0;
     private bool range = false; //pour savoir si le joueur est assez proche
 
+    void Awake()
+    {
+        LanguageManager.Instance.OnLanguageChanged += InitializeDialogue;
+    }
+
     void Start()
     {
         tag = gameObject.tag;
@@ -31,6 +36,7 @@ public class dialoguePNJ : MonoBehaviour
 
     void InitializeDialogue()
     {
+        listDialogue.Clear();
         int i = 0;
         while (true)
         {

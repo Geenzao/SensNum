@@ -29,6 +29,10 @@
 			<en>E for interaction</en>
 			<fr>E pour interagir</fr>
 		</word>
+		<word id="language">
+			<en>language</en>
+			<fr>langue</fr>
+		</word>
 
 		<!-- PNJ -->
 		<!-- pnj_youngman -->

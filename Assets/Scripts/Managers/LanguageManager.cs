@@ -1,9 +1,12 @@
 using System.Collections.Generic;
 using System.Xml;
+using System;
 using UnityEngine;
 
 public class LanguageManager : Singleton<LanguageManager>
 {
+    public event Action OnLanguageChanged;
+
     private Dictionary<string, Dictionary<string, string>> _localizedTexts;
     [SerializeField] private string _currentLanguage;
     private string filePath = "Assets/Data/xmllanguages.xml";
@@ -51,19 +54,42 @@ public class LanguageManager : Singleton<LanguageManager>
             else
             {
                 Debug.LogWarning($"Text for language '{_currentLanguage}' not found for key '{key}'");
-                return key; // Retourne la clé si le texte n'est pas trouvé pour la langue actuelle
+                return key; // Retourne la clï¿½ si le texte n'est pas trouvï¿½ pour la langue actuelle
             }
         }
         else
         {
             Debug.LogWarning($"Text key '{key}' not found");
-            return key; // Retourne la clé si le texte n'est pas trouvé
+            return key; // Retourne la clï¿½ si le texte n'est pas trouvï¿½
         }
+    }
+
+    public List<CTuple<string, string>> GetLanguages()
+    {
+        List<CTuple<string, string>> languages = new List<CTuple<string, string>>();
+        XmlDocument xmlDocument = new XmlDocument();
+        xmlDocument.Load(filePath);
+
+        XmlNodeList languageNodes = xmlDocument.SelectNodes("/languages/language");
+        foreach (XmlNode languageNode in languageNodes)
+        {
+            string code = languageNode.Attributes["code"].Value;
+            string name = languageNode.Attributes["name"].Value;
+            languages.Add(new CTuple<string, string>(name, code));
+        }
+
+        return languages;
+    }
+
+    public string GetCurrentLanguage()
+    {
+        return _currentLanguage;
     }
 
     public void SetLanguage(string language)
     {
         _currentLanguage = language;
-        // Recharger les textes si nécessaire
+        OnLanguageChanged?.Invoke(); // DÃ©clenchement de l'Ã©vÃ©nement
+
     }
 }

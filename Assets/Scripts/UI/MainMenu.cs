@@ -21,6 +21,11 @@ public class MainMenu : Menu
     [SerializeField] private GameObject panelGeneral;
     [SerializeField] private GameObject panelSettings;
 
+    private void Awake()
+    {
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+    }
+
     protected override void Start()
     {
         base.Start();
@@ -35,10 +40,8 @@ public class MainMenu : Menu
 
         DesactivateAllPanel();
 
-        // Charger les textes en fonction de la langue sélectionnée
         if (LanguageManager.Instance != null)
         {
-            LanguageManager.Instance.LoadLanguageFile();
             UpdateTexts();
         }
         else
