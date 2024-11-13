@@ -20,6 +20,7 @@ public class dialogueManager : Singleton<dialogueManager>
 
     private void Awake()
     {
+        base.Awake();
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
     }
 
