@@ -45,10 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edc067385c449ce4c894f489160d8811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabMusics:
-  - {fileID: 8300000, guid: b051a062d9d96ee4a80ae6639478e97d, type: 3}
-  - {fileID: 8300000, guid: c7a0768dca1fd5043966ba0ec4c138e6, type: 3}
-  - {fileID: 8300000, guid: ecf0cc7118f5fc54a82cbd6ea4e3abcb, type: 3}
+  tabMusic:
+  - Item1: {fileID: 8300000, guid: 1703dddb46637a74b8cc9a3853e76990, type: 3}
+    Item2: {fileID: 8300000, guid: adf4ddc3ea634c1479445bb1968ad46e, type: 3}
   tabSoundEffect:
   - {fileID: 8300000, guid: 7b3e9e9707d06104bb5dc7f56ffa0def, type: 3}
   - {fileID: 8300000, guid: 6848d0b7b97badc41adac95d7491accd, type: 3}

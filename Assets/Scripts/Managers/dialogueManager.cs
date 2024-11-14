@@ -18,14 +18,11 @@ public class dialogueManager : Singleton<dialogueManager>
 
     private dialoguePNJ dialoguePnjRef = null;
 
-    private void Awake()
-    {
-        base.Awake();
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
-    }
 
     private void Start()
     {
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+
         PanelUITextInteraction.SetActive(false);
         dialoguePanelUI.SetActive(false);
 

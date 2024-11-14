@@ -69,6 +69,7 @@ public class MainMenu : Menu
     {
         GameManager.Instance.UnloadLevel("Start");
         GameManager.Instance.LoadLevel(levelToLoad);
+        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Start);
     }
 
     private void OnSettingsButtonClicked()

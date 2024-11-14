@@ -4,11 +4,12 @@ using static UIManager;
 
 public class GameProgressManager : Singleton<GameProgressManager>
 {
-    public Events.GameProgress.EventGameProgress OnGameProgress = new Events.GameProgress.EventGameProgress();
+    public Events.GameProgress.GameProgressStateChange OnGameProgressStateChange = new Events.GameProgress.GameProgressStateChange();
 
     public enum GameProgressState
     {
         None,
+        Menu,
         Start,
         Mine,
         Factory,
@@ -25,13 +26,13 @@ public class GameProgressManager : Singleton<GameProgressManager>
 
     private void HandleGameStateChanged(GameState currentState, GameState previousState)
     {
-        if (currentState == GameState.PREGAME && previousState == GameState.RUNNING)
-        {
-            UpdateGameProgressState(GameProgressState.Start);
-        }
-        else
+        if (currentState == GameState.PREGAME)
         {
             UpdateGameProgressState(GameProgressState.None);
+        }
+        else if (previousState == GameState.PREGAME && currentState == GameState.RUNNING)
+        {
+            UpdateGameProgressState(GameProgressState.Menu);
         }
     }
 
@@ -39,7 +40,7 @@ public class GameProgressManager : Singleton<GameProgressManager>
     {
         GameProgressState oldGameProgressState = _currentGameProgressState;
         _currentGameProgressState = newGameProgressState;
-        OnGameProgress.Invoke(newGameProgressState, oldGameProgressState);
+        OnGameProgressStateChange.Invoke(newGameProgressState, oldGameProgressState);
 
         Debug.LogWarning("Game progress state changed to " + _currentGameProgressState);
     }

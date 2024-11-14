@@ -119,50 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &400765399
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 400765400}
-  - component: {fileID: 400765401}
-  m_Layer: 0
-  m_Name: GameProgressManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &400765400
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400765399}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 585.13885, y: 76.10672, z: 0.99935496}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &400765401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400765399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f82b8acb3d0b92479245f4a120aab86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &772910411
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +208,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: SystemPrefabs.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[0]'
@@ -265,21 +221,25 @@ PrefabInstance:
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[2]'
       value: 
-      objectReference: {fileID: 3466573157439882229, guid: a930509f2e6093d408d01921e5970242, type: 3}
+      objectReference: {fileID: 5057792780986759162, guid: 80076c08280893d4c83ac1cd54908258, type: 3}
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[3]'
       value: 
-      objectReference: {fileID: 493795426757018270, guid: 088275c6eaea20b4da9c568f1ca4cded, type: 3}
+      objectReference: {fileID: 3466573157439882229, guid: a930509f2e6093d408d01921e5970242, type: 3}
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[4]'
       value: 
-      objectReference: {fileID: 8827695759609713907, guid: e99cf5af694fc4443a5317a7f03a13e7, type: 3}
+      objectReference: {fileID: 493795426757018270, guid: 088275c6eaea20b4da9c568f1ca4cded, type: 3}
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[5]'
       value: 
-      objectReference: {fileID: 2562941371845500108, guid: 96949962b31acda4482b1c6333a65754, type: 3}
+      objectReference: {fileID: 8827695759609713907, guid: e99cf5af694fc4443a5317a7f03a13e7, type: 3}
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[6]'
+      value: 
+      objectReference: {fileID: 2562941371845500108, guid: 96949962b31acda4482b1c6333a65754, type: 3}
+    - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
+      propertyPath: 'SystemPrefabs.Array.data[7]'
       value: 
       objectReference: {fileID: 9054475828954094131, guid: aef1e102125ea9d4281e8d66f6582e74, type: 3}
     - target: {fileID: 6071805488983983202, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
@@ -337,4 +297,3 @@ SceneRoots:
   m_Roots:
   - {fileID: 8152894093871375121}
   - {fileID: 772910414}
-  - {fileID: 400765400}

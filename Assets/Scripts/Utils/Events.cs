@@ -97,7 +97,7 @@ namespace Events
          * \tparam NEW Progress
          * \tparam OLD Progress
          */
-        public class EventGameProgress : UnityEvent<GameProgressManager.GameProgressState, GameProgressManager.GameProgressState> { }
+        public class GameProgressStateChange : UnityEvent<GameProgressManager.GameProgressState, GameProgressManager.GameProgressState> { }
     }
 
     namespace Settings
