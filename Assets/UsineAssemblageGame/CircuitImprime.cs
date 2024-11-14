@@ -48,14 +48,16 @@ public class CircuitImprime : MonoBehaviour
 
     private void MoveCircuit()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+        // Translate vers la droite en ignorant la rotation locale de l'objet
+        transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
 
         if (transform.position.x > endPositionX)
         {
             isValid = CheckValidity();
-            //On signal au UsineAssemblageGameManager si le joueur a réussi le circuit
-            //Et on détruit le circuit 
-            if(CheckValidity())
+
+            // Signale au UsineAssemblageGameManager si le joueur a réussi le circuit
+            // Et détruit le circuit après validation
+            if (CheckValidity())
                 UsineAssemblageGameManager.Instance.AddGoodCircuit();
             else
                 UsineAssemblageGameManager.Instance.AddBadCircuit();
