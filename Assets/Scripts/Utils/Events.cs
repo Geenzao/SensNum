@@ -86,6 +86,20 @@ namespace Events
         public class EventFadeMMenuComplete : UnityEvent<bool> { }
     }
 
+    namespace GameProgress
+    {
+        /*! \brief Game Progress Event
+         * 
+         * This event should be called when the game progress changes.
+         * 
+         * \warning Please respect this : OnGameProgress(newProgress, oldProgress)
+         * 
+         * \tparam NEW Progress
+         * \tparam OLD Progress
+         */
+        public class GameProgressStateChange : UnityEvent<GameProgressManager.GameProgressState, GameProgressManager.GameProgressState> { }
+    }
+
     namespace Settings
     {
         public class OnSettingIntUpdate : UnityEvent<int> { }

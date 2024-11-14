@@ -5,97 +5,75 @@ using UnityEngine.Audio;
 
 
 /*
- * NOTE : Pour jouer un effet sonore, il suffit d’appeler la méthode `PlaySoundEffect(int index)` 
- * définie dans la classe `AudioManager` ci-dessous.
+ * NOTE : Pour jouer un effet sonore, il suffit dï¿½appeler la mï¿½thode `PlaySoundEffect(int index)` 
+ * dï¿½finie dans la classe `AudioManager` ci-dessous.
  *
  * Utilisation :
  * - Ajoutez un son dans le tableau des effets sonores (inspecteur Unity).
- * - Utilisez l’indice correspondant pour jouer cet effet sonore.
+ * - Utilisez lï¿½indice correspondant pour jouer cet effet sonore.
  */
 
 /**********************************************************
- * Note d’optimisation : Pour éviter des calculs de transition en temps réel et améliorer les performances, 
- * nous avons décidé de ne pas implémenter de fondu automatique (fade) entre les musiques. 
- * À la place, nous utilisons des fichiers .wav modifiés pour intégrer des crescendos et decrescendos au début et à la fin de chaque morceau.
+ * Note dï¿½optimisation : Pour ï¿½viter des calculs de transition en temps rï¿½el et amï¿½liorer les performances, 
+ * nous avons dï¿½cidï¿½ de ne pas implï¿½menter de fondu automatique (fade) entre les musiques. 
+ * ï¿½ la place, nous utilisons des fichiers .wav modifiï¿½s pour intï¿½grer des crescendos et decrescendos au dï¿½but et ï¿½ la fin de chaque morceau.
  */
 
 
 public class AudioManager : Singleton<AudioManager>
 {
-    //Pour stocker les musiques qui seront jouer en boucle en fond
-    public AudioClip[] tabMusics;
-    //Pour stocker les effets sonnors
+    [Header("Audio Clips Music")]
+    //Chaque Tuple contient 2 AudioClips, le premier est la musique de dï¿½but, le deuxiï¿½me est la musique de boucle
+    public List<CTuple<AudioClip,AudioClip>> tabMusic;
+
+
+    [Header("Audio Clips Sound Effect")]
     public AudioClip[] tabSoundEffect;
 
+    [Header("Audio Sources")]
     public AudioSource audioSource; //responsable de jouer les musiques de fond
     public AudioMixerGroup soundEffectMixer;//Mixer pour les effets sonores
 
     //pour suivre la musique qui est jouer
-    private int musicIndex;
-    // Sauvegarde de la position de la musique
-    private float lastPosition = 0f;
+    private int musicStateIndex = -1;
+    private int musicToPlay = 0;
 
 
     void Start()
     {
-        audioSource.clip = tabMusics[0];
-        audioSource.Play();
+        GameProgressManager.Instance.OnGameProgressStateChange.AddListener(HandleGameProgressStateChanged);
     }
 
-
-
-    void Update()
+    //Il faudrait qu'en fonction du GameProgressState, on joue une musique diffï¿½rente, en premier la musique de dï¿½but, puis la musique de boucle en boucle
+    private void Update()
     {
-        if (!audioSource.isPlaying)
-            PlayNextSong();
-    }
-
-    void PlayNextSong()
-    {
-        //On incrémente l'index de la musique en cour
-        //Si musicIndex est supérieur à la taille du tableaa, l'index revien à 0
-        musicIndex = (musicIndex + 1) % tabMusics.Length;
-        audioSource.clip = tabMusics[musicIndex];
-        audioSource.Play();
-    }
-
-
-    //Si on veut soudainement jouer une autre musique spécial
-    public void PlayMusicByIndex(int index)
-    {
-        if (index < 0 || index >= tabMusics.Length)
+        if (audioSource.isPlaying == false)
         {
-            Debug.LogWarning("Index de musique invalide !");
-            return;
+            if (musicStateIndex >= 0 && musicStateIndex < tabMusic.Count)
+            {
+                if (musicToPlay == 0)
+                {
+                    audioSource.clip = tabMusic[musicStateIndex].Item1;
+                    audioSource.Play();
+                    musicToPlay = 1;
+                } else {
+                    audioSource.clip = tabMusic[musicStateIndex].Item2;
+                    audioSource.Play();
+                }
+            }
         }
-        musicIndex = index;
-        audioSource.clip = tabMusics[musicIndex];
-        audioSource.Play();
     }
 
     public void StopMusic()
     {
         if (audioSource.isPlaying)
         {
-            lastPosition = audioSource.time;  // Sauvegarde la position de lecture actuelle
-            audioSource.Pause();              // Met en pause la musique
+            audioSource.Stop();
         }
-    }
-
-    public void ResumeMusic()
-    {
-        if (!audioSource.isPlaying && lastPosition > 0)
-        {
-            audioSource.time = lastPosition;  // Reprend à la position sauvegardée
-            audioSource.Play();               // Relance la musique
-        }
-        //Si on ne peut pas reprendre, on continu de jouer une autre musique
-        else
-            PlayNextSong();
     }
 
     //Cette fonction permet de jouer un effet sonnor
-    //Les autre classe on juste à l'appeler et à renseigner en param l'indice de l'effet sonnor placé dans l'AudioManager
+    //Les autre classe on juste ï¿½ l'appeler et ï¿½ renseigner en param l'indice de l'effet sonnor placï¿½ dans l'AudioManager
     public AudioSource PlaySoundEffet(int index)
     {
         if (index < 0 || index > tabSoundEffect.Length)
@@ -109,8 +87,38 @@ public class AudioManager : Singleton<AudioManager>
         audioSource.clip = tabSoundEffect[index];
         audioSource.outputAudioMixerGroup = soundEffectMixer; // on ajoute le mixer de l'audio source
         audioSource.Play();
-        Destroy(objectTempo, tabSoundEffect[index].length); // on détruit l'objet une fois qu'on arrive a la fin du clip audio de l'objet
+        Destroy(objectTempo, tabSoundEffect[index].length); // on dï¿½truit l'objet une fois qu'on arrive a la fin du clip audio de l'objet
         return audioSource;
     }
 
+    private void HandleGameProgressStateChanged(GameProgressManager.GameProgressState newGameProgressState, GameProgressManager.GameProgressState oldGameProgressState)
+    {
+        switch (newGameProgressState)
+        {
+            case GameProgressManager.GameProgressState.Start:
+                musicStateIndex = 0;
+                musicToPlay = 0;
+                StopMusic();
+                break;
+            //case GameProgressManager.GameProgressState.Menu:
+            //    musicStateIndex = 1;
+            //    musicToPlay = 0;
+            //    StopMusic();
+            //    break;
+            //case GameProgressManager.GameProgressState.Mine:
+            //    musicStateIndex = 2;
+            //    break;
+            //case GameProgressManager.GameProgressState.Factory:
+            //    musicStateIndex = 3;
+            //    break;
+            //case GameProgressManager.GameProgressState.Residence:
+            //    musicStateIndex = 4;
+            //    break;
+            //case GameProgressManager.GameProgressState.End:
+            //    musicStateIndex = 5;
+            //    break;
+            default:
+                break;
+        }
+    }
 }
