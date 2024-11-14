@@ -1,27 +1,26 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
+//Cette classe représente un endroit dans le circuit qui attend un composant 
+//C'est en quelque sorte une place libre dans le circuit que le joueur doit remplir avec un composant
 [System.Serializable]
-public class ComposantPlace
+public class ComponentPlace
 {
-    public GameObject composantPlace; // Position spécifique pour placer le composant
-    public ComposantType type;         // Type de composant attendu (ex. red, gray, etc.)
+    public GameObject component; // Composant à la bonne position et avec le bon visuel qui est caché au début 
+    public ComponentType typeAccepted;         // Type de composant attendu (ex. red, gray, etc.)
     public bool isFill = false;
-    public GameObject composantUser = null; //composant placé sur le circuit à la place
-
 }
-
+ 
 public class CircuitImprime : MonoBehaviour
 {
-    public List<ComposantPlace> composantOnCircuit;  // Liste des composants et leurs positions sur le circuit
-    public List<GameObject> composantUser; //Liste de composant que le User a choisie de place sur ce circuit
-
+    public List<ComponentPlace> lstComponentPlaceOnCircuit;  // Liste des composants et leurs positions sur le circuit
+    
     private float speed = 0;
     private float endPositionX;
-    public bool IWantToDie = false;
     public bool isValid = false;
-
+    
     void Start()
     {
         this.speed = UsineAssemblageGameManager.Instance.GetActualSpeed();
@@ -34,6 +33,19 @@ public class CircuitImprime : MonoBehaviour
         MoveCircuit();
     }
 
+
+    //Cette fct sert à placé un composant sur une des place
+    public void FillComposantPlace(ComponentType typeNewComponent, int indexComponentPlace)
+    {
+        if (lstComponentPlaceOnCircuit[indexComponentPlace].typeAccepted == typeNewComponent)
+        {
+            this.lstComponentPlaceOnCircuit[indexComponentPlace].isFill = true;
+            this.lstComponentPlaceOnCircuit[indexComponentPlace].component.SetActive(true);
+        }
+        else Debug.LogWarning("Mauvais type");
+    }
+
+
     private void MoveCircuit()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
@@ -41,29 +53,32 @@ public class CircuitImprime : MonoBehaviour
         if (transform.position.x > endPositionX)
         {
             isValid = CheckValidity();
-            //On signal au UsineAssemblageGameManager de nous détruire
-            //IWantToDie = true;
+            //On signal au UsineAssemblageGameManager si le joueur a réussi le circuit
+            //Et on détruit le circuit 
             if(CheckValidity())
-            {
                 UsineAssemblageGameManager.Instance.AddGoodCircuit();
-            }
             else
                 UsineAssemblageGameManager.Instance.AddBadCircuit();
-            Destroy(gameObject);
+
+            DestroyThis();
         }
     }
 
     private bool CheckValidity()
     {
-        foreach (var compPlace in composantOnCircuit)
+        foreach (var compPlace in lstComponentPlaceOnCircuit)
         {
             // Si un emplacement est vide ou a le mauvais composant, retourne faux
-            if (compPlace.isFill == false 
-                || compPlace.composantUser.GetComponent<Composant>().type.Equals(compPlace.type) == false )
+            if (compPlace.isFill == false)
             {
-                return false;  
+                return false;
             }
         }
         return true; // Si tous les composants sont correctement placés, retourne vrai
+    }
+
+    private void DestroyThis()
+    {
+        Destroy(gameObject);
     }
 }
