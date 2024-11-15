@@ -23,6 +23,14 @@ public class InputManager : Singleton<InputManager>
                     GameManager.Instance.UpdateGameState(GameState.RUNNING);
                 }
             }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Space pressed");
+                GameManager.Instance.UnloadLevel("Village");
+                GameManager.Instance.LoadLevel("MiniJeu3");
+                UIManager.Instance.UpdateMenuState(UIManager.MenuState.ThirdGameMine);
+                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.ThirdGameMine);
+            }
         }
     }
 }

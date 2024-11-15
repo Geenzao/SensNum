@@ -14,6 +14,7 @@ public class GameProgressManager : Singleton<GameProgressManager>
         Mine,
         Factory,
         Residence,
+        ThirdGameMine,
         End
     }
     
@@ -30,10 +31,10 @@ public class GameProgressManager : Singleton<GameProgressManager>
         {
             UpdateGameProgressState(GameProgressState.None);
         }
-        else if (previousState == GameState.PREGAME && currentState == GameState.RUNNING)
-        {
-            UpdateGameProgressState(GameProgressState.Menu);
-        }
+        //else if (previousState == GameState.PREGAME && currentState == GameState.RUNNING)
+        //{
+        //    UpdateGameProgressState(GameProgressState.Menu);
+        //}
     }
 
     public void UpdateGameProgressState(GameProgressState newGameProgressState)
@@ -42,7 +43,7 @@ public class GameProgressManager : Singleton<GameProgressManager>
         _currentGameProgressState = newGameProgressState;
         OnGameProgressStateChange.Invoke(newGameProgressState, oldGameProgressState);
 
-        Debug.LogWarning("Game progress state changed to " + _currentGameProgressState);
+        //Debug.LogWarning("Game progress state changed to " + _currentGameProgressState);
     }
 
     public static GameProgressState CurrentGameProgressState

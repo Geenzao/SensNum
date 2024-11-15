@@ -24,7 +24,8 @@ public class UIManager : Singleton<UIManager>
         None,
         MainMenu,
         PauseMenu,
-        OptionMenu
+        OptionMenu,
+        ThirdGameMine,
     }
 
     //\brief Currently displayed menu
@@ -52,7 +53,7 @@ public class UIManager : Singleton<UIManager>
         if (currentState == GameState.PREGAME && previousState == GameState.RUNNING)
         {
             _UICamera.gameObject.SetActive(false);
-            UpdateMenuState(MenuState.MainMenu);
+            //UpdateMenuState(MenuState.MainMenu);
         }
         else if (currentState == GameState.PAUSED)
         {

@@ -11,7 +11,8 @@ public class GameLogicManager : MonoBehaviour
         GameManager.Instance.OnGameStateChanged.AddListener(HandleGameStateChanged);
 
         GameManager.Instance.LoadLevel("Start", false);
-        HandleGameStateChanged(GameManager.GameState.PREGAME, GameManager.GameState.PREGAME);
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.MainMenu);
+        //HandleGameStateChanged(GameManager.GameState.PREGAME, GameManager.GameState.PREGAME);
 
         //foreach (var evt in InputManager.Instance.PlayerInput.actionEvents)
         //{
@@ -31,18 +32,18 @@ public class GameLogicManager : MonoBehaviour
     private void HandleGameStateChanged(GameManager.GameState newGS, GameManager.GameState oldGS)
     {
         //should not be a switch in case we use oldGS
-        if (newGS == GameManager.GameState.PREGAME)
-        {
-            UIManager.Instance.UpdateMenuState(UIManager.MenuState.MainMenu);
-        }
-        else if (newGS == GameManager.GameState.RUNNING)
-        {
-            UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
-        }
-        else if (newGS == GameManager.GameState.PAUSED)
-        {
-            UIManager.Instance.UpdateMenuState(UIManager.MenuState.PauseMenu);
-        }
+        //if (newGS == GameManager.GameState.PREGAME)
+        //{
+        //    UIManager.Instance.UpdateMenuState(UIManager.MenuState.MainMenu);
+        //}
+        //if (newGS == GameManager.GameState.RUNNING)
+        //{
+        //    UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
+        //}
+        //else if (newGS == GameManager.GameState.PAUSED)
+        //{
+        //    UIManager.Instance.UpdateMenuState(UIManager.MenuState.PauseMenu);
+        //}
         //else if (newGS == GameManager.GameState.FROZEN)
         //{
         //    UIManager.Instance.UpdateMenuState(UIManager.MenuState.Hidden);
