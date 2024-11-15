@@ -1,7 +1,9 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -37,21 +39,29 @@ public class Rectangle
 /*
  *  Fonctionnement du jeux et de la classe : 
  *  
- *      UsineAssemblageGameManager créé des Circuit imprime qui avance sur le tapis roulant seul
+ *      UsineAssemblageGameManager créé des Circuit imprime qui avance sur le tapis roulant tout seul
  *      Il les détruits quand il sont hors de l'image
- *      Il gère le nombre de circuit validé et non validé et Affiche le résultat dans l'UI
+ *      Gere un chronometre en interne pour géré le jeux/fin de la partie/Annalyse des résultats
  *      Gère aussi la destruction des composants laché dans le vide et l'appovisionnement de nouveau composant dans la palette.
  *      
  *      Le joueur clic sur une palette avec la souris pour avoir les composant et les dragAndDrop sur les circuits. 
  *      S'il les drop assez proche, les composant vont se loger au bonne endroit, sinon ils disparaissent
- *      Une fois attaché à un circuit, un composant le suit dans son movement jusqu'à la disparition du circuit.
- *      C'est le circuit qui dit à UsineAssemblageGameManager s'il est validé au non.
+ *      Le joueur doit completer un minium de circuit dans le temps impartie sinon il pert
+ *      Le joueur peut rejouer une parti une fois qu'il a perdu ou gagnier
+ *      
+ *      C'est les circuits qui disent à UsineAssemblageGameManager s'ils sont validé au non juste avant d'être détruit
  *      C'est le circuit qui détruit les composants qui lui sont attaché au moment de sa déstruction.
  *      
- *      Le joueur valide un circuit s'il pose les composant au bonne endroit
- *      Plus le temps avance, plus les circuit avantce vite et les composant deviennent compliqué.
- *      Le joueur gagne la partie s'il fait assez de circuit dans le temps impartie.
+ *      Le scripte UsineAssemblageUIManager gère l'UI, les menus pour le minu jeux. 
+ *      Il y a un enum pour géré les différent Etat du jeux.
  *      
+ */
+
+
+
+/*
+ * TODO : amélioré l'UI
+ * TODO : peut-être ajouter plusieurs partie de plus en plus dificile avec des étoile à gagnier
  */
 
 
@@ -63,47 +73,54 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     public Transform spawnPoint; // Point de départ des circuits imprimés
     public Transform endPoint; //A partir de ce point on est suposé hors de l'écran
     
-    public float circuitSpeed = 0.4f; // Vitesse des circuits sur le tapis
+    public float circuitSpeed = 1f; // Vitesse des circuits sur le tapis
     public float timeLimit = 60f; // Temps limite pour terminer le jeu
     
     private float timeSinceLastSpawn = 0f;
-    private float spawnInterval = 4f;
+    private int spawnInterval = 3; // temps en seconde entre 2 spawn de circuit
     private float timeElapsed = 0f; //Temps écoulé
+    private float secondRemaining = 0; //temps en seconde restant avant la fin du jeux
 
     private bool userHasCliquedOnComponent = false;
     private GameObject currentComponent; // Composant actuellement tenu par le joueur
     private int indexCurrentComponent;
 
 
-    private int nbCircuitWin = 0;
-    private int nbCircuitLose = 0;
-    private int nbCircuitGoal = 10;
+    [SerializeField] private int nbCircuitWin = 0;
+    [SerializeField] private int nbCircuitLose = 0;
+    [SerializeField] private int nbCircuitGoal = 10;
 
 
     private List<GameObject> lstCircuitInGame = new List<GameObject>();    //Contient des ref vers les objects circuit instentié
 
     void Start()
     {
+        secondRemaining = timeLimit;
         StopGame(); //on arrête le jeux au début
     }
 
 
     void Update()
     {
-        // Calcul du temps écoulé
-        timeElapsed += Time.deltaTime;
-
-        //Si le joueur a mis trop longtemps pour arriver au goal il a perdu
-        if (timeElapsed > timeLimit)
+        // Gestion du chronomètre
+        if (Time.timeScale > 0 && secondRemaining > 0)
         {
-            AnnalyseGame();
-        }
+            timeElapsed += Time.deltaTime;
+            secondRemaining = Mathf.Max(0, timeLimit - timeElapsed); // Évite les valeurs négatives
+            UsineAssemblageUIManager.Instance.UpdateTimeRemaining((int)secondRemaining);
 
-        // Vérifie si assez de temps s'est écoulé pour spawn un nouveau circuit
-        if (Time.time - timeSinceLastSpawn >= spawnInterval)
-        {
-            SpawnCircuitImprime();
-            timeSinceLastSpawn = Time.time; // Réinitialise le dernier temps de spawn
+            // Gestion du spawn des circuits
+            if (timeElapsed - timeSinceLastSpawn >= spawnInterval)
+            {
+                SpawnCircuitImprime();
+                timeSinceLastSpawn = timeElapsed;
+            }
+
+            // Vérification de la fin du jeu
+            if (secondRemaining <= 0)
+            {
+                AnnalyseGame();
+            }
         }
 
         //Pour Le jeux Usine Assemblage 
@@ -128,6 +145,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         }
     }
 
+    //pour faire apparaître un nouveau circuit
     void SpawnCircuitImprime()
     {
         int randomIndex = Random.Range(0, tabCircuitImprime.Length);
@@ -262,23 +280,14 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     {
         this.nbCircuitWin += 1;
         UpdateUI();
-        AnnalyseGame();
     }
     public void AddBadCircuit()
     {
         this.nbCircuitLose += 1;
         UpdateUI();
-        AnnalyseGame();
-    }
-    public float GetActualSpeed()
-    {
-        return circuitSpeed;
-    }
-    public float GetEndPosition()
-    {
-        return endPoint.position.x;
     }
 
+    //Pour actualisé l'UI du nombre de circuit fait
     public void UpdateUI()
     {
         UsineAssemblageUIManager.Instance.UbdateUI();
@@ -289,28 +298,72 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     {
         Time.timeScale = 1.0f;
     }
-
+    //pour stoper la game au moment des menus
     public void StopGame()
     {
         Time.timeScale = 0.0f;
     }
 
-    public int GetNbCircuitWin() { return nbCircuitWin; }
-    public int GetNbCircuitLose() { return nbCircuitLose; }
 
+    //On appel cette fonction à la fin d'une game quand le temps est fini 0
     public void AnnalyseGame()
     {
-        if (nbCircuitWin >= nbCircuitGoal && timeElapsed < timeLimit)
+        StopGame();
+
+        if (nbCircuitWin >= nbCircuitGoal/* && timeElapsed < timeLimit*/)
         {
             //Le joueur a ganier
-            StopGame();
             UsineAssemblageUIManager.Instance.PlayerHasWin();
         }
         else
         {
             //Il a perdu
-            StopGame();
             UsineAssemblageUIManager.Instance.PlayerHasLose();
         }
     }
+
+    public void InitialiseGame()
+    {
+        // 1. Réinitialisation des variables de jeu
+        nbCircuitWin = 0;
+        nbCircuitLose = 0;
+        nbCircuitGoal = 10;
+        timeElapsed = 0f;
+        secondRemaining = timeLimit;
+        timeSinceLastSpawn = 0f;
+
+        // 2. Suppression des objets actifs dans le jeu
+        // Supprimer tous les circuits imprimés encore présents
+        foreach (var circuit in lstCircuitInGame)
+        {
+            if (circuit != null)
+            {
+                Destroy(circuit);
+            }
+        }
+        lstCircuitInGame.Clear();
+
+        // Supprimer le composant actuellement tenu par le joueur (s'il existe)
+        if (currentComponent != null)
+        {
+            Destroy(currentComponent);
+            currentComponent = null;
+        }
+        userHasCliquedOnComponent = false;
+
+        // 3. Mettre à jour l'interface utilisateur
+        UsineAssemblageUIManager.Instance.UpdateTimeRemaining((int)secondRemaining);
+        UsineAssemblageUIManager.Instance.UbdateUI();
+
+        // 4. Mettre le jeu en pause pour attendre le lancement
+        StopGame();
+
+        Debug.Log("Jeu initialisé avec succès !");
+    }
+
+    //Getter
+    public int GetNbCircuitWin() { return nbCircuitWin; }
+    public int GetNbCircuitGoal() { return nbCircuitGoal; }
+    public float GetActualSpeed() { return circuitSpeed; }
+    public float GetEndPosition() { return endPoint.position.x; }
 }
