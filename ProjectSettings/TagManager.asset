@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - youngman
+  - Truck
+  - LimitZone
+  - TruckOre
   layers:
   - Default
   - TransparentFX
