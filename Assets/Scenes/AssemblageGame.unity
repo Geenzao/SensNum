@@ -3027,29 +3027,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085505078}
   m_CullTransparentMesh: 1
---- !u!1 &2131631429 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4050670338675251499, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+--- !u!114 &2131631432 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5052865139368601603, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
   m_PrefabInstance: {fileID: 8985387983239267210}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2131631432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131631429}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e11d3956cf4314046978cfe6088e2ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtNbCircuitWin: {fileID: 2030918475}
-  txtTime: {fileID: 594536717}
-  PanelRuler: {fileID: 876540652}
-  PanelInformation: {fileID: 868224690}
-  PanelWin: {fileID: 1088988106}
-  PanelLose: {fileID: 1085000926}
 --- !u!1001 &939309860042558820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3295,34 +3283,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 917376807}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: circuitSpeed
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: spawnInterval
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: txtNbCircuitWin
-      value: 
-      objectReference: {fileID: 2030918475}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: txtNbCircuitGoal
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: txtNbCircuitLose
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: tabComponent.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: tabComposant.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: 'tabComponent.Array.data[0]'
       value: 
       objectReference: {fileID: 1363250619}
@@ -3338,70 +3298,34 @@ PrefabInstance:
       propertyPath: 'tabComponent.Array.data[3]'
       value: 
       objectReference: {fileID: 1402995797}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabComposant.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1363250619}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabComposant.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1358963611}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabComposant.Array.data[2]'
-      value: 
-      objectReference: {fileID: 357904509}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabComposant.Array.data[3]'
-      value: 
-      objectReference: {fileID: 1402995797}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: tabCircuitImprime.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabCircuitImprime.Array.data[0]'
-      value: 
-      objectReference: {fileID: 3791683712339165718, guid: 34624f557b1cf8c47a62e5a03893a3e6, type: 3}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabCircuitImprime.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1044113691205778978, guid: 5631b30849d769443958b8c5b759b93e, type: 3}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabCircuitImprime.Array.data[2]'
-      value: 
-      objectReference: {fileID: 1078576211187360547, guid: c463fa657b7c08549bc486475455fa08, type: 3}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabCircuitImprime.Array.data[3]'
-      value: 
-      objectReference: {fileID: 7432218273918097700, guid: ee31c8154a7b1c54f87111af4f4340f7, type: 3}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabCircuitImprime.Array.data[4]'
-      value: 
-      objectReference: {fileID: 7863635454540852168, guid: 31db07371f2a2a94285abd179e727df6, type: 3}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: tabComposantForCircuit.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabComposantForCircuit.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabComposantForCircuit.Array.data[1]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabComposantForCircuit.Array.data[2]'
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      propertyPath: 'tabComposantForCircuit.Array.data[3]'
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4050670338675251499, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: m_Name
       value: UsineAssemblageManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5052865139368601603, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: txtTime
+      value: 
+      objectReference: {fileID: 594536717}
+    - target: {fileID: 5052865139368601603, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: PanelWin
+      value: 
+      objectReference: {fileID: 1088988106}
+    - target: {fileID: 5052865139368601603, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: PanelLose
+      value: 
+      objectReference: {fileID: 1085000926}
+    - target: {fileID: 5052865139368601603, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: PanelRuler
+      value: 
+      objectReference: {fileID: 876540652}
+    - target: {fileID: 5052865139368601603, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: txtNbCircuitWin
+      value: 
+      objectReference: {fileID: 2030918475}
+    - target: {fileID: 5052865139368601603, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: PanelInformation
+      value: 
+      objectReference: {fileID: 868224690}
     - target: {fileID: 5061802630647721970, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: m_LocalPosition.x
       value: 814.3269
@@ -3445,10 +3369,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4050670338675251499, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2131631432}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

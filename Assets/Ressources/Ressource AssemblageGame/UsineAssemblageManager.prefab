@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5061802630647721970}
   - component: {fileID: 334567059015394569}
+  - component: {fileID: 5052865139368601603}
   m_Layer: 0
   m_Name: UsineAssemblageManager
   m_TagString: Untagged
@@ -44,10 +45,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a9365f88742f84e9c0a670c619450d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabComposant: []
-  tabCircuitImprime:
+  tabComponent:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tabCircuitImprime:
+  - {fileID: 3791683712339165718, guid: 34624f557b1cf8c47a62e5a03893a3e6, type: 3}
+  - {fileID: 1044113691205778978, guid: 5631b30849d769443958b8c5b759b93e, type: 3}
+  - {fileID: 1078576211187360547, guid: c463fa657b7c08549bc486475455fa08, type: 3}
+  - {fileID: 7432218273918097700, guid: ee31c8154a7b1c54f87111af4f4340f7, type: 3}
+  - {fileID: 7863635454540852168, guid: 31db07371f2a2a94285abd179e727df6, type: 3}
   spawnPoint: {fileID: 0}
   endPoint: {fileID: 0}
-  circuitSpeed: 2
+  circuitSpeed: 0.7
   timeLimit: 60
+  nbCircuitWin: 0
+  nbCircuitLose: 0
+  nbCircuitGoal: 10
+  lstPartie:
+  - m_circuitSpeed: 1
+    m_TimePartie: 30
+    m_nbGoal: 5
+  - m_circuitSpeed: 1.5
+    m_TimePartie: 30
+    m_nbGoal: 5
+  - m_circuitSpeed: 2
+    m_TimePartie: 25
+    m_nbGoal: 6
+--- !u!114 &5052865139368601603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050670338675251499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e11d3956cf4314046978cfe6088e2ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtNbCircuitWin: {fileID: 0}
+  txtTime: {fileID: 0}
+  PanelRuler: {fileID: 0}
+  PanelInformation: {fileID: 0}
+  PanelWin: {fileID: 0}
+  PanelLose: {fileID: 0}

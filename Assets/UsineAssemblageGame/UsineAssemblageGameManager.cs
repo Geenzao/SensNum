@@ -35,6 +35,16 @@ public class Rectangle
     }
 }
 
+//comme on va jouer plusieurs partie du même jeux avec des dificulté différente
+//Cette classe sert à save les params d'un parti
+[System.Serializable]
+public class Partie
+{
+    public float m_circuitSpeed = 1f;
+    public int m_TimePartie = 60;
+    public int m_nbGoal = 10;
+}
+
 
 /*
  *  Fonctionnement du jeux et de la classe : 
@@ -92,6 +102,8 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
 
 
     private List<GameObject> lstCircuitInGame = new List<GameObject>();    //Contient des ref vers les objects circuit instentié
+
+    public List<Partie> lstPartie = new List<Partie>(); //lst des partie avec leur param
 
     void Start()
     {
