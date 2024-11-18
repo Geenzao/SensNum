@@ -1,9 +1,4 @@
-using NUnit.Framework;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -83,11 +78,11 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     public Transform spawnPoint; // Point de départ des circuits imprimés
     public Transform endPoint; //A partir de ce point on est suposé hors de l'écran
     
-    public float circuitSpeed = 1f; // Vitesse des circuits sur le tapis
+    public float circuitSpeed = 1.4f; // Vitesse des circuits sur le tapis
     public float timeLimit = 60f; // Temps limite pour terminer le jeu
     
     private float timeSinceLastSpawn = 0f;
-    private int spawnInterval = 3; // temps en seconde entre 2 spawn de circuit
+    private int spawnInterval = 4; // temps en seconde entre 2 spawn de circuit
     private float timeElapsed = 0f; //Temps écoulé
     private float secondRemaining = 0; //temps en seconde restant avant la fin du jeux
 
@@ -95,10 +90,16 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     private GameObject currentComponent; // Composant actuellement tenu par le joueur
     private int indexCurrentComponent;
 
+    //public int test
+    //{
+    //    get { return test; }
+    //    set { test = value; }
+    //}
+
 
     [SerializeField] private int nbCircuitWin = 0;
     [SerializeField] private int nbCircuitLose = 0;
-    [SerializeField] private int nbCircuitGoal = 10;
+    [SerializeField] private int nbCircuitGoal = 5;
 
 
     private List<GameObject> lstCircuitInGame = new List<GameObject>();    //Contient des ref vers les objects circuit instentié
@@ -241,7 +242,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
 
             //ici on a goodIndexComposantPlace qui est égal à la bonne place dans le circuit
             //On teste alors si c'est le bon composant qui va au bonne endroit. Si oui c'est bon.
-            lstCircuitInGame[indexCircuit].GetComponent<CircuitImprime>().FillComposantPlace(currentComponent.GetComponent<Component>().type, goodIndexComposentPlace);
+            lstCircuitInGame[indexCircuit].GetComponent<CircuitImprime>().FillComposantPlace(currentComponent.GetComponent<ComponentCircuit>().type, goodIndexComposentPlace);
         }
         Destroy(currentComponent);
         currentComponent = null;

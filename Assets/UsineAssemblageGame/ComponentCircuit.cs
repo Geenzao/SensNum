@@ -8,11 +8,11 @@ public enum ComponentType
     pink
 }
 
-public class Component : MonoBehaviour
+public class ComponentCircuit : MonoBehaviour
 {
     public ComponentType type;
 
-    public Component(ComponentType type)
+    public ComponentCircuit(ComponentType type)
     {
         this.type = type;
     }

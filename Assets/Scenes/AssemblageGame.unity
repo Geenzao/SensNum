@@ -3283,6 +3283,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 917376807}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: nbCircuitGoal
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: 'tabComponent.Array.data[0]'
       value: 
       objectReference: {fileID: 1363250619}
