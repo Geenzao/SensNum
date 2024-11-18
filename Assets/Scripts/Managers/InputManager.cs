@@ -32,5 +32,14 @@ public class InputManager : Singleton<InputManager>
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.ThirdGameMine);
             }
         }
+        //Pour Le jeux Usine Assemblage 
+        if (Input.GetMouseButtonDown(0))
+        {
+            UsineAssemblageGameManager.Instance.UserClicLeftDown();
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            UsineAssemblageGameManager.Instance.UserClicLeftUp();
+        }
     }
 }
