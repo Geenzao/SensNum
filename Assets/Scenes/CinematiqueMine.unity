@@ -458,9 +458,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d81094e2a00f7499fa46a1a5ef0877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips:
-  - {fileID: 91757845}
-  - {fileID: 398239879}
+  PanelDialogueCinematicUI: {fileID: 1809506171}
+  txtDialogueCinematic: {fileID: 1534364390}
+  tabCinematicBloc:
+  - clips: {fileID: 91757845}
+    dialogueCinematic:
+      sentences:
+      - "Bienvenue \xE0 la mine, camarade. Ici, on ne ch\xF4me pas. Notre objectif
+        ? Extraire les ressources n\xE9cessaires pour faire tourner les machines
+        et produire des circuits imprim\xE9s."
+      - "Regarde bien : cette pelleteuse charge des minerais dans ce camion. Ces
+        minerais seront ensuite envoy\xE9s pour traitement. Chaque ressource a sa
+        valeur et son utilit\xE9 dans la cha\xEEne de production"
+    durationClip: 5
+  - clips: {fileID: 398239879}
+    dialogueCinematic:
+      sentences:
+      - Plus on extrait, plus on progresse.
+      - "Mais attention : une mine qui tourne bien, c\u2019est une mine bien g\xE9r\xE9e."
+      - "Maintenant que tu sais ce qu\u2019il te reste \xE0 faire, au boulot ! On
+        compte sur toi."
+    durationClip: 5
 --- !u!1 &1529681445
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,9 +623,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bienvenue \xE0 la mine, camarade. Ici, on ne ch\xF4me pas. Notre objectif
-    ? Extraire les ressources n\xE9cessaires pour faire tourner les machines et produire
-    des circuits imprim\xE9s.\n\n"
+  m_text: Blablablablablabla...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 746c245ea09fb324491aa22b836e939f, type: 2}
   m_sharedMaterial: {fileID: -533611067209698195, guid: 746c245ea09fb324491aa22b836e939f, type: 2}
@@ -1227,12 +1243,12 @@ GameObject:
   - component: {fileID: 1809506174}
   - component: {fileID: 1809506173}
   m_Layer: 5
-  m_Name: PanelDialogue
+  m_Name: PanelDialogueCinematic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1809506172
 RectTransform:
   m_ObjectHideFlags: 0
