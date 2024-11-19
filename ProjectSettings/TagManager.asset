@@ -8,6 +8,9 @@ TagManager:
   - Truck
   - LimitZone
   - TruckOre
+  - GoldZone
+  - LithiumZone
+  - CopperZone
   layers:
   - Default
   - TransparentFX
