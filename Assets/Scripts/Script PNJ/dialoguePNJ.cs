@@ -18,7 +18,7 @@ public class dialoguePNJ : MonoBehaviour
     public List<Dialogue> listDialogue = new List<Dialogue>();
 
     //Récupère le tag du PNJ
-    private string tag = "";
+    [SerializeField] private string name;
     // Compteur pour suivre le nombre d'interactions avec le PNJ
     private int interactionCount = 0;
     private bool range = false; //pour savoir si le joueur est assez proche
@@ -30,7 +30,6 @@ public class dialoguePNJ : MonoBehaviour
 
     void Start()
     {
-        tag = gameObject.tag;
         InitializeDialogue();
     }
 
@@ -44,7 +43,7 @@ public class dialoguePNJ : MonoBehaviour
             int j = 0;
             while (true)
             {
-                string key = $"pnj_{tag}_{i}_{j}";
+                string key = $"pnj_{name}_{i}_{j}";
                 string text = LanguageManager.Instance.GetText(key);
                 if (text == key) // Si le texte retourné est la clé, cela signifie qu'il n'y a plus de texte pour cette catégorie
                 {
