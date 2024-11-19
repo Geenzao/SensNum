@@ -43516,7 +43516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1553788507433096235, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
       propertyPath: m_TagString
-      value: youngman
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1665576646200592974, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43529,6 +43529,10 @@ PrefabInstance:
     - target: {fileID: 1882874982699414563, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768427979309331750, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
+      propertyPath: name
+      value: youngman
       objectReference: {fileID: 0}
     - target: {fileID: 3768427979309331750, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
       propertyPath: 'tabDialogue.Array.data[0].sentences.Array.data[1]'

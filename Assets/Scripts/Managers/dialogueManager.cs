@@ -23,6 +23,8 @@ public class dialogueManager : Singleton<dialogueManager>
     {
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
 
+        UpdateTexts();
+
         PanelUITextInteraction.SetActive(false);
         dialoguePanelUI.SetActive(false);
 
