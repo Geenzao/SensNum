@@ -145,7 +145,7 @@ public class UIThirdGameMine : Menu
             }
             else
             {
-                winText.text = "T nul PD !";
+                winText.text = "Perdu !";
             }
             Time.timeScale = 0.0f;
             winText.gameObject.SetActive(true);

@@ -26,6 +26,7 @@ public class UIManager : Singleton<UIManager>
         PauseMenu,
         OptionMenu,
         ThirdGameMine,
+        AssemblyGame
     }
 
     //\brief Currently displayed menu
@@ -58,6 +59,21 @@ public class UIManager : Singleton<UIManager>
         else if (currentState == GameState.PAUSED)
         {
             UpdateMenuState(MenuState.PauseMenu);
+        }
+        else if (currentState == GameState.RUNNING)
+        {
+            switch(GameProgressManager.CurrentGameProgressState)
+            {
+                case GameProgressManager.GameProgressState.ThirdGameMine:
+                    UpdateMenuState(MenuState.ThirdGameMine);
+                    break;
+                case GameProgressManager.GameProgressState.AssemblyGame:
+                    UpdateMenuState(MenuState.AssemblyGame);
+                    break;
+                case GameProgressManager.GameProgressState.Start:
+                    UpdateMenuState(MenuState.None);
+                    break;
+            }
         }
         else
         {

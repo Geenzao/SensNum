@@ -1,5 +1,7 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 
 
@@ -18,35 +20,70 @@ public enum UsineAssemblageState
     menu //moment où il y a un menu win ou lose d'afficher
 }
 
-public class UsineAssemblageUIManager : Singleton<UsineAssemblageUIManager>
+public class UsineAssemblageUI : Menu
 {
 
     //Pour l'UI
+    [Header("Text")]
     public TextMeshProUGUI txtNbCircuitWin;
     public TextMeshProUGUI txtTime;
 
+    [Header("Panel")]
     public GameObject PanelRuler;
     public GameObject PanelInformation;
     public GameObject PanelWin;
     public GameObject PanelLose;
 
+    [Header("Button")]
+    public Button btnReplayWin;
+    public Button btnReplayLose;
+    public Button btnQuitWin;
+    public Button btnQuitLose;
+    
+
     private UsineAssemblageState state;
 
-    void Start()
+    protected override void Start()
     {
-        PanelRuler.SetActive(true);
+        base.Start();
+
+        if (UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame)
+        {
+            TriggerVisibility(true);
+        }
+
+        btnReplayWin.onClick.AddListener(OnReplayButtonClicked);
+        btnReplayLose.onClick.AddListener(OnReplayButtonClicked);
+        btnQuitWin.onClick.AddListener(OnQuitButtonClicked);
+        btnQuitLose.onClick.AddListener(OnQuitButtonClicked);
+    }
+
+    protected override void TriggerVisibility(bool visible)
+    {
+        base.TriggerVisibility(visible);
+        Debug.Log("UsineAssemblageUI TriggerVisibility" + visible);
+        PanelRuler.SetActive(visible);
         PanelInformation.SetActive(false);
         PanelWin.SetActive(false);
         PanelLose.SetActive(false);
         state = UsineAssemblageState.rule;
     }
 
+    protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
+    {
+        base.HandleMenuStateChanged(newMS, oldMS);
+        if (newMS == UIManager.MenuState.AssemblyGame)
+            TriggerVisibility(true); //true
+        else
+            TriggerVisibility(false);
+    }
+
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && state == UsineAssemblageState.rule && UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame && GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.AssemblyGame)
         {
-            UsineAssemblageUIManager.Instance.RunGame();
+            RunGame();
         }
     }
 
@@ -92,7 +129,7 @@ public class UsineAssemblageUIManager : Singleton<UsineAssemblageUIManager>
 
 
     //Fct pour rejouer une game
-    public void Replay()
+    public void OnReplayButtonClicked()
     {
         print("Vous voulez Rejouer");
         state = UsineAssemblageState.rule;
@@ -107,7 +144,7 @@ public class UsineAssemblageUIManager : Singleton<UsineAssemblageUIManager>
     }
 
     //Fct pour sortir du mini jeux
-    public void Abandon()
+    public void OnQuitButtonClicked()
     {
         //TODO : a faire
         print("Vous voulez Abandonner");

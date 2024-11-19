@@ -15,6 +15,7 @@ public class GameProgressManager : Singleton<GameProgressManager>
         Factory,
         Residence,
         ThirdGameMine,
+        AssemblyGame,
         End
     }
     
@@ -27,10 +28,10 @@ public class GameProgressManager : Singleton<GameProgressManager>
 
     private void HandleGameStateChanged(GameState currentState, GameState previousState)
     {
-        if (currentState == GameState.PREGAME)
-        {
-            UpdateGameProgressState(GameProgressState.None);
-        }
+        //if (currentState == GameState.PREGAME)
+        //{
+        //    UpdateGameProgressState(GameProgressState.None);
+        //}
         //else if (previousState == GameState.PREGAME && currentState == GameState.RUNNING)
         //{
         //    UpdateGameProgressState(GameProgressState.Menu);
@@ -43,7 +44,20 @@ public class GameProgressManager : Singleton<GameProgressManager>
         _currentGameProgressState = newGameProgressState;
         OnGameProgressStateChange.Invoke(newGameProgressState, oldGameProgressState);
 
-        //Debug.LogWarning("Game progress state changed to " + _currentGameProgressState);
+        if (newGameProgressState == GameProgressState.ThirdGameMine)
+        {
+            UIManager.Instance.UpdateMenuState(MenuState.ThirdGameMine);
+        }
+        else if (newGameProgressState == GameProgressState.AssemblyGame)
+        {
+            UIManager.Instance.UpdateMenuState(MenuState.AssemblyGame);
+        }
+        else if (newGameProgressState == GameProgressState.Start)
+        {
+            UIManager.Instance.UpdateMenuState(MenuState.None);
+        }
+
+        Debug.LogWarning("Game progress state changed to " + _currentGameProgressState);
     }
 
     public static GameProgressState CurrentGameProgressState

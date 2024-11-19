@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5061802630647721970}
   - component: {fileID: 334567059015394569}
-  - component: {fileID: 5052865139368601603}
   m_Layer: 0
   m_Name: UsineAssemblageManager
   m_TagString: Untagged
@@ -73,21 +72,3 @@ MonoBehaviour:
   - m_circuitSpeed: 2
     m_TimePartie: 25
     m_nbGoal: 6
---- !u!114 &5052865139368601603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4050670338675251499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e11d3956cf4314046978cfe6088e2ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txtNbCircuitWin: {fileID: 0}
-  txtTime: {fileID: 0}
-  PanelRuler: {fileID: 0}
-  PanelInformation: {fileID: 0}
-  PanelWin: {fileID: 0}
-  PanelLose: {fileID: 0}

@@ -23,23 +23,20 @@ public class InputManager : Singleton<InputManager>
                     GameManager.Instance.UpdateGameState(GameState.RUNNING);
                 }
             }
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.G))
             {
-                Debug.Log("Space pressed");
+                Debug.Log("G pressed");
                 GameManager.Instance.UnloadLevel("Village");
                 GameManager.Instance.LoadLevel("MiniJeu3");
-                UIManager.Instance.UpdateMenuState(UIManager.MenuState.ThirdGameMine);
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.ThirdGameMine);
             }
-        }
-        //Pour Le jeux Usine Assemblage 
-        if (Input.GetMouseButtonDown(0))
-        {
-            UsineAssemblageGameManager.Instance.UserClicLeftDown();
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            UsineAssemblageGameManager.Instance.UserClicLeftUp();
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                Debug.Log("F pressed");
+                GameManager.Instance.UnloadLevel("Village");
+                GameManager.Instance.LoadLevel("AssemblageGame");
+                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyGame);
+            }
         }
     }
 }

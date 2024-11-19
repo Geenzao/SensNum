@@ -106,8 +106,11 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
 
     public List<Partie> lstPartie = new List<Partie>(); //lst des partie avec leur param
 
+    private UsineAssemblageUI UsineAssemblageUI;
+
     void Start()
     {
+        UsineAssemblageUI = GameObject.Find("AssemblyGameUI").GetComponent<UsineAssemblageUI>();
         secondRemaining = timeLimit;
         StopGame(); //on arrête le jeux au début
     }
@@ -120,7 +123,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         {
             timeElapsed += Time.deltaTime;
             secondRemaining = Mathf.Max(0, timeLimit - timeElapsed); // Évite les valeurs négatives
-            UsineAssemblageUIManager.Instance.UpdateTimeRemaining((int)secondRemaining);
+            UsineAssemblageUI.UpdateTimeRemaining((int)secondRemaining);
 
             // Gestion du spawn des circuits
             if (timeElapsed - timeSinceLastSpawn >= spawnInterval)
@@ -303,7 +306,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     //Pour actualisé l'UI du nombre de circuit fait
     public void UpdateUI()
     {
-        UsineAssemblageUIManager.Instance.UbdateUI();
+        UsineAssemblageUI.UbdateUI();
     }
 
     //Pour lancer la game une fois que le joueur a lu les regles
@@ -326,12 +329,12 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         if (nbCircuitWin >= nbCircuitGoal/* && timeElapsed < timeLimit*/)
         {
             //Le joueur a ganier
-            UsineAssemblageUIManager.Instance.PlayerHasWin();
+            UsineAssemblageUI.PlayerHasWin();
         }
         else
         {
             //Il a perdu
-            UsineAssemblageUIManager.Instance.PlayerHasLose();
+            UsineAssemblageUI.PlayerHasLose();
         }
     }
 
@@ -365,8 +368,8 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         userHasCliquedOnComponent = false;
 
         // 3. Mettre à jour l'interface utilisateur
-        UsineAssemblageUIManager.Instance.UpdateTimeRemaining((int)secondRemaining);
-        UsineAssemblageUIManager.Instance.UbdateUI();
+        UsineAssemblageUI.UpdateTimeRemaining((int)secondRemaining);
+        UsineAssemblageUI.UbdateUI();
 
         // 4. Mettre le jeu en pause pour attendre le lancement
         StopGame();
