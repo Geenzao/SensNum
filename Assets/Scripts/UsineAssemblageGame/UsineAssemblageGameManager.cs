@@ -139,18 +139,6 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
             }
         }
 
-        //Pour Le jeux Usine Assemblage 
-        if (Input.GetMouseButtonDown(0))
-        {
-            //print("Clic Down");
-            UsineAssemblageGameManager.Instance.UserClicLeftDown();
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            //print("Clic Up");
-            UsineAssemblageGameManager.Instance.UserClicLeftUp();
-        }
-
 
         // Si un composant est en cours de suivi, ajuste sa position pour suivre la souris
         if (currentComponent != null )

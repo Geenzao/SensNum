@@ -6,9 +6,15 @@ using static GameManager;
 
 public class InputManager : Singleton<InputManager>
 {
+    private UsineAssemblageUI UsineAssemblageUI;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
+    {
+        UsineAssemblageUI = GameObject.Find("AssemblyGameUI").GetComponent<UsineAssemblageUI>();
+    }
+
+        // Update is called once per frame
+        void Update()
     {
         if (GameManager.CurrentGameState != GameState.PREGAME)
         { 
@@ -36,6 +42,30 @@ public class InputManager : Singleton<InputManager>
                 GameManager.Instance.UnloadLevel("Village");
                 GameManager.Instance.LoadLevel("AssemblageGame");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyGame);
+            }
+            if (Input.GetMouseButtonDown(0) && 
+                UsineAssemblageUI.State == UsineAssemblageState.rule && 
+                UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame && 
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.AssemblyGame)
+            {
+                UsineAssemblageUI.RunGame();
+            }
+
+            if (Input.GetMouseButtonDown(0) &&
+                UsineAssemblageUI.State == UsineAssemblageState.game &&
+                UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame &&
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.AssemblyGame)
+            {
+                //print("Clic Down");
+                UsineAssemblageGameManager.Instance.UserClicLeftDown();
+            }
+            if (Input.GetMouseButtonUp(0) &&
+                UsineAssemblageUI.State == UsineAssemblageState.game &&
+                UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame &&
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.AssemblyGame)
+            {
+                //print("Clic Up");
+                UsineAssemblageGameManager.Instance.UserClicLeftUp();
             }
         }
     }

@@ -78,16 +78,6 @@ public class UsineAssemblageUI : Menu
             TriggerVisibility(false);
     }
 
-
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && state == UsineAssemblageState.rule && UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame && GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.AssemblyGame)
-        {
-            RunGame();
-        }
-    }
-
-
     public void UbdateUI()
     {
         string txt = "Circuit réalisé : "+ UsineAssemblageGameManager.Instance.GetNbCircuitWin().ToString() + "/" + UsineAssemblageGameManager.Instance.GetNbCircuitGoal().ToString();
@@ -148,5 +138,11 @@ public class UsineAssemblageUI : Menu
     {
         //TODO : a faire
         print("Vous voulez Abandonner");
+    }
+
+    //Getter state
+    public UsineAssemblageState State
+    {
+        get { return state; }
     }
 }

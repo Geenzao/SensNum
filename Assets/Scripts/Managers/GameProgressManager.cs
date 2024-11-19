@@ -57,6 +57,22 @@ public class GameProgressManager : Singleton<GameProgressManager>
             UIManager.Instance.UpdateMenuState(MenuState.None);
         }
 
+        switch(newGameProgressState)
+        {
+            case GameProgressState.ThirdGameMine:
+                UIManager.Instance.UpdateMenuState(MenuState.ThirdGameMine);
+                break;
+            case GameProgressState.AssemblyGame:
+                UIManager.Instance.UpdateMenuState(MenuState.AssemblyGame);
+                break;
+            case GameProgressState.Start:
+                UIManager.Instance.UpdateMenuState(MenuState.None);
+                break;
+            default:
+                Debug.LogWarning("Aucun Game Progress detecté");
+                break;
+        }
+
         Debug.LogWarning("Game progress state changed to " + _currentGameProgressState);
     }
 
