@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: 72be8747fa3231b459df719aa2e710c9
   - enabled: 1
-    path: Assets/Scenes/Mine/MiniJeu3.unity
+    path: Assets/Scenes/MiniJeux/Mine/Mine3emeJeux.unity
     guid: 4c090d5796c0fef4b933749a4ac2f09b
   - enabled: 1
     path: Assets/Scenes/AssemblageGame.unity

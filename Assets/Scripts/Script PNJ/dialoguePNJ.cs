@@ -18,7 +18,7 @@ public class dialoguePNJ : MonoBehaviour
     public List<Dialogue> listDialogue = new List<Dialogue>();
 
     //Récupère le tag du PNJ
-    [SerializeField] private string name;
+    [SerializeField] private new string name;
     // Compteur pour suivre le nombre d'interactions avec le PNJ
     private int interactionCount = 0;
     private bool range = false; //pour savoir si le joueur est assez proche

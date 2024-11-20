@@ -116,7 +116,7 @@ public class dialogueManager : Singleton<dialogueManager>
         if (dialoguePnjRef != null && dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>())
             dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>().PnjDontTalk();
         else
-            Debug.LogWarning("Il y a un probl�me avec le scripte MouvementPNJ");
+            Debug.LogWarning("Il y a un problème avec le script MouvementPNJ");
 
     }
 
