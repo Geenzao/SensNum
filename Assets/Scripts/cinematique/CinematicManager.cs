@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 
 /*
@@ -26,13 +27,6 @@ public class CinematicManager : MonoBehaviour
 
         [Header("Dialogue Cinematic")]
         public Dialogue dialogueCinematic; // Sera diffusé pendant le clip en parallèle
-
-        public float durationClip = 1.0f; // temps du clip à l'écran
-
-        // pour le temps que seront afficher les phrases
-        private float timeDialogue;
-        public float getTimeDialogue() { return timeDialogue; }
-        public void setTimeDialogue(float t) { timeDialogue = t; }
     }
 
     [Header("UI")]
@@ -41,8 +35,9 @@ public class CinematicManager : MonoBehaviour
 
     private int currentCinematicClipIndex = 0; // Index du clip actuel
     private int currentSentenceIndex = 0; // Index de la phrase actuelle
-    private float timeElapsedClip = 0f; // Temps écoulé pour le clip actuel
-    private float timeElapsedDialogue = 0f; // Temps écoulé pour le dialogue
+
+    private Coroutine currentCoroutine = null; // Référence à la coroutine actuelle
+
 
     public CinematicBloc[] tabCinematicBloc;
 
@@ -53,7 +48,6 @@ public class CinematicManager : MonoBehaviour
         {
             bloc.clips.isRening = false;
             bloc.clips.gameObject.SetActive(false);
-            bloc.setTimeDialogue(bloc.durationClip / bloc.dialogueCinematic.sentences.Length);
         }
 
         PanelDialogueCinematicUI.SetActive(false);
@@ -71,27 +65,31 @@ public class CinematicManager : MonoBehaviour
         if (currentCinematicClipIndex >= tabCinematicBloc.Length)
         {
             Time.timeScale = 0;
-            Debug.Log("Toutes les cinématiques sont terminées !");
+            //Debug.Log("Toutes les cinématiques sont terminées !");
             return;
         }
 
-        // Mise à jour du temps écoulé
-        timeElapsedClip += Time.deltaTime;
-        timeElapsedDialogue += Time.deltaTime;
 
-        // Gestion des dialogues
-        var currentBloc = tabCinematicBloc[currentCinematicClipIndex];
-        if (currentSentenceIndex < currentBloc.dialogueCinematic.sentences.Length &&
-            timeElapsedDialogue >= currentBloc.getTimeDialogue())
+        // Si clic de souris, gérer le dialogue ou changer de cinématique
+        if (Input.GetMouseButtonDown(0)) // Clic gauche de la souris
+        {
+            HandleDialogueOrClipTransition();
+        }
+    }
+
+    private void HandleDialogueOrClipTransition()
+    {
+        CinematicBloc currentBloc = tabCinematicBloc[currentCinematicClipIndex];
+
+        // Si des phrases restent à afficher
+        if (currentSentenceIndex < currentBloc.dialogueCinematic.sentences.Length)
         {
             DisplaySentence(currentSentenceIndex);
             currentSentenceIndex++;
-            timeElapsedDialogue = 0f; // Réinitialisation du temps pour la prochaine phrase
         }
-
-        // Gestion de la fin du clip
-        if (timeElapsedClip >= currentBloc.durationClip)
+        else
         {
+            // Si toutes les phrases ont été affichées, passer au clip suivant
             EndCinematic(currentCinematicClipIndex);
             currentCinematicClipIndex++;
 
@@ -99,52 +97,70 @@ public class CinematicManager : MonoBehaviour
             {
                 StartCinematic(currentCinematicClipIndex);
             }
+            else
+            {
+                //Debug.Log("Toutes les cinématiques ont été jouées !");
+            }
         }
     }
 
     private void StartCinematic(int index)
     {
-        Debug.Log($"Démarrage du clip : {tabCinematicBloc[index].clips.gameObject.name}");
+        //Debug.Log($"Démarrage du clip : {tabCinematicBloc[index].clips.gameObject.name}");
 
         var currentBloc = tabCinematicBloc[index];
-        timeElapsedClip = 0f;
-        timeElapsedDialogue = 0f;
-        currentSentenceIndex = 0;
+        currentSentenceIndex = 0; // Réinitialiser l'indice des phrases
 
-        // Activation du clip et du panneau de dialogue
+        // Activer le clip et le panneau de dialogue
         currentBloc.clips.gameObject.SetActive(true);
         currentBloc.clips.isRening = true;
         PanelDialogueCinematicUI.SetActive(true);
 
-        // Affichage de la première phrase
+        // Afficher la première phrase
         if (currentBloc.dialogueCinematic.sentences.Length > 0)
         {
             DisplaySentence(0);
+            currentSentenceIndex++;
         }
     }
 
     private void EndCinematic(int index)
     {
-        Debug.Log($"Fin du clip : {tabCinematicBloc[index].clips.gameObject.name}");
-
+        //Debug.Log($"Fin du clip : {tabCinematicBloc[index].clips.gameObject.name}");
         var currentBloc = tabCinematicBloc[index];
         currentBloc.clips.gameObject.SetActive(false);
         currentBloc.clips.isRening = false;
 
-        // Désactivation du panneau de dialogue
+        // Désactiver le panneau de dialogue
         PanelDialogueCinematicUI.SetActive(false);
     }
 
     private void DisplaySentence(int sentenceIndex)
     {
-        var dialogue = tabCinematicBloc[currentCinematicClipIndex].dialogueCinematic;
+        Dialogue dialogue = tabCinematicBloc[currentCinematicClipIndex].dialogueCinematic;
 
         if (sentenceIndex < dialogue.sentences.Length)
         {
-            string txt = dialogue.sentences[sentenceIndex];
-            txtDialogueCinematic.text = txt;
-            Debug.Log($"Affichage de la phrase : {dialogue.sentences[sentenceIndex]}");
+            //empecher affichage de plusieur phrase si appuy sur suivant avaant la fin de la premiere coroutine
+            if (currentCoroutine != null)
+            {
+                StopCoroutine(currentCoroutine);
+            }
+            currentCoroutine = StartCoroutine(LettreParLettre(dialogue.sentences[sentenceIndex]));
+            //Debug.Log($"Affichage de la phrase : {dialogue.sentences[sentenceIndex]}");
         }
+    }
+
+    IEnumerator LettreParLettre(string sentence)
+    {
+        txtDialogueCinematic.text = "";
+        foreach (char lettre in sentence.ToCharArray())
+        {
+            txtDialogueCinematic.text += lettre;
+            yield return new WaitForSeconds(0.005f);
+        }
+
+        currentCoroutine = null; // La coroutine est terminée
     }
 }
 
