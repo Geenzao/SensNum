@@ -18,6 +18,7 @@ public class dialogueManager : Singleton<dialogueManager>
 
     private dialoguePNJ dialoguePnjRef = null;
 
+    private Coroutine currentCoroutine = null; // Référence à la coroutine actuelle
 
     private void Start()
     {
@@ -93,8 +94,12 @@ public class dialogueManager : Singleton<dialogueManager>
         }
 
         string sentence = qSentences.Dequeue();
-        StopAllCoroutines();//empecher affichage de plusieur phrase si appuy sur suivant avaant la fin de la premiere coroutine
-        StartCoroutine(LettreParLettre(sentence));
+        //empecher affichage de plusieur phrase si appuy sur suivant avaant la fin de la premiere coroutine
+        if (currentCoroutine != null)
+        {
+            StopCoroutine(currentCoroutine);
+        }
+        currentCoroutine = StartCoroutine(LettreParLettre(sentence));
     }
 
     IEnumerator LettreParLettre(string sentence)
@@ -105,6 +110,7 @@ public class dialogueManager : Singleton<dialogueManager>
             dialogueTextUI.text += lettre;
             yield return new WaitForSeconds(0.01f);
         }
+        currentCoroutine = null; // La coroutine est terminée
     }
 
     public void EndDialogue()
@@ -130,3 +136,15 @@ public class dialogueManager : Singleton<dialogueManager>
         interactionKey.text = LanguageManager.Instance.GetText("interaction_key");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
