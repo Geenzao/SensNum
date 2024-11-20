@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using UnityEngine;
 using static TMPro.Examples.ObjectSpin;
 
@@ -16,6 +17,7 @@ public class PuceBoard : MonoBehaviour
     //get a reference to the collection nodes puceBoard + GO
     public Node[,] puceBoard;
     public GameObject puceBoardGO;
+    public GameObject pucesParent;
 
     public List<GameObject> pucesToDestroy = new();
 
@@ -30,6 +32,8 @@ public class PuceBoard : MonoBehaviour
     public ArrayLayout arrayLayout;
     //public static of puceboard
     public static PuceBoard Instance;
+
+    private List<Puce> pucesToRemove = new();
 
     private void Awake()
     {
@@ -81,6 +85,7 @@ public class PuceBoard : MonoBehaviour
                     int randomIndex = Random.Range(0, pucePrefabs.Length);
 
                     GameObject puce = Instantiate(pucePrefabs[randomIndex], position, Quaternion.identity);
+                    puce.transform.SetParent(pucesParent.transform);
                     puce.GetComponent<Puce>().SetIndicies(x, y);
                     puceBoard[x, y] = new Node(true, puce);
 
@@ -117,7 +122,15 @@ public class PuceBoard : MonoBehaviour
         Debug.Log("Checking Board");
         bool hasMatched = false;
 
-        List<Puce> pucesToRemove = new();
+        pucesToRemove.Clear();
+
+        foreach (Node node in puceBoard) 
+        { 
+            if(node.puce != null)
+            {
+                node.puce.GetComponent<Puce>().isMatched = false;
+            }
+        }
 
         for (int x = 0; x < width; x++)
         {
@@ -138,11 +151,11 @@ public class PuceBoard : MonoBehaviour
 
                         if (matchedPuces.connectedPuces.Count >= 3)
                         {
-                            //MatchResult superMatchedPuce = SuperMatch(matchedPuces);
+                            MatchResult superMatchedPuce = SuperMatch(matchedPuces);
 
-                            pucesToRemove.AddRange(matchedPuces.connectedPuces);
+                            pucesToRemove.AddRange(superMatchedPuce.connectedPuces);
 
-                            foreach (Puce p in matchedPuces.connectedPuces)
+                            foreach (Puce p in superMatchedPuce.connectedPuces)
                                 p.isMatched = true;
 
                             hasMatched = true;
@@ -155,10 +168,154 @@ public class PuceBoard : MonoBehaviour
         return hasMatched;
     }
 
-    //private MatchResult SuperMatch(MatchResult matchedPuces)
-    //{
+    public IEnumerator ProcessTurnOnMatchedBoard(bool _subtractMoves)
+    {
+        foreach (Puce puceToRemove in pucesToRemove)
+        {
+            puceToRemove.isMatched = false;
+        }
+
+        RemoveAndRefill(pucesToRemove);
+        yield return new WaitForSeconds(0.4f);
+
+        if (CheckBoard())
+        {
+            StartCoroutine(ProcessTurnOnMatchedBoard(false));
+        }
+    }
+
+    private void RemoveAndRefill(List<Puce> pucesToRemove)
+    {
+        foreach (Puce p in pucesToRemove) 
+        {
+            int xIndex = p.xIndex;
+            int yIndex = p.yIndex;
+
+            Destroy(p.gameObject);
+
+            puceBoard[xIndex, yIndex] = new Node(true, null);
+        }
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                if (puceBoard[x,y].puce == null)
+                    RefillPotion(x, y);
+            }
+        } 
+    }
+
+    private void RefillPotion(int x, int y)
+    {
+        int yOffset = 1;
+
+        while (y + yOffset < height && puceBoard[x,y+yOffset].puce == null) 
+        {
+            yOffset++;
+        }
+        if (y + yOffset < height && puceBoard[x, y + yOffset].puce != null)
+        {
+            Puce puceAbove = puceBoard[x, y+yOffset].puce.GetComponent<Puce>();
+            Vector3 targetPos = new Vector3(x - spacingX, y - spacingY, puceAbove.transform.position.z);
+            puceAbove.MoveToTarget(targetPos);
+            puceAbove.SetIndicies(x, y);
+            puceBoard[x, y] = puceBoard[x, y + yOffset];
+            puceBoard[x, y + yOffset] = new Node(true,null);
+        }
+        if (y + yOffset == height)
+        {
+            SpawnPuceAtTop(x);
+        }
+
+
+    }
+
+    private void SpawnPuceAtTop(int x)
+    {
+        int index = FindIndexOfLowestNull(x);
+        int locationToMoveTo = 8 - index;
         
-    //}
+        int randomIndex = Random.Range(0,pucePrefabs.Length);
+        GameObject newPuce = Instantiate(pucePrefabs[randomIndex], new Vector2(x - spacingX,height - spacingY), Quaternion.identity);
+        newPuce.transform.SetParent(pucesParent.transform);
+
+        newPuce.GetComponent<Puce>().SetIndicies(x,index);
+        puceBoard[x,index]= new Node(true,newPuce);
+        Vector3 targetPosition = new Vector3(newPuce.transform.position.x, newPuce.transform.position.y - locationToMoveTo, newPuce.transform.position.z);
+        newPuce.GetComponent<Puce>().MoveToTarget(targetPosition);
+    }
+
+    private int FindIndexOfLowestNull(int x) 
+    {
+        int lowestNull = 99;
+        for (int y = 7; y >= 0; y--)
+        {
+            if (puceBoard[x,y].puce == null)
+            {
+                lowestNull = y;
+            }
+        }
+        return lowestNull; 
+    }
+
+    private MatchResult SuperMatch(MatchResult matchedResults)
+    {
+        if(matchedResults.direction == MatchDirection.Horizontal || matchedResults.direction == MatchDirection.LongHorizontal)
+        {
+            foreach(Puce p in matchedResults.connectedPuces)
+            {
+                List<Puce> extraConnectedPuces = new();
+
+                CheckDirection(p, new Vector2Int(0, 1), extraConnectedPuces);
+                CheckDirection(p, new Vector2Int(0, -1), extraConnectedPuces);
+
+                if (extraConnectedPuces.Count >= 2) 
+                {
+                    Debug.Log("I have a super Horizontal Match");
+                    extraConnectedPuces.AddRange(matchedResults.connectedPuces);
+
+                    return new MatchResult
+                    {
+                        connectedPuces = extraConnectedPuces,
+                        direction = MatchDirection.Super,
+                    };
+                }
+            }
+            return new MatchResult
+            {
+                connectedPuces = matchedResults.connectedPuces,
+                direction = matchedResults.direction
+            };
+        }
+        else if (matchedResults.direction == MatchDirection.Vertical || matchedResults.direction == MatchDirection.LongVertical)
+        {
+            foreach (Puce p in matchedResults.connectedPuces)
+            {
+                List<Puce> extraConnectedPuces = new();
+
+                CheckDirection(p, new Vector2Int(1, 0), extraConnectedPuces);
+                CheckDirection(p, new Vector2Int(-1, 0), extraConnectedPuces);
+
+                if (extraConnectedPuces.Count >= 2)
+                {
+                    Debug.Log("I have a super Vertical Match");
+                    extraConnectedPuces.AddRange(matchedResults.connectedPuces);
+
+                    return new MatchResult
+                    {
+                        connectedPuces = extraConnectedPuces,
+                        direction = MatchDirection.Super,
+                    };
+                }
+            }
+            return new MatchResult
+            {
+                connectedPuces = matchedResults.connectedPuces,
+                direction = matchedResults.direction
+            };
+        }
+        return null;
+    }
 
     MatchResult IsConnected(Puce puce)
     {
@@ -324,9 +481,12 @@ public class PuceBoard : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
 
-        bool hasMatch = CheckBoard();
+        if (CheckBoard())
+        {
+            StartCoroutine(ProcessTurnOnMatchedBoard(true));
+        }
 
-        if (!hasMatch)
+        else 
         {
             DoSwap(crurrentPuce, targetPuce);
         }
@@ -342,6 +502,7 @@ public class PuceBoard : MonoBehaviour
 
 }
 
+#region Match 
 public class MatchResult
 {
     public List<Puce> connectedPuces;
@@ -358,4 +519,11 @@ public enum MatchDirection
     None
 }
 
+#endregion
 
+#region cascadin puce
+
+
+
+
+#endregion

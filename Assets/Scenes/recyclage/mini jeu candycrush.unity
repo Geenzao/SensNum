@@ -256,6 +256,37 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &359320109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 359320110}
+  m_Layer: 0
+  m_Name: Puce
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &359320110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359320109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152619295
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,6 +342,10 @@ MonoBehaviour:
   - {fileID: 8442879411055296981, guid: 2e716743adba6c34ea21775f89526012, type: 3}
   - {fileID: 3677454253667574952, guid: bf2fca84dd542bb4380a4f8bf8bd9436, type: 3}
   puceBoardGO: {fileID: 0}
+  pucesParent: {fileID: 359320109}
+  pucesToDestroy: []
+  selectedPuce: {fileID: 0}
+  isProcessingMove: 0
   arrayLayout:
     rows:
     - row: 000000000000
@@ -327,3 +362,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 313605094}
   - {fileID: 1152619296}
+  - {fileID: 359320110}
