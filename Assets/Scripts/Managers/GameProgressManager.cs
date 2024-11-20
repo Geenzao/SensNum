@@ -44,19 +44,6 @@ public class GameProgressManager : Singleton<GameProgressManager>
         _currentGameProgressState = newGameProgressState;
         OnGameProgressStateChange.Invoke(newGameProgressState, oldGameProgressState);
 
-        if (newGameProgressState == GameProgressState.ThirdGameMine)
-        {
-            UIManager.Instance.UpdateMenuState(MenuState.ThirdGameMine);
-        }
-        else if (newGameProgressState == GameProgressState.AssemblyGame)
-        {
-            UIManager.Instance.UpdateMenuState(MenuState.AssemblyGame);
-        }
-        else if (newGameProgressState == GameProgressState.Start)
-        {
-            UIManager.Instance.UpdateMenuState(MenuState.None);
-        }
-
         switch(newGameProgressState)
         {
             case GameProgressState.ThirdGameMine:
