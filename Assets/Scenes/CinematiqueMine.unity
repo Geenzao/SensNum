@@ -119,6 +119,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &91757845 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5705231387245673517, guid: b914b0c15d93372468427565e00e3b64, type: 3}
+  m_PrefabInstance: {fileID: 7690954739614515004}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1598987bf06464f8b6f818096257c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &398239879 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7500897282328762721, guid: a8dc801a65b8bf64ca9d10f1b3a0c9a2, type: 3}
+  m_PrefabInstance: {fileID: 5318362391014650589}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1598987bf06464f8b6f818096257c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1797849129
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,6 +470,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8794018918911592493, guid: 2ad4e33917f674247829c1d80e5d23d0, type: 3}
+      propertyPath: tabCinematicBloc.Array.data[0].clips
+      value: 
+      objectReference: {fileID: 91757845}
+    - target: {fileID: 8794018918911592493, guid: 2ad4e33917f674247829c1d80e5d23d0, type: 3}
+      propertyPath: tabCinematicBloc.Array.data[1].clips
+      value: 
+      objectReference: {fileID: 398239879}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

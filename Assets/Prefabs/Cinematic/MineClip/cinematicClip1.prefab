@@ -277,7 +277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7213338024200028823
 Transform:
   m_ObjectHideFlags: 0
@@ -323,7 +323,7 @@ MonoBehaviour:
   stepSpeed: 0.1
   tabSpeedLayer: []
   resetTime: 10
-  isRening: 0
+  isRening: 1
 --- !u!1 &5528112455446407935
 GameObject:
   m_ObjectHideFlags: 0
