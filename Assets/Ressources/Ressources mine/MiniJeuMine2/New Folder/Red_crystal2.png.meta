@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 839d07551ee9072429695c12f1960537
+guid: 98e5f7b935e0ef74cb3719c08c1ab3c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1827954403707261899
-    second: Rock2_2_no_shadow_0
+      213: 2610711356606983536
+    second: Red_crystal2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rock2_2_no_shadow_0
+      name: Red_crystal2_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 11
-        width: 45
-        height: 44
+        x: 10
+        y: 9
+        width: 41
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53cea6d972dc1a6e0800000000000000
-      internalID: -1827954403707261899
+      spriteID: 07d23ad852c1b3420800000000000000
+      internalID: 2610711356606983536
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rock2_2_no_shadow_0: -1827954403707261899
+      Red_crystal2_0: 2610711356606983536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

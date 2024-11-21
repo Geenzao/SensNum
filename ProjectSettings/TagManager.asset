@@ -8,9 +8,15 @@ TagManager:
   - Truck
   - LimitZone
   - TruckOre
+  - Gold
+  - Copper
+  - Lithium
+  - Rocks
+  - Clickable
+  - DropZone
   - GoldZone
-  - LithiumZone
   - CopperZone
+  - LithiumZone
   layers:
   - Default
   - TransparentFX
