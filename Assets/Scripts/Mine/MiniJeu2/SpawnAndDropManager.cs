@@ -7,7 +7,6 @@ public class SpawnAndDropManager : MonoBehaviour
     [SerializeField] private Vector2 zoneSize;
     [SerializeField] private float spawnInterval = 1f;
 
-    public GameObject btnVert;
     private bool gameStarted = false; // Variable pour suivre l'état du jeu
 
     void Start()
@@ -15,27 +14,7 @@ public class SpawnAndDropManager : MonoBehaviour
         // Ne rien faire au démarrage
     }
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
-
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition2D, Vector2.zero);
-
-            if (hit.collider != null && hit.collider.CompareTag("Clickable"))
-            {
-                if (btnVert != null)
-                {
-                    btnVert.SetActive(false); // Désactiver l'objet cible
-                    StartGame(); // Démarrer le jeu
-                }
-            }
-        }
-    }
-
-    void StartGame()
+    public void StartGame()
     {
         if (!gameStarted)
         {

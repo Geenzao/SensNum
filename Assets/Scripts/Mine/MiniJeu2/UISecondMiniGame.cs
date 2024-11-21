@@ -12,6 +12,9 @@ public class UISecondMiniGame : MonoBehaviour
     public TextMeshProUGUI texteDebut;
     public TextMeshProUGUI texteFin;
 
+    public GameObject btnVert;
+    public SpawnAndDropManager spawnAndDropManager; // Référence au SpawnAndDropManager
+
     public float timer = 30.0f;
     private bool isStopped = false;
     private bool gameStarted = false;
@@ -48,17 +51,35 @@ public class UISecondMiniGame : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && !gameStarted)
         {
-            StartGame();
+            CheckForStartButtonClick();
         }
 
         UpdateUI();
     }
 
-    private void StartGame()
+    private void CheckForStartButtonClick()
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mousePosition2D = new Vector2(mousePosition.x, mousePosition.y);
+
+        RaycastHit2D hit = Physics2D.Raycast(mousePosition2D, Vector2.zero);
+
+        if (hit.collider != null && hit.collider.gameObject == btnVert)
+        {
+            StartGame();
+        }
+    }
+
+    public void StartGame()
     {
         Time.timeScale = 1.0f;
         gameStarted = true;
         texteDebut.gameObject.SetActive(false);
+        if (btnVert != null)
+        {
+            btnVert.SetActive(false); // Cache le bouton après le démarrage du jeu
+        }
+        spawnAndDropManager.StartGame(); // Notifie le SpawnAndDropManager de démarrer le jeu
     }
 
     private void EndGame()
