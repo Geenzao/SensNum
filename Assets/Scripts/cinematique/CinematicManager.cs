@@ -3,6 +3,8 @@ using System.Collections;
 using TMPro;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEngine.UI;
+using System;
 
 
 /*
@@ -16,7 +18,7 @@ using Unity.VisualScripting;
  *
  */
 
-public class CinematicManager : MonoBehaviour
+public class CinematicManager : Singleton<CinematicManager>
 {
     //Le bloc permet de lié un clip à un dialogue
     [System.Serializable]
@@ -32,12 +34,14 @@ public class CinematicManager : MonoBehaviour
     [Header("UI")]
     public GameObject PanelDialogueCinematicUI;
     public TextMeshProUGUI txtDialogueCinematic;
+    public Button btnSkip; //pour passé la cinematique
 
     private int currentCinematicClipIndex = 0; // Index du clip actuel
     private int currentSentenceIndex = 0; // Index de la phrase actuelle
 
     private Coroutine currentCoroutine = null; // Référence à la coroutine actuelle
 
+    private bool wantToSkip = false;
 
     public CinematicBloc[] tabCinematicBloc;
 
@@ -57,15 +61,16 @@ public class CinematicManager : MonoBehaviour
         {
             StartCinematic(0);
         }
+
+        btnSkip.onClick.AddListener(OnSkipButtonClicked);
     }
 
     private void Update()
     {
         // Si toutes les cinématiques sont jouées, on arrête
-        if (currentCinematicClipIndex >= tabCinematicBloc.Length)
+        if (currentCinematicClipIndex >= tabCinematicBloc.Length || wantToSkip == true)
         {
-            Time.timeScale = 0;
-            //Debug.Log("Toutes les cinématiques sont terminées !");
+            EndCinematic();
             return;
         }
 
@@ -73,7 +78,7 @@ public class CinematicManager : MonoBehaviour
         // Si clic de souris, gérer le dialogue ou changer de cinématique
         if (Input.GetMouseButtonDown(0)) // Clic gauche de la souris
         {
-            HandleDialogueOrClipTransition();
+            CinematicManager.Instance.HandleDialogueOrClipTransition();
         }
     }
 
@@ -90,7 +95,7 @@ public class CinematicManager : MonoBehaviour
         else
         {
             // Si toutes les phrases ont été affichées, passer au clip suivant
-            EndCinematic(currentCinematicClipIndex);
+            EndCinematicClip(currentCinematicClipIndex);
             currentCinematicClipIndex++;
 
             if (currentCinematicClipIndex < tabCinematicBloc.Length)
@@ -98,9 +103,7 @@ public class CinematicManager : MonoBehaviour
                 StartCinematic(currentCinematicClipIndex);
             }
             else
-            {
-                //Debug.Log("Toutes les cinématiques ont été jouées !");
-            }
+                Debug.Log("Toutes les cinématiques ont été jouées !");
         }
     }
 
@@ -124,7 +127,7 @@ public class CinematicManager : MonoBehaviour
         }
     }
 
-    private void EndCinematic(int index)
+    private void EndCinematicClip(int index)
     {
         //Debug.Log($"Fin du clip : {tabCinematicBloc[index].clips.gameObject.name}");
         var currentBloc = tabCinematicBloc[index];
@@ -162,6 +165,25 @@ public class CinematicManager : MonoBehaviour
 
         currentCoroutine = null; // La coroutine est terminée
     }
-}
 
+    public void OnSkipButtonClicked()
+    {
+        print("Vous voulez skip la cinematique");
+        wantToSkip = true; // le joueur veux passer la cinematic
+    }
+
+    public void EndCinematic()
+    {
+        Debug.Log("On arrete la cinematique !");
+        PanelDialogueCinematicUI.SetActive(false);
+
+        // Vérifiez si l'index est dans les limites avant d'appeler EndCinematicClip
+        if (currentCinematicClipIndex < tabCinematicBloc.Length)
+        {
+            EndCinematicClip(currentCinematicClipIndex);
+        }
+
+        //TODO : faire la logique pour lancer la scene de jeux Mine
+    }
+}
 
