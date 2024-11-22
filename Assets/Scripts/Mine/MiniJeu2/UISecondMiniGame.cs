@@ -13,6 +13,8 @@ public class UISecondMiniGame : MonoBehaviour
     public TextMeshProUGUI texteFin;
 
     public GameObject btnVert;
+    public GameObject panelTexteDebut;
+    public GameObject panelTexteFin;
     public SpawnAndDropManager spawnAndDropManager; // Référence au SpawnAndDropManager
 
     public float timer = 30.0f;
@@ -74,7 +76,8 @@ public class UISecondMiniGame : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         gameStarted = true;
-        texteDebut.gameObject.SetActive(false);
+        /*texteDebut.gameObject.SetActive(false);*/
+        panelTexteDebut.gameObject.SetActive(false);
         if (btnVert != null)
         {
             btnVert.SetActive(false); // Cache le bouton après le démarrage du jeu
@@ -89,7 +92,8 @@ public class UISecondMiniGame : MonoBehaviour
             isStopped = true;
             texteFin.text = "Fin du jeu !\nOr : " + dropZone.CptOr + "\nCuivre : " + dropZone.CptCu + "\nLithium : " + dropZone.CptLi;
             Time.timeScale = 0.0f;
-            texteFin.gameObject.SetActive(true);
+            /*texteFin.gameObject.SetActive(true);*/
+            panelTexteFin.gameObject.SetActive(true);
         }
     }
 
