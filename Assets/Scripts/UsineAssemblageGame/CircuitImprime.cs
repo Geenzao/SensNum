@@ -12,19 +12,22 @@ public class ComponentPlace
     public ComponentType typeAccepted;         // Type de composant attendu (ex. red, gray, etc.)
     public bool isFill = false;
 }
- 
+
 public class CircuitImprime : MonoBehaviour
 {
     public List<ComponentPlace> lstComponentPlaceOnCircuit;  // Liste des composants et leurs positions sur le circuit
-    
+
     private float speed = 0;
     private float endPositionX;
+    private float positionSpawnOther;//Si le circuit atteint ce point, il dit au manager de faire apparaît un autre circuit
     public bool isValid = false;
-    
+    private bool isAbleToSpawnOtherCircuit = true; //un circuit ne peut faire spawn un autre qu'une seul fois
+
     void Start()
     {
         this.speed = UsineAssemblageGameManager.Instance.GetActualSpeed();
         this.endPositionX = UsineAssemblageGameManager.Instance.GetEndPosition();
+        this.positionSpawnOther = UsineAssemblageGameManager.Instance.GetSpawnInterval();
     }
 
 
@@ -64,6 +67,14 @@ public class CircuitImprime : MonoBehaviour
 
             DestroyThis();
         }
+
+        //SI on a atteint un point précis, on dit au manager de faire apparaitre un autre circuit
+        if (Mathf.Abs(transform.position.x - positionSpawnOther) <= 0.04 && isAbleToSpawnOtherCircuit)
+        {
+            print("SPAWN OTHER CIRCUIT");
+            UsineAssemblageGameManager.Instance.SpawnCircuitImprime();
+            isAbleToSpawnOtherCircuit = false;
+        }
     }
 
     private bool CheckValidity()
@@ -82,5 +93,10 @@ public class CircuitImprime : MonoBehaviour
     private void DestroyThis()
     {
         Destroy(gameObject);
+    }
+
+    public void addSpeed(float s)
+    {
+        speed += s;
     }
 }

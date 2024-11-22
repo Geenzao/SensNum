@@ -22,24 +22,33 @@ public enum UsineAssemblageState
 
 public class UsineAssemblageUI : Menu
 {
-
     //Pour l'UI
     [Header("Text")]
     public TextMeshProUGUI txtNbCircuitWin;
     public TextMeshProUGUI txtTime;
+    //Nouveau
+
+    public TextMeshProUGUI txtInfoGameWin_nbCircuitWin; //Pour afficher le nombre de circuit réalisé pendant la game
+    public TextMeshProUGUI txtInfoGameWin_nbCircuitLose; //Pour afficher le nombre de circuit échoué pendant la game
+    public TextMeshProUGUI txtInfoGameWin_TimeForWin; //Pour afficher le temps que le joueur a mit pour atteindre l'objectif
+
+    public TextMeshProUGUI txtInfoGameLose_nbCircuitWin; //Pour afficher le nombre de circuit réalisé pendant la game
+    public TextMeshProUGUI txtInfoGameLose_nbCircuitLose; //Pour afficher le nombre de circuit échoué pendant la game
+
 
     [Header("Panel")]
     public GameObject PanelRuler;
     public GameObject PanelInformation;
     public GameObject PanelWin;
     public GameObject PanelLose;
+    public GameObject PanelNotifyAcceleration;
 
     [Header("Button")]
     public Button btnReplayWin;
     public Button btnReplayLose;
     public Button btnQuitWin;
     public Button btnQuitLose;
-    
+
 
     private UsineAssemblageState state;
 
@@ -66,6 +75,7 @@ public class UsineAssemblageUI : Menu
         PanelInformation.SetActive(false);
         PanelWin.SetActive(false);
         PanelLose.SetActive(false);
+        PanelNotifyAcceleration.SetActive(false);
         state = UsineAssemblageState.rule;
     }
 
@@ -80,7 +90,7 @@ public class UsineAssemblageUI : Menu
 
     public void UbdateUI()
     {
-        string txt = "Circuit réalisé : "+ UsineAssemblageGameManager.Instance.GetNbCircuitWin().ToString() + "/" + UsineAssemblageGameManager.Instance.GetNbCircuitGoal().ToString();
+        string txt = "Circuit réalisé : " + UsineAssemblageGameManager.Instance.GetNbCircuitWin().ToString() + "/" + UsineAssemblageGameManager.Instance.GetNbCircuitGoal().ToString();
         txtNbCircuitWin.text = txt;
     }
 
@@ -94,14 +104,27 @@ public class UsineAssemblageUI : Menu
     public void PlayerHasLose()
     {
         state = UsineAssemblageState.menu;
+
+        //On affiche les infos
+        txtInfoGameLose_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " circuit réalisé";
+        txtInfoGameLose_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " circuit mal fait";
+
         PanelLose.SetActive(true);
+        PanelNotifyAcceleration.SetActive(false);
     }
 
     //fct pour géré la win ou la lose du joueur à la fin d'une partie
     public void PlayerHasWin()
     {
         state = UsineAssemblageState.menu;
+
+        //On affiche les infos
+        txtInfoGameWin_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " circuit réalisé";
+        txtInfoGameWin_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " circuit mal fait";
+        txtInfoGameWin_TimeForWin.text = "Objectif atteint en : " + UsineAssemblageGameManager.Instance.GetTimeForGoal() + " secondes";
+
         PanelWin.SetActive(true);
+        PanelNotifyAcceleration.SetActive(false);
     }
 
     //pour lancer la première partie
@@ -129,6 +152,8 @@ public class UsineAssemblageUI : Menu
         PanelInformation.SetActive(false);
         PanelWin.SetActive(false);
         PanelLose.SetActive(false);
+        PanelNotifyAcceleration.SetActive(false);
+
 
         UsineAssemblageGameManager.Instance.InitialiseGame();
     }
@@ -144,5 +169,14 @@ public class UsineAssemblageUI : Menu
     public UsineAssemblageState State
     {
         get { return state; }
+    }
+
+    public void ShowNotifyAcceleration()
+    {
+        PanelNotifyAcceleration.SetActive(true);
+    }
+    public void HideNotifyAcceleration()
+    {
+        PanelNotifyAcceleration.SetActive(false);
     }
 }

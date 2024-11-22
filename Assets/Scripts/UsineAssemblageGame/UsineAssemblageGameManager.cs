@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
+using System;
+using Unity.VisualScripting;
 
 
 //Classe Utils pour faire la gestion d'un rectangle et savoir si un point est à l'interieur
@@ -30,16 +33,6 @@ public class Rectangle
     }
 }
 
-//comme on va jouer plusieurs partie du même jeux avec des dificulté différente
-//Cette classe sert à save les params d'un parti
-[System.Serializable]
-public class Partie
-{
-    public float m_circuitSpeed = 1f;
-    public int m_TimePartie = 60;
-    public int m_nbGoal = 10;
-}
-
 
 /*
  *  Fonctionnement du jeux et de la classe : 
@@ -60,43 +53,48 @@ public class Partie
  *      Le scripte UsineAssemblageUIManager gère l'UI, les menus pour le minu jeux. 
  *      Il y a un enum pour géré les différent Etat du jeux.
  *      
+ *      Les circuits accélère avec le temps 
+ *      
  */
 
 
 
 /*
  * TODO : amélioré l'UI
- * TODO : peut-être ajouter plusieurs partie de plus en plus dificile avec des étoile à gagnier
  */
 
 
 public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
 {
+    [Header("Tableau des composants")]
     public GameObject[] tabComponent; //contient les différents composant que le joueur pourra placé
+    [Header("Tableau des circuits")]
     public GameObject[] tabCircuitImprime; // concitient les différent type de circuit avec les composant à placé à des endroit différent
-    
+
+    [Header("Position Spawn/destroy")]
     public Transform spawnPoint; // Point de départ des circuits imprimés
     public Transform endPoint; //A partir de ce point on est suposé hors de l'écran
-    
-    public float circuitSpeed = 1.4f; // Vitesse des circuits sur le tapis
+    public Transform spawnInterval; //a partir de ce point, on fait spawn un autre circuit
+
+    [Header("Paramètre du jeu")]
+    public float circuitSpeed = 1.0f; // Vitesse des circuits sur le tapis
     public float timeLimit = 60f; // Temps limite pour terminer le jeu
-    
-    private float timeSinceLastSpawn = 0f;
-    private int spawnInterval = 4; // temps en seconde entre 2 spawn de circuit
+
+    //pour l'acceleration du jeux
+    public float accelerationInterval = 5.0f; //temps en seconde entre deux acceleration des circuits
+    public float speedAcceleration = 1.0f; //acceletation en float à chaque step
+
+    private float timeSinceLastAcceleration = 0.0f;
     private float timeElapsed = 0f; //Temps écoulé
     private float secondRemaining = 0; //temps en seconde restant avant la fin du jeux
+    private float timeGoal = 0; //Permet d'enregistrer le temps que met le joueur a acomplir l'objectif
+    private float SpeedCircuitSave = 0;
 
     private bool userHasCliquedOnComponent = false;
     private GameObject currentComponent; // Composant actuellement tenu par le joueur
     private int indexCurrentComponent;
 
-    //public int test
-    //{
-    //    get { return test; }
-    //    set { test = value; }
-    //}
-
-
+    [Header("Donnée du jeux")]
     [SerializeField] private int nbCircuitWin = 0;
     [SerializeField] private int nbCircuitLose = 0;
     [SerializeField] private int nbCircuitGoal = 5;
@@ -104,14 +102,20 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
 
     private List<GameObject> lstCircuitInGame = new List<GameObject>();    //Contient des ref vers les objects circuit instentié
 
-    public List<Partie> lstPartie = new List<Partie>(); //lst des partie avec leur param
-
     private UsineAssemblageUI UsineAssemblageUI;
+
+    private bool playerHasWin = false;
+
+    private Coroutine coroutineNotifyAcceleration = null;
 
     void Start()
     {
         UsineAssemblageUI = GameObject.Find("AssemblyGameUI").GetComponent<UsineAssemblageUI>();
         secondRemaining = timeLimit;
+        SpeedCircuitSave = circuitSpeed; //parce que circuitSpeed est amener à changer dans la game 
+        //On fait spawn un premier circuit pour que le joueur n'attende pas
+        SpawnCircuitImprime();
+
         StopGame(); //on arrête le jeux au début
     }
 
@@ -125,23 +129,27 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
             secondRemaining = Mathf.Max(0, timeLimit - timeElapsed); // Évite les valeurs négatives
             UsineAssemblageUI.UpdateTimeRemaining((int)secondRemaining);
 
-            // Gestion du spawn des circuits
-            if (timeElapsed - timeSinceLastSpawn >= spawnInterval)
+            //Si assez de temps c'est écoulé, on accélère les circuit pour augmenter la dificulté
+            if (timeElapsed - timeSinceLastAcceleration >= accelerationInterval)
             {
-                SpawnCircuitImprime();
-                timeSinceLastSpawn = timeElapsed;
+                IncreaseCircuitSpeed();
+                timeSinceLastAcceleration = timeElapsed;
             }
 
             // Vérification de la fin du jeu
-            if (secondRemaining <= 0)
+            if (secondRemaining <= 0 || playerHasWin)
             {
+                //Si le jeux se termine et on a toujours un composant dans la main, ce dernier ce détruit
+                if (currentComponent != null)
+                    Destroy(currentComponent);
+                currentComponent = null;
+
                 AnnalyseGame();
             }
         }
 
-
         // Si un composant est en cours de suivi, ajuste sa position pour suivre la souris
-        if (currentComponent != null )
+        if (currentComponent != null)
         {
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = 10f; // Ajuste la profondeur pour s'assurer qu'il est visible
@@ -150,13 +158,13 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     }
 
     //pour faire apparaître un nouveau circuit
-    void SpawnCircuitImprime()
+    public void SpawnCircuitImprime()
     {
-        int randomIndex = Random.Range(0, tabCircuitImprime.Length);
+        int randomIndex = UnityEngine.Random.Range(0, tabCircuitImprime.Length);
 
         // Sélectionner un angle de rotation aléatoire parmi 0, 90, 180, et 270 degrés pour l'appliquer au circuit
         int[] rotationAngles = { 0, 90, 180, 270 };
-        int randomAngle = rotationAngles[Random.Range(0, rotationAngles.Length)];
+        int randomAngle = rotationAngles[UnityEngine.Random.Range(0, rotationAngles.Length)];
         Quaternion randomRotation = Quaternion.Euler(0, 0, randomAngle);
 
 
@@ -165,6 +173,37 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
             lstCircuitInGame.Add(newCircuit);
         else
             Debug.LogError("Le CircuitImprime instancié n'a pas de Renderer.");
+    }
+
+
+    //pour accelerer la vitesse des circuits
+    void IncreaseCircuitSpeed()
+    {
+        //On actualise la liste pour suprimer les circuit suprime
+        actualiseListeCircuitInGame();
+        foreach (GameObject go in lstCircuitInGame)
+        {
+            //On accelère les circuits
+            go.gameObject.GetComponent<CircuitImprime>().addSpeed(speedAcceleration);
+        }
+
+        //A partir de maintenant la vitesse de base augmentes
+        circuitSpeed += speedAcceleration;
+
+        //On montre au joueur qu'il y a eut une acceleration
+        if (this.coroutineNotifyAcceleration != null)
+        {
+            StopCoroutine(coroutineNotifyAcceleration);
+        }
+        coroutineNotifyAcceleration = StartCoroutine(StartNotifyAccelerationCoroutine());
+        Debug.LogWarning("On accelere");
+    }
+
+    IEnumerator StartNotifyAccelerationCoroutine()
+    {
+        UsineAssemblageUI.ShowNotifyAcceleration();
+        yield return new WaitForSeconds(0.5f);
+        UsineAssemblageUI.HideNotifyAcceleration();
     }
 
 
@@ -178,15 +217,16 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
             return;
 
         //pour mettre a jour la liste
-        lstCircuitInGame.RemoveAll(item => item == null);
+        //lstCircuitInGame.RemoveAll(item => item == null);
+        actualiseListeCircuitInGame();
 
         int indexCircuit = -1;
-       
+
         for (int i = 0; i < lstCircuitInGame.Count; i++)
         {
             // Obtenir la taille du GameObject (en écran)
             Renderer renderer = lstCircuitInGame[i].GetComponent<Renderer>();
-            if(renderer != null)
+            if (renderer != null)
             {
                 // Obtenir un rectangle qui encompasse le GameObject  
                 Vector2 size = renderer.bounds.size;
@@ -197,7 +237,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
                                         size.x,
                                         size.y);
 
-                if(rect.isInside(currentComponent.transform.position))
+                if (rect.isInside(currentComponent.transform.position))
                 {
                     //Si on est là, c'est qu'on est dans un circuit imprimé et on sais lequelle
                     //Debug.Log("Circuit trouve : " + lstCircuitInGame[i].name);
@@ -209,8 +249,8 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
                 Debug.LogWarning("Renderer non trouvé pour l'objet à l'indice " + i);
         }
 
-         //Le joueur a bien placé le composant, reste à savoir a quelle place dans le circuit.
-        if(indexCircuit != -1)
+        //Le joueur a bien placé le composant, reste à savoir a quelle place dans le circuit.
+        if (indexCircuit != -1)
         {
             List<ComponentPlace> lstTempo = lstCircuitInGame[indexCircuit].GetComponent<CircuitImprime>().lstComponentPlaceOnCircuit;
             float distanceMin = float.MaxValue;
@@ -223,7 +263,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
                 }
 
                 float distance = Vector3.Distance(lstTempo[i].component.transform.position, currentComponent.transform.position);
-                
+
                 if (distance < distanceMin)
                 {
                     distanceMin = distance;
@@ -243,7 +283,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         indexCurrentComponent = 0;
-        for (int i = 0; i<tabComponent.Length; i++)
+        for (int i = 0; i < tabComponent.Length; i++)
         {
             // Obtenir la taille du GameObject (en écran)
             Renderer renderer = tabComponent[i].GetComponent<Renderer>();
@@ -271,7 +311,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
                 Debug.LogWarning("Renderer non trouvé pour l'objet à l'indice " + i);
         }
 
-        if(userHasCliquedOnComponent == true)
+        if (userHasCliquedOnComponent == true)
         {
             //ICI cpt = l'indice du composant qui a été cliké
             //print("Le indiceComposant : " + indiceComposant);
@@ -283,8 +323,23 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     public void AddGoodCircuit()
     {
         this.nbCircuitWin += 1;
+
+        //Si le joueur a réalisé l'objectif, on note son temps et on arrête le jeux
+        if (nbCircuitWin >= nbCircuitGoal)
+        {
+            timeGoal = timeElapsed;
+            playerHasWin = true;
+        }
+
         UpdateUI();
     }
+
+    private void actualiseListeCircuitInGame()
+    {
+        //pour mettre a jour la liste
+        lstCircuitInGame.RemoveAll(item => item == null);
+    }
+
     public void AddBadCircuit()
     {
         this.nbCircuitLose += 1;
@@ -334,7 +389,11 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         nbCircuitGoal = 10;
         timeElapsed = 0f;
         secondRemaining = timeLimit;
-        timeSinceLastSpawn = 0f;
+        timeSinceLastAcceleration = 0f;
+
+        timeGoal = 0f;
+        playerHasWin = false;
+        circuitSpeed = SpeedCircuitSave;
 
         // 2. Suppression des objets actifs dans le jeu
         // Supprimer tous les circuits imprimés encore présents
@@ -359,15 +418,21 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         UsineAssemblageUI.UpdateTimeRemaining((int)secondRemaining);
         UsineAssemblageUI.UbdateUI();
 
+        // 3.1 Ajouter un circuit
+        SpawnCircuitImprime();
+
         // 4. Mettre le jeu en pause pour attendre le lancement
         StopGame();
 
-        Debug.Log("Jeu initialisé avec succès !");
+        //Debug.Log("Jeu initialisé avec succès !");
     }
 
     //Getter
     public int GetNbCircuitWin() { return nbCircuitWin; }
+    public int GetNbCircuitLose() { return nbCircuitLose; }
     public int GetNbCircuitGoal() { return nbCircuitGoal; }
+    public int GetTimeForGoal() { return (int)timeGoal; }
     public float GetActualSpeed() { return circuitSpeed; }
     public float GetEndPosition() { return endPoint.position.x; }
+    public float GetSpawnInterval() { return spawnInterval.position.x; }
 }
