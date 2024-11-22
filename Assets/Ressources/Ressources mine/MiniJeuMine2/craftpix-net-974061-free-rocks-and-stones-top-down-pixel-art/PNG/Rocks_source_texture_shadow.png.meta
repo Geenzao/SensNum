@@ -909,7 +909,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rocks_source_texture_shadow_0: -407363827847780499
+      Rocks_source_texture_shadow_1: 6380322840169998387
+      Rocks_source_texture_shadow_10: -8938186160398340362
+      Rocks_source_texture_shadow_11: -367365417156917480
+      Rocks_source_texture_shadow_12: 4154257133955940907
+      Rocks_source_texture_shadow_13: -8437489078212585232
+      Rocks_source_texture_shadow_14: 4549125488728252857
+      Rocks_source_texture_shadow_15: -8104598948493617742
+      Rocks_source_texture_shadow_16: -4397400683944671930
+      Rocks_source_texture_shadow_17: 4897429323674185106
+      Rocks_source_texture_shadow_18: 147850054071963639
+      Rocks_source_texture_shadow_19: -8947532819658455510
+      Rocks_source_texture_shadow_2: -9117395717833475765
+      Rocks_source_texture_shadow_20: 6454523595171895631
+      Rocks_source_texture_shadow_21: -8013497446315871406
+      Rocks_source_texture_shadow_22: 7427561253843717362
+      Rocks_source_texture_shadow_23: -1663330967041145186
+      Rocks_source_texture_shadow_24: -1856593591640159837
+      Rocks_source_texture_shadow_25: -2418850056505005987
+      Rocks_source_texture_shadow_26: 3993142625208588639
+      Rocks_source_texture_shadow_27: -1837705050222127594
+      Rocks_source_texture_shadow_28: -3401761929649984095
+      Rocks_source_texture_shadow_29: -6987996265582464227
+      Rocks_source_texture_shadow_3: -989711320638015921
+      Rocks_source_texture_shadow_30: -7573351716718049851
+      Rocks_source_texture_shadow_31: -5339205576287947163
+      Rocks_source_texture_shadow_4: 972702322369131530
+      Rocks_source_texture_shadow_5: 6690845992145968760
+      Rocks_source_texture_shadow_6: 3534579729892938353
+      Rocks_source_texture_shadow_7: 7236811982738148678
+      Rocks_source_texture_shadow_8: -7601491601056469644
+      Rocks_source_texture_shadow_9: 1705976795191278201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

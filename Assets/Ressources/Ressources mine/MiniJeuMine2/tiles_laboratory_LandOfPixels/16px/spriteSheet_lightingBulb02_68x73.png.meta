@@ -1534,7 +1534,64 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spriteSheet_lightingBulb02_68x73_0: -4312095386228077334
+      spriteSheet_lightingBulb02_68x73_1: -7757554616388269967
+      spriteSheet_lightingBulb02_68x73_10: 2581400517629442647
+      spriteSheet_lightingBulb02_68x73_11: -2958782782072366265
+      spriteSheet_lightingBulb02_68x73_12: -1560534512963049310
+      spriteSheet_lightingBulb02_68x73_13: -8960265931017405985
+      spriteSheet_lightingBulb02_68x73_14: -1852381012618470685
+      spriteSheet_lightingBulb02_68x73_15: -2963578590726489862
+      spriteSheet_lightingBulb02_68x73_16: 4285161650352505955
+      spriteSheet_lightingBulb02_68x73_17: -1836793853652902757
+      spriteSheet_lightingBulb02_68x73_18: -8796446095450648270
+      spriteSheet_lightingBulb02_68x73_19: 4989560144955905987
+      spriteSheet_lightingBulb02_68x73_2: 7505088542189855945
+      spriteSheet_lightingBulb02_68x73_20: -5176302205364247491
+      spriteSheet_lightingBulb02_68x73_21: -1191599836713759351
+      spriteSheet_lightingBulb02_68x73_22: 6432458592897689051
+      spriteSheet_lightingBulb02_68x73_23: -7558017005645620663
+      spriteSheet_lightingBulb02_68x73_24: 8504980457324679962
+      spriteSheet_lightingBulb02_68x73_25: 8481489030020563152
+      spriteSheet_lightingBulb02_68x73_26: -6385841145882355584
+      spriteSheet_lightingBulb02_68x73_27: -1902522109085527554
+      spriteSheet_lightingBulb02_68x73_28: 3578250927872054328
+      spriteSheet_lightingBulb02_68x73_29: -9196431806460437772
+      spriteSheet_lightingBulb02_68x73_3: 6154063195517882343
+      spriteSheet_lightingBulb02_68x73_30: -7776043224070045068
+      spriteSheet_lightingBulb02_68x73_31: 632431755173004455
+      spriteSheet_lightingBulb02_68x73_32: 8916165394250090445
+      spriteSheet_lightingBulb02_68x73_33: 8693993170535727931
+      spriteSheet_lightingBulb02_68x73_34: -1623185542482529130
+      spriteSheet_lightingBulb02_68x73_35: -6406647751587707511
+      spriteSheet_lightingBulb02_68x73_36: 7976180256145469063
+      spriteSheet_lightingBulb02_68x73_37: -8025509925202386820
+      spriteSheet_lightingBulb02_68x73_38: 7894603082138662736
+      spriteSheet_lightingBulb02_68x73_39: -1898438523574475026
+      spriteSheet_lightingBulb02_68x73_4: -312693624349967418
+      spriteSheet_lightingBulb02_68x73_40: 6061451240118451316
+      spriteSheet_lightingBulb02_68x73_41: 5537986394428264331
+      spriteSheet_lightingBulb02_68x73_42: 597782392162987156
+      spriteSheet_lightingBulb02_68x73_43: -789416578669592660
+      spriteSheet_lightingBulb02_68x73_44: 6211212113040023768
+      spriteSheet_lightingBulb02_68x73_45: 3834200361431849392
+      spriteSheet_lightingBulb02_68x73_46: -137033765164228329
+      spriteSheet_lightingBulb02_68x73_47: -6738741406383446248
+      spriteSheet_lightingBulb02_68x73_48: -7333471278195090507
+      spriteSheet_lightingBulb02_68x73_49: 2919880787380574302
+      spriteSheet_lightingBulb02_68x73_5: -8203635599099844478
+      spriteSheet_lightingBulb02_68x73_50: -7330471048707050430
+      spriteSheet_lightingBulb02_68x73_51: -4721888910379773947
+      spriteSheet_lightingBulb02_68x73_52: -2816766077968286555
+      spriteSheet_lightingBulb02_68x73_53: -5683843525454918974
+      spriteSheet_lightingBulb02_68x73_54: -2893515278009029138
+      spriteSheet_lightingBulb02_68x73_55: -6106212324002294023
+      spriteSheet_lightingBulb02_68x73_56: -890801645489197811
+      spriteSheet_lightingBulb02_68x73_6: -6425834469463049742
+      spriteSheet_lightingBulb02_68x73_7: -7053174721323074161
+      spriteSheet_lightingBulb02_68x73_8: 8979670211073058386
+      spriteSheet_lightingBulb02_68x73_9: -7077402408938038376
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

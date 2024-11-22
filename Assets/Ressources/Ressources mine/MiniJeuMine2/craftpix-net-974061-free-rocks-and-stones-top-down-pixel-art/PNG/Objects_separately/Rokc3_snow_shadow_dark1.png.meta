@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rokc3_snow_shadow_dark1_0: 4959763326367765697
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

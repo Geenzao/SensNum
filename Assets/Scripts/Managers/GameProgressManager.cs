@@ -15,6 +15,7 @@ public class GameProgressManager : Singleton<GameProgressManager>
         Factory,
         Residence,
         ThirdGameMine,
+        SecondGameMine,
         AssemblyGame,
         End
     }
@@ -54,6 +55,9 @@ public class GameProgressManager : Singleton<GameProgressManager>
                 break;
             case GameProgressState.Start:
                 UIManager.Instance.UpdateMenuState(MenuState.None);
+                break;
+            case GameProgressState.SecondGameMine:
+                UIManager.Instance.UpdateMenuState(MenuState.SecondGameMine);
                 break;
             default:
                 Debug.LogWarning("Aucun Game Progress detecté");

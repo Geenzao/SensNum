@@ -33,8 +33,8 @@ public class SpawnAndDropManager : MonoBehaviour
         );
 
         GameObject instantiated = Instantiate(selectedObject, spawnPosition, Quaternion.identity);
-        MovableObject movable = instantiated.AddComponent<MovableObject>();
-        movable.speed = 2f; // Ajoute le script de mouvement et définit la vitesse
+        //MovableObject movable = instantiated.AddComponent<MovableObject>();
+        //movable.speed = 2f; // Ajoute le script de mouvement et définit la vitesse
         instantiated.AddComponent<CanvasGroup>(); // Nécessaire pour le drag and drop
 
         // Ajoutez un composant Image pour permettre le raycast

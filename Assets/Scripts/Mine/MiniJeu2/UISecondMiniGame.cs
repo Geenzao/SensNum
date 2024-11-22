@@ -2,8 +2,11 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public class UISecondMiniGame : MonoBehaviour
+
+public class UISecondMiniGame : Menu
 {
+    public float timer = 30.0f;
+
     [Header("Text")]
     public TextMeshProUGUI texteCptOr;
     public TextMeshProUGUI texteCptCu;
@@ -12,51 +15,98 @@ public class UISecondMiniGame : MonoBehaviour
     public TextMeshProUGUI texteDebut;
     public TextMeshProUGUI texteFin;
 
-    public GameObject btnVert;
+    [Header("Panel")]
     public GameObject panelTexteDebut;
     public GameObject panelTexteFin;
-    public SpawnAndDropManager spawnAndDropManager; // Référence au SpawnAndDropManager
+    public GameObject panelTexteMinerai;
+    public GameObject panelChrono;
 
-    public float timer = 30.0f;
     private bool isStopped = false;
     private bool gameStarted = false;
 
-    private DropZone dropZone;
+    private OreCounter oreCounter;
+    private GameObject btnVert;
+    private SpawnAndDropManager spawnAndDropManager; // Référence au SpawnAndDropManager
 
-    private void Start()
+    private void Awake()
     {
-        dropZone = Object.FindFirstObjectByType<DropZone>();
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+    }
 
-        if (dropZone == null)
+    protected override void Start()
+    {
+        base.Start();
+
+        if (UIManager.CurrentMenuState == UIManager.MenuState.SecondGameMine)
         {
-            Debug.LogError("DropZone not found");
-            return;
+            TriggerVisibility(true);
         }
 
+        if (LanguageManager.Instance != null)
+        {
+            UpdateTexts();
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
+        }
+    }
+
+    protected override void TriggerVisibility(bool visible)
+    {
+        base.TriggerVisibility(visible);
+        if (visible)
+        {
+            StartCoroutine(StartGameCoroutine(visible));
+        }
+    }
+
+    IEnumerator StartGameCoroutine(bool visible)
+    {
+        yield return new WaitForSeconds(0.5f);
+        oreCounter = GameObject.Find("ZonesRecoltes").GetComponent<OreCounter>();
+        btnVert = GameObject.Find("BtnVert");
+        spawnAndDropManager = GameObject.Find("SpawnZone").GetComponent<SpawnAndDropManager>();
+        panelChrono.SetActive(visible);
+        panelTexteMinerai.SetActive(visible);
+        panelTexteDebut.SetActive(visible);
+        panelTexteFin.SetActive(false);
         UpdateUI();
+    }
+
+    protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
+    {
+        base.HandleMenuStateChanged(newMS, oldMS);
+        if (newMS == UIManager.MenuState.SecondGameMine)
+            TriggerVisibility(true); //true
+        else
+            TriggerVisibility(false);
     }
 
     private void Update()
     {
-        if (gameStarted && !isStopped)
+        if(GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.SecondGameMine)
         {
-            timer -= Time.deltaTime;
-            texteTimer.text = "Chrono : " + Mathf.FloorToInt(timer);
-
-            if (timer <= 0.0f)
+            if (gameStarted && !isStopped)
             {
-                timer = 0.0f;
+                timer -= Time.deltaTime;
                 texteTimer.text = "Chrono : " + Mathf.FloorToInt(timer);
-                EndGame();
+
+                if (timer <= 0.0f)
+                {
+                    timer = 0.0f;
+                    texteTimer.text = "Chrono : " + Mathf.FloorToInt(timer);
+                    EndGame();
+                }
             }
-        }
 
-        if (Input.GetMouseButtonDown(0) && !gameStarted)
-        {
-            CheckForStartButtonClick();
+            if (Input.GetMouseButtonDown(0) && !gameStarted)
+            {
+                CheckForStartButtonClick();
+            }
+            if(oreCounter != null)
+                UpdateUI();
         }
-
-        UpdateUI();
     }
 
     private void CheckForStartButtonClick()
@@ -90,7 +140,7 @@ public class UISecondMiniGame : MonoBehaviour
         if (!isStopped)
         {
             isStopped = true;
-            texteFin.text = "Fin du jeu !\nOr : " + dropZone.CptOr + "\nCuivre : " + dropZone.CptCu + "\nLithium : " + dropZone.CptLi;
+            texteFin.text = "Fin du jeu !\nOr : " + oreCounter.cptAu.ToString() + "\nCuivre : " + oreCounter.cptCu.ToString() + "\nLithium : " + oreCounter.cptLi.ToString();
             Time.timeScale = 0.0f;
             /*texteFin.gameObject.SetActive(true);*/
             panelTexteFin.gameObject.SetActive(true);
@@ -99,8 +149,23 @@ public class UISecondMiniGame : MonoBehaviour
 
     private void UpdateUI()
     {
-        texteCptOr.text = "Or : " + dropZone.CptOr;
-        texteCptCu.text = "Cuivre : " + dropZone.CptCu;
-        texteCptLi.text = "Lithium : " + dropZone.CptLi;
+        texteCptOr.text = oreCounter.cptAu.ToString();
+        texteCptCu.text = oreCounter.cptCu.ToString();
+        texteCptLi.text = oreCounter.cptLi.ToString();
+    }
+
+    private void UpdateTexts()
+    {
+        //if (texteCptOr == null || texteCptCu == null || texteCptLi == null || texteTimer == null || texteDebut == null || texteFin == null)
+        //{
+        //    Debug.LogError("Text elements are not assigned in the inspector.");
+        //    return;
+        //}
+        //texteCptOr.text = LanguageManager.Instance.GetText("Or");
+        //texteCptCu.text = LanguageManager.Instance.GetText("Cuivre");
+        //texteCptLi.text = LanguageManager.Instance.GetText("Lithium");
+        //texteTimer.text = LanguageManager.Instance.GetText("Chrono");
+        //texteDebut.text = LanguageManager.Instance.GetText("Debut");
+        //texteFin.text = LanguageManager.Instance.GetText("Fin");
     }
 }

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rock7_water_shadow1_0: 8156949996384502742
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

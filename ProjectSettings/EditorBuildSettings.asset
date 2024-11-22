@@ -8,12 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boot.unity
     guid: 39f85afa80535ce41bc2e08ed9c103ac
-  - enabled: 0
-    path: Assets/Scenes/SceneDeplacementHero.unity
-    guid: 7b1b3ce5e25aaa141b003b0e00727b7c
-  - enabled: 0
-    path: Assets/Scenes/ScenePNJ.unity
-    guid: 569a8413a43d00042be81963f299744d
   - enabled: 1
     path: Assets/Scenes/Village/Village.unity
     guid: 3e3959c7aa3c8b64683e5cc90f6bdbac
@@ -24,8 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniJeux/Mine/Mine3emeJeux.unity
     guid: 4c090d5796c0fef4b933749a4ac2f09b
   - enabled: 1
-    path: Assets/Scenes/AssemblageGame.unity
+    path: Assets/Scenes/MiniJeux/Assemblage/AssemblageJeux.unity
     guid: 41ab81a80c1d78a42b816ecc1e11023e
+  - enabled: 1
+    path: Assets/Scenes/MiniJeux/Mine/Mine2emeJeux.unity
+    guid: 2af61af9ec7ea2d449f67a36d2e466dd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

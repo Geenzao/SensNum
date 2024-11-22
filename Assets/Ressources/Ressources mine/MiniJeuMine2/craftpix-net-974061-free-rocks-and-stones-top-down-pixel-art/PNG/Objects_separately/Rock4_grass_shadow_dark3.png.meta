@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rock4_grass_shadow_dark3_0: 5208578537499307881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

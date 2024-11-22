@@ -1634,7 +1634,68 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spriteSheet_fireEffect03_63x78_0: -4919166772764371151
+      spriteSheet_fireEffect03_63x78_1: 4051190231158975208
+      spriteSheet_fireEffect03_63x78_10: 7891416809156977426
+      spriteSheet_fireEffect03_63x78_11: 1246874261828206572
+      spriteSheet_fireEffect03_63x78_12: 4640195011575691610
+      spriteSheet_fireEffect03_63x78_13: 3158289096691650695
+      spriteSheet_fireEffect03_63x78_14: 3029812780333140717
+      spriteSheet_fireEffect03_63x78_15: 1481731718360771758
+      spriteSheet_fireEffect03_63x78_16: -4554401650784723245
+      spriteSheet_fireEffect03_63x78_17: -283692032532589143
+      spriteSheet_fireEffect03_63x78_18: 6773237056805174853
+      spriteSheet_fireEffect03_63x78_19: -2388236126813449618
+      spriteSheet_fireEffect03_63x78_2: -470786087913929257
+      spriteSheet_fireEffect03_63x78_20: 4338059891123633320
+      spriteSheet_fireEffect03_63x78_21: -734633271887167085
+      spriteSheet_fireEffect03_63x78_22: -1380350895443868945
+      spriteSheet_fireEffect03_63x78_23: 1613689238260349260
+      spriteSheet_fireEffect03_63x78_24: -1359382032144184974
+      spriteSheet_fireEffect03_63x78_25: -6473798269171962738
+      spriteSheet_fireEffect03_63x78_26: -6563302568222854947
+      spriteSheet_fireEffect03_63x78_27: 941583572131163127
+      spriteSheet_fireEffect03_63x78_28: -1231687155032594073
+      spriteSheet_fireEffect03_63x78_29: 8797325272166624280
+      spriteSheet_fireEffect03_63x78_3: -7663892641393004788
+      spriteSheet_fireEffect03_63x78_30: -8927977296228160898
+      spriteSheet_fireEffect03_63x78_31: -8561730001423809538
+      spriteSheet_fireEffect03_63x78_32: -6037948956348887319
+      spriteSheet_fireEffect03_63x78_33: 3154450528570704175
+      spriteSheet_fireEffect03_63x78_34: -1274595998065009836
+      spriteSheet_fireEffect03_63x78_35: 6117565737641039766
+      spriteSheet_fireEffect03_63x78_36: 7525346660999805110
+      spriteSheet_fireEffect03_63x78_37: -5106043007642971312
+      spriteSheet_fireEffect03_63x78_38: -2394400540861151388
+      spriteSheet_fireEffect03_63x78_39: 628467906835594920
+      spriteSheet_fireEffect03_63x78_4: 2917101336903431913
+      spriteSheet_fireEffect03_63x78_40: 7544524583136760985
+      spriteSheet_fireEffect03_63x78_41: -3416601940170779506
+      spriteSheet_fireEffect03_63x78_42: -6398225209429785547
+      spriteSheet_fireEffect03_63x78_43: -1161411266620101232
+      spriteSheet_fireEffect03_63x78_44: -5789402358192230000
+      spriteSheet_fireEffect03_63x78_45: -710070961751747824
+      spriteSheet_fireEffect03_63x78_46: 6208706435417186073
+      spriteSheet_fireEffect03_63x78_47: 5738089816099151668
+      spriteSheet_fireEffect03_63x78_48: 2976896095606021342
+      spriteSheet_fireEffect03_63x78_49: 7028279379788815492
+      spriteSheet_fireEffect03_63x78_5: -5145218611212960756
+      spriteSheet_fireEffect03_63x78_50: 8627905967999448684
+      spriteSheet_fireEffect03_63x78_51: -2000250924641208144
+      spriteSheet_fireEffect03_63x78_52: -222908606667196782
+      spriteSheet_fireEffect03_63x78_53: -333122155367411693
+      spriteSheet_fireEffect03_63x78_54: 6509887340632567478
+      spriteSheet_fireEffect03_63x78_55: 1826639199509399560
+      spriteSheet_fireEffect03_63x78_56: 1163297424965548820
+      spriteSheet_fireEffect03_63x78_57: -4479987585040160517
+      spriteSheet_fireEffect03_63x78_58: -116986293450524348
+      spriteSheet_fireEffect03_63x78_59: 3549278463695658563
+      spriteSheet_fireEffect03_63x78_6: 7639864983354230034
+      spriteSheet_fireEffect03_63x78_60: 3078232290968957864
+      spriteSheet_fireEffect03_63x78_7: 2947240175797430256
+      spriteSheet_fireEffect03_63x78_8: 4447334192564444887
+      spriteSheet_fireEffect03_63x78_9: -2438287231179187292
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

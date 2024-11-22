@@ -26,6 +26,7 @@ public class UIManager : Singleton<UIManager>
         PauseMenu,
         OptionMenu,
         ThirdGameMine,
+        SecondGameMine,
         AssemblyGame
     }
 

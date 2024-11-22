@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spriteSheet_tiledLiquids_32x32_0: -1192692409712758440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

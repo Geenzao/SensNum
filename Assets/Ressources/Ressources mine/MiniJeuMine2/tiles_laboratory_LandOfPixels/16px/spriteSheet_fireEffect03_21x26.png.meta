@@ -784,7 +784,34 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spriteSheet_fireEffect03_21x26_0: -2648215393979065169
+      spriteSheet_fireEffect03_21x26_1: -5040303889539299066
+      spriteSheet_fireEffect03_21x26_10: 4749381758650567091
+      spriteSheet_fireEffect03_21x26_11: 7484471129460184643
+      spriteSheet_fireEffect03_21x26_12: 3119182178220531292
+      spriteSheet_fireEffect03_21x26_13: -5106735502423439433
+      spriteSheet_fireEffect03_21x26_14: 8151176663559484556
+      spriteSheet_fireEffect03_21x26_15: -7434788936057054810
+      spriteSheet_fireEffect03_21x26_16: -4417424510724125458
+      spriteSheet_fireEffect03_21x26_17: -6875993608638972874
+      spriteSheet_fireEffect03_21x26_18: -9140834199411859975
+      spriteSheet_fireEffect03_21x26_19: 1304391555368194562
+      spriteSheet_fireEffect03_21x26_2: -8310407325119838039
+      spriteSheet_fireEffect03_21x26_20: -545850766180315322
+      spriteSheet_fireEffect03_21x26_21: 7917729552616985589
+      spriteSheet_fireEffect03_21x26_22: 6545663377300838591
+      spriteSheet_fireEffect03_21x26_23: -3532410067614137059
+      spriteSheet_fireEffect03_21x26_24: 6727780256300570800
+      spriteSheet_fireEffect03_21x26_25: -6754276063895004516
+      spriteSheet_fireEffect03_21x26_26: -2565117867440727465
+      spriteSheet_fireEffect03_21x26_3: 8451487317929546447
+      spriteSheet_fireEffect03_21x26_4: 4580297533750916363
+      spriteSheet_fireEffect03_21x26_5: -2415995957657440975
+      spriteSheet_fireEffect03_21x26_6: 4597557930947129482
+      spriteSheet_fireEffect03_21x26_7: -5395660011938632331
+      spriteSheet_fireEffect03_21x26_8: -4898622965968610416
+      spriteSheet_fireEffect03_21x26_9: 3759121899747235830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

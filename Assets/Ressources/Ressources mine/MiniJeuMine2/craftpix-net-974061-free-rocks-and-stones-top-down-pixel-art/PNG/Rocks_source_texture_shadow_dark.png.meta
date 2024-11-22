@@ -909,7 +909,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rocks_source_texture_shadow_dark_0: 4303599253627112446
+      Rocks_source_texture_shadow_dark_1: 1571187572168704749
+      Rocks_source_texture_shadow_dark_10: 1744001984581735332
+      Rocks_source_texture_shadow_dark_11: 1978210903528566457
+      Rocks_source_texture_shadow_dark_12: 4631846039672413393
+      Rocks_source_texture_shadow_dark_13: -5425640595047415034
+      Rocks_source_texture_shadow_dark_14: -3992133813988011457
+      Rocks_source_texture_shadow_dark_15: 3462364744234104801
+      Rocks_source_texture_shadow_dark_16: -6075108840696102514
+      Rocks_source_texture_shadow_dark_17: -3691696993428812852
+      Rocks_source_texture_shadow_dark_18: 6441084856965542039
+      Rocks_source_texture_shadow_dark_19: -5429783606761321271
+      Rocks_source_texture_shadow_dark_2: -6359560621053787625
+      Rocks_source_texture_shadow_dark_20: 5181699774941062973
+      Rocks_source_texture_shadow_dark_21: -6806713516015867765
+      Rocks_source_texture_shadow_dark_22: -2091793762915107139
+      Rocks_source_texture_shadow_dark_23: -1003297565880387265
+      Rocks_source_texture_shadow_dark_24: 8470044249165385954
+      Rocks_source_texture_shadow_dark_25: 3620051163838804124
+      Rocks_source_texture_shadow_dark_26: 4062307529276185301
+      Rocks_source_texture_shadow_dark_27: 1403911420298061099
+      Rocks_source_texture_shadow_dark_28: 3425159785270268670
+      Rocks_source_texture_shadow_dark_29: 8730656666309301935
+      Rocks_source_texture_shadow_dark_3: -2968192840779830489
+      Rocks_source_texture_shadow_dark_30: -4593057601437637612
+      Rocks_source_texture_shadow_dark_31: -5069597038001451678
+      Rocks_source_texture_shadow_dark_4: 6265591281492212925
+      Rocks_source_texture_shadow_dark_5: 7531498866496221352
+      Rocks_source_texture_shadow_dark_6: 1667772259286182806
+      Rocks_source_texture_shadow_dark_7: 8817238690535895509
+      Rocks_source_texture_shadow_dark_8: 3009415507508985170
+      Rocks_source_texture_shadow_dark_9: -6327906803020374503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

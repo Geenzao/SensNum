@@ -55,11 +55,11 @@ public class UIThirdGameMine : Menu
         //Start couroutine de 2 seconde
         if (visible)
         {
-            StartCoroutine(StartGameCoroutine());
+            StartCoroutine(StartGameCoroutine(visible));
         }
     }
 
-    IEnumerator StartGameCoroutine()
+    IEnumerator StartGameCoroutine(bool visible)
     {
         yield return new WaitForSeconds(0.5f);
         if (ThirdMiniGame.Instance == null)
@@ -76,9 +76,9 @@ public class UIThirdGameMine : Menu
             // Initialisation des textes UI
             countText.text = "Camions : " + counterTruck + "/" + maxTruck;
             timerText.text = "Chrono : " + Mathf.FloorToInt(timer);
-            textDebut.gameObject.SetActive(true);
-            countText.gameObject.SetActive(true);
-            timerText.gameObject.SetActive(true);
+            textDebut.gameObject.SetActive(visible);
+            countText.gameObject.SetActive(visible);
+            timerText.gameObject.SetActive(visible);
             winText.gameObject.SetActive(false);
         }
     }

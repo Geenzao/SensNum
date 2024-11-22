@@ -359,7 +359,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spriteSheet_lightBulbSmallAnimation_48x48_0: 6236319256127767306
+      spriteSheet_lightBulbSmallAnimation_48x48_1: -8483565672631542121
+      spriteSheet_lightBulbSmallAnimation_48x48_2: 3965151027339286650
+      spriteSheet_lightBulbSmallAnimation_48x48_3: 69760512990161490
+      spriteSheet_lightBulbSmallAnimation_48x48_4: -1592843992649096855
+      spriteSheet_lightBulbSmallAnimation_48x48_5: 7171895719300554736
+      spriteSheet_lightBulbSmallAnimation_48x48_6: -4420981761079068366
+      spriteSheet_lightBulbSmallAnimation_48x48_7: -4595890472301765691
+      spriteSheet_lightBulbSmallAnimation_48x48_8: 710145275575679183
+      spriteSheet_lightBulbSmallAnimation_48x48_9: 1226747706061244133
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

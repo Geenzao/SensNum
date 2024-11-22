@@ -33,15 +33,22 @@ public class InputManager : Singleton<InputManager>
             {
                 Debug.Log("G pressed");
                 GameManager.Instance.UnloadLevel("Village");
-                GameManager.Instance.LoadLevel("MiniJeu3");
+                GameManager.Instance.LoadLevel("Mine3emeJeux");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.ThirdGameMine);
             }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("F pressed");
                 GameManager.Instance.UnloadLevel("Village");
-                GameManager.Instance.LoadLevel("AssemblageGame");
+                GameManager.Instance.LoadLevel("AssemblageJeux");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyGame);
+            }
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                Debug.Log("F pressed");
+                GameManager.Instance.UnloadLevel("Village");
+                GameManager.Instance.LoadLevel("Mine2emeJeux");
+                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.SecondGameMine);
             }
             if (Input.GetMouseButtonDown(0) && 
                 UsineAssemblageUI.State == UsineAssemblageState.rule && 
