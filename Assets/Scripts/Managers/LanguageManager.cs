@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Xml;
 using System;
 using UnityEngine;
+using System.IO;
 
 public class LanguageManager : Singleton<LanguageManager>
 {
@@ -9,7 +10,9 @@ public class LanguageManager : Singleton<LanguageManager>
 
     private Dictionary<string, Dictionary<string, string>> _localizedTexts;
     [SerializeField] private string _currentLanguage;
-    private string filePath = "Assets/Data/xmllanguages.xml";
+    //private string filePath = "Assets/Data/xmllanguages.xml";
+    private string filePath = Path.Combine(Application.streamingAssetsPath, "xmllanguages.xml");
+
 
     protected override void Awake()
     {
@@ -22,11 +25,47 @@ public class LanguageManager : Singleton<LanguageManager>
         LoadLanguageFile();
     }
 
+    //public void LoadLanguageFile()
+    //{
+    //    _localizedTexts.Clear();
+    //    XmlDocument xmlDocument = new XmlDocument();
+    //    xmlDocument.Load(filePath);
+
+    //    XmlNodeList wordNodes = xmlDocument.SelectNodes("/languages/words/word");
+    //    foreach (XmlNode wordNode in wordNodes)
+    //    {
+    //        string key = wordNode.Attributes["id"].Value;
+    //        var translations = new Dictionary<string, string>();
+
+    //        foreach (XmlNode langNode in wordNode.ChildNodes)
+    //        {
+    //            translations[langNode.Name] = langNode.InnerText;
+    //        }
+
+    //        _localizedTexts[key] = translations;
+    //    }
+    //}
     public void LoadLanguageFile()
     {
         _localizedTexts.Clear();
+        string fullPath = filePath;
+
+        if (!File.Exists(fullPath))
+        {
+            Debug.LogError($"Language file not found at path: {fullPath}");
+            return;
+        }
+
         XmlDocument xmlDocument = new XmlDocument();
-        xmlDocument.Load(filePath);
+        try
+        {
+            xmlDocument.Load(fullPath);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"Failed to load XML file: {ex.Message}");
+            return;
+        }
 
         XmlNodeList wordNodes = xmlDocument.SelectNodes("/languages/words/word");
         foreach (XmlNode wordNode in wordNodes)
@@ -42,6 +81,7 @@ public class LanguageManager : Singleton<LanguageManager>
             _localizedTexts[key] = translations;
         }
     }
+
 
     public string GetText(string key)
     {
