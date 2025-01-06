@@ -94,6 +94,10 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     private GameObject currentComponent; // Composant actuellement tenu par le joueur
     private int indexCurrentComponent;
 
+    //Pour évité qu'un même type de circuit soit instancié plus de 2 fois
+    private int nbCircuitSameType = 0;
+    private int indexLastCircuit = -1;
+
     [Header("Donnée du jeux")]
     [SerializeField] private int nbCircuitWin = 0;
     [SerializeField] private int nbCircuitLose = 0;
@@ -161,6 +165,23 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     public void SpawnCircuitImprime()
     {
         int randomIndex = UnityEngine.Random.Range(0, tabCircuitImprime.Length);
+
+        //On vérifie que le circuit n'est pas le même que le dernier
+        //c'est pour régler un petit bug parce que parfois il y en a plein qui spawn du me^me type et c'est moche
+        if (randomIndex == indexLastCircuit)
+        {
+            nbCircuitSameType++;
+            if (nbCircuitSameType >= 2)
+            {
+                randomIndex = (randomIndex + 1) % tabCircuitImprime.Length;
+                nbCircuitSameType = 0;
+            }
+        }
+        else
+        {
+            nbCircuitSameType = 0;
+        }
+        indexLastCircuit = randomIndex;
 
         // Sélectionner un angle de rotation aléatoire parmi 0, 90, 180, et 270 degrés pour l'appliquer au circuit
         int[] rotationAngles = { 0, 90, 180, 270 };
