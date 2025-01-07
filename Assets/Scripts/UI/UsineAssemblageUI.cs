@@ -70,7 +70,6 @@ public class UsineAssemblageUI : Menu
     protected override void TriggerVisibility(bool visible)
     {
         base.TriggerVisibility(visible);
-        Debug.Log("UsineAssemblageUI TriggerVisibility" + visible);
         PanelRuler.SetActive(visible);
         PanelInformation.SetActive(false);
         PanelWin.SetActive(false);
