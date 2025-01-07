@@ -14,11 +14,11 @@ public class CinematicClip : MonoBehaviour
     public ParallaxLayer[] tabLayer = new ParallaxLayer[0]; // Tableau de ParallaxLayer pour stocker les images et les couches
 
     [Header("Variables de vitesse")]
-    public float baseSpeed; // Vitesse de base pour le déplacement
-    public float stepSpeed; // Incrémentation de la vitesse pour chaque couche
+    public float baseSpeed = 0.2f; // Vitesse de base pour le déplacement
+    public float stepSpeed = 0.1f; // Incrémentation de la vitesse pour chaque couche
     private Vector3 direction = Vector3.left; // Direction du mouvement (par défaut vers la gauche)
 
-    [SerializeField] private float[] tabSpeedLayer;
+    private float[] tabSpeedLayer;
 
     [Header("Gestion du temps")]
     public float resetTime = 10f; // Temps avant de réinitialiser (en secondes)
