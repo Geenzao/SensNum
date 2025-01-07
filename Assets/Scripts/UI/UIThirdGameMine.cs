@@ -57,6 +57,13 @@ public class UIThirdGameMine : Menu
         {
             StartCoroutine(StartGameCoroutine(visible));
         }
+        else
+        {
+            textDebut.gameObject.SetActive(false);
+            countText.gameObject.SetActive(false);
+            timerText.gameObject.SetActive(false);
+            winText.gameObject.SetActive(false);
+        }
     }
 
     IEnumerator StartGameCoroutine(bool visible)

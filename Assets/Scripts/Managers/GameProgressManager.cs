@@ -56,8 +56,14 @@ public class GameProgressManager : Singleton<GameProgressManager>
             case GameProgressState.Start:
                 UIManager.Instance.UpdateMenuState(MenuState.None);
                 break;
+            case GameProgressState.Mine:
+                UIManager.Instance.UpdateMenuState(MenuState.None);
+                break;
             case GameProgressState.SecondGameMine:
                 UIManager.Instance.UpdateMenuState(MenuState.SecondGameMine);
+                break;
+            case GameProgressState.None:
+                UIManager.Instance.UpdateMenuState(MenuState.None);
                 break;
             default:
                 Debug.LogWarning("Aucun Game Progress detecté");

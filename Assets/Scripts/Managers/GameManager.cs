@@ -235,7 +235,7 @@ public class GameManager : Singleton<GameManager>
         OnUnloadingStarted.Invoke(levelName);
     }
 
-    public void UnloadAndSavePosition(float x, float y)
+    public void UnloadAndSavePosition(string levelName, float x, float y, bool updateGameState = true)
     {
         // Créez une instance de SaveData avec les nouvelles coordonnées
         SaveData saveData = new SaveData
@@ -255,9 +255,9 @@ public class GameManager : Singleton<GameManager>
         File.WriteAllText(filePath, json);
 
         // Déchargez le niveau actuel
-        if (!string.IsNullOrEmpty(_currentLevelName))
+        if (!string.IsNullOrEmpty(levelName))
         {
-            UnloadLevel(_currentLevelName);
+            UnloadLevel(levelName);
         }
     }
 
