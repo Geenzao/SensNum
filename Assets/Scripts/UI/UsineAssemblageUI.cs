@@ -118,6 +118,7 @@ public class UsineAssemblageUI : Menu
     public void UpdateTimeRemaining(int time)
     {
         _time = time;
+        UpdateTexts();
     }
 
     //fct pour géré la win ou la lose du joueur à la fin d'une partie

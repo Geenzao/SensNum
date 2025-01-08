@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      img_cineRecy_usine_0: -9027331683293091006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
