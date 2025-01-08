@@ -34,6 +34,62 @@
 			<fr>langue</fr>
 		</word>
 
+		<!-- Third Game Mine UI -->
+		<word id="startThirdGameMine">
+			<en>
+				Get all the trucks carrying minerals out before the timer runs out!
+
+				Click on a truck to make it move.
+			</en>
+			<fr>
+				Sortez tous les camions transportant des minerais avant la fin du chronomètre !
+
+				Cliquez sur un camion pour le faire avancer.
+			</fr>
+		</word>
+		<word id="truck">
+			<en>Truck</en>
+			<fr>Camion</fr>
+		</word>
+		<word id="chrono">
+			<en>Chrono</en>
+			<fr>Chrono</fr>
+		</word>
+		<word id="win">
+			<en>Win</en>
+			<fr>Gagné</fr>
+		</word>
+		<word id="lose">
+			<en>Lose</en>
+			<fr>Perdu</fr>
+		</word>
+
+		<!-- Usine Assemblage UI -->
+		<word id="completedCircuit">
+			<en>Completed circuit</en>
+			<fr>Circuit réalisé</fr>
+		</word>
+		<word id="timeRemaining">
+			<en>Time remaining</en>
+			<fr>Temps restant</fr>
+		</word>
+		<word id="completedCircuitLittle">
+			<en>completed circuit</en>
+			<fr>circuit réalisé</fr>
+		</word>
+		<word id="poorlyMadeCircuit">
+			<en>poorly made circuit</en>
+			<fr>circuit mal fait</fr>
+		</word>
+		<word id="objectiveAchievedIn">
+			<en>Objective achieved in</en>
+			<fr>Objectif atteint en</fr>
+		</word>
+		<word id="seconds">
+			<en>seconds</en>
+			<fr>secondes</fr>
+		</word>
+
 		<!-- PNJ -->
 		<!-- pnj_youngman -->
 		<word id="pnj_youngman_0_0">

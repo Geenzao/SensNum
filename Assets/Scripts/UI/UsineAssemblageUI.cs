@@ -24,9 +24,17 @@ public class UsineAssemblageUI : Menu
 {
     //Pour l'UI
     [Header("Text")]
+    public TextMeshProUGUI txtRules;
+    public TextMeshProUGUI txtWin;
+    public TextMeshProUGUI txtLose;
+    public TextMeshProUGUI txtReplayLose;
+    public TextMeshProUGUI txtQuitLose;
+    public TextMeshProUGUI txtReplayWin;
+    public TextMeshProUGUI txtQuitWin;
+    public TextMeshProUGUI txtNotifyAcceleration;
+
     public TextMeshProUGUI txtNbCircuitWin;
     public TextMeshProUGUI txtTime;
-    //Nouveau
 
     public TextMeshProUGUI txtInfoGameWin_nbCircuitWin; //Pour afficher le nombre de circuit réalisé pendant la game
     public TextMeshProUGUI txtInfoGameWin_nbCircuitLose; //Pour afficher le nombre de circuit échoué pendant la game
@@ -49,8 +57,13 @@ public class UsineAssemblageUI : Menu
     public Button btnQuitWin;
     public Button btnQuitLose;
 
-
+    private int _time = 0;
     private UsineAssemblageState state;
+
+    private void Awake()
+    {
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+    }
 
     protected override void Start()
     {
@@ -61,6 +74,15 @@ public class UsineAssemblageUI : Menu
             TriggerVisibility(true);
         }
 
+        if (LanguageManager.Instance != null)
+        {
+            UpdateTexts();
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
+        }
+
         btnReplayWin.onClick.AddListener(OnReplayButtonClicked);
         btnReplayLose.onClick.AddListener(OnReplayButtonClicked);
         btnQuitWin.onClick.AddListener(OnQuitButtonClicked);
@@ -69,6 +91,7 @@ public class UsineAssemblageUI : Menu
 
     protected override void TriggerVisibility(bool visible)
     {
+        UpdateTexts();
         base.TriggerVisibility(visible);
         PanelRuler.SetActive(visible);
         PanelInformation.SetActive(false);
@@ -89,14 +112,12 @@ public class UsineAssemblageUI : Menu
 
     public void UbdateUI()
     {
-        string txt = "Circuit réalisé : " + UsineAssemblageGameManager.Instance.GetNbCircuitWin().ToString() + "/" + UsineAssemblageGameManager.Instance.GetNbCircuitGoal().ToString();
-        txtNbCircuitWin.text = txt;
+        UpdateTexts();
     }
 
     public void UpdateTimeRemaining(int time)
     {
-        string txt = "Temps restant : " + time.ToString();
-        txtTime.text = txt;
+        _time = time;
     }
 
     //fct pour géré la win ou la lose du joueur à la fin d'une partie
@@ -105,8 +126,7 @@ public class UsineAssemblageUI : Menu
         state = UsineAssemblageState.menu;
 
         //On affiche les infos
-        txtInfoGameLose_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " circuit réalisé";
-        txtInfoGameLose_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " circuit mal fait";
+        UpdateTexts();
 
         PanelLose.SetActive(true);
         PanelNotifyAcceleration.SetActive(false);
@@ -118,9 +138,7 @@ public class UsineAssemblageUI : Menu
         state = UsineAssemblageState.menu;
 
         //On affiche les infos
-        txtInfoGameWin_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " circuit réalisé";
-        txtInfoGameWin_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " circuit mal fait";
-        txtInfoGameWin_TimeForWin.text = "Objectif atteint en : " + UsineAssemblageGameManager.Instance.GetTimeForGoal() + " secondes";
+        UpdateTexts();
 
         PanelWin.SetActive(true);
         PanelNotifyAcceleration.SetActive(false);
@@ -177,5 +195,34 @@ public class UsineAssemblageUI : Menu
     public void HideNotifyAcceleration()
     {
         PanelNotifyAcceleration.SetActive(false);
+    }
+
+    private void UpdateTexts()
+    {
+        if (txtNbCircuitWin == null || txtTime == null || txtInfoGameWin_nbCircuitWin == null || txtInfoGameWin_nbCircuitLose == null || txtInfoGameWin_TimeForWin == null || txtInfoGameLose_nbCircuitWin == null || txtInfoGameLose_nbCircuitLose == null)
+        {
+            Debug.LogError("Text elements are not assigned in the inspector.");
+            return;
+        }
+        if (UsineAssemblageGameManager.Instance == null)
+            return;
+        txtNbCircuitWin.text = LanguageManager.Instance.GetText("completedCircuit") + " : " + UsineAssemblageGameManager.Instance.GetNbCircuitWin().ToString() + "/" + UsineAssemblageGameManager.Instance.GetNbCircuitGoal().ToString();
+        txtTime.text = LanguageManager.Instance.GetText("timeRemaining") + " : " + _time.ToString();
+
+        txtInfoGameWin_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
+        txtInfoGameWin_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " " + LanguageManager.Instance.GetText("poorlyMadeCircuit");
+        txtInfoGameWin_TimeForWin.text = LanguageManager.Instance.GetText("objectiveAchievedIn") + " : " + UsineAssemblageGameManager.Instance.GetTimeForGoal() + " " + LanguageManager.Instance.GetText("seconds");
+
+        txtInfoGameLose_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
+        txtInfoGameLose_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " " + LanguageManager.Instance.GetText("poorlyMadeCircuit");
+
+        txtRules.text = LanguageManager.Instance.GetText("rules");
+        txtWin.text = LanguageManager.Instance.GetText("win");
+        txtLose.text = LanguageManager.Instance.GetText("lose");
+        txtReplayLose.text = LanguageManager.Instance.GetText("replay");
+        txtQuitLose.text = LanguageManager.Instance.GetText("quit");
+        txtReplayWin.text = LanguageManager.Instance.GetText("replay");
+        txtQuitWin.text = LanguageManager.Instance.GetText("quit");
+        txtNotifyAcceleration.text = LanguageManager.Instance.GetText("notifyAcceleration");
     }
 }

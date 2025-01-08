@@ -59,6 +59,7 @@ public class LanguageManager : Singleton<LanguageManager>
         XmlDocument xmlDocument = new XmlDocument();
         try
         {
+            File.SetLastWriteTimeUtc(fullPath, DateTime.UtcNow);
             xmlDocument.Load(fullPath);
         }
         catch (Exception ex)
@@ -99,7 +100,7 @@ public class LanguageManager : Singleton<LanguageManager>
         }
         else
         {
-            //Debug.LogWarning($"Text key '{key}' not found");
+            Debug.LogWarning($"Text key '{key}' not found");
             return key; // Retourne la cl� si le texte n'est pas trouv�
         }
     }
