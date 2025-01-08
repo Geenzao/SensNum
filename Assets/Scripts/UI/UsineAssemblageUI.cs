@@ -26,7 +26,6 @@ public class UsineAssemblageUI : Menu
     [Header("Text")]
     public TextMeshProUGUI txtNbCircuitWin;
     public TextMeshProUGUI txtTime;
-    //Nouveau
 
     public TextMeshProUGUI txtInfoGameWin_nbCircuitWin; //Pour afficher le nombre de circuit réalisé pendant la game
     public TextMeshProUGUI txtInfoGameWin_nbCircuitLose; //Pour afficher le nombre de circuit échoué pendant la game
@@ -52,6 +51,11 @@ public class UsineAssemblageUI : Menu
 
     private UsineAssemblageState state;
 
+    private void Awake()
+    {
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+    }
+
     protected override void Start()
     {
         base.Start();
@@ -59,6 +63,15 @@ public class UsineAssemblageUI : Menu
         if (UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame)
         {
             TriggerVisibility(true);
+        }
+
+        if (LanguageManager.Instance != null)
+        {
+            UpdateTexts();
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
         }
 
         btnReplayWin.onClick.AddListener(OnReplayButtonClicked);
@@ -177,5 +190,24 @@ public class UsineAssemblageUI : Menu
     public void HideNotifyAcceleration()
     {
         PanelNotifyAcceleration.SetActive(false);
+    }
+
+    private void UpdateTexts()
+    {
+        if (txtNbCircuitWin == null || txtTime == null || txtInfoGameWin_nbCircuitWin == null || txtInfoGameWin_nbCircuitLose == null || txtInfoGameWin_TimeForWin == null || txtInfoGameLose_nbCircuitWin == null || txtInfoGameLose_nbCircuitLose == null)
+        {
+            Debug.LogError("Text elements are not assigned in the inspector.");
+            return;
+        }
+
+        txtNbCircuitWin.text = LanguageManager.Instance.GetText("");
+        txtTime.text = LanguageManager.Instance.GetText("");
+
+        txtInfoGameWin_nbCircuitWin.text = LanguageManager.Instance.GetText("");
+        txtInfoGameWin_nbCircuitLose.text = LanguageManager.Instance.GetText("");
+        txtInfoGameWin_TimeForWin.text = LanguageManager.Instance.GetText("");
+
+        txtInfoGameLose_nbCircuitWin.text = LanguageManager.Instance.GetText("");
+        txtInfoGameLose_nbCircuitLose.text = LanguageManager.Instance.GetText("");
     }
 }

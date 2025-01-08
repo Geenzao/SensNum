@@ -33,6 +33,19 @@
 			<en>language</en>
 			<fr>langue</fr>
 		</word>
+		<word id="startThirdGameMine">
+			<en>Get all the trucks carrying minerals out before the timer runs out! Click on a truck to make it move.</en>
+			<fr>Sortez tous les camions transportant des minerais avant la fin du chronomètre ! Cliquez sur un camion pour le faire avancer.</fr>
+		</word>
+		<word id="truck">
+			<en>Truck</en>
+			<fr>Camion</fr>
+		</word>
+		<word id="chrono">
+			<en>Chrono</en>
+			<fr>Chrono</fr>
+		</word>
+
 
 		<!-- PNJ -->
 		<!-- pnj_youngman -->

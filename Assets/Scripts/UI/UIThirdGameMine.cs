@@ -26,7 +26,6 @@ public class UIThirdGameMine : Menu
     private void Awake()
     {
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
-
     }
 
     protected override void Start()
@@ -76,13 +75,11 @@ public class UIThirdGameMine : Menu
         else
         {
             ThirdMiniGame.Instance.ThirdMiniGameFinish += EndGame;
-            Debug.Log("ThirdMiniGameFinish added");
 
             counterTruck = ThirdMiniGame.Instance.CounterTruck;
             counterTruckOre = ThirdMiniGame.Instance.CounterTruckOre;
             // Initialisation des textes UI
-            countText.text = "Camions : " + counterTruck + "/" + maxTruck;
-            timerText.text = "Chrono : " + Mathf.FloorToInt(timer);
+            UpdateTexts();
             textDebut.gameObject.SetActive(visible);
             countText.gameObject.SetActive(visible);
             timerText.gameObject.SetActive(visible);
@@ -110,14 +107,13 @@ public class UIThirdGameMine : Menu
             if (gameStarted && !isStopped)
             {
                 timer -= Time.deltaTime;
-                timerText.text = "Chrono : " + Mathf.FloorToInt(timer);
-                countText.text = "Camions : " + counterTruck + "/" + maxTruck;
+                UpdateTexts();
 
                 // V�rifier si le timer est �coul�
                 if (timer <= 0.0f)
                 {
                     timer = 0.0f;
-                    timerText.text = "Chrono : " + Mathf.FloorToInt(timer);
+                    UpdateTexts();
                     EndGame();
                 }
             }
@@ -144,14 +140,17 @@ public class UIThirdGameMine : Menu
         if (!isStopped)
         {
             isStopped = true;
+            counterTruck = ThirdMiniGame.Instance.CounterTruck;
+            counterTruckOre = ThirdMiniGame.Instance.CounterTruckOre;
             // Afficher le message de fin de jeu en fonction du nombre de camions de minerai
             if (counterTruckOre >= maxTruckOre)
             {
-                countText.text = "Camions : " + counterTruck + "/" + maxTruck;
+                UpdateTexts();
                 winText.text = "Bravo !";
             }
             else
             {
+                UpdateTexts();
                 winText.text = "Perdu !";
             }
             Time.timeScale = 0.0f;
@@ -161,6 +160,15 @@ public class UIThirdGameMine : Menu
 
     private void UpdateTexts()
     {
+        if (countText == null || winText == null || timerText == null || textDebut == null)
+        {
+            Debug.LogError("Text elements are not assigned in the inspector.");
+            return;
+        }
 
+        countText.text = LanguageManager.Instance.GetText("truck") + " : " + counterTruck + "/" + maxTruck; ;
+        winText.text = LanguageManager.Instance.GetText("truck");
+        timerText.text = LanguageManager.Instance.GetText("chrono") + " : " + Mathf.FloorToInt(timer);
+        textDebut.text = LanguageManager.Instance.GetText("startThirdGameMine");
     }
 }
