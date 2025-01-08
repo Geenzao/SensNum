@@ -59,6 +59,52 @@
 			<en>Lose</en>
 			<fr>Perdu</fr>
 		</word>
+		
+		<!-- Usine Assemblage UI -->
+		<word id="completedCircuit">
+			<en>Completed circuit</en>
+			<fr>Circuit réalisé</fr>
+		</word>
+		<word id="timeRemaining">
+			<en>Time remaining</en>
+			<fr>Temps restant</fr>
+		</word>
+		<word id="completedCircuitLittle">
+			<en>completed circuit</en>
+			<fr>circuit réalisé</fr>
+		</word>
+		<word id="poorlyMadeCircuit">
+			<en>poorly made circuit</en>
+			<fr>circuit mal fait</fr>
+		</word>
+		<word id="objectiveAchievedIn">
+			<en>Objective achieved in</en>
+			<fr>Objectif atteint en</fr>
+		</word>
+		<word id="seconds">
+			<en>seconds</en>
+			<fr>secondes</fr>
+		</word>
+		<word id="rules">
+			<en>You must complete 10 circuits with the correct components within the time limit.
+
+				Clicked and off we go!!</en>
+			<fr>Vous devez completer 10 circuits avec les bons composants dans le temps impartie.
+
+				Clické et c'est partie !!</fr>
+		</word>
+		<word id="replay">
+			<en>Replay</en>
+			<fr>Rejouer</fr>
+		</word>
+		<word id="quit">
+			<en>Quit</en>
+			<fr>Quitter</fr>
+		</word>
+		<word id="notifyAcceleration">
+			<en>Acceleration</en>
+			<fr>Accélération</fr>
+		</word>
 
 		<!-- PNJ -->
 		<!-- pnj_youngman -->
