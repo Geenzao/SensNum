@@ -11,6 +11,7 @@ public class UIThirdGameMine : Menu
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI countText;
     [SerializeField] private TextMeshProUGUI winText;
+    [SerializeField] private TextMeshProUGUI loseText;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI textDebut;
 
@@ -146,15 +147,14 @@ public class UIThirdGameMine : Menu
             if (counterTruckOre >= maxTruckOre)
             {
                 UpdateTexts();
-                winText.text = "Bravo !";
+                winText.gameObject.SetActive(true);
             }
             else
             {
                 UpdateTexts();
-                winText.text = "Perdu !";
+                loseText.gameObject.SetActive(true);
             }
             Time.timeScale = 0.0f;
-            winText.gameObject.SetActive(true);
         }
     }
 
@@ -167,7 +167,8 @@ public class UIThirdGameMine : Menu
         }
 
         countText.text = LanguageManager.Instance.GetText("truck") + " : " + counterTruck + "/" + maxTruck; ;
-        winText.text = LanguageManager.Instance.GetText("truck");
+        winText.text = LanguageManager.Instance.GetText("win");
+        loseText.text = LanguageManager.Instance.GetText("lose");
         timerText.text = LanguageManager.Instance.GetText("chrono") + " : " + Mathf.FloorToInt(timer);
         textDebut.text = LanguageManager.Instance.GetText("startThirdGameMine");
     }

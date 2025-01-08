@@ -59,6 +59,7 @@ public class LanguageManager : Singleton<LanguageManager>
         XmlDocument xmlDocument = new XmlDocument();
         try
         {
+            File.SetLastWriteTimeUtc(fullPath, DateTime.UtcNow);
             xmlDocument.Load(fullPath);
         }
         catch (Exception ex)
