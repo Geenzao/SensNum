@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d695d3732993c914e8614c41c3e20993
+guid: af3716d0500f6494ea8f10a969ed0b50
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7480866116622289875
-    second: sedan-car-76x76_0
+      213: 8501993756624435236
+    second: GK_JC_Free_220_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sedan-car-76x76_0
+      name: GK_JC_Free_220_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 0
         y: 0
-        width: 47
-        height: 33
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3db0785091061d760800000000000000
-      internalID: 7480866116622289875
+      spriteID: 4283032b6462df570800000000000000
+      internalID: 8501993756624435236
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sedan-car-76x76_0: 7480866116622289875
+      GK_JC_Free_220_0: 8501993756624435236
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
