@@ -17,6 +17,9 @@ TagManager:
   - GoldZone
   - CopperZone
   - LithiumZone
+  - passage1
+  - passage2
+  - passage3
   layers:
   - Default
   - TransparentFX
