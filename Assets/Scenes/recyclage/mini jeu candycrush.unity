@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 85452964}
   - component: {fileID: 85452963}
   m_Layer: 0
-  m_Name: mur-de-pierre-de-briques-rock-jeu-arriere-plan-dans-le-style-dessin-anime-surface-texturee-sans-couture-ui-jeu-actif-route-ou-sol-materiel-illustrationle-vectoriel_0
+  m_Name: mur-de-pierre-de-briques-rock-jeu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -259,7 +259,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7042591275240495823, guid: 9cf440d084c0e9243b6b3893eead6637, type: 3}
+  m_Sprite: {fileID: -3952835352081562447, guid: 08914c6ab2b2e3c4d8f4c30db2477728, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -650,8 +650,7 @@ GameObject:
   - component: {fileID: 702894326}
   - component: {fileID: 702894325}
   m_Layer: 0
-  m_Name: mur-de-pierre-de-briques-rock-jeu-arriere-plan-dans-le-style-dessin-anime-surface-texturee-sans-couture-ui-jeu-actif-route-ou-sol-materiel-illustrationle-vectoriel_0
-    (1)
+  m_Name: mur-de-pierre-de-briques-rock-jeu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -701,7 +700,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7042591275240495823, guid: 9cf440d084c0e9243b6b3893eead6637, type: 3}
+  m_Sprite: {fileID: -3952835352081562447, guid: 08914c6ab2b2e3c4d8f4c30db2477728, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -738,7 +737,7 @@ GameObject:
   - component: {fileID: 828359722}
   - component: {fileID: 828359721}
   m_Layer: 0
-  m_Name: Sans titre_0
+  m_Name: fondJeu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -787,7 +786,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 1681420316245604000, guid: 2eb5aa240b0a6164d9ccee11ef540ef4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -874,7 +873,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: -2836856845435714038, guid: f774af3085ef1dd44938b851f1950eb6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1046,7 +1045,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'perdu pd '
+  m_Text: 'perdu
+
+'
 --- !u!222 &1007846983
 CanvasRenderer:
   m_ObjectHideFlags: 0
