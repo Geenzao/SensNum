@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player-car-76x76(right way)_0: -5266845258827689895
+      player-car-76x76(right way)_1: 460192469516382423
+      player-car-76x76(right way)_10: -2470403315997066467
+      player-car-76x76(right way)_11: -7279806387147109976
+      player-car-76x76(right way)_12: 7659425920539644993
+      player-car-76x76(right way)_13: 172398549923707476
+      player-car-76x76(right way)_2: 4579243946476727092
+      player-car-76x76(right way)_3: 9219223402078115174
+      player-car-76x76(right way)_4: -7618743755972871779
+      player-car-76x76(right way)_5: 6261242567159103793
+      player-car-76x76(right way)_6: 6828737419432119506
+      player-car-76x76(right way)_7: -425476735634624937
+      player-car-76x76(right way)_8: -5478220885961324796
+      player-car-76x76(right way)_9: -8721387159862572317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

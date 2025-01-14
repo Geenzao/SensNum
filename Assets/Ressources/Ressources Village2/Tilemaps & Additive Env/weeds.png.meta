@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      weeds_0: 4136120395454960732
+      weeds_1: 2050411513654514591
+      weeds_2: 7672489551152138409
+      weeds_3: -8135221744001871597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice-cream-car-76x76-2_0: -7027657887819267803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

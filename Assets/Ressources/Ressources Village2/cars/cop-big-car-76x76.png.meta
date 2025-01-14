@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cop-big-car-76x76_0: 6938063498802265407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
