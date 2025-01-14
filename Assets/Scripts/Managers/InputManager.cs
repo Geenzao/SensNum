@@ -57,6 +57,23 @@ public class InputManager : Singleton<InputManager>
                 GameManager.Instance.LoadLevel("Mine2emeJeux");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.SecondGameMine);
             }
+
+            //if (Input.GetKeyDown(KeyCode.J))
+            //{
+            //    Debug.Log("J pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.Mine);
+            //}
+            //if (Input.GetKeyDown(KeyCode.K))
+            //{
+            //    Debug.Log("K pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.AssemblyFactory);
+            //}
+            //if (Input.GetKeyDown(KeyCode.L))
+            //{
+            //    Debug.Log("L pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.RecycleFactory);
+            //}
+
             if (Input.GetMouseButtonDown(0) && 
                 UsineAssemblageUI.State == UsineAssemblageState.rule && 
                 UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame && 
@@ -64,7 +81,6 @@ public class InputManager : Singleton<InputManager>
             {
                 UsineAssemblageUI.RunGame();
             }
-
             if (Input.GetMouseButtonDown(0) &&
                 UsineAssemblageUI.State == UsineAssemblageState.game &&
                 UIManager.CurrentMenuState == UIManager.MenuState.AssemblyGame &&
