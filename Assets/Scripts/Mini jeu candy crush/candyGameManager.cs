@@ -2,33 +2,20 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class CandyGameManager : MonoBehaviour
+public class CandyGameManager : Singleton<CandyGameManager>
 {
-    public CandyGameManager Instance;
+    public int nbSuperMatchsText { get; set; }
+    public int nbMatchsText { get; set; }
+    public int pointText { get; set; }
 
-    public GameObject backgroundPanel;
-    public GameObject victoryPanel;
-    public GameObject defeatPanel;
+    public float barredechet { get; set; }
 
-    public GameObject alerte;
-
-    public Text nbSuperMatchsText;
-    public Text nbMatchsText;
-    public Text pointText;
-
-    public Image barredechet;
-
-    public float nbDechets = 0;
+    public float nbDechets { get; set; }
     public int nbSuperMatchs = 0;
     public int nbMatchs = 0;
     public int points;
 
     public bool isGameEnded;
-
-    private void Awake()
-    {
-        Instance = this;
-    }
 
     float tempsDerniereExecution = 0.0f; // stock le temps passé depuis la derniere execution;
     float delai = 5.0f;    // tu defini l'interval voulu, en seconde.	
@@ -37,8 +24,6 @@ public class CandyGameManager : MonoBehaviour
     {
         if (nbDechets < 15)
         {
-            if(nbDechets < 10)
-                alerte.SetActive(false);
             tempsDerniereExecution += Time.fixedDeltaTime;  // ajoute a chaque update le temps écoulé depuis le dernier Update		
             if (tempsDerniereExecution > delai)
             {
@@ -47,31 +32,29 @@ public class CandyGameManager : MonoBehaviour
             }
 
         }
-        if (nbDechets == 15) 
-            LoseGame();
+        if (nbDechets == 15)
+        {
+            //Lancer un event pour dire que le jeu est fini
+        }
     }
     void MonAction()
     {
         nbDechets++;
         if (nbDechets < 11)
         {
-            barredechet.fillAmount = nbDechets / 10f;
+            barredechet = nbDechets / 10f;
         }
-        else alerte.SetActive(true);
     }
-    public void Initialize()
-    {
 
-    }
     void Start()
     {
-        
+        nbDechets = 0f;
     }
 
     public void ProcessTurn(int pointGain,int coupRealise)
     {
         points += pointGain;
-        pointText.text = points.ToString();
+        pointText = points;
 
         if (coupRealise == 1)
         {
@@ -80,7 +63,7 @@ public class CandyGameManager : MonoBehaviour
             {
                 nbDechets-=1;
             }
-            nbMatchsText.text = nbMatchs.ToString();
+            nbMatchsText = nbMatchs;
         }
         if (coupRealise == 2)
         {
@@ -89,21 +72,12 @@ public class CandyGameManager : MonoBehaviour
             {
                 nbDechets-=5;
             }
-            nbSuperMatchsText.text = nbMatchs.ToString();
+            nbSuperMatchsText = nbSuperMatchs;
         }
         if (nbDechets < 11)
         {
-            barredechet.fillAmount = nbDechets / 10f;
+            barredechet = nbDechets / 10f;
         }
 
-    }
-
-    public void WinGame()
-    {
-        
-    }
-    public void LoseGame()
-    {
-       defeatPanel.SetActive(true);
     }
 }
