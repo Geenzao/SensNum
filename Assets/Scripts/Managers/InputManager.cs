@@ -57,6 +57,13 @@ public class InputManager : Singleton<InputManager>
                 GameManager.Instance.LoadLevel("Mine2emeJeux");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.SecondGameMine);
             }
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                Debug.Log("W pressed");
+                GameManager.Instance.UnloadLevel("Village");
+                GameManager.Instance.LoadLevel("MiniJeuCandycrush");
+                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.CandyCrush);
+            }
 
             //if (Input.GetKeyDown(KeyCode.J))
             //{

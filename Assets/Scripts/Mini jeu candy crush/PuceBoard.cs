@@ -29,8 +29,6 @@ public class PuceBoard : MonoBehaviour
 
     private bool gameassarted = false;
 
-    public CandyGameManager candyGameManager;
-
     //layoutArray
     public ArrayLayout arrayLayout;
     //public static of puceboard
@@ -278,7 +276,7 @@ public class PuceBoard : MonoBehaviour
                     Debug.Log("I have a super Horizontal Match");
                     extraConnectedPuces.AddRange(matchedResults.connectedPuces);
                     if (gameassarted)
-                        candyGameManager.ProcessTurn(1000, 2);
+                        CandyGameManager.Instance.ProcessTurn(1000, 2);
 
                     return new MatchResult
                     {
@@ -307,7 +305,7 @@ public class PuceBoard : MonoBehaviour
                     Debug.Log("I have a super Vertical Match");
                     extraConnectedPuces.AddRange(matchedResults.connectedPuces);
                     if (gameassarted)
-                        candyGameManager.ProcessTurn(1000, 2);
+                        CandyGameManager.Instance.ProcessTurn(1000, 2);
 
                     return new MatchResult
                     {
@@ -341,7 +339,7 @@ public class PuceBoard : MonoBehaviour
         {
             Debug.Log("I have a normal horizontal match, the color of my match is: " + connectedPuces[0].puceType);
             if (gameassarted)
-                candyGameManager.ProcessTurn(100, 1);
+                CandyGameManager.Instance.ProcessTurn(100, 1);
 
             return new MatchResult
             {
@@ -354,7 +352,7 @@ public class PuceBoard : MonoBehaviour
         {
             Debug.Log("I have a Long horizontal match, the color of my match is: " + connectedPuces[0].puceType);
             if (gameassarted)
-                candyGameManager.ProcessTurn(500, 1);
+                CandyGameManager.Instance.ProcessTurn(500, 1);
 
             return new MatchResult
             {
@@ -377,7 +375,7 @@ public class PuceBoard : MonoBehaviour
         {
             Debug.Log("I have a normal vertical match, the color of my match is: " + connectedPuces[0].puceType);
             if (gameassarted)
-                candyGameManager.ProcessTurn(100, 1);
+                CandyGameManager.Instance.ProcessTurn(100, 1);
             return new MatchResult
             {
                 connectedPuces = connectedPuces,
@@ -389,7 +387,7 @@ public class PuceBoard : MonoBehaviour
         {
             Debug.Log("I have a Long vertical match, the color of my match is: " + connectedPuces[0].puceType);
             if (gameassarted)
-                candyGameManager.ProcessTurn(500, 1);
+                CandyGameManager.Instance.ProcessTurn(500, 1);
             return new MatchResult
             {
                 connectedPuces = connectedPuces,

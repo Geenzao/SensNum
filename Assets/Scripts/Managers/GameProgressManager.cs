@@ -17,6 +17,7 @@ public class GameProgressManager : Singleton<GameProgressManager>
         ThirdGameMine,
         SecondGameMine,
         AssemblyGame,
+        CandyCrush,
         End
     }
     
@@ -61,6 +62,9 @@ public class GameProgressManager : Singleton<GameProgressManager>
                 break;
             case GameProgressState.SecondGameMine:
                 UIManager.Instance.UpdateMenuState(MenuState.SecondGameMine);
+                break;
+            case GameProgressState.CandyCrush:
+                UIManager.Instance.UpdateMenuState(MenuState.CandyCrush);
                 break;
             case GameProgressState.None:
                 UIManager.Instance.UpdateMenuState(MenuState.None);
