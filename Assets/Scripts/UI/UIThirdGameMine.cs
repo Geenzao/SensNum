@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static GameManager;
+using UnityEngine.SceneManagement;
 
 public class UIThirdGameMine : Menu
 {
@@ -14,6 +15,26 @@ public class UIThirdGameMine : Menu
     [SerializeField] private TextMeshProUGUI loseText;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI textDebut;
+    /* ---------- Ajouts Aymeric Debut ---------- */
+    [SerializeField] private TextMeshProUGUI titleWin;
+    [SerializeField] private TextMeshProUGUI titleLoose;
+    [SerializeField] private TextMeshProUGUI scroreNumberLoose;
+    [SerializeField] private TextMeshProUGUI scroreNumberWin;
+
+    [Header("Button")]
+    [SerializeField] private Button looseRetryButton;
+    [SerializeField] private Button looseBackSceneButton;
+    [SerializeField] private Button winRetryButton;
+    [SerializeField] private Button winBackSceneButton;
+
+    [Header("Panel")]
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject loosePanel;
+
+    [Header("Variable")]
+    [SerializeField] private int score;
+    [SerializeField] private string LastSceneName;
+    /* ---------- Ajout Aymeric Fin ---------- */
 
     // Variables pour les compteurs et les �tats du jeu
     public float timer = 30.0f;
@@ -26,6 +47,13 @@ public class UIThirdGameMine : Menu
 
     private void Awake()
     {
+        /* ---------- Ajouts Aymeric Debut ---------- */
+        looseRetryButton.onClick.AddListener(OnRetryButtonClicked);
+        looseBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);
+        winRetryButton.onClick.AddListener(OnRetryButtonClicked);
+        winBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);
+        /* ---------- Ajout Aymeric Fin ---------- */
+
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
     }
 
@@ -85,6 +113,7 @@ public class UIThirdGameMine : Menu
             countText.gameObject.SetActive(visible);
             timerText.gameObject.SetActive(visible);
             winText.gameObject.SetActive(false);
+
         }
     }
 
@@ -148,15 +177,34 @@ public class UIThirdGameMine : Menu
             {
                 UpdateTexts();
                 winText.gameObject.SetActive(true);
+                winPanel.SetActive(true);
             }
             else
             {
                 UpdateTexts();
                 loseText.gameObject.SetActive(true);
+                loosePanel.SetActive(true);
             }
             Time.timeScale = 0.0f;
         }
     }
+    /* ---------- Ajouts Aymeric Debut ---------- */
+    // ----------------- TO DO : RECOMMENCER LE MINI-JEU -----------------\\
+    private void OnRetryButtonClicked()
+    {
+        gameObject.SetActive(false);
+        GameManager.Instance.UpdateGameState(GameManager.GameState.PREGAME);
+    }
+
+    // ----------------- TO DO : RETOURNER A LA SCENE PRECEDENTE AVEC BON GAME PROGRESS-----------------\\
+    private void OnBackSceneButtonClicked()
+    {
+        gameObject.SetActive(false);
+        SceneManager.LoadScene(LastSceneName);
+        GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
+        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
+    }
+    /* ---------- Ajout Aymeric Fin ---------- */
 
     private void UpdateTexts()
     {
@@ -166,10 +214,16 @@ public class UIThirdGameMine : Menu
             return;
         }
 
-        countText.text = LanguageManager.Instance.GetText("truck") + " : " + counterTruck + "/" + maxTruck; ;
+        countText.text = LanguageManager.Instance.GetText("truck") + " : " + counterTruck + "/" + maxTruck;
+        scroreNumberLoose.text = counterTruck + "/" + maxTruck;
+        scroreNumberWin.text = counterTruck + "/" + maxTruck;
         winText.text = LanguageManager.Instance.GetText("win");
         loseText.text = LanguageManager.Instance.GetText("lose");
         timerText.text = LanguageManager.Instance.GetText("chrono") + " : " + Mathf.FloorToInt(timer);
         textDebut.text = LanguageManager.Instance.GetText("startThirdGameMine");
+        /* ---------- Ajouts Aymeric Debut ---------- */
+        titleWin.text = LanguageManager.Instance.GetText("win");
+        titleLoose.text = LanguageManager.Instance.GetText("lose");
+        /* ---------- Ajout Aymeric Fin ---------- */
     }
 }
