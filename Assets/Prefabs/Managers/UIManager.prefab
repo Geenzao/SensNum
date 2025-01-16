@@ -7981,7 +7981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fffd92085d99a734793852857adc62d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Village
+  levelToLoad: Mine
   titre: {fileID: 8243505515385879070}
   play: {fileID: 8314294727014070048}
   settings: {fileID: 1469257273106893120}
