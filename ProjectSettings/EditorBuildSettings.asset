@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/recyclage/MiniJeuCandycrush.unity
     guid: ebc7958fc6a40224ba88509fde90081b
+  - enabled: 1
+    path: Assets/Scenes/Mine/Mine.unity
+    guid: ffbdc93bfa74f5548bace0edab8be549
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
