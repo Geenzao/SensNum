@@ -70,6 +70,7 @@ public class MainMenu : Menu
         GameManager.Instance.UnloadLevel("Start");
         GameManager.Instance.LoadLevel(levelToLoad);
         GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Start);
+        PathManager.Instance.UpdatePathState(PathManager.PathState.Village1);
     }
 
     private void OnSettingsButtonClicked()

@@ -43758,6 +43758,10 @@ PrefabInstance:
       value: youngman
       objectReference: {fileID: 0}
     - target: {fileID: 3768427979309331750, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
+      propertyPath: path
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768427979309331750, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
       propertyPath: 'tabDialogue.Array.data[0].sentences.Array.data[1]'
       value: "Tu n'as rien \xE0 faire dans notre village !\r"
       objectReference: {fileID: 0}

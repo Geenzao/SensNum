@@ -23,6 +23,9 @@ public class dialoguePNJ : MonoBehaviour
     private int interactionCount = 0;
     private bool range = false; //pour savoir si le joueur est assez proche
 
+    private bool finishAlreadyReached = false;
+    [SerializeField] private PathManager.PathState path;
+
     void Awake()
     {
         LanguageManager.Instance.OnLanguageChanged += InitializeDialogue;
@@ -67,8 +70,28 @@ public class dialoguePNJ : MonoBehaviour
         if (dialogueManager.Instance.fctisDialogueActive() == false && range == true && Input.GetKeyDown(KeyCode.E))
         {
             dialogueManager.Instance.StartDialogue(this);
-            incrementeInteractionCount(); // Incr mente le compteur d'interactions pour signifier qu'on a lanc  le premier dialogue
+            incrementeInteractionCount(); // Incrémente le compteur d'interactions pour signifier qu'on a lancé le premier dialogue
+
+            if (IsLastDialogue())
+            {
+                Finish();
+            }
         }
+    }
+
+    private bool IsLastDialogue()
+    {
+        return interactionCount >= listDialogue.Count;
+    }
+
+    private void Finish()
+    {
+        if(!finishAlreadyReached)
+        {
+            finishAlreadyReached = true;
+            PathManager.Instance.UpdatePathState(path);
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

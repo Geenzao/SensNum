@@ -241,11 +241,11 @@ PrefabInstance:
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[7]'
       value: 
-      objectReference: {fileID: 9054475828954094131, guid: aef1e102125ea9d4281e8d66f6582e74, type: 3}
+      objectReference: {fileID: 6385658296343732011, guid: 09cf0087a3bef1f458612c65badf2194, type: 3}
     - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: 'SystemPrefabs.Array.data[8]'
       value: 
-      objectReference: {fileID: 6385658296343732011, guid: 09cf0087a3bef1f458612c65badf2194, type: 3}
+      objectReference: {fileID: 9054475828954094131, guid: aef1e102125ea9d4281e8d66f6582e74, type: 3}
     - target: {fileID: 6071805488983983202, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: m_Name
       value: GameManager
