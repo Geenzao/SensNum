@@ -7,7 +7,11 @@ public class playerMovement : Singleton<playerMovement>
 
     private Animator animator_anim;
 
-
+    private void Awake()
+    {
+        ChargementTransition.OnLoadPage += StopPlayerMouvement;
+        ChargementTransition.OnUnloadPage += ActivePlayerMouvement;
+    }
     // Start is called before the first frame update
     void Start()
     {
