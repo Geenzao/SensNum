@@ -28,7 +28,8 @@ public class UIManager : Singleton<UIManager>
         ThirdGameMine,
         SecondGameMine,
         AssemblyGame,
-        CandyCrush
+        CandyCrush,
+        Loading
     }
 
     //\brief Currently displayed menu

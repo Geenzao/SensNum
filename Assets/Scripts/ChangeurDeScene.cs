@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class ChangeurDeScene : MonoBehaviour
 {
@@ -15,11 +16,19 @@ public class ChangeurDeScene : MonoBehaviour
             {
                 if (PathManager.CurrentPathState == path[i])
                 {
-                    GameManager.Instance.UnloadLevel(currentScene);
-                    GameManager.Instance.LoadLevel(sceneNameToGo[i]);
+                    //Lancer l'ui ici
+                    UIManager.Instance.UpdateMenuState(UIManager.MenuState.Loading);
+                    StartCoroutine(LoadScene(i));
                 }
             }
 
         }
+    }
+
+    private IEnumerator LoadScene(int i)
+    {
+        yield return new WaitForSecondsRealtime(1.2f);
+        GameManager.Instance.UnloadLevel(currentScene);
+        GameManager.Instance.LoadLevel(sceneNameToGo[i]);
     }
 }
