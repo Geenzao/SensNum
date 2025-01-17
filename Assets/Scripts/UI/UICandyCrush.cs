@@ -10,8 +10,8 @@ public class UICandyCrush : Menu
 {
     [Header("Panel")]
     [SerializeField] private GameObject gamePanel;
-    [SerializeField] private GameObject backgroundPanel;
-    [SerializeField] private GameObject victoryPanel;
+    /*[SerializeField] private GameObject backgroundPanel;
+    [SerializeField] private GameObject victoryPanel;*/
     [SerializeField] private GameObject defeatPanel;
 
     [Header("Text")]
@@ -24,14 +24,27 @@ public class UICandyCrush : Menu
     [SerializeField] private TextMeshProUGUI nbMatchIntText;
     [SerializeField] private TextMeshProUGUI nbSuperMatchIntText;
 
+    [SerializeField] private TextMeshProUGUI titleLoose;
+    [SerializeField] private TextMeshProUGUI scoreNumberLoose;
+
     [Header("Image")]
     [SerializeField] private Image barredechet;
 
     [Header("GameObjects")]
     [SerializeField] private GameObject alerte;
 
+    [Header("Button")]
+    [SerializeField] private Button looseRetryButton;
+    [SerializeField] private Button looseBackSceneButton;
+
+    [Header("Variable")]
+    [SerializeField] private string LastSceneName;
+
     private void Awake()
     {
+        looseRetryButton.onClick.AddListener(OnRetryButtonClicked);
+        looseBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);
+
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
     }
 
@@ -103,13 +116,50 @@ public class UICandyCrush : Menu
             nbMatchIntText.text = CandyGameManager.Instance.nbMatchsText.ToString();
             nbSuperMatchIntText.text = CandyGameManager.Instance.nbSuperMatchsText.ToString();
             if (CandyGameManager.Instance.nbDechets >= 15)
-                defeatPanel.SetActive(true);
+            {
+                UpdateTexts();
+                Time.timeScale = 0;
+                defeatPanel.SetActive(true); 
+            }
             if (CandyGameManager.Instance.nbDechets < 10)
                 alerte.SetActive(false);
             if (CandyGameManager.Instance.nbDechets >= 10)
                 alerte.SetActive(true);
         }
     }
+
+    /* ---------- Ajouts Aymeric Debut ---------- */
+    // ----------------- TO DO : RECOMMENCER LE MINI-JEU -----------------\\
+    private void OnRetryButtonClicked()
+    {
+        /*PuceBoard.Instance.InitializeBoard();*/
+
+        defeatPanel.gameObject.SetActive(false);
+
+        CandyGameManager.Instance.nbDechets = 0;
+        CandyGameManager.Instance.points = 0;
+        CandyGameManager.Instance.pointText = 0;
+        CandyGameManager.Instance.nbMatchs = 0;
+        CandyGameManager.Instance.nbMatchsText = 0;
+        CandyGameManager.Instance.nbSuperMatchs = 0;
+        CandyGameManager.Instance.nbSuperMatchsText = 0;
+        CandyGameManager.Instance.barredechet = 0;
+        CandyGameManager.Instance.tempsDerniereExecution = 0.0f;
+
+
+        UpdateTexts();
+
+        Time.timeScale = 1;
+    }
+
+    // ----------------- TO DO : RETOURNER A LA SCENE PRECEDENTE AVEC BON GAME PROGRESS-----------------\\
+    private void OnBackSceneButtonClicked()
+    {
+        defeatPanel.gameObject.SetActive(false);
+        GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
+        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
+    }
+    /* ---------- Ajout Aymeric Fin ---------- */
 
     private void UpdateTexts()
     {
@@ -118,5 +168,7 @@ public class UICandyCrush : Menu
             Debug.LogError("Text elements are not assigned in the inspector.");
             return;
         }
+        scoreNumberLoose.text = scoreIntText.text;
+        titleLoose.text = LanguageManager.Instance.GetText("lose");
     }
 }
