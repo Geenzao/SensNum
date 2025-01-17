@@ -7,7 +7,7 @@ public class ChangeurDeScene : MonoBehaviour
     [SerializeField] private string currentScene;
     [SerializeField] private List<string> sceneNameToGo;
     [SerializeField] private List<PathManager.PathState> path;
-    [SerializeField] private List<GameProgressManager.GameProgressState> gameProgress;
+    //[SerializeField] private List<GameProgressManager.GameProgressState> gameProgress;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,7 +19,7 @@ public class ChangeurDeScene : MonoBehaviour
                 {
                     //Lancer l'ui ici
                     UIManager.Instance.UpdateMenuState(UIManager.MenuState.Loading);
-                    ChargementTransition.Instance.gameProgressState = gameProgress[i];
+                    //ChargementTransition.Instance.gameProgressState = gameProgress[i];
                     StartCoroutine(LoadScene(i));
                 }
             }
@@ -32,6 +32,6 @@ public class ChangeurDeScene : MonoBehaviour
         yield return new WaitForSecondsRealtime(1.2f);
         GameManager.Instance.UnloadLevel(currentScene);
         GameManager.Instance.LoadLevel(sceneNameToGo[i]);
-        ChargementTransition.InvokeOnLoadPage();
+        //ChargementTransition.InvokeOnLoadPage();
     }
 }

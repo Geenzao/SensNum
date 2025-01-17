@@ -9,6 +9,7 @@ public class playerMovement : Singleton<playerMovement>
 
     private void Awake()
     {
+        base.Awake();
         ChargementTransition.OnLoadPage += StopPlayerMouvement;
         ChargementTransition.OnUnloadPage += ActivePlayerMouvement;
     }

@@ -48990,6 +48990,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Changeur de scene
       objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: gameProgress.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'gameProgress.Array.data[0]'
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
