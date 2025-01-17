@@ -11,15 +11,13 @@ public class UIThirdGameMine : Menu
 {
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI countText;
-    [SerializeField] private TextMeshProUGUI winText;
-    [SerializeField] private TextMeshProUGUI loseText;
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private TextMeshProUGUI textDebut;
     /* ---------- Ajouts Aymeric Debut ---------- */
     [SerializeField] private TextMeshProUGUI titleWin;
     [SerializeField] private TextMeshProUGUI titleLoose;
-    [SerializeField] private TextMeshProUGUI scroreNumberLoose;
-    [SerializeField] private TextMeshProUGUI scroreNumberWin;
+    [SerializeField] private TextMeshProUGUI scoreNumberLoose;
+    [SerializeField] private TextMeshProUGUI scoreNumberWin;
 
     [Header("Button")]
     [SerializeField] private Button looseRetryButton;
@@ -90,7 +88,6 @@ public class UIThirdGameMine : Menu
             textDebut.gameObject.SetActive(false);
             countText.gameObject.SetActive(false);
             timerText.gameObject.SetActive(false);
-            winText.gameObject.SetActive(false);
         }
     }
 
@@ -112,7 +109,6 @@ public class UIThirdGameMine : Menu
             textDebut.gameObject.SetActive(visible);
             countText.gameObject.SetActive(visible);
             timerText.gameObject.SetActive(visible);
-            winText.gameObject.SetActive(false);
 
         }
     }
@@ -176,13 +172,11 @@ public class UIThirdGameMine : Menu
             if (counterTruckOre >= maxTruckOre)
             {
                 UpdateTexts();
-                winText.gameObject.SetActive(true);
                 winPanel.SetActive(true);
             }
             else
             {
                 UpdateTexts();
-                loseText.gameObject.SetActive(true);
                 loosePanel.SetActive(true);
             }
             Time.timeScale = 0.0f;
@@ -192,15 +186,15 @@ public class UIThirdGameMine : Menu
     // ----------------- TO DO : RECOMMENCER LE MINI-JEU -----------------\\
     private void OnRetryButtonClicked()
     {
-        gameObject.SetActive(false);
-        GameManager.Instance.UpdateGameState(GameManager.GameState.PREGAME);
+        loosePanel.gameObject.SetActive(false);
+        winPanel.gameObject.SetActive(false);
     }
 
     // ----------------- TO DO : RETOURNER A LA SCENE PRECEDENTE AVEC BON GAME PROGRESS-----------------\\
     private void OnBackSceneButtonClicked()
     {
-        gameObject.SetActive(false);
-        SceneManager.LoadScene(LastSceneName);
+        loosePanel.gameObject.SetActive(false);
+        winPanel.gameObject.SetActive(false);
         GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
         GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
     }
@@ -208,17 +202,15 @@ public class UIThirdGameMine : Menu
 
     private void UpdateTexts()
     {
-        if (countText == null || winText == null || timerText == null || textDebut == null)
+        if (countText == null || timerText == null || textDebut == null)
         {
             Debug.LogError("Text elements are not assigned in the inspector.");
             return;
         }
 
         countText.text = LanguageManager.Instance.GetText("truck") + " : " + counterTruck + "/" + maxTruck;
-        scroreNumberLoose.text = counterTruck + "/" + maxTruck;
-        scroreNumberWin.text = counterTruck + "/" + maxTruck;
-        winText.text = LanguageManager.Instance.GetText("win");
-        loseText.text = LanguageManager.Instance.GetText("lose");
+        scoreNumberLoose.text = "Total : " + counterTruck + "/" + maxTruck + "\nMinerais : " + counterTruckOre + "/3";
+        scoreNumberWin.text = "Total : " + counterTruck + "/" + maxTruck + "\nMinerais : " + counterTruckOre + "/3";
         timerText.text = LanguageManager.Instance.GetText("chrono") + " : " + Mathf.FloorToInt(timer);
         textDebut.text = LanguageManager.Instance.GetText("startThirdGameMine");
         /* ---------- Ajouts Aymeric Debut ---------- */
