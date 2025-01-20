@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: a27793fecd88e8e43a65fa79094c541e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1370074942236160912
+    second: Usine de Recyclage - text_0
+  - first:
+      213: -1516068077548687699
+    second: Usine de Recyclage - text_1
+  - first:
+      213: 8136491000960993687
+    second: Usine de Recyclage - text_2
+  - first:
+      213: 5484568603958667991
+    second: Usine de Recyclage - text_3
+  - first:
+      213: -8224337864832841159
+    second: Usine de Recyclage - text_4
+  - first:
+      213: -3074260075896950749
+    second: Usine de Recyclage - text_5
+  - first:
+      213: 8856906856723216853
+    second: Usine de Recyclage - text_6
+  - first:
+      213: 3756903544469862012
+    second: Usine de Recyclage - text_7
+  - first:
+      213: 3354558216726564418
+    second: Usine de Recyclage - text_8
+  - first:
+      213: 24203935861365327
+    second: Usine de Recyclage - text_9
+  - first:
+      213: -4598655800133921505
+    second: Usine de Recyclage - text_10
+  - first:
+      213: -2157790742071933518
+    second: Usine de Recyclage - text_11
+  - first:
+      213: 5539467262206110159
+    second: Usine de Recyclage - text_12
+  - first:
+      213: 6688576394492904406
+    second: Usine de Recyclage - text_13
+  - first:
+      213: 2430856998761104237
+    second: Usine de Recyclage - text_14
+  - first:
+      213: 3352765728211335091
+    second: Usine de Recyclage - text_15
+  - first:
+      213: -5740278387438253314
+    second: Usine de Recyclage - text_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_0
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 164
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c895859148cfce0800000000000000
+      internalID: -1370074942236160912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_1
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 235
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daea66ead18d5fae0800000000000000
+      internalID: -1516068077548687699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 164
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7994176d47f9ae070800000000000000
+      internalID: 8136491000960993687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 164
+        width: 17
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da6739361a1d1c40800000000000000
+      internalID: 5484568603958667991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_4
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 164
+        width: 65
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a08dd49484ddd80800000000000000
+      internalID: -8224337864832841159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_5
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 164
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3203ff4cfb80655d0800000000000000
+      internalID: -3074260075896950749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 30
+        width: 64
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d975bb3cdd0aea70800000000000000
+      internalID: 8856906856723216853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 30
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7638876ed3332430800000000000000
+      internalID: 3756903544469862012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_8
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 30
+        width: 65
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24eca56cce8cd8e20800000000000000
+      internalID: 3354558216726564418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_9
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 30
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ade27f95df55000800000000000000
+      internalID: 24203935861365327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_10
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 30
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f155abc1aea4e20c0800000000000000
+      internalID: -4598655800133921505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_11
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 7
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b50d27a0ccfd02e0800000000000000
+      internalID: -2157790742071933518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_12
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 30
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc963b8202420ec40800000000000000
+      internalID: 5539467262206110159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_13
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 30
+        width: 16
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d300de0bc892dc50800000000000000
+      internalID: 6688576394492904406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_14
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 30
+        width: 65
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d638de6af832cb120800000000000000
+      internalID: 2430856998761104237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_15
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 7
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7f3258aaa678e20800000000000000
+      internalID: 3352765728211335091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine de Recyclage - text_16
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 30
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa04ec483f6650b0800000000000000
+      internalID: -5740278387438253314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Usine de Recyclage - text_0: -1370074942236160912
+      Usine de Recyclage - text_1: -1516068077548687699
+      Usine de Recyclage - text_10: -4598655800133921505
+      Usine de Recyclage - text_11: -2157790742071933518
+      Usine de Recyclage - text_12: 5539467262206110159
+      Usine de Recyclage - text_13: 6688576394492904406
+      Usine de Recyclage - text_14: 2430856998761104237
+      Usine de Recyclage - text_15: 3352765728211335091
+      Usine de Recyclage - text_16: -5740278387438253314
+      Usine de Recyclage - text_2: 8136491000960993687
+      Usine de Recyclage - text_3: 5484568603958667991
+      Usine de Recyclage - text_4: -8224337864832841159
+      Usine de Recyclage - text_5: -3074260075896950749
+      Usine de Recyclage - text_6: 8856906856723216853
+      Usine de Recyclage - text_7: 3756903544469862012
+      Usine de Recyclage - text_8: 3354558216726564418
+      Usine de Recyclage - text_9: 24203935861365327
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
