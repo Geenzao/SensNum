@@ -178,9 +178,42 @@ public class UISecondMiniGame : Menu
     private void OnRetryButtonClicked()
     {
         winPanel.gameObject.SetActive(false);
+        texteCptCu.text = "0";
+        texteCptLi.text = "0";
+        texteCptOr.text = "0";
+        oreCounter.cptAu = 0;
+        oreCounter.cptCu = 0;
+        oreCounter.cptLi = 0;
+        timer = 30.0f;
+        isStopped = false;
+        gameStarted = false;
+        panelTexteDebut.gameObject.SetActive(true);
+        UpdateTexts();
+        btnVert.SetActive(true);
+        //Faire en sorte de supprimer tous les objets de tags "Gold", "Copper", "Lithium" & "Rocks"
+        GameObject[] objectsG = GameObject.FindGameObjectsWithTag("Gold");
+        GameObject[] objectsC = GameObject.FindGameObjectsWithTag("Copper");
+        GameObject[] objectsL = GameObject.FindGameObjectsWithTag("Lithium");
+        GameObject[] objectsR = GameObject.FindGameObjectsWithTag("Rocks");
+        foreach (GameObject obj in objectsG)
+        {
+            Destroy(obj);
+        }
+        foreach (GameObject obj in objectsC)
+        {
+            Destroy(obj);
+        }
+        foreach (GameObject obj in objectsL)
+        {
+            Destroy(obj);
+        }
+        foreach (GameObject obj in objectsR)
+        {
+            Destroy(obj);
+        }
+
     }
 
-    // ----------------- TO DO : RETOURNER A LA SCENE PRECEDENTE AVEC BON GAME PROGRESS-----------------\\
     private void OnBackSceneButtonClicked()
     {
         winPanel.gameObject.SetActive(false);

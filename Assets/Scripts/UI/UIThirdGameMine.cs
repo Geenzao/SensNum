@@ -32,6 +32,7 @@ public class UIThirdGameMine : Menu
     [Header("Variable")]
     [SerializeField] private int score;
     [SerializeField] private string LastSceneName;
+
     /* ---------- Ajout Aymeric Fin ---------- */
 
     // Variables pour les compteurs et les �tats du jeu
@@ -109,7 +110,6 @@ public class UIThirdGameMine : Menu
             textDebut.gameObject.SetActive(visible);
             countText.gameObject.SetActive(visible);
             timerText.gameObject.SetActive(visible);
-
         }
     }
 
@@ -138,6 +138,7 @@ public class UIThirdGameMine : Menu
                 // V�rifier si le timer est �coul�
                 if (timer <= 0.0f)
                 {
+                    Time.timeScale = 0.0f;
                     timer = 0.0f;
                     UpdateTexts();
                     EndGame();
@@ -188,9 +189,22 @@ public class UIThirdGameMine : Menu
     {
         loosePanel.gameObject.SetActive(false);
         winPanel.gameObject.SetActive(false);
+        ThirdMiniGame.Instance.counterTruck = 0;
+        ThirdMiniGame.Instance.counterTruckOre = 0;
+        timer = 30.0f;
+        isStopped = false;
+        textDebut.gameObject.SetActive(true);
+        gameStarted = false;
+        UpdateTexts();
+        // Placer tous les camions à la position des games object dans le tableau truckposition dans thirdminigame.cs
+        for (int i = 0; i < ThirdMiniGame.Instance.truckPosition.Length; i++)
+        {
+            ThirdMiniGame.Instance.truckPosition[i].GetComponent<MoveTruck>().ResetTruck();
+        }
+
     }
 
-    // ----------------- TO DO : RETOURNER A LA SCENE PRECEDENTE AVEC BON GAME PROGRESS-----------------\\
+
     private void OnBackSceneButtonClicked()
     {
         loosePanel.gameObject.SetActive(false);
