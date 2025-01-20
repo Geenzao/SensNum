@@ -10,8 +10,8 @@ public class playerMovement : Singleton<playerMovement>
     private void Awake()
     {
         base.Awake();
-        ChargementTransition.OnLoadPage += StopPlayerMouvement;
-        ChargementTransition.OnUnloadPage += ActivePlayerMouvement;
+        ChargementTransitionManager.OnLoadPage += StopPlayerMouvement;
+        ChargementTransitionManager.OnUnloadPage += ActivePlayerMouvement;
     }
     // Start is called before the first frame update
     void Start()

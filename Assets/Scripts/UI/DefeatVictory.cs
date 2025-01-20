@@ -33,7 +33,6 @@ public class DefeatVictory : Menu
     private void OnRetryButtonClicked()
     {
         gameObject.SetActive(false);
-        GameManager.Instance.UpdateGameState(GameManager.GameState.PREGAME);
     }
 
     private void OnBackSceneButtonClicked()

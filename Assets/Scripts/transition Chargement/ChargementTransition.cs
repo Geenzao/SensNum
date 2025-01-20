@@ -1,28 +1,61 @@
 using System;
 using UnityEngine;
+using static GameProgressManager;
 
-public class ChargementTransition : Singleton<ChargementTransition>
+public class ChargementTransition : Menu
 {
     public Animator animator;
     public GameObject LoadGreenRoue;
 
-    public static event Action OnLoadPage;
-    public static event Action OnUnloadPage;
+    [SerializeField] private GameObject panelChargement; 
 
-    public GameProgressManager.GameProgressState gameProgressState;
-
-    public static void InvokeOnLoadPage()
+    private void Awake()
     {
-        OnLoadPage?.Invoke();
+        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
     }
 
-    //pour des test 
-    private void Update()
+    protected override void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        base.Start();
+
+        if (UIManager.CurrentMenuState == UIManager.MenuState.Loading)
         {
+            Debug.Log("CandyCrush");
+            TriggerVisibility(true);
+        }
+
+        if (LanguageManager.Instance != null)
+        {
+            UpdateTexts();
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
+        }
+    }
+
+    protected override void TriggerVisibility(bool visible)
+    {
+        base.TriggerVisibility(visible);
+        //Start couroutine de 2 seconde
+        if (visible)
+        {
+            panelChargement.SetActive(true);
             LoadChargement();
         }
+        else
+        {
+            panelChargement.SetActive(false);
+        }
+    }
+
+    protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
+    {
+        base.HandleMenuStateChanged(newMS, oldMS);
+        if (newMS == UIManager.MenuState.Loading)
+            TriggerVisibility(true); //true
+        else
+            TriggerVisibility(false);
     }
 
     public void LoadChargement()
@@ -32,16 +65,20 @@ public class ChargementTransition : Singleton<ChargementTransition>
 
     public void StopGame()
     {
-        Debug.Log("StopGame");
-        //Time.timeScale = 0;
-        OnLoadPage?.Invoke();
+        ChargementTransitionManager.Instance.StopGame();
     }
 
     public void StartGame()
     {
-        Debug.Log("Start Game");
-        //Time.timeScale = 1;
-        OnUnloadPage?.Invoke();
-        GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
+        ChargementTransitionManager.Instance.StartGame();
+    }
+
+    private void UpdateTexts()
+    {
+        //if ()
+        //{
+        //    Debug.LogError("Text elements are not assigned in the inspector.");
+        //    return;
+        //}
     }
 }
