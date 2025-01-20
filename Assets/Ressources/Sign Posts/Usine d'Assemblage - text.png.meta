@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 5cde64edd209f6843be0e8d098abee68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8565656705649405564
+    second: Usine d'Assemblage - text_0
+  - first:
+      213: 6489280554888099758
+    second: Usine d'Assemblage - text_1
+  - first:
+      213: 1438277644749299832
+    second: Usine d'Assemblage - text_2
+  - first:
+      213: -7333496501443923463
+    second: Usine d'Assemblage - text_3
+  - first:
+      213: 3645345040600266026
+    second: Usine d'Assemblage - text_4
+  - first:
+      213: 4303508078448269151
+    second: Usine d'Assemblage - text_5
+  - first:
+      213: -1185976429847261568
+    second: Usine d'Assemblage - text_6
+  - first:
+      213: 2572524143736501587
+    second: Usine d'Assemblage - text_7
+  - first:
+      213: 3777346243579571248
+    second: Usine d'Assemblage - text_8
+  - first:
+      213: 3322728448999113626
+    second: Usine d'Assemblage - text_9
+  - first:
+      213: -3560470212079740980
+    second: Usine d'Assemblage - text_10
+  - first:
+      213: -6680643880621206844
+    second: Usine d'Assemblage - text_11
+  - first:
+      213: -2691015635916280916
+    second: Usine d'Assemblage - text_12
+  - first:
+      213: -1862585129507700657
+    second: Usine d'Assemblage - text_13
+  - first:
+      213: -4398738204525452562
+    second: Usine d'Assemblage - text_14
+  - first:
+      213: 5096733586261257059
+    second: Usine d'Assemblage - text_15
+  - first:
+      213: 520627270646273377
+    second: Usine d'Assemblage - text_16
+  - first:
+      213: 1794053153505742437
+    second: Usine d'Assemblage - text_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_0
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 162
+        width: 64
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7eec2814635fd670800000000000000
+      internalID: 8565656705649405564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_1
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 232
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea774f1784e8e0a50800000000000000
+      internalID: 6489280554888099758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_2
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 162
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870eaa7c5e9c5f310800000000000000
+      internalID: 1438277644749299832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 162
+        width: 17
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f17dd559cf2a3a90800000000000000
+      internalID: -7333496501443923463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_4
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 162
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25f5b4200ed69230800000000000000
+      internalID: 3645345040600266026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_5
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 162
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57deefdbc129bb30800000000000000
+      internalID: 4303508078448269151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 30
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ec7fa78b09a8fe0800000000000000
+      internalID: -1185976429847261568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_7
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 88
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355b783341173b320800000000000000
+      internalID: 2572524143736501587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 30
+        width: 64
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c67323564db6430800000000000000
+      internalID: 3777346243579571248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_9
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 30
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a934da77be3bc1e20800000000000000
+      internalID: 3322728448999113626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_10
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 30
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc790afc43ba69ec0800000000000000
+      internalID: -3560470212079740980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_11
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 30
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c29fa049c59943a0800000000000000
+      internalID: -6680643880621206844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_12
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 30
+        width: 87
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab2038698797aad0800000000000000
+      internalID: -2691015635916280916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_13
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 30
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40c4cf61b4c626e0800000000000000
+      internalID: -1862585129507700657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_14
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 30
+        width: 17
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2225398ea84f2c0800000000000000
+      internalID: -4398738204525452562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_15
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 30
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ba7eb613c3bb640800000000000000
+      internalID: 5096733586261257059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_16
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 7
+        width: 64
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16590478eb3a93700800000000000000
+      internalID: 520627270646273377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Usine d'Assemblage - text_17
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 30
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e01ea76d1c5e810800000000000000
+      internalID: 1794053153505742437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Usine d'Assemblage - text_0: 8565656705649405564
+      Usine d'Assemblage - text_1: 6489280554888099758
+      Usine d'Assemblage - text_10: -3560470212079740980
+      Usine d'Assemblage - text_11: -6680643880621206844
+      Usine d'Assemblage - text_12: -2691015635916280916
+      Usine d'Assemblage - text_13: -1862585129507700657
+      Usine d'Assemblage - text_14: -4398738204525452562
+      Usine d'Assemblage - text_15: 5096733586261257059
+      Usine d'Assemblage - text_16: 520627270646273377
+      Usine d'Assemblage - text_17: 1794053153505742437
+      Usine d'Assemblage - text_2: 1438277644749299832
+      Usine d'Assemblage - text_3: -7333496501443923463
+      Usine d'Assemblage - text_4: 3645345040600266026
+      Usine d'Assemblage - text_5: 4303508078448269151
+      Usine d'Assemblage - text_6: -1185976429847261568
+      Usine d'Assemblage - text_7: 2572524143736501587
+      Usine d'Assemblage - text_8: 3777346243579571248
+      Usine d'Assemblage - text_9: 3322728448999113626
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

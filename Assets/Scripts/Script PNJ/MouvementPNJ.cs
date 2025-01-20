@@ -16,6 +16,13 @@ public class MouvementPNJ : MonoBehaviour
     private float idleTimer = 0f;                             // Timer pour la durée en idle
 
     private bool ThisPNJDontWalk = false;
+    public Vector3 initialScale;  // Pour sauvegarder la taille initiale du PNJ
+
+    void Awake()
+    {
+        initialScale = gameObject.transform.localScale;  // Sauvegarde la taille initiale
+    }
+
 
     void Start()
     {
@@ -39,7 +46,7 @@ public class MouvementPNJ : MonoBehaviour
     {
         //NOTE : Si quelqu'un veut faire pas bouger un PNJ, alors il a juste a ne mettre qu'un seul point
 
-        if(ThisPNJDontWalk)
+        if (ThisPNJDontWalk)
         {
             SetWalkingState(false);
 
@@ -80,16 +87,9 @@ public class MouvementPNJ : MonoBehaviour
 
     private void UpdateSpriteDirection()
     {
-        // Tourne le sprite selon la direction du déplacement
         Transform targetPoint = tabPointDestination[currentDestinationIndex].transform;
-        if (targetPoint.position.x > transform.position.x)
-        {
-            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
-        }
-        else
-        {
-            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
-        }
+        float direction = targetPoint.position.x > transform.position.x ? 1 : -1;
+        transform.localScale = new Vector3(initialScale.x * direction, initialScale.y, initialScale.z);  // Applique la direction tout en gardant la taille initiale    }
     }
 
     //Gère l’état du PNJ (marche ou idle) et met à jour l’animation et la direction du sprite en conséquence.
