@@ -63,24 +63,11 @@ public class UIManager : Singleton<UIManager>
         {
             UpdateMenuState(MenuState.PauseMenu);
         }
-        else if (currentState == GameState.RUNNING)
-        {
-            switch(GameProgressManager.CurrentGameProgressState)
-            {
-                case GameProgressManager.GameProgressState.ThirdGameMine:
-                    UpdateMenuState(MenuState.ThirdGameMine);
-                    break;
-                case GameProgressManager.GameProgressState.AssemblyGame:
-                    UpdateMenuState(MenuState.AssemblyGame);
-                    break;
-                case GameProgressManager.GameProgressState.Start:
-                    UpdateMenuState(MenuState.None);
-                    break;
-            }
-        }
         else
         {
-            UpdateMenuState(MenuState.None);
+
+            if (CurrentMenuState != MenuState.Loading)
+                UpdateMenuState(MenuState.None);
         }
     }
 
