@@ -45,6 +45,12 @@ public class CinematicManager : Singleton<CinematicManager>
 
     public CinematicBloc[] tabCinematicBloc;
 
+    [Header("Changement de scene")]
+    [SerializeField] private string actualScene;
+    [SerializeField] private string sceneToLoad;
+    [SerializeField] private GameProgressManager.GameProgressState gameProgressState;
+
+
     private void Start()
     {
         // Initialisation des clips et calcul des durées des dialogues
@@ -184,6 +190,9 @@ public class CinematicManager : Singleton<CinematicManager>
         }
 
         //TODO : faire la logique pour lancer la scene de jeux Mine
+        GameManager.Instance.UnloadLevel(actualScene);
+        GameManager.Instance.LoadLevel(sceneToLoad);
+        GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
     }
 }
 

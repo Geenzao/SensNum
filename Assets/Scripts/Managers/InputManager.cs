@@ -14,7 +14,7 @@ public class InputManager : Singleton<InputManager>
     }
 
         // Update is called once per frame
-        void Update()
+    void Update()
     {
         if (GameManager.CurrentGameState != GameState.PREGAME)
         { 
@@ -38,7 +38,7 @@ public class InputManager : Singleton<InputManager>
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
-                Debug.Log("G pressed");
+                Debug.Log("R pressed");
                 GameManager.Instance.UnloadLevel("Mine3emeJeux");
                 GameManager.Instance.LoadLevelAndPositionPlayer("Village");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Start);
@@ -52,14 +52,14 @@ public class InputManager : Singleton<InputManager>
             }
             if (Input.GetKeyDown(KeyCode.H))
             {
-                Debug.Log("F pressed");
-                GameManager.Instance.UnloadLevel("Village");
-                GameManager.Instance.LoadLevel("Mine2emeJeux");
-                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.SecondGameMine);
+                Debug.Log("H pressed");
+                GameManager.Instance.UnloadLevel("Mine");
+                GameManager.Instance.LoadLevel("CinematiqueMine");
+                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.None);
             }
             if (Input.GetKeyDown(KeyCode.V))
             {
-                Debug.Log("W pressed");
+                Debug.Log("V pressed");
                 GameManager.Instance.UnloadLevel("Village");
                 GameManager.Instance.LoadLevel("MiniJeuCandycrush");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.CandyCrush);

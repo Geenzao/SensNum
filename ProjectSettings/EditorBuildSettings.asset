@@ -29,6 +29,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mine/Mine.unity
     guid: ffbdc93bfa74f5548bace0edab8be549
+  - enabled: 1
+    path: Assets/Scenes/Cinematic/CinematiqueMine.unity
+    guid: 6ed9a81ec56cb9443a6d522504b9a32a
+  - enabled: 1
+    path: Assets/Scenes/Cinematic/CinematiqueAssemblage.unity
+    guid: 23931175b5cb2ef45b75f199551c8ea3
+  - enabled: 1
+    path: Assets/Scenes/Cinematic/CinematiqueRecyclage.unity
+    guid: 0e09478f48166cc4b98eb9475e3e2bef
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
