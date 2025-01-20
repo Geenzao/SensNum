@@ -4624,7 +4624,7 @@ MonoBehaviour:
   alerte: {fileID: 9220075550103272011}
   looseRetryButton: {fileID: 1309910833396711561}
   looseBackSceneButton: {fileID: 4030010998684591520}
-  LastSceneName: Centre Recyclage
+  LastSceneName: CentreRecyclage
 --- !u!1 &2429982581227672895
 GameObject:
   m_ObjectHideFlags: 0

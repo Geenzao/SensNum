@@ -32,7 +32,7 @@ public class InputManager : Singleton<InputManager>
             if (Input.GetKeyDown(KeyCode.G))
             {
                 Debug.Log("G pressed");
-                GameManager.Instance.UnloadAndSavePosition("Village", 20, 10);
+                GameManager.Instance.UnloadAndSavePosition("Village", -1.5f, 5.5f);
                 GameManager.Instance.LoadLevel("Mine3emeJeux");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.ThirdGameMine);
             }
@@ -46,7 +46,7 @@ public class InputManager : Singleton<InputManager>
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("F pressed");
-                GameManager.Instance.UnloadLevel("Village");
+                GameManager.Instance.UnloadAndSavePosition("Village", -1.5f, 5.5f);
                 GameManager.Instance.LoadLevel("AssemblageJeux");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyGame);
             }

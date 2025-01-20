@@ -184,6 +184,7 @@ public class UISecondMiniGame : Menu
     private void OnBackSceneButtonClicked()
     {
         winPanel.gameObject.SetActive(false);
+        GameManager.Instance.UnloadLevel("Mine2emeJeux");
         GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
         GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
     }

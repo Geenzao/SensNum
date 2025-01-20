@@ -195,6 +195,7 @@ public class UIThirdGameMine : Menu
     {
         loosePanel.gameObject.SetActive(false);
         winPanel.gameObject.SetActive(false);
+        GameManager.Instance.UnloadLevel("Mine3emeJeux");
         GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
         GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
     }

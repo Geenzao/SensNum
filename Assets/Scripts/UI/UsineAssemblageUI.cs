@@ -183,6 +183,7 @@ public class UsineAssemblageUI : Menu
     //Fct pour sortir du mini jeux
     public void OnQuitButtonClicked()
     {
+        GameManager.Instance.UnloadLevel("AssemblageJeux");
         GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
         GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Factory);
     }
