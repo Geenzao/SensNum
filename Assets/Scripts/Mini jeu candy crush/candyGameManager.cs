@@ -17,7 +17,7 @@ public class CandyGameManager : Singleton<CandyGameManager>
 
     public bool isGameEnded;
 
-    float tempsDerniereExecution = 0.0f; // stock le temps passé depuis la derniere execution;
+    public float tempsDerniereExecution = 0.0f; // stock le temps passé depuis la derniere execution;
     float delai = 5.0f;    // tu defini l'interval voulu, en seconde.	
 
     void Update()

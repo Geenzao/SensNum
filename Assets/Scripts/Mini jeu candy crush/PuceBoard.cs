@@ -64,7 +64,7 @@ public class PuceBoard : MonoBehaviour
         }
     }
 
-    void InitializeBoard()
+    public void InitializeBoard()
     {
         DestroyPuces();
         puceBoard = new Node[width, height];
@@ -107,7 +107,7 @@ public class PuceBoard : MonoBehaviour
         }
     }
 
-    private void DestroyPuces()
+    public void DestroyPuces()
     {
         if (pucesToDestroy != null)
         {

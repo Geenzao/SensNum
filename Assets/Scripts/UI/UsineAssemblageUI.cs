@@ -24,6 +24,8 @@ public class UsineAssemblageUI : Menu
 {
     //Pour l'UI
     [Header("Text")]
+    [SerializeField] private TextMeshProUGUI scoreNumberLoose;
+    [SerializeField] private TextMeshProUGUI scoreNumberWin;
     public TextMeshProUGUI txtRules;
     public TextMeshProUGUI txtWin;
     public TextMeshProUGUI txtLose;
@@ -56,6 +58,9 @@ public class UsineAssemblageUI : Menu
     public Button btnReplayLose;
     public Button btnQuitWin;
     public Button btnQuitLose;
+
+
+    [SerializeField] private string LastSceneName;
 
     private int _time = 0;
     private UsineAssemblageState state;
@@ -162,7 +167,6 @@ public class UsineAssemblageUI : Menu
     //Fct pour rejouer une game
     public void OnReplayButtonClicked()
     {
-        print("Vous voulez Rejouer");
         state = UsineAssemblageState.rule;
 
         //On affiche les bon Panel
@@ -179,8 +183,8 @@ public class UsineAssemblageUI : Menu
     //Fct pour sortir du mini jeux
     public void OnQuitButtonClicked()
     {
-        //TODO : a faire
-        print("Vous voulez Abandonner");
+        GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
+        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Factory);
     }
 
     //Getter state
@@ -213,9 +217,11 @@ public class UsineAssemblageUI : Menu
         txtInfoGameWin_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
         txtInfoGameWin_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " " + LanguageManager.Instance.GetText("poorlyMadeCircuit");
         txtInfoGameWin_TimeForWin.text = LanguageManager.Instance.GetText("objectiveAchievedIn") + " : " + UsineAssemblageGameManager.Instance.GetTimeForGoal() + " " + LanguageManager.Instance.GetText("seconds");
+        scoreNumberWin.text = txtInfoGameWin_nbCircuitWin.text + "\n" + txtInfoGameWin_nbCircuitLose.text;
 
         txtInfoGameLose_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
         txtInfoGameLose_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " " + LanguageManager.Instance.GetText("poorlyMadeCircuit");
+        scoreNumberLoose.text = txtInfoGameLose_nbCircuitWin.text + "\n" + txtInfoGameLose_nbCircuitLose.text;
 
         txtRules.text = LanguageManager.Instance.GetText("rules");
         txtWin.text = LanguageManager.Instance.GetText("win");
