@@ -8,9 +8,12 @@ public class ThirdMiniGame : Singleton<ThirdMiniGame>
     public event Action ThirdMiniGameFinish;
 
     // Variables privées pour les compteurs et les états du jeu
-    private int counterTruck = 0;
-    private int counterTruckOre = 0;
+    public int counterTruck = 0;
+    public int counterTruckOre = 0;
     private int maxTruckOre = 3;
+    // tableau qui contient la position de chaque gameobject camions en glissant le gameobject camion dans le tableau
+    public GameObject[] truckPosition;
+
 
     // Méthode pour incrémenter le compteur de camions
     public void IncrementTruckCounter()

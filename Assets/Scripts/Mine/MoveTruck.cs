@@ -5,7 +5,7 @@ public class MoveTruck : MonoBehaviour
     // Variables privées pour la détection de collision et la vitesse
     private float collisionRadius = 0.75f;
     private float speed = 0f;
-    private Vector3 initialPosition;
+    public Vector3 initialPosition;
     private bool isMoving = false;
     private bool hasTriggered = false;
     public ThirdMiniGame thirdMiniGame;
@@ -54,7 +54,9 @@ public class MoveTruck : MonoBehaviour
                     {
                         thirdMiniGame.IncrementTruckCounter();
                     }
-                    Destroy(gameObject);
+                    // plutot que destroy on stop le gameobject et on le set visible false
+                    isMoving = false;
+                    gameObject.SetActive(false);
                     break;
                 }
             }
@@ -75,5 +77,14 @@ public class MoveTruck : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, collisionRadius);
+    }
+
+    // Méthode pour réinitialiser le camion
+    public void ResetTruck()
+    {
+        transform.position = initialPosition;
+        isMoving = false;
+        hasTriggered = false;
+        gameObject.SetActive(true);
     }
 }
