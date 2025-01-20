@@ -47807,11 +47807,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2496511112409674851, guid: 542a50e59b92e444b85327b1d74e1a42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5166521
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2496511112409674851, guid: 542a50e59b92e444b85327b1d74e1a42, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4747906
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2496511112409674851, guid: 542a50e59b92e444b85327b1d74e1a42, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48893,6 +48893,14 @@ PrefabInstance:
     - target: {fileID: 568176521287426654, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: m_Name
       value: Changeur de scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: y
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: gameProgress.Array.size

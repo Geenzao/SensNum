@@ -209,9 +209,10 @@ public class UIThirdGameMine : Menu
     {
         loosePanel.gameObject.SetActive(false);
         winPanel.gameObject.SetActive(false);
-        GameManager.Instance.UnloadLevel("Mine3emeJeux");
-        GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
-        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
+        //Lancer l'ui ici
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.Loading);
+        ChargementTransitionManager.Instance.gameProgressState = GameProgressManager.GameProgressState.MineEnd;
+        StartCoroutine(ChargementTransitionManager.Instance.LoadScene(GameProgressManager.GameProgressState.MineEnd, "Mine3emeJeux", "Mine"));
     }
     /* ---------- Ajout Aymeric Fin ---------- */
 
