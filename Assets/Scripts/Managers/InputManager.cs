@@ -53,7 +53,7 @@ public class InputManager : Singleton<InputManager>
             if (Input.GetKeyDown(KeyCode.H))
             {
                 Debug.Log("H pressed");
-                GameManager.Instance.UnloadLevel("Mine");
+                GameManager.Instance.UnloadAndSavePosition("Mine", -39, -10);
                 GameManager.Instance.LoadLevel("CinematiqueMine");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.None);
             }

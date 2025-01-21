@@ -42,6 +42,7 @@ public class CinematicManager : Singleton<CinematicManager>
     private Coroutine currentCoroutine = null; // Référence à la coroutine actuelle
 
     private bool wantToSkip = false;
+    private bool asBeenFinished = false;
 
     public CinematicBloc[] tabCinematicBloc;
 
@@ -76,7 +77,8 @@ public class CinematicManager : Singleton<CinematicManager>
         // Si toutes les cinématiques sont jouées, on arrête
         if (currentCinematicClipIndex >= tabCinematicBloc.Length || wantToSkip == true)
         {
-            EndCinematic();
+            if(asBeenFinished == false)
+                EndCinematic();
             return;
         }
 
@@ -180,6 +182,13 @@ public class CinematicManager : Singleton<CinematicManager>
 
     public void EndCinematic()
     {
+
+        var currentBloc = tabCinematicBloc[tabCinematicBloc.Length-1];
+        currentBloc.clips.gameObject.SetActive(true);
+        currentBloc.clips.isRening = false;
+
+        StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgressState, actualScene, sceneToLoad, false));
+        asBeenFinished = true;
         Debug.Log("On arrete la cinematique !");
         PanelDialogueCinematicUI.SetActive(false);
 
@@ -190,9 +199,11 @@ public class CinematicManager : Singleton<CinematicManager>
         }
 
         //TODO : faire la logique pour lancer la scene de jeux Mine
-        GameManager.Instance.UnloadLevel(actualScene);
-        GameManager.Instance.LoadLevel(sceneToLoad);
-        GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
+        //GameManager.Instance.UnloadLevel(actualScene);
+        //GameManager.Instance.LoadLevel(sceneToLoad);
+        //GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
+        //StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgressState, actualScene, sceneToLoad, false));
+
     }
 }
 

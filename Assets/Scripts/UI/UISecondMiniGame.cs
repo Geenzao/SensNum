@@ -24,7 +24,7 @@ public class UISecondMiniGame : Menu
 
     [Header("Button")]
     [SerializeField] private Button winRetryButton;
-    [SerializeField] private Button winBackSceneButton;
+    [SerializeField] private Button winNextGameButton;
 
     [Header("Panel")]
     [SerializeField] private GameObject winPanel;
@@ -46,7 +46,7 @@ public class UISecondMiniGame : Menu
     private void Awake()
     {
         winRetryButton.onClick.AddListener(OnRetryButtonClicked);
-        winBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);
+        winNextGameButton.onClick.AddListener(OnBackSceneButtonClicked);
 
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
     }
@@ -218,8 +218,8 @@ public class UISecondMiniGame : Menu
     {
         winPanel.gameObject.SetActive(false);
         GameManager.Instance.UnloadLevel("Mine2emeJeux");
-        GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
-        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
+        GameManager.Instance.LoadLevel(LastSceneName);
+        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.ThirdGameMine);
     }
 
     private void UpdateTexts()
