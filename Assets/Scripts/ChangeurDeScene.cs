@@ -19,7 +19,7 @@ public class ChangeurDeScene : MonoBehaviour
                 if (PathManager.CurrentPathState == path[i])
                 {
                     //Lancer l'ui ici
-                    StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgress[i], currentScene, sceneNameToGo[i], x, y));
+                    StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgress[i], currentScene, sceneNameToGo[i], true, x, y));
                 }
             }
 

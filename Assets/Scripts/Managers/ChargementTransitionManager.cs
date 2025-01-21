@@ -29,7 +29,7 @@ public class ChargementTransitionManager : Singleton<ChargementTransitionManager
         GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
     }
 
-    public IEnumerator LoadScene(GameProgressState gameProgressState, string currentScene, string sceneNameToGo, float x = 0, float y = 0)
+    public IEnumerator LoadScene(GameProgressState gameProgressState, string currentScene, string sceneNameToGo, bool playerInNextScene,float x = 0, float y = 0)
     {
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.Loading);
         ChargementTransitionManager.Instance.gameProgressState = gameProgressState;
@@ -38,7 +38,10 @@ public class ChargementTransitionManager : Singleton<ChargementTransitionManager
             GameManager.Instance.UnloadAndSavePosition(currentScene, x, y);
         else
             GameManager.Instance.UnloadLevel(currentScene);
-        GameManager.Instance.LoadLevelAndPositionPlayer(sceneNameToGo);
+        if(playerInNextScene)
+            GameManager.Instance.LoadLevelAndPositionPlayer(sceneNameToGo);
+        else
+            GameManager.Instance.LoadLevel(sceneNameToGo);
         InvokeOnLoadPage();
     }
 }
