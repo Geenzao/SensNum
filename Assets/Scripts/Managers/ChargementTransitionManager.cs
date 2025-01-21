@@ -35,9 +35,7 @@ public class ChargementTransitionManager : Singleton<ChargementTransitionManager
         ChargementTransitionManager.Instance.gameProgressState = gameProgressState;
         yield return new WaitForSecondsRealtime(1.2f);
         if(GameObject.FindWithTag("Player") != null)
-        {
             GameManager.Instance.UnloadAndSavePosition(currentScene, x, y);
-        }
         else
             GameManager.Instance.UnloadLevel(currentScene);
         GameManager.Instance.LoadLevelAndPositionPlayer(sceneNameToGo);

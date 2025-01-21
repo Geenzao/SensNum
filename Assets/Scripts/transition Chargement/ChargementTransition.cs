@@ -60,7 +60,9 @@ public class ChargementTransition : Menu
 
     public void LoadChargement()
     {
+        Debug.Log("LoadChargement");
         animator.SetTrigger("LoadPage");
+        print("LoadPage trigger est fini");
     }
 
     public void StopGame()

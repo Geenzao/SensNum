@@ -3,7 +3,7 @@ using UnityEngine;
 public class MoveTruck : MonoBehaviour
 {
     // Variables privées pour la détection de collision et la vitesse
-    private float collisionRadius = 0.75f;
+    private float collisionRadius = 0.5f;
     private float speed = 0f;
     public Vector3 initialPosition;
     private bool isMoving = false;

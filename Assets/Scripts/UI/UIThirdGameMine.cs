@@ -207,11 +207,10 @@ public class UIThirdGameMine : Menu
 
     private void OnBackSceneButtonClicked()
     {
+        Time.timeScale = 1.0f;
         loosePanel.gameObject.SetActive(false);
         winPanel.gameObject.SetActive(false);
         //Lancer l'ui ici
-        UIManager.Instance.UpdateMenuState(UIManager.MenuState.Loading);
-        ChargementTransitionManager.Instance.gameProgressState = GameProgressManager.GameProgressState.MineEnd;
         StartCoroutine(ChargementTransitionManager.Instance.LoadScene(GameProgressManager.GameProgressState.MineEnd, "Mine3emeJeux", "Mine"));
     }
     /* ---------- Ajout Aymeric Fin ---------- */
