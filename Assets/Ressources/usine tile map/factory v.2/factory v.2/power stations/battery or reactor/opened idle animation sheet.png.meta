@@ -385,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      opened idle animation sheet_0: -4070465063842424642
+      opened idle animation sheet_1: -4177591199416198453
+      opened idle animation sheet_2: 5066812958338498619
+      opened idle animation sheet_3: -8943493875865743064
+      opened idle animation sheet_4: 5334264904117342421
+      opened idle animation sheet_5: -4230964816313245252
+      opened idle animation sheet_6: -2466947994972915760
+      opened idle animation sheet_7: -1542637598751879245
+      opened idle animation sheet_8: -7433458840964834299
+      opened idle animation sheet_9: 7992581854950814637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

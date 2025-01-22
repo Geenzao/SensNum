@@ -410,7 +410,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      timeMachine-idle_0: 3104806091051366458
+      timeMachine-idle_1: -4819353814828467390
+      timeMachine-idle_10: 7253578195767130747
+      timeMachine-idle_2: 6928652023819616947
+      timeMachine-idle_3: -4950484066872685458
+      timeMachine-idle_4: 8226708093307742318
+      timeMachine-idle_5: 5336799924340650015
+      timeMachine-idle_6: 7789175394703507326
+      timeMachine-idle_7: 3293264896428531041
+      timeMachine-idle_8: -948426975673225529
+      timeMachine-idle_9: -2419329806797087157
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
