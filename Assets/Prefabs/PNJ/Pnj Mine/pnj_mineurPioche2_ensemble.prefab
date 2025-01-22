@@ -99,7 +99,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961818771977034870}
@@ -203,6 +203,11 @@ MonoBehaviour:
   isWalking: 1
   vitesse: 2
   idleDuration: 0
+  minIdleTime: 2
+  maxIdleTime: 5
+  minActionTime: 3
+  maxActionTime: 6
+  typePNJ: 1
   initialScale: {x: 0, y: 0, z: 0}
 --- !u!61 &2096571202300770790
 BoxCollider2D:
@@ -238,17 +243,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.089922905, y: 0.035187006}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1.3333334, y: 1.3333334}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.6718712, y: 1.0472016}
   m_EdgeRadius: 0
 --- !u!61 &2500173185296414546
 BoxCollider2D:
@@ -284,17 +289,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.051942393, y: 0.028621376}
+  m_Offset: {x: -0.059762, y: 0.08726668}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1.3333334, y: 1.3333334}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.97, y: 0.84366393}
+  m_Size: {x: 2.0647144, y: 1.8367248}
   m_EdgeRadius: 0
 --- !u!114 &2589050615589422595
 MonoBehaviour:
@@ -312,7 +317,7 @@ MonoBehaviour:
   - sentences:
     - "Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour vos circuits
       imprim\xE9s."
-  name: 
+  name: mineurpioche2
   path: 0
 --- !u!1 &3241302462669865307
 GameObject:

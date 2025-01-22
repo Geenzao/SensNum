@@ -1185,7 +1185,49 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      all animations sprite sheet_0: 3688372087848734022
+      all animations sprite sheet_1: 4942842739258725378
+      all animations sprite sheet_10: -2790807965676566202
+      all animations sprite sheet_11: -1908174468473540110
+      all animations sprite sheet_12: 7369050199671861150
+      all animations sprite sheet_13: -2751694327444334103
+      all animations sprite sheet_14: -6534166463851210397
+      all animations sprite sheet_15: 9176529582051688033
+      all animations sprite sheet_16: 2895679336931387567
+      all animations sprite sheet_17: -6184454753971632654
+      all animations sprite sheet_18: -4200065790244994750
+      all animations sprite sheet_19: 463797369382526044
+      all animations sprite sheet_2: -8945224635419606110
+      all animations sprite sheet_20: -223840150364183961
+      all animations sprite sheet_21: 6173063305610126835
+      all animations sprite sheet_22: 3397802894648463669
+      all animations sprite sheet_23: -5033264863826638855
+      all animations sprite sheet_24: -6499536089788899241
+      all animations sprite sheet_25: 3460348917438923216
+      all animations sprite sheet_26: -2048650538298064814
+      all animations sprite sheet_27: 6991346313258732353
+      all animations sprite sheet_28: -6607286082374982665
+      all animations sprite sheet_29: 7909814647333925426
+      all animations sprite sheet_3: -6371201269850828613
+      all animations sprite sheet_30: -8441266779438283938
+      all animations sprite sheet_31: 6824432996638068305
+      all animations sprite sheet_32: 2420134263196729894
+      all animations sprite sheet_33: -2684016171538362446
+      all animations sprite sheet_34: -8421708774386967746
+      all animations sprite sheet_35: 863712101791781639
+      all animations sprite sheet_36: 2018791969331126644
+      all animations sprite sheet_37: 6195915355626879079
+      all animations sprite sheet_38: 6262698072853114885
+      all animations sprite sheet_39: -7081811546275001448
+      all animations sprite sheet_4: -1535616409983901877
+      all animations sprite sheet_40: -2301850994534074917
+      all animations sprite sheet_41: -5523642111115942890
+      all animations sprite sheet_5: 1759445752168431924
+      all animations sprite sheet_6: -5699540312493891466
+      all animations sprite sheet_7: -7361451499602215401
+      all animations sprite sheet_8: 4062902487513253882
+      all animations sprite sheet_9: -1479042085809652293
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

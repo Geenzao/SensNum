@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      timeMachine-charging-3_0: 1486004220407093174
+      timeMachine-charging-3_1: 6223775631382180406
+      timeMachine-charging-3_2: -6035716849884840173
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

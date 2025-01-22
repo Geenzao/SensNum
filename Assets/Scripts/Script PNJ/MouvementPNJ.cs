@@ -101,26 +101,6 @@ public class MouvementPNJ : MonoBehaviour
                 MoveToNextDestination();
                 break;
         }
-
-        //else
-        //{
-        //    if (isWalking)
-        //    {
-        //        MoveToNextDestination();
-        //    }
-        //    else
-        //    {
-        //        // Compte à rebours pendant l'idle
-        //        idleTimer += Time.deltaTime;
-        //        if (idleTimer >= idleDuration)
-        //        {
-        //            // Fin de l'idle, passage en mode marche
-        //            idleTimer = 0f;
-        //            currentDestinationIndex = (currentDestinationIndex + 1) % tabPointDestination.Length; // Changer de point de destination
-        //            SetWalkingState(true);
-        //        }
-        //    }
-        //}
     }
 
     private void MoveToNextDestination()
@@ -132,6 +112,7 @@ public class MouvementPNJ : MonoBehaviour
         // Vérifie si la destination est atteinte
         if (Vector3.Distance(transform.position, targetPoint.position) < 0.1f)
         {
+            currentDestinationIndex = (currentDestinationIndex + 1) % tabPointDestination.Length; // Passer au point suivant
             ChosseNextState();
         }
     }

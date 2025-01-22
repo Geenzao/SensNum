@@ -30,7 +30,39 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8179618665940471557}
+  - {fileID: 2743929355490663573}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3984333310474973327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2743929355490663573}
+  m_Layer: 0
+  m_Name: begin
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2743929355490663573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3984333310474973327}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7834819968870707275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6814795096970055990
 GameObject:
@@ -46,6 +78,7 @@ GameObject:
   - component: {fileID: 1453648543092883905}
   - component: {fileID: 7585231043055788043}
   - component: {fileID: 8317423317704959253}
+  - component: {fileID: 275292426927934622}
   m_Layer: 0
   m_Name: pnj_workerBackRecyclageFactory
   m_TagString: Untagged
@@ -61,8 +94,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6814795096970055990}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9919443, y: -0.20252848, z: -0.053059552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -159,8 +192,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   listDialogue:
   - sentences:
-    - 
-  name: 
+    - "Je trie le m\xE9tal et le plastique toute la journ\xE9e\u2026 mais parfois,
+      je me demande o\xF9 tout \xE7a finit vraiment."
+    - "Je voix tellement de d\xE9chets plonger dans la rivi\xE8re"
+  - sentences:
+    - Je n'ai pas le temps de te parler
+  name: workerbackrecyclagefactory1
   path: 0
 --- !u!61 &7585231043055788043
 BoxCollider2D:
@@ -252,5 +289,30 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5343065, y: 1.4804964}
+  m_Size: {x: 1.72, y: 1.4804964}
   m_EdgeRadius: 0
+--- !u!114 &275292426927934622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6814795096970055990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3585f462331dd4dba57bcc3f8d6732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabPointDestination:
+  - {fileID: 3984333310474973327}
+  animator: {fileID: 9034055583811100793}
+  currentDestinationIndex: 0
+  isWalking: 1
+  vitesse: 2
+  idleDuration: 0
+  minIdleTime: 2
+  maxIdleTime: 5
+  minActionTime: 3
+  maxActionTime: 6
+  typePNJ: 2
+  initialScale: {x: 0, y: 0, z: 0}

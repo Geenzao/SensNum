@@ -24,9 +24,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3458231830873166875}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.985409, y: -1.184614, z: 0.09300025}
-  m_LocalScale: {x: 7.47, y: 7.47, z: 7.47}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3433294432744379445}
@@ -55,9 +55,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3691913092656879923}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3416805, y: -1.184614, z: 0.09300025}
-  m_LocalScale: {x: 7.47, y: 7.47, z: 7.47}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.06, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3433294432744379445}
@@ -86,9 +86,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3839892702332811594}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7583694, y: -1.184614, z: 0.09300025}
-  m_LocalScale: {x: 7.47, y: 7.47, z: 7.47}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.61, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3433294432744379445}
@@ -104,10 +104,10 @@ GameObject:
   - component: {fileID: 7654253844184387999}
   - component: {fileID: 5633948440026009042}
   - component: {fileID: 4215028435828129662}
-  - component: {fileID: 853770297921145979}
   - component: {fileID: 3078231748916666855}
   - component: {fileID: 1635286313993420996}
   - component: {fileID: 7055813969478423151}
+  - component: {fileID: 3146860722450700496}
   m_Layer: 0
   m_Name: pnj_chefFactoryAssembly
   m_TagString: Untagged
@@ -123,9 +123,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6193607496339799098}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2988205, y: -1.184614, z: 0.09300025}
-  m_LocalScale: {x: 7.47, y: 7.47, z: 7.47}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3433294432744379445}
@@ -207,27 +207,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &853770297921145979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6193607496339799098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 183c97754d9d37d45b74d512a55ecd93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 3691913092656879923}
-  - {fileID: 3839892702332811594}
-  - {fileID: 3458231830873166875}
-  animator: {fileID: 4215028435828129662}
-  minIdleTime: 2
-  maxIdleTime: 5
-  minActionTime: 3
-  maxActionTime: 6
 --- !u!114 &3078231748916666855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +235,7 @@ MonoBehaviour:
   - sentences:
     - "Si tu veux te joindre \xE0 nous, il y a toujours des postes \xE0 pourvoir
       pour les courageux."
-  name: 
+  name: cheffactoryassembly
   path: 0
 --- !u!61 &1635286313993420996
 BoxCollider2D:
@@ -292,17 +271,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.015659332, y: -0.07605958}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.24, y: 0.24}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.24, y: 0.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.24, y: 0.24}
+  m_Size: {x: 0.5755577, y: 0.87532043}
   m_EdgeRadius: 0
 --- !u!61 &7055813969478423151
 BoxCollider2D:
@@ -338,18 +317,45 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.021888494, y: 0.0018239617}
+  m_Offset: {x: -0.017413855, y: -0.047390938}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.24, y: 0.24}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 0.24, y: 0.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.62, y: 0.55738425}
+  m_Size: {x: 1.3984914, y: 1.5506315}
   m_EdgeRadius: 0
+--- !u!114 &3146860722450700496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6193607496339799098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3585f462331dd4dba57bcc3f8d6732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabPointDestination:
+  - {fileID: 3691913092656879923}
+  - {fileID: 3839892702332811594}
+  - {fileID: 3458231830873166875}
+  animator: {fileID: 4215028435828129662}
+  currentDestinationIndex: 0
+  isWalking: 1
+  vitesse: 2
+  idleDuration: 0
+  minIdleTime: 2
+  maxIdleTime: 5
+  minActionTime: 3
+  maxActionTime: 6
+  typePNJ: 1
+  initialScale: {x: 0, y: 0, z: 0}
 --- !u!1 &7859682624274295875
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +382,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.5048933, y: 0.7922352, z: -0.09300025}
-  m_LocalScale: {x: 0.74662, y: 0.74662, z: 0.74662}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7654253844184387999}

@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      advanced furnace on_0: -4233880210245560365
+      advanced furnace on_1: 8633689928111676379
+      advanced furnace on_2: 2224709646146981022
+      advanced furnace on_3: -377616514275207946
+      advanced furnace on_4: -2560149803436669246
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

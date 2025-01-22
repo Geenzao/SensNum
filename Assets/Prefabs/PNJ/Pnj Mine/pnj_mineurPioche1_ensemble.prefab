@@ -24,8 +24,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 670403170216526917}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.17, y: -4.222643, z: -0.054189213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.87, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90,8 +90,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7613508631489463263}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.487286, y: -4.2226434, z: -0.054189213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.18, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -127,9 +127,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8916557851862271310}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.731, y: -4.158, z: -0.054189213}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 391588958320877870}
@@ -178,7 +178,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7385789195546760866, guid: 61e39d08f6331f54ba5d40b6b6c8a400, type: 3}
+  m_Sprite: {fileID: -4637577035788134953, guid: b89897af79ba04346ae3532d43fc6c9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -210,6 +210,11 @@ MonoBehaviour:
   isWalking: 1
   vitesse: 2
   idleDuration: 0
+  minIdleTime: 2
+  maxIdleTime: 5
+  minActionTime: 3
+  maxActionTime: 6
+  typePNJ: 1
   initialScale: {x: 0, y: 0, z: 0}
 --- !u!95 &5151650702803959216
 Animator:
@@ -249,7 +254,7 @@ MonoBehaviour:
   - sentences:
     - "Chaque minute ici, c'est plus de m\xE9taux rares pour vos t\xE9l\xE9phones.
       Ne me ralentis pas."
-  name: 
+  name: mineurpioche1
   path: 0
 --- !u!61 &196834847004045670
 BoxCollider2D:
@@ -285,17 +290,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00030446425, y: 0}
+  m_Offset: {x: -0.081291676, y: 0.0027198792}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.28}
+    oldSize: {x: 1.3333334, y: 1.3333334}
     newSize: {x: 0.22, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.21, y: 0.28}
+  m_Size: {x: 0.88453007, y: 1.0361271}
   m_EdgeRadius: 0
 --- !u!61 &8779185937693670345
 BoxCollider2D:
@@ -331,17 +336,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0054983795, y: 0.02091062}
+  m_Offset: {x: -0.048899174, y: 0.012751102}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.22, y: 0.28}
+    oldSize: {x: 1.3333334, y: 1.3333334}
     newSize: {x: 0.22, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8284771, y: 0.8973088}
+  m_Size: {x: 2.2754526, y: 2.0886164}
   m_EdgeRadius: 0
 --- !u!1 &9090138331935727238
 GameObject:
@@ -367,8 +372,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9090138331935727238}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.817286, y: -4.2226434, z: -0.054189213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

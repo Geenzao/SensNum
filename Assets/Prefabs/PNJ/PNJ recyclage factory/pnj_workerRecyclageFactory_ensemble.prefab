@@ -324,8 +324,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310f712d3f9038d4697813dd9593bd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listDialogue: []
-  name: 
+  listDialogue:
+  - sentences:
+    - "On fait de notre mieux, mais m\xEAme le recyclage produit ses propres d\xE9chets."
+    - "M\xEAme si on r\xE9utilise, il reste toujours des r\xE9sidus\u2026 rien n\u2019est
+      jamais compl\xE8tement propre."
+  - sentences:
+    - "Je n'ai rien d'autre \xE0 te dire, va voir le boss !"
+  name: workerrecyclagefactory1
   path: 0
 --- !u!114 &2961135590023953974
 MonoBehaviour:
@@ -348,6 +354,11 @@ MonoBehaviour:
   isWalking: 1
   vitesse: 2
   idleDuration: 0
+  minIdleTime: 2
+  maxIdleTime: 5
+  minActionTime: 3
+  maxActionTime: 6
+  typePNJ: 0
   initialScale: {x: 0, y: 0, z: 0}
 --- !u!95 &3629220172092043837
 Animator:

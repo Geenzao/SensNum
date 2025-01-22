@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BrokenPhone1_0: 3420452563459482100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

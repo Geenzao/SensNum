@@ -210,639 +210,639 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiniWorker_0
+      name: chefUsineRecyclage_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 193
-        width: 14
-        height: 13
+        x: 0
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 337188bffbf2330a0800000000000000
-      internalID: -6903121302223579341
+      spriteID: 4523e9281de71fb4e8e6fd1dc3b2b19a
+      internalID: 1893261999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_1
+      name: chefUsineRecyclage_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 193
-        width: 14
-        height: 12
+        x: 32
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04c4907e38a08c420800000000000000
-      internalID: 2650379942340676672
+      spriteID: a79b398287a912941bbb92cdaeed430a
+      internalID: -365841987
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_2
+      name: chefUsineRecyclage_2
       rect:
         serializedVersion: 2
-        x: 74
-        y: 193
-        width: 14
-        height: 12
+        x: 64
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 60c604e47680bcee0800000000000000
-      internalID: -1239888032622941178
+      spriteID: f1cbd53459da8e84d9d9c00e5c410193
+      internalID: 842656114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_3
+      name: chefUsineRecyclage_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 193
-        width: 14
-        height: 13
+        x: 96
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5ca69a69060e55e00800000000000000
-      internalID: 1032978395000564421
+      spriteID: f39be9dee711c4241b378f73a93c3d76
+      internalID: 1757242594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_4
+      name: chefUsineRecyclage_4
       rect:
         serializedVersion: 2
-        x: 9
-        y: 161
-        width: 16
-        height: 12
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f45b6cbe74cb53b30800000000000000
-      internalID: 4266523239087781199
+      spriteID: 63afc358d5112e241adba29ca45f7819
+      internalID: -627674332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_5
+      name: chefUsineRecyclage_5
       rect:
         serializedVersion: 2
-        x: 42
-        y: 161
-        width: 14
-        height: 13
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 94852169dbcd7ccc0800000000000000
-      internalID: -3690738662782117815
+      spriteID: 3906089cb7c412f4983ee27e2a6b2b42
+      internalID: -365728589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_6
+      name: chefUsineRecyclage_6
       rect:
         serializedVersion: 2
-        x: 75
-        y: 161
-        width: 12
-        height: 14
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d499b48eb32e4530800000000000000
-      internalID: 3841046833371124951
+      spriteID: 572e80be053619a4588509da0c886cfd
+      internalID: -1606588600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_7
+      name: chefUsineRecyclage_7
       rect:
         serializedVersion: 2
-        x: 107
-        y: 161
-        width: 12
-        height: 12
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0b9088c4d4b1ecec0800000000000000
-      internalID: -3544865837883586128
+      spriteID: 3bfa3705101a41e43a83aaef1dbd3354
+      internalID: 2024666184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_8
+      name: chefUsineRecyclage_8
       rect:
         serializedVersion: 2
-        x: 138
-        y: 161
-        width: 14
-        height: 13
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5919375c667d8ef10800000000000000
-      internalID: 2299324446171959701
+      spriteID: d00ec03a81707f941b2af4b616590f83
+      internalID: 1286201533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_9
+      name: chefUsineRecyclage_9
       rect:
         serializedVersion: 2
-        x: 169
-        y: 161
-        width: 16
-        height: 14
+        x: 160
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4a16d4dbc89063280800000000000000
-      internalID: -9064046699960507996
+      spriteID: 3da40a20b089b5b4781b0a83662d39a5
+      internalID: -1965050647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_10
+      name: chefUsineRecyclage_10
       rect:
         serializedVersion: 2
-        x: 9
-        y: 129
-        width: 14
-        height: 14
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b3e4fc4a54a98d820800000000000000
-      internalID: 2943271980395089467
+      spriteID: bf5d762d9c4b79043adb8f10a2e78874
+      internalID: -570890605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_11
+      name: chefUsineRecyclage_11
       rect:
         serializedVersion: 2
-        x: 41
-        y: 129
-        width: 15
-        height: 14
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 576ae44bec9addc80800000000000000
-      internalID: -8296288233293175179
+      spriteID: 4113fc536c7e77d4cbe68bfdc5aa7a54
+      internalID: 1829893490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_12
+      name: chefUsineRecyclage_12
       rect:
         serializedVersion: 2
-        x: 73
-        y: 129
-        width: 16
-        height: 11
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 19d39c577dbd8d840800000000000000
-      internalID: 5249187084140887441
+      spriteID: 9550e1957efb05447ae1b0e083939868
+      internalID: -1710113919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_13
+      name: chefUsineRecyclage_13
       rect:
         serializedVersion: 2
-        x: 9
-        y: 97
-        width: 13
-        height: 13
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9b371d98ac56e9250800000000000000
-      internalID: 5953307678000378809
+      spriteID: 5a591365f48fc7540bf69306ac5907b2
+      internalID: -1999272476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_14
+      name: chefUsineRecyclage_14
       rect:
         serializedVersion: 2
-        x: 42
-        y: 97
-        width: 10
-        height: 15
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d2b57f8686e1a69b0800000000000000
-      internalID: -5086219395375080659
+      spriteID: efdc8bea13229124db0ca26c031cfde8
+      internalID: -1796864530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_15
+      name: chefUsineRecyclage_15
       rect:
         serializedVersion: 2
-        x: 74
-        y: 97
-        width: 17
-        height: 13
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c5595eb63f8762930800000000000000
-      internalID: 4118111896159491420
+      spriteID: 93d8fa9e74d721a41a088a58a89e3986
+      internalID: -724058027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_16
+      name: chefUsineRecyclage_16
       rect:
         serializedVersion: 2
-        x: 106
-        y: 97
-        width: 16
-        height: 13
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 815c5dfd52d23f650800000000000000
-      internalID: 6265401147294860568
+      spriteID: b75241d664fe3b94480776339dfcf972
+      internalID: -917693324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_17
+      name: chefUsineRecyclage_17
       rect:
         serializedVersion: 2
-        x: 10
-        y: 65
-        width: 13
-        height: 13
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ceba42595513b5cd0800000000000000
-      internalID: -2568404918840546324
+      spriteID: 4bedfa9c6ed2b7e4187b6a4020b4931b
+      internalID: -2106575075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_18
+      name: chefUsineRecyclage_18
       rect:
         serializedVersion: 2
-        x: 42
-        y: 65
-        width: 11
-        height: 15
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7143634353e83d9e0800000000000000
-      internalID: -1597777083626015721
+      spriteID: 6b794396944ebba4c8d95f83c28f7058
+      internalID: 493378295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_19
+      name: chefUsineRecyclage_19
       rect:
         serializedVersion: 2
-        x: 73
-        y: 65
-        width: 17
-        height: 12
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 48cad57b87c25ca30800000000000000
-      internalID: 4234839921595886724
+      spriteID: 3891c0fd0f165434a8fec51032510b6f
+      internalID: -1197905714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_20
+      name: chefUsineRecyclage_20
       rect:
         serializedVersion: 2
-        x: 106
-        y: 65
-        width: 15
-        height: 13
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 20471c179e19a1ff0800000000000000
-      internalID: -64578812821539838
+      spriteID: 30ed640d6dbd43e4eb000bc9c16e4c34
+      internalID: 1788608827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_21
+      name: chefUsineRecyclage_21
       rect:
         serializedVersion: 2
-        x: 138
-        y: 65
-        width: 15
-        height: 13
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 528513d27679ad890800000000000000
-      internalID: -7432461765625948123
+      spriteID: d08a786b729407e4fb48d36bc73b92ec
+      internalID: 1174877321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_22
+      name: chefUsineRecyclage_22
       rect:
         serializedVersion: 2
-        x: 9
-        y: 33
-        width: 15
-        height: 13
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2b5cade32d67a2a40800000000000000
-      internalID: 5344214553198249394
+      spriteID: e764ba329bdcae04f8ee4fae9cc26c36
+      internalID: 1913426277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_23
+      name: chefUsineRecyclage_23
       rect:
         serializedVersion: 2
-        x: 39
-        y: 33
-        width: 17
-        height: 13
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 86c326d1c311aa760800000000000000
-      internalID: 7469801881836076136
+      spriteID: b16f252667b706549852538382fd591d
+      internalID: 294470596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_24
+      name: chefUsineRecyclage_24
       rect:
         serializedVersion: 2
-        x: 73
-        y: 33
-        width: 15
-        height: 13
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ea9fd1f4da9b3fa0800000000000000
-      internalID: -5819887854064526618
+      spriteID: d3a05790316f0cd4a897ce9f9af2a0d8
+      internalID: 354112577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_25
+      name: chefUsineRecyclage_25
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1
-        width: 15
-        height: 12
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f2d0b0d02ae853b30800000000000000
-      internalID: 4266473048658087215
+      spriteID: c32766d73abd3d8428b1f87e41320843
+      internalID: -1620623367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_26
+      name: chefUsineRecyclage_26
       rect:
         serializedVersion: 2
-        x: 41
-        y: 1
-        width: 15
-        height: 10
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 81dca2129ba0103c0800000000000000
-      internalID: -4395219971095212776
+      spriteID: 78b6887bdd5bc1d4cb2ce1e4b7c21b90
+      internalID: -1388222799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_27
+      name: chefUsineRecyclage_27
       rect:
         serializedVersion: 2
-        x: 72
-        y: 1
-        width: 16
-        height: 6
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e93d0b831e521c140800000000000000
-      internalID: 4738109932219454366
+      spriteID: c5d23d5de529c5344883b3a76aa54915
+      internalID: -525687344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniWorker_28
+      name: chefUsineRecyclage_28
       rect:
         serializedVersion: 2
-        x: 103
-        y: 1
-        width: 17
-        height: 4
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bbdc352d775799fc0800000000000000
-      internalID: -3487627278931472965
+      spriteID: 1c618a99ccd650f45b55298918662b6d
+      internalID: 831960281
       vertices: []
       indices: 
       edges: []
@@ -861,35 +861,35 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MiniWorker_0: -6903121302223579341
-      MiniWorker_1: 2650379942340676672
-      MiniWorker_10: 2943271980395089467
-      MiniWorker_11: -8296288233293175179
-      MiniWorker_12: 5249187084140887441
-      MiniWorker_13: 5953307678000378809
-      MiniWorker_14: -5086219395375080659
-      MiniWorker_15: 4118111896159491420
-      MiniWorker_16: 6265401147294860568
-      MiniWorker_17: -2568404918840546324
-      MiniWorker_18: -1597777083626015721
-      MiniWorker_19: 4234839921595886724
-      MiniWorker_2: -1239888032622941178
-      MiniWorker_20: -64578812821539838
-      MiniWorker_21: -7432461765625948123
-      MiniWorker_22: 5344214553198249394
-      MiniWorker_23: 7469801881836076136
-      MiniWorker_24: -5819887854064526618
-      MiniWorker_25: 4266473048658087215
-      MiniWorker_26: -4395219971095212776
-      MiniWorker_27: 4738109932219454366
-      MiniWorker_28: -3487627278931472965
-      MiniWorker_3: 1032978395000564421
-      MiniWorker_4: 4266523239087781199
-      MiniWorker_5: -3690738662782117815
-      MiniWorker_6: 3841046833371124951
-      MiniWorker_7: -3544865837883586128
-      MiniWorker_8: 2299324446171959701
-      MiniWorker_9: -9064046699960507996
+      chefUsineRecyclage_0: 1893261999
+      chefUsineRecyclage_1: -365841987
+      chefUsineRecyclage_10: -570890605
+      chefUsineRecyclage_11: 1829893490
+      chefUsineRecyclage_12: -1710113919
+      chefUsineRecyclage_13: -1999272476
+      chefUsineRecyclage_14: -1796864530
+      chefUsineRecyclage_15: -724058027
+      chefUsineRecyclage_16: -917693324
+      chefUsineRecyclage_17: -2106575075
+      chefUsineRecyclage_18: 493378295
+      chefUsineRecyclage_19: -1197905714
+      chefUsineRecyclage_2: 842656114
+      chefUsineRecyclage_20: 1788608827
+      chefUsineRecyclage_21: 1174877321
+      chefUsineRecyclage_22: 1913426277
+      chefUsineRecyclage_23: 294470596
+      chefUsineRecyclage_24: 354112577
+      chefUsineRecyclage_25: -1620623367
+      chefUsineRecyclage_26: -1388222799
+      chefUsineRecyclage_27: -525687344
+      chefUsineRecyclage_28: 831960281
+      chefUsineRecyclage_3: 1757242594
+      chefUsineRecyclage_4: -627674332
+      chefUsineRecyclage_5: -365728589
+      chefUsineRecyclage_6: -1606588600
+      chefUsineRecyclage_7: 2024666184
+      chefUsineRecyclage_8: 1286201533
+      chefUsineRecyclage_9: -1965050647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

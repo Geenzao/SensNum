@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      basic furnace turning off_0: -8567849853999362510
+      basic furnace turning off_1: -3600552060537647748
+      basic furnace turning off_2: 7515986369918586100
+      basic furnace turning off_3: 3291110386015892539
+      basic furnace turning off_4: -7997107408037690191
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

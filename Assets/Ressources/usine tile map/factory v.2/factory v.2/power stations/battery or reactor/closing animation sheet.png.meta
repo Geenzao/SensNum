@@ -560,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      closing animation sheet_0: -5120774282232240004
+      closing animation sheet_1: -5501961706652771188
+      closing animation sheet_10: 5050053946638657038
+      closing animation sheet_11: 4865054565679958362
+      closing animation sheet_12: -6119127274760057480
+      closing animation sheet_13: 1478333947137663237
+      closing animation sheet_14: -4390700516984127064
+      closing animation sheet_15: -6447873542836966468
+      closing animation sheet_16: 8597227670927319087
+      closing animation sheet_2: 82936947915139033
+      closing animation sheet_3: -5886073912190476719
+      closing animation sheet_4: 4848765069598492889
+      closing animation sheet_5: -3342196582383799993
+      closing animation sheet_6: 6125188607962180226
+      closing animation sheet_7: -7926678139183915562
+      closing animation sheet_8: 6591902555616306944
+      closing animation sheet_9: 7505209928101038419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
