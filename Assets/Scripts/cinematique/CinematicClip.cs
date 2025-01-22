@@ -88,7 +88,7 @@ public class CinematicClip : MonoBehaviour
 
     private void ResetToInitialState()
     {
-        Debug.Log("Réinitialisation des positions initiales.");
+        //Debug.Log("Réinitialisation des positions initiales.");
 
         // Remettre toutes les images à leurs positions initiales
         foreach (var kvp in initialPositions)

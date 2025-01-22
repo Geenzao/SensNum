@@ -16,15 +16,11 @@ public class ChargementTransitionManager : Singleton<ChargementTransitionManager
     }
     public void StopGame()
     {
-        Debug.Log("StopGame");
-        //Time.timeScale = 0;
         OnLoadPage?.Invoke();
     }
 
     public void StartGame()
     {
-        Debug.Log("Start Game");
-        //Time.timeScale = 1;
         OnUnloadPage?.Invoke();
         GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
     }

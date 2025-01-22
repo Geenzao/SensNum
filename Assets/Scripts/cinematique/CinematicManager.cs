@@ -110,8 +110,8 @@ public class CinematicManager : Singleton<CinematicManager>
             {
                 StartCinematic(currentCinematicClipIndex);
             }
-            else
-                Debug.Log("Toutes les cinématiques ont été jouées !");
+            //else
+                //Debug.Log("Toutes les cinématiques ont été jouées !");
         }
     }
 
@@ -189,7 +189,7 @@ public class CinematicManager : Singleton<CinematicManager>
 
         StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgressState, actualScene, sceneToLoad, false));
         asBeenFinished = true;
-        Debug.Log("On arrete la cinematique !");
+        //Debug.Log("On arrete la cinematique !");
         PanelDialogueCinematicUI.SetActive(false);
 
         // Vérifiez si l'index est dans les limites avant d'appeler EndCinematicClip

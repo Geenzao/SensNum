@@ -47,8 +47,8 @@ public class dialogueManager : Singleton<dialogueManager>
         // On dit au Pnj de s'arrêter parce que le joueur lui parle
         if (dialoguePnjRef != null && dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>())
             dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>().PnjTalk();
-        else
-            Debug.LogWarning("Il y a un problème avec le scripte MouvementPNJ");
+        //else
+        //    Debug.LogWarning("Il y a un problème avec le scripte MouvementPNJ");
 
         isDialogueActive = true;
         qSentences.Clear();

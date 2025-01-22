@@ -45,7 +45,7 @@ public class CircuitImprime : MonoBehaviour
             this.lstComponentPlaceOnCircuit[indexComponentPlace].isFill = true;
             this.lstComponentPlaceOnCircuit[indexComponentPlace].component.SetActive(true);
         }
-        else Debug.LogWarning("Mauvais type");
+        //else Debug.LogWarning("Mauvais type");
     }
 
 

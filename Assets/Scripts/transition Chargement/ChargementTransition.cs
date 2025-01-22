@@ -20,7 +20,6 @@ public class ChargementTransition : Menu
 
         if (UIManager.CurrentMenuState == UIManager.MenuState.Loading)
         {
-            Debug.Log("CandyCrush");
             TriggerVisibility(true);
         }
 
@@ -60,9 +59,7 @@ public class ChargementTransition : Menu
 
     public void LoadChargement()
     {
-        Debug.Log("LoadChargement");
         animator.SetTrigger("LoadPage");
-        print("LoadPage trigger est fini");
     }
 
     public void StopGame()
