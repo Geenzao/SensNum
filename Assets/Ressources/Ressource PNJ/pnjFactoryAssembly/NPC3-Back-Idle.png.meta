@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: 794290b1a157a7b4ba58ba0a5ab4a8d1
+guid: 0910353198645ac40b5c45e3b33e4f0c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3381042568081118713
-    second: spr_basecharacter_idle_strip9_0
+      213: 3509840065112252323
+    second: NPC3-Back-Idle_0
   - first:
-      213: -1469284010270233320
-    second: spr_basecharacter_idle_strip9_1
+      213: -3703400091997162679
+    second: NPC3-Back-Idle_1
   - first:
-      213: 6892092430932388803
-    second: spr_basecharacter_idle_strip9_2
+      213: 6756322604289041502
+    second: NPC3-Back-Idle_2
   - first:
-      213: -1393151046477584255
-    second: spr_basecharacter_idle_strip9_3
+      213: 3636829696494852726
+    second: NPC3-Back-Idle_3
   - first:
-      213: -3711224430041049089
-    second: spr_basecharacter_idle_strip9_4
+      213: -2156226509396871040
+    second: NPC3-Back-Idle_4
   - first:
-      213: -687213432185339973
-    second: spr_basecharacter_idle_strip9_5
-  - first:
-      213: 4674871481338581062
-    second: spr_basecharacter_idle_strip9_6
-  - first:
-      213: -652554413605243301
-    second: spr_basecharacter_idle_strip9_7
-  - first:
-      213: 4387482067076073398
-    second: spr_basecharacter_idle_strip9_8
+      213: -4445180686205678273
+    second: NPC3-Back-Idle_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -150,199 +141,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: youngMan_idl_0
+      name: NPC3-Back-Idle_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 3
-        width: 13
-        height: 18
+        x: 0
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: adfce211aeaf55141ac4e3301c534724
-      internalID: 283020964
+      spriteID: 3af137b71f475b030800000000000000
+      internalID: 3509840065112252323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: youngMan_idl_1
+      name: NPC3-Back-Idle_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 3
-        width: 13
-        height: 18
+        x: 24
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 72f82033047c4d74bbf933329fd6bda0
-      internalID: -477133299
+      spriteID: 9433c5fdc31ea9cc0800000000000000
+      internalID: -3703400091997162679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: youngMan_idl_2
+      name: NPC3-Back-Idle_2
       rect:
         serializedVersion: 2
-        x: 114
-        y: 3
-        width: 13
-        height: 18
+        x: 48
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fd855ebc5799538489a90443a97fc976
-      internalID: 111895524
+      spriteID: e542790bc9743cd50800000000000000
+      internalID: 6756322604289041502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: youngMan_idl_3
+      name: NPC3-Back-Idle_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 3
-        width: 14
-        height: 16
+        x: 72
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5b489aaa71a91674a8b00f759d79ee06
-      internalID: -1789775283
+      spriteID: 67ada28175d987230800000000000000
+      internalID: 3636829696494852726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: youngMan_idl_4
+      name: NPC3-Back-Idle_4
       rect:
         serializedVersion: 2
-        x: 211
-        y: 3
-        width: 14
-        height: 16
+        x: 96
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a58f5a0dc4f5c474fb947820686ae4f3
-      internalID: -1953518173
+      spriteID: 0887e14f96b8312e0800000000000000
+      internalID: -2156226509396871040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: youngMan_idl_5
+      name: NPC3-Back-Idle_5
       rect:
         serializedVersion: 2
-        x: 261
-        y: 3
-        width: 13
-        height: 17
+        x: 120
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e128577c249cc484daab5bb81e86932b
-      internalID: -1853640476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: youngMan_idl_6
-      rect:
-        serializedVersion: 2
-        x: 310
-        y: 3
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 685117838d535504ba00f08589a5a118
-      internalID: -639060695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: youngMan_idl_7
-      rect:
-        serializedVersion: 2
-        x: 359
-        y: 3
-        width: 13
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec6152f5344a2ec4b8f985019339c7b7
-      internalID: -1756595381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: youngMan_idl_8
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 3
-        width: 13
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5505d945c34f3c4384f137369400936
-      internalID: 768818910
+      spriteID: f3d884ca7bb8f42c0800000000000000
+      internalID: -4445180686205678273
       vertices: []
       indices: 
       edges: []
@@ -351,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 32bbc7fe7e330884caf85c74681af803
+    spriteID: 867517498c60eaf4a9bd7d4eb7a62ae4
     internalID: 0
     vertices: []
     indices: 
@@ -361,15 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      youngMan_idl_0: 283020964
-      youngMan_idl_1: -477133299
-      youngMan_idl_2: 111895524
-      youngMan_idl_3: -1789775283
-      youngMan_idl_4: -1953518173
-      youngMan_idl_5: -1853640476
-      youngMan_idl_6: -639060695
-      youngMan_idl_7: -1756595381
-      youngMan_idl_8: 768818910
+      NPC3-Back-Idle_0: 3509840065112252323
+      NPC3-Back-Idle_1: -3703400091997162679
+      NPC3-Back-Idle_2: 6756322604289041502
+      NPC3-Back-Idle_3: 3636829696494852726
+      NPC3-Back-Idle_4: -2156226509396871040
+      NPC3-Back-Idle_5: -4445180686205678273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
