@@ -735,7 +735,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      basic furnace all animations_0: 4194624046354837036
+      basic furnace all animations_1: 1850829908272576391
+      basic furnace all animations_10: 5924565069135951007
+      basic furnace all animations_11: 5271021390569033972
+      basic furnace all animations_12: -3941407388374246476
+      basic furnace all animations_13: 847251957833336905
+      basic furnace all animations_14: 5999785999510201096
+      basic furnace all animations_15: 3141468744865144092
+      basic furnace all animations_16: -3271713229376121708
+      basic furnace all animations_17: 572375954244372201
+      basic furnace all animations_18: 2135285109272108917
+      basic furnace all animations_19: -4989860747449582552
+      basic furnace all animations_2: 473646639682254262
+      basic furnace all animations_20: -3214138848733888149
+      basic furnace all animations_21: -6531049005897277677
+      basic furnace all animations_22: -2414413907097145938
+      basic furnace all animations_23: 6604707644001584140
+      basic furnace all animations_3: 2435573113182373131
+      basic furnace all animations_4: 6423509779876190684
+      basic furnace all animations_5: -5042890609418299756
+      basic furnace all animations_6: 7027408020565366029
+      basic furnace all animations_7: 5680220751925205194
+      basic furnace all animations_8: 6911507769387709215
+      basic furnace all animations_9: 1219833244958535075
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

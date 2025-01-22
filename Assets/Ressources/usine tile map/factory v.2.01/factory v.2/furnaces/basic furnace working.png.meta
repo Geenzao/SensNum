@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      basic furnace working_0: -1079935490998365909
+      basic furnace working_1: 8884409792299787877
+      basic furnace working_2: 1362928264894092234
+      basic furnace working_3: 1226262688476764404
+      basic furnace working_4: 2019017478450484455
+      basic furnace working_5: 8800865476534550015
+      basic furnace working_6: -8147763988741716674
+      basic furnace working_7: -448836961985012695
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -485,7 +485,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      openning animation sheet_0: -2046159610526691000
+      openning animation sheet_1: -4318916597541396584
+      openning animation sheet_10: -290549226945449328
+      openning animation sheet_11: 1028742926442884072
+      openning animation sheet_12: 8716155038436759720
+      openning animation sheet_13: -33458086916514423
+      openning animation sheet_2: -5485550177602863109
+      openning animation sheet_3: 6128454541999330285
+      openning animation sheet_4: -8701540881259971101
+      openning animation sheet_5: 6606668918519861792
+      openning animation sheet_6: 2044512228284467058
+      openning animation sheet_7: 6768972610310886617
+      openning animation sheet_8: 8848497644661107044
+      openning animation sheet_9: 5799920156848550107
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      advanced furnace opening and closing_0: 6921633512852362782
+      advanced furnace opening and closing_1: -1391822067293151316
+      advanced furnace opening and closing_2: -2168559392475132728
+      advanced furnace opening and closing_3: 7696319659824941745
+      advanced furnace opening and closing_4: 7638867448062210595
+      advanced furnace opening and closing_5: 6269908028406451824
+      advanced furnace opening and closing_6: 722656520197488283
+      advanced furnace opening and closing_7: -9082923251170964130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
