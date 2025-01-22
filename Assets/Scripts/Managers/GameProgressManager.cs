@@ -12,13 +12,16 @@ public class GameProgressManager : Singleton<GameProgressManager>
         Menu,
         Start,
         Mine,
-        MineEnd,
-        Factory,
-        Residence,
-        ThirdGameMine,
         SecondGameMine,
+        ThirdGameMine,
+        MineEnd,
+        Village2,
+        AssemblyZone,
         AssemblyGame,
+        Village3,
+        Recycling,
         CandyCrush,
+        Village4,
         End
     }
     
