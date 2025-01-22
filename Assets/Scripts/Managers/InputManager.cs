@@ -29,37 +29,28 @@ public class InputManager : Singleton<InputManager>
                     GameManager.Instance.UpdateGameState(GameState.RUNNING);
                 }
             }
-            if (Input.GetKeyDown(KeyCode.G))
-            {
-                Debug.Log("G pressed");
-                GameManager.Instance.UnloadAndSavePosition("Village", -1.5f, 5.5f);
-                GameManager.Instance.LoadLevel("Mine3emeJeux");
-                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.ThirdGameMine);
-            }
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                Debug.Log("R pressed");
-                GameManager.Instance.UnloadLevel("Mine3emeJeux");
-                GameManager.Instance.LoadLevelAndPositionPlayer("Village");
-                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Start);
-            }
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("F pressed");
-                GameManager.Instance.UnloadAndSavePosition("Village", -1.5f, 5.5f);
-                GameManager.Instance.LoadLevel("AssemblageJeux");
-                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyGame);
-            }
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                Debug.Log("H pressed");
                 GameManager.Instance.UnloadAndSavePosition("Mine", -39, -10);
                 GameManager.Instance.LoadLevel("CinematiqueMine");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.None);
             }
-            if (Input.GetKeyDown(KeyCode.V))
+            if (Input.GetKeyDown(KeyCode.G))
             {
-                Debug.Log("V pressed");
+                Debug.Log("G pressed");
+                PathManager.Instance.UpdatePathState(PathManager.PathState.Village2);
+            }
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                Debug.Log("H pressed");
+                GameManager.Instance.UnloadAndSavePosition("Village", -1.5f, 5.5f);
+                GameManager.Instance.LoadLevel("AssemblageJeux");
+                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyGame);
+            }
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                Debug.Log("K pressed");
                 GameManager.Instance.UnloadLevel("Village");
                 GameManager.Instance.LoadLevel("MiniJeuCandycrush");
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.CandyCrush);

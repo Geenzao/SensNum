@@ -9,6 +9,7 @@ public class ChangeurDeScene : MonoBehaviour
     [SerializeField] private List<PathManager.PathState> path;
     [SerializeField] private List<GameProgressManager.GameProgressState> gameProgress;
     [SerializeField] private float x,y;
+    [SerializeField] private bool positionPlayerInNextScene;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,7 +20,7 @@ public class ChangeurDeScene : MonoBehaviour
                 if (PathManager.CurrentPathState == path[i])
                 {
                     //Lancer l'ui ici
-                    StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgress[i], currentScene, sceneNameToGo[i], true, x, y));
+                    StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgress[i], currentScene, sceneNameToGo[i], positionPlayerInNextScene, x, y));
                 }
             }
 

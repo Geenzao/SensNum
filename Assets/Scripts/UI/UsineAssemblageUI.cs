@@ -185,7 +185,7 @@ public class UsineAssemblageUI : Menu
     {
         GameManager.Instance.UnloadLevel("AssemblageJeux");
         GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
-        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Factory);
+        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyZone);
     }
 
     //Getter state
