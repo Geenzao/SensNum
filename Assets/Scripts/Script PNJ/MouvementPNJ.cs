@@ -2,7 +2,24 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
-// Ce script déplace les PNJ en suivant un parcours aller-retour entre deux points ou plus, avec des pauses obligatoires en mode idle.
+/*
+ * Cette classe gère les mouvements des PNJ
+ * 
+ * Il y a 3 types de PNJ à ce jour : 
+ *      - les pnj nommé     NORMAL           : MARCHE , IDLE
+ *      - les pnj nommé     SPECIFIQUE       : MARCHE , IDLE, ACTION_SPECIFIQUE
+ *      - les pnj nommé     IMOBILE          : IDLE
+ * 
+ * Tous les PNJ peuvent parler avec le joueur si ce dernier se rapproche assez
+ * Au niveau des animations et des etats, les PNJ alterne les animations à tous de roles
+ * 
+ * Pour le déplacement, il y a un tableau de gameObject à rentré dans chaque PNJ pour les déplacements
+ * NOTE : Si quelqu'un veut faire pas bouger un PNJ, alors il a juste a ne mettre qu'un seul point
+ * 
+ * Si vous avez des remarques ou des questions, voir avec Yanis, le responssable des PNJ
+ * 
+ * Cordialement
+ */
 
 public class MouvementPNJ : MonoBehaviour
 {
@@ -13,9 +30,23 @@ public class MouvementPNJ : MonoBehaviour
     [SerializeField] private bool isWalking = true;           // Contrôle si le PNJ marche ou est en idle
     [SerializeField] private float vitesse = 2f;              // Vitesse de déplacement
     [SerializeField] private float idleDuration;              // Durée de pause en idle, en secondes
-    private float idleTimer = 0f;                             // Timer pour la durée en idle
+    private float stateTimer = 0f;                             
 
-    private bool ThisPNJDontWalk = false;
+    [SerializeField] private float minIdleTime = 2f;   // Temps minimum en idle
+    [SerializeField] private float maxIdleTime = 5f;   // Temps maximum en idle
+    [SerializeField] private float minActionTime = 3f; // Temps minimum pour l'action spécifique
+    [SerializeField] private float maxActionTime = 6f; // Temps maximum pour l'action spécifique
+
+    private float timeIdle = 0f;
+    private float timeAction = 0f;
+
+    private enum PNJState { Idle, ActionSpecific, Moving }
+    private PNJState currentState = PNJState.Idle;
+
+    public enum PNJType { NORMAL, SPECIFIQUE, IMOBILE }
+    public PNJType typePNJ; //pour savoir de quelle type il est. Très importan !!!!!
+
+    private bool ThisPnjSpeakToPlayer = false;
     public Vector3 initialScale;  // Pour sauvegarder la taille initiale du PNJ
 
     void Awake()
@@ -26,49 +57,49 @@ public class MouvementPNJ : MonoBehaviour
 
     void Start()
     {
+        initialScale = gameObject.transform.localScale;
+        timeIdle = GetRandomIdleTime();
+        timeAction = GetRandomActionTime();
+        SetState(PNJState.Idle);
+
         // Positionne le PNJ au premier point de destination
         if (tabPointDestination.Length > 0)
         {
             //On place corectement le PNJ, sur le premier point
             transform.position = tabPointDestination[0].transform.position;
-            idleDuration = UnityEngine.Random.Range(5, 12);   // Durée aléatoire de pause
-            vitesse = UnityEngine.Random.Range(1.5f, 2.5f);   // Vitesse aléatoire
-            SetWalkingState(true);
         }
         else
         {
-            animator.SetBool("isWalking", false); // Arrête l'animation de marche si aucun point n'est défini
-            ThisPNJDontWalk = true;
+            typePNJ = PNJType.IMOBILE; //pour s'assurer que le jeux ne pete pas
         }
     }
 
     void Update()
     {
-        //NOTE : Si quelqu'un veut faire pas bouger un PNJ, alors il a juste a ne mettre qu'un seul point
+        if (ThisPnjSpeakToPlayer)
+            SetState(PNJState.Idle);
 
-        if (ThisPNJDontWalk)
-        {
-            SetWalkingState(false);
+        stateTimer += Time.deltaTime;
 
-        }
-        else
+        switch (currentState)
         {
-            if (isWalking)
-            {
-                MoveToNextDestination();
-            }
-            else
-            {
-                // Compte à rebours pendant l'idle
-                idleTimer += Time.deltaTime;
-                if (idleTimer >= idleDuration)
+            case PNJState.Idle:
+                if (stateTimer >= timeIdle)
                 {
-                    // Fin de l'idle, passage en mode marche
-                    idleTimer = 0f;
-                    currentDestinationIndex = (currentDestinationIndex + 1) % tabPointDestination.Length; // Changer de point de destination
-                    SetWalkingState(true);
+                    ChosseNextState();
                 }
-            }
+                break;
+
+            case PNJState.ActionSpecific:
+                if (stateTimer >= timeAction)
+                {
+                    ChosseNextState();
+                }
+                break;
+
+            case PNJState.Moving:
+                MoveToNextDestination();
+                break;
         }
     }
 
@@ -81,7 +112,8 @@ public class MouvementPNJ : MonoBehaviour
         // Vérifie si la destination est atteinte
         if (Vector3.Distance(transform.position, targetPoint.position) < 0.1f)
         {
-            SetWalkingState(false); // Arrêt et passage en idle
+            currentDestinationIndex = (currentDestinationIndex + 1) % tabPointDestination.Length; // Passer au point suivant
+            ChosseNextState();
         }
     }
 
@@ -92,25 +124,44 @@ public class MouvementPNJ : MonoBehaviour
         transform.localScale = new Vector3(initialScale.x * direction, initialScale.y, initialScale.z);  // Applique la direction tout en gardant la taille initiale    }
     }
 
-    //Gère l’état du PNJ (marche ou idle) et met à jour l’animation et la direction du sprite en conséquence.
-    private void SetWalkingState(bool walking)
+    private void ChosseNextState()
     {
-        isWalking = walking;
-        animator.SetBool("isWalking", walking);
-
-        if (walking)
+        switch (typePNJ)
         {
-            UpdateSpriteDirection(); // Met à jour la direction au début de la marche
+            case PNJType.NORMAL:
+                SetState(currentState == PNJState.Moving ? PNJState.Idle : PNJState.Moving);
+                break;
+            case PNJType.SPECIFIQUE:
+                SetState(currentState == PNJState.Moving ? PNJState.ActionSpecific : currentState == PNJState.ActionSpecific ? PNJState.Idle : PNJState.Moving);
+                break;
+            case PNJType.IMOBILE:
+                SetState(PNJState.Idle);
+                break;
         }
     }
 
-    public void PnjTalk()
+    private void SetState(PNJState newState)
     {
-        ThisPNJDontWalk = true;
+        currentState = newState;
+        stateTimer = 0f;
+        switch (currentState)
+        {
+            case PNJState.Idle:
+                animator.SetTrigger("idl");
+                break;
+            case PNJState.ActionSpecific:
+                animator.SetTrigger("interaction");
+                break;
+            case PNJState.Moving:
+                animator.SetTrigger("walk");
+                UpdateSpriteDirection();
+                break;
+        }
     }
 
-    public void PnjDontTalk()
-    {
-        ThisPNJDontWalk = false;
-    }
+    public void PnjTalk() { ThisPnjSpeakToPlayer = true; }
+    public void PnjDontTalk() { ThisPnjSpeakToPlayer = false; }
+
+    private float GetRandomIdleTime() => Random.Range(minIdleTime, maxIdleTime);
+    private float GetRandomActionTime() => Random.Range(minActionTime, maxActionTime);
 }
