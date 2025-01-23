@@ -263,6 +263,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
+      propertyPath: SystemPrefabs.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
+      propertyPath: 'SystemPrefabs.Array.data[9]'
+      value: 
+      objectReference: {fileID: 1092763251838582468, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
+    - target: {fileID: 1354532086096141998, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
+      propertyPath: 'SystemPrefabs.Array.data[10]'
+      value: 
+      objectReference: {fileID: 9054475828954094131, guid: aef1e102125ea9d4281e8d66f6582e74, type: 3}
     - target: {fileID: 6071805488983983202, guid: 9a6784242b80e3d418ae70d811edfc08, type: 3}
       propertyPath: m_Name
       value: GameManager

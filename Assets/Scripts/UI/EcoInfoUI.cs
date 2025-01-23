@@ -8,7 +8,6 @@ public class EcoInfoUI : Menu
 
     [Header("GameObject")]
     [SerializeField] private GameObject panelEcoInfo;
-    [SerializeField] private GameObject ecoInfoPanel;
     [SerializeField] private GameObject PanelAllMessage;
 
     [Header("TextMeshPro")]
@@ -24,6 +23,9 @@ public class EcoInfoUI : Menu
     private void Awake()
     {
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+
+        EcoInfoManager.OnEcoInfoShow += ShowEcoInfo;
+        EcoInfoManager.OnEcoInfoHide += HideEcoInfo;
     }
 
     protected override void Start()
@@ -33,8 +35,8 @@ public class EcoInfoUI : Menu
         if (UIManager.CurrentMenuState == UIManager.MenuState.None)
         {
             TriggerVisibility(true);
+            
         }
-
         if (LanguageManager.Instance != null)
         {
             UpdateTexts();
@@ -43,6 +45,12 @@ public class EcoInfoUI : Menu
         {
             Debug.LogError("LanguageManager instance is not initialized.");
         }
+
+        PanelAllMessage.SetActive(false);
+
+        btnShowEcoInfoComplet.onClick.AddListener(ShowAllMessage);
+        btnHideEcoInfo.onClick.AddListener(HideEcoInfo);
+        btnHideAllMessage.onClick.AddListener(HideAllMessage);
     }
 
     protected override void TriggerVisibility(bool visible)
@@ -67,5 +75,32 @@ public class EcoInfoUI : Menu
         //    Debug.LogError("Text elements are not assigned in the inspector.");
         //    return;
         //}
+    }
+
+    /**************************************************************************************/
+    public void ShowAllMessage()
+    {
+        txtEcoInfoFullMessage.text = EcoInfoManager.Instance.GetFullMessage();
+        PanelAllMessage.SetActive(true);
+        EcoInfoManager.Instance.SetIsFullMessageDisplayed(true);
+    }
+
+    public void HideAllMessage()
+    {
+        PanelAllMessage.SetActive(false);
+        EcoInfoManager.Instance.SetIsFullMessageDisplayed(false);
+    }
+    public void HideEcoInfo()
+    {
+        animator.SetTrigger("HideEcoInfo");
+        EcoInfoManager.Instance.ResetTimerHide(); //dans tous les cas
+        EcoInfoManager.Instance.SetIsFullMessageDisplayed(false);
+        EcoInfoManager.Instance.EcoInfoIsHide();
+    }
+
+    public void ShowEcoInfo()
+    {
+        txtEcoInfo.text = EcoInfoManager.Instance.GetPartialMessage();
+        animator.SetTrigger("ShowEcoInfo");
     }
 }
