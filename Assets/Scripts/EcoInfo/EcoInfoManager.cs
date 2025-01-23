@@ -1,8 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Collections;
-using TMPro;
+using System;
 
 
 //Cette classe permet de gérer les informations écologiques qui seront affichées au joueur pendant la partie
@@ -10,8 +9,11 @@ using TMPro;
 //Elle ne fonctionne que durant le mode village pour l'instant
 
 
-public class EcoInfoManager : MonoBehaviour
+public class EcoInfoManager : Singleton<EcoInfoManager>
 {
+    public static event Action OnEcoInfoShow;
+    public static event Action OnEcoInfoHide;
+
     //Tab de phrase EcoInfo a afficher au joueur pendant la parti
     private string[] tabEcoInfo = {
     "Chaque smartphone produit nécessite 44,4 kg de matières premières. Pensez à prolonger leur durée de vie !",
@@ -27,30 +29,18 @@ public class EcoInfoManager : MonoBehaviour
     };
     
     private int[] tabIndexShowed; //pour ne pas afficher deux fois la même EcoInfo
-    private int indexEcoInfo = 0;
-
-    //Pour l'UI
-    public TextMeshProUGUI txtEcoInfo;
-    public TextMeshProUGUI txtEcoInfoFullMessage;
-    public GameObject ecoInfoPanel;
-    public GameObject PanelAllMessage;
+    private int indexEcoInfo = 0; //pour stocker l'index de l'EcoInfo actuellement affiché
 
     //Pour le timer
-    private float timeBetweenEcoInfo = 10f; //Temps = 1min30
+    private float timeBetweenEcoInfo = 90f; //Temps = 1min30
     private float timer = 0f;
     private float TimerBeforeHide = 10f;
     private float timerHide = 0f;
 
-    private Coroutine currentCoroutine = null; // Référence à la coroutine actuelle
-
-    public Animator animator;
 
     private bool isFullMessageDisplayed = false; // Indique si le message complet est affiché
     private string fullMessage; // Stocke le message complet en cours
-
-    public Button btnShowEcoInfoComplet; //pour afficher le message complet
-    public Button btnHideEcoInfo; //pour cacher le message
-    public Button btnHideAllMessage; //pour cacher le grand message
+    private string partialMessage;
 
     private bool isEcoInfoDisplayed = false;
 
@@ -62,17 +52,10 @@ public class EcoInfoManager : MonoBehaviour
         {
             tabIndexShowed[i] = -1;
         }
-        btnShowEcoInfoComplet.onClick.AddListener(ShowAllMessage);
-        btnHideEcoInfo.onClick.AddListener(HideEcoInfo);
-        btnHideAllMessage.onClick.AddListener(HideAllMessage);
-
-        //De base ce message est caché
-        PanelAllMessage.SetActive(false);
     }
 
     void Update()
     {
-        print(timer);
         if (isEcoInfoDisplayed == false)
         {
             timer += Time.deltaTime;
@@ -88,7 +71,8 @@ public class EcoInfoManager : MonoBehaviour
             timerHide += Time.deltaTime;
             if (timerHide >= TimerBeforeHide)
             {
-                HideEcoInfo();
+                /****************************************HIDE ECO INFO/****************************************/
+                OnEcoInfoHide?.Invoke();
                 timerHide = 0f;
             }
         }
@@ -97,11 +81,11 @@ public class EcoInfoManager : MonoBehaviour
     private void ShowEcoInfo()
     {
         //On vérifie s'il y a encore des phrase à afficher
-        if(IsThereStillEcoInfoToShow() == false)
+        if (IsThereStillEcoInfoToShow() == false)
             return;
 
         //On défini l'indice du prochain message à afficher
-        int indexToShow = Random.Range(0, tabEcoInfo.Length);
+        int indexToShow = UnityEngine.Random.Range(0, tabEcoInfo.Length);
         while (tabIndexShowed[indexToShow] != -1)
         {
             indexToShow += 1;
@@ -112,25 +96,17 @@ public class EcoInfoManager : MonoBehaviour
         }
         indexEcoInfo = indexToShow;
 
-        //On affiche le message
+        //On stok les message a afficher
         tabIndexShowed[indexToShow] = 1;
         fullMessage = tabEcoInfo[indexToShow]; // Stocke le message complet
         // Affiche les 25 premiers caractères
-        string partialMessage = fullMessage.Length > 25 ? fullMessage.Substring(0, 25) + "..." : fullMessage;
-        txtEcoInfo.text = partialMessage;
+        partialMessage = fullMessage.Length > 25 ? fullMessage.Substring(0, 25) + "..." : fullMessage;
         isFullMessageDisplayed = false;
 
-        //txtEcoInfo.text = tabEcoInfo[indexToShow];
-        animator.SetTrigger("ShowEcoInfo");
-        isEcoInfoDisplayed = true;
 
-        //empecher affichage de plusieur phrase si appuy sur suivant avaant la fin de la premiere coroutine
-        //if (currentCoroutine != null)
-        //{
-        //    StopCoroutine(currentCoroutine);
-        //}
-        //On lance une coroutine pour cacher le message après un certain temps
-        //currentCoroutine = StartCoroutine(HideEcoInfoAfterTime());
+        /****************************************SHOW ECO INFO/****************************************/
+        OnEcoInfoShow?.Invoke();
+        isEcoInfoDisplayed = true;
     }
 
     //pour savoir s'il reste encore des phrase à afficher
@@ -146,34 +122,33 @@ public class EcoInfoManager : MonoBehaviour
         return false;
     }
 
-    public void HideEcoInfo()
+
+    //fonction pour mettre à jour le param : isFullMessageDisplayed
+    public void SetIsFullMessageDisplayed(bool value)
     {
-        animator.SetTrigger("HideEcoInfo");
-        timerHide = 0f; //dans tous les cas
+        isFullMessageDisplayed = value;
+    }
+
+    //fonction pour reset le timerHide
+    public void ResetTimerHide()
+    {
+        timerHide = 0f;
+    }
+
+    //pour donne tout le message
+    public string GetFullMessage()
+    {
+        return tabEcoInfo[indexEcoInfo];
+    }
+
+    //pour avoir le message partiel
+    public string GetPartialMessage()
+    {
+        return partialMessage;
+    }
+
+    public void EcoInfoIsHide()
+    {
         isEcoInfoDisplayed = false;
-    }
-
-    public void ShowEcoInfoManually()
-    {
-        ShowEcoInfo();
-    }
-
-    //IEnumerator HideEcoInfoAfterTime()
-    //{
-    //    yield return new WaitForSeconds(5f);
-    //    HideEcoInfo();
-    //}
-
-    public void ShowAllMessage()
-    {
-        txtEcoInfoFullMessage.text = tabEcoInfo[indexEcoInfo];
-        PanelAllMessage.SetActive(true);
-        isFullMessageDisplayed = true;
-    }
-
-    public void HideAllMessage()
-    {
-        PanelAllMessage.SetActive(false);
-        isFullMessageDisplayed = false;
     }
 }

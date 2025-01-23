@@ -44,8 +44,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0bed917c82f8ac4c8fbcbef7547c3df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtEcoInfo: {fileID: 0}
-  ecoInfoPanel: {fileID: 0}
-  timeBetweenEcoInfo: 90
-  animator: {fileID: 0}
-  btnShowEcoInfoComplet: {fileID: 0}

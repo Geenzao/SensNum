@@ -364,7 +364,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1471560292}
+  - {fileID: 501343685}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -508,6 +508,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489869616}
   m_CullTransparentMesh: 1
+--- !u!1 &501343684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501343685}
+  - component: {fileID: 501343687}
+  - component: {fileID: 501343686}
+  - component: {fileID: 501343688}
+  m_Layer: 5
+  m_Name: PanelEcoInfoScripte
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &501343685
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501343684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1471560292}
+  m_Father: {fileID: 439573783}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &501343686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501343684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &501343687
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501343684}
+  m_CullTransparentMesh: 1
+--- !u!114 &501343688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501343684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1bd9267fb23d704f8f32c8766b3aa41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1471560295}
+  panelEcoInfo: {fileID: 1471560291}
+  PanelAllMessage: {fileID: 163628150}
+  txtEcoInfo: {fileID: 1346534875}
+  txtEcoInfoFullMessage: {fileID: 1485254462}
+  btnShowEcoInfoComplet: {fileID: 1304092257}
+  btnHideEcoInfo: {fileID: 986098516}
+  btnHideAllMessage: {fileID: 1560305596}
 --- !u!1 &849457237
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +919,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6558939750457025935, guid: 3fb9511ebf1d8284f850cf2da6d8d9fd, type: 3}
+  m_Sprite: {fileID: 1936822372, guid: 3fb9511ebf1d8284f850cf2da6d8d9fd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1276,7 +1373,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471560291}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.42808, y: 0.42808, z: 0.42808}
   m_ConstrainProportionsScale: 0
@@ -1287,7 +1384,7 @@ RectTransform:
   - {fileID: 1304092256}
   - {fileID: 986098515}
   - {fileID: 163628151}
-  m_Father: {fileID: 439573783}
+  m_Father: {fileID: 501343685}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1314,8 +1411,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -724365294125720452, guid: 3fb9511ebf1d8284f850cf2da6d8d9fd, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -846370109, guid: 3fb9511ebf1d8284f850cf2da6d8d9fd, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1323,7 +1420,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.4
 --- !u!222 &1471560294
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1833,38 +1930,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8196508188463537768, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1471560295}
-    - target: {fileID: 8196508188463537768, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
-      propertyPath: txtEcoInfo
-      value: 
-      objectReference: {fileID: 1346534875}
-    - target: {fileID: 8196508188463537768, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
-      propertyPath: ecoInfoPanel
-      value: 
-      objectReference: {fileID: 1471560291}
-    - target: {fileID: 8196508188463537768, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
-      propertyPath: btnHideEcoInfo
-      value: 
-      objectReference: {fileID: 986098516}
-    - target: {fileID: 8196508188463537768, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
-      propertyPath: PanelAllMessage
-      value: 
-      objectReference: {fileID: 163628150}
-    - target: {fileID: 8196508188463537768, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
-      propertyPath: btnHideAllMessage
-      value: 
-      objectReference: {fileID: 1560305596}
-    - target: {fileID: 8196508188463537768, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
-      propertyPath: btnShowEcoInfoComplet
-      value: 
-      objectReference: {fileID: 1304092257}
-    - target: {fileID: 8196508188463537768, guid: f402dfd6d5118b944aa1b943c0257d11, type: 3}
-      propertyPath: txtEcoInfoFullMessage
-      value: 
-      objectReference: {fileID: 1485254462}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

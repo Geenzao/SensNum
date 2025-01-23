@@ -16691,11 +16691,11 @@ TextureImporter:
         serializedVersion: 2
         x: 576
         y: 32
-        width: 32
+        width: 96
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 12, y: 4, z: 12, w: 1}
       customData: 
       outline: []
       physicsShape: []
@@ -16703,50 +16703,6 @@ TextureImporter:
       bones: []
       spriteID: 8bef61e5493eb0045a9668f76e910cd7
       internalID: -846370109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wooden Pixel Art GUI 32x32_728
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69cdee6525958e143b088cc7cc754e8c
-      internalID: -148208529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wooden Pixel Art GUI 32x32_729
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 887490cb85a9f6542b950b99e3321d76
-      internalID: 815752036
       vertices: []
       indices: 
       edges: []
