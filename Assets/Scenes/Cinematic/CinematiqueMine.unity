@@ -427,7 +427,7 @@ MonoBehaviour:
         ou juste un peu plus de pollution. C\u2019est parti !"
   actualScene: CinematiqueMine
   sceneToLoad: Mine2emeJeux
-  gameProgressState: 8
+  gameProgressState: 4
 --- !u!114 &2032150529 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5705231387245673517, guid: a8dc801a65b8bf64ca9d10f1b3a0c9a2, type: 3}
