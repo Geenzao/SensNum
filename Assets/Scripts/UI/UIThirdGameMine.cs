@@ -28,6 +28,10 @@ public class UIThirdGameMine : Menu
     [Header("Panel")]
     [SerializeField] private GameObject winPanel;
     [SerializeField] private GameObject loosePanel;
+    [SerializeField] private GameObject PanelCompteur;
+    [SerializeField] private GameObject PanelTimer;
+    [SerializeField] private GameObject PanelTextDebut;
+
 
     [Header("Variable")]
     [SerializeField] private int score;
@@ -107,9 +111,9 @@ public class UIThirdGameMine : Menu
             counterTruckOre = ThirdMiniGame.Instance.CounterTruckOre;
             // Initialisation des textes UI
             UpdateTexts();
-            textDebut.gameObject.SetActive(visible);
-            countText.gameObject.SetActive(visible);
-            timerText.gameObject.SetActive(visible);
+            PanelCompteur.gameObject.SetActive(visible);
+            PanelTextDebut.gameObject.SetActive(visible);
+            PanelTimer.gameObject.SetActive(visible);
         }
     }
 
