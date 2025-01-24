@@ -313,12 +313,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310f712d3f9038d4697813dd9593bd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listDialogue:
-  - sentences:
-    - "Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour vos circuits
-      imprim\xE9s."
+  listDialogue: []
   name: mineurpioche2
   path: 0
+  changePathState: 0
 --- !u!1 &3241302462669865307
 GameObject:
   m_ObjectHideFlags: 0

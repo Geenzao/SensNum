@@ -250,12 +250,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310f712d3f9038d4697813dd9593bd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listDialogue:
-  - sentences:
-    - "Chaque minute ici, c'est plus de m\xE9taux rares pour vos t\xE9l\xE9phones.
-      Ne me ralentis pas."
+  listDialogue: []
   name: mineurpioche1
   path: 0
+  changePathState: 0
 --- !u!61 &196834847004045670
 BoxCollider2D:
   m_ObjectHideFlags: 0

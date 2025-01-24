@@ -43055,6 +43055,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3768427979309331750, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
+      propertyPath: changePathState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3768427979309331750, guid: 200d6f64b05c6e7489c1feba363ada29, type: 3}
       propertyPath: listDialogue.Array.size
       value: 0
       objectReference: {fileID: 0}

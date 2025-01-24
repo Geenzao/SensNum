@@ -318,13 +318,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310f712d3f9038d4697813dd9593bd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listDialogue:
-  - sentences:
-    - "Le lithium ne s\u2019extrait pas tout seul. Chaque batterie demande des sacrifices"
-    - "La terre ici contient des m\xE9taux pr\xE9cieux. Ton temps de parole m\u2019en
-      co\xFBte trop !"
+  listDialogue: []
   name: mineurpelle1
   path: 0
+  changePathState: 0
 --- !u!114 &7256045210738999210
 MonoBehaviour:
   m_ObjectHideFlags: 0

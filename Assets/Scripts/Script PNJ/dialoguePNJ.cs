@@ -25,6 +25,7 @@ public class dialoguePNJ : MonoBehaviour
 
     private bool finishAlreadyReached = false;
     [SerializeField] private PathManager.PathState path;
+    [SerializeField] private bool changePathState;
 
     void Awake()
     {
@@ -89,7 +90,8 @@ public class dialoguePNJ : MonoBehaviour
         if(!finishAlreadyReached)
         {
             finishAlreadyReached = true;
-            PathManager.Instance.UpdatePathState(path);
+            if(changePathState)
+                PathManager.Instance.UpdatePathState(path);
         }
         
     }
