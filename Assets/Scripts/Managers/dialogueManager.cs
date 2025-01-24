@@ -17,6 +17,7 @@ public class dialogueManager : Singleton<dialogueManager>
     private Queue<string> qSentences;
 
     private dialoguePNJ dialoguePnjRef = null;
+    private dialoguePNJChef dialoguePNJChef = null;
 
     private Coroutine currentCoroutine = null; // Référence à la coroutine actuelle
 
@@ -75,6 +76,41 @@ public class dialogueManager : Singleton<dialogueManager>
         DisplayNextSentence();
     }
 
+    public void StartDialogueChef(dialoguePNJChef diag)
+    {
+        playerMovement.Instance.StopPlayerMouvement();
+        dialoguePNJChef = diag;
+        // On dit au Pnj de s'arrêter parce que le joueur lui parle
+        if (dialoguePNJChef != null && dialoguePNJChef.gameObject.GetComponent<MouvementPNJ>())
+            dialoguePNJChef.gameObject.GetComponent<MouvementPNJ>().PnjTalk();
+        //else
+        //    Debug.LogWarning("Il y a un problème avec le scripte MouvementPNJ");
+
+        isDialogueActive = true;
+        qSentences.Clear();
+        // On affiche l'UI du dialogue
+        dialoguePanelUI.SetActive(true);
+        int nbInteraction = diag.getInteractionCount();
+        if (nbInteraction < diag.listDialogue.Count)
+        {
+            foreach (string sentence in diag.listDialogue[nbInteraction].sentences)
+            {
+                qSentences.Enqueue(sentence);
+            }
+        }
+        else
+        {
+            // ICI ça veut dire qu'il y a une erreur dans le nombre de dialogue.
+            // En cas d'erreur, on répète le dernier dialogue du PNJ en boucle
+            nbInteraction = diag.listDialogue.Count - 1;
+            foreach (string sentence in diag.listDialogue[nbInteraction].sentences)
+            {
+                qSentences.Enqueue(sentence);
+            }
+        }
+        DisplayNextSentence();
+    }
+
     public void ShowPanelInteraction()
     {
         PanelUITextInteraction.SetActive(true);
@@ -89,7 +125,10 @@ public class dialogueManager : Singleton<dialogueManager>
     {
         if (qSentences.Count == 0)
         {
-            EndDialogue();
+            if(dialoguePnjRef != null)
+                EndDialogue();
+            else if (dialoguePNJChef != null)
+                EndDialogueChef();
             return;
         }
 
@@ -121,6 +160,19 @@ public class dialogueManager : Singleton<dialogueManager>
         //On dit au Pnj de reprendre la marche
         if (dialoguePnjRef != null && dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>())
             dialoguePnjRef.gameObject.GetComponent<MouvementPNJ>().PnjDontTalk();
+        else
+            Debug.LogWarning("Il y a un problème avec le script MouvementPNJ");
+
+    }
+
+    public void EndDialogueChef()
+    {
+        dialoguePanelUI.SetActive(false);
+        isDialogueActive = false;
+        playerMovement.Instance.ActivePlayerMouvement();
+        //On dit au Pnj de reprendre la marche
+        if (dialoguePNJChef != null && dialoguePNJChef.gameObject.GetComponent<MouvementPNJ>())
+            dialoguePNJChef.gameObject.GetComponent<MouvementPNJ>().PnjDontTalk();
         else
             Debug.LogWarning("Il y a un problème avec le script MouvementPNJ");
 

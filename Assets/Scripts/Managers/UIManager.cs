@@ -66,7 +66,14 @@ public class UIManager : Singleton<UIManager>
         else
         {
 
-            if (CurrentMenuState != MenuState.Loading)
+            if (CurrentMenuState != MenuState.Loading && 
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.Start ||
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.Mine ||
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.Village2 ||
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.AssemblyZone ||
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.Village3 ||
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.Recycling ||
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.Village4)
                 UpdateMenuState(MenuState.None);
         }
     }

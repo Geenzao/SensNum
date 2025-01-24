@@ -90,9 +90,11 @@ public class UIThirdGameMine : Menu
         }
         else
         {
-            textDebut.gameObject.SetActive(false);
-            countText.gameObject.SetActive(false);
-            timerText.gameObject.SetActive(false);
+            PanelCompteur.SetActive(false);
+            PanelTextDebut.SetActive(false);
+            PanelTimer.SetActive(false);
+            winPanel.SetActive(false);
+            loosePanel.SetActive(false);
         }
     }
 
@@ -161,7 +163,7 @@ public class UIThirdGameMine : Menu
     {
         Time.timeScale = 1.0f;
         gameStarted = true;
-        textDebut.gameObject.SetActive(false);
+        PanelTextDebut.gameObject.SetActive(false);
 
     }
 

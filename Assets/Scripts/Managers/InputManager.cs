@@ -32,9 +32,10 @@ public class InputManager : Singleton<InputManager>
             if (Input.GetKeyDown(KeyCode.F))
             {
                 Debug.Log("F pressed");
-                GameManager.Instance.UnloadAndSavePosition("Mine", -39, -10);
-                GameManager.Instance.LoadLevel("CinematiqueMine");
-                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.None);
+                PathManager.Instance.UpdatePathState(PathManager.PathState.Mine);
+                //GameManager.Instance.UnloadAndSavePosition("Mine", -39, -10);
+                //GameManager.Instance.LoadLevel("CinematiqueMine");
+                //GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.None);
             }
             if (Input.GetKeyDown(KeyCode.G))
             {
@@ -44,16 +45,12 @@ public class InputManager : Singleton<InputManager>
             if (Input.GetKeyDown(KeyCode.H))
             {
                 Debug.Log("H pressed");
-                GameManager.Instance.UnloadAndSavePosition("Village", -1.5f, 5.5f);
-                GameManager.Instance.LoadLevel("AssemblageJeux");
-                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyGame);
+                PathManager.Instance.UpdatePathState(PathManager.PathState.AssemblyFactory);
             }
-            if (Input.GetKeyDown(KeyCode.K))
+            if (Input.GetKeyDown(KeyCode.J))
             {
-                Debug.Log("K pressed");
-                GameManager.Instance.UnloadLevel("Village");
-                GameManager.Instance.LoadLevel("MiniJeuCandycrush");
-                GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.CandyCrush);
+                Debug.Log("J pressed");
+                PathManager.Instance.UpdatePathState(PathManager.PathState.Village3);
             }
 
             //if (Input.GetKeyDown(KeyCode.J))
