@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chicken_Sprite_Sheet_0: -1266644546228486331
+      Chicken_Sprite_Sheet_1: 445688797663448424
+      Chicken_Sprite_Sheet_10: -208448387481748291
+      Chicken_Sprite_Sheet_11: -8970903418159812100
+      Chicken_Sprite_Sheet_12: -7936051549798556854
+      Chicken_Sprite_Sheet_13: 9058587792875587172
+      Chicken_Sprite_Sheet_14: -6912199562357858094
+      Chicken_Sprite_Sheet_15: 6341143184278139811
+      Chicken_Sprite_Sheet_2: -1186642971246549263
+      Chicken_Sprite_Sheet_3: 5437631251609781836
+      Chicken_Sprite_Sheet_4: 6989196694281813731
+      Chicken_Sprite_Sheet_5: 1191525330670854071
+      Chicken_Sprite_Sheet_6: -1264442687712838551
+      Chicken_Sprite_Sheet_7: 6967447317175013943
+      Chicken_Sprite_Sheet_8: -2093821674891564880
+      Chicken_Sprite_Sheet_9: -2154209117725497131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
