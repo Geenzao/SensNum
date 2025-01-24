@@ -10614,15 +10614,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'gameProgress.Array.data[1]'
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'gameProgress.Array.data[2]'
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'gameProgress.Array.data[3]'
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'sceneNameToGo.Array.data[0]'
@@ -14197,27 +14197,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b654e9f39a35660479c46ef659787bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listDialogue:
-  - sentences:
-    - "Bienvenue \xE0 l\u2019usine d\u2019assemblage, le c\u0153ur battant de l\u2019industrie
-      moderne."
-    - "Je suis le chef de cette usine, c'est moi qui la fait tourn\xE9e avec quelques
-      ouvrier du village Trois Rivi\xE8re."
-    - "Nous pompons des milliers de litres d'eau chaque jour pour extraire des m\xE9taux
-      rares indispensables aux smartphones et autres gadgets."
-  - sentences:
-    - "Chaque goutte d'eau contamin\xE9e retourne \xE0 la rivi\xE8re, mais les gens
-      aiment leurs \xE9crans bien plus que l'air pur, n\u2019est-ce pas ?"
-    - "Moi ? Je fais tourner la machine. Tant que \xE7a rapporte, pourquoi s'arr\xEAter
-      ?"
-  - sentences:
-    - "Si tu veux te joindre \xE0 nous, il y a toujours des postes \xE0 pourvoir
-      pour les courageux."
+  listDialogue: []
   name: cheffactoryassembly
   path: 4
   actualScene: UsineAssemblage
   sceneCinematiqueToLoad: CinematiqueAssemblage
-  x: 0
+  x: -9
   y: 0
   beginingGameProgressState: 8
   endGameProgressState: 9

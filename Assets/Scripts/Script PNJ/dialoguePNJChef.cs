@@ -40,7 +40,7 @@ public class dialoguePNJChef : MonoBehaviour
 
     IEnumerator InitializeDialogueCoroutine()
     {
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(7f);
         InitializeDialogue();
     }
 

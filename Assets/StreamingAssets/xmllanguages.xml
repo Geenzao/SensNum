@@ -232,6 +232,102 @@
 			<en>I don't have time, I have to extract tons of copper for your printed circuits.</en>
 			<fr>Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour vos circuits imprimés.</fr>
 		</word>
+		
+		<!-- pnj_cheffactoryassembly -->
+		<word id="pnj_cheffactoryassembly_0_0">
+			<en>Welcome to the assembly plant, the beating heart of modern industry.</en>
+			<fr>Bienvenue à l’usine d’assemblage, le cœur battant de l’industrie moderne.</fr>
+		</word>
+		<word id="pnj_cheffactoryassembly_0_1">
+			<en>I am the head of this factory, it is me who runs it with a few workers from the Three Rivers village.</en>
+			<fr>Je suis le chef de cette usine, c'est moi qui la faittournée avec quelques ouvrier du village Trois Rivière.</fr>
+		</word>
+		<word id="pnj_cheffactoryassembly_0_2">
+			<en>We pump thousands of liters of water every day to extract rare metals essential for smartphones and other gadgets.</en>
+			<fr>Nous pompons des milliers de litres d'eau chaque jour pour extraire des métaux rares indispensables aux smartphones et autres gadgets.</fr>
+		</word>
+		<word id="pnj_cheffactoryassembly_1_0">
+			<en>Every drop of contaminated water returns to the river, but people love their screens far more than clean air, don't they?</en>
+			<fr>Chaque goutte d'eau contaminée retourne à la rivière, mais les gens aiment leurs écrans bien plus que l'air pur, n’est-ce pas ?</fr>
+		</word>
+		<word id="pnj_cheffactoryassembly_1_1">
+			<en>Me? I keep the machine running. As long as it’s profitable, why stop?</en>
+			<fr>Moi ? Je fais tourner la machine. Tant que ça rapporte, pourquoi s'arrêter ?</fr>
+		</word>
+		<word id="pnj_cheffactoryassembly_2_0">
+			<en>If you want to join us, there are always positions available for the brave.</en>
+			<fr>Si tu veux te joindre à nous, il y a toujours des postes à pourvoir pour les courageux.</fr>
+		</word>
+
+		<!-- pnj_cheffactoryassembly_end -->
+		<word id="pnj_cheffactoryassembly_end_0_0">
+			<en>Good job, you've done well today.</en>
+			<fr>Bon travail, tu as bien travaillé aujourd'hui.</fr>
+		</word>
+		<word id="pnj_cheffactoryassembly_end_0_1">
+			<en>You can go and rest, don't forget to come back sometimes.</en>
+			<fr>Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres.</fr>
+		</word>
+
+		<!-- pnj_cheffactoryassembly_boucle -->
+		<word id="pnj_cheffactoryassembly_boucle_0_0">
+			<en>You worked well today, go and rest.</en>
+			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
+		</word>
+
+		<!-- pnj_chefrecyclagefactory1 -->
+		<word id="pnj_chefrecyclagefactory1_0_0">
+			<en>Ah, a new face! Welcome to the recycling plant.</en>
+			<fr>Ah, un nouveau visage ! Bienvenue à l’usine de recyclage.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_0_1">
+			<en>The last line of defense against ecological disaster, or at least… that’s what we like to say to reassure ourselves.</en>
+			<fr>Le dernier rempart contre le désastre écologique, ou du moins… c’est ce qu’on aime dire pour se rassurer.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_0_2">
+			<en>Here, we give a second life to electronic devices, mainly mobile phones. These little wonders are full of precious metals like gold and copper.</en>
+			<fr>Ici, nous donnons une seconde vie aux appareils électroniques, principalement des téléphones portables. Ces petites merveilles regorgent de métaux précieux comme l’or et le cuivre.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_1_0">
+			<en>Every day, we dismantle, sort, and melt down components to recover what the earth has already given too much of.</en>
+			<fr>Chaque jour, nous démontons, trions, et fondons les composants pour récupérer ce que la terre a déjà trop offert.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_1_1">
+			<en>But not everything is as green as we'd like. Look at the river behind the plant... It carries the residue of our work.</en>
+			<fr>Mais tout n’est pas aussi vert qu’on le voudrait. Vois la rivière derrière l’usine… Elle transporte des résidus de notre travail.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_1_2">
+			<en>Even with all our sophisticated machines, toxins still escape.</en>
+			<fr>Même avec toutes nos machines sophistiquées, des toxines s’échappent.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_2_0">
+			<en>Nevertheless, the world needs us.</en>
+			<fr>Néanmoins, le monde a besoin de nous.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_2_1">
+			<en>Without recycling, these wastes would end up in open-air landfills, poisoning the soil and the air.</en>
+			<fr>Sans recyclage, ces déchets finiraient dans des décharges à ciel ouvert, empoisonnant sols et air.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_2_2">
+			<en>So, what do you say? A little elbow grease to dismantle phones and help the future, or would you rather stay a spectator of this mess?</en>
+			<fr>Alors, que dis-tu ? Un peu d’huile de coude pour démonter des portables et aider l’avenir, ou préfères-tu rester spectateur de ce désordre ?</fr>
+		</word>
+
+		<!-- pnj_chefrecyclagefactory1_end -->
+		<word id="pnj_chefrecyclagefactory1_end_0_0">
+			<en>Good job, you've done well today.</en>
+			<fr>Bon travail, tu as bien travaillé aujourd'hui.</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory1_end_0_1">
+			<en>You can go and rest, don't forget to come back sometimes.</en>
+			<fr>Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres.</fr>
+		</word>
+
+		<!-- pnj_chefrecyclagefactory1_boucle -->
+		<word id="pnj_chefrecyclagefactory1_boucle_0_0">
+			<en>You worked well today, go and rest.</en>
+			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
+		</word>
 
 	</words>
 </languages>

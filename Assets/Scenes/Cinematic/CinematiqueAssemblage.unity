@@ -152,13 +152,13 @@ MonoBehaviour:
   txtDialogueCinematic: {fileID: 1523014662}
   btnSkip: {fileID: 1523014661}
   tabCinematicBloc:
-  - clips: {fileID: 0}
+  - clips: {fileID: 1125071149}
     dialogueCinematic:
       sentences:
       - "Salut, recrue ! Bienvenue dans la grande fabrique des r\xEAves num\xE9riques."
       - "Ici, on assemble des smartphones \xE0 la cha\xEEne, du lever au coucher
         du soleil."
-  - clips: {fileID: 0}
+  - clips: {fileID: 1206198914}
     dialogueCinematic:
       sentences:
       - "Chaque petit composant est un concentr\xE9 de technologie et de sueur."
@@ -268,6 +268,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6e72394bb3161f47a0559fde42bf11c, type: 3}
+--- !u!114 &1125071149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1403714809823228918, guid: d6e72394bb3161f47a0559fde42bf11c, type: 3}
+  m_PrefabInstance: {fileID: 1125071148}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1598987bf06464f8b6f818096257c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1156801177 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2121978182310637709, guid: 413dd31cad1651842844a6584aa87d53, type: 3}
@@ -340,6 +351,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c75c95cba75598340b1b5bb2901089d4, type: 3}
+--- !u!114 &1206198914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2222883568400720716, guid: c75c95cba75598340b1b5bb2901089d4, type: 3}
+  m_PrefabInstance: {fileID: 1206198913}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1598987bf06464f8b6f818096257c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1222427028 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5180323804125902768, guid: 83f1a79f872f8b34ebfa7308f00768c9, type: 3}

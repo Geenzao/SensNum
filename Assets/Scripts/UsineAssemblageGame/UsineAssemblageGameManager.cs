@@ -118,13 +118,10 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         secondRemaining = timeLimit;
         SpeedCircuitSave = circuitSpeed; //parce que circuitSpeed est amener à changer dans la game 
         //On fait spawn un premier circuit pour que le joueur n'attende pas
-        SpawnCircuitImprime();
-
-        StopGame(); //on arrête le jeux au début
     }
 
 
-    void Update()
+void Update()
     {
         // Gestion du chronomètre
         if (Time.timeScale > 0 && secondRemaining > 0)
@@ -377,6 +374,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     public void RunGame()
     {
         Time.timeScale = 1.0f;
+        SpawnCircuitImprime();
     }
     //pour stoper la game au moment des menus
     public void StopGame()
@@ -438,12 +436,6 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         // 3. Mettre à jour l'interface utilisateur
         UsineAssemblageUI.UpdateTimeRemaining((int)secondRemaining);
         UsineAssemblageUI.UbdateUI();
-
-        // 3.1 Ajouter un circuit
-        SpawnCircuitImprime();
-
-        // 4. Mettre le jeu en pause pour attendre le lancement
-        StopGame();
 
         //Debug.Log("Jeu initialisé avec succès !");
     }

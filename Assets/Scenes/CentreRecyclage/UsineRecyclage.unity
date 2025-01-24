@@ -1849,6 +1849,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnj_chefRecyclageFactory_ensemble
       objectReference: {fileID: 0}
+    - target: {fileID: 6174560912887640963, guid: d951046c60ab151448d743282d36b8df, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185901592431234052, guid: d951046c60ab151448d743282d36b8df, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8390177167892429536, guid: d951046c60ab151448d743282d36b8df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.033993
@@ -1920,27 +1928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b654e9f39a35660479c46ef659787bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listDialogue:
-  - sentences:
-    - "Ah, un nouveau visage ! Bienvenue \xE0 l\u2019usine de recyclage"
-    - "le dernier rempart contre le d\xE9sastre \xE9cologique, ou du moins\u2026
-      c\u2019est ce qu\u2019on aime dire pour se rassurer"
-    - "Ici, nous donnons une seconde vie aux appareils \xE9lectroniques, principalement
-      des t\xE9l\xE9phones portables. Ces petites merveilles regorgent de m\xE9taux
-      pr\xE9cieux comme l\u2019or et le cuivre"
-  - sentences:
-    - "Chaque jour, nous d\xE9montons, trions, et fondons les composants pour r\xE9cup\xE9rer
-      ce que la terre a d\xE9j\xE0 trop offert."
-    - "Mais tout n\u2019est pas aussi vert qu\u2019on le voudrait. Vois la rivi\xE8re
-      derri\xE8re l\u2019usine\u2026 Elle transporte des r\xE9sidus de notre travail"
-    - "M\xEAme avec toutes nos machines sophistiqu\xE9es, des toxines s\u2019\xE9chappent"
-  - sentences:
-    - "N\xE9anmoins, le monde a besoin de nous"
-    - "Sans recyclage, ces d\xE9chets finiraient dans des d\xE9charges \xE0 ciel
-      ouvert, empoisonnant sols et air"
-    - "Alors, que dis-tu ? Un peu d\u2019huile de coude pour d\xE9monter des portables
-      et aider l\u2019avenir, ou pr\xE9f\xE8res-tu rester spectateur de ce d\xE9sordre
-      ?"
+  listDialogue: []
   name: chefrecyclagefactory1
   path: 6
   actualScene: UsineRecyclage

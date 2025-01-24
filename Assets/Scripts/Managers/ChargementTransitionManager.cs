@@ -22,12 +22,14 @@ public class ChargementTransitionManager : Singleton<ChargementTransitionManager
     public void StartGame()
     {
         OnUnloadPage?.Invoke();
+        Debug.Log("Fin Transition");
         GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
     }
 
     public IEnumerator LoadScene(GameProgressState gameProgressState, string currentScene, string sceneNameToGo, bool playerInNextScene,float x = 0, float y = 0)
     {
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.Loading);
+        Debug.Log(gameProgressState);
         ChargementTransitionManager.Instance.gameProgressState = gameProgressState;
         yield return new WaitForSecondsRealtime(1.2f);
         if(GameObject.FindWithTag("Player") != null)

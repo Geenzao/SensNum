@@ -5288,7 +5288,7 @@ MonoBehaviour:
   alerte: {fileID: 9220075550103272011}
   looseRetryButton: {fileID: 1309910833396711561}
   looseBackSceneButton: {fileID: 4030010998684591520}
-  LastSceneName: CentreRecyclage
+  LastSceneName: UsineRecyclage
 --- !u!1 &2429982581227672895
 GameObject:
   m_ObjectHideFlags: 0
@@ -17640,7 +17640,6 @@ MonoBehaviour:
   btnReplayLose: {fileID: 8791468516474962907}
   btnQuitWin: {fileID: 1328116904043321119}
   btnQuitLose: {fileID: 6258169778238508845}
-  LastSceneName: Usine Assemblage
 --- !u!1 &7781641459871788569
 GameObject:
   m_ObjectHideFlags: 0

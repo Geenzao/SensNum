@@ -156,9 +156,12 @@ public class UICandyCrush : Menu
     private void OnBackSceneButtonClicked()
     {
         defeatPanel.gameObject.SetActive(false);
-        GameManager.Instance.UnloadLevel("MiniJeuCandycrush");
-        GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
-        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
+        //GameManager.Instance.UnloadLevel("MiniJeuCandycrush");
+        //GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
+        //GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Mine);
+
+        StartCoroutine(ChargementTransitionManager.Instance.LoadScene(GameProgressManager.GameProgressState.RecyclingEnd, "MiniJeuCandycrush", LastSceneName, true));
+
     }
     /* ---------- Ajout Aymeric Fin ---------- */
 

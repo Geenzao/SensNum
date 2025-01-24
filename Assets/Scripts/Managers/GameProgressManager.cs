@@ -67,7 +67,11 @@ public class GameProgressManager : Singleton<GameProgressManager>
                 UIManager.Instance.UpdateMenuState(MenuState.CandyCrush);
                 break;
             default:
-                UIManager.Instance.UpdateMenuState(MenuState.None);
+                if(UIManager.CurrentMenuState != MenuState.Loading)
+                {
+                    Debug.Log("MenuState.None GAMEPROGRESSMANAGER");
+                    UIManager.Instance.UpdateMenuState(MenuState.None);
+                }
                 break;
         }
 

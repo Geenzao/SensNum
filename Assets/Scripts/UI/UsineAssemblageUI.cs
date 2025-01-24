@@ -59,9 +59,6 @@ public class UsineAssemblageUI : Menu
     public Button btnQuitWin;
     public Button btnQuitLose;
 
-
-    [SerializeField] private string LastSceneName;
-
     private int _time = 0;
     private UsineAssemblageState state;
 
@@ -183,9 +180,13 @@ public class UsineAssemblageUI : Menu
     //Fct pour sortir du mini jeux
     public void OnQuitButtonClicked()
     {
-        GameManager.Instance.UnloadLevel("AssemblageJeux");
-        GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
-        GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.AssemblyZone);
+        Time.timeScale = 1.0f;
+        PanelLose.SetActive(false);
+        PanelWin.SetActive(false);
+        PanelNotifyAcceleration.SetActive(false);
+        PanelRuler.SetActive(false);
+        PanelInformation.SetActive(false);
+        StartCoroutine(ChargementTransitionManager.Instance.LoadScene(GameProgressManager.GameProgressState.AssemblyZoneEnd, "AssemblageJeux", "UsineAssemblage", true));
     }
 
     //Getter state
