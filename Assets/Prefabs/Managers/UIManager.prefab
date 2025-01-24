@@ -7934,9 +7934,9 @@ MonoBehaviour:
   winBackSceneButton: {fileID: 4765834970004804686}
   winPanel: {fileID: 4526636694265618211}
   loosePanel: {fileID: 2181184062685935789}
-  PanelCompteur: {fileID: 0}
-  PanelTimer: {fileID: 0}
-  PanelTextDebut: {fileID: 0}
+  PanelCompteur: {fileID: 3655999291586954788}
+  PanelTimer: {fileID: 3286083538625460615}
+  PanelTextDebut: {fileID: 1976743366225854686}
   score: 0
   LastSceneName: Mine
   timer: 30

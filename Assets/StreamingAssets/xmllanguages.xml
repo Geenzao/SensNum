@@ -148,5 +148,68 @@
 			<en>We're searching for a way to drive them away. Can you help us ?</en>
 			<fr>Nous cherchons un moyen pour chasser ces miliciens. Peux-tu nous aider ?</fr>
 		</word>
+		
+		<!-- pnj_ChefMine -->
+		<word id="pnj_ChefMine_0_0">
+			<en>Welcome to the great Copper Mine, the most valuable resource we extract here.</en>
+			<fr>Bienvenue dans la grande Mine de Cuivre, la ressource la plus précieuse que nous extrayons ici.</fr>
+		</word>
+		<word id="pnj_ChefMine_0_1">
+			<en>Everything you see here works day and night to extract tons of ore.</en>
+			<fr>Tout ce que tu vois ici fonctionne jour et nuit pour extraire des tonnes de minerai.</fr>
+		</word>
+		<word id="pnj_ChefMine_0_2">
+			<en>It’s hard work, but it’s the price you pay to power today’s connected world.</en>
+			<fr>C’est un travail acharné, mais c’est le prix à payer pour alimenter le monde connecté d’aujourd’hui.</fr>
+		</word>
+		<word id="pnj_ChefMine_1_0">
+			<en>Water? Oh yes, we use monstrous quantities of it to cool the machines and wash the ore.</en>
+			<fr>L’eau ? Ah oui, nous en utilisons des quantités monstrueuses pour refroidir les machines et laver le minerai.</fr>
+		</word>
+		<word id="pnj_ChefMine_1_1">
+			<en>The impact on groundwater? Let’s just say the water doesn’t blame us out loud, so it’s all good, right?</en>
+			<fr>L’impact sur les nappes phréatiques ? Disons que l’eau ne nous le reproche pas à haute voix, alors tout va bien, non ?</fr>
+		</word>
+		<word id="pnj_ChefMine_1_2">
+			<en>Some say we leave behind barren deserts and dead rivers.</en>
+			<fr>Certains disent que nous laissons derrière nous des déserts stériles et des rivières mortes.</fr>
+		</word>
+		<word id="pnj_ChefMine_1_3">
+			<en>But I don't believe them and neither do you?</en>
+			<fr>Mais je ne les crois pas et toi non plus pas vrai ? </fr>
+		</word>
+		<word id="pnj_ChefMine_2_0">
+			<en>Do you want work? We always need extra hands to dig deeper.</en>
+			<fr>Tu veux du travail ? Nous avons toujours besoin de mains supplémentaires pour creuser plus profondément.</fr>
+		</word>
+		<word id="pnj_ChefMine_2_1">
+			<en>So, are you willing to get your hands dirty for a little money and a lot of dust?</en>
+			<fr>Alors, tu es prêt à te salir les mains pour un peu d’argent et beaucoup de poussière ? </fr>
+		</word>
+		<word id="pnj_ChefMine_3_0">
+			<en></en>
+			<fr></fr>
+		</word>
+
+		<!-- pnj_ChefMine_end -->
+		<word id="pnj_ChefMine_end_0_0">
+			<en>Good job, you've done well today.</en>
+			<fr>Bon travail, tu as bien travaillé aujourd'hui.</fr>
+		</word>
+		<word id="pnj_ChefMine_end_0_1">
+			<en>You can go and rest, don't forget to come back sometimes.</en>
+			<fr>Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres.</fr>
+		</word>
+		<word id="pnj_ChefMine_end_1_0">
+			<en>You can go and rest, don't forget to come back sometimes.</en>
+			<fr>Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres.</fr>
+		</word>
+
+		<!-- pnj_ChefMine_boucle -->
+		<word id="pnj_ChefMine_boucle_0_0">
+			<en>You worked well today, go and rest.</en>
+			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
+		</word>
+		
 	</words>
 </languages>
