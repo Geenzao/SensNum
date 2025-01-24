@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 4d4054ca10ee9b54e96905c45be9e1c2
+guid: bfb2918835eac1946bc8d15fdf9919a9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3627265822849878658
-    second: poubelle_recyclage_0
+      213: 3190754485870679646
+    second: NPC8-Recycle-Center-Manif_0
+  - first:
+      213: -3789001330093074341
+    second: NPC8-Recycle-Center-Manif_1
+  - first:
+      213: 4526705621064781864
+    second: NPC8-Recycle-Center-Manif_2
+  - first:
+      213: 6387230234037783778
+    second: NPC8-Recycle-Center-Manif_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: poubelle_recyclage_0
+      name: NPC8-Recycle-Center-Manif_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 37
-        width: 412
-        height: 568
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28ac1ec3c03a65230800000000000000
-      internalID: 3627265822849878658
+      spriteID: e565ecfac46d74c20800000000000000
+      internalID: 3190754485870679646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC8-Recycle-Center-Manif_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58d1528d53ca6bc0800000000000000
+      internalID: -3789001330093074341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC8-Recycle-Center-Manif_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820945267c612de30800000000000000
+      internalID: 4526705621064781864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC8-Recycle-Center-Manif_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec057e8e0004a850800000000000000
+      internalID: 6387230234037783778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC8-Recycle-Center-Manif_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e268ab7338281eb4db78f77e7947823c
+      internalID: 290046827
       vertices: []
       indices: 
       edges: []
@@ -151,7 +248,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2bcbc19e225a1f74588318036aa02164
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +258,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      poubelle_recyclage_0: 3627265822849878658
+      NPC8-Recycle-Center-Manif_0: 3190754485870679646
+      NPC8-Recycle-Center-Manif_1: -3789001330093074341
+      NPC8-Recycle-Center-Manif_2: 4526705621064781864
+      NPC8-Recycle-Center-Manif_3: 6387230234037783778
+      NPC8-Recycle-Center-Manif_4: 290046827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

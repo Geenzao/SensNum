@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4d4054ca10ee9b54e96905c45be9e1c2
+guid: 5d667a0a0de6c354b894d17a4f49e57c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3627265822849878658
-    second: poubelle_recyclage_0
+      213: 4975515097686301422
+    second: poubelle_recyclage_logo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: poubelle_recyclage_0
+      name: poubelle_recyclage_logo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28ac1ec3c03a65230800000000000000
-      internalID: 3627265822849878658
+      spriteID: eea5f24be949c0540800000000000000
+      internalID: 4975515097686301422
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      poubelle_recyclage_0: 3627265822849878658
+      poubelle_recyclage_logo_0: 4975515097686301422
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

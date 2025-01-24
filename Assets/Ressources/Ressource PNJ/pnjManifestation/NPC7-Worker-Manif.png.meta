@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 4d4054ca10ee9b54e96905c45be9e1c2
+guid: 3925eb2930097e442ae041cb54638345
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3627265822849878658
-    second: poubelle_recyclage_0
+      213: -3033542814897809055
+    second: NPC7-Worker-Manif_0
+  - first:
+      213: -1142119902567837231
+    second: NPC7-Worker-Manif_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 24
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: poubelle_recyclage_0
+      name: NPC7-Worker-Manif_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 37
-        width: 412
-        height: 568
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +144,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28ac1ec3c03a65230800000000000000
-      internalID: 3627265822849878658
+      spriteID: 169d31bd1e0b6e5d0800000000000000
+      internalID: -3033542814897809055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC7-Worker-Manif_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d15a84ffff5620f0800000000000000
+      internalID: -1142119902567837231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC7-Worker-Manif_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2be98d756d1740409432da507c9ab8b
+      internalID: -536539466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC7-Worker-Manif_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e79830eb012c6942a6f05635a6e381b
+      internalID: -1544880071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC7-Worker-Manif_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94b868bddcab0a46b436e57f11a058b
+      internalID: 1430019167
       vertices: []
       indices: 
       edges: []
@@ -151,7 +242,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0deb8a74579d4ca4e8148d4ef8dd6bb4
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +252,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      poubelle_recyclage_0: 3627265822849878658
+      NPC7-Worker-Manif_0: -3033542814897809055
+      NPC7-Worker-Manif_1: -1142119902567837231
+      NPC7-Worker-Manif_2: -536539466
+      NPC7-Worker-Manif_3: -1544880071
+      NPC7-Worker-Manif_4: 1430019167
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
