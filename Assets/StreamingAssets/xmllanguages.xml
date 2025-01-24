@@ -210,6 +210,28 @@
 			<en>You worked well today, go and rest.</en>
 			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
 		</word>
-		
+
+		<!-- pnj_mineurpelle1 -->
+		<word id="pnj_mineurpelle1_0_0">
+			<en>Lithium doesn't extract itself. Each battery demands sacrifices.</en>
+			<fr>Le lithium ne s’extrait pas tout seul. Chaque batterie demande des sacrifices.</fr>
+		</word>
+		<word id="pnj_mineurpelle1_0_1">
+			<en>The earth here contains precious metals. Your talking time costs me too much!</en>
+			<fr>La terre ici contient des métaux précieux. Ton temps de parole</fr>
+		</word>
+
+		<!-- pnj_mineurpioche1 -->
+		<word id="pnj_mineurpioche1_0_0">
+			<en>Each minute here is more rare metals for your phones. Don't slow me down.</en>
+			<fr>Chaque minute ici, c'est plus de métaux rares pour vos téléphones. Ne me ralentis pas.</fr>
+		</word>
+
+		<!-- pnj_mineurpioche2 -->
+		<word id="pnj_mineurpioche2_0_0">
+			<en>I don't have time, I have to extract tons of copper for your printed circuits.</en>
+			<fr>Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour vos circuits imprimés.</fr>
+		</word>
+
 	</words>
 </languages>
