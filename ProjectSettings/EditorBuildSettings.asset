@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MiniJeux/Mine/Mine2emeJeux.unity
     guid: 2af61af9ec7ea2d449f67a36d2e466dd
   - enabled: 1
-    path: Assets/Scenes/recyclage/MiniJeuCandycrush.unity
+    path: Assets/Scenes/MiniJeux/recyclage/MiniJeuCandycrush.unity
     guid: ebc7958fc6a40224ba88509fde90081b
   - enabled: 1
     path: Assets/Scenes/Mine/Mine.unity
