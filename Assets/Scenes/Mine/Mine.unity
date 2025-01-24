@@ -66234,15 +66234,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'gameProgress.Array.data[3]'
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'gameProgress.Array.data[4]'
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'gameProgress.Array.data[5]'
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'sceneNameToGo.Array.data[0]'

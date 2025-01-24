@@ -448,9 +448,9 @@ MonoBehaviour:
         la nature."
       - "Bon, tu comprendras le reste en travaillant. Fais juste attention au composant
         utile. Le reste, laisse-le dans la rivi\xE8re."
-  actualScene: 
-  sceneToLoad: 
-  gameProgressState: 0
+  actualScene: CinematiqueRecyclage
+  sceneToLoad: MiniJeuCandycrush
+  gameProgressState: 14
 --- !u!4 &1781343070
 Transform:
   m_ObjectHideFlags: 0

@@ -1768,6 +1768,54 @@ PrefabInstance:
       propertyPath: m_Name
       value: Changeur de scene
       objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: currentScene
+      value: UsineRecyclage
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: path.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'path.Array.data[0]'
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'path.Array.data[1]'
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'path.Array.data[2]'
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: gameProgress.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: sceneNameToGo.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: positionPlayerInNextScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'gameProgress.Array.data[0]'
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'gameProgress.Array.data[1]'
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'sceneNameToGo.Array.data[0]'
+      value: Village3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'sceneNameToGo.Array.data[1]'
+      value: Village4
+      objectReference: {fileID: 0}
     - target: {fileID: 7907694327850387171, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: m_Size.x
       value: 2.0049744
@@ -1841,16 +1889,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8169021218152838599, guid: d951046c60ab151448d743282d36b8df, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 177631446326255262, guid: d951046c60ab151448d743282d36b8df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 280881711}
   m_SourcePrefab: {fileID: 100100000, guid: d951046c60ab151448d743282d36b8df, type: 3}
 --- !u!4 &280881709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8390177167892429536, guid: d951046c60ab151448d743282d36b8df, type: 3}
   m_PrefabInstance: {fileID: 280881708}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &280881710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 177631446326255262, guid: d951046c60ab151448d743282d36b8df, type: 3}
+  m_PrefabInstance: {fileID: 280881708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &280881711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280881710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b654e9f39a35660479c46ef659787bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listDialogue:
+  - sentences:
+    - "Ah, un nouveau visage ! Bienvenue \xE0 l\u2019usine de recyclage"
+    - "le dernier rempart contre le d\xE9sastre \xE9cologique, ou du moins\u2026
+      c\u2019est ce qu\u2019on aime dire pour se rassurer"
+    - "Ici, nous donnons une seconde vie aux appareils \xE9lectroniques, principalement
+      des t\xE9l\xE9phones portables. Ces petites merveilles regorgent de m\xE9taux
+      pr\xE9cieux comme l\u2019or et le cuivre"
+  - sentences:
+    - "Chaque jour, nous d\xE9montons, trions, et fondons les composants pour r\xE9cup\xE9rer
+      ce que la terre a d\xE9j\xE0 trop offert."
+    - "Mais tout n\u2019est pas aussi vert qu\u2019on le voudrait. Vois la rivi\xE8re
+      derri\xE8re l\u2019usine\u2026 Elle transporte des r\xE9sidus de notre travail"
+    - "M\xEAme avec toutes nos machines sophistiqu\xE9es, des toxines s\u2019\xE9chappent"
+  - sentences:
+    - "N\xE9anmoins, le monde a besoin de nous"
+    - "Sans recyclage, ces d\xE9chets finiraient dans des d\xE9charges \xE0 ciel
+      ouvert, empoisonnant sols et air"
+    - "Alors, que dis-tu ? Un peu d\u2019huile de coude pour d\xE9monter des portables
+      et aider l\u2019avenir, ou pr\xE9f\xE8res-tu rester spectateur de ce d\xE9sordre
+      ?"
+  name: chefrecyclagefactory1
+  path: 6
+  actualScene: UsineRecyclage
+  sceneCinematiqueToLoad: CinematiqueRecyclage
+  x: -27.5
+  y: 7
+  beginingGameProgressState: 12
+  endGameProgressState: 13
 --- !u!1001 &317932214
 PrefabInstance:
   m_ObjectHideFlags: 0
