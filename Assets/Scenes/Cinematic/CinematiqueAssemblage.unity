@@ -176,9 +176,9 @@ MonoBehaviour:
       - "C'est vrai qu'avec le temps, elle s'ass\xE8che, mais il faut bien qu'on
         l'utilise si tout le monde veut son portable !"
       - "Allez, tiens-toi pr\xEAt. Il faut \xEAtre rapide et pr\xE9cis dans ce boulot."
-  actualScene: 
-  sceneToLoad: 
-  gameProgressState: 0
+  actualScene: CinematiqueAssemblage
+  sceneToLoad: AssemblageJeux
+  gameProgressState: 10
 --- !u!4 &440220420
 Transform:
   m_ObjectHideFlags: 0

@@ -14171,11 +14171,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnj_chefFactoryAssembly_ensemble
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3078231748916666855, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6193607496339799098, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 3727267106469627760}
   m_SourcePrefab: {fileID: 100100000, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
+--- !u!1 &3727267106469627759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6193607496339799098, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
+  m_PrefabInstance: {fileID: 3727267106469627758}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3727267106469627760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3727267106469627759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b654e9f39a35660479c46ef659787bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listDialogue:
+  - sentences:
+    - "Bienvenue \xE0 l\u2019usine d\u2019assemblage, le c\u0153ur battant de l\u2019industrie
+      moderne."
+    - "Je suis le chef de cette usine, c'est moi qui la fait tourn\xE9e avec quelques
+      ouvrier du village Trois Rivi\xE8re."
+    - "Nous pompons des milliers de litres d'eau chaque jour pour extraire des m\xE9taux
+      rares indispensables aux smartphones et autres gadgets."
+  - sentences:
+    - "Chaque goutte d'eau contamin\xE9e retourne \xE0 la rivi\xE8re, mais les gens
+      aiment leurs \xE9crans bien plus que l'air pur, n\u2019est-ce pas ?"
+    - "Moi ? Je fais tourner la machine. Tant que \xE7a rapporte, pourquoi s'arr\xEAter
+      ?"
+  - sentences:
+    - "Si tu veux te joindre \xE0 nous, il y a toujours des postes \xE0 pourvoir
+      pour les courageux."
+  name: cheffactoryassembly
+  path: 4
+  actualScene: UsineAssemblage
+  sceneCinematiqueToLoad: CinematiqueAssemblage
+  x: 0
+  y: 0
+  beginingGameProgressState: 8
+  endGameProgressState: 9
 --- !u!1001 &9047467788677621216
 PrefabInstance:
   m_ObjectHideFlags: 0

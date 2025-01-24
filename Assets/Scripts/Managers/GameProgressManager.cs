@@ -17,9 +17,11 @@ public class GameProgressManager : Singleton<GameProgressManager>
         MineEnd,
         Village2,
         AssemblyZone,
+        AssemblyZoneEnd,
         AssemblyGame,
         Village3,
         Recycling,
+        RecyclingEnd,
         CandyCrush,
         Village4,
         End
