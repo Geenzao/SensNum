@@ -2,10 +2,10 @@ using UnityEngine;
 
 public enum ComponentType
 {
-    celluleBatterie,
-    circuitIntegre,
-    resistance,
-    processeur
+    blue,
+    red,
+    pink,
+    cyan
 }
 
 public class ComponentCircuit : MonoBehaviour
