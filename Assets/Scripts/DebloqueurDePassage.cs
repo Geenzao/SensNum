@@ -3,21 +3,23 @@ using static PathManager;
 
 public class DebloqueurDePassage : MonoBehaviour
 {
-    public GameObject passage1;
-    public GameObject eauBoueuse;
+    public PathManager.PathState pathToActivate;
+    public GameObject[] objectsToActivate;
+    public GameObject[] objectsToDesactivate;
 
     // Update is called once per frame
     void Update()
     {
-        switch (CurrentPathState)
+        if(PathManager.CurrentPathState == pathToActivate)
         {
-            case PathState.Village1:
-                break;
-            case PathState.Mine:
-                passage1.SetActive(false);
-                eauBoueuse.SetActive(true);
-                break;
+            for(int i = 0; i < objectsToActivate.Length; i++)
+            {
+                objectsToActivate[i].SetActive(true);
+            }
+            for (int i = 0; i < objectsToDesactivate.Length; i++)
+            {
+                objectsToDesactivate[i].SetActive(false);
+            }
         }
-
     }
 }
