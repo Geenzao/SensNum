@@ -54,34 +54,36 @@ public class playerMovement : Singleton<playerMovement>
             }
         }
         */
-
-        if(f_moveSpeed!=0)
+        if(UIManager.CurrentMenuState != UIManager.MenuState.Loading)
         {
-            //Si on veut bouger dans toutes les directions
-            if (moveY < 0)
+            if (f_moveSpeed!=0)
             {
-                animator_anim.SetInteger("whereLooking", 0); // Bas
-            }
-            else if (moveY > 0)
-            {
-                animator_anim.SetInteger("whereLooking", 2); // Haut
-            }
-            else if (moveX != 0)
-            {
-                animator_anim.SetInteger("whereLooking", 1); // Côté
-                transform.localScale = new Vector3(Mathf.Sign(moveX), 1, 1); // Rotation côté
-            }
+                //Si on veut bouger dans toutes les directions
+                if (moveY < 0)
+                {
+                    animator_anim.SetInteger("whereLooking", 0); // Bas
+                }
+                else if (moveY > 0)
+                {
+                    animator_anim.SetInteger("whereLooking", 2); // Haut
+                }
+                else if (moveX != 0)
+                {
+                    animator_anim.SetInteger("whereLooking", 1); // Côté
+                    transform.localScale = new Vector3(Mathf.Sign(moveX), 1, 1); // Rotation côté
+                }
 
-            vector3_moveDirection = new Vector3(moveX, moveY, 0).normalized;
+                vector3_moveDirection = new Vector3(moveX, moveY, 0).normalized;
 
-            if (vector3_moveDirection != Vector3.zero)
-            {
-                animator_anim.SetBool("isMooving", true);
-                transform.position += vector3_moveDirection * f_moveSpeed * Time.deltaTime;
-            }
-            else
-            {
-                animator_anim.SetBool("isMooving", false);
+                if (vector3_moveDirection != Vector3.zero)
+                {
+                    animator_anim.SetBool("isMooving", true);
+                    transform.position += vector3_moveDirection * f_moveSpeed * Time.deltaTime;
+                }
+                else
+                {
+                    animator_anim.SetBool("isMooving", false);
+                }
             }
         }
     }
@@ -95,6 +97,7 @@ public class playerMovement : Singleton<playerMovement>
     public void ActivePlayerMouvement()
     {
         f_moveSpeed = 5.0f;
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
     }
 
 }

@@ -98,8 +98,7 @@ public class UIManager : Singleton<UIManager>
 
     public void UpdateMenuState(MenuState newMS)
     {
-        MenuState previousMenuState = new MenuState();
-        previousMenuState = _currentMenuState;
+        _previousMenuState = _currentMenuState;
 
         //switch (newMS)
         //{
@@ -113,7 +112,7 @@ public class UIManager : Singleton<UIManager>
 
         _currentMenuState = newMS;
 
-        OnMenuStateChanged.Invoke(_currentMenuState, previousMenuState);
+        OnMenuStateChanged.Invoke(_currentMenuState, _previousMenuState);
         Debug.LogWarning("Menu state changed to " + _currentMenuState);
     }
 
@@ -159,6 +158,11 @@ public class UIManager : Singleton<UIManager>
     public static MenuState CurrentMenuState
     {
         get => _currentMenuState;
+    }
+
+    public static MenuState PreviousMenuState
+    {
+        get => _previousMenuState;
     }
 
     public Canvas canvas
