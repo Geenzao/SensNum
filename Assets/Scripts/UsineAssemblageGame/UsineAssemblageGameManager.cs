@@ -121,7 +121,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     }
 
 
-void Update()
+    void Update()
     {
         // Gestion du chronomètre
         if (Time.timeScale > 0 && secondRemaining > 0)
@@ -204,6 +204,8 @@ void Update()
             //On accelère les circuits
             go.gameObject.GetComponent<CircuitImprime>().addSpeed(speedAcceleration);
         }
+
+        TapisRoulantManager.Instance.AddSpeed(speedAcceleration);
 
         //A partir de maintenant la vitesse de base augmentes
         circuitSpeed += speedAcceleration;
