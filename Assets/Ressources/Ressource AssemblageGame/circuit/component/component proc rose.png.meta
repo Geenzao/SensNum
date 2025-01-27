@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      component proc rose_0: -4007632272626719387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

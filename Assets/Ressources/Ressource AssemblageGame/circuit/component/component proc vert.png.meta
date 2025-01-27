@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      component proc vert_0: 3192957862585997717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

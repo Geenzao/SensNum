@@ -38,14 +38,6 @@ public class UsineAssemblageUI : Menu
     public TextMeshProUGUI txtNbCircuitWin;
     public TextMeshProUGUI txtTime;
 
-    public TextMeshProUGUI txtInfoGameWin_nbCircuitWin; //Pour afficher le nombre de circuit réalisé pendant la game
-    public TextMeshProUGUI txtInfoGameWin_nbCircuitLose; //Pour afficher le nombre de circuit échoué pendant la game
-    public TextMeshProUGUI txtInfoGameWin_TimeForWin; //Pour afficher le temps que le joueur a mit pour atteindre l'objectif
-
-    public TextMeshProUGUI txtInfoGameLose_nbCircuitWin; //Pour afficher le nombre de circuit réalisé pendant la game
-    public TextMeshProUGUI txtInfoGameLose_nbCircuitLose; //Pour afficher le nombre de circuit échoué pendant la game
-
-
     [Header("Panel")]
     public GameObject PanelRuler;
     public GameObject PanelInformation;
@@ -144,6 +136,7 @@ public class UsineAssemblageUI : Menu
         UpdateTexts();
 
         PanelWin.SetActive(true);
+        Debug.Log("PANEK WIN ACTIVED.");
         PanelNotifyAcceleration.SetActive(false);
     }
 
@@ -180,6 +173,7 @@ public class UsineAssemblageUI : Menu
     //Fct pour sortir du mini jeux
     public void OnQuitButtonClicked()
     {
+        Debug.Log("Quit button clicked. Hiding panels.");
         Time.timeScale = 1.0f;
         PanelLose.SetActive(false);
         PanelWin.SetActive(false);
@@ -206,24 +200,20 @@ public class UsineAssemblageUI : Menu
 
     private void UpdateTexts()
     {
-        if (txtNbCircuitWin == null || txtTime == null || txtInfoGameWin_nbCircuitWin == null || txtInfoGameWin_nbCircuitLose == null || txtInfoGameWin_TimeForWin == null || txtInfoGameLose_nbCircuitWin == null || txtInfoGameLose_nbCircuitLose == null)
+        if (txtNbCircuitWin == null || txtTime == null || scoreNumberWin == null || scoreNumberLoose == null)
         {
             Debug.LogError("Text elements are not assigned in the inspector.");
             return;
         }
+
         if (UsineAssemblageGameManager.Instance == null)
             return;
+
         txtNbCircuitWin.text = LanguageManager.Instance.GetText("completedCircuit") + " : " + UsineAssemblageGameManager.Instance.GetNbCircuitWin().ToString() + "/" + UsineAssemblageGameManager.Instance.GetNbCircuitGoal().ToString();
         txtTime.text = LanguageManager.Instance.GetText("timeRemaining") + " : " + _time.ToString();
 
-        txtInfoGameWin_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
-        txtInfoGameWin_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " " + LanguageManager.Instance.GetText("poorlyMadeCircuit");
-        txtInfoGameWin_TimeForWin.text = LanguageManager.Instance.GetText("objectiveAchievedIn") + " : " + UsineAssemblageGameManager.Instance.GetTimeForGoal() + " " + LanguageManager.Instance.GetText("seconds");
-        scoreNumberWin.text = txtInfoGameWin_nbCircuitWin.text + "\n" + txtInfoGameWin_nbCircuitLose.text;
-
-        txtInfoGameLose_nbCircuitWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
-        txtInfoGameLose_nbCircuitLose.text = UsineAssemblageGameManager.Instance.GetNbCircuitLose() + " " + LanguageManager.Instance.GetText("poorlyMadeCircuit");
-        scoreNumberLoose.text = txtInfoGameLose_nbCircuitWin.text + "\n" + txtInfoGameLose_nbCircuitLose.text;
+        scoreNumberWin.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
+        scoreNumberLoose.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
 
         txtRules.text = LanguageManager.Instance.GetText("rules");
         txtWin.text = LanguageManager.Instance.GetText("win");

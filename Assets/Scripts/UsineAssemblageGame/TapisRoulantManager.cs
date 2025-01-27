@@ -94,6 +94,5 @@ public class TapisRoulantManager : Singleton<TapisRoulantManager>
     public void AddSpeed(float additionalSpeed)
     {
         speed += additionalSpeed;
-        print("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBSpeed: " + speed);
     }
 }
