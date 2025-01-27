@@ -1769,6 +1769,14 @@ PrefabInstance:
       value: Changeur de scene
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: y
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: currentScene
       value: UsineRecyclage
       objectReference: {fileID: 0}

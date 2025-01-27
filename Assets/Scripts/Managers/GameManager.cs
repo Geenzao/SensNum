@@ -428,7 +428,7 @@ public class GameManager : Singleton<GameManager>
         if (previousGameState != _gameState)
             OnGameStateChanged.Invoke(_gameState, previousGameState);
 
-        //Debug.LogWarning("Game state change to " + _gameState);
+        Debug.LogWarning("Game state change to " + _gameState);
     }
 
     /*\brief Exits the game.

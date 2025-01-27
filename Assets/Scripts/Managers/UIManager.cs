@@ -34,6 +34,7 @@ public class UIManager : Singleton<UIManager>
 
     //\brief Currently displayed menu
     private static MenuState _currentMenuState;
+    private static MenuState _previousMenuState;
     //private static VirtualKeyboard _virtualKeyboard;
 
     [SerializeField] private Camera _UICamera;
@@ -59,8 +60,13 @@ public class UIManager : Singleton<UIManager>
             _UICamera.gameObject.SetActive(false);
             //UpdateMenuState(MenuState.MainMenu);
         }
+        if (currentState == GameState.RUNNING && previousState == GameState.PAUSED)
+        {
+            UpdateMenuState(_previousMenuState);
+        }
         else if (currentState == GameState.PAUSED)
         {
+            _previousMenuState = _currentMenuState;
             UpdateMenuState(MenuState.PauseMenu);
         }
         else

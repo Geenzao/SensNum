@@ -20,7 +20,7 @@ public class InputManager : Singleton<InputManager>
         { 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (GameManager.CurrentGameState == GameState.RUNNING)
+                if (GameManager.CurrentGameState == GameState.RUNNING && UIManager.CurrentMenuState == UIManager.MenuState.None)
                 {
                     GameManager.Instance.UpdateGameState(GameState.PAUSED);
                 }
@@ -33,9 +33,6 @@ public class InputManager : Singleton<InputManager>
             {
                 Debug.Log("F pressed");
                 PathManager.Instance.UpdatePathState(PathManager.PathState.Mine);
-                //GameManager.Instance.UnloadAndSavePosition("Mine", -39, -10);
-                //GameManager.Instance.LoadLevel("CinematiqueMine");
-                //GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.None);
             }
             if (Input.GetKeyDown(KeyCode.G))
             {
