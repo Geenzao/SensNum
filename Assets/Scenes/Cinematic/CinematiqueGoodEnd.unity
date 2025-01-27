@@ -318,19 +318,54 @@ MonoBehaviour:
   tabCinematicBloc:
   - clips: {fileID: 361064}
     dialogueCinematic:
-      sentences: []
+      sentences:
+      - "Face \xE0 la menace de la destruction de leurs terres, les habitants des
+        Trois Rivi\xE8res se sont lev\xE9s."
+      - "Les industriels n'ont rien pu faire face \xE0 leur d\xE9termination \xE0
+        prot\xE9ger les rivi\xE8res"
   - clips: {fileID: 6013361450740939905}
     dialogueCinematic:
-      sentences: []
+      sentences:
+      - 'Le chantier de construction n''a pas eu lieu. '
+      - "Les ouvriers et les machines sont partis. Les habitans de Trois Rivi\xE8re
+        ont gagn\xE9"
   - clips: {fileID: 1644274602}
     dialogueCinematic:
-      sentences: []
+      sentences:
+      - "Le vent, qui avait toujours souffl\xE9 sur les collines des Trois Rivi\xE8res,
+        devenait maintenant une source de vie."
+      - "Les habitants avaient choisi une \xE9nergie propre, respectueuse de leurs
+        terres"
   - clips: {fileID: 1296410484}
     dialogueCinematic:
-      sentences: []
+      sentences:
+      - "Chaque rayon de soleil repr\xE9sentait un pas de plus vers l\u2019autonomie
+        et l\u2019harmonie avec la nature."
+      - "M\xEAme si certains habitants regrettaient les portables et les innovations,
+        la majorit\xE9 \xE9tait heureuse"
+  - clips: {fileID: 981632944}
+    dialogueCinematic:
+      sentences:
+      - "Les rivi\xE8res avaient retrouv\xE9 leur clart\xE9, et la vie, leur \xE9clat."
+      - "Le village portait encore les traces de son pass\xE9 industriel, mais ces
+        cicatrices racontaient une histoire de victoire et de r\xE9silience."
+      - "Les habitants des Trois Rivi\xE8res avaient choisi un avenir diff\xE9rent.
+        Un avenir o\xF9 l\u2019homme et la nature pouvaient coexister en harmonie"
+      - Fin...
   actualScene: 
   sceneToLoad: 
   gameProgressState: 0
+--- !u!114 &981632944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7597037998941557192, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+  m_PrefabInstance: {fileID: 6680309177361473545}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e1598987bf06464f8b6f818096257c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1296410484 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5755953641393160343, guid: 804288f13d79f9341a052598ccacd936, type: 3}
@@ -624,10 +659,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3497731558194732781, guid: f74f833d73b009e429f51efc24fc59da, type: 3}
-      propertyPath: 'tabLayer.Array.data[0].tabImages.Array.data[0]'
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3923464395379578948, guid: f74f833d73b009e429f51efc24fc59da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.0086055
@@ -765,6 +796,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1598987bf06464f8b6f818096257c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &6680309177361473545
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4310116
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.92466354
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.07152182
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3174252559086625154, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586379620162933838, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_Name
+      value: cinematicClip_goodEnd_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3586379620162933838, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -775,3 +867,4 @@ SceneRoots:
   - {fileID: 6013361450740939904}
   - {fileID: 3496004471471200957}
   - {fileID: 248226168759919929}
+  - {fileID: 6680309177361473545}

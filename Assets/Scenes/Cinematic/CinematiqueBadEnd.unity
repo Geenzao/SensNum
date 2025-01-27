@@ -267,55 +267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1598987bf06464f8b6f818096257c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &899343561
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 899343562}
-  - component: {fileID: 899343563}
-  m_Layer: 0
-  m_Name: cinematicClip_badEnd_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &899343562
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899343561}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1464875, y: 6.664916, z: -209.27905}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &899343563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899343561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e1598987bf06464f8b6f818096257c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tabLayer: []
-  baseSpeed: 0.2
-  stepSpeed: 0.1
-  resetTime: 10
-  isRening: 0
 --- !u!1 &1072387719
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,21 +316,37 @@ MonoBehaviour:
   txtDialogueCinematic: {fileID: 2131478876}
   btnSkip: {fileID: 2131478875}
   tabCinematicBloc:
-  - clips: {fileID: 0}
-    dialogueCinematic:
-      sentences: []
   - clips: {fileID: 6714783384364108508}
     dialogueCinematic:
-      sentences: []
+      sentences:
+      - "Personne ne s\u2019est lev\xE9, personne n\u2019a contest\xE9. Alors les
+        camions sont arriv\xE9s, et les machines ont commenc\xE9 leur \u0153uvre"
+      - "Les arbres ont disparu, les rivi\xE8res ont \xE9t\xE9 d\xE9tourn\xE9es,
+        et le sol a \xE9t\xE9 creus\xE9. "
+      - "Les habitants ont regard\xE9 le chantier de construction se lancer"
   - clips: {fileID: 6855593836967056001}
     dialogueCinematic:
-      sentences: []
+      sentences:
+      - 'Des salles immenses ont vu le jour, remplies de serveurs rugissants. '
+      - "Des milliers de machines, travaillant sans rel\xE2che, consommaient une
+        \xE9nergie colossale"
   - clips: {fileID: 1915871320}
     dialogueCinematic:
-      sentences: []
+      sentences:
+      - "L\u2019eau n\u2019\xE9tait plus qu\u2019un souvenir. Les rivi\xE8res, taries
+        par les besoins du b\xE2timent, laissaient derri\xE8re elles des lits de
+        pierres s\xE8ches."
+      - Avec la croissance, les servers demander toujours plus.
   - clips: {fileID: 280506307}
     dialogueCinematic:
-      sentences: []
+      sentences:
+      - "Les habitants ont perdu leurs rivi\xE8res, mais ils ont gagn\xE9... des
+        machines"
+      - "La technologie avait triomph\xE9. Mais \xE0 quel prix ? Trois Rivi\xE8res
+        n'existait plus"
+      - "Ainsi se termine l\u2019histoire des Trois Rivi\xE8res, un vilalge o\xF9
+        le Num\xE9rique a causer la fin des rivi\xE8res."
+      - "Peut-\xEAtre que, quelque part, cette le\xE7on r\xE9sonnera pour d\u2019autres."
   actualScene: 
   sceneToLoad: 
   gameProgressState: 0
@@ -810,7 +777,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 44507711}
-  - {fileID: 899343562}
   - {fileID: 1072387720}
   - {fileID: 6714783384364108507}
   - {fileID: 6855593836967056000}
