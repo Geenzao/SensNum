@@ -40,6 +40,12 @@ public class MouvementPNJ : MonoBehaviour
     private float timeIdle = 0f;
     private float timeAction = 0f;
 
+    public enum PNJ_StateManif { manif, pacifiste }
+    private PNJ_StateManif currentStateManif = PNJ_StateManif.pacifiste;
+    private Transform[] tabPointDestinationManif;
+    private int currentDestinationIndexManif = 0;
+
+
     private enum PNJState { Idle, ActionSpecific, Moving }
     private PNJState currentState = PNJState.Idle;
 
@@ -54,13 +60,15 @@ public class MouvementPNJ : MonoBehaviour
         initialScale = gameObject.transform.localScale;  // Sauvegarde la taille initiale
     }
 
-
     void Start()
     {
         initialScale = gameObject.transform.localScale;
         timeIdle = GetRandomIdleTime();
         timeAction = GetRandomActionTime();
         SetState(PNJState.Idle);
+
+        //pour la manif
+        currentDestinationIndexManif = 0;
 
         // Positionne le PNJ au premier point de destination
         if (tabPointDestination.Length > 0)
@@ -79,41 +87,68 @@ public class MouvementPNJ : MonoBehaviour
         if (ThisPnjSpeakToPlayer)
             SetState(PNJState.Idle);
 
-        stateTimer += Time.deltaTime;
-
-        switch (currentState)
+        if(currentStateManif == PNJ_StateManif.manif)
         {
-            case PNJState.Idle:
-                if (stateTimer >= timeIdle)
-                {
-                    ChosseNextState();
-                }
-                break;
+            MoveToNextDestination();
+        }
+        else
+        {
+            stateTimer += Time.deltaTime;
 
-            case PNJState.ActionSpecific:
-                if (stateTimer >= timeAction)
-                {
-                    ChosseNextState();
-                }
-                break;
+            switch (currentState)
+            {
+                case PNJState.Idle:
+                    if (stateTimer >= timeIdle)
+                    {
+                        ChosseNextState();
+                    }
+                    break;
 
-            case PNJState.Moving:
-                MoveToNextDestination();
-                break;
+                case PNJState.ActionSpecific:
+                    if (stateTimer >= timeAction)
+                    {
+                        ChosseNextState();
+                    }
+                    break;
+
+                case PNJState.Moving:
+                    MoveToNextDestination();
+                    break;
+            }
         }
     }
 
     private void MoveToNextDestination()
     {
-        // Destination actuelle
-        Transform targetPoint = tabPointDestination[currentDestinationIndex].transform;
-        transform.position = Vector3.MoveTowards(transform.position, targetPoint.position, vitesse * Time.deltaTime);
-
-        // Vérifie si la destination est atteinte
-        if (Vector3.Distance(transform.position, targetPoint.position) < 0.1f)
+        if(currentStateManif == PNJ_StateManif.manif)
         {
-            currentDestinationIndex = (currentDestinationIndex + 1) % tabPointDestination.Length; // Passer au point suivant
-            ChosseNextState();
+            // Point cible à atteindre
+            Transform targetPoint = tabPointDestinationManif[currentDestinationIndexManif];
+
+            // Garde la position Y actuelle (évite que l'objet change de hauteur)
+            Vector3 targetPosition = new Vector3(targetPoint.position.x, transform.position.y, targetPoint.position.z);
+
+            // Déplace l'objet vers la cible
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, vitesse * Time.deltaTime);
+
+            // Vérifie si la destination est atteinte
+            if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+            {
+                SetState(PNJState.Idle);
+            }
+        }
+        else
+        {
+            // Destination actuelle
+            Transform targetPoint = tabPointDestination[currentDestinationIndex].transform;
+            transform.position = Vector3.MoveTowards(transform.position, targetPoint.position, vitesse * Time.deltaTime);
+
+            // Vérifie si la destination est atteinte
+            if (Vector3.Distance(transform.position, targetPoint.position) < 0.1f)
+            {
+                currentDestinationIndex = (currentDestinationIndex + 1) % tabPointDestination.Length; // Passer au point suivant
+                ChosseNextState();
+            }
         }
     }
 
@@ -164,4 +199,25 @@ public class MouvementPNJ : MonoBehaviour
 
     private float GetRandomIdleTime() => Random.Range(minIdleTime, maxIdleTime);
     private float GetRandomActionTime() => Random.Range(minActionTime, maxActionTime);
+
+
+    //pour que le ManifManager changer l'état du pnj en manifestant quand on est dans la scene de manifestation
+    public void SetStateManif(Transform ptsDes, Transform ptsDepart)
+    {
+        currentStateManif = PNJ_StateManif.manif;
+        tabPointDestinationManif[0] = ptsDes;
+        tabPointDestinationManif[0] = ptsDepart;
+    }
+
+    //Pour changer la destination en mode manif
+    public void ChangeDestinationManif()
+    {
+        if (currentDestinationIndexManif == 0)
+            currentDestinationIndexManif = 1;
+        else
+            currentDestinationIndexManif = 0;
+
+        SetState(PNJState.Moving);
+        
+    }
 }
