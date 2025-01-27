@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 
 //Cette classe permet d'instentié à la chaine des tapisroulant et
@@ -10,19 +11,25 @@ using UnityEngine;
 
 public class TapisRoulantManager : Singleton<TapisRoulantManager>
 {
-    [Header("TapisRoulant")] GameObject tapisRoulantPrefab;
+    [Header("TapisRoulant")]
+    public GameObject tapisRoulantPrefab;
 
     [Header("Position")] 
     public GameObject start;
     public GameObject end;
-    public GameObject interval; //quand un tapis roulant dépasse ce point, un autre apparait
     private Vector3 positionStart;
     private Vector3 positionEnd;
-    private Vector3 positionInterval; //quand un tapis roulant dépasse ce point, un autre apparait
+
+
+    private Vector3 endPosTapis; // Position de fin du tapis actuel
+    private Vector3 beginPosTapis; // Position de debut du tapis actuel
+
 
     private List<GameObject> tapisRoulantList = new List<GameObject>();
 
     public float speed = 1;
+
+    private int maxTapisRoulants = 3;
 
     //Au starte, on fait apparaitre trois tapis roulant
     void Start()
@@ -31,12 +38,17 @@ public class TapisRoulantManager : Singleton<TapisRoulantManager>
 
         positionEnd = end.transform.position;
         positionStart = start.transform.position;
-        positionInterval = interval.transform.position;
 
-        // Créer trois tapis roulants initiaux
-        for (int i = 0; i < 3; i++)
+        //On fait apparaitre les trois premiers tapis roulants
+
+        GameObject FirsttapisRoulant = Instantiate(tapisRoulantPrefab, positionStart, Quaternion.identity);
+        //FirsttapisRoulant.transform.SetParent(transform); //On les met en enfant de l'objet TapisRoulantManager
+        tapisRoulantList.Add(FirsttapisRoulant);
+
+        // Créer deux autres tapis roulants initiaux
+        for (int i = 0; i < 2; i++)
         {
-            CreateTapisRoulant(i == 0 ? positionStart : GetNextPosition());
+            CreateTapisRoulant();
         }
     }
 
@@ -50,49 +62,38 @@ public class TapisRoulantManager : Singleton<TapisRoulantManager>
             tapisRoulant.transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
 
             // Si le tapis sort de l'écran (ou atteint positionEnd), on le détruit
-            if (tapisRoulant.transform.position.x > positionInterval.x)
+            // Si le tapis roulant dépasse positionEnd, on le détruit
+            if (tapisRoulant.transform.Find("begin").position.x > positionEnd.x)
             {
                 Destroy(tapisRoulant);
                 tapisRoulantList.RemoveAt(i);
-                CreateTapisRoulant(GetNextPosition());
+                CreateTapisRoulant();
             }
         }
     }
 
     // Créer un nouveau tapis roulant à une position donnée
-    private void CreateTapisRoulant(Vector3 position)
+    private void CreateTapisRoulant()
     {
-        GameObject tapisRoulant = Instantiate(tapisRoulantPrefab, position, Quaternion.identity);
-        tapisRoulant.transform.SetParent(transform);
-        tapisRoulantList.Add(tapisRoulant);
-    }
+        print("CreateTapisRoulant");
+        GameObject NewtapisRoulant = Instantiate(tapisRoulantPrefab, Vector3.zero, Quaternion.identity);
 
-    // Calculer la position du prochain tapis roulant
-    private Vector3 GetNextPosition()
-    {
-        if (tapisRoulantList.Count == 0)
-        {
-            return positionStart;
-        }
-
-        // On prend le dernier tapis roulant de la liste
+        //On place le nouveau tapis à gauche du dernier tapis roulant
         GameObject dernierTapis = tapisRoulantList[tapisRoulantList.Count - 1];
+        Vector3 posBeginDernier = dernierTapis.transform.Find("begin").position;
+        NewtapisRoulant.transform.position = posBeginDernier;
+        Vector3 posEndActual = NewtapisRoulant.transform.Find("end").position;
 
-        // Pour obtenir le point end de ce tapis
-        Transform endPoint = dernierTapis.transform.Find("end");
+        NewtapisRoulant.transform.position += posBeginDernier - posEndActual;
 
-        if (endPoint == null)
-        {
-            Debug.LogError("Le prefab du tapis roulant doit contenir un enfant nommé 'end'.");
-            return positionStart;
-        }
-
-        return endPoint.position - ((dernierTapis.transform.Find("begin").position - endPoint.position)/2);
+        //NewtapisRoulant.transform.SetParent(transform);
+        tapisRoulantList.Add(NewtapisRoulant);
     }
 
     // Modifier la vitesse
     public void AddSpeed(float additionalSpeed)
     {
         speed += additionalSpeed;
+        print("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBSpeed: " + speed);
     }
 }

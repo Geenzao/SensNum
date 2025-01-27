@@ -98,5 +98,6 @@ public class CircuitImprime : MonoBehaviour
     public void addSpeed(float s)
     {
         speed += s;
+        print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAASpeed: " + speed);
     }
 }

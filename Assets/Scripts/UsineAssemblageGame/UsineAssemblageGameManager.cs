@@ -203,8 +203,9 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         {
             //On accelère les circuits
             go.gameObject.GetComponent<CircuitImprime>().addSpeed(speedAcceleration);
-            TapisRoulantManager.Instance.AddSpeed(speedAcceleration);
         }
+
+        TapisRoulantManager.Instance.AddSpeed(speedAcceleration);
 
         //A partir de maintenant la vitesse de base augmentes
         circuitSpeed += speedAcceleration;
