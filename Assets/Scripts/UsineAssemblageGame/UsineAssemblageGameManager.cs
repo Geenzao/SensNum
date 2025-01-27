@@ -112,6 +112,10 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
 
     private Coroutine coroutineNotifyAcceleration = null;
 
+    private bool PlayerPlay = false;//false avant que le joueur ne clic une pemière fois pour jouer
+
+    private bool playerHasAlwedyFinishaGame = false;
+
     void Start()
     {
         UsineAssemblageUI = GameObject.Find("AssemblyGameUI").GetComponent<UsineAssemblageUI>();
@@ -123,6 +127,10 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
 
     void Update()
     {
+        if(PlayerPlay == false)
+        {
+            return;
+        }
         // Gestion du chronomètre
         if (Time.timeScale > 0 && secondRemaining > 0)
         {
@@ -144,7 +152,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
                 if (currentComponent != null)
                     Destroy(currentComponent);
                 currentComponent = null;
-
+                Debug.Log("Fin du jeu");
                 AnnalyseGame();
             }
         }
@@ -376,6 +384,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     public void RunGame()
     {
         Time.timeScale = 1.0f;
+        PlayerPlay = true;
         SpawnCircuitImprime();
     }
     //pour stoper la game au moment des menus
@@ -388,9 +397,14 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
     //On appel cette fonction à la fin d'une game quand le temps est fini 0
     public void AnnalyseGame()
     {
+        if(playerHasAlwedyFinishaGame == true)
+        {
+            return;
+        }
+        playerHasAlwedyFinishaGame = true;
         StopGame();
 
-        if (nbCircuitWin >= nbCircuitGoal/* && timeElapsed < timeLimit*/)
+        if (nbCircuitWin >= nbCircuitGoal)
         {
             //Le joueur a ganier
             UsineAssemblageUI.PlayerHasWin();
@@ -411,6 +425,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         timeElapsed = 0f;
         secondRemaining = timeLimit;
         timeSinceLastAcceleration = 0f;
+        playerHasAlwedyFinishaGame = false;
 
         timeGoal = 0f;
         playerHasWin = false;

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      component proc rouge_0: -8961176718215660530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

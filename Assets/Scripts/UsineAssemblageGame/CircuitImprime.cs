@@ -30,12 +30,10 @@ public class CircuitImprime : MonoBehaviour
         this.positionSpawnOther = UsineAssemblageGameManager.Instance.GetSpawnInterval();
     }
 
-
     void Update()
     {
         MoveCircuit();
     }
-
 
     //Cette fct sert à placé un composant sur une des place
     public void FillComposantPlace(ComponentType typeNewComponent, int indexComponentPlace)
@@ -46,8 +44,12 @@ public class CircuitImprime : MonoBehaviour
             this.lstComponentPlaceOnCircuit[indexComponentPlace].component.SetActive(true);
         }
         //else Debug.LogWarning("Mauvais type");
-    }
 
+        if(CheckValidity())
+        {
+            UsineAssemblageGameManager.Instance.AddGoodCircuit();
+        }
+    }
 
     private void MoveCircuit()
     {
@@ -56,15 +58,6 @@ public class CircuitImprime : MonoBehaviour
 
         if (transform.position.x > endPositionX)
         {
-            isValid = CheckValidity();
-
-            // Signale au UsineAssemblageGameManager si le joueur a réussi le circuit
-            // Et détruit le circuit après validation
-            if (CheckValidity())
-                UsineAssemblageGameManager.Instance.AddGoodCircuit();
-            else
-                UsineAssemblageGameManager.Instance.AddBadCircuit();
-
             DestroyThis();
         }
 
@@ -98,6 +91,5 @@ public class CircuitImprime : MonoBehaviour
     public void addSpeed(float s)
     {
         speed += s;
-        print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAASpeed: " + speed);
     }
 }
