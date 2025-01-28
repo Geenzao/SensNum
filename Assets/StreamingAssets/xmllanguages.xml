@@ -105,49 +105,83 @@ Clické et c'est partie !!</fr>
 			<en>Acceleration</en>
 			<fr>Accélération</fr>
 		</word>
+		<word id="loading">
+			<en>Loading</en>
+			<fr>Chargement</fr>
+		</word>
 
 		<!-- PNJ -->
-		<!-- pnj_youngman -->
-		<word id="pnj_youngman_0_0">
+		<!-- __________________________ PNJ VILLAGE 1 __________________________ -->
+		
+		<!-- pnj_chefduvillage -->
+		<word id="pnj_chefduvillage_0_0">
 			<en>Who are you ?</en>
 			<fr>Qui es-tu ?</fr>
 		</word>
-		<word id="pnj_youngman_0_1">
+		<word id="pnj_chefduvillage_0_1">
 			<en>You're not welcome here !</en>
 			<fr>Tu n'as rien à faire dans notre village !</fr>
 		</word>
-		<word id="pnj_youngman_0_2">
+		<word id="pnj_chefduvillage_0_2">
 			<en>Go away !</en>
 			<fr>Va-t'en !</fr>
 		</word>
-		<word id="pnj_youngman_1_0">
+		<word id="pnj_chefduvillage_1_0">
 			<en>You're not a member of the militia jeep group ?</en>
 			<fr>Tu ne fais pas partie du groupe des miliciens en jeep ?</fr>
 		</word>
-		<word id="pnj_youngman_1_1">
+		<word id="pnj_chefduvillage_1_1">
 			<en>Sorry for my rude welcome…</en>
 			<fr>Désolé pour mon accueil brutal…</fr>
 		</word>
-		<word id="pnj_youngman_1_2">
+		<word id="pnj_chefduvillage_1_2">
 			<en>We're on edge for a few days now.</en>
 			<fr>Nous sommes sur les nerfs depuis quelques jours.</fr>
 		</word>
-		<word id="pnj_youngman_1_3">
+		<word id="pnj_chefduvillage_1_3">
 			<en>Since these militia came and cut down trees.</en>
 			<fr>Depuis que ces miliciens sont venus et ont abattu des arbres.</fr>
 		</word>
-		<word id="pnj_youngman_1_4">
+		<word id="pnj_chefduvillage_1_4">
 			<en>To dig the ground, in search of precious materials.</en>
 			<fr>Pour creuser le sol, à la recherche de matières premières précieuses.</fr>
 		</word>
-		<word id="pnj_youngman_1_5">
+		<word id="pnj_chefduvillage_1_5">
 			<en>We're searching for a way to drive them away.</en>
 			<fr>Nous cherchons un moyen pour chasser ces miliciens.</fr>
 		</word>
-		<word id="pnj_youngman_2_0">
+		<word id="pnj_chefduvillage_2_0">
 			<en>We're searching for a way to drive them away. Can you help us ?</en>
 			<fr>Nous cherchons un moyen pour chasser ces miliciens. Peux-tu nous aider ?</fr>
 		</word>
+		
+		<!-- pnj_youngman -->
+		<word id="pnj_youngman_0_0">
+			<en>Welcome to our village, stranger. Here, every hand contributes to our survival.</en>
+			<fr>Bienvenue dans notre village, étranger. Ici, chaque main contribue à notre survie.</fr>
+		</word>
+
+		<!-- pnj_man -->
+		<word id="pnj_man_0_0">
+			<en>I don’t like talking to strangers.</en>
+			<fr>Je n'aime pas parler aux inconnus.</fr>
+		</word>
+		<word id="pnj_man_1_0">
+			<en>There are many problems because of the mine at the moment.</en>
+			<fr>Il y a beaucoup de problèmes à cause de la mine en ce moment.</fr>
+		</word>
+		<word id="pnj_man_1_1">
+			<en>If it’s to waste my time, get lost!</en>
+			<fr>Si c'est pour prendre de mon temps, va-t’en !</fr>
+		</word>
+
+		<!-- pnj_oldwoman -->
+		<word id="pnj_oldwoman_0_0">
+			<en>I don’t know anything.</en>
+			<fr>Je ne sais rien.</fr>
+		</word>
+
+		<!-- __________________________ PNJ MINE __________________________ -->
 		
 		<!-- pnj_ChefMine -->
 		<word id="pnj_ChefMine_0_0">
@@ -232,6 +266,41 @@ Clické et c'est partie !!</fr>
 			<en>I don't have time, I have to extract tons of copper for your printed circuits.</en>
 			<fr>Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour vos circuits imprimés.</fr>
 		</word>
+
+
+		<!-- __________________________ PNJ VILLAGE 2 __________________________ -->
+		
+		<!-- pnj_chefduvillage2 -->
+		<word id="chefduvillage2_0_0">
+			<en>Who are you ?</en>
+			<fr>Qui es-tu ?</fr>
+		</word>
+		
+		<!-- pnj_barman -->
+		<word id="barman_0_0">
+			<en>Hey, you're not from around here, are you?</en>
+			<fr>Hey, t'es pas d'ici, toi ?</fr>
+		</word>
+		
+		<!-- pnj_youngman2 -->
+		<word id="youngman2_0_0">
+			<en>I am the young</en>
+			<fr>Je suis le jeune</fr>
+		</word>
+
+		<!-- pnj_oldwoman2 -->
+		<word id="oldwoman2_0_0">
+			<en>I am the old</en>
+			<fr>Je suis la vieille</fr>
+		</word>
+		
+		<!-- pnj_man2 -->
+		<word id="pnj_man2_0_0">
+			<en>I don’t like talking to strangers.</en>
+			<fr>Je n'aime pas parler aux inconnus.</fr>
+		</word>
+
+		<!-- __________________________ PNJ USINE D'ASSEMBLAGE __________________________ -->
 		
 		<!-- pnj_cheffactoryassembly -->
 		<word id="pnj_cheffactoryassembly_0_0">
@@ -275,6 +344,9 @@ Clické et c'est partie !!</fr>
 			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
 		</word>
 
+
+		<!-- __________________________ PNJ USINE RECYCLAGE __________________________ -->
+		
 		<!-- pnj_chefrecyclagefactory1 -->
 		<word id="pnj_chefrecyclagefactory1_0_0">
 			<en>Ah, a new face! Welcome to the recycling plant.</en>
@@ -328,6 +400,12 @@ Clické et c'est partie !!</fr>
 			<en>You worked well today, go and rest.</en>
 			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
 		</word>
+		
+		
+
+
+
+
 
 	</words>
 </languages>

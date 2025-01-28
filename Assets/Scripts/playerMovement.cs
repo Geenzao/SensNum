@@ -97,7 +97,8 @@ public class playerMovement : Singleton<playerMovement>
     public void ActivePlayerMouvement()
     {
         f_moveSpeed = 5.0f;
-        UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
+        if(UIManager.CurrentMenuState != UIManager.MenuState.None)
+            UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
     }
 
 }

@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using static GameProgressManager;
 
@@ -7,7 +8,13 @@ public class ChargementTransition : Menu
     public Animator animator;
     public GameObject LoadGreenRoue;
 
-    [SerializeField] private GameObject panelChargement; 
+    [SerializeField] private GameObject panelChargement;
+
+    [Header("Texts")]
+    [SerializeField] private TextMeshProUGUI txtLoading1;
+    [SerializeField] private TextMeshProUGUI txtLoading2;
+    [SerializeField] private TextMeshProUGUI txtLoading3;
+    [SerializeField] private TextMeshProUGUI txtLoading4;
 
     private void Awake()
     {
@@ -74,10 +81,14 @@ public class ChargementTransition : Menu
 
     private void UpdateTexts()
     {
-        //if ()
-        //{
-        //    Debug.LogError("Text elements are not assigned in the inspector.");
-        //    return;
-        //}
+        if (txtLoading1 == null || txtLoading2 == null || txtLoading3 == null || txtLoading4 == null)
+        {
+            Debug.LogError("Text elements are not assigned in the inspector.");
+            return;
+        }
+        txtLoading1.text = LanguageManager.Instance.GetText("loading");
+        txtLoading2.text = LanguageManager.Instance.GetText("loading") + ".";
+        txtLoading3.text = LanguageManager.Instance.GetText("loading") + "..";
+        txtLoading4.text = LanguageManager.Instance.GetText("loading") + "...";
     }
 }

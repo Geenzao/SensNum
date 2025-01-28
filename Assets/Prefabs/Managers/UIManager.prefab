@@ -6113,6 +6113,10 @@ MonoBehaviour:
   animator: {fileID: 4607538713986103682}
   LoadGreenRoue: {fileID: 0}
   panelChargement: {fileID: 7246268326579342393}
+  txtLoading1: {fileID: 1436430236120935445}
+  txtLoading2: {fileID: 1048403494014602237}
+  txtLoading3: {fileID: 4669333585255276377}
+  txtLoading4: {fileID: 1894898220884478580}
 --- !u!1 &2888236706994463918
 GameObject:
   m_ObjectHideFlags: 0
