@@ -169,18 +169,18 @@ public class UISecondMiniGame : Menu
 
     private void UpdateUI()
     {
-        texteCptOr.text = oreCounter.cptAu.ToString();
-        texteCptCu.text = oreCounter.cptCu.ToString();
-        texteCptLi.text = oreCounter.cptLi.ToString();
+        texteCptOr.text = LanguageManager.Instance.GetText("Or") + " " + oreCounter.cptAu.ToString();
+        texteCptCu.text = LanguageManager.Instance.GetText("Cuivre") + " " + oreCounter.cptCu.ToString();
+        texteCptLi.text = LanguageManager.Instance.GetText("Lithium") + " " + oreCounter.cptLi.ToString();
     }
 
     // ----------------- TO DO : RECOMMENCER LE MINI-JEU -----------------\\
     private void OnRetryButtonClicked()
     {
         winPanel.gameObject.SetActive(false);
-        texteCptCu.text = "0";
-        texteCptLi.text = "0";
-        texteCptOr.text = "0";
+        texteCptCu.text = LanguageManager.Instance.GetText("Cuivre") + " 0";
+        texteCptLi.text = LanguageManager.Instance.GetText("Lithium") + " 0";
+        texteCptOr.text = LanguageManager.Instance.GetText("Or") + " 0";
         oreCounter.cptAu = 0;
         oreCounter.cptCu = 0;
         oreCounter.cptLi = 0;
