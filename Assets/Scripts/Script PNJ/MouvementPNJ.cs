@@ -27,7 +27,6 @@ public class MouvementPNJ : MonoBehaviour
     public Animator animator;
 
     [SerializeField] private int currentDestinationIndex = 0; // Index du point de destination actuel
-    [SerializeField] private bool isWalking = true;           // Contrôle si le PNJ marche ou est en idle
     [SerializeField] private float vitesse = 2f;              // Vitesse de déplacement
     [SerializeField] private float idleDuration;              // Durée de pause en idle, en secondes
     private float stateTimer = 0f;                             
@@ -42,9 +41,11 @@ public class MouvementPNJ : MonoBehaviour
 
     public enum PNJ_StateManif { manif, pacifiste }
     private PNJ_StateManif currentStateManif = PNJ_StateManif.pacifiste;
-    private Transform[] tabPointDestinationManif;
+    private Transform[] tabPointDestinationManif = new Transform[2];
     private int currentDestinationIndexManif = 0;
-
+    public bool PNJHasArrivedToManifPoint = false; //pour empécher de faire un calcule des milier de fois
+    private bool hasArrived = false;
+    private float EcartToDestination = 0.0f; //pour que tous les PNJ ne s'arrête pas à la même ligne
 
     private enum PNJState { Idle, ActionSpecific, Moving }
     private PNJState currentState = PNJState.Idle;
@@ -69,6 +70,7 @@ public class MouvementPNJ : MonoBehaviour
 
         //pour la manif
         currentDestinationIndexManif = 0;
+
 
         // Positionne le PNJ au premier point de destination
         if (tabPointDestination.Length > 0)
@@ -122,18 +124,17 @@ public class MouvementPNJ : MonoBehaviour
     {
         if(currentStateManif == PNJ_StateManif.manif)
         {
-            // Point cible à atteindre
             Transform targetPoint = tabPointDestinationManif[currentDestinationIndexManif];
 
-            // Garde la position Y actuelle (évite que l'objet change de hauteur)
-            Vector3 targetPosition = new Vector3(targetPoint.position.x, transform.position.y, targetPoint.position.z);
+            Vector3 targetPosition = new Vector3(targetPoint.position.x - EcartToDestination, transform.position.y, targetPoint.position.z);
 
-            // Déplace l'objet vers la cible
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, vitesse * Time.deltaTime);
 
-            // Vérifie si la destination est atteinte
-            if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+            if (Vector3.Distance(transform.position, targetPosition) < 0.1f && !hasArrived)
             {
+                hasArrived = true;
+                ManifManager.Instance.PNJArrived();
+                print("Arrived" + gameObject.name);
                 SetState(PNJState.Idle);
             }
         }
@@ -154,9 +155,18 @@ public class MouvementPNJ : MonoBehaviour
 
     private void UpdateSpriteDirection()
     {
-        Transform targetPoint = tabPointDestination[currentDestinationIndex].transform;
-        float direction = targetPoint.position.x > transform.position.x ? 1 : -1;
-        transform.localScale = new Vector3(initialScale.x * direction, initialScale.y, initialScale.z);  // Applique la direction tout en gardant la taille initiale    }
+        if (currentStateManif == PNJ_StateManif.manif)
+        {
+            Transform targetPoint = tabPointDestinationManif[currentDestinationIndexManif].transform;
+            float direction = targetPoint.position.x > transform.position.x ? 1 : -1;
+            transform.localScale = new Vector3(initialScale.x * direction, initialScale.y, initialScale.z);  // Applique la direction tout en gardant la taille initiale    }
+        }
+        else
+        {
+            Transform targetPoint = tabPointDestination[currentDestinationIndex].transform;
+            float direction = targetPoint.position.x > transform.position.x ? 1 : -1;
+            transform.localScale = new Vector3(initialScale.x * direction, initialScale.y, initialScale.z);  // Applique la direction tout en gardant la taille initiale    }
+        }
     }
 
     private void ChosseNextState()
@@ -202,22 +212,33 @@ public class MouvementPNJ : MonoBehaviour
 
 
     //pour que le ManifManager changer l'état du pnj en manifestant quand on est dans la scene de manifestation
-    public void SetStateManif(Transform ptsDes, Transform ptsDepart)
+    public void SetStateManif(Transform ptsDes, Transform ptsDepart, float v, float ecart)
     {
         currentStateManif = PNJ_StateManif.manif;
-        tabPointDestinationManif[0] = ptsDes;
+        tabPointDestinationManif[1] = ptsDes;
         tabPointDestinationManif[0] = ptsDepart;
+        vitesse = v;
+        EcartToDestination = ecart;
     }
 
     //Pour changer la destination en mode manif
     public void ChangeDestinationManif()
     {
-        if (currentDestinationIndexManif == 0)
-            currentDestinationIndexManif = 1;
-        else
-            currentDestinationIndexManif = 0;
+        currentDestinationIndexManif = (currentDestinationIndexManif == 0) ? 1 : 0;
+
+        PNJHasArrivedToManifPoint = false;
+        hasArrived = false;
+        SetState(PNJState.Moving);
+    }
+
+    public void changeToWlaking()
+    {
+        hasArrived = false;
 
         SetState(PNJState.Moving);
-        
+        UpdateSpriteDirection();
     }
+
+    public bool HasArrivedAtDestination() => hasArrived;
+
 }

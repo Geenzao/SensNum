@@ -14,10 +14,6 @@ public class PhoneGenerator : MonoBehaviour
     public float speed = 1f;        // Vitesse de déplacement des téléphones
     public float time = 1f;
 
-    private float spawnTimer = 0f;  // Timer pour la génération des téléphones
-    private float spawnTime = 0f;
-    private int spawnCount = 0;
-
     private List<GameObject> lstphones = new List<GameObject>();
 
     void Update()
