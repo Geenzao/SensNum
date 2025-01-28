@@ -29,8 +29,6 @@ public class TapisRoulantManager : Singleton<TapisRoulantManager>
 
     public float speed = 1;
 
-    private int maxTapisRoulants = 3;
-
     //Au starte, on fait apparaitre trois tapis roulant
     void Start()
     {
