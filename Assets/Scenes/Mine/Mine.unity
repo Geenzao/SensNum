@@ -66419,6 +66419,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'path.Array.data[6]'
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: gameProgress.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -66455,6 +66459,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'gameProgress.Array.data[6]'
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'sceneNameToGo.Array.data[0]'
       value: Village
       objectReference: {fileID: 0}
@@ -66476,6 +66484,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
       propertyPath: 'sceneNameToGo.Array.data[5]'
+      value: Village3bis
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967392707823197738, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: 'sceneNameToGo.Array.data[6]'
       value: Village4
       objectReference: {fileID: 0}
     - target: {fileID: 7907694327850387171, guid: ab01627059ac5fb46a47e207f387180e, type: 3}

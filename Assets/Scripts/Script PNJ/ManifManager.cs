@@ -46,7 +46,7 @@ public class ManifManager : Singleton<ManifManager>
                 nbPNJ++;
 
                 //On place le PNJ sur la ligne vertical du start
-                pnj.transform.position = new Vector3(GetXPosition(), GetYPosition(), pnj.transform.position.z);
+                //pnj.transform.position = new Vector3(GetXPosition(), GetYPosition(), pnj.transform.position.z);
             }
             else
             {

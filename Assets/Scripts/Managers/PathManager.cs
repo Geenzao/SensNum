@@ -15,6 +15,7 @@ public class PathManager : Singleton<PathManager>
         AssemblyFactory,
         Village3,
         RecycleFactory,
+        Village3bis,
         Village4,
         End
     }

@@ -23,6 +23,7 @@ public class GameProgressManager : Singleton<GameProgressManager>
         Recycling,
         RecyclingEnd,
         CandyCrush,
+        Village3bis,
         Village4,
         End
     }
