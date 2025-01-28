@@ -94,25 +94,24 @@ public class OptionsMenu : Menu
 
     private void InitializeLanguageDropdown()
     {
-        List<CTuple<string, string>> languages = LanguageManager.Instance.GetLanguages();
+        // Récupérer la liste des langues disponibles
+        List<string> languages = LanguageManager.Instance.GetLanguages();
+
+        // Vider les options actuelles du dropdown
         languageDropdown.ClearOptions();
 
-        List<string> options = new List<string>();
-        int currentLanguageIndex = 0;
+        // Ajouter les langues disponibles au dropdown
+        languageDropdown.AddOptions(languages);
 
-        for (int i = 0; i < languages.Count; i++)
+        // Définir la langue actuelle comme sélectionnée dans le dropdown
+        string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
+        int currentLanguageIndex = languages.IndexOf(currentLanguage);
+
+        if (currentLanguageIndex >= 0)
         {
-            CTuple<string, string> language = languages[i];
-            options.Add(language.Item1);
-
-            if (language.Item2 == LanguageManager.Instance.GetCurrentLanguage())
-            {
-                currentLanguageIndex = i;
-            }
+            languageDropdown.value = currentLanguageIndex;
+            languageDropdown.RefreshShownValue();
         }
-        languageDropdown.AddOptions(options);
-        languageDropdown.value = currentLanguageIndex;
-        languageDropdown.RefreshShownValue();
     }
 
     private void OnLanguageDropdownValueChanged(int index)
@@ -121,9 +120,9 @@ public class OptionsMenu : Menu
         var languages = LanguageManager.Instance.GetLanguages();
         foreach (var language in languages)
         {
-            if (language.Item1 == selectedLanguage)
+            if (language == selectedLanguage)
             {
-                LanguageManager.Instance.SetLanguage(language.Item2);
+                LanguageManager.Instance.ChangeLanguage(language);
                 break;
             }
         }

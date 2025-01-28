@@ -24,46 +24,39 @@ public class Options : MonoBehaviour
     [Header("Dropdown")]
     [SerializeField] private TMP_Dropdown languageDropdown;
 
-    //[Header("Dropdown")]
-    //[SerializeField] private TMPro.TMP_Dropdown _qualityDropdown;
-
-    //private GlobalQuality _paramGlobalQuality;
     private VolumeMusic _paramVolumeMusic;
     private VolumeSounds _paramVolumeSounds;
 
     private void Awake()
     {
-        //_paramGlobalQuality = Settings.SettingsManager.GetSettingOfType<GlobalQuality>();
         _paramVolumeMusic = Settings.SettingsManager.GetSettingOfType<VolumeMusic>();
         _paramVolumeSounds = Settings.SettingsManager.GetSettingOfType<VolumeSounds>();
 
         HandleMusicVolumeChanged(_paramVolumeMusic.GetParam());
-        //\todo [buttons volume]
 
         quitButton.onClick.AddListener(OnQuitButtonClicked);
 
-        //On Settings update
+        // On Settings update
         _paramVolumeMusic.OnUpdate.AddListener(HandleMusicVolumeChanged);
         _paramVolumeSounds.OnUpdate.AddListener(HandleSoundVolumeChanged);
-        //_paramGlobalQuality.OnUpdate.AddListener(HandleGlobalQualityChanged);
 
         languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
 
+        // S'abonner à l'événement de changement de langue
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         var settingsGlobalQuality = Settings.SettingsManager.GetSettingOfType<GlobalQuality>();
         var settingsMusicVolume = Settings.SettingsManager.GetSettingOfType<VolumeMusic>();
         var settingsSoundVolume = Settings.SettingsManager.GetSettingOfType<VolumeSounds>();
 
-        //On this UI changes
+        // On this UI changes
         volumeMusicScrollbar.onValueChanged.AddListener(HandleMusicVolumeScrollbarValueChanged);
         volumeSoundScrollbar.onValueChanged.AddListener(HandleButtonVolumeScrollbarValueChanged);
 
-        //Init music volume
+        // Init music volume
         volumeMusicScrollbar.value = 0.3f;
         volumeSoundScrollbar.value = 0.3f;
 
@@ -82,39 +75,33 @@ public class Options : MonoBehaviour
 
     private void InitializeLanguageDropdown()
     {
-        List<CTuple<string, string>> languages = LanguageManager.Instance.GetLanguages();
+        // Récupérer la liste des langues disponibles
+        List<string> languages = LanguageManager.Instance.GetLanguages();
+
+        // Vider les options actuelles du dropdown
         languageDropdown.ClearOptions();
 
-        List<string> options = new List<string>();
-        int currentLanguageIndex = 0;
+        // Ajouter les langues disponibles au dropdown
+        languageDropdown.AddOptions(languages);
 
-        for (int i = 0; i < languages.Count; i++)
+        // Définir la langue actuelle comme sélectionnée dans le dropdown
+        string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
+        int currentLanguageIndex = languages.IndexOf(currentLanguage);
+
+        if (currentLanguageIndex >= 0)
         {
-            CTuple<string, string> language = languages[i];
-            options.Add(language.Item1);
-
-            if (language.Item2 == LanguageManager.Instance.GetCurrentLanguage())
-            {
-                currentLanguageIndex = i;
-            }
+            languageDropdown.value = currentLanguageIndex;
+            languageDropdown.RefreshShownValue();
         }
-        languageDropdown.AddOptions(options);
-        languageDropdown.value = currentLanguageIndex;
-        languageDropdown.RefreshShownValue();
     }
 
     private void OnLanguageDropdownValueChanged(int index)
     {
-        var selectedLanguage = languageDropdown.options[index].text;
-        var languages = LanguageManager.Instance.GetLanguages();
-        foreach (var language in languages)
-        {
-            if (language.Item1 == selectedLanguage)
-            {
-                LanguageManager.Instance.SetLanguage(language.Item2);
-                break;
-            }
-        }
+        // Récupérer la langue sélectionnée dans le dropdown
+        string selectedLanguage = languageDropdown.options[index].text;
+
+        // Changer la langue
+        LanguageManager.Instance.ChangeLanguage(selectedLanguage);
     }
 
     private void HandleMusicVolumeChanged(float newVal)
@@ -148,8 +135,10 @@ public class Options : MonoBehaviour
 
     private void UpdateTexts()
     {
+        // Mettre à jour les textes en fonction de la langue actuelle
         title.text = LanguageManager.Instance.GetText("settings");
         music.text = LanguageManager.Instance.GetText("music");
         sound.text = LanguageManager.Instance.GetText("sound");
+        language.text = LanguageManager.Instance.GetText("language");
     }
 }

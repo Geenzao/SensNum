@@ -1,0 +1,328 @@
+{
+  "entries": [
+    {
+      "key": "settings",
+      "value": "Settings"
+    },
+    {
+      "key": "MainMenu_Title",
+      "value": "The three rivers"
+    },
+    {
+      "key": "play",
+      "value": "play"
+    },
+    {
+      "key": "music",
+      "value": "music"
+    },
+    {
+      "key": "sound",
+      "value": "sound"
+    },
+    {
+      "key": "interaction_key",
+      "value": "E for interaction"
+    },
+    {
+      "key": "language",
+      "value": "language"
+    },
+    {
+      "key": "startThirdGameMine",
+      "value": "Get all the trucks carrying minerals out before the timer runs out! Click on a truck to make it move."
+    },
+    {
+      "key": "truck",
+      "value": "Truck"
+    },
+    {
+      "key": "chrono",
+      "value": "Chrono"
+    },
+    {
+      "key": "win",
+      "value": "Win"
+    },
+    {
+      "key": "lose",
+      "value": "Lose"
+    },
+    {
+      "key": "completedCircuit",
+      "value": "Completed circuit"
+    },
+    {
+      "key": "timeRemaining",
+      "value": "Time remaining"
+    },
+    {
+      "key": "completedCircuitLittle",
+      "value": "completed circuit"
+    },
+    {
+      "key": "poorlyMadeCircuit",
+      "value": "poorly made circuit"
+    },
+    {
+      "key": "objectiveAchievedIn",
+      "value": "Objective achieved in"
+    },
+    {
+      "key": "seconds",
+      "value": "seconds"
+    },
+    {
+      "key": "rules",
+      "value": "You must complete 10 circuits with the correct components within the time limit. Clicked and off we go!!"
+    },
+    {
+      "key": "replay",
+      "value": "Replay"
+    },
+    {
+      "key": "quit",
+      "value": "Quit"
+    },
+    {
+      "key": "notifyAcceleration",
+      "value": "Acceleration"
+    },
+    {
+      "key": "loading",
+      "value": "Loading"
+    },
+    {
+      "key": "pnj_chefduvillage_0_0",
+      "value": "Who are you?"
+    },
+    {
+      "key": "pnj_chefduvillage_0_1",
+      "value": "You're not welcome here!"
+    },
+    {
+      "key": "pnj_chefduvillage_0_2",
+      "value": "Go away!"
+    },
+    {
+      "key": "pnj_chefduvillage_1_0",
+      "value": "You're not a member of the militia jeep group?"
+    },
+    {
+      "key": "pnj_chefduvillage_1_1",
+      "value": "Sorry for my rude welcome…"
+    },
+    {
+      "key": "pnj_chefduvillage_1_2",
+      "value": "We're on edge for a few days now."
+    },
+    {
+      "key": "pnj_chefduvillage_1_3",
+      "value": "Since these militia came and cut down trees."
+    },
+    {
+      "key": "pnj_chefduvillage_1_4",
+      "value": "To dig the ground, in search of precious materials."
+    },
+    {
+      "key": "pnj_chefduvillage_1_5",
+      "value": "We're searching for a way to drive them away."
+    },
+    {
+      "key": "pnj_chefduvillage_2_0",
+      "value": "We're searching for a way to drive them away. Can you help us?"
+    },
+    {
+      "key": "pnj_youngman_0_0",
+      "value": "Welcome to our village, stranger. Here, every hand contributes to our survival."
+    },
+    {
+      "key": "pnj_man_0_0",
+      "value": "I don’t like talking to strangers."
+    },
+    {
+      "key": "pnj_man_1_0",
+      "value": "There are many problems because of the mine at the moment."
+    },
+    {
+      "key": "pnj_man_1_1",
+      "value": "If it’s to waste my time, get lost!"
+    },
+    {
+      "key": "pnj_oldwoman_0_0",
+      "value": "I don’t know anything."
+    },
+    {
+      "key": "pnj_ChefMine_0_0",
+      "value": "Welcome to the great Copper Mine, the most valuable resource we extract here."
+    },
+    {
+      "key": "pnj_ChefMine_0_1",
+      "value": "Everything you see here works day and night to extract tons of ore."
+    },
+    {
+      "key": "pnj_ChefMine_0_2",
+      "value": "It’s hard work, but it’s the price you pay to power today’s connected world."
+    },
+    {
+      "key": "pnj_ChefMine_1_0",
+      "value": "Water? Oh yes, we use monstrous quantities of it to cool the machines and wash the ore."
+    },
+    {
+      "key": "pnj_ChefMine_1_1",
+      "value": "The impact on groundwater? Let’s just say the water doesn’t blame us out loud, so it’s all good, right?"
+    },
+    {
+      "key": "pnj_ChefMine_1_2",
+      "value": "Some say we leave behind barren deserts and dead rivers."
+    },
+    {
+      "key": "pnj_ChefMine_1_3",
+      "value": "But I don't believe them and neither do you?"
+    },
+    {
+      "key": "pnj_ChefMine_2_0",
+      "value": "Do you want work? We always need extra hands to dig deeper."
+    },
+    {
+      "key": "pnj_ChefMine_2_1",
+      "value": "So, are you willing to get your hands dirty for a little money and a lot of dust?"
+    },
+    {
+      "key": "pnj_ChefMine_end_0_0",
+      "value": "Good job, you've done well today."
+    },
+    {
+      "key": "pnj_ChefMine_end_0_1",
+      "value": "You can go and rest, don't forget to come back sometimes."
+    },
+    {
+      "key": "pnj_ChefMine_end_1_0",
+      "value": "You can go and rest, don't forget to come back sometimes."
+    },
+    {
+      "key": "pnj_ChefMine_boucle_0_0",
+      "value": "You worked well today, go and rest."
+    },
+    {
+      "key": "pnj_mineurpelle1_0_0",
+      "value": "Lithium doesn't extract itself. Each battery demands sacrifices."
+    },
+    {
+      "key": "pnj_mineurpelle1_0_1",
+      "value": "The earth here contains precious metals. Your talking time costs me too much!"
+    },
+    {
+      "key": "pnj_mineurpioche1_0_0",
+      "value": "Each minute here is more rare metals for your phones. Don't slow me down."
+    },
+    {
+      "key": "pnj_mineurpioche2_0_0",
+      "value": "I don't have time, I have to extract tons of copper for your printed circuits."
+    },
+    {
+      "key": "chefduvillage2_0_0",
+      "value": "Who are you?"
+    },
+    {
+      "key": "barman_0_0",
+      "value": "Hey, you're not from around here, are you?"
+    },
+    {
+      "key": "youngman2_0_0",
+      "value": "I am the young"
+    },
+    {
+      "key": "oldwoman2_0_0",
+      "value": "I am the old"
+    },
+    {
+      "key": "pnj_man2_0_0",
+      "value": "I don’t like talking to strangers."
+    },
+    {
+      "key": "pnj_cheffactoryassembly_0_0",
+      "value": "Welcome to the assembly plant, the beating heart of modern industry."
+    },
+    {
+      "key": "pnj_cheffactoryassembly_0_1",
+      "value": "I am the head of this factory, it is me who runs it with a few workers from the Three Rivers village."
+    },
+    {
+      "key": "pnj_cheffactoryassembly_0_2",
+      "value": "We pump thousands of liters of water every day to extract rare metals essential for smartphones and other gadgets."
+    },
+    {
+      "key": "pnj_cheffactoryassembly_1_0",
+      "value": "Every drop of contaminated water returns to the river, but people love their screens far more than clean air, don't they?"
+    },
+    {
+      "key": "pnj_cheffactoryassembly_1_1",
+      "value": "Me? I keep the machine running. As long as it’s profitable, why stop?"
+    },
+    {
+      "key": "pnj_cheffactoryassembly_2_0",
+      "value": "If you want to join us, there are always positions available for the brave."
+    },
+    {
+      "key": "pnj_cheffactoryassembly_end_0_0",
+      "value": "Good job, you've done well today."
+    },
+    {
+      "key": "pnj_cheffactoryassembly_end_0_1",
+      "value": "You can go and rest, don't forget to come back sometimes."
+    },
+    {
+      "key": "pnj_cheffactoryassembly_boucle_0_0",
+      "value": "You worked well today, go and rest."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_0_0",
+      "value": "Ah, a new face! Welcome to the recycling plant."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_0_1",
+      "value": "The last line of defense against ecological disaster, or at least… that’s what we like to say to reassure ourselves."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_0_2",
+      "value": "Here, we give a second life to electronic devices, mainly mobile phones. These little wonders are full of precious metals like gold and copper."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_1_0",
+      "value": "Every day, we dismantle, sort, and melt down components to recover what the earth has already given too much of."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_1_1",
+      "value": "But not everything is as green as we'd like. Look at the river behind the plant... It carries the residue of our work."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_1_2",
+      "value": "Even with all our sophisticated machines, toxins still escape."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_2_0",
+      "value": "Nevertheless, the world needs us."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_2_1",
+      "value": "Without recycling, these wastes would end up in open-air landfills, poisoning the soil and the air."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_2_2",
+      "value": "So, what do you say? A little elbow grease to dismantle phones and help the future, or would you rather stay a spectator of this mess?"
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_end_0_0",
+      "value": "Good job, you've done well today."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_end_0_1",
+      "value": "You can go and rest, don't forget to come back sometimes."
+    },
+    {
+      "key": "pnj_chefrecyclagefactory1_boucle_0_0",
+      "value": "You worked well today, go and rest."
+    }
+  ]
+}
