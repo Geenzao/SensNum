@@ -187,6 +187,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3585f462331dd4dba57bcc3f8d6732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &113443364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113443365}
+  m_Layer: 0
+  m_Name: topManif
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &113443365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113443364}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.55, y: 2.98, z: 0.08078452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &117618704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 117618705}
+  m_Layer: 0
+  m_Name: BasManif
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &117618705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117618704}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.45, y: -4.06, z: 0.08078452}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &327489162
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,6 +511,8 @@ MonoBehaviour:
   - {fileID: 563937082}
   ptsDestination: {fileID: 949492291}
   ptsDepart: {fileID: 327489162}
+  ptsHautMax: {fileID: 113443364}
+  ptsBasMax: {fileID: 117618704}
 --- !u!1001 &1408609378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -459,11 +523,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3433294432744379445, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.2124863
+      value: 6.34
       objectReference: {fileID: 0}
     - target: {fileID: 3433294432744379445, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0862151
+      value: 8.73
       objectReference: {fileID: 0}
     - target: {fileID: 3433294432744379445, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
       propertyPath: m_LocalPosition.z
@@ -793,3 +857,5 @@ SceneRoots:
   - {fileID: 966196385}
   - {fileID: 327489163}
   - {fileID: 949492292}
+  - {fileID: 113443365}
+  - {fileID: 117618705}

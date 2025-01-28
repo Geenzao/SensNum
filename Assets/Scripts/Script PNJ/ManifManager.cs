@@ -9,6 +9,9 @@ public class ManifManager : Singleton<ManifManager>
     public GameObject ptsDestination;
     public GameObject ptsDepart;
 
+    public GameObject ptsHautMax;
+    public GameObject ptsBasMax;
+
     private Vector3[] tabDestinationManif = new Vector3[2];
     private int indexDestinationManif = 0;
 
@@ -25,7 +28,12 @@ public class ManifManager : Singleton<ManifManager>
     {
         tabDestinationManif[0] = ptsDepart.transform.position;
         tabDestinationManif[1] = ptsDestination.transform.position;
+        GoManif();
+    }
 
+    //Il faut lancer cette fonction pour activer la manif
+    public void GoManif()
+    {
         float vitesseMax = 2.3f;
         float vitesseMin = 1.7f;
 
@@ -33,10 +41,12 @@ public class ManifManager : Singleton<ManifManager>
         {
             if (pnj != null)
             {
-                ecart = GetEcartToDestination();
                 pnj.SetStateManif(ptsDestination.transform, ptsDepart.transform, Random.Range(vitesseMin, vitesseMax), GetEcartToDestination());
                 pnj.changeToWlaking();
                 nbPNJ++;
+
+                //On place le PNJ sur la ligne vertical du start
+                pnj.transform.position = new Vector3(GetXPosition(), GetYPosition(), pnj.transform.position.z);
             }
             else
             {
@@ -77,5 +87,7 @@ public class ManifManager : Singleton<ManifManager>
     }
 
     private float GetEcartToDestination() => Random.Range(MinEcartToDestination, MaxEcartToDestination);
+    private float GetXPosition() => Random.Range(ptsDepart.transform.position.x, ptsDestination.transform.position.x);
+    private float GetYPosition() => Random.Range(ptsBasMax.transform.position.y, ptsHautMax.transform.position.y);
 
 }
