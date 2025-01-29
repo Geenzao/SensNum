@@ -40,7 +40,7 @@ public class Options : MonoBehaviour
         _paramVolumeMusic.OnUpdate.AddListener(HandleMusicVolumeChanged);
         _paramVolumeSounds.OnUpdate.AddListener(HandleSoundVolumeChanged);
 
-        //languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
+        languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
 
         // S'abonner à l'événement de changement de langue
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
@@ -70,39 +70,39 @@ public class Options : MonoBehaviour
             Debug.LogError("LanguageManager instance is not initialized.");
         }
 
-        //InitializeLanguageDropdown();
+        InitializeLanguageDropdown();
     }
 
-    //private void InitializeLanguageDropdown()
-    //{
-    //    // Récupérer la liste des langues disponibles
-    //    List<string> languages = LanguageManager.Instance.GetLanguages();
+    private void InitializeLanguageDropdown()
+    {
+        // Récupérer la liste des langues disponibles
+        List<string> languages = LanguageManager.Instance.GetLanguages();
 
-    //    // Vider les options actuelles du dropdown
-    //    languageDropdown.ClearOptions();
+        // Vider les options actuelles du dropdown
+        languageDropdown.ClearOptions();
 
-    //    // Ajouter les langues disponibles au dropdown
-    //    languageDropdown.AddOptions(languages);
+        // Ajouter les langues disponibles au dropdown
+        languageDropdown.AddOptions(languages);
 
-    //    // Définir la langue actuelle comme sélectionnée dans le dropdown
-    //    string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
-    //    int currentLanguageIndex = languages.IndexOf(currentLanguage);
+        // Définir la langue actuelle comme sélectionnée dans le dropdown
+        string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
+        int currentLanguageIndex = languages.IndexOf(currentLanguage);
 
-    //    if (currentLanguageIndex >= 0)
-    //    {
-    //        languageDropdown.value = currentLanguageIndex;
-    //        languageDropdown.RefreshShownValue();
-    //    }
-    //}
+        if (currentLanguageIndex >= 0)
+        {
+            languageDropdown.value = currentLanguageIndex;
+            languageDropdown.RefreshShownValue();
+        }
+    }
 
-    //private void OnLanguageDropdownValueChanged(int index)
-    //{
-    //    // Récupérer la langue sélectionnée dans le dropdown
-    //    string selectedLanguage = languageDropdown.options[index].text;
+    private void OnLanguageDropdownValueChanged(int index)
+    {
+        // Récupérer la langue sélectionnée dans le dropdown
+        string selectedLanguage = languageDropdown.options[index].text;
 
-    //    // Changer la langue
-    //    LanguageManager.Instance.ChangeLanguage(selectedLanguage);
-    //}
+        // Changer la langue
+        LanguageManager.Instance.ChangeLanguage(selectedLanguage);
+    }
 
     private void HandleMusicVolumeChanged(float newVal)
     {

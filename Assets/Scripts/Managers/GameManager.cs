@@ -251,7 +251,7 @@ public class GameManager : Singleton<GameManager>
         string json = JsonUtility.ToJson(saveData);
 
         // Enregistrez le JSON dans le fichier
-        string filePath = Path.Combine(Application.dataPath, "Data/save.json");
+        string filePath = Path.Combine(Application.streamingAssetsPath, "Data/save.json");
         File.WriteAllText(filePath, json);
 
         // Déchargez le niveau actuel
@@ -300,7 +300,7 @@ public class GameManager : Singleton<GameManager>
 
     private void PositionPlayerFromSave()
     {
-        string filePath = Path.Combine(Application.dataPath, "Data/save.json");
+        string filePath = Path.Combine(Application.streamingAssetsPath, "Data/save.json");
         if (File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
