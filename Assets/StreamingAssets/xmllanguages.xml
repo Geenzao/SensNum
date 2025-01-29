@@ -111,7 +111,7 @@ Clické et c'est partie !!</fr>
 		</word>
 
 		<!-- PNJ -->
-		<!-- __________________________ PNJ VILLAGE 1 __________________________ -->
+		<!-- __________________________________________________________ PNJ VILLAGE 1 __________________________________________________________ -->
 		
 		<!-- pnj_chefduvillage -->
 		<word id="pnj_chefduvillage_0_0">
@@ -127,8 +127,8 @@ Clické et c'est partie !!</fr>
 			<fr>Va-t'en !</fr>
 		</word>
 		<word id="pnj_chefduvillage_1_0">
-			<en>You're not a member of the militia jeep group ?</en>
-			<fr>Tu ne fais pas partie du groupe des miliciens en jeep ?</fr>
+			<en>You're not a member of those industrialists who want to build a mine ?</en>
+			<fr>Tu ne fais pas partie de ces industriels qui veulent faire une mine ?</fr>
 		</word>
 		<word id="pnj_chefduvillage_1_1">
 			<en>Sorry for my rude welcome…</en>
@@ -139,26 +139,35 @@ Clické et c'est partie !!</fr>
 			<fr>Nous sommes sur les nerfs depuis quelques jours.</fr>
 		</word>
 		<word id="pnj_chefduvillage_1_3">
-			<en>Since these militia came and cut down trees.</en>
-			<fr>Depuis que ces miliciens sont venus et ont abattu des arbres.</fr>
+			<en>Since these men came to tell us that they would build a mine.</en>
+			<fr>Depuis que ces hommes sont venu nous dire qu'ils construiraient une mine.</fr>
 		</word>
 		<word id="pnj_chefduvillage_1_4">
 			<en>To dig the ground, in search of precious materials.</en>
-			<fr>Pour creuser le sol, à la recherche de matières premières précieuses.</fr>
+			<fr>Ils sont à la recherche de matières premières.</fr>
 		</word>
 		<word id="pnj_chefduvillage_1_5">
-			<en>We're searching for a way to drive them away.</en>
-			<fr>Nous cherchons un moyen pour chasser ces miliciens.</fr>
+			<en>
+				But to mine they want to pollute one of our beautiful rivers.</en>
+			<fr>Mais pour miner ils veulent polluer l'une de nos belles rivières.</fr>
 		</word>
 		<word id="pnj_chefduvillage_2_0">
-			<en>We're searching for a way to drive them away. Can you help us ?</en>
-			<fr>Nous cherchons un moyen pour chasser ces miliciens. Peux-tu nous aider ?</fr>
+			<en>Ahhh! Can't you hear, they started cutting down the trees !</en>
+			<fr>Ahhh ! Tu n'entends pas, ils ont commencer à couper les arbres !</fr>
+		</word>
+		<word id="pnj_chefduvillage_2_1">
+			<en>If you want to know more, you'll find them to the west !</en>
+			<fr>Si tu veux en savoir plus, tu les trouveras à l'ouest !</fr>
 		</word>
 		
 		<!-- pnj_youngman -->
 		<word id="pnj_youngman_0_0">
-			<en>Welcome to our village, stranger. Here, every hand contributes to our survival.</en>
-			<fr>Bienvenue dans notre village, étranger. Ici, chaque main contribue à notre survie.</fr>
+			<en>Welcome to our village, stranger. You will see, our rivers are magnificent, finally not for long...</en>
+			<fr>Bienvenue dans notre village, étranger. Tu vas voir, nos rivières sont magnifique, enfin plus pour longtemps...</fr>
+		</word>
+		<word id="pnj_youngman_0_1">
+			<en>If you want to know more, I advise you to go see the village chief.</en>
+			<fr>Si tu veux en savoir plus, je te conseil d'aller voir le chef du village.</fr>
 		</word>
 
 		<!-- pnj_man -->
@@ -171,22 +180,26 @@ Clické et c'est partie !!</fr>
 			<fr>Il y a beaucoup de problèmes à cause de la mine en ce moment.</fr>
 		</word>
 		<word id="pnj_man_1_1">
-			<en>If it’s to waste my time, get lost!</en>
-			<fr>Si c'est pour prendre de mon temps, va-t’en !</fr>
+			<en>Leave me alone, I have carrots to grow !</en>
+			<fr>Laisse-moi tranquille, j'ai des carottes à faire pousser !</fr>
 		</word>
 
 		<!-- pnj_oldwoman -->
 		<word id="pnj_oldwoman_0_0">
-			<en>I don’t know anything.</en>
-			<fr>Je ne sais rien.</fr>
+			<en>Oh ! a new face.</en>
+			<fr>Oh ! un nouveau visage.</fr>
+		</word>
+		<word id="pnj_oldwoman_0_1">
+			<en>Welcome to three rivers.</en>
+			<fr>Bienvenue à Trois Rivière</fr>
 		</word>
 
-		<!-- __________________________ PNJ MINE __________________________ -->
+		<!-- __________________________________________________________ PNJ MINE __________________________________________________________ -->
 		
 		<!-- pnj_ChefMine -->
 		<word id="pnj_ChefMine_0_0">
-			<en>Welcome to the great Copper Mine, the most valuable resource we extract here.</en>
-			<fr>Bienvenue dans la grande Mine de Cuivre, la ressource la plus précieuse que nous extrayons ici.</fr>
+			<en>Welcome to the region’s great Copper and Lithium Mine.</en>
+			<fr>Bienvenue dans la grande Mine de Cuivre et de Lithium de la région.</fr>
 		</word>
 		<word id="pnj_ChefMine_0_1">
 			<en>Everything you see here works day and night to extract tons of ore.</en>
@@ -208,9 +221,13 @@ Clické et c'est partie !!</fr>
 			<en>Some say we leave behind barren deserts and dead rivers.</en>
 			<fr>Certains disent que nous laissons derrière nous des déserts stériles et des rivières mortes.</fr>
 		</word>
+		<word id="pnj_ChefMine_1_2">
+			<en>Especially the people from the nearby village; they keep giving me problems.</en>
+			<fr>En particulier ces gens du village à côté. Ils n'arrètent pas de me poser des problemes.</fr>
+		</word>
 		<word id="pnj_ChefMine_1_3">
-			<en>But I don't believe them and neither do you?</en>
-			<fr>Mais je ne les crois pas et toi non plus pas vrai ? </fr>
+			<en>I hope you didn't come here because of them?</en>
+			<fr>J'espère que tu n'es pas venue à cause d'eux ? </fr>
 		</word>
 		<word id="pnj_ChefMine_2_0">
 			<en>Do you want work? We always need extra hands to dig deeper.</en>
@@ -220,9 +237,9 @@ Clické et c'est partie !!</fr>
 			<en>So, are you willing to get your hands dirty for a little money and a lot of dust?</en>
 			<fr>Alors, tu es prêt à te salir les mains pour un peu d’argent et beaucoup de poussière ? </fr>
 		</word>
-		<word id="pnj_ChefMine_3_0">
-			<en></en>
-			<fr></fr>
+		<word id="pnj_ChefMine_2_2">
+			<en>In that case I have a job for you</en>
+			<fr>Dans ce cas j'ai un travail pour toi. </fr>
 		</word>
 
 		<!-- pnj_ChefMine_end -->
@@ -234,15 +251,11 @@ Clické et c'est partie !!</fr>
 			<en>You can go and rest, don't forget to come back sometimes.</en>
 			<fr>Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres.</fr>
 		</word>
-		<word id="pnj_ChefMine_end_1_0">
-			<en>You can go and rest, don't forget to come back sometimes.</en>
-			<fr>Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres.</fr>
-		</word>
 
 		<!-- pnj_ChefMine_boucle -->
 		<word id="pnj_ChefMine_boucle_0_0">
-			<en>You worked well today, go and rest.</en>
-			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
+			<en>I don't have any more work for you, come back another day.</en>
+			<fr>Je n'ai plus de travail pour toi, reviens un autre jours.</fr>
 		</word>
 
 		<!-- pnj_mineurpelle1 -->
@@ -251,56 +264,123 @@ Clické et c'est partie !!</fr>
 			<fr>Le lithium ne s’extrait pas tout seul. Chaque batterie demande des sacrifices.</fr>
 		</word>
 		<word id="pnj_mineurpelle1_0_1">
-			<en>The earth here contains precious metals. Your talking time costs me too much!</en>
-			<fr>La terre ici contient des métaux précieux. Ton temps de parole</fr>
+			<en>The earth here contains precious metals. Your talking time costs me too much !</en>
+			<fr>La terre ici contient des métaux précieux. Te parler me coute trop cher !</fr>
 		</word>
 
 		<!-- pnj_mineurpioche1 -->
 		<word id="pnj_mineurpioche1_0_0">
-			<en>Each minute here is more rare metals for your phones. Don't slow me down.</en>
-			<fr>Chaque minute ici, c'est plus de métaux rares pour vos téléphones. Ne me ralentis pas.</fr>
+			<en>Each minute here is more rare metals for our phones. Don't slow me down.</en>
+			<fr>Chaque minute ici, c'est plus de métaux rares pour nos téléphones. Ne me ralentis pas.</fr>
 		</word>
 
 		<!-- pnj_mineurpioche2 -->
 		<word id="pnj_mineurpioche2_0_0">
-			<en>I don't have time, I have to extract tons of copper for your printed circuits.</en>
-			<fr>Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour vos circuits imprimés.</fr>
+			<en>I don't have time, I have to extract tons of copper for our printed circuits.</en>
+			<fr>Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour nos circuits imprimés.</fr>
 		</word>
 
-
-		<!-- __________________________ PNJ VILLAGE 2 __________________________ -->
+		<!-- __________________________________________________________ PNJ VILLAGE 2 __________________________________________________________ -->
 		
 		<!-- pnj_chefduvillage2 -->
-		<word id="chefduvillage2_0_0">
-			<en>Who are you ?</en>
-			<fr>Qui es-tu ?</fr>
+		<word id="pnj_chefduvillage2_0_0">
+			<en>Wait... I know you. You were in Three Rivers years ago, weren’t you?</en>
+			<fr>Attends... Je te connais. Tu étais à Trois-Rivières il y a des années, non ?</fr>
+		</word>
+		<word id="pnj_chefduvillage2_0_1">
+			<en>Things have changed since then. We’ve changed.</en>
+			<fr>Les choses ont changé depuis. Nous avons changé.</fr>
+		</word>
+		<word id="pnj_chefduvillage2_0_2">
+			<en>But not all for the better...</en>
+			<fr>Mais pas toujours en bien...</fr>
+		</word>
+		<word id="pnj_chefduvillage2_1_0">
+			<en>You’ve seen the new river, haven’t you? The one that’s turned brown.</en>
+			<fr>Tu as vu la nouvelle rivière, n’est-ce pas ? Celle qui est devenue marron.</fr>
+		</word>
+		<word id="pnj_chefduvillage2_1_1">
+			<en>It’s the price we pay for progress. The assembly plant needs water, and it gives us technology in return.</en>
+			<fr>C’est le prix à payer pour le progrès. L’usine d’assemblage a besoin d’eau, et elle nous donne de la technologie en échange.</fr>
+		</word>
+		<word id="pnj_chefduvillage2_1_2">
+			<en>But sometimes I wonder... was it worth it?</en>
+			<fr>Mais parfois je me demande... est-ce que ça valait le coup ?</fr>
+		</word>
+		<word id="pnj_chefduvillage2_2_0">
+			<en>If you want to see the source of our problems, head north of the city.</en>
+			<fr>Si tu veux voir la source de nos problèmes, va au nord de la ville.</fr>
+		</word>
+		<word id="pnj_chefduvillage2_2_1">
+			<en>That’s where the assembly plant is. Maybe you’ll understand why we’re stuck between progress and destruction.</en>
+			<fr>C’est là que se trouve l’usine d’assemblage. Peut-être que tu comprendras pourquoi nous sommes coincés entre progrès et destruction.</fr>
+		</word>
+		<word id="pnj_chefduvillage2_2_2">
+			<en>Be careful though... not everyone there is friendly.</en>
+			<fr>Mais fais attention... tout le monde n’y est pas amical.</fr>
 		</word>
 		
 		<!-- pnj_barman -->
-		<word id="barman_0_0">
-			<en>Hey, you're not from around here, are you?</en>
-			<fr>Hey, t'es pas d'ici, toi ?</fr>
+		<word id="pnj_barman_0_0">
+			<en>Hey, you're not from around here, are you? Things have changed a lot since the factory arrived. The river is almost dry now...</en>
+			<fr>Hey, t'es pas d'ici, toi ? Les choses ont beaucoup changé depuis que l'usine est arrivée. La rivière est presque à sec maintenant...</fr>
+		</word>
+		<word id="pnj_barman_0_1">
+			<en>If you want to know more, you should talk to the village chief. He's the one who knows everything.</en>
+			<fr>Si tu veux en savoir plus, tu devrais parler au chef du village. C'est lui qui sait tout.</fr>
+		</word>
+		<word id="pnj_barman_0_2">
+			<en>Now, if you'll excuse me, I have customers to serve.</en>
+			<fr>Maintenant, si tu veux bien m'excuser, j'ai des clients à servir.</fr>
 		</word>
 		
 		<!-- pnj_youngman2 -->
-		<word id="youngman2_0_0">
-			<en>I am the young</en>
-			<fr>Je suis le jeune</fr>
+		<word id="pnj_youngman2_0_0">
+			<en>I used to swim in the river when I was a kid. Now it's just a trickle... Everything's changed since the factory came.</en>
+			<fr>Je me baignais dans la rivière quand j'étais gamin. Maintenant, ce n'est plus qu'un filet d'eau... Tout a changé depuis que l'usine est arrivée.</fr>
+		</word>
+		<word id="pnj_youngman2_0_1">
+			<en>If you want to know more, go see the village chief. He'll tell you everything.</en>
+			<fr>Si tu veux en savoir plus, va voir le chef du village. Il te dira tout.</fr>
+		</word>
+		<word id="pnj_youngman2_0_2">
+			<en>I don't have time to chat, I have to get to work.</en>
+			<fr>Je n'ai pas le temps de discuter, je dois aller travailler.</fr>
 		</word>
 
 		<!-- pnj_oldwoman2 -->
-		<word id="oldwoman2_0_0">
-			<en>I am the old</en>
-			<fr>Je suis la vieille</fr>
+		<word id="pnj_oldwoman2_0_0">
+			<en>Back in my day, the river was full of life. Now it's just a shadow of what it used to be...</en>
+			<fr>De mon temps, la rivière était pleine de vie. Maintenant, ce n'est plus qu'une ombre de ce qu'elle était...</fr>
+		</word>
+		<word id="pnj_oldwoman2_0_1">
+			<en>If you want to know more, go see the village chief. He knows everything about what's happened.</en>
+			<fr>Si tu veux en savoir plus, va voir le chef du village. Il sait tout sur ce qui s'est passé.</fr>
+		</word>
+		<word id="pnj_oldwoman2_0_2">
+			<en>Now, leave me be, I need to rest.</en>
+			<fr>Maintenant, laisse-moi tranquille, j'ai besoin de me reposer.</fr>
 		</word>
 		
 		<!-- pnj_man2 -->
 		<word id="pnj_man2_0_0">
-			<en>I don’t like talking to strangers.</en>
-			<fr>Je n'aime pas parler aux inconnus.</fr>
+			<en>I don’t like talking to strangers, but I’ll tell you this: the river is dying, and so is our way of life.</en>
+			<fr>Je n'aime pas parler aux inconnus, mais je vais te dire ceci : la rivière est en train de mourir, et notre mode de vie aussi.</fr>
+		</word>
+		<word id="pnj_man2_0_1">
+			<en>If you want to know more, go see the village chief. He’s the one who deals with these things.</en>
+			<fr>Si tu veux en savoir plus, va voir le chef du village. C'est lui qui s'occupe de ces choses.</fr>
+		</word>
+		<word id="pnj_man2_0_2">
+			<en>And if you can, tell him for me that I don't like the factory, even if he gives me a smartphone.</en>
+			<fr>Et si tu peux, dis lui de ma part que je n'aime pas l'usine, même s'il mon donner un smartphone.</fr>
+		</word>
+		<word id="pnj_man2_0_3">
+			<en>Now, leave me alone. I have work to do.</en>
+			<fr>Maintenant, laisse-moi tranquille.</fr>
 		</word>
 
-		<!-- __________________________ PNJ USINE D'ASSEMBLAGE __________________________ -->
+		<!-- __________________________________________________________ PNJ USINE D'ASSEMBLAGE __________________________________________________________ -->
 		
 		<!-- pnj_cheffactoryassembly -->
 		<word id="pnj_cheffactoryassembly_0_0">
@@ -309,7 +389,7 @@ Clické et c'est partie !!</fr>
 		</word>
 		<word id="pnj_cheffactoryassembly_0_1">
 			<en>I am the head of this factory, it is me who runs it with a few workers from the Three Rivers village.</en>
-			<fr>Je suis le chef de cette usine, c'est moi qui la faittournée avec quelques ouvrier du village Trois Rivière.</fr>
+			<fr>Je suis le chef de cette usine, c'est moi qui la fait tournée avec quelques ouvrier du village Trois Rivière.</fr>
 		</word>
 		<word id="pnj_cheffactoryassembly_0_2">
 			<en>We pump thousands of liters of water every day to extract rare metals essential for smartphones and other gadgets.</en>
@@ -340,12 +420,159 @@ Clické et c'est partie !!</fr>
 
 		<!-- pnj_cheffactoryassembly_boucle -->
 		<word id="pnj_cheffactoryassembly_boucle_0_0">
-			<en>You worked well today, go and rest.</en>
-			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
+			<en>You can leave for now, I have other workers to replace you.</en>
+			<fr>Tu peux partir pour l'instant, j'ai d'autres ouvriers pour te remplacer.</fr>
 		</word>
 
+		<!-- pnj_workerassemblyfactory1 -->
+		<word id="pnj_workerassemblyfactory1_0_0">
+			<en>Every day, I assemble hundreds of smartphones. It's a tough job, but it pays the bills.</en>
+			<fr>Chaque jour, j'assemble des centaines de smartphones. C'est un travail difficile, mais ça paie les factures.</fr>
+		</word>
+		<word id="pnj_workerassemblyfactory1_0_1">
+			<en>It's not easy to work here, but it's better than nothing.</en>
+			<fr>Il n'est pas facile de travailler ici, mais c'est mieux que rien.</fr>
+		</word>
+		<word id="pnj_workerassemblyfactory1_0_2">
+			<en>It's a shame that the river is so polluted, but what can we do?</en>
+			<fr>C'est dommage que la rivière soit si polluée, mais que pouvons-nous faire ?</fr>
+		</word>
+		<word id="pnj_workerassemblyfactory1_1_0">
+			<en>It's not like we can stop the factory from working...</en>
+			<fr>On ne peut pas arrêter l'usine de fonctionner...</fr>
+		</word>
+		<word id="pnj_workerassemblyfactory1_1_1">
+			<en>Now leave me, I have a lot of work.</en>
+			<fr>Maintenant laisse moi, j'ai beaucoup de travail.</fr>
+		</word>
 
-		<!-- __________________________ PNJ USINE RECYCLAGE __________________________ -->
+		<!-- pnj_workerbackassemblyfactory1 -->
+		<word id="pnj_workerbackassemblyfactory1_0_0">
+			<en>I work on the line, no time to talk.</en>
+			<fr>Je travaille à la chaîne, pas le temps de parler.</fr>
+		</word>
+
+		<!-- pnj_workerbackassemblyfactory2 -->
+		<word id="pnj_workerbackassemblyfactory2_0_0">
+			<en>I'm behind on production.</en>
+			<fr>Je suis en retard sur la production.</fr>
+		</word>
+
+		<!-- __________________________________________________________ PNJ VILLAGE 3 __________________________________________________________ -->
+
+		<!-- pnj_chefduvillage3 -->
+		<word id="pnj_chefduvillage3_0_0">
+			<en>You’ve come to see the recycling plant, haven’t you? It’s a blessing and a curse...</en>
+			<fr>Tu es venu voir l’usine de recyclage, n’est-ce pas ? C’est une bénédiction et une malédiction...</fr>
+		</word>
+		<word id="pnj_chefduvillage3_0_1">
+			<en>We recycle what we can, but not everything can be saved. The river pays the price.</en>
+			<fr>On recycle ce qu’on peut, mais tout ne peut pas être sauvé. La rivière en paie le prix.</fr>
+		</word>
+		<word id="pnj_chefduvillage3_0_2">
+			<en>If you want to understand how we got here, talk to the workers. They’ll tell you the truth.</en>
+			<fr>Si tu veux comprendre comment on en est arrivés là, parle aux ouvriers. Ils te diront la vérité.</fr>
+		</word>
+		<word id="pnj_chefduvillage3_0_3">
+			<en>But remember, even if it’s not perfect, recycling is better than nothing.</en>
+			<fr>Mais souviens-toi, même si ce n’est pas parfait, le recyclage vaut mieux que rien.</fr>
+		</word>
+		
+		<!-- pnj_cheffactoryassembly3 -->
+		<word id="pnj_cheffactoryassembly3_0_0">
+			<en>Hi, it's my day off today.</en>
+			<fr>Salut, c'est mon jour de congé aujourd'hui.</fr>
+		</word>
+		
+		<!-- pnj_workerassemblyfactory3 -->
+		<word id="pnj_workerassemblyfactory3_0_0">
+			<en>Did you hear the news? A new factory opened</en>
+			<fr>T'as entendu la nouvelle ? Une nouvelle usine a ouvert</fr>
+		</word>
+		<word id="pnj_workerassemblyfactory3_0_1">
+			<en>I think it's a recycling plant</en>
+			<fr>Je crois que c'est une usine de recyclage</fr>
+		</word>
+		<word id="pnj_workerassemblyfactory3_0_1">
+			<en>But I don't know any more than that. Go and ask the village chief to find out more.</en>
+			<fr>Mais je n'en sais pas plus, va demander au chef du village pour en savoir plus</fr>
+		</word>
+
+		<!-- pnj_ChefMine3 -->
+		<word id="pnj_ChefMine3_0_0">
+			<en>I remember you from your mining days.</en>
+			<fr>Je me souviens de toi, tu as déjà travaillé à la mine</fr>
+		</word>
+		<word id="pnj_ChefMine3_0_1">
+			<en>How am I doing? As you can see, I decided to settle here when the village became a town.</en>
+			<fr>Comment je vais ? Comme tu peux le voir, j'ai décidé de m'installer ici quand le village est devenu une ville</fr>
+		</word>
+		<word id="pnj_ChefMine3_0_2">
+			<en>I still run the mine, but these days all anyone talks about is the recycling plant.</en>
+			<fr>J'exploite toujours la mine, mais de nos jours, tout le monde ne parle que de l'usine de recyclage.</fr>
+		</word>
+		<word id="pnj_ChefMine3_1_0">
+			<en>Bye-bye !</en>
+			<fr>Aller salut !</fr>
+		</word>
+
+		<!-- pnj_barman3 -->
+		<word id="pnj_barman3_0_0">
+			<en>This used to be a quiet village. Now, the recycling plant brings jobs... and pollution.</en>
+			<fr>C’était un village tranquille avant. Maintenant, l’usine de recyclage amène du travail... et de la pollution.</fr>
+		</word>
+		<word id="pnj_barman3_0_1">
+			<en>If you want to know more, go see the village chief. He’s the one who deals with all this.</en>
+			<fr>Si tu veux en savoir plus, va voir le chef du village. C’est lui qui gère tout ça.</fr>
+		</word>
+		<word id="pnj_barman3_0_2">
+			<en>Now if you'll excuse me, I have things to do.</en>
+			<fr>Maintenant, si tu veux bien m’excuser, j’ai des chose a faire.</fr>
+		</word>
+
+		<!-- pnj_man3 -->
+		<word id="pnj_man3_0_0">
+			<en>The recycling plant is a double-edged sword. It helps, but it also destroys.</en>
+			<fr>L’usine de recyclage est une épée à double tranchant. Elle aide, mais elle détruit aussi.</fr>
+		</word>
+		<word id="pnj_man3_0_1">
+			<en>I don’t like talking to strangers. If you want answers, go see the village chief.</en>
+			<fr>Je n’aime pas parler aux inconnus. Si tu veux des réponses, va voir le chef du village.</fr>
+		</word>
+		<word id="pnj_man3_0_2">
+			<en>Now, leave me alone.</en>
+			<fr>Maintenant, laisse-moi tranquille.</fr>
+		</word>
+
+		<!-- pnj_youngman3 -->
+		<word id="pnj_youngman3_0_0">
+			<en>I work at the recycling plant. It’s hard, but it’s better than the assembly factory.</en>
+			<fr>Je travaille à l’usine de recyclage. C’est dur, mais c’est mieux que l'usine d'assemblage.</fr>
+		</word>
+		<word id="pnj_youngman3_0_1">
+			<en>Still, I wish the river wasn’t so polluted... It used to be so clean.</en>
+			<fr>Pourtant, j’aimerais que la rivière ne soit pas si polluée... Elle était si propre avant.</fr>
+		</word>
+		<word id="pnj_youngman3_0_2">
+			<en>If you want to know more, go see the village chief. I need to get back to work.</en>
+			<fr>Si tu veux en savoir plus, va voir le chef du village. Je dois retourner travailler.</fr>
+		</word>
+
+		<!-- pnj_oldwoman3 -->
+		<word id="pnj_oldwoman3_0_0">
+			<en>Back in my day, the river was full of fish. Now, it’s full of waste from the recycling plant.</en>
+			<fr>De mon temps, la rivière était pleine de poissons. Maintenant, elle est pleine de déchets de l’usine de recyclage.</fr>
+		</word>
+		<word id="pnj_oldwoman3_0_1">
+			<en>But what can we do? At least the plant gives us jobs...</en>
+			<fr>Mais que pouvons-nous faire ? Au moins, l’usine nous donne du travail...</fr>
+		</word>
+		<word id="pnj_oldwoman3_0_2">
+			<en>If you want to know more, go see the village chief. I need to rest now.</en>
+			<fr>Si tu veux en savoir plus, va voir le chef du village. J’ai besoin de me reposer maintenant.</fr>
+		</word>
+
+		<!-- __________________________________________________________ PNJ USINE RECYCLAGE __________________________________________________________ -->
 		
 		<!-- pnj_chefrecyclagefactory1 -->
 		<word id="pnj_chefrecyclagefactory1_0_0">
@@ -354,15 +581,15 @@ Clické et c'est partie !!</fr>
 		</word>
 		<word id="pnj_chefrecyclagefactory1_0_1">
 			<en>The last line of defense against ecological disaster, or at least… that’s what we like to say to reassure ourselves.</en>
-			<fr>Le dernier rempart contre le désastre écologique, ou du moins… c’est ce qu’on aime dire pour se rassurer.</fr>
+			<fr>Le dernier rempart contre le désastre écologique, ou du moins… c’est ce qu’on aime dire.</fr>
 		</word>
 		<word id="pnj_chefrecyclagefactory1_0_2">
 			<en>Here, we give a second life to electronic devices, mainly mobile phones. These little wonders are full of precious metals like gold and copper.</en>
 			<fr>Ici, nous donnons une seconde vie aux appareils électroniques, principalement des téléphones portables. Ces petites merveilles regorgent de métaux précieux comme l’or et le cuivre.</fr>
 		</word>
 		<word id="pnj_chefrecyclagefactory1_1_0">
-			<en>Every day, we dismantle, sort, and melt down components to recover what the earth has already given too much of.</en>
-			<fr>Chaque jour, nous démontons, trions, et fondons les composants pour récupérer ce que la terre a déjà trop offert.</fr>
+			<en>Every day, we dismantle, sort, and melt down components to get some.</en>
+			<fr>Chaque jour, nous démontons, trions, et fondons les composants pour en récupérer.</fr>
 		</word>
 		<word id="pnj_chefrecyclagefactory1_1_1">
 			<en>But not everything is as green as we'd like. Look at the river behind the plant... It carries the residue of our work.</en>
@@ -400,12 +627,359 @@ Clické et c'est partie !!</fr>
 			<en>You worked well today, go and rest.</en>
 			<fr>Tu as bien travaillé aujourd'hui, pars te reposer. </fr>
 		</word>
+
+		<!-- pnj_workerbackrecyclagefactory1 -->
+		<word id="pnj_workerbackrecyclagefactory1_0_0">
+			<en>I'm just doing my job !</en>
+			<fr>J'ai beaucoup de travail pour démonter ces portables</fr>
+		</word>
+		<word id="pnj_workerbackrecyclagefactory1_0_1">
+			<en>We're overloaded with all the obsolete equipment they bring in.</en>
+			<fr>On est débordé avec tous les équipements obsolètes qu'on nous amène</fr>
+		</word>
+		<word id="pnj_workerbackrecyclagefactory1_0_1">
+			<en>Go see the boss, I'm just doing my job.</en>
+			<fr>Va voir la chef, moi je ne fais que mon travail</fr>
+		</word>
+
+		<!-- pnj_workerrecyclagefactory1 -->
+		<word id="pnj_workerrecyclagefactory1_0_1">
+			<en>Many parts can be reused, which reduces the need for new materials.</en>
+			<fr>De nombreuses pièces peuvent être réutilisées, ce qui réduit le besoin de nouvelles matières premières.</fr>
+		</word>
+		<word id="pnj_workerrecyclagefactory1_0_2">
+			<en>But improper disposal of electronics can harm the environment.</en>
+			<fr>Mais une élimination inappropriée des appareils électroniques peut nuire à l'environnement.</fr>
+		</word>
+		<word id="pnj_workerrecyclagefactory1_0_3">
+			<en>So, always think before you throw away your old devices!</en>
+			<fr>Alors, pense toujours avant de jeter tes anciens appareils !</fr>
+		</word>
+		<word id="pnj_workerrecyclagefactory1_1_0">
+			<en>Go see the boss, I'm just doing my job</en>
+			<fr>Va voir la chef, moi je ne fais que mon travail</fr>
+		</word>
 		
+		<!-- __________________________________________________________ PNJ VILLAGE 3 BIS __________________________________________________________ -->
 		
+		<!-- pnj_chefduvillage_3b -->
+		<word id="pnj_chefduvillage_3b_0_0">
+			<en>Oh, you're just in time.</en>
+			<fr>Oh tu tombes bien toi.</fr>
+		</word>
+		<word id="pnj_chefduvillage_3b_0_1">
+			<en>We learned that a data center was going to be built next to the village.</en>
+			<fr>On a appris qu'un data center allait se construire à côté du village.</fr>
+		</word>
+		<word id="pnj_chefduvillage_3b_0_2">
+			<en>It's going to destroy the environment even more, and we've had enough of it! So we're protesting!</en>
+			<fr>Cela va encore plus détruire l'environnement et nous, on en a marre de tous ça ! Donc nous, on manifeste !</fr>
+		</word>
+		<word id="pnj_chefduvillage_3b_0_3">
+			<en>Would you like to join us?</en>
+			<fr>Tu veux te joindre à nous ?</fr>
+		</word>
+		
+		<!-- pnj_chefmine_3b -->
+		<word id="pnj_chefmine_3b_0_0">
+			<en>This data center will consume enormous amounts of energy. And guess where they'll get it from?</en>
+			<fr>Ce data center va consommer une quantité énorme d'énergie. Et devine où ils vont la prendre ?</fr>
+		</word>
+		<word id="pnj_chefmine_3b_0_1">
+			<en>They don’t care if it drains our resources. As long as they make money, right?</en>
+			<fr>Ils s'en fichent si ça épuise nos ressources. Tant qu'ils font du profit, hein ?</fr>
+		</word>
+		
+		<!-- pnj_cheffactoryassembly_3b -->
+		<word id="pnj_cheffactoryassembly_3b_0_0">
+			<en>They say it'll bring jobs, but at what cost?</en>
+			<fr>Ils disent que ça va créer des emplois, mais à quel prix ?</fr>
+		</word>
+		<word id="pnj_cheffactoryassembly_3b_0_1">
+			<en>Pollution, water waste, and power outages... We've seen this before.</en>
+			<fr>Pollution, gaspillage d'eau et coupures d'électricité... On connaît la chanson.</fr>
+		</word>
+		
+		<!-- pnj_chefrecyclagefactory_3b -->
+		<word id="pnj_chefrecyclagefactory_3b_0_0">
+			<en>We fight every day to reduce waste, and now they want to build this monster?</en>
+			<fr>On se bat tous les jours pour réduire les déchets, et maintenant ils veulent construire ce monstre ?</fr>
+		</word>
+		<word id="pnj_chefrecyclagefactory_3b_0_1">
+			<en>If they were serious about the environment, they wouldn’t even consider this.</en>
+			<fr>S'ils se souciaient vraiment de l'environnement, ils n'envisageraient même pas ça.</fr>
+		</word>
+		
+		<!-- pnj_chefmanif_3b -->
+		<word id="pnj_chefmanif_3b_0_0">
+			<en>We will not let them ruin our land without a fight!</en>
+			<fr>On ne les laissera pas saccager notre terre sans se battre !</fr>
+		</word>
+		<word id="pnj_chefmanif_3b_0_1">
+			<en>Everyone, stay united! Our voices must be heard!</en>
+			<fr>Tout le monde, restez unis ! Nos voix doivent être entendues !</fr>
+		</word>
+		
+		<!-- pnj_workermanif_1_3b -->
+		<word id="pnj_workermanif_1_3b_0_0">
+			<en>This is our home, not a playground for corporations!</en>
+			<fr>C'est notre maison, pas un terrain de jeu pour les entreprises !</fr>
+		</word>
+		<word id="pnj_workermanif_1_3b_0_1">
+			<en>If we don’t act now, we’ll regret it forever.</en>
+			<fr>Si on n'agit pas maintenant, on le regrettera pour toujours.</fr>
+		</word>
+		
+		<!-- pnj_workermanif_2_3b -->
+		<word id="pnj_workermanif_2_3b_0_0">
+			<en>They think we’ll just accept it? Not this time!</en>
+			<fr>Ils pensent qu'on va juste accepter ça ? Pas cette fois !</fr>
+		</word>
+		<word id="pnj_workermanif_2_3b_0_1">
+			<en>We have the power if we stand together!</en>
+			<fr>On a le pouvoir si on reste soudés !</fr>
+		</word>
+		
+		<!-- pnj_youngman_3b -->
+		<word id="pnj_youngman_3b_0_0">
+			<en>Heh you! The adults have gathered in the town parking lot.</en>
+			<fr>Heh toi ! Les grands ils se sont rassemblé sur le parking de la ville.</fr>
+		</word>
+		<word id="pnj_youngman_3b_0_1">
+			<en>I don't know what's going on, but they're angry.</en>
+			<fr>Je ne sais pas ce qu'il se passe mais ils sont en colère.</fr>
+		</word>
+		
+		<!-- pnj_oldwoman_3b -->
+		<word id="pnj_oldwoman_3b_0_0">
+			<en>When I was young, this land was pure. Now, look at what they’ve done.</en>
+			<fr>Quand j'étais jeune, cette terre était pure. Maintenant, regarde ce qu'ils en ont fait.</fr>
+		</word>
+		<word id="pnj_oldwoman_3b_0_1">
+			<en>My grandchildren deserve better than a future full of concrete and smoke.</en>
+			<fr>Mes petits-enfants méritent mieux qu'un avenir rempli de béton et de fumée.</fr>
+		</word>
+		
+		<!-- __________________________________________________________ PNJ VILLAGE 4 __________________________________________________________ -->
+		
+		<!-- pnj_chefduvillage4 -->
+		<word id="pnj_chefduvillage4_0_0">
+			<en>You’ve returned… and just in time to see what real change looks like.</en>
+			<fr>Tu es revenu… et juste à temps pour voir à quoi ressemble un vrai changement.</fr>
+		</word>
+		<word id="pnj_chefduvillage4_0_1">
+			<en>The factories are gone. For the first time in years, the river flows clear.</en>
+			<fr>Les usines sont parties. Pour la première fois depuis des années, la rivière coule à nouveau limpide.</fr>
+		</word>
+		<word id="pnj_chefduvillage4_0_2">
+			<en>For so long, we believed that to move forward we had to destroy what made us who we are, our </en>
+			<fr>Pendant si longtemps, nous avons cru que pour avancer nous devions détruire ce qui faisait de nous ce que nous sommes, nos rivières</fr>
+		</word>
+		<word id="pnj_chefduvillage4_0_3">
+			<en>But we were wrong. Our people are happier. The land is healing.</en>
+			<fr>Mais nous avions tort. Notre peuple est plus heureux. La terre guérit.</fr>
+		</word>
+		<word id="pnj_chefduvillage4_1_0">
+			<en>But don't think we've forgotten technology just yet.</en>
+			<fr>Mais ne pense pas qu'on a oublié la technologie pour autant.</fr>
+		</word>
+		<word id="pnj_chefduvillage4_1_1">
+			<en>Quite simply, we've made the choice to consume better, to use healthier energi.</en>
+			<fr>Simplement, on a fait le choix de consommer mieux, d'utiliser des énergies plus saines.</fr>
+		</word>
+		<word id="pnj_chefduvillage4_1_2">
+			<en>Our workers may build fewer cell phones, but they last longer.</en>
+			<fr>Nos ouvirers construisent peut-être moins de portables, mais ils durent plus longtemps.</fr>
+		</word>
+		<word id="pnj_chefduvillage4_2_0">
+			<en>You played a part in all this, whether you wanted to or not. And for that, you have my gratitude.</en>
+			<fr>Tu as joué un rôle dans tout cela, que tu l’aies voulu ou non. Et pour cela, tu as ma gratitude.</fr>
+		</word>
+		<word id="pnj_chefduvillage4_2_1">
+			<en>Stay as long as you like.</en>
+			<fr>Reste aussi longtemps que tu le souhaites.</fr>
+		</word>
+		
+		<!-- pnj_youngman4 -->
+		<word id="pnj_youngman4_0_0">
+			<en>It's good to see you again !</en>
+			<fr>Je suis content de te revoir !</fr>
+		</word>
+		<word id="pnj_youngman4_0_1">
+			<en>Look around you, our village is much better! !</en>
+			<fr>Regarde autour de toi, notre village est bien mieux ! </fr>
+		</word>
+		<word id="pnj_youngman4_0_2">
+			<en>You’ve returned… and just in time to see what real change looks like.</en>
+			<fr>En plus maintenant mon portable dure très longtemps et les rivières sont jolies</fr>
+		</word>
+		<word id="pnj_youngman4_0_3">
+			<en>You'd better go and see the village chief, he'll be happy to see you again.</en>
+			<fr>Tu ferais bien d'aller voir le chef du village, il sera heureux de te revoir</fr>
+		</word>
+		
+		<!-- pnj_man4 -->
+		<word id="pnj_man4_0_0">
+			<en>You again! I feel like I see you every time something new happens...</en>
+			<fr>Encore toi ! J'ai l'impression de te voir dès qu'il se passe quelque chose de nouveau...</fr>
+		</word>
+		<word id="pnj_man4_0_1">
+			<en>But hey, for once I'm in a good mood, the village is better than ever.</en>
+			<fr>Mais bon, pour une fois je suis de bonne humeur, le village est mieux que jamais.</fr>
+		</word>
+		<word id="pnj_man4_0_2">
+			<en>Any questions? The village chief will be happy to answer them.</en>
+			<fr>T'as des questions ? Le chef du village se fera un plaisir de te répondre.</fr>
+		</word>
 
+		<!-- pnj_oldwoman4 -->
+		<word id="pnj_oldwoman4_0_0">
+			<en>The river is blue again! I never thought I’d see this day.</en>
+			<fr>La rivière est redevenue bleue ! Je n’aurais jamais cru voir ce jour.</fr>
+		</word>
+		<word id="pnj_oldwoman4_0_1">
+			<en>No more pollution, no more noise… Just peace. And I like to see these windmills spinning.</en>
+			<fr>Plus de pollution, plus de bruit… Juste la paix. Et j'aime bien voir ces éolienne qui tournent.</fr>
+		</word>
+		
+		<!-- pnj_oldman4 -->
+		<word id="pnj_oldman4_0_0">
+			<en>Life feels normal again. It’s like we can finally breathe.</en>
+			<fr>La vie redevient normale. C’est comme si nous pouvions enfin respirer.</fr>
+		</word>
 
+		<!-- __________________________________________________________ CINEMATIC __________________________________________________________ -->
 
+		<!-- Cinématique Mine -->
+		<word id="cinematic_mine_1_1">
+			<en>Ah, there you are! Come on, no time to lose, we've got work to do. Welcome to the open-cast mine!</en>
+			<fr>Ah, te voilà ! Allez, pas de temps à perdre, on a du travail. Bienvenue dans la mine à ciel ouvert !</fr>
+		</word>
+		<word id="cinematic_mine_1_2">
+			<en>Here, we dig relentlessly to extract precious metals: lithium, cobalt, copper...</en>
+			<fr>Ici, on creuse sans relâche pour extraire des métaux précieux : le lithium, le cobalt, le cuivre...</fr>
+		</word>
+		<word id="cinematic_mine_2_1">
+			<en>These little marvels power all your modern gadgets. But you know what? For a ton of rock, barely a few grams are useful.</en>
+			<fr>Ces petites merveilles alimentent tous tes gadgets modernes. Mais tu sais quoi ? Pour une tonne de roche, à peine quelques grammes en sont utiles.</fr>
+		</word>
+		<word id="cinematic_mine_2_2">
+			<en>It's true that it uses a bit of fuel and that some rivers are polluted, but that's not my problem.</en>
+			<fr>C'est vrai que ça consomme un peu de carburant et que certaines rivières sont polluées, mais ce n'est pas mon problème.</fr>
+		</word>
+		<word id="cinematic_mine_3_1">
+			<en>There, trucks send the materials to the assembly plant.</en>
+			<fr>Là, les camions envoient les matériaux à l'usine d'assemblage.</fr>
+		</word>
+		<word id="cinematic_mine_3_2">
+			<en>Come on, get your pickaxe. If you hit it right, we might make a fortune... or just a little more pollution. Let's get started!</en>
+			<fr>Allez, prends ta pioche. Si tu tapes bien, on fera peut-être fortune… ou juste un peu plus de pollution. C’est parti !</fr>
+		</word>
 
+		<!-- Cinématique Usine Assemblage -->
+		<word id="cinematic_factory_1_1">
+			<en>Hi, rookie! Welcome to the great digital dream factory.</en>
+			<fr>Salut, recrue ! Bienvenue dans la grande fabrique des rêves numériques.</fr>
+		</word>
+		<word id="cinematic_factory_1_2">
+			<en>Here, smartphones are assembled on a production line, from sunrise to sunset.</en>
+			<fr>Ici, on assemble des smartphones à la chaîne, du lever au coucher du soleil.</fr>
+		</word>
+		<word id="cinematic_factory_2_1">
+			<en>Every little component is a concentrate of technology and sweat.</en>
+			<fr>Chaque petit composant est un concentré de technologie et de sueur.</fr>
+		</word>
+		<word id="cinematic_factory_2_2">
+			<en>Take a good look at the conveyor belts: motherboards, screens, batteries: treasures of precision.</en>
+			<fr>Regarde bien les tapis roulants : cartes mères, écrans, batteries : des trésors de précision.</fr>
+		</word>
+		<word id="cinematic_factory_3_1">
+			<en>But nothing comes without sacrifice. It takes water, tons of water, to clean all this up. That's why we're pumping the river right here.</en>
+			<fr>Mais rien ne se fait sans sacrifices. Il faut de l'eau, des tonnes d'eau, pour nettoyer tout ça. C'est pour ça qu'on pompe la rivière juste là.</fr>
+		</word>
+		<word id="cinematic_factory_4_1">
+			<en>It's true that over time it dries out, but it's got to be used if everyone wants their mobile!</en>
+			<fr>C'est vrai qu'avec le temps, elle s'assèche, mais il faut bien qu'on l'utilise si tout le monde veut son portable !</fr>
+		</word>
+		<word id="cinematic_factory_4_2">
+			<en>Come on, get ready. You have to be quick and precise in this job.</en>
+			<fr>Allez, tiens-toi prêt. Il faut être rapide et précis dans ce boulot.</fr>
+		</word>
 
+		<!-- Cinématique Centre Recyclage -->
+		<word id="cinematic_recycle_1_1">
+			<en>Welcome to the factory where everything broken and obsolete arrives. Here, old electronics are sorted to recover what can be reused.</en>
+			<fr>Bienvenue dans l’usine où tout ce qui est cassé et obsolète arrive. Ici, on trie les vieux appareils électroniques pour récupérer ce qui peut être réutilisé.</fr>
+		</word>
+		<word id="cinematic_recycle_1_2">
+			<en>Every year, tens of millions of tonnes of electronic waste are generated.</en>
+			<fr>Chaque année, des dizaines de millions de tonnes de déchets électroniques sont générés.</fr>
+		</word>
+		<word id="cinematic_recycle_1_3">
+			<en>So we need a lot of water to work. That's why we set up shop by the river.</en>
+			<fr>Donc, on a besoin de beaucoup d'eau pour travailler. C'est pour ça qu'on s'est installés près de la rivière.</fr>
+		</word>
+		<word id="cinematic_recycle_2_1">
+			<en>It's true that we discharge waste into the water, but we have to work, don't we?</en>
+			<fr>C'est vrai qu'on rejette des déchets dans l'eau, mais il faut bien travailler, non ?</fr>
+		</word>
+		<word id="cinematic_recycle_3_1">
+			<en>The aim is to recycle certain components, but we can't recycle them all. There are bound to be materials that have to be sent back to nature.</en>
+			<fr>Le but, c'est de recycler certains composants, mais on ne peut pas tous les recycler. Il y a forcément des matériaux qu'on doit envoyer dans la nature.</fr>
+		</word>
+		<word id="cinematic_recycle_3_2">
+			<en>Well, you'll understand the rest as you work. Just pay attention to the useful component. Leave the rest in the river.</en>
+			<fr>Bon, tu comprendras le reste en travaillant. Fais juste attention au composant utile. Le reste, laisse le dans la rivière.</fr>
+		</word>
+	
+		<!-- Cinématique Fin -->
+		<word id="cinematic_end_1_1">
+			<en>Faced with the threat of the destruction of their land, the inhabitants of Trois Rivières have risen up.</en>
+			<fr>Face à la menace de la destruction de leurs terres, les habitants des Trois Rivières se sont levés.</fr>
+		</word>
+		<word id="cinematic_end_1_2">
+			<en>Industrialists were no match for their determination to protect rivers.</en>
+			<fr>Les industriels n'ont rien pu faire face à leur détermination à protéger les rivières.</fr>
+		</word>
+		<word id="cinematic_end_2_1">
+			<en>The construction site did not take place.</en>
+			<fr>Le chantier de construction n'a pas eu lieu.</fr>
+		</word>
+		<word id="cinematic_end_2_2">
+			<en>The workers and machines have left. The people of Trois Rivière have won</en>
+			<fr>Les ouvriers et les machines sont partis. Les habitants de Trois Rivière ont gagné</fr>
+		</word>
+		<word id="cinematic_end_3_1">
+			<en>The wind, which had always blown over the hills of Trois Rivières, was now becoming a source of life.</en>
+			<fr>Le vent, qui avait toujours soufflé sur les collines des Trois Rivières, devenait maintenant une source de vie.</fr>
+		</word>
+		<word id="cinematic_end_3_2">
+			<en>The inhabitants had chosen a clean energy, respectful of their land.</en>
+			<fr>Les habitants avaient choisi une énergie propre, respectueuse de leurs terres.</fr>
+		</word>
+		<word id="cinematic_end_4_1">
+			<en>Every ray of sunlight was another step towards autonomy and harmony with nature.</en>
+			<fr>Chaque rayon de soleil représentait un pas de plus vers l’autonomie et l’harmonie avec la nature.</fr>
+		</word>
+		<word id="cinematic_end_4_2">
+			<en>Although some residents regretted the laptops and innovations, the majority were happy.</en>
+			<fr>Même si certains habitants regrettaient les portables et les innovations, la majorité était heureuse.</fr>
+		</word>
+		<word id="cinematic_end_5_1">
+			<en>The rivers had regained their clarity, and life, their brilliance.</en>
+			<fr>Les rivières avaient retrouvé leur clarté, et la vie, leur éclat.</fr>
+		</word>
+		<word id="cinematic_end_5_2">
+			<en>The village still bore the scars of its industrial past, but these scars told a story of victory and resilience.</en>
+			<fr>Le village portait encore les traces de son passé industriel, mais ces cicatrices racontaient une histoire de victoire et de résilience.</fr>
+		</word>
+		<word id="cinematic_end_5_3">
+			<en>The people of Trois Rivières had chosen a different future. A future where man and nature could coexist in harmony.</en>
+			<fr>Les habitants des Trois Rivières avaient choisi un avenir différent. Un avenir où l’homme et la nature pouvaient coexister en harmonie</fr>
+		</word>
+		<word id="cinematic_end_5_4">
+			<en>End...</en>
+			<fr>Fin...</fr>
+		</word>
 	</words>
 </languages>
