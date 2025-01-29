@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 153045f1ad26c3f439091cb426c57079
+guid: eaab337fb0ea82144b352828b4344aec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8621111575628296484
-    second: illustration-de-matC3A9riel-d-art-pixel-puce-unitC3A9-traitement-du-processeur-cartes-sur-le-fond-vert-isolC3A9-169329246_0
+      213: -8289788077639998036
+    second: "Capture d'\xE9cran 2024-10-21 122559_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: illustration-de-matC3A9riel-d-art-pixel-puce-unitC3A9-traitement-du-processeur-cartes-sur-le-fond-vert-isolC3A9-169329246_0
+      name: "Capture d'\xE9cran 2024-10-21 122559_0"
       rect:
         serializedVersion: 2
-        x: 140
-        y: 131
-        width: 540
-        height: 540
+        x: 50
+        y: 20
+        width: 2257
+        height: 2277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 421355a2d4754a770800000000000000
-      internalID: 8621111575628296484
+      spriteID: ca5eff02aa1c4fc80800000000000000
+      internalID: -8289788077639998036
       vertices: []
       indices: 
       edges: []
@@ -134,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      illustration-de-matC3A9riel-d-art-pixel-puce-unitC3A9-traitement-du-processeur-cartes-sur-le-fond-vert-isolC3A9-169329246_0: 8621111575628296484
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

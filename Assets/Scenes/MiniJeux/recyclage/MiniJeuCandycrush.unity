@@ -548,11 +548,11 @@ MonoBehaviour:
   spacingX: 0
   spacingY: 0
   pucePrefabs:
-  - {fileID: 4739487358324422268, guid: 23246b0a720e65040ab7396a2acc0f12, type: 3}
-  - {fileID: 9139384422621613618, guid: c3aaf042502f70f45a3f03f3e4bdd736, type: 3}
-  - {fileID: 2502318581514267748, guid: 6daf648371d81854a8b1de704747693c, type: 3}
-  - {fileID: 8442879411055296981, guid: 2e716743adba6c34ea21775f89526012, type: 3}
-  - {fileID: 3677454253667574952, guid: bf2fca84dd542bb4380a4f8bf8bd9436, type: 3}
+  - {fileID: 2328099094775919936, guid: fb3ffb5cb924f574f81b0baee48301a2, type: 3}
+  - {fileID: 3351612923584592016, guid: fbc9d3a6b05869c459c415f95fc4b1e0, type: 3}
+  - {fileID: 4977577972037494335, guid: f0dd2599790eca5428f363dc4cab7093, type: 3}
+  - {fileID: 2918697235013749854, guid: 4312cfdcada7b344ea1e10cb65fdc69d, type: 3}
+  - {fileID: 3950389118449603020, guid: 4c10011a690837949bb1768bfca99603, type: 3}
   puceBoardGO: {fileID: 0}
   pucesParent: {fileID: 359320109}
   pucesToDestroy: []
