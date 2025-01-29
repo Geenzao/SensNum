@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class playerMovement : Singleton<playerMovement>
 {
@@ -6,6 +7,8 @@ public class playerMovement : Singleton<playerMovement>
     private Vector3 vector3_moveDirection;
 
     private Animator animator_anim;
+
+    private bool isMobilePlatform = false;
 
     private void Awake()
     {
@@ -17,13 +20,25 @@ public class playerMovement : Singleton<playerMovement>
     void Start()
     {
         animator_anim = GetComponent<Animator>();
+
+        isMobilePlatform = PlatformManager.Instance.fctisMobile();
+    }
+    float moveX;
+    float moveY;
+    public void setMove(float x, float y)
+    {
+        moveX = x;
+        moveY = y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        if (!isMobilePlatform)
+        {
+            moveX = Input.GetAxisRaw("Horizontal");
+            moveY = Input.GetAxisRaw("Vertical");
+        }
 
         //Si on veut bouger seulement verticalement et horizontalement
         /* 

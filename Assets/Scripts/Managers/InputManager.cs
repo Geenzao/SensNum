@@ -99,6 +99,7 @@ public class InputManager : Singleton<InputManager>
                 //print("Clic Up");
                 UsineAssemblageGameManager.Instance.UserClicLeftUp();
             }
+
         }
     }
 }
