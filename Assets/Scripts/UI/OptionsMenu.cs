@@ -47,7 +47,7 @@ public class OptionsMenu : Menu
         _paramVolumeSounds.OnUpdate.AddListener(HandleSoundVolumeChanged);
         //_paramGlobalQuality.OnUpdate.AddListener(HandleGlobalQualityChanged);
 
-        languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
+        //languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
 
         LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
     }
@@ -83,7 +83,7 @@ public class OptionsMenu : Menu
             Debug.LogError("LanguageManager instance is not initialized.");
         }
 
-        InitializeLanguageDropdown();
+        //InitializeLanguageDropdown();
     }
 
     protected override void TriggerVisibility(bool visible)
@@ -92,41 +92,41 @@ public class OptionsMenu : Menu
         panelOptions.SetActive(visible);
     }
 
-    private void InitializeLanguageDropdown()
-    {
-        // Récupérer la liste des langues disponibles
-        List<string> languages = LanguageManager.Instance.GetLanguages();
+    //private void InitializeLanguageDropdown()
+    //{
+    //    // Récupérer la liste des langues disponibles
+    //    List<string> languages = LanguageManager.Instance.GetLanguages();
 
-        // Vider les options actuelles du dropdown
-        languageDropdown.ClearOptions();
+    //    // Vider les options actuelles du dropdown
+    //    languageDropdown.ClearOptions();
 
-        // Ajouter les langues disponibles au dropdown
-        languageDropdown.AddOptions(languages);
+    //    // Ajouter les langues disponibles au dropdown
+    //    languageDropdown.AddOptions(languages);
 
-        // Définir la langue actuelle comme sélectionnée dans le dropdown
-        string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
-        int currentLanguageIndex = languages.IndexOf(currentLanguage);
+    //    // Définir la langue actuelle comme sélectionnée dans le dropdown
+    //    string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
+    //    int currentLanguageIndex = languages.IndexOf(currentLanguage);
 
-        if (currentLanguageIndex >= 0)
-        {
-            languageDropdown.value = currentLanguageIndex;
-            languageDropdown.RefreshShownValue();
-        }
-    }
+    //    if (currentLanguageIndex >= 0)
+    //    {
+    //        languageDropdown.value = currentLanguageIndex;
+    //        languageDropdown.RefreshShownValue();
+    //    }
+    //}
 
-    private void OnLanguageDropdownValueChanged(int index)
-    {
-        var selectedLanguage = languageDropdown.options[index].text;
-        var languages = LanguageManager.Instance.GetLanguages();
-        foreach (var language in languages)
-        {
-            if (language == selectedLanguage)
-            {
-                LanguageManager.Instance.ChangeLanguage(language);
-                break;
-            }
-        }
-    }
+    //private void OnLanguageDropdownValueChanged(int index)
+    //{
+    //    var selectedLanguage = languageDropdown.options[index].text;
+    //    var languages = LanguageManager.Instance.GetLanguages();
+    //    foreach (var language in languages)
+    //    {
+    //        if (language == selectedLanguage)
+    //        {
+    //            LanguageManager.Instance.ChangeLanguage(language);
+    //            break;
+    //        }
+    //    }
+    //}
 
 
     protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
