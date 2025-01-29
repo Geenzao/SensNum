@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Xml;
 using System;
 using UnityEngine;
 using System.IO;
@@ -8,12 +7,25 @@ public class LanguageManager : Singleton<LanguageManager>
 {
     public event Action OnLanguageChanged;
 
-    private Dictionary<string, string> currentLanguageDictionary;
+    private Dictionary<string, string> currentLanguageDictionary = new Dictionary<string, string>();
     private string currentLanguage = "en"; // Langue par défaut
+    private readonly string languageFolderPath = "Data/Languages"; // Dossier où sont stockés les JSON
 
-    protected override void Awake()
+    [Serializable]
+    public class LanguageEntry
     {
-        base.Awake();
+        public string key;
+        public string value;
+    }
+
+    [Serializable]
+    public class LanguageData
+    {
+        public List<LanguageEntry> entries;
+    }
+
+    private void Start()
+    {
         LoadLanguage(currentLanguage);
     }
 
@@ -21,83 +33,67 @@ public class LanguageManager : Singleton<LanguageManager>
     {
         if (newLanguage != currentLanguage)
         {
-            currentLanguage = newLanguage;
-            LoadLanguage(currentLanguage);
-            OnLanguageChanged?.Invoke(); // Déclenchement de l'événement
+            if (LoadLanguage(newLanguage))
+            {
+                currentLanguage = newLanguage;
+                OnLanguageChanged?.Invoke(); // Déclenchement de l'événement
+            }
         }
     }
 
-    private void LoadLanguage(string language)
+    public bool LoadLanguage(string languageCode)
     {
-        string filePath = Path.Combine(Application.streamingAssetsPath, language + ".json");
-
-        if (File.Exists(filePath))
+        string path = Path.Combine(Application.dataPath, languageFolderPath, languageCode + ".json");
+        if (File.Exists(path))
         {
-            string dataAsJson = File.ReadAllText(filePath);
-            currentLanguageDictionary = JsonUtility.FromJson<SerializableDictionary>(dataAsJson).ToDictionary();
+            try
+            {
+                string json = File.ReadAllText(path);
+                LanguageData data = JsonUtility.FromJson<LanguageData>(json);
+                currentLanguageDictionary.Clear();
+                foreach (var entry in data.entries)
+                {
+                    currentLanguageDictionary[entry.key] = entry.value;
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError("Error loading language file: " + ex.Message);
+            }
         }
         else
         {
-            Debug.LogError("Cannot find language file: " + filePath);
+            Debug.LogError("Language file not found: " + path);
         }
+        return false;
     }
 
     public string GetText(string key)
     {
-        if (currentLanguageDictionary != null && currentLanguageDictionary.ContainsKey(key))
-        {
-            return currentLanguageDictionary[key];
-        }
-        else
-        {
-            //Debug.LogWarning("Key not found in language dictionary: " + key);
-            return "[" + key + "]";
-        }
+        return currentLanguageDictionary.TryGetValue(key, out string value) ? value : $"[{key}]";
     }
 
     public List<string> GetLanguages()
     {
         List<string> languages = new List<string>();
-
-        // Récupérer tous les fichiers JSON dans le dossier StreamingAssets
-        string[] files = Directory.GetFiles(Application.streamingAssetsPath, "*.json");
-
-        foreach (string file in files)
+        string directoryPath = Path.Combine(Application.dataPath, languageFolderPath);
+        if (Directory.Exists(directoryPath))
         {
-            // Extraire le nom de la langue du nom du fichier (ex: "en.json" -> "en")
-            string fileName = Path.GetFileNameWithoutExtension(file);
-            languages.Add(fileName);
-        }
-
-        return languages;
-    }
-
-    [System.Serializable]
-    private class SerializableDictionary
-    {
-        public List<LanguageEntry> entries;
-
-        public Dictionary<string, string> ToDictionary()
-        {
-            Dictionary<string, string> dict = new Dictionary<string, string>();
-            foreach (var entry in entries)
+            foreach (var file in Directory.GetFiles(directoryPath, "*.json"))
             {
-                dict[entry.key] = entry.value;
+                languages.Add(Path.GetFileNameWithoutExtension(file));
             }
-            return dict;
         }
-    }
-
-    [System.Serializable]
-    private class LanguageEntry
-    {
-        public string key;
-        public string value;
+        else
+        {
+            Debug.LogError("Languages directory not found: " + directoryPath);
+        }
+        return languages;
     }
 
     public string GetCurrentLanguage()
     {
         return currentLanguage;
     }
-
 }

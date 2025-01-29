@@ -2,11 +2,11 @@
   "entries": [
     {
       "key": "settings",
-      "value": "Paramètres"
+      "value": "ParamÃ¨tres"
     },
     {
       "key": "MainMenu_Title",
-      "value": "Les trois rivières"
+      "value": "Les trois riviÃ¨res"
     },
     {
       "key": "play",
@@ -30,7 +30,7 @@
     },
     {
       "key": "startThirdGameMine",
-      "value": "Faites sortir tous les camions transportant des minéraux avant la fin du temps imparti ! Cliquez sur un camion pour le faire bouger."
+      "value": "Faites sortir tous les camions transportant des minï¿½raux avant la fin du temps imparti ! Cliquez sur un camion pour le faire bouger."
     },
     {
       "key": "truck",
@@ -50,7 +50,7 @@
     },
     {
       "key": "completedCircuit",
-      "value": "Circuit terminé"
+      "value": "Circuit terminï¿½"
     },
     {
       "key": "timeRemaining",
@@ -58,7 +58,7 @@
     },
     {
       "key": "completedCircuitLittle",
-      "value": "circuit terminé"
+      "value": "circuit terminÃ©"
     },
     {
       "key": "poorlyMadeCircuit",
@@ -74,7 +74,7 @@
     },
     {
       "key": "rules",
-      "value": "Vous devez compléter 10 circuits avec les bons composants dans le temps imparti. Cliquez et c'est parti !!"
+      "value": "Vous devez complÃ©ter 10 circuits avec les bons composants dans le temps imparti. Cliquez et c'est parti !!"
     },
     {
       "key": "replay",
@@ -86,7 +86,7 @@
     },
     {
       "key": "notifyAcceleration",
-      "value": "Accélération"
+      "value": "Accï¿½lï¿½ration"
     },
     {
       "key": "loading",
@@ -94,11 +94,11 @@
     },
     {
       "key": "pnj_chefduvillage_0_0",
-      "value": "Qui êtes-vous ?"
+      "value": "Qui Ãªtes-vous ?"
     },
     {
       "key": "pnj_chefduvillage_0_1",
-      "value": "Vous n'êtes pas le bienvenu ici !"
+      "value": "Vous n'Ãªtes pas le bienvenu ici !"
     },
     {
       "key": "pnj_chefduvillage_0_2",
@@ -106,11 +106,11 @@
     },
     {
       "key": "pnj_chefduvillage_1_0",
-      "value": "Vous n'êtes pas membre du groupe de la milice jeep ?"
+      "value": "Vous n'Ãªtes pas membre du groupe de la milice jeep ?"
     },
     {
       "key": "pnj_chefduvillage_1_1",
-      "value": "Désolé pour mon accueil rude…"
+      "value": "DÃ©solÃ© pour mon accueil rude."
     },
     {
       "key": "pnj_chefduvillage_1_2",
@@ -122,7 +122,7 @@
     },
     {
       "key": "pnj_chefduvillage_1_4",
-      "value": "Pour creuser le sol, à la recherche de matériaux précieux."
+      "value": "Pour creuser le sol, Ã  la recherche de matï¿½riaux prÃ©cieux."
     },
     {
       "key": "pnj_chefduvillage_1_5",
@@ -134,19 +134,19 @@
     },
     {
       "key": "pnj_youngman_0_0",
-      "value": "Bienvenue dans notre village, étranger. Ici, chaque main contribue à notre survie."
+      "value": "Bienvenue dans notre village, ï¿½tranger. Ici, chaque main contribue Ã  notre survie."
     },
     {
       "key": "pnj_man_0_0",
-      "value": "Je n'aime pas parler aux étrangers."
+      "value": "Je n'aime pas parler aux Ã©trangers."
     },
     {
       "key": "pnj_man_1_0",
-      "value": "Il y a beaucoup de problèmes à cause de la mine en ce moment."
+      "value": "Il y a beaucoup de problÃ¨mes ï¿½ cause de la mine en ce moment."
     },
     {
       "key": "pnj_man_1_1",
-      "value": "Si c'est pour me faire perdre mon temps, dégage !"
+      "value": "Si c'est pour me faire perdre mon temps, dÃ©gage !"
     },
     {
       "key": "pnj_oldwoman_0_0",
@@ -154,7 +154,7 @@
     },
     {
       "key": "pnj_ChefMine_0_0",
-      "value": "Bienvenue à la grande mine de cuivre, la ressource la plus précieuse que nous extrayons ici."
+      "value": "Bienvenue Ã  la grande mine de cuivre, la ressource la plus prï¿½cieuse que nous extrayons ici."
     },
     {
       "key": "pnj_ChefMine_0_1",
@@ -162,19 +162,19 @@
     },
     {
       "key": "pnj_ChefMine_0_2",
-      "value": "C'est un travail difficile, mais c'est le prix à payer pour alimenter le monde connecté d'aujourd'hui."
+      "value": "C'est un travail difficile, mais c'est le prix Ã  payer pour alimenter le monde connectÃ© d'aujourd'hui."
     },
     {
       "key": "pnj_ChefMine_1_0",
-      "value": "De l'eau ? Oh oui, nous en utilisons des quantités monstrueuses pour refroidir les machines et laver le minerai."
+      "value": "De l'eau ? Oh oui, nous en utilisons des quantitï¿½s monstrueuses pour refroidir les machines et laver le minerai."
     },
     {
       "key": "pnj_ChefMine_1_1",
-      "value": "L'impact sur les eaux souterraines ? Disons simplement que l'eau ne nous en veut pas à voix haute, donc tout va bien, non ?"
+      "value": "L'impact sur les eaux souterraines ? Disons simplement que l'eau ne nous en veut pas Ã  voix haute, donc tout va bien, non ?"
     },
     {
       "key": "pnj_ChefMine_1_2",
-      "value": "Certains disent que nous laissons derrière nous des déserts arides et des rivières mortes."
+      "value": "Certains disent que nous laissons derriÃ¨re nous des dï¿½serts arides et des riviÃ¨res mortes."
     },
     {
       "key": "pnj_ChefMine_1_3",
@@ -182,15 +182,15 @@
     },
     {
       "key": "pnj_ChefMine_2_0",
-      "value": "Vous voulez du travail ? Nous avons toujours besoin de mains supplémentaires pour creuser plus profondément."
+      "value": "Vous voulez du travail ? Nous avons toujours besoin de mains supplÃ©mentaires pour creuser plus profondÃ©ment."
     },
     {
       "key": "pnj_ChefMine_2_1",
-      "value": "Alors, êtes-vous prêt à vous salir les mains pour un peu d'argent et beaucoup de poussière ?"
+      "value": "Alors, Ãªtes-vous prÃªt Ã  vous salir les mains pour un peu d'argent et beaucoup de poussiÃ¨re ?"
     },
     {
       "key": "pnj_ChefMine_end_0_0",
-      "value": "Bon travail, vous avez bien travaillé aujourd'hui."
+      "value": "Bon travail, vous avez bien travaillÃ© aujourd'hui."
     },
     {
       "key": "pnj_ChefMine_end_0_1",
@@ -202,7 +202,7 @@
     },
     {
       "key": "pnj_ChefMine_boucle_0_0",
-      "value": "Vous avez bien travaillé aujourd'hui, allez vous reposer."
+      "value": "Vous avez bien travaillÃ© aujourd'hui, allez vous reposer."
     },
     {
       "key": "pnj_mineurpelle1_0_0",
@@ -210,23 +210,23 @@
     },
     {
       "key": "pnj_mineurpelle1_0_1",
-      "value": "La terre ici contient des métaux précieux. Votre temps de parole me coûte trop cher !"
+      "value": "La terre ici contient des mÃ©taux prï¿½cieux. Votre temps de parole me coÃ»te trop cher !"
     },
     {
       "key": "pnj_mineurpioche1_0_0",
-      "value": "Chaque minute ici, c'est plus de métaux rares pour vos téléphones. Ne me ralentissez pas."
+      "value": "Chaque minute ici, c'est plus de mï¿½taux rares pour vos tÃ©lÃ©phones. Ne me ralentissez pas."
     },
     {
       "key": "pnj_mineurpioche2_0_0",
-      "value": "Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour vos circuits imprimés."
+      "value": "Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour vos circuits imprimï¿½s."
     },
     {
       "key": "chefduvillage2_0_0",
-      "value": "Qui êtes-vous ?"
+      "value": "Qui Ãªtes-vous ?"
     },
     {
       "key": "barman_0_0",
-      "value": "Hé, vous n'êtes pas d'ici, n'est-ce pas ?"
+      "value": "HÃ©, vous n'Ãªtes pas d'ici, n'est-ce pas ?"
     },
     {
       "key": "youngman2_0_0",
@@ -238,27 +238,27 @@
     },
     {
       "key": "pnj_man2_0_0",
-      "value": "Je n'aime pas parler aux étrangers."
+      "value": "Je n'aime pas parler aux ï¿½trangers."
     },
     {
       "key": "pnj_cheffactoryassembly_0_0",
-      "value": "Bienvenue à l'usine d'assemblage, le cœur battant de l'industrie moderne."
+      "value": "Bienvenue Ã  l'usine d'assemblage, le cï¿½ur battant de l'industrie moderne."
     },
     {
       "key": "pnj_cheffactoryassembly_0_1",
-      "value": "Je suis le chef de cette usine, c'est moi qui la dirige avec quelques ouvriers du village des Trois Rivières."
+      "value": "Je suis le chef de cette usine, c'est moi qui la dirige avec quelques ouvriers du village des Trois RiviÃ¨res."
     },
     {
       "key": "pnj_cheffactoryassembly_0_2",
-      "value": "Nous pompons des milliers de litres d'eau chaque jour pour extraire des métaux rares essentiels aux smartphones et autres gadgets."
+      "value": "Nous pompons des milliers de litres d'eau chaque jour pour extraire des mï¿½taux rares essentiels aux smartphones et autres gadgets."
     },
     {
       "key": "pnj_cheffactoryassembly_1_0",
-      "value": "Chaque goutte d'eau contaminée retourne à la rivière, mais les gens aiment leurs écrans bien plus que l'air pur, n'est-ce pas ?"
+      "value": "Chaque goutte d'eau contaminï¿½e retourne Ã  la riviÃ¨re, mais les gens aiment leurs ï¿½crans bien plus que l'air pur, n'est-ce pas ?"
     },
     {
       "key": "pnj_cheffactoryassembly_1_1",
-      "value": "Moi ? Je fais tourner la machine. Tant que c'est rentable, pourquoi s'arrêter ?"
+      "value": "Moi ? Je fais tourner la machine. Tant que c'est rentable, pourquoi s'arrÃªter ?"
     },
     {
       "key": "pnj_cheffactoryassembly_2_0",
@@ -266,7 +266,7 @@
     },
     {
       "key": "pnj_cheffactoryassembly_end_0_0",
-      "value": "Bon travail, vous avez bien travaillé aujourd'hui."
+      "value": "Bon travail, vous avez bien travaillÃ© aujourd'hui."
     },
     {
       "key": "pnj_cheffactoryassembly_end_0_1",
@@ -274,47 +274,47 @@
     },
     {
       "key": "pnj_cheffactoryassembly_boucle_0_0",
-      "value": "Vous avez bien travaillé aujourd'hui, allez vous reposer."
+      "value": "Vous avez bien travaillÃ© aujourd'hui, allez vous reposer."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_0",
-      "value": "Ah, un nouveau visage ! Bienvenue à l'usine de recyclage."
+      "value": "Ah, un nouveau visage ! Bienvenue ï¿½ l'usine de recyclage."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_1",
-      "value": "La dernière ligne de défense contre la catastrophe écologique, ou du moins… c'est ce que nous aimons dire pour nous rassurer."
+      "value": "La derniÃ¨re ligne de dÃ©fense contre la catastrophe Ã©cologique, ou du moins, c'est ce que nous aimons dire pour nous rassurer."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_2",
-      "value": "Ici, nous donnons une seconde vie aux appareils électroniques, principalement les téléphones portables. Ces petites merveilles sont pleines de métaux précieux comme l'or et le cuivre."
+      "value": "Ici, nous donnons une seconde vie aux appareils ï¿½lectroniques, principalement les tÃ©lÃ©phones portables. Ces petites merveilles sont pleines de mÃ©taux prÃ©cieux comme l'or et le cuivre."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_0",
-      "value": "Chaque jour, nous démontons, trions et fondons des composants pour récupérer ce que la terre a déjà trop donné."
+      "value": "Chaque jour, nous dÃ©montons, trions et fondons des composants pour rÃ©cupÃ©rer ce que la terre a dÃ©jÃ  trop donnÃ©."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_1",
-      "value": "Mais tout n'est pas aussi vert que nous le souhaiterions. Regardez la rivière derrière l'usine... Elle transporte les résidus de notre travail."
+      "value": "Mais tout n'est pas aussi vert que nous le souhaiterions. Regardez la riviÃ¨re derriÃ¨re l'usine... Elle transporte les rÃ©sidus de notre travail."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_2",
-      "value": "Même avec toutes nos machines sophistiquées, des toxines s'échappent encore."
+      "value": "Mï¿½me avec toutes nos machines sophistiquï¿½es, des toxines s'Ã©chappent encore."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_0",
-      "value": "Néanmoins, le monde a besoin de nous."
+      "value": "NÃ©anmoins, le monde a besoin de nous."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_1",
-      "value": "Sans recyclage, ces déchets finiraient dans des décharges à ciel ouvert, empoisonnant le sol et l'air."
+      "value": "Sans recyclage, ces dÃ©chets finiraient dans des dÃ©charges Ã  ciel ouvert, empoisonnant le sol et l'air."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_2",
-      "value": "Alors, qu'en dites-vous ? Un peu d'huile de coude pour démonter des téléphones et aider l'avenir, ou préférez-vous rester spectateur de ce désordre ?"
+      "value": "Alors, qu'en dites-vous ? Un peu d'huile de coude pour dÃ©monter des tÃ©lÃ©phones et aider l'avenir, ou prÃ©fÃ©rez-vous rester spectateur de ce dÃ©sordre ?"
     },
     {
       "key": "pnj_chefrecyclagefactory1_end_0_0",
-      "value": "Bon travail, vous avez bien travaillé aujourd'hui."
+      "value": "Bon travail, vous avez bien travaillÃ© aujourd'hui."
     },
     {
       "key": "pnj_chefrecyclagefactory1_end_0_1",
@@ -322,7 +322,7 @@
     },
     {
       "key": "pnj_chefrecyclagefactory1_boucle_0_0",
-      "value": "Vous avez bien travaillé aujourd'hui, allez vous reposer."
+      "value": "Vous avez bien travaillÃ© aujourd'hui, allez vous reposer."
     }
   ]
 }
