@@ -1,136 +1,113 @@
 using System.Collections.Generic;
-using System.Xml;
 using System;
 using UnityEngine;
 using System.IO;
+
+
+[Serializable]
+public class LanguageEntry
+{
+    public string key;
+    public string value;
+}
+
+[Serializable]
+public class LanguageData
+{
+    public List<LanguageEntry> entries;
+}
 
 public class LanguageManager : Singleton<LanguageManager>
 {
     public event Action OnLanguageChanged;
 
-    private Dictionary<string, Dictionary<string, string>> _localizedTexts;
-    [SerializeField] private string _currentLanguage;
-    //private string filePath = "Assets/Data/xmllanguages.xml";
-    private string filePath = Path.Combine(Application.streamingAssetsPath, "xmllanguages.xml");
+    private List<List< string>> currentLanguageDictionary = new List<List<string>>();
+    private string currentLanguage = "en"; // Langue par défaut
+    private readonly string languageFolderPath = "Languages"; // Dossier où sont stockés les JSON
 
 
-    protected override void Awake()
-    {
-        base.Awake();
-        _localizedTexts = new Dictionary<string, Dictionary<string, string>>();
-    }
 
     private void Start()
     {
-        LoadLanguageFile();
+        LoadLanguage(currentLanguage);
     }
 
-    //public void LoadLanguageFile()
-    //{
-    //    _localizedTexts.Clear();
-    //    XmlDocument xmlDocument = new XmlDocument();
-    //    xmlDocument.Load(filePath);
-
-    //    XmlNodeList wordNodes = xmlDocument.SelectNodes("/languages/words/word");
-    //    foreach (XmlNode wordNode in wordNodes)
-    //    {
-    //        string key = wordNode.Attributes["id"].Value;
-    //        var translations = new Dictionary<string, string>();
-
-    //        foreach (XmlNode langNode in wordNode.ChildNodes)
-    //        {
-    //            translations[langNode.Name] = langNode.InnerText;
-    //        }
-
-    //        _localizedTexts[key] = translations;
-    //    }
-    //}
-    public void LoadLanguageFile()
+    public void ChangeLanguage(string newLanguage)
     {
-        _localizedTexts.Clear();
-        string fullPath = filePath;
-
-        if (!File.Exists(fullPath))
+        if (newLanguage != currentLanguage)
         {
-            Debug.LogError($"Language file not found at path: {fullPath}");
-            return;
-        }
-
-        XmlDocument xmlDocument = new XmlDocument();
-        try
-        {
-            File.SetLastWriteTimeUtc(fullPath, DateTime.UtcNow);
-            xmlDocument.Load(fullPath);
-        }
-        catch (Exception ex)
-        {
-            Debug.LogError($"Failed to load XML file: {ex.Message}");
-            return;
-        }
-
-        XmlNodeList wordNodes = xmlDocument.SelectNodes("/languages/words/word");
-        foreach (XmlNode wordNode in wordNodes)
-        {
-            string key = wordNode.Attributes["id"].Value;
-            var translations = new Dictionary<string, string>();
-
-            foreach (XmlNode langNode in wordNode.ChildNodes)
+            if (LoadLanguage(newLanguage))
             {
-                translations[langNode.Name] = langNode.InnerText;
+                currentLanguage = newLanguage;
+                OnLanguageChanged?.Invoke(); // Déclenchement de l'événement
             }
-
-            _localizedTexts[key] = translations;
         }
     }
 
-
-    public string GetText(string key)
+    public bool LoadLanguage(string languageCode)
     {
-        if (_localizedTexts.TryGetValue(key, out Dictionary<string, string> translations))
+        string path = Path.Combine(Application.streamingAssetsPath, languageFolderPath, languageCode + ".json");
+        if (File.Exists(path))
         {
-            if (translations.TryGetValue(_currentLanguage, out string value))
+            try
             {
-                return value;
+                string json = File.ReadAllText(path);
+                LanguageData data = JsonUtility.FromJson<LanguageData>(json);
+                currentLanguageDictionary.Clear();
+                foreach (var entry in data.entries)
+                {
+
+                    currentLanguageDictionary.Add(new List<string> { entry.key, entry.value });
+                }
+                return true;
             }
-            else
+            catch (Exception ex)
             {
-                Debug.LogWarning($"Text for language '{_currentLanguage}' not found for key '{key}'");
-                return key; // Retourne la cl� si le texte n'est pas trouv� pour la langue actuelle
+                Debug.LogError("Error loading language file: " + ex.Message);
             }
         }
         else
         {
-            //Debug.LogWarning($"Text key '{key}' not found");
-            return key; // Retourne la cl� si le texte n'est pas trouv�
+            Debug.LogError("Language file not found: " + path);
         }
+        return false;
     }
 
-    public List<CTuple<string, string>> GetLanguages()
+    public string GetText(string key)
     {
-        List<CTuple<string, string>> languages = new List<CTuple<string, string>>();
-        XmlDocument xmlDocument = new XmlDocument();
-        xmlDocument.Load(filePath);
-
-        XmlNodeList languageNodes = xmlDocument.SelectNodes("/languages/language");
-        foreach (XmlNode languageNode in languageNodes)
+        //print("GetText : " + key);
+        ////return currentLanguageDictionary.TryGetValue(key, out string value) ? value : $"[{key}]";
+        ////si la clé existe dane le dictionnnaire
+        foreach (var entry in currentLanguageDictionary)
         {
-            string code = languageNode.Attributes["code"].Value;
-            string name = languageNode.Attributes["name"].Value;
-            languages.Add(new CTuple<string, string>(name, code));
+            if (entry[0] == key)
+            {
+                return entry[1];
+            }
         }
+        return key;
+    }
 
+    public List<string> GetLanguages()
+    {
+        List<string> languages = new List<string>();
+        string directoryPath = Path.Combine(Application.streamingAssetsPath, languageFolderPath);
+        if (Directory.Exists(directoryPath))
+        {
+            foreach (var file in Directory.GetFiles(directoryPath, "*.json"))
+            {
+                languages.Add(Path.GetFileNameWithoutExtension(file));
+            }
+        }
+        else
+        {
+            Debug.LogError("Languages directory not found: " + directoryPath);
+        }
         return languages;
     }
 
     public string GetCurrentLanguage()
     {
-        return _currentLanguage;
-    }
-
-    public void SetLanguage(string language)
-    {
-        _currentLanguage = language;
-        OnLanguageChanged?.Invoke(); // Déclenchement de l'événement
-
+        return currentLanguage;
     }
 }
