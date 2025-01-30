@@ -9,7 +9,7 @@ public class dialoguePNJChef : MonoBehaviour
 {
     public List<Dialogue> listDialogue = new List<Dialogue>();
 
-    //Récupère le tag du PNJ
+    //Rï¿½cupï¿½re le tag du PNJ
     [SerializeField] private new string name;
     // Compteur pour suivre le nombre d'interactions avec le PNJ
     private int interactionCount = 0;
@@ -30,6 +30,7 @@ public class dialoguePNJChef : MonoBehaviour
     void Awake()
     {
         LanguageManager.OnLanguageChanged += InitializeDialogue;
+        InputManager.Instance.OnUserActionDialogue += LancerDialogue;
     }
 
     void Start()
@@ -67,14 +68,14 @@ public class dialoguePNJChef : MonoBehaviour
                         key = $"pnj_{name}_boucle_{i}_{j}";
                 }
                 string text = LanguageManager.Instance.GetText(key);
-                if (text == key) // Si le texte retourné est la clé, cela signifie qu'il n'y a plus de texte pour cette catégorie
+                if (text == key) // Si le texte retournï¿½ est la clï¿½, cela signifie qu'il n'y a plus de texte pour cette catï¿½gorie
                 {
                     break;
                 }
                 sentences.Add(text);
                 j++;
             }
-            if (sentences.Count == 0) // Si aucune phrase n'a été ajoutée, on arrête la boucle
+            if (sentences.Count == 0) // Si aucune phrase n'a ï¿½tï¿½ ajoutï¿½e, on arrï¿½te la boucle
             {
                 break;
             }
@@ -84,18 +85,33 @@ public class dialoguePNJChef : MonoBehaviour
         }
     }
 
-    void Update()
+    //void Update()
+    //{
+    //    if (dialogueManager.Instance.fctisDialogueActive() == false && range == true && Input.GetKeyDown(KeyCode.E))
+    //    {
+    //        dialogueManager.Instance.StartDialogueChef(this);
+    //        incrementeInteractionCount(); // Incrï¿½mente le compteur d'interactions pour signifier qu'on a lancï¿½ le premier dialogue
+
+    //        if (IsLastDialogue())
+    //        {
+    //            Finish();
+    //        }
+    //    }
+    //}
+
+    private void LancerDialogue()
     {
-        if (dialogueManager.Instance.fctisDialogueActive() == false && range == true && Input.GetKeyDown(KeyCode.E))
+        if (dialogueManager.Instance.fctisDialogueActive() == false && range == true )
         {
             dialogueManager.Instance.StartDialogueChef(this);
-            incrementeInteractionCount(); // Incrémente le compteur d'interactions pour signifier qu'on a lancé le premier dialogue
+            incrementeInteractionCount(); // Incrï¿½mente le compteur d'interactions pour signifier qu'on a lancï¿½ le premier dialogue
 
             if (IsLastDialogue())
             {
                 Finish();
             }
         }
+
     }
 
     private bool IsLastDialogue()
@@ -126,7 +142,7 @@ public class dialoguePNJChef : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             range = true;
-            dialogueManager.Instance.ShowPanelInteraction();
+            dialogueManager.Instance.ShowPanelInteractionPNJchef(this);
         }
     }
 
@@ -152,6 +168,13 @@ public class dialoguePNJChef : MonoBehaviour
             interactionCount++;
     }
 
+    public void CheckifEnd()
+    {
+        if (IsLastDialogue())
+        {
+            Finish();
+        }
+    }
 }
 
 

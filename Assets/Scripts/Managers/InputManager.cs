@@ -3,14 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using static GameManager;
+using UnityEngine.InputSystem;
+using System.Collections;
+using System;
+
 
 public class InputManager : Singleton<InputManager>
 {
+    public event Action OnUserActionDialogue;
     private UsineAssemblageUI UsineAssemblageUI;
+
+    private bool isMobilePlatform = false;
+
+    private float moveX;
+    private float moveY;
 
     void Start()
     {
         UsineAssemblageUI = GameObject.Find("AssemblyGameUI").GetComponent<UsineAssemblageUI>();
+
+        if (PlatformManager.Instance != null)
+            isMobilePlatform = PlatformManager.Instance.fctisMobile();
+        else
+            Debug.LogWarning("Le PlatformManager n'est pas instancié");
     }
 
         // Update is called once per frame
@@ -99,6 +114,33 @@ public class InputManager : Singleton<InputManager>
                 //print("Clic Up");
                 UsineAssemblageGameManager.Instance.UserClicLeftUp();
             }
+
+            /*********************************/
+            //Ajout version Portable
+
+            if (isMobilePlatform == false)
+            {
+                //pour les mouvement du player
+                moveX = Input.GetAxisRaw("Horizontal");
+                moveY = Input.GetAxisRaw("Vertical");
+                playerMovement.Instance.setMove(moveX, moveY);
+
+                //pour passer au dialogue suivant
+                if (dialogueManager.Instance.fctisDialogueActive() && Input.GetKeyDown(KeyCode.Space))
+                {
+                    dialogueManager.Instance.DisplayNextSentence();
+                }
+
+                //pour les dialogue
+                if (dialogueManager.Instance.fctisDialogueActive() == false && Input.GetKeyDown(KeyCode.E))
+                    OnUserActionDialogue?.Invoke();
+
+            }
+            else
+            {
+            }
+
+
         }
     }
 }
