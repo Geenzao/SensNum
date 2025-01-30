@@ -102,7 +102,9 @@ public class dialoguePNJ : MonoBehaviour
 
     private void Finish()
     {
-        if(!finishAlreadyReached)
+        print("ON EST dans finish");
+
+        if (!finishAlreadyReached)
         {
             finishAlreadyReached = true;
             if(changePathState)
@@ -125,7 +127,6 @@ public class dialoguePNJ : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             range = false;
-            print("OnTriggerExit2D");
             dialogueManager.Instance.HidePanelInteraction();
             dialogueManager.Instance.EndDialogue();
         }
@@ -143,6 +144,13 @@ public class dialoguePNJ : MonoBehaviour
             interactionCount++;
     }
 
+    public void CheckifEnd()
+    {
+        if (IsLastDialogue())
+        {
+            Finish();
+        }
+    }
 }
 
 

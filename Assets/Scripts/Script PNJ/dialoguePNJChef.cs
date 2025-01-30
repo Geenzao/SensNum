@@ -168,6 +168,13 @@ public class dialoguePNJChef : MonoBehaviour
             interactionCount++;
     }
 
+    public void CheckifEnd()
+    {
+        if (IsLastDialogue())
+        {
+            Finish();
+        }
+    }
 }
 
 

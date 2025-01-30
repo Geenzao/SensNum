@@ -47,6 +47,8 @@ public class MouvementPNJ : MonoBehaviour
     private bool hasArrived = false;
     private float EcartToDestination = 0.0f; //pour que tous les PNJ ne s'arrête pas à la même ligne
 
+
+
     private enum PNJState { Idle, ActionSpecific, Moving }
     private PNJState currentState = PNJState.Idle;
 
@@ -86,8 +88,11 @@ public class MouvementPNJ : MonoBehaviour
 
     void Update()
     {
-        if (ThisPnjSpeakToPlayer)
+        if (ThisPnjSpeakToPlayer && currentState != PNJState.Idle)
             SetState(PNJState.Idle);
+
+        if (ThisPnjSpeakToPlayer == true)
+            return;
 
         if(currentStateManif == PNJ_StateManif.manif)
         {

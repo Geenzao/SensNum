@@ -50,9 +50,16 @@ public class lastPNJDialogueContener
     public void incrementInteractionCount()
     {
         if (pnj != null)
+        {
             pnj.incrementeInteractionCount();
+            pnj.CheckifEnd();
+
+        }
         else if (pnjChef != null)
+        {
             pnjChef.incrementeInteractionCount();
+            pnjChef.CheckifEnd();
+        }
     }
 }
 
@@ -96,6 +103,7 @@ public class dialogueManager : Singleton<dialogueManager>
         btnInteraction.onClick.AddListener(() =>
         {
             print("On a lické sur le btn");
+            print(lastPNJ.getTypeDialogue());
             if (lastPNJ.getTypeDialogue() == 0)
                 StartDialogue(lastPNJ.getLastPNJnormal());
             else if (lastPNJ.getTypeDialogue() == 1)
@@ -156,7 +164,6 @@ public class dialogueManager : Singleton<dialogueManager>
     public void StartDialogueChef(dialoguePNJChef diag)
     {
         aPNJChefaParler = true;
-        print("StartDialogueChef");
         //pour cacher le bouton ou le texte d'interaction
         HidePanelInteraction();
 
@@ -171,6 +178,7 @@ public class dialogueManager : Singleton<dialogueManager>
         isDialogueActive = true;
         qSentences.Clear();
         // On affiche l'UI du dialogue
+        print("panel dialogue afficher");
         dialoguePanelUI.SetActive(true);
         int nbInteraction = diag.getInteractionCount();
         if (nbInteraction < diag.listDialogue.Count)
@@ -217,7 +225,7 @@ public class dialogueManager : Singleton<dialogueManager>
 
     public void ShowPanelInteractionPNJchef(dialoguePNJChef pnjChef = null )
     {
-        if (pnjChef == null)
+        if (pnjChef != null)
         lastPNJ.setLastPNJchef(pnjChef);
 
         if(pnjChef != null)
