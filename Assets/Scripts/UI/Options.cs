@@ -75,25 +75,33 @@ public class Options : MonoBehaviour
 
     private void InitializeLanguageDropdown()
     {
-        // Récupérer la liste des langues disponibles
-        List<string> languages = LanguageManager.Instance.GetLanguages();
-
-        // Vider les options actuelles du dropdown
-        languageDropdown.ClearOptions();
-
-        // Ajouter les langues disponibles au dropdown
-        languageDropdown.AddOptions(languages);
-
-        // Définir la langue actuelle comme sélectionnée dans le dropdown
-        string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
-        int currentLanguageIndex = languages.IndexOf(currentLanguage);
-
-        if (currentLanguageIndex >= 0)
-        {
-            languageDropdown.value = currentLanguageIndex;
-            languageDropdown.RefreshShownValue();
-        }
+        // Attendre le chargement de la liste des langues
+        StartCoroutine(LoadLanguagesDropdown());
     }
+
+    private IEnumerator LoadLanguagesDropdown()
+    {
+        // Attendre la liste des langues depuis LanguageManager
+        yield return LanguageManager.Instance.LoadLanguagesList(languages =>
+        {
+            // Vider les options actuelles du dropdown
+            languageDropdown.ClearOptions();
+
+            // Ajouter les langues disponibles au dropdown
+            languageDropdown.AddOptions(languages);
+
+            // Définir la langue actuelle comme sélectionnée dans le dropdown
+            string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
+            int currentLanguageIndex = languages.IndexOf(currentLanguage);
+
+            if (currentLanguageIndex >= 0)
+            {
+                languageDropdown.value = currentLanguageIndex;
+                languageDropdown.RefreshShownValue();
+            }
+        });
+    }
+
 
     private void OnLanguageDropdownValueChanged(int index)
     {

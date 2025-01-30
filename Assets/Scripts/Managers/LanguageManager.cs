@@ -18,6 +18,13 @@ public class LanguageData
     public List<LanguageEntry> entries;
 }
 
+[Serializable]
+public class LanguageList
+{
+    public List<string> languages;
+}
+
+
 public class LanguageManager : Singleton<LanguageManager>
 {
     public event Action OnLanguageChanged;
@@ -40,6 +47,7 @@ public class LanguageManager : Singleton<LanguageManager>
                 if (success)
                 {
                     currentLanguage = newLanguage;
+                    Debug.LogWarning("Language changed to: " + currentLanguage);
                     OnLanguageChanged?.Invoke(); // Déclenchement de l'événement
                 }
             }));
@@ -110,24 +118,33 @@ public class LanguageManager : Singleton<LanguageManager>
         return key;
     }
 
-    public List<string> GetLanguages()
+    public void GetLanguages(Action<List<string>> callback)
     {
-        List<string> languages = new List<string>();
-        string directoryPath = Path.Combine(Application.streamingAssetsPath, languageFolderPath);
+        StartCoroutine(LoadLanguagesList(callback));
+    }
 
-        if (Directory.Exists(directoryPath))
+
+    public IEnumerator LoadLanguagesList(Action<List<string>> callback)
+    {
+        string path = Path.Combine(Application.streamingAssetsPath, languageFolderPath, "languages.json");
+
+        using (UnityWebRequest request = UnityWebRequest.Get(path))
         {
-            foreach (var file in Directory.GetFiles(directoryPath, "*.json"))
+            yield return request.SendWebRequest();
+
+            if (request.result == UnityWebRequest.Result.Success)
             {
-                languages.Add(Path.GetFileNameWithoutExtension(file));
+                LanguageList data = JsonUtility.FromJson<LanguageList>(request.downloadHandler.text);
+                callback(data.languages);
+            }
+            else
+            {
+                Debug.LogError("Error loading language list: " + request.error);
+                callback(new List<string> { "en" });
             }
         }
-        else
-        {
-            Debug.LogError("Languages directory not found: " + directoryPath);
-        }
-        return languages;
     }
+
 
     public string GetCurrentLanguage()
     {

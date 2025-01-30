@@ -158,6 +158,7 @@ public class GameManager : Singleton<GameManager>
             return;
         }
         ao.completed += OnLoadOperationComplete;
+        LanguageManager.Instance.ChangeLanguage(LanguageManager.Instance.GetCurrentLanguage());
         //Adds a lambda function to the completed event of the AsyncOperation
         //This lambda function updates the GameState to RUNNING when the loading is finished:
         if (updateGameState) //sera exec dans l'ordre ???
@@ -165,7 +166,9 @@ public class GameManager : Singleton<GameManager>
             ao.completed += (AsyncOperation ao) =>
             {
                 if (_loadOperations.Count == 0)
+                {
                     UpdateGameState(GameState.RUNNING);
+                }
             };
         }
         _loadOperations.Add(ao);
@@ -186,7 +189,6 @@ public class GameManager : Singleton<GameManager>
          * - Une ic�ne de chargement appara�t en bas � droite
          * Quand ce chargement est termin�, rien ne se passe
          * */
-
     }
 
     /*\brief Should be called when an loading level AsyncOperation finished its job.
@@ -296,6 +298,7 @@ public class GameManager : Singleton<GameManager>
         _loadOperations.Add(ao);
         _currentLevelName = levelName;
         OnLoadingStarted.Invoke(_currentLevelName);
+        LanguageManager.Instance.ChangeLanguage(LanguageManager.Instance.GetCurrentLanguage());
     }
 
     private void PositionPlayerFromSave()
