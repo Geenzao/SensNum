@@ -6,6 +6,7 @@ using System.Net.Mail;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 //\warning On va avoir un probl�me sur ce script quand on va vouloir faire une animation dans le menu principal
@@ -252,9 +253,8 @@ public class GameManager : Singleton<GameManager>
         // Sérialisez cette instance en JSON
         string json = JsonUtility.ToJson(saveData);
 
-        // Enregistrez le JSON dans le fichier
-        string filePath = Path.Combine(Application.streamingAssetsPath, "Data/save.json");
-        File.WriteAllText(filePath, json);
+        // Utilisez UnityWebRequest pour envoyer les données au serveur
+        StartCoroutine(SendSaveDataToServer(json));
 
         // Déchargez le niveau actuel
         if (!string.IsNullOrEmpty(levelName))
@@ -262,6 +262,27 @@ public class GameManager : Singleton<GameManager>
             UnloadLevel(levelName);
         }
     }
+
+    private IEnumerator SendSaveDataToServer(string json)
+    {
+        string url = Path.Combine(Application.streamingAssetsPath, "Data/save.json"); // URL de ton serveur où les données sont envoyées
+
+        UnityWebRequest www = UnityWebRequest.Put(url, json);
+        www.SetRequestHeader("Content-Type", "application/json");
+
+        // Attendre la réponse du serveur
+        yield return www.SendWebRequest();
+
+        if (www.result == UnityWebRequest.Result.Success)
+        {
+            Debug.Log("Save data successfully sent.");
+        }
+        else
+        {
+            Debug.LogError("Error while sending save data: " + www.error);
+        }
+    }
+
 
     public void LoadLevelAndPositionPlayer(string levelName, bool updateGameState = true)
     {
@@ -282,9 +303,9 @@ public class GameManager : Singleton<GameManager>
             return;
         }
         ao.completed += OnLoadOperationComplete;
-        // Adds a lambda function to the completed event of the AsyncOperation
-        // This lambda function updates the GameState to RUNNING when the loading is finished:
-        if (updateGameState) // sera exec dans l'ordre ???
+
+        // On ajoute un callback pour positionner le joueur après avoir chargé le niveau
+        if (updateGameState)
         {
             ao.completed += (AsyncOperation ao) =>
             {
@@ -303,15 +324,28 @@ public class GameManager : Singleton<GameManager>
 
     private void PositionPlayerFromSave()
     {
-        string filePath = Path.Combine(Application.streamingAssetsPath, "Data/save.json");
-        if (File.Exists(filePath))
+        // Remplacer la lecture locale par une requête pour obtenir les données du serveur
+        StartCoroutine(GetSaveDataFromServer());
+    }
+
+    private IEnumerator GetSaveDataFromServer()
+    {
+        string url = Path.Combine(Application.streamingAssetsPath, "Data/save.json"); // URL de ton serveur où les données sont envoyées
+
+        UnityWebRequest www = UnityWebRequest.Get(url);
+
+        // Attendre la réponse du serveur
+        yield return www.SendWebRequest();
+
+        if (www.result == UnityWebRequest.Result.Success)
         {
-            string json = File.ReadAllText(filePath);
+            // On désérialise les données reçues depuis le serveur
+            string json = www.downloadHandler.text;
             SaveData saveData = JsonUtility.FromJson<SaveData>(json);
 
             float x = saveData.playerPosition.x;
             float y = saveData.playerPosition.y;
-            LoadLevelAndPositionPlayerCoroutine();
+
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
             {
@@ -324,14 +358,8 @@ public class GameManager : Singleton<GameManager>
         }
         else
         {
-            Debug.LogError("Save file not found.");
+            Debug.LogError("Error while loading save data: " + www.error);
         }
-    }
-
-    //Faire une coroutine pour attendre que le joueur soit bien positionné avant de continuer le chargement
-    private IEnumerator LoadLevelAndPositionPlayerCoroutine()
-    {
-        yield return new WaitForSeconds(.5f);
     }
 
     /*\brief Should be called when an unloading level AsyncOperation finished its job.
