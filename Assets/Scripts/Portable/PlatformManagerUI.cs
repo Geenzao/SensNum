@@ -41,11 +41,15 @@ public class PlatformManagerUI : Menu
             Debug.Log("On affiche le joystick");
         else
             Debug.Log("On n'affiche PAS le joystick");
+
+        //On ne fait pas de snap  avec les joystick
+        joystick.SnapX = true;
+        joystick.SnapY = true;
     }
 
     private void Update()
     {
-        if(UIManager.CurrentMenuState == UIManager.MenuState.None && playerMovement.Instance != null)
+        if (isMobile  && UIManager.CurrentMenuState == UIManager.MenuState.None && playerMovement.Instance != null)
             playerMovement.Instance.setMove(joystick.Horizontal, joystick.Vertical);
     }
 }

@@ -34,11 +34,7 @@ public class playerMovement : Singleton<playerMovement>
     // Update is called once per frame
     void Update()
     {
-        if (!isMobilePlatform)
-        {
-            moveX = Input.GetAxisRaw("Horizontal");
-            moveY = Input.GetAxisRaw("Vertical");
-        }
+
 
         //Si on veut bouger seulement verticalement et horizontalement
         /* 

@@ -6,12 +6,61 @@ using UnityEngine.UI;
 using static GameManager;
 
 
+//Cette classe sert à garder en mémoire le dialogue du dernière interaction avec un PNJ
+public class lastPNJDialogueContener
+{
+    public dialoguePNJ pnj = null;
+    public dialoguePNJChef pnjChef = null;
+
+    public void setLastPNJnormal(dialoguePNJ pnj)
+    {
+        this.pnj = pnj; //on set le nouveeau dialogue
+        this.pnjChef = null; //on set le dialogue chef à null pour dire que ce n'est plus le dernier
+    }
+
+    public void setLastPNJchef(dialoguePNJChef pnjChef)
+    {
+        this.pnjChef = pnjChef;
+        this.pnj = null;
+    }
+
+    public dialoguePNJ getLastPNJnormal()
+    {
+        return pnj;
+    }
+
+    public dialoguePNJChef getLastPNJchef()
+    {
+        return pnjChef;
+    }
+
+    //pour savoir c'est quel type de dialogue qui est le dernier
+    // 0 = dialogue normal
+    // 1 = dialogue chef
+    public int getTypeDialogue()
+    {
+        if (pnj != null)
+            return 0;
+        else if (pnjChef != null)
+            return 1;
+        else
+            return -1;
+    }
+}
+
+
 public class dialogueManager : Singleton<dialogueManager>
 {
     public TextMeshProUGUI interactionKey;
     public TextMeshProUGUI dialogueTextUI; //texte qui serra modifi  avec les phrases des PNJ
     [SerializeField] private GameObject dialoguePanelUI; //Object UI du dialogue, ex : paneau gris ou appara t les phrase
     [SerializeField] private GameObject PanelUITextInteraction;
+
+    //pour le portable
+    public bool isMobilePlatform = false;
+    public Button btnInteraction; //pour le bouton d'interaction
+    public GameObject textInteraction; //pour le texte E 
+    private lastPNJDialogueContener lastPNJ = new lastPNJDialogueContener();
 
     private bool isDialogueActive = false;
     private Queue<string> qSentences;
@@ -31,15 +80,26 @@ public class dialogueManager : Singleton<dialogueManager>
         dialoguePanelUI.SetActive(false);
 
         qSentences = new Queue<string>();
+        isMobilePlatform = PlatformManager.Instance.fctisMobile();
+
+        btnInteraction.onClick.AddListener(() =>
+        {
+            if (lastPNJ.getTypeDialogue() == 0)
+                StartDialogue(lastPNJ.getLastPNJnormal());
+            else if (lastPNJ.getTypeDialogue() == 1)
+                StartDialogueChef(lastPNJ.getLastPNJchef());
+            else
+                Debug.LogWarning("Il n'y a pas de dialogue à afficher");
+        });
     }
 
-    private void Update()
-    {
-        if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
-        {
-            DisplayNextSentence();
-        }
-    }
+    //private void Update()
+    //{
+    //    if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        DisplayNextSentence();
+    //    }
+    //}
 
     public void StartDialogue(dialoguePNJ diag)
     {
@@ -111,8 +171,37 @@ public class dialogueManager : Singleton<dialogueManager>
         DisplayNextSentence();
     }
 
-    public void ShowPanelInteraction()
+    public void ShowPanelInteractionPNJnormal(dialoguePNJ pnj)
     {
+        lastPNJ.setLastPNJnormal(pnj);
+        //pour le portable, on affiche l'interaction en fonction de portable ou non
+        if (isMobilePlatform == true)
+        {
+            btnInteraction.gameObject.SetActive(true);
+            textInteraction.SetActive(false);
+        }
+        else
+        {
+            btnInteraction.gameObject.SetActive(false);
+            textInteraction.SetActive(true);
+        }
+        PanelUITextInteraction.SetActive(true);
+    }
+
+    public void ShowPanelInteractionPNJchef(dialoguePNJChef pnjChef )
+    {
+        lastPNJ.setLastPNJchef(pnjChef);
+        //pour le portable, on affiche l'interaction en fonction de portable ou non
+        if (isMobilePlatform == true)
+        {
+            btnInteraction.gameObject.SetActive(true);
+            textInteraction.SetActive(false);
+        }
+        else
+        {
+            btnInteraction.gameObject.SetActive(false);
+            textInteraction.SetActive(true);
+        }
         PanelUITextInteraction.SetActive(true);
     }
 

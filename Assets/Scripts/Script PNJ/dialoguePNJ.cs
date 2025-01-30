@@ -30,6 +30,7 @@ public class dialoguePNJ : MonoBehaviour
     void Awake()
     {
         LanguageManager.Instance.OnLanguageChanged += InitializeDialogue;
+        InputManager.Instance.OnUserActionDialogue += LancerDialogue;
     }
 
     void Start()
@@ -66,9 +67,23 @@ public class dialoguePNJ : MonoBehaviour
         }
     }
 
-    void Update()
+    //void Update()
+    //{
+    //    if (dialogueManager.Instance.fctisDialogueActive() == false && range == true && Input.GetKeyDown(KeyCode.E))
+    //    {
+    //        dialogueManager.Instance.StartDialogue(this);
+    //        incrementeInteractionCount(); // Incrémente le compteur d'interactions pour signifier qu'on a lancé le premier dialogue
+
+    //        if (IsLastDialogue())
+    //        {
+    //            Finish();
+    //        }
+    //    }
+    //}
+
+    private void LancerDialogue()
     {
-        if (dialogueManager.Instance.fctisDialogueActive() == false && range == true && Input.GetKeyDown(KeyCode.E))
+        if(dialogueManager.Instance.fctisDialogueActive() == false && range == true)
         {
             dialogueManager.Instance.StartDialogue(this);
             incrementeInteractionCount(); // Incrémente le compteur d'interactions pour signifier qu'on a lancé le premier dialogue
@@ -101,7 +116,7 @@ public class dialoguePNJ : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             range = true;
-            dialogueManager.Instance.ShowPanelInteraction();
+            dialogueManager.Instance.ShowPanelInteractionPNJnormal(this);
         }
     }
 
