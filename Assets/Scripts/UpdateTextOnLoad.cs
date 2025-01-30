@@ -6,6 +6,8 @@ public class UpdateTextOnLoad : MonoBehaviour
     void Start()
     {
         LanguageManager.InvokeOnLanguageChange();
+        if(GameObject.FindGameObjectWithTag("Player"))
+            CameraFollow.Instance.AttachToPlayer();
         Destroy(gameObject);
     }
 }

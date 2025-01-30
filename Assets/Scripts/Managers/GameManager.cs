@@ -70,18 +70,8 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private GameObject[] SystemPrefabs;
     private List<GameObject> _instanciedSystemPrefabs;
 
-    [System.Serializable]
-    public class PlayerPosition
-    {
-        public float x;
-        public float y;
-    }
-
-    [System.Serializable]
-    public class SaveData
-    {
-        public PlayerPosition playerPosition;
-    }
+    private float playerX;
+    private float playerY;
 
     private void Start()
     {
@@ -240,219 +230,34 @@ public class GameManager : Singleton<GameManager>
 
     public void UnloadAndSavePosition(string levelName, float x, float y, bool updateGameState = true)
     {
-#if UNITY_WEBGL
-        // Créez une instance de SaveData avec les nouvelles coordonnées
-        SaveData saveData = new SaveData
-        {
-            playerPosition = new PlayerPosition
-            {
-                x = x,
-                y = y
-            }
-        };
+        playerX = x;
+        playerY = y;
 
-        // Sérialisez cette instance en JSON
-        string json = JsonUtility.ToJson(saveData);
-
-        // Utilisez UnityWebRequest pour envoyer les données au serveur
-        StartCoroutine(SendSaveDataToServer(json));
+        Debug.Log("Save data: " + playerX + " " + playerY);
 
         // Déchargez le niveau actuel
         if (!string.IsNullOrEmpty(levelName))
         {
             UnloadLevel(levelName);
-        }
-#else
-        // Créez une instance de SaveData avec les nouvelles coordonnées
-        SaveData saveData = new SaveData
-        {
-            playerPosition = new PlayerPosition
-            {
-                x = x,
-                y = y
-            }
-        };
-
-        // Sérialisez cette instance en JSON
-        string json = JsonUtility.ToJson(saveData);
-
-        // Enregistrez le JSON dans le fichier
-        string filePath = Path.Combine(Application.streamingAssetsPath, "Data/save.json");
-        File.WriteAllText(filePath, json);
-
-        // Déchargez le niveau actuel
-        if (!string.IsNullOrEmpty(levelName))
-        {
-            UnloadLevel(levelName);
-        }
-#endif
-    }
-
-    private IEnumerator SendSaveDataToServer(string json)
-    {
-        string url = Path.Combine(Application.streamingAssetsPath, "Data/save.json"); // URL de ton serveur où les données sont envoyées
-
-        UnityWebRequest www = UnityWebRequest.Put(url, json);
-        www.SetRequestHeader("Content-Type", "application/json");
-
-        // Attendre la réponse du serveur
-        yield return www.SendWebRequest();
-
-        if (www.result == UnityWebRequest.Result.Success)
-        {
-            Debug.Log("Save data successfully sent.");
-        }
-        else
-        {
-            Debug.LogError("Error while sending save data: " + www.error);
         }
     }
 
     public void LoadLevelAndPositionPlayer(string levelName, bool updateGameState = true)
     {
-#if UNITY_WEBGL
-        if (_loadOperations.Count != 0)
-        {
-            Debug.LogWarning("There's already a loading operation. Please wait for it to finish.");
-            return;
-        }
-        else if (_currentLevelName != string.Empty)
-        {
-            Debug.LogWarning("There's already a loaded level. Please unload it before loading another one.");
-            return;
-        }
-        AsyncOperation ao = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
-        if (ao == null)
-        {
-            Debug.LogError("Unable to load level " + levelName + ". Did you check that you've made no mistakes ?");
-            return;
-        }
-        ao.completed += OnLoadOperationComplete;
-
-        // On ajoute un callback pour positionner le joueur après avoir chargé le niveau
-        if (updateGameState)
-        {
-            ao.completed += (AsyncOperation ao) =>
-            {
-                if (_loadOperations.Count == 0)
-                {
-                    UpdateGameState(GameState.RUNNING);
-                    PositionPlayerFromSave();
-                }
-            };
-        }
-        _loadOperations.Add(ao);
-        _currentLevelName = levelName;
-        OnLoadingStarted.Invoke(_currentLevelName);
-        LanguageManager.Instance.ChangeLanguage(LanguageManager.Instance.GetCurrentLanguage());
-#else
-        if (_loadOperations.Count != 0)
-        {
-            Debug.LogWarning("There's already a loading operation. Please wait for it to finish.");
-            return;
-        }
-        else if (_currentLevelName != string.Empty)
-        {
-            Debug.LogWarning("There's already a loaded level. Please unload it before loading another one.");
-            return;
-        }
-        AsyncOperation ao = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
-        if (ao == null)
-        {
-            Debug.LogError("Unable to load level " + levelName + ". Did you check that you've made no mistakes ?");
-            return;
-        }
-        ao.completed += OnLoadOperationComplete;
-        // Adds a lambda function to the completed event of the AsyncOperation
-        // This lambda function updates the GameState to RUNNING when the loading is finished:
-        if (updateGameState) // sera exec dans l'ordre ???
-        {
-            ao.completed += (AsyncOperation ao) =>
-            {
-                if (_loadOperations.Count == 0)
-                {
-                    UpdateGameState(GameState.RUNNING);
-                    PositionPlayerFromSave();
-                }
-            };
-        }
-        _loadOperations.Add(ao);
-        _currentLevelName = levelName;
-        OnLoadingStarted.Invoke(_currentLevelName);
-        LanguageManager.Instance.ChangeLanguage(LanguageManager.Instance.GetCurrentLanguage());
-#endif
+        // Chargez le niveau
+        LoadLevel(levelName, updateGameState);
+        // Déplacez le joueur à la position sauvegardée
+        StartCoroutine(PositionPlayer());
     }
 
-    private void PositionPlayerFromSave()
+    public IEnumerator PositionPlayer()
     {
-#if UNITY_WEBGL
-        // Remplacer la lecture locale par une requête pour obtenir les données du serveur
-        StartCoroutine(GetSaveDataFromServer());
-#else
-        string filePath = Path.Combine(Application.streamingAssetsPath, "Data/save.json");
-        if (File.Exists(filePath))
+        yield return new WaitForSeconds(1.0f);
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
         {
-            string json = File.ReadAllText(filePath);
-            SaveData saveData = JsonUtility.FromJson<SaveData>(json);
-
-            float x = saveData.playerPosition.x;
-            float y = saveData.playerPosition.y;
-            LoadLevelAndPositionPlayerCoroutine();
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null)
-            {
-                player.transform.position = new Vector3(x, y, player.transform.position.z);
-            }
-            else
-            {
-                Debug.LogError("Player object not found.");
-            }
+            player.transform.position = new Vector3(playerX, playerY, 0);
         }
-        else
-        {
-            Debug.LogError("Save file not found.");
-        }
-#endif
-    }
-
-    private IEnumerator GetSaveDataFromServer()
-    {
-        string url = Path.Combine(Application.streamingAssetsPath, "Data/save.json"); // URL de ton serveur où les données sont envoyées
-
-        UnityWebRequest www = UnityWebRequest.Get(url);
-
-        // Attendre la réponse du serveur
-        yield return www.SendWebRequest();
-
-        if (www.result == UnityWebRequest.Result.Success)
-        {
-            // On désérialise les données reçues depuis le serveur
-            string json = www.downloadHandler.text;
-            SaveData saveData = JsonUtility.FromJson<SaveData>(json);
-
-            float x = saveData.playerPosition.x;
-            float y = saveData.playerPosition.y;
-
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null)
-            {
-                player.transform.position = new Vector3(x, y, player.transform.position.z);
-            }
-            else
-            {
-                Debug.LogError("Player object not found.");
-            }
-        }
-        else
-        {
-            Debug.LogError("Error while loading save data: " + www.error);
-        }
-    }
-
-    //Faire une coroutine pour attendre que le joueur soit bien positionné avant de continuer le chargement
-    private IEnumerator LoadLevelAndPositionPlayerCoroutine()
-    {
-        yield return new WaitForSeconds(.5f);
     }
 
     /*\brief Should be called when an unloading level AsyncOperation finished its job.
