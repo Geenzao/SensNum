@@ -352,9 +352,9 @@ MonoBehaviour:
       - "Les habitants des Trois Rivi\xE8res avaient choisi un avenir diff\xE9rent.
         Un avenir o\xF9 l\u2019homme et la nature pouvaient coexister en harmonie"
       - Fin...
-  actualScene: 
-  sceneToLoad: 
-  gameProgressState: 0
+  actualScene: CinematiqueGoodEnd
+  sceneToLoad: credits
+  gameProgressState: 16
 --- !u!114 &981632944 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7597037998941557192, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}
