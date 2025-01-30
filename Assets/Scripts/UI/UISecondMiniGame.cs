@@ -229,7 +229,7 @@ public class UISecondMiniGame : Menu
             Debug.LogError("Text elements are not assigned in the inspector.");
             return;
         }
-        scoreNumberWin.text = texteCptOr.text + " Or\n" + texteCptCu.text + " Cuivre\n" + texteCptLi.text + " Lithium";
+        scoreNumberWin.text = texteCptOr.text + "\n" + texteCptCu.text + "\n" + texteCptLi.text;
         //texteCptOr.text = LanguageManager.Instance.GetText("Or");
         //texteCptCu.text = LanguageManager.Instance.GetText("Cuivre");
         //texteCptLi.text = LanguageManager.Instance.GetText("Lithium");
