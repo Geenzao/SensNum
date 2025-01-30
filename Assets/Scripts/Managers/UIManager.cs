@@ -29,7 +29,8 @@ public class UIManager : Singleton<UIManager>
         SecondGameMine,
         AssemblyGame,
         CandyCrush,
-        Loading
+        Loading,
+        Dialogue
     }
 
     //\brief Currently displayed menu
@@ -38,6 +39,7 @@ public class UIManager : Singleton<UIManager>
     //private static VirtualKeyboard _virtualKeyboard;
 
     [SerializeField] private Camera _UICamera;
+    [SerializeField] private GameObject _UICanvas;
 
     //Le game manager commence � charger un level
     //Logo de chargement s'affiche
@@ -109,6 +111,15 @@ public class UIManager : Singleton<UIManager>
         //    case MenuState.Options:
         //        break;
         //}
+
+        if(newMS == MenuState.Dialogue)
+        {
+            _UICanvas.gameObject.SetActive(false);
+        }
+        else
+        {
+            _UICanvas.gameObject.SetActive(true);
+        }
 
         _currentMenuState = newMS;
 
