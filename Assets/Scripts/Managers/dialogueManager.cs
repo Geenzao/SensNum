@@ -23,7 +23,7 @@ public class dialogueManager : Singleton<dialogueManager>
 
     private void Start()
     {
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
 
         UpdateTexts();
 

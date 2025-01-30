@@ -48,7 +48,7 @@ public class UISecondMiniGame : Menu
         winRetryButton.onClick.AddListener(OnRetryButtonClicked);
         winNextGameButton.onClick.AddListener(OnBackSceneButtonClicked);
 
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
     }
 
     protected override void Start()

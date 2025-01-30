@@ -23,7 +23,7 @@ public class MainMenu : Menu
 
     private void Awake()
     {
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
     }
 
     protected override void Start()

@@ -49,7 +49,7 @@ public class OptionsMenu : Menu
 
         languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
 
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
     }
 
     protected override void Start()

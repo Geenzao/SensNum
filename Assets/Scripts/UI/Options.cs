@@ -43,7 +43,7 @@ public class Options : MonoBehaviour
         languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
 
         // S'abonner à l'événement de changement de langue
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
     }
 
     void Start()

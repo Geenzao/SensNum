@@ -18,7 +18,7 @@ public class ChargementTransition : Menu
 
     private void Awake()
     {
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
     }
 
     protected override void Start()

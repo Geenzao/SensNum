@@ -27,11 +27,16 @@ public class LanguageList
 
 public class LanguageManager : Singleton<LanguageManager>
 {
-    public event Action OnLanguageChanged;
+    public static event Action OnLanguageChanged;
 
     private List<List<string>> currentLanguageDictionary = new List<List<string>>();
     private string currentLanguage = "en"; // Langue par défaut
     private readonly string languageFolderPath = "Languages"; // Dossier où sont stockés les JSON
+
+    public static void InvokeOnLanguageChange()
+    {
+        OnLanguageChanged?.Invoke();
+    }
 
     private void Start()
     {
