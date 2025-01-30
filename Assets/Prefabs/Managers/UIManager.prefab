@@ -7961,6 +7961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _UICamera: {fileID: 3313147495381302755}
+  _UICanvas: {fileID: 3219555717302934009}
 --- !u!1 &3479543619429247519
 GameObject:
   m_ObjectHideFlags: 0
