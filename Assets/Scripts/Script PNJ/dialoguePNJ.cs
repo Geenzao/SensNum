@@ -125,6 +125,7 @@ public class dialoguePNJ : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             range = false;
+            print("OnTriggerExit2D");
             dialogueManager.Instance.HidePanelInteraction();
             dialogueManager.Instance.EndDialogue();
         }
