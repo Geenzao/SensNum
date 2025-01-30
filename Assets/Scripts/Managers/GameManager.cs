@@ -240,6 +240,7 @@ public class GameManager : Singleton<GameManager>
 
     public void UnloadAndSavePosition(string levelName, float x, float y, bool updateGameState = true)
     {
+#if UNITY_WEBGL
         // Créez une instance de SaveData avec les nouvelles coordonnées
         SaveData saveData = new SaveData
         {
@@ -261,6 +262,30 @@ public class GameManager : Singleton<GameManager>
         {
             UnloadLevel(levelName);
         }
+#else
+        // Créez une instance de SaveData avec les nouvelles coordonnées
+        SaveData saveData = new SaveData
+        {
+            playerPosition = new PlayerPosition
+            {
+                x = x,
+                y = y
+            }
+        };
+
+        // Sérialisez cette instance en JSON
+        string json = JsonUtility.ToJson(saveData);
+
+        // Enregistrez le JSON dans le fichier
+        string filePath = Path.Combine(Application.streamingAssetsPath, "Data/save.json");
+        File.WriteAllText(filePath, json);
+
+        // Déchargez le niveau actuel
+        if (!string.IsNullOrEmpty(levelName))
+        {
+            UnloadLevel(levelName);
+        }
+#endif
     }
 
     private IEnumerator SendSaveDataToServer(string json)
@@ -283,9 +308,9 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-
     public void LoadLevelAndPositionPlayer(string levelName, bool updateGameState = true)
     {
+#if UNITY_WEBGL
         if (_loadOperations.Count != 0)
         {
             Debug.LogWarning("There's already a loading operation. Please wait for it to finish.");
@@ -320,12 +345,74 @@ public class GameManager : Singleton<GameManager>
         _currentLevelName = levelName;
         OnLoadingStarted.Invoke(_currentLevelName);
         LanguageManager.Instance.ChangeLanguage(LanguageManager.Instance.GetCurrentLanguage());
+#else
+        if (_loadOperations.Count != 0)
+        {
+            Debug.LogWarning("There's already a loading operation. Please wait for it to finish.");
+            return;
+        }
+        else if (_currentLevelName != string.Empty)
+        {
+            Debug.LogWarning("There's already a loaded level. Please unload it before loading another one.");
+            return;
+        }
+        AsyncOperation ao = SceneManager.LoadSceneAsync(levelName, LoadSceneMode.Additive);
+        if (ao == null)
+        {
+            Debug.LogError("Unable to load level " + levelName + ". Did you check that you've made no mistakes ?");
+            return;
+        }
+        ao.completed += OnLoadOperationComplete;
+        // Adds a lambda function to the completed event of the AsyncOperation
+        // This lambda function updates the GameState to RUNNING when the loading is finished:
+        if (updateGameState) // sera exec dans l'ordre ???
+        {
+            ao.completed += (AsyncOperation ao) =>
+            {
+                if (_loadOperations.Count == 0)
+                {
+                    UpdateGameState(GameState.RUNNING);
+                    PositionPlayerFromSave();
+                }
+            };
+        }
+        _loadOperations.Add(ao);
+        _currentLevelName = levelName;
+        OnLoadingStarted.Invoke(_currentLevelName);
+        LanguageManager.Instance.ChangeLanguage(LanguageManager.Instance.GetCurrentLanguage());
+#endif
     }
 
     private void PositionPlayerFromSave()
     {
+#if UNITY_WEBGL
         // Remplacer la lecture locale par une requête pour obtenir les données du serveur
         StartCoroutine(GetSaveDataFromServer());
+#else
+        string filePath = Path.Combine(Application.streamingAssetsPath, "Data/save.json");
+        if (File.Exists(filePath))
+        {
+            string json = File.ReadAllText(filePath);
+            SaveData saveData = JsonUtility.FromJson<SaveData>(json);
+
+            float x = saveData.playerPosition.x;
+            float y = saveData.playerPosition.y;
+            LoadLevelAndPositionPlayerCoroutine();
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player != null)
+            {
+                player.transform.position = new Vector3(x, y, player.transform.position.z);
+            }
+            else
+            {
+                Debug.LogError("Player object not found.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Save file not found.");
+        }
+#endif
     }
 
     private IEnumerator GetSaveDataFromServer()
@@ -360,6 +447,12 @@ public class GameManager : Singleton<GameManager>
         {
             Debug.LogError("Error while loading save data: " + www.error);
         }
+    }
+
+    //Faire une coroutine pour attendre que le joueur soit bien positionné avant de continuer le chargement
+    private IEnumerator LoadLevelAndPositionPlayerCoroutine()
+    {
+        yield return new WaitForSeconds(.5f);
     }
 
     /*\brief Should be called when an unloading level AsyncOperation finished its job.
