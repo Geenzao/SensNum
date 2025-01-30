@@ -57,7 +57,7 @@ public class UIThirdGameMine : Menu
         winBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);
         /* ---------- Ajout Aymeric Fin ---------- */
 
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
     }
 
     protected override void Start()

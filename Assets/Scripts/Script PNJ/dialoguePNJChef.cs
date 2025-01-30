@@ -29,7 +29,7 @@ public class dialoguePNJChef : MonoBehaviour
 
     void Awake()
     {
-        LanguageManager.Instance.OnLanguageChanged += InitializeDialogue;
+        LanguageManager.OnLanguageChanged += InitializeDialogue;
     }
 
     void Start()

@@ -23,7 +23,7 @@ public class MainMenu : Menu
 
     private void Awake()
     {
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
     }
 
     protected override void Start()
@@ -43,6 +43,7 @@ public class MainMenu : Menu
         if (LanguageManager.Instance != null)
         {
             UpdateTexts();
+            Debug.Log("LanguageManager instance is initialized.");
         }
         else
         {

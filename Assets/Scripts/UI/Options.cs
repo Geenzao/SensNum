@@ -75,12 +75,14 @@ public class Options : MonoBehaviour
 
         if (LanguageManager.Instance != null)
         {
-            LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+            // S'abonner à l'événement de changement de langue
+            LanguageManager.OnLanguageChanged += UpdateTexts;
         }
         else
         {
             Debug.LogError("LanguageManager instance is not initialized.");
         }
+        
     }
 
 
@@ -113,37 +115,33 @@ public class Options : MonoBehaviour
 
     private void InitializeLanguageDropdown()
     {
-        // Récupérer la liste des langues disponibles
-        List<string> languages = LanguageManager.Instance.GetLanguages();
-
-        // Vider les options actuelles du dropdown
-        languageDropdown.ClearOptions();
-
-        // Créer une liste d'options avec les drapeaux
-        List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
-
-        for (int i = 0; i < languages.Count; i++)
-        {
-            TMP_Dropdown.OptionData option = new TMP_Dropdown.OptionData();
-            option.text = languages[i];
-            option.image = languageFlags[i]; // Assurez-vous que l'ordre des drapeaux correspond à l'ordre des langues
-            options.Add(option);
-        }
-
-        // Ajouter les options au dropdown
-        languageDropdown.AddOptions(options);
-
-        // Définir la langue actuelle comme sélectionnée dans le dropdown
-        string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
-        int currentLanguageIndex = languages.IndexOf(currentLanguage);
-
-        if (currentLanguageIndex >= 0)
-        {
-            languageDropdown.value = currentLanguageIndex;
-            languageDropdown.RefreshShownValue();
-            currentLanguageFlag.sprite = languageFlags[currentLanguageIndex]; // Mettre à jour le drapeau de la langue actuelle
-        }
+        // Attendre le chargement de la liste des langues
+        StartCoroutine(LoadLanguagesDropdown());
     }
+
+    private IEnumerator LoadLanguagesDropdown()
+    {
+        // Attendre la liste des langues depuis LanguageManager
+        yield return LanguageManager.Instance.LoadLanguagesList(languages =>
+        {
+            // Vider les options actuelles du dropdown
+            languageDropdown.ClearOptions();
+
+            // Ajouter les langues disponibles au dropdown
+            languageDropdown.AddOptions(languages);
+
+            // Définir la langue actuelle comme sélectionnée dans le dropdown
+            string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
+            int currentLanguageIndex = languages.IndexOf(currentLanguage);
+
+            if (currentLanguageIndex >= 0)
+            {
+                languageDropdown.value = currentLanguageIndex;
+                languageDropdown.RefreshShownValue();
+            }
+        });
+    }
+
 
     private void OnLanguageDropdownValueChanged(int index)
     {

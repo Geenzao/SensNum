@@ -45,7 +45,7 @@ public class UICandyCrush : Menu
         looseRetryButton.onClick.AddListener(OnRetryButtonClicked);
         looseBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);
 
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
     }
 
     protected override void Start()

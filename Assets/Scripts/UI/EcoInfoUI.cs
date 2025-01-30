@@ -22,7 +22,7 @@ public class EcoInfoUI : Menu
 
     private void Awake()
     {
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        LanguageManager.OnLanguageChanged += UpdateTexts;
 
         EcoInfoManager.OnEcoInfoShow += ShowEcoInfo;
         EcoInfoManager.OnEcoInfoHide += HideEcoInfo;
