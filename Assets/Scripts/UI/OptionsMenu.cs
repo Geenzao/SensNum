@@ -14,7 +14,6 @@ public class OptionsMenu : Menu
     [SerializeField] private TextMeshProUGUI sound;
     [SerializeField] private TextMeshProUGUI language;
 
-
     [Header("Button")]
     [SerializeField] private Button quitButton;
 
@@ -27,6 +26,10 @@ public class OptionsMenu : Menu
 
     [Header("Panel")]
     [SerializeField] private GameObject panelOptions;
+
+    [Header("Flags")]
+    [SerializeField] private List<Sprite> languageFlags;
+    [SerializeField] private Image currentLanguageFlag;
 
     private VolumeMusic _paramVolumeMusic;
     private VolumeSounds _paramVolumeSounds;
@@ -100,8 +103,19 @@ public class OptionsMenu : Menu
         // Vider les options actuelles du dropdown
         languageDropdown.ClearOptions();
 
-        // Ajouter les langues disponibles au dropdown
-        languageDropdown.AddOptions(languages);
+        // Créer une liste d'options avec les drapeaux
+        List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
+
+        for (int i = 0; i < languages.Count; i++)
+        {
+            TMP_Dropdown.OptionData option = new TMP_Dropdown.OptionData();
+            option.text = languages[i];
+            option.image = languageFlags[i]; // Assurez-vous que l'ordre des drapeaux correspond à l'ordre des langues
+            options.Add(option);
+        }
+
+        // Ajouter les options au dropdown
+        languageDropdown.AddOptions(options);
 
         // Définir la langue actuelle comme sélectionnée dans le dropdown
         string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
@@ -111,6 +125,7 @@ public class OptionsMenu : Menu
         {
             languageDropdown.value = currentLanguageIndex;
             languageDropdown.RefreshShownValue();
+            currentLanguageFlag.sprite = languageFlags[currentLanguageIndex]; // Mettre à jour le drapeau de la langue actuelle
         }
     }
 
@@ -123,11 +138,11 @@ public class OptionsMenu : Menu
             if (language == selectedLanguage)
             {
                 LanguageManager.Instance.ChangeLanguage(language);
+                currentLanguageFlag.sprite = languageFlags[index]; // Mettre à jour le drapeau de la langue actuelle
                 break;
             }
         }
     }
-
 
     protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
     {
