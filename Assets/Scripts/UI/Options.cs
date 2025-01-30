@@ -24,6 +24,10 @@ public class Options : MonoBehaviour
     [Header("Dropdown")]
     [SerializeField] private TMP_Dropdown languageDropdown;
 
+    [Header("Flags")]
+    [SerializeField] private List<Sprite> languageFlags;
+    [SerializeField] private Image currentLanguageFlag;
+
     private VolumeMusic _paramVolumeMusic;
     private VolumeSounds _paramVolumeSounds;
 
@@ -32,19 +36,53 @@ public class Options : MonoBehaviour
         _paramVolumeMusic = Settings.SettingsManager.GetSettingOfType<VolumeMusic>();
         _paramVolumeSounds = Settings.SettingsManager.GetSettingOfType<VolumeSounds>();
 
-        HandleMusicVolumeChanged(_paramVolumeMusic.GetParam());
+        if (_paramVolumeMusic != null)
+        {
+            HandleMusicVolumeChanged(_paramVolumeMusic.GetParam());
+            _paramVolumeMusic.OnUpdate.AddListener(HandleMusicVolumeChanged);
+        }
+        else
+        {
+            Debug.LogError("VolumeMusic setting is not initialized.");
+        }
 
-        quitButton.onClick.AddListener(OnQuitButtonClicked);
+        if (_paramVolumeSounds != null)
+        {
+            _paramVolumeSounds.OnUpdate.AddListener(HandleSoundVolumeChanged);
+        }
+        else
+        {
+            Debug.LogError("VolumeSounds setting is not initialized.");
+        }
 
-        // On Settings update
-        _paramVolumeMusic.OnUpdate.AddListener(HandleMusicVolumeChanged);
-        _paramVolumeSounds.OnUpdate.AddListener(HandleSoundVolumeChanged);
+        if (quitButton != null)
+        {
+            quitButton.onClick.AddListener(OnQuitButtonClicked);
+        }
+        else
+        {
+            Debug.LogError("Quit button is not assigned.");
+        }
 
-        languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
+        if (languageDropdown != null)
+        {
+            languageDropdown.onValueChanged.AddListener(OnLanguageDropdownValueChanged);
+        }
+        else
+        {
+            Debug.LogError("Language dropdown is not assigned.");
+        }
 
-        // S'abonner à l'événement de changement de langue
-        LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        if (LanguageManager.Instance != null)
+        {
+            LanguageManager.Instance.OnLanguageChanged += UpdateTexts;
+        }
+        else
+        {
+            Debug.LogError("LanguageManager instance is not initialized.");
+        }
     }
+
 
     void Start()
     {
@@ -81,8 +119,19 @@ public class Options : MonoBehaviour
         // Vider les options actuelles du dropdown
         languageDropdown.ClearOptions();
 
-        // Ajouter les langues disponibles au dropdown
-        languageDropdown.AddOptions(languages);
+        // Créer une liste d'options avec les drapeaux
+        List<TMP_Dropdown.OptionData> options = new List<TMP_Dropdown.OptionData>();
+
+        for (int i = 0; i < languages.Count; i++)
+        {
+            TMP_Dropdown.OptionData option = new TMP_Dropdown.OptionData();
+            option.text = languages[i];
+            option.image = languageFlags[i]; // Assurez-vous que l'ordre des drapeaux correspond à l'ordre des langues
+            options.Add(option);
+        }
+
+        // Ajouter les options au dropdown
+        languageDropdown.AddOptions(options);
 
         // Définir la langue actuelle comme sélectionnée dans le dropdown
         string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
@@ -92,6 +141,7 @@ public class Options : MonoBehaviour
         {
             languageDropdown.value = currentLanguageIndex;
             languageDropdown.RefreshShownValue();
+            currentLanguageFlag.sprite = languageFlags[currentLanguageIndex]; // Mettre à jour le drapeau de la langue actuelle
         }
     }
 
@@ -102,6 +152,9 @@ public class Options : MonoBehaviour
 
         // Changer la langue
         LanguageManager.Instance.ChangeLanguage(selectedLanguage);
+
+        // Mettre à jour le drapeau de la langue actuelle
+        currentLanguageFlag.sprite = languageFlags[index];
     }
 
     private void HandleMusicVolumeChanged(float newVal)
