@@ -123,6 +123,10 @@ public class dialoguePNJChef : MonoBehaviour
     {
         if (!finishAlreadyReached)
         {
+            //ON désactive le warning qui indique au joueur que le PNJ a fini de parler
+            if(gameObject.GetComponent<warningPNJ>())
+                gameObject.GetComponent<warningPNJ>().hideWarning();
+
             finishAlreadyReached = true;
             if (GameProgressManager.CurrentGameProgressState == beginingGameProgressState)
             {
@@ -134,7 +138,6 @@ public class dialoguePNJChef : MonoBehaviour
                 if (GameProgressManager.CurrentGameProgressState == endGameProgressState)
                     PathManager.Instance.UpdatePathState(path);
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)

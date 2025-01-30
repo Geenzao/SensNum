@@ -136,82 +136,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8697664475937072839}
     m_Modifications:
-    - target: {fileID: 4795493223802486860, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: c0ca0fba460f4e340a5ef79594a01450, type: 2}
-    - target: {fileID: 4994605309290284456, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Size.x
-      value: 0.7928958
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994605309290284456, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Size.y
-      value: 0.97439384
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994605309290284456, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.027650118
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994605309290284456, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.0000009536743
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994605309290284456, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.7916667
-      objectReference: {fileID: 0}
-    - target: {fileID: 4994605309290284456, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 0.9583333
-      objectReference: {fileID: 0}
-    - target: {fileID: 5141610898760757533, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Size.x
-      value: 0.7916667
-      objectReference: {fileID: 0}
-    - target: {fileID: 5141610898760757533, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Size.y
-      value: 0.9583333
-      objectReference: {fileID: 0}
     - target: {fileID: 5264739743617411063, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
       propertyPath: m_Name
       value: pnj_chefUsineAssemblage
       objectReference: {fileID: 0}
-    - target: {fileID: 5360528527767203507, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Size.x
-      value: 2.617485
-      objectReference: {fileID: 0}
-    - target: {fileID: 5360528527767203507, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Size.y
-      value: 2.4278831
-      objectReference: {fileID: 0}
-    - target: {fileID: 5360528527767203507, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.011849403
-      objectReference: {fileID: 0}
-    - target: {fileID: 5360528527767203507, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.043450356
-      objectReference: {fileID: 0}
-    - target: {fileID: 5360528527767203507, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 0.7916667
-      objectReference: {fileID: 0}
-    - target: {fileID: 5360528527767203507, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.y
-      value: 0.9583333
-      objectReference: {fileID: 0}
-    - target: {fileID: 7857315421838670273, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7857315421838670273, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7857315421838670273, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.751
-      objectReference: {fileID: 0}
+    - target: {fileID: 6839049304617213619, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
+      propertyPath: 'tabPointDestination.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3672387339885337055}
+    - target: {fileID: 6839049304617213619, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
+      propertyPath: 'tabPointDestination.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6635222136254594588}
+    - target: {fileID: 6839049304617213619, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
+      propertyPath: 'tabPointDestination.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8684565224833479837}
     - target: {fileID: 7857315421838670273, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -252,72 +192,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9015082997116826911, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: name
-      value: chefduvillage
+    - target: {fileID: 8040280288233443767, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.018
       objectReference: {fileID: 0}
-    - target: {fileID: 9015082997116826911, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: TextToucheInteractionUI
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9015082997116826911, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: listDialogue.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9015082997116826911, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: listDialogue.Array.data[0].sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9015082997116826911, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      propertyPath: 'listDialogue.Array.data[0].sentences.Array.data[0]'
-      value: "Bienvenue dans notre village, \xE9tranger. Ici, chaque main contribue
-        \xE0 notre survie"
+    - target: {fileID: 8040280288233443767, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.775
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5264739743617411063, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6959551233317592432}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
---- !u!1 &1542741161245399799 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5264739743617411063, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-  m_PrefabInstance: {fileID: 6663346191861136640}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6959551233317592432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542741161245399799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef3585f462331dd4dba57bcc3f8d6732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tabPointDestination:
-  - {fileID: 3672387339885337055}
-  - {fileID: 6635222136254594588}
-  - {fileID: 8684565224833479837}
-  animator: {fileID: 2230959272250834252}
-  currentDestinationIndex: 0
-  isWalking: 1
-  vitesse: 2
-  idleDuration: 0
-  minIdleTime: 2
-  maxIdleTime: 5
-  minActionTime: 3
-  maxActionTime: 6
-  typePNJ: 0
-  initialScale: {x: 0, y: 0, z: 0}
---- !u!95 &2230959272250834252 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4795493223802486860, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}
-  m_PrefabInstance: {fileID: 6663346191861136640}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3562976989125133505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7857315421838670273, guid: 18b8678dee9c6ba4eb749411fb879683, type: 3}

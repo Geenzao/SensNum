@@ -102,10 +102,11 @@ public class dialoguePNJ : MonoBehaviour
 
     private void Finish()
     {
-        print("ON EST dans finish");
-
         if (!finishAlreadyReached)
         {
+            if (gameObject.GetComponent<warningPNJ>())
+                gameObject.GetComponent<warningPNJ>().hideWarning();
+
             finishAlreadyReached = true;
             if(changePathState)
                 PathManager.Instance.UpdatePathState(path);
