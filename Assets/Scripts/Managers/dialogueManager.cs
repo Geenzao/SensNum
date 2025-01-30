@@ -43,6 +43,7 @@ public class dialogueManager : Singleton<dialogueManager>
 
     public void StartDialogue(dialoguePNJ diag)
     {
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.Dialogue);
         playerMovement.Instance.StopPlayerMouvement();
         dialoguePnjRef = diag;
         // On dit au Pnj de s'arrêter parce que le joueur lui parle
@@ -78,6 +79,7 @@ public class dialogueManager : Singleton<dialogueManager>
 
     public void StartDialogueChef(dialoguePNJChef diag)
     {
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.Dialogue);
         playerMovement.Instance.StopPlayerMouvement();
         dialoguePNJChef = diag;
         // On dit au Pnj de s'arrêter parce que le joueur lui parle
@@ -155,6 +157,7 @@ public class dialogueManager : Singleton<dialogueManager>
     public void EndDialogue()
     {
         dialoguePanelUI.SetActive(false);
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
         isDialogueActive = false;
         playerMovement.Instance.ActivePlayerMouvement();
         //On dit au Pnj de reprendre la marche
@@ -168,6 +171,7 @@ public class dialogueManager : Singleton<dialogueManager>
     public void EndDialogueChef()
     {
         dialoguePanelUI.SetActive(false);
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
         isDialogueActive = false;
         playerMovement.Instance.ActivePlayerMouvement();
         //On dit au Pnj de reprendre la marche
