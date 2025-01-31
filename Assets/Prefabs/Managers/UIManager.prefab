@@ -17327,6 +17327,7 @@ MonoBehaviour:
   languageFlags:
   - {fileID: 295499325015196379, guid: 75ff428962241a84aa2f2a7a31cc2e3c, type: 3}
   - {fileID: -3089401738558927306, guid: 6b5656a255fe9c14fa200a0808590383, type: 3}
+  - {fileID: 6563660245857761840, guid: 7874c4ab17cc1d048a5ff25624ed98a0, type: 3}
   currentLanguageFlag: {fileID: 5886201795494064241}
 --- !u!1 &7604016576051618827
 GameObject:
@@ -19118,6 +19119,7 @@ MonoBehaviour:
   languageFlags:
   - {fileID: 295499325015196379, guid: 75ff428962241a84aa2f2a7a31cc2e3c, type: 3}
   - {fileID: -3089401738558927306, guid: 6b5656a255fe9c14fa200a0808590383, type: 3}
+  - {fileID: 6563660245857761840, guid: 7874c4ab17cc1d048a5ff25624ed98a0, type: 3}
   currentLanguageFlag: {fileID: 1025086875442163158}
 --- !u!1 &8314902645543355463
 GameObject:
