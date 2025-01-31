@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using System;
+using static PathManager;
 
 
 //Cette classe permet de gérer les informations écologiques qui seront affichées au joueur pendant la partie
@@ -15,21 +16,21 @@ public class EcoInfoManager : Singleton<EcoInfoManager>
     public static event Action OnEcoInfoHide;
 
     //Tab de phrase EcoInfo a afficher au joueur pendant la parti
-    private string[] tabEcoInfo = {
-    "Chaque smartphone produit nécessite 44,4 kg de matières premières. Pensez à prolonger leur durée de vie !",
-    "Le recyclage des équipements numériques consomme beaucoup d'eau et d'énergie. Réduire nos achats est la clé.",
-    "L'extraction minière pour les métaux rares pollue l'eau et détruit des écosystèmes entiers.",
-    "Utilisez le mode économie d'énergie pour réduire la consommation de vos appareils électroniques.",
-    "Les centres de données consomment près de 2% de l'électricité mondiale. Préférez le stockage local.",
-    "Recycler ne suffit pas : seuls 20% des déchets électroniques mondiaux sont recyclés correctement.",
-    "Éteignez complètement les appareils que vous n'utilisez pas pour économiser de l'énergie.",
-    "Privilégier lachat de matériel reconditionné réduit la demande de nouvelles matières premières.",
-    "Partager ses équipements numériques prolonge leur durée de vie et réduit l'impact écologique.",
-    "L'envoi d'un email avec pièce jointe de 1 Mo produit environ 19 g de CO2."
-    };
+    public List<List<string>> lstEcoInfo;
     
-    private int[] tabIndexShowed; //pour ne pas afficher deux fois la même EcoInfo
+    private List<List<int>> lstIndexShowed; //pour ne pas afficher deux fois la même EcoInfo
     private int indexEcoInfo = 0; //pour stocker l'index de l'EcoInfo actuellement affiché
+
+    private List<string> lstPhraseIndex = new List<string>();
+
+
+    //Pour les possibilité on a 
+    //0 = village
+    //1 = mine
+    //2 = assembly
+    //3 = recyclage
+    //-1 = rien
+    private int currentategoryPhraseIndex = 0;
 
     //Pour le timer
     private float timeBetweenEcoInfo = 90f; //Temps = 1min30
@@ -46,16 +47,27 @@ public class EcoInfoManager : Singleton<EcoInfoManager>
 
     void Start()
     {
-        //On initialise le tableau à -1
-        tabIndexShowed = new int[tabEcoInfo.Length];
-        for (int i = 0; i < tabIndexShowed.Length; i++)
+        InitializeEcoInfo();
+
+        //On initialise le lstIndexShowed à -1
+        lstIndexShowed = new List<List<int>>();
+        for (int a = 0; a < lstEcoInfo.Count; a++)
         {
-            tabIndexShowed[i] = -1;
+            lstIndexShowed.Add(new List<int>());
+            for (int j = 0; j < lstEcoInfo[a].Count; j++)
+            {
+                lstIndexShowed[a].Add(-1);
+            }
         }
     }
 
     void Update()
     {
+        if(UIManager.CurrentMenuState != UIManager.MenuState.None)
+        {
+            return;
+        }
+
         if (isEcoInfoDisplayed == false)
         {
             timer += Time.deltaTime;
@@ -78,18 +90,52 @@ public class EcoInfoManager : Singleton<EcoInfoManager>
         }
     }
 
+    public void InitializeEcoInfo()
+    {
+        lstPhraseIndex.Add("village");
+        lstPhraseIndex.Add("mine");
+        lstPhraseIndex.Add("assembly");
+        lstPhraseIndex.Add("recyclage");
+
+        currentategoryPhraseIndex = 0;
+
+        //on vide le tableau d'éco in fo
+        lstEcoInfo = new List<List<string>>();
+
+        for(int y =0; y < lstPhraseIndex.Count; y++)
+        {
+            lstEcoInfo.Add(new List<string>());
+            int k = 0;
+            while (true)
+            {
+                string key = $"EcoInfo_{lstPhraseIndex[y]}_{k}";
+                string text = LanguageManager.Instance.GetText(key);
+                if (text == key) // Si le texte retourné est la clé, cela signifie qu'il n'y a plus de texte pour cette catégorie
+                {
+                    break;
+                }
+                lstEcoInfo[y].Add(text);
+                k++;
+            }
+        }
+
+
+    }
+
     private void ShowEcoInfo()
     {
         //On vérifie s'il y a encore des phrase à afficher
         if (IsThereStillEcoInfoToShow() == false)
             return;
 
+        InitializeEcoInfo();
+
         //On défini l'indice du prochain message à afficher
-        int indexToShow = UnityEngine.Random.Range(0, tabEcoInfo.Length);
-        while (tabIndexShowed[indexToShow] != -1)
+        int indexToShow = UnityEngine.Random.Range(0, lstEcoInfo[currentategoryPhraseIndex].Count);
+        while (lstIndexShowed[currentategoryPhraseIndex][indexToShow] != -1)
         {
             indexToShow += 1;
-            if (indexToShow >= tabEcoInfo.Length)
+            if (indexToShow >= lstEcoInfo[currentategoryPhraseIndex].Count)
             {
                 indexToShow = 0;
             }
@@ -97,8 +143,8 @@ public class EcoInfoManager : Singleton<EcoInfoManager>
         indexEcoInfo = indexToShow;
 
         //On stok les message a afficher
-        tabIndexShowed[indexToShow] = 1;
-        fullMessage = tabEcoInfo[indexToShow]; // Stocke le message complet
+        lstIndexShowed[currentategoryPhraseIndex][indexToShow] = 1;
+        fullMessage = lstEcoInfo[currentategoryPhraseIndex][indexToShow]; // Stocke le message complet
         // Affiche les 25 premiers caractères
         partialMessage = fullMessage.Length > 25 ? fullMessage.Substring(0, 25) + "..." : fullMessage;
         isFullMessageDisplayed = false;
@@ -112,9 +158,10 @@ public class EcoInfoManager : Singleton<EcoInfoManager>
     //pour savoir s'il reste encore des phrase à afficher
     public bool IsThereStillEcoInfoToShow()
     {
-        for (int i = 0; i < tabIndexShowed.Length; i++)
+        currentategoryPhraseIndex = GetcurrentategoryPhraseIndex();
+        for (int i = 0; i < lstIndexShowed[currentategoryPhraseIndex].Count; i++)
         {
-            if (tabIndexShowed[i] == -1)
+            if (lstIndexShowed[currentategoryPhraseIndex][i] == -1)
             {
                 return true;
             }
@@ -122,6 +169,30 @@ public class EcoInfoManager : Singleton<EcoInfoManager>
         return false;
     }
 
+    public int GetcurrentategoryPhraseIndex()
+    {
+
+        if(PathManager.CurrentPathState == PathState.Village1 ||
+           PathManager.CurrentPathState == PathState.Village2 ||
+           PathManager.CurrentPathState == PathState.Village3)
+        {
+            return 0;
+        }
+        else if (PathManager.CurrentPathState == PathState.Mine)
+        {
+            return 1;
+        }
+        else if (PathManager.CurrentPathState == PathState.AssemblyFactory)
+        {
+            return 2;
+        }
+        else if (PathManager.CurrentPathState == PathState.RecycleFactory)
+        {
+            return 3;
+        }
+        else
+            return -1;
+    }
 
     //fonction pour mettre à jour le param : isFullMessageDisplayed
     public void SetIsFullMessageDisplayed(bool value)
@@ -138,7 +209,7 @@ public class EcoInfoManager : Singleton<EcoInfoManager>
     //pour donne tout le message
     public string GetFullMessage()
     {
-        return tabEcoInfo[indexEcoInfo];
+        return lstEcoInfo[currentategoryPhraseIndex][indexEcoInfo];
     }
 
     //pour avoir le message partiel
