@@ -485,6 +485,7 @@ MonoBehaviour:
   actualScene: CinematiqueMine
   sceneToLoad: Mine2emeJeux
   gameProgressState: 4
+  nomCinematique: mine
 --- !u!114 &2032150529 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5705231387245673517, guid: a8dc801a65b8bf64ca9d10f1b3a0c9a2, type: 3}

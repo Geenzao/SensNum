@@ -236,6 +236,7 @@ MonoBehaviour:
   actualScene: CinematiqueAssemblage
   sceneToLoad: AssemblageJeux
   gameProgressState: 10
+  nomCinematique: factory
 --- !u!4 &440220420
 Transform:
   m_ObjectHideFlags: 0

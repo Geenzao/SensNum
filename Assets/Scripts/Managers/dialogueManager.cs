@@ -83,6 +83,8 @@ public class dialogueManager : Singleton<dialogueManager>
     public event Action OnDialoguePNJnormalFinish;
     public event Action OnDialoguePNJChefFinish;
 
+    public event Action OnHideDialoguePanel;
+
 
 
     public bool isAbleToNextSentence = false;
@@ -261,6 +263,11 @@ public class dialogueManager : Singleton<dialogueManager>
     public bool fctisDialogueActive()
     {
         return isDialogueActive;
+    }
+
+    public void hideDialogPanel()
+    {
+        OnHideDialoguePanel?.Invoke();
     }
 
 }

@@ -218,6 +218,7 @@ MonoBehaviour:
   actualScene: CinematiqueGoodEnd
   sceneToLoad: credits
   gameProgressState: 16
+  nomCinematique: end
 --- !u!114 &981632944 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7597037998941557192, guid: 285c3e41758e76a45a4d017d59733e6b, type: 3}

@@ -102,14 +102,15 @@ public class dialoguePNJChef : MonoBehaviour
     private void LancerDialogue()
     {
         if (dialogueManager.Instance.fctisDialogueActive() == false && range == true )
-        {
-            dialogueManager.Instance.StartDialogueChef(this);
-            incrementeInteractionCount(); // Incr�mente le compteur d'interactions pour signifier qu'on a lanc� le premier dialogue
-
+        {   
             if (IsLastDialogue())
             {
                 Finish();
             }
+            dialogueManager.Instance.StartDialogueChef(this);
+            incrementeInteractionCount(); // Incr�mente le compteur d'interactions pour signifier qu'on a lanc� le premier dialogue
+
+
         }
 
     }
@@ -130,6 +131,7 @@ public class dialoguePNJChef : MonoBehaviour
             finishAlreadyReached = true;
             if (GameProgressManager.CurrentGameProgressState == beginingGameProgressState)
             {
+                dialogueManager.Instance.hideDialogPanel();
                 GameManager.Instance.UnloadAndSavePosition(actualScene, x, y);
                 GameManager.Instance.LoadLevel(sceneCinematiqueToLoad);
                 GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.None);

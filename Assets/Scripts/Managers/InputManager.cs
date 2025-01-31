@@ -118,25 +118,28 @@ public class InputManager : Singleton<InputManager>
             /*********************************/
             //Ajout version Portable
 
-            if (isMobilePlatform == false)
+            if (isMobilePlatform == false && UIManager.CurrentMenuState == UIManager.MenuState.None)
             {
                 //pour les mouvement du player
                 moveX = Input.GetAxisRaw("Horizontal");
                 moveY = Input.GetAxisRaw("Vertical");
                 playerMovement.Instance.setMove(moveX, moveY);
 
+                //pour les dialogue
+                if (dialogueManager.Instance.fctisDialogueActive() == false && Input.GetKeyDown(KeyCode.E))
+                    OnUserActionDialogue?.Invoke();
+            }
+            if(isMobilePlatform == false && UIManager.CurrentMenuState == UIManager.MenuState.Dialogue)
+            {
                 //pour passer au dialogue suivant
-                if (dialogueManager.Instance.fctisDialogueActive() 
-                    && Input.GetKeyDown(KeyCode.Space) 
+                if (dialogueManager.Instance.fctisDialogueActive()
+                    && Input.GetKeyDown(KeyCode.Space)
                     && dialogueManager.Instance.isAbleToNextSentence == true)
                 {
                     dialogueManager.Instance.DisplayNextSentence();
                 }
 
-                //pour les dialogue
-                if (dialogueManager.Instance.fctisDialogueActive() == false && Input.GetKeyDown(KeyCode.E))
-                    OnUserActionDialogue?.Invoke();
-
+                
             }
             else
             {

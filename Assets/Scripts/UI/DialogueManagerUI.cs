@@ -56,6 +56,8 @@ public class DialogueManagerUI : MonoBehaviour
 
         dialogueManager.Instance.OnDialoguePNJnormalFinish += EndDialogue;
         dialogueManager.Instance.OnDialoguePNJChefFinish += EndDialogueChef;
+
+        dialogueManager.Instance.OnHideDialoguePanel += EndDialogueChef;
     }
 
     void Start()
@@ -71,6 +73,19 @@ public class DialogueManagerUI : MonoBehaviour
         else
         {
             Debug.LogError("LanguageManager instance is not initialized.");
+        }
+    }
+
+    private void Update()
+    {
+        if(UIManager.CurrentMenuState != UIManager.MenuState.Dialogue)
+        {
+            dialoguePanelUI.SetActive(false);
+        }
+        if(UIManager.CurrentMenuState == UIManager.MenuState.Cinematic)
+        {
+            dialoguePanelUI.SetActive(false);
+            PanelUITextInteraction.SetActive(false);
         }
     }
 

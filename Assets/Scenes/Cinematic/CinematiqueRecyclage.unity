@@ -508,6 +508,7 @@ MonoBehaviour:
   actualScene: CinematiqueRecyclage
   sceneToLoad: MiniJeuCandycrush
   gameProgressState: 14
+  nomCinematique: recycle
 --- !u!4 &1781343070
 Transform:
   m_ObjectHideFlags: 0

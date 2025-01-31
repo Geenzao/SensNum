@@ -50,10 +50,13 @@ public class CinematicManager : Singleton<CinematicManager>
     [SerializeField] private string actualScene;
     [SerializeField] private string sceneToLoad;
     [SerializeField] private GameProgressManager.GameProgressState gameProgressState;
+    [SerializeField] private string nomCinematique;
 
 
     private void Start()
     {
+        InitializeCinematique();
+
         // Initialisation des clips et calcul des durées des dialogues
         foreach (var bloc in tabCinematicBloc)
         {
@@ -70,6 +73,42 @@ public class CinematicManager : Singleton<CinematicManager>
         }
 
         btnSkip.onClick.AddListener(OnSkipButtonClicked);
+
+        
+    }
+
+    void InitializeCinematique()
+    {
+        foreach (var bloc in tabCinematicBloc)
+        {
+            bloc.dialogueCinematic.sentences = new string[0];
+        }
+        int i = 1;
+        while (true)
+        {
+            List<string> sentences = new List<string>();
+            int j = 1;
+            while (true)
+            {
+                string key = $"cinematic_{nomCinematique}_{i}_{j}";
+                Debug.Log(key);
+                string text = LanguageManager.Instance.GetText(key);
+                Debug.Log(text);
+                if (text == key) // Si le texte retourné est la clé, cela signifie qu'il n'y a plus de texte pour cette catégorie
+                {
+                    break;
+                }
+                sentences.Add(text);
+                j++;
+            }
+            if (sentences.Count == 0) // Si aucune phrase n'a été ajoutée, on arrête la boucle
+            {
+                break;
+            }
+            Dialogue dialogue = new Dialogue { sentences = sentences.ToArray() };
+            tabCinematicBloc[i-1].dialogueCinematic = dialogue;
+            i++;
+        }
     }
 
     private void Update()
@@ -118,6 +157,7 @@ public class CinematicManager : Singleton<CinematicManager>
     private void StartCinematic(int index)
     {
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.Cinematic);
+        Debug.Log("CinematicManager : StartCinematic");
         //Debug.Log($"Démarrage du clip : {tabCinematicBloc[index].clips.gameObject.name}");
 
         var currentBloc = tabCinematicBloc[index];
