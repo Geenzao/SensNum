@@ -296,7 +296,7 @@ MonoBehaviour:
   tabPNJ:
   - {fileID: 1345249926}
   - {fileID: 428401236}
-  - {fileID: 194580061}
+  - {fileID: 0}
   - {fileID: 760416448}
   - {fileID: 61454847}
   - {fileID: 877638669}
@@ -1896,6 +1896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pnj_chefMine_ensemble
       objectReference: {fileID: 0}
+    - target: {fileID: 7265349012310741002, guid: 9fdb8edf968e32c48be1d61335d19478, type: 3}
+      propertyPath: tabPointDestination.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6104315594499653721, guid: 9fdb8edf968e32c48be1d61335d19478, type: 3}
@@ -1909,17 +1913,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4797928136274714839, guid: 9fdb8edf968e32c48be1d61335d19478, type: 3}
   m_PrefabInstance: {fileID: 194580059}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &194580061 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3574126916692850903, guid: 9fdb8edf968e32c48be1d61335d19478, type: 3}
-  m_PrefabInstance: {fileID: 194580059}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef3585f462331dd4dba57bcc3f8d6732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &218048805
 GameObject:
   m_ObjectHideFlags: 0
@@ -33627,6 +33620,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 991082848}
     m_Modifications:
+    - target: {fileID: 185167744692577203, guid: c7bc446dc6b557742982f23e5b401a9f, type: 3}
+      propertyPath: tabPointDestination.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1955228337320021021, guid: c7bc446dc6b557742982f23e5b401a9f, type: 3}
       propertyPath: m_SortingOrder
       value: 1

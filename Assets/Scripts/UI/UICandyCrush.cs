@@ -40,6 +40,8 @@ public class UICandyCrush : Menu
     [Header("Variable")]
     [SerializeField] private string LastSceneName;
 
+    private bool isAlreadyFinished = false;
+
     private void Awake()
     {
         looseRetryButton.onClick.AddListener(OnRetryButtonClicked);
@@ -118,8 +120,11 @@ public class UICandyCrush : Menu
             if (CandyGameManager.Instance.nbDechets >= 15)
             {
                 UpdateTexts();
-                Time.timeScale = 0;
-                defeatPanel.SetActive(true); 
+                if (!isAlreadyFinished)
+                {
+                    isAlreadyFinished = true;
+                    defeatPanel.SetActive(true);
+                }
             }
             if (CandyGameManager.Instance.nbDechets < 10)
                 alerte.SetActive(false);
@@ -148,8 +153,7 @@ public class UICandyCrush : Menu
 
 
         UpdateTexts();
-
-        Time.timeScale = 1;
+        isAlreadyFinished = false;
     }
 
     // ----------------- TO DO : RETOURNER A LA SCENE PRECEDENTE AVEC BON GAME PROGRESS-----------------\\
