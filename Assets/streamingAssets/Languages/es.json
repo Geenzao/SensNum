@@ -827,6 +827,46 @@
       {
         "key": "cinematic_end_5_4",
         "value": "Fin..."
+      },
+      {
+        "key": "EcoInfo_mine_1",
+        "value": "According to Ademe, it takes around 200 kilos of raw materials to produce a single smartphone.."
+      },
+      {
+        "key": "EcoInfo_mine_2",
+        "value": "Your phone's battery contains nickel, lithium, cobalt and many other elements."
+      },
+      {
+        "key": "EcoInfo_village_1",
+        "value": "The digital sector's carbon footprint accounted for 3.6% of global greenhouse gas emissions in 2023."
+      },
+      {
+        "key": "EcoInfo_village_2",
+        "value": "The manufacture of electronic devices, such as smartphones and computers, contributes to the depletion of natural resources."
+      },
+      {
+        "key": "EcoInfo_assembly_1",
+        "value": "Semiconductor manufacturing consumes a lot of water, adding to the pressure on water resources."
+      },
+      {
+        "key": "EcoInfo_assembly_2",
+        "value": "In 2018, 1.5 billion cell phones were produced worldwide."
+      },
+      {
+        "key": "EcoInfo_recyclage_1",
+        "value": "In 2023, the production of electronic equipment generated 58 million tonnes of electronic waste."
+      },
+      {
+        "key": "EcoInfo_recyclage_2",
+        "value": "Increased waste is one of the most serious consequences of programmed obsolescence. If you don't change your cell phone every day, you're saving the rivers."
+      },
+      {
+        "key": "2eMJM_Rules",
+        "value": "Minerals and rocks will pass through the water line. \nCollect as many ores as possible before the timer runs out. \n\t\tPress the green button to start."
+      },
+      {
+        "key": "3eMJM_Rules",
+        "value": "Get all the ore trucks out before the timer runs out! \n\t\tClick on a truck to move it forward."
       }
     ]
   }

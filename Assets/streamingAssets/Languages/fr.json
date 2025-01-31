@@ -827,6 +827,46 @@
     {
       "key": "cinematic_end_5_4",
       "value": "Fin..."
+    },
+    {
+      "key": "EcoInfo_mine_1",
+      "value": "Selon l'Ademe, il faut environ 200 kilos de matières premières pour produire un seul smartphone."
+    },
+    {
+      "key": "EcoInfo__mine_2",
+      "value": "La batterie de ton téléphone contient du nickel, du lithium et du cobalt et bien d'autres éléments."
+    },
+    {
+      "key": "EcoInfo_village_1",
+      "value": "L'empreinte carbone du numérique représentait 3,6 % des émissions de gaz à effet de serre dans le monde en 2023."
+    },
+    {
+      "key": "EcoInfo_village_2",
+      "value": "La fabrication de dispositifs électroniques, tels que les smartphones et les ordinateurs, contribue à l'épuisement des ressources naturelles."
+    },
+    {
+      "key": "EcoInfo_assembly_1",
+      "value": "La fabrication de semi-conducteurs consomme beaucoup d'eau, aggravant la pression sur les ressources hydriques."
+    },
+    {
+      "key": "EcoInfo_assembly_2",
+      "value": "En 2018, 1.5 milliards de portables ont été produits dans le monde."
+    },
+    {
+      "key": "EcoInfo_recyclage_1",
+      "value": "En 2023, la production d'équipements électroniques a généré 58 millions de tonnes de déchets électroniques"
+    },
+    {
+      "key": "EcoInfo_recyclage_2",
+      "value": "L'augmentation des déchets constitue l'une des conséquences les plus graves de l'obsolescence programmée. Ne pas changer tout les jours de portable c'est sauver les rivières"
+    },
+    {
+      "key": "2eMJM_Rules",
+      "value": "Des minerais et des rochers vont défilés dans cette ligne d'eau. \nRécupérer un maximum de minerais avant la fin du chronomètre. \n\t\tAppuyez sur le bouton vert pour commencer."
+    },
+    {
+      "key": "3eMJM_Rules",
+      "value": "Sortez tous les camions transportant des minerais avant la fin du chronomètre ! \n\t\tCliquez sur un camion pour le faire avancer."
     }
   ]
 }

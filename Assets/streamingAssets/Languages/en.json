@@ -827,6 +827,46 @@
     {
       "key": "cinematic_end_5_4",
       "value": "End..."
+    },
+    {
+      "key": "EcoInfo_mine_1",
+      "value": "Según la Ademe, se necesitan unos 200 kilos de materias primas para fabricar un solo smartphone."
+    },
+    {
+      "key": "EcoInfo__mine_2",
+      "value": "La batterie de ton téléphone contient du nickel, du lithium et du cobalt et bien d'autres éléments."
+    },
+    {
+      "key": "EcoInfo_village_1",
+      "value": "La batería de su teléfono contiene níquel, litio, cobalto y muchos otros elementos."
+    },
+    {
+      "key": "EcoInfo_village_2",
+      "value": "La fabricación de dispositivos electrónicos, como teléfonos inteligentes y ordenadores, contribuye al agotamiento de los recursos naturales."
+    },
+    {
+      "key": "EcoInfo_assembly_1",
+      "value": "La fabricación de semiconductores consume mucha agua, lo que aumenta la presión sobre los recursos hídricos."
+    },
+    {
+      "key": "EcoInfo_assembly_2",
+      "value": "En 2018 se fabricaron 1.500 millones de teléfonos móviles en todo el mundo."
+    },
+    {
+      "key": "EcoInfo_recyclage_1",
+      "value": "En 2023, la producción de aparatos electrónicos generará 58 millones de toneladas de residuos electrónicos"
+    },
+    {
+      "key": "EcoInfo_recyclage_2",
+      "value": "El aumento de los residuos es una de las consecuencias más graves de la obsolescencia programada. Si no cambias de móvil todos los días, estás salvando los ríos."
+    },
+    {
+      "key": "2eMJM_Rules",
+      "value": "Los minerales y las rocas pasarán a través de la línea de agua. \nRecoge tantos minerales como puedas antes de que se acabe el tiempo. \n\t\tPulsa el botón verde para empezar."
+    },
+    {
+      "key": "3eMJM_Rules",
+      "value": "¡Acaba con todos los camiones que transportan minerales antes de que se acabe el tiempo! \n\t\tHaz clic en un camión para hacerlo avanzar."
     }
   ]
 }
