@@ -107,10 +107,11 @@ public class dialoguePNJChef : MonoBehaviour
             {
                 Finish();
             }
-            dialogueManager.Instance.StartDialogueChef(this);
-            incrementeInteractionCount(); // Incr�mente le compteur d'interactions pour signifier qu'on a lanc� le premier dialogue
-
-
+            if (!finishAlreadyReached)
+            {
+                dialogueManager.Instance.StartDialogueChef(this);
+                incrementeInteractionCount(); // Incr�mente le compteur d'interactions pour signifier qu'on a lanc� le premier dialogue
+            }
         }
 
     }
@@ -124,6 +125,7 @@ public class dialoguePNJChef : MonoBehaviour
     {
         if (!finishAlreadyReached)
         {
+            print("On enleve le warning");
             //ON désactive le warning qui indique au joueur que le PNJ a fini de parler
             if(gameObject.GetComponent<warningPNJ>())
                 gameObject.GetComponent<warningPNJ>().hideWarning();

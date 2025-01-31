@@ -294,9 +294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tabPNJ:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 760416448}
   - {fileID: 61454847}
   - {fileID: 877638669}
@@ -34429,6 +34426,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1542741161245399799, guid: c7bc446dc6b557742982f23e5b401a9f, type: 3}
       insertIndex: 3
       addedObject: {fileID: 808896719}
+    - targetCorrespondingSourceObject: {fileID: 1542741161245399799, guid: c7bc446dc6b557742982f23e5b401a9f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 808896722}
   m_SourcePrefab: {fileID: 100100000, guid: c7bc446dc6b557742982f23e5b401a9f, type: 3}
 --- !u!4 &808896717 stripped
 Transform:
@@ -34461,6 +34461,31 @@ MonoBehaviour:
   y: 0
   beginingGameProgressState: 15
   endGameProgressState: 16
+--- !u!1 &808896720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2258260672469096930, guid: c7bc446dc6b557742982f23e5b401a9f, type: 3}
+  m_PrefabInstance: {fileID: 808896716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &808896721 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3589679722872150206, guid: c7bc446dc6b557742982f23e5b401a9f, type: 3}
+  m_PrefabInstance: {fileID: 808896716}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &808896722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808896718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7100c94524e20064a88d01cf48343104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warning: {fileID: 808896720}
+  animator: {fileID: 808896721}
+  NEPASAFFICHER: 0
 --- !u!1 &833127148
 GameObject:
   m_ObjectHideFlags: 0
