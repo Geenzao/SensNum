@@ -20,6 +20,7 @@ public class Achievments : Menu
     [SerializeField] private GameObject panelAchievments;
 
     private Coroutine blinkCoroutine;
+    private int breaker = 0;
 
     private void Awake()
     {
@@ -56,6 +57,34 @@ public class Achievments : Menu
             TriggerVisibility(true); //true
         else
             TriggerVisibility(false);
+    }
+
+    private void Update()
+    {
+        switch (GameProgressManager.CurrentGameProgressState)
+        {
+            case GameProgressManager.GameProgressState.MineEnd:
+                if (breaker == 0)
+                {
+                    breaker = 1;
+                    SetAchievment(0);
+                }
+                break;
+            case GameProgressManager.GameProgressState.AssemblyZoneEnd:
+                if (breaker == 1)
+                {
+                    breaker = 2;
+                    SetAchievment(1);
+                }
+                break;
+            case GameProgressManager.GameProgressState.RecyclingEnd:
+                if (breaker == 2)
+                {
+                    breaker = 3;
+                    SetAchievment(2);
+                }
+                break;
+        }
     }
 
     private void OnAchievmentsButtonClicked()
