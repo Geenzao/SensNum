@@ -35,7 +35,7 @@ public class PlatformManager : Singleton<PlatformManager>
         if (isAlwedyCalculate == false)
             DetectPlatform();
         //ensuite dans tous les cas on envoie la réponse
-        return isMobile;
-       // return true;
+         //return isMobile;
+       return true;
     }
 }

@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using static GameManager;
+using System;
+
 
 
 //Cette classe sert à garder en mémoire le dialogue du dernière interaction avec un PNJ
@@ -66,15 +66,29 @@ public class lastPNJDialogueContener
 
 public class dialogueManager : Singleton<dialogueManager>
 {
-    public TextMeshProUGUI interactionKey;
-    public TextMeshProUGUI dialogueTextUI; //texte qui serra modifi  avec les phrases des PNJ
-    [SerializeField] private GameObject dialoguePanelUI; //Object UI du dialogue, ex : paneau gris ou appara t les phrase
-    [SerializeField] private GameObject PanelUITextInteraction;
+    //Event pour dire au dialogueManagerUI que le dialogue commence
+    public event Action OnDialogueStartChef;
+    public event Action OnDialogueStartNormal;
+    public event Action OnDialogueEndChef;
+    public event Action OnDialogueEndNormal;
+
+    //pour afficher l'interaction possible
+    public event Action OnInteractionPossible;
+    public event Action OnInteractionImpossible;
+
+    //pour passer a la phrase suivante
+    public event Action OnNextSentence;
+
+    //pour la fin des dialogue
+    public event Action OnDialoguePNJnormalFinish;
+    public event Action OnDialoguePNJChefFinish;
+
+
+
+    public bool isAbleToNextSentence = false;
 
     //pour le portable
     public bool isMobilePlatform = false;
-    public Button btnInteraction; //pour le bouton d'interaction
-    public GameObject textInteraction; //pour le texte E 
     private lastPNJDialogueContener lastPNJ = new lastPNJDialogueContener();
 
     private bool aPNJnormalaParler = false;
@@ -90,43 +104,26 @@ public class dialogueManager : Singleton<dialogueManager>
 
     private void Start()
     {
-        LanguageManager.OnLanguageChanged += UpdateTexts;
-
-        UpdateTexts();
-
-        PanelUITextInteraction.SetActive(false);
-        dialoguePanelUI.SetActive(false);
-
         qSentences = new Queue<string>();
         isMobilePlatform = PlatformManager.Instance.fctisMobile();
-
-        btnInteraction.onClick.AddListener(() =>
-        {
-            print("On a lické sur le btn");
-            print(lastPNJ.getTypeDialogue());
-            if (lastPNJ.getTypeDialogue() == 0)
-                StartDialogue(lastPNJ.getLastPNJnormal());
-            else if (lastPNJ.getTypeDialogue() == 1)
-                StartDialogueChef(lastPNJ.getLastPNJchef());
-            else
-                Debug.LogWarning("Il n'y a pas de dialogue à afficher");
-        });
     }
 
-    //private void Update()
-    //{
-    //    if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        DisplayNextSentence();
-    //    }
-    //}
+    public void BtnInteraction()
+    {
+        print("On a lické sur le btn");
+        print(lastPNJ.getTypeDialogue());
+        if (lastPNJ.getTypeDialogue() == 0)
+            StartDialogue(lastPNJ.getLastPNJnormal());
+        else if (lastPNJ.getTypeDialogue() == 1)
+            StartDialogueChef(lastPNJ.getLastPNJchef());
+        else
+            Debug.LogWarning("Il n'y a pas de dialogue à afficher");
+    }
 
     public void StartDialogue(dialoguePNJ diag)
     {
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.Dialogue);
         aPNJnormalaParler = true;
-        //pour cacher le bouton ou le texte d'interaction
-        HidePanelInteraction();
 
         playerMovement.Instance.StopPlayerMouvement();
         dialoguePnjRef = diag;
@@ -138,36 +135,24 @@ public class dialogueManager : Singleton<dialogueManager>
             Debug.LogWarning("Il y a un problème avec le scripte MouvementPNJ");
 
         isDialogueActive = true;
-        qSentences.Clear();
-        // On affiche l'UI du dialogue
-        dialoguePanelUI.SetActive(true);
-        int nbInteraction = diag.getInteractionCount();
-        if (nbInteraction < diag.listDialogue.Count)
-        {
-            foreach (string sentence in diag.listDialogue[nbInteraction].sentences)
-            {
-                qSentences.Enqueue(sentence);
-            }
-        }
-        else
-        {
-            // ICI ça veut dire qu'il y a une erreur dans le nombre de dialogue.
-            // En cas d'erreur, on répète le dernier dialogue du PNJ en boucle
-            nbInteraction = diag.listDialogue.Count - 1;
-            foreach (string sentence in diag.listDialogue[nbInteraction].sentences)
-            {
-                qSentences.Enqueue(sentence);
-            }
-        }
-        DisplayNextSentence();
+
+        OnDialogueStartNormal?.Invoke();
+    }
+
+    public dialoguePNJ GetDialoguePnjRef()
+    {
+        return dialoguePnjRef;
+    }
+
+    public dialoguePNJChef GetDialoguePNJChefRef()
+    {
+        return dialoguePNJChefRef;
     }
 
     public void StartDialogueChef(dialoguePNJChef diag)
     {
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.Dialogue);
         aPNJChefaParler = true;
-        //pour cacher le bouton ou le texte d'interaction
-        HidePanelInteraction();
 
         playerMovement.Instance.StopPlayerMouvement();
         dialoguePNJChefRef = diag;
@@ -178,29 +163,8 @@ public class dialogueManager : Singleton<dialogueManager>
             Debug.LogWarning("Il y a un problème avec le scripte MouvementPNJ");
 
         isDialogueActive = true;
-        qSentences.Clear();
-        // On affiche l'UI du dialogue
-        print("panel dialogue afficher");
-        dialoguePanelUI.SetActive(true);
-        int nbInteraction = diag.getInteractionCount();
-        if (nbInteraction < diag.listDialogue.Count)
-        {
-            foreach (string sentence in diag.listDialogue[nbInteraction].sentences)
-            {
-                qSentences.Enqueue(sentence);
-            }
-        }
-        else
-        {
-            // ICI ça veut dire qu'il y a une erreur dans le nombre de dialogue.
-            // En cas d'erreur, on répète le dernier dialogue du PNJ en boucle
-            nbInteraction = diag.listDialogue.Count - 1;
-            foreach (string sentence in diag.listDialogue[nbInteraction].sentences)
-            {
-                qSentences.Enqueue(sentence);
-            }
-        }
-        DisplayNextSentence();
+
+        OnDialogueStartChef?.Invoke();
     }
 
     public void ShowPanelInteractionPNJnormal(dialoguePNJ pnj = null)
@@ -211,18 +175,12 @@ public class dialogueManager : Singleton<dialogueManager>
         if (pnj == null)
             dialoguePnjRef = pnj;
 
-        //pour le portable, on affiche l'interaction en fonction de portable ou non
-        if (isMobilePlatform == true)
-        {
-            btnInteraction.gameObject.SetActive(true);
-            textInteraction.SetActive(false);
-        }
-        else
-        {
-            btnInteraction.gameObject.SetActive(false);
-            textInteraction.SetActive(true);
-        }
-        PanelUITextInteraction.SetActive(true);
+        OnInteractionPossible?.Invoke();
+    }
+
+    public void HidePanelInteraction()
+    {
+        OnInteractionImpossible?.Invoke();
     }
 
     public void ShowPanelInteractionPNJchef(dialoguePNJChef pnjChef = null )
@@ -233,60 +191,27 @@ public class dialogueManager : Singleton<dialogueManager>
         if(pnjChef != null)
         dialoguePNJChefRef = pnjChef;
 
-        //pour le portable, on affiche l'interaction en fonction de portable ou non
-        if (isMobilePlatform == true)
-        {
-            btnInteraction.gameObject.SetActive(true);
-            textInteraction.SetActive(false);
-        }
-        else
-        {
-            btnInteraction.gameObject.SetActive(false);
-            textInteraction.SetActive(true);
-        }
-        PanelUITextInteraction.SetActive(true);
+        OnInteractionPossible?.Invoke();
     }
 
-    public void HidePanelInteraction()
+    public int GetLastPNJType()
     {
-
-        PanelUITextInteraction.SetActive(false);
+        return lastPNJ.getTypeDialogue();
+    }
+    public void SetIsAbleToNextSentence(bool a)
+    {
+        isAbleToNextSentence = a;
     }
 
     public void DisplayNextSentence()
     {
-        if (qSentences.Count == 0)
-        {
-            if(dialoguePnjRef != null)
-                EndDialogue();
-            else if (dialoguePNJChefRef != null)
-                EndDialogueChef();
-            return;
-        }
-
-        string sentence = qSentences.Dequeue();
-        //empecher affichage de plusieur phrase si appuy sur suivant avaant la fin de la premiere coroutine
-        if (currentCoroutine != null)
-        {
-            StopCoroutine(currentCoroutine);
-        }
-        currentCoroutine = StartCoroutine(LettreParLettre(sentence));
+        OnNextSentence?.Invoke();
     }
 
-    IEnumerator LettreParLettre(string sentence)
-    {
-        dialogueTextUI.text = "";
-        foreach (char lettre in sentence.ToCharArray())
-        {
-            dialogueTextUI.text += lettre;
-            yield return new WaitForSeconds(0.01f);
-        }
-        currentCoroutine = null; // La coroutine est terminée
-    }
 
     public void EndDialogue()
     {
-        dialoguePanelUI.SetActive(false);
+        print("EndDialogue");
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
         isDialogueActive = false;
         playerMovement.Instance.ActivePlayerMouvement();
@@ -299,7 +224,7 @@ public class dialogueManager : Singleton<dialogueManager>
         //On remet le bouton ou le texte d'interaction*
         if(aPNJnormalaParler == true)
         {
-            ShowPanelInteraction();
+            OnInteractionPossible?.Invoke();
             aPNJnormalaParler = false;
             //on increment l'index du pnj
             if(isMobilePlatform)
@@ -307,30 +232,11 @@ public class dialogueManager : Singleton<dialogueManager>
                 lastPNJ.incrementInteractionCount();
             }
         }
-
-        print("ShowPanelInteraction + EndDialogue");
     }
 
-
-    private void ShowPanelInteraction()
-    {
-        //pour le portable, on affiche l'interaction en fonction de portable ou non
-        if (isMobilePlatform == true)
-        {
-            btnInteraction.gameObject.SetActive(true);
-            textInteraction.SetActive(false);
-        }
-        else
-        {
-            btnInteraction.gameObject.SetActive(false);
-            textInteraction.SetActive(true);
-        }
-        PanelUITextInteraction.SetActive(true);
-    }
 
     public void EndDialogueChef()
     {
-        dialoguePanelUI.SetActive(false);
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.None);
         isDialogueActive = false;
         playerMovement.Instance.ActivePlayerMouvement();
@@ -343,7 +249,7 @@ public class dialogueManager : Singleton<dialogueManager>
         //On remet le bouton ou le texte d'interaction*
         if(aPNJChefaParler == true)
         {
-            ShowPanelInteraction();
+            OnInteractionPossible?.Invoke();
             aPNJChefaParler = false;
             if (isMobilePlatform)
             {
@@ -357,10 +263,6 @@ public class dialogueManager : Singleton<dialogueManager>
         return isDialogueActive;
     }
 
-    public void UpdateTexts()
-    {
-        interactionKey.text = LanguageManager.Instance.GetText("interaction_key");
-    }
 }
 
 

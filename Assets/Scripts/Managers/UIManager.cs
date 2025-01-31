@@ -112,14 +112,14 @@ public class UIManager : Singleton<UIManager>
         //        break;
         //}
 
-        if(newMS == MenuState.Dialogue)
-        {
-            _UICanvas.gameObject.SetActive(false);
-        }
-        else
-        {
-            _UICanvas.gameObject.SetActive(true);
-        }
+        //if(newMS == MenuState.Dialogue)
+        //{
+        //    _UICanvas.gameObject.SetActive(false);
+        //}
+        //else
+        //{
+        //    _UICanvas.gameObject.SetActive(true);
+        //}
 
         _currentMenuState = newMS;
 
