@@ -1,0 +1,832 @@
+{
+    "entries": [
+      {
+        "key": "settings",
+        "value": "Ajustes"
+      },
+      {
+        "key": "MainMenu_Title",
+        "value": "Los tres ríos"
+      },
+      {
+        "key": "play",
+        "value": "jugar"
+      },
+      {
+        "key": "music",
+        "value": "música"
+      },
+      {
+        "key": "sound",
+        "value": "sonido"
+      },
+      {
+        "key": "interaction_key",
+        "value": "E para interactuar"
+      },
+      {
+        "key": "language",
+        "value": "idioma"
+      },
+      {
+        "key": "startThirdGameMine",
+        "value": "¡Saca todos los camiones que transportan minerales antes de que se acabe el tiempo! \n\t\t\t\n\t\t\tHaz clic en un camión para que se mueva."
+      },
+      {
+        "key": "truck",
+        "value": "Camión"
+      },
+      {
+        "key": "chrono",
+        "value": "Cronómetro"
+      },
+      {
+        "key": "win",
+        "value": "Ganar"
+      },
+      {
+        "key": "lose",
+        "value": "Perder"
+      },
+      {
+        "key": "completedCircuit",
+        "value": "Circuito completado"
+      },
+      {
+        "key": "timeRemaining",
+        "value": "Tiempo restante"
+      },
+      {
+        "key": "completedCircuitLittle",
+        "value": "circuito completado"
+      },
+      {
+        "key": "poorlyMadeCircuit",
+        "value": "circuito mal hecho"
+      },
+      {
+        "key": "objectiveAchievedIn",
+        "value": "Objetivo alcanzado en"
+      },
+      {
+        "key": "seconds",
+        "value": "segundos"
+      },
+      {
+        "key": "rules",
+        "value": "Debes completar 10 circuitos con los componentes correctos dentro del límite de tiempo.\n\n¡Haz clic y comienza!"
+      },
+      {
+        "key": "replay",
+        "value": "Reintentar"
+      },
+      {
+        "key": "quit",
+        "value": "Salir"
+      },
+      {
+        "key": "notifyAcceleration",
+        "value": "Aceleración"
+      },
+      {
+        "key": "loading",
+        "value": "Cargando"
+      },
+      {
+        "key": "pnj_chefduvillage_0_0",
+        "value": "¿Quién eres?"
+      },
+      {
+        "key": "pnj_chefduvillage_0_1",
+        "value": "¡No eres bienvenido aquí!"
+      },
+      {
+        "key": "pnj_chefduvillage_0_2",
+        "value": "¡Vete!"
+      },
+      {
+        "key": "pnj_chefduvillage_1_0",
+        "value": "¿No eres uno de esos industriales que quieren construir una mina?"
+      },
+      {
+        "key": "pnj_chefduvillage_1_1",
+        "value": "Disculpa mi brusco recibimiento…"
+      },
+      {
+        "key": "pnj_chefduvillage_1_2",
+        "value": "Estamos al límite desde hace unos días."
+      },
+      {
+        "key": "pnj_chefduvillage_1_3",
+        "value": "Desde que esos hombres vinieron a decirnos que construirían una mina."
+      },
+      {
+        "key": "pnj_chefduvillage_1_4",
+        "value": "Para excavar la tierra, en busca de materiales preciosos."
+      },
+      {
+        "key": "pnj_chefduvillage_1_5",
+        "value": "Pero para minar quieren contaminar uno de nuestros hermosos ríos."
+      },
+      {
+        "key": "pnj_chefduvillage_2_0",
+        "value": "¡Ahhh! ¿No lo oyes? ¡Han empezado a talar los árboles!"
+      },
+      {
+        "key": "pnj_chefduvillage_2_1",
+        "value": "Si quieres saber más, ¡los encontrarás al oeste!"
+      },
+      {
+        "key": "pnj_youngman_0_0",
+        "value": "Bienvenido a nuestro pueblo, forastero. Verás, nuestros ríos son magníficos, aunque no por mucho tiempo..."
+      },
+      {
+        "key": "pnj_youngman_0_1",
+        "value": "Si quieres saber más, te aconsejo que hables con el jefe del pueblo."
+      },
+      {
+        "key": "pnj_man_0_0",
+        "value": "No me gusta hablar con extraños."
+      },
+      {
+        "key": "pnj_man_1_0",
+        "value": "Hay muchos problemas por la mina en este momento."
+      },
+      {
+        "key": "pnj_man_1_1",
+        "value": "¡Déjame en paz, tengo zanahorias que cultivar!"
+      },
+      {
+        "key": "pnj_oldwoman_0_0",
+        "value": "¡Oh! Una cara nueva."
+      },
+      {
+        "key": "pnj_oldwoman_0_1",
+        "value": "Bienvenido a Tres Ríos."
+      },
+      {
+        "key": "pnj_ChefMine_0_0",
+        "value": "Bienvenido a la gran mina de cobre y litio de la región."
+      },
+      {
+        "key": "pnj_ChefMine_0_1",
+        "value": "Todo lo que ves aquí funciona día y noche para extraer toneladas de mineral."
+      },
+      {
+        "key": "pnj_ChefMine_0_2",
+        "value": "Es un trabajo duro, pero es el precio que hay que pagar para alimentar el mundo conectado de hoy."
+      },
+      {
+        "key": "pnj_ChefMine_1_0",
+        "value": "¿Agua? Ah, sí, usamos cantidades monstruosas para enfriar las máquinas y lavar el mineral."
+      },
+      {
+        "key": "pnj_ChefMine_1_1",
+        "value": "¿El impacto en las aguas subterráneas? Digamos que el agua no nos lo reprocha en voz alta, así que todo está bien, ¿no?"
+      },
+      {
+        "key": "pnj_ChefMine_1_2",
+        "value": "Especialmente la gente del pueblo cercano; no paran de darme problemas."
+      },
+      {
+        "key": "pnj_ChefMine_1_3",
+        "value": "Espero que no hayas venido por ellos."
+      },
+      {
+        "key": "pnj_ChefMine_2_0",
+        "value": "¿Quieres trabajo? Siempre necesitamos manos extra para cavar más profundo."
+      },
+      {
+        "key": "pnj_ChefMine_2_1",
+        "value": "Entonces, ¿estás dispuesto a ensuciarte las manos por un poco de dinero y mucho polvo?"
+      },
+      {
+        "key": "pnj_ChefMine_2_2",
+        "value": "En ese caso, tengo un trabajo para ti."
+      },
+      {
+        "key": "pnj_ChefMine_end_0_0",
+        "value": "Buen trabajo, lo has hecho bien hoy."
+      },
+      {
+        "key": "pnj_ChefMine_end_0_1",
+        "value": "Puedes ir a descansar, no olvides volver de vez en cuando."
+      },
+      {
+        "key": "pnj_ChefMine_boucle_0_0",
+        "value": "No tengo más trabajo para ti, vuelve otro día."
+      },
+      {
+        "key": "pnj_mineurpelle1_0_0",
+        "value": "El litio no se extrae solo. Cada batería exige sacrificios."
+      },
+      {
+        "key": "pnj_mineurpelle1_0_1",
+        "value": "La tierra aquí contiene metales preciosos. ¡Hablar contigo me cuesta demasiado!"
+      },
+      {
+        "key": "pnj_mineurpioche1_0_0",
+        "value": "Cada minuto aquí es más metal raro para nuestros teléfonos. No me retrases."
+      },
+      {
+        "key": "pnj_mineurpioche2_0_0",
+        "value": "No tengo tiempo, tengo que extraer toneladas de cobre para nuestros circuitos impresos."
+      },
+      {
+        "key": "pnj_chefduvillage2_0_0",
+        "value": "Espera... te conozco. ¿Estuviste en Tres Ríos hace años, no?"
+      },
+      {
+        "key": "pnj_chefduvillage2_0_1",
+        "value": "Las cosas han cambiado desde entonces. Nosotros hemos cambiado."
+      },
+      {
+        "key": "pnj_chefduvillage2_0_2",
+        "value": "Pero no siempre para mejor..."
+      },
+      {
+        "key": "pnj_chefduvillage2_1_0",
+        "value": "¿Has visto el nuevo río, no? El que se ha vuelto marrón."
+      },
+      {
+        "key": "pnj_chefduvillage2_1_1",
+        "value": "Es el precio que pagamos por el progreso. La planta de ensamblaje necesita agua, y nos da tecnología a cambio."
+      },
+      {
+        "key": "pnj_chefduvillage2_1_2",
+        "value": "Pero a veces me pregunto... ¿valió la pena?"
+      },
+      {
+        "key": "pnj_chefduvillage2_2_0",
+        "value": "Si quieres ver la fuente de nuestros problemas, dirígete al norte de la ciudad."
+      },
+      {
+        "key": "pnj_chefduvillage2_2_1",
+        "value": "Ahí es donde está la planta de ensamblaje. Tal vez entiendas por qué estamos atrapados entre el progreso y la destrucción."
+      },
+      {
+        "key": "pnj_chefduvillage2_2_2",
+        "value": "Pero ten cuidado... no todo el mundo es amigable allí."
+      },
+      {
+        "key": "pnj_barman_0_0",
+        "value": "Eh, ¿no eres de por aquí, verdad? Las cosas han cambiado mucho desde que llegó la fábrica. El río está casi seco ahora..."
+      },
+      {
+        "key": "pnj_barman_0_1",
+        "value": "Si quieres saber más, deberías hablar con el jefe del pueblo. Él es el que sabe todo."
+      },
+      {
+        "key": "pnj_barman_0_2",
+        "value": "Ahora, si me disculpas, tengo clientes que atender."
+      },
+      {
+        "key": "pnj_youngman2_0_0",
+        "value": "Solía nadar en el río cuando era niño. Ahora es solo un hilo de agua... Todo ha cambiado desde que llegó la fábrica."
+      },
+      {
+        "key": "pnj_youngman2_0_1",
+        "value": "Si quieres saber más, ve a ver al jefe del pueblo. Él te lo contará todo."
+      },
+      {
+        "key": "pnj_youngman2_0_2",
+        "value": "No tengo tiempo para charlar, tengo que ir a trabajar."
+      },
+      {
+        "key": "pnj_oldwoman2_0_0",
+        "value": "En mis tiempos, el río estaba lleno de vida. Ahora es solo una sombra de lo que era..."
+      },
+      {
+        "key": "pnj_oldwoman2_0_1",
+        "value": "Si quieres saber más, ve a ver al jefe del pueblo. Él sabe todo sobre lo que ha pasado."
+      },
+      {
+        "key": "pnj_oldwoman2_0_2",
+        "value": "Ahora, déjame en paz, necesito descansar."
+      },
+      {
+        "key": "pnj_man2_0_0",
+        "value": "No me gusta hablar con extraños, pero te diré esto: el río está muriendo, y nuestro modo de vida también."
+      },
+      {
+        "key": "pnj_man2_0_1",
+        "value": "Si quieres saber más, ve a ver al jefe del pueblo. Él es el que se ocupa de estas cosas."
+      },
+      {
+        "key": "pnj_man2_0_2",
+        "value": "Y si puedes, dile de mi parte que no me gusta la fábrica, aunque me dé un smartphone."
+      },
+      {
+        "key": "pnj_man2_0_3",
+        "value": "Ahora, déjame en paz."
+      },
+      {
+        "key": "pnj_cheffactoryassembly_0_0",
+        "value": "Bienvenido a la planta de ensamblaje, el corazón palpitante de la industria moderna."
+      },
+      {
+        "key": "pnj_cheffactoryassembly_0_1",
+        "value": "Soy el jefe de esta fábrica, soy yo quien la hace funcionar con algunos trabajadores del pueblo de Tres Ríos."
+      },
+      {
+        "key": "pnj_cheffactoryassembly_0_2",
+        "value": "Bombeamos miles de litros de agua cada día para extraer metales raros esenciales para los smartphones y otros gadgets."
+      },
+      {
+        "key": "pnj_cheffactoryassembly_1_0",
+        "value": "Cada gota de agua contaminada vuelve al río, pero la gente ama sus pantallas mucho más que el aire limpio, ¿no?"
+      },
+      {
+        "key": "pnj_cheffactoryassembly_1_1",
+        "value": "¿Yo? Hago funcionar la máquina. Mientras sea rentable, ¿por qué parar?"
+      },
+      {
+        "key": "pnj_cheffactoryassembly_2_0",
+        "value": "Si quieres unirte a nosotros, siempre hay puestos disponibles para los valientes."
+      },
+      {
+        "key": "pnj_cheffactoryassembly_end_0_0",
+        "value": "Buen trabajo, lo has hecho bien hoy."
+      },
+      {
+        "key": "pnj_cheffactoryassembly_end_0_1",
+        "value": "Puedes ir a descansar, no olvides volver de vez en cuando."
+      },
+      {
+        "key": "pnj_cheffactoryassembly_boucle_0_0",
+        "value": "Puedes irte por ahora, tengo otros trabajadores que te reemplazarán."
+      },
+      {
+        "key": "pnj_workerassemblyfactory1_0_0",
+        "value": "Cada día, ensamblo cientos de smartphones. Es un trabajo duro, pero paga las facturas."
+      },
+      {
+        "key": "pnj_workerassemblyfactory1_0_1",
+        "value": "No es fácil trabajar aquí, pero es mejor que nada."
+      },
+      {
+        "key": "pnj_workerassemblyfactory1_0_2",
+        "value": "Es una pena que el río esté tan contaminado, pero ¿qué podemos hacer?"
+      },
+      {
+        "key": "pnj_workerassemblyfactory1_1_0",
+        "value": "No es como si pudiéramos detener la fábrica..."
+      },
+      {
+        "key": "pnj_workerassemblyfactory1_1_1",
+        "value": "Ahora déjame, tengo mucho trabajo."
+      },
+      {
+        "key": "pnj_workerbackassemblyfactory1_0_0",
+        "value": "Trabajo en la línea, no tengo tiempo para hablar."
+      },
+      {
+        "key": "pnj_workerbackassemblyfactory2_0_0",
+        "value": "Estoy atrasado en la producción."
+      },
+      {
+        "key": "pnj_chefduvillage3_0_0",
+        "value": "Has venido a ver la planta de reciclaje, ¿no? Es una bendición y una maldición..."
+      },
+      {
+        "key": "pnj_chefduvillage3_0_1",
+        "value": "Reciclamos lo que podemos, pero no todo se puede salvar. El río paga el precio."
+      },
+      {
+        "key": "pnj_chefduvillage3_0_2",
+        "value": "Si quieres entender cómo llegamos aquí, habla con los trabajadores. Ellos te dirán la verdad."
+      },
+      {
+        "key": "pnj_chefduvillage3_0_3",
+        "value": "Pero recuerda, aunque no sea perfecto, reciclar es mejor que nada."
+      },
+      {
+        "key": "pnj_cheffactoryassembly3_0_0",
+        "value": "Hola, hoy es mi día libre"
+     },
+     {
+        "key": "pnj_workerassemblyfactory3_0_0",
+        "value": "¿Has oído las noticias? Se ha abierto una nueva fábrica"
+      },
+      {
+        "key": "pnj_workerassemblyfactory3_0_1",
+        "value": "Pero no sé más que eso. Ve y pregunta al jefe del pueblo para saber más."
+      },
+      {
+        "key": "pnj_ChefMine3_0_0",
+        "value": "Te recuerdo de tus días de minero."
+      },
+      {
+        "key": "pnj_ChefMine3_0_1",
+        "value": "¿Qué tal estoy? Como ves, decidí instalarme aquí cuando el pueblo se convirtió en ciudad."
+      },
+      {
+        "key": "pnj_ChefMine3_0_2",
+        "value": "Aún dirijo la mina, pero ahora sólo se habla de la planta de reciclaje."
+      },
+      {
+        "key": "pnj_ChefMine3_1_0",
+        "value": "¡Adiós!"
+      },
+      {
+        "key": "pnj_barman3_0_0",
+        "value": "Esto solía ser un pueblo tranquilo. Ahora, la planta de reciclaje trae puestos de trabajo... y contaminación."
+      },
+      {
+        "key": "pnj_barman3_0_1",
+        "value": "Si quieres saber más, ve a ver al jefe del pueblo. Él es quien se ocupa de todo esto."
+      },
+      {
+        "key": "pnj_barman3_0_2",
+        "value": "Ahora si me disculpas, tengo cosas que hacer."
+      },
+      {
+        "key": "pnj_man3_0_0",
+        "value": "La planta de reciclaje es un arma de doble filo. Ayuda, pero también destruye."
+      },
+      {
+        "key": "pnj_man3_0_1",
+        "value": "No me gusta hablar con extraños. Si quieres respuestas, ve a ver al jefe del pueblo."
+      },
+      {
+        "key": "pnj_man3_0_2",
+        "value": "Ahora, déjame en paz."
+      },
+      {
+        "key": "pnj_youngman3_0_0",
+        "value": "Trabajo en la planta de reciclaje. Es duro, pero es mejor que la fábrica de montaje."
+      },
+      {
+        "key": "pnj_youngman3_0_1",
+        "value": "Aún así, me gustaría que el río no estuviera tan contaminado... Solía estar tan limpio."
+      },
+      {
+        "key": "pnj_youngman3_0_2",
+        "value": "Si quieres saber más, ve a ver al jefe del pueblo. Tengo que volver al trabajo."
+      },
+      {
+        "key": "pnj_oldwoman3_0_0",
+        "value": "En mis tiempos, el río estaba lleno de peces. Ahora, está lleno de residuos de la planta de reciclaje."
+      },
+      {
+        "key": "pnj_oldwoman3_0_1",
+        "value": "¿Pero qué podemos hacer? Al menos la planta nos da trabajo..."
+      },
+      {
+        "key": "pnj_oldwoman3_0_2",
+        "value": "Si quieres saber más, ve a ver al jefe del pueblo. Ahora necesito descansar."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_0_0",
+        "value": "¡Ah, una cara nueva! Bienvenido a la planta de reciclaje."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_0_1",
+        "value": "La última línea de defensa contra el desastre ecológico, o al menos... eso es lo que nos gusta decir para tranquilizarnos."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_0_2",
+        "value": "Aquí damos una segunda vida a los aparatos electrónicos, principalmente los teléfonos móviles. Estas pequeñas maravillas están llenas de metales preciosos como oro y cobre."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_1_0",
+        "value": "Todos los días, desmontamos, clasificamos y fundimos componentes para conseguir unos."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_1_1",
+        "value": "Pero no todo es tan verde como nos gustaría. Mira el río detrás de la planta... Lleva los residuos de nuestro trabajo."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_1_2",
+        "value": "Incluso con todas nuestras sofisticadas máquinas, las toxinas siguen escapando."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_2_0",
+        "value": "Sin embargo, el mundo nos necesita."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_2_1",
+        "value": "Sin reciclaje, estos residuos acabarían en vertederos al aire libre, envenenando el suelo y el aire."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_2_2",
+        "value": "Entonces, ¿qué dices? ¿Un poco de grasa de codo para desmantelar teléfonos y ayudar al futuro, o prefieres quedarte como espectador de este lío?"
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_end_0_0",
+        "value": "Buen trabajo, lo has hecho bien hoy."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_end_0_1",
+        "value": "Puedes ir a descansar, no olvides volver de vez en cuando.."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory1_boucle_0_0",
+        "value": "Hoy has trabajado bien, vete a descansar.."
+      },
+      {
+        "key": "pnj_workerbackrecyclagefactory1_0_0",
+        "value": "Sólo hago mi trabajo !"
+      },
+      {
+        "key": "pnj_workerbackrecyclagefactory1_0_1",
+        "value": "Ve a ver al jefe, yo sólo hago mi trabajo."
+      },
+      {
+        "key": "pnj_workerrecyclagefactory1_0_1",
+        "value": "Muchas piezas pueden reutilizarse, lo que reduce la necesidad de nuevos materiales."
+      },
+      {
+        "key": "pnj_workerrecyclagefactory1_0_2",
+        "value": "Pero la eliminación inadecuada de aparatos electrónicos puede dañar el medio ambiente."
+      },
+      {
+        "key": "pnj_workerrecyclagefactory1_0_3",
+        "value": "Así que, ¡piensa siempre antes de tirar tus viejos aparatos!"
+      },
+      {
+        "key": "pnj_workerrecyclagefactory1_1_0",
+        "value": "Ve a ver al jefe, yo sólo hago mi trabajo."
+      },
+      {
+        "key": "pnj_chefduvillage_3b_0_0",
+        "value": "Oh, llegas justo a tiempo."
+      },
+      {
+        "key": "pnj_chefduvillage_3b_0_1",
+        "value": "Nos enteramos de que se iba a construir un centro de datos junto al pueblo."
+      },
+      {
+        "key": "pnj_chefduvillage_3b_0_2",
+        "value": "Va a destruir aún más el medio ambiente, ¡y ya estamos hartos! Por eso protestamos."
+      },
+      {
+        "key": "pnj_chefduvillage_3b_0_3",
+        "value": "¿Quiere unirse a nosotros??"
+      },
+      {
+        "key": "pnj_chefmine_3b_0_0",
+        "value": "Este centro de datos consumirá enormes cantidades de energía. ¿Y adivina de dónde la sacarán?"
+      },
+      {
+        "key": "pnj_chefmine_3b_0_1",
+        "value": "No les importa si agota nuestros recursos. Mientras ganen dinero, ¿no?"
+      },
+      {
+        "key": "pnj_cheffactoryassembly_3b_0_0",
+        "value": "Dicen que traerá empleo, pero ¿a qué precio?"
+      },
+      {
+        "key": "pnj_cheffactoryassembly_3b_0_1",
+        "value": "Contaminación, derroche de agua y cortes de electricidad... Ya lo hemos visto antes."
+      },
+      {
+        "key": "pnj_chefrecyclagefactory_3b_0_0",
+        "value": "Luchamos cada día por reducir los residuos, ¿y ahora quieren construir este monstruo?"
+      },
+      {
+        "key": "pnj_chefrecyclagefactory_3b_0_1",
+        "value": "Si se tomaran en serio el medio ambiente, ni se lo plantearían."
+      },
+      {
+        "key": "pnj_chefmanif_3b_0_0",
+        "value": "No dejaremos que arruinen nuestra tierra sin luchar."
+      },
+      {
+        "key": "pnj_chefmanif_3b_0_1",
+        "value": "¡Todos unidos! ¡Nuestras voces deben ser escuchadas!"
+      },
+      {
+        "key": "pnj_workermanif_1_3b_0_0",
+        "value": "Este es nuestro hogar, no un patio de recreo para las empresas."
+      },
+      {
+        "key": "pnj_workermanif_1_3b_0_1",
+        "value": "Si no actuamos ahora, nos arrepentiremos para siempre."
+      },
+      {
+        "key": "pnj_workermanif_2_3b_0_0",
+        "value": "¿Creen que lo aceptaremos sin más? Esta vez no."
+      },
+      {
+        "key": "pnj_workermanif_2_3b_0_1",
+        "value": "Tenemos el poder si nos mantenemos unidos!"
+      },
+      {
+        "key": "pnj_youngman_3b_0_0",
+        "value": "¡Heh, tú! Los adultos se han reunido en el aparcamiento del pueblo."
+      },
+      {
+        "key": "pnj_youngman_3b_0_1",
+        "value": "No sé qué pasa, pero están enfadados."
+      },
+      {
+        "key": "pnj_oldwoman_3b_0_0",
+        "value": "Cuando yo era joven, esta tierra era pura. Ahora, mira lo que han hecho."
+      },
+      {
+        "key": "pnj_oldwoman_3b_0_1",
+        "value": "Mis nietos se merecen algo mejor que un futuro lleno de cemento y humo."
+      },
+      {
+        "key": "pnj_chefduvillage4_0_0",
+        "value": "Has vuelto... y justo a tiempo para ver cómo es el verdadero cambio."
+      },
+      {
+        "key": "pnj_chefduvillage4_0_1",
+        "value": "Las fábricas han desaparecido. Por primera vez en años, el río fluye limpio."
+      },
+      {
+        "key": "pnj_chefduvillage4_0_2",
+        "value": "Durante mucho tiempo hemos creído que para avanzar teníamos que destruir lo que nos hacía ser quienes somos, nuestro"
+      },
+      {
+        "key": "pnj_chefduvillage4_0_3",
+        "value": "Pero nos equivocamos. Nuestra gente es más feliz. La tierra se está curando."
+      },
+      {
+        "key": "pnj_chefduvillage4_1_0",
+        "value": "Pero no crea que nos hemos olvidado de la tecnología.."
+      },
+      {
+        "key": "pnj_chefduvillage4_1_1",
+        "value": "Sencillamente, hemos elegido consumir mejor, utilizar energías más sanas."
+      },
+      {
+        "key": "pnj_chefduvillage4_1_2",
+        "value": "Puede que nuestros trabajadores fabriquen menos móviles, pero duran más."
+      },
+      {
+        "key": "pnj_chefduvillage4_2_0",
+        "value": "Has participado en todo esto, lo quisieras o no. Y por ello, tienes mi gratitud."
+      },
+      {
+        "key": "pnj_chefduvillage4_2_1",
+        "value": "Quédate todo el tiempo que quieras."
+      },
+      {
+        "key": "pnj_youngman4_0_0",
+        "value": "Me alegro de volver a verte !"
+      },
+      {
+        "key": "pnj_youngman4_0_1",
+        "value": "¡Mira a tu alrededor, nuestro pueblo es mucho mejor!"
+      },
+      {
+        "key": "pnj_youngman4_0_2",
+        "value": "Has vuelto... y justo a tiempo para ver cómo es el verdadero cambio."
+      },
+      {
+        "key": "pnj_youngman4_0_3",
+        "value": "Será mejor que vayas a ver al jefe de la aldea, se alegrará de volver a verte."
+      },
+      {
+        "key": "pnj_man4_0_0",
+        "value": "¡Otra vez tú! Siento que te veo cada vez que ocurre algo nuevo..."
+      },
+      {
+        "key": "pnj_man4_0_1",
+        "value": "Pero bueno, por una vez estoy de buen humor, el pueblo está mejor que nunca."
+      },
+      {
+        "key": "pnj_man4_0_2",
+        "value": "¿Alguna pregunta? El jefe del pueblo estará encantado de responderlas."
+      },
+      {
+        "key": "pnj_oldwoman4_0_0",
+        "value": "El río vuelve a ser azul. Nunca pensé que vería este día."
+      },
+      {
+        "key": "pnj_oldwoman4_0_1",
+        "value": "No más contaminación, no más ruido... Sólo paz. Y me gusta ver estos molinos de viento girando."
+      },
+      {
+        "key": "pnj_oldman4_0_0",
+        "value": "La vida vuelve a ser normal. Es como si por fin pudiéramos respirar."
+      },
+      {
+        "key": "cinematic_mine_1_1",
+        "value": "¡Ahí estás! Vamos, no hay tiempo que perder, tenemos trabajo que hacer. ¡Bienvenidos a la mina a cielo abierto!"
+      },
+      {
+        "key": "cinematic_mine_1_2",
+        "value": "Aquí cavamos sin descanso para extraer metales preciosos: litio, cobalto, cobre..."
+      },
+      {
+        "key": "cinematic_mine_2_1",
+        "value": "Estas pequeñas maravillas alimentan todos tus aparatos modernos. Pero, ¿sabes qué? Para una tonelada de roca, apenas sirven unos gramos."
+      },
+      {
+        "key": "cinematic_mine_2_2",
+        "value": "Es cierto que consume un poco de combustible y que algunos ríos están contaminados, pero ese no es mi problema."
+      },
+      {
+        "key": "cinematic_mine_3_1",
+        "value": "Allí, los camiones envían los materiales a la planta de montaje."
+      },
+      {
+        "key": "cinematic_mine_3_2",
+        "value": "Vamos, coge tu pico. Si aciertas, podríamos ganar una fortuna... o sólo un poco más de contaminación. ¡Empecemos!"
+      },
+      {
+        "key": "cinematic_factory_1_1",
+        "value": "¡Hola, novato! Bienvenido a la gran fábrica de sueños digitales."
+      },
+      {
+        "key": "cinematic_factory_1_2",
+        "value": "Aquí, los smartphones se ensamblan en una cadena de producción, de sol a sol."
+      },
+      {
+        "key": "cinematic_factory_2_1",
+        "value": "Cada pequeño componente es un concentrado de tecnología y sudor."
+      },
+      {
+        "key": "cinematic_factory_2_2",
+        "value": "Fíjese bien en las cintas transportadoras: placas base, pantallas, baterías: tesoros de precisión."
+      },
+      {
+        "key": "cinematic_factory_3_1",
+        "value": "Pero nada viene sin sacrificio. Se necesita agua, toneladas de agua, para limpiar todo esto. Por eso estamos bombeando el río justo aquí."
+      },
+      {
+        "key": "cinematic_factory_4_1",
+        "value": "Es cierto que con el tiempo se seca, ¡pero hay que usarla si todos quieren su móvil!"
+      },
+      {
+        "key": "cinematic_factory_4_2",
+        "value": "Vamos, prepárate. Tienes que ser rápido y preciso en este trabajo."
+      },
+      {
+        "key": "cinematic_recycle_1_1",
+        "value": "Bienvenido a la fábrica donde llega todo lo roto y obsoleto. Aquí se clasifican los viejos aparatos electrónicos para recuperar lo que se puede reutilizar."
+      },
+      {
+        "key": "cinematic_recycle_1_2",
+        "value": "Cada año se generan decenas de millones de toneladas de residuos electrónicos."
+      },
+      {
+        "key": "cinematic_recycle_1_3",
+        "value": "Así que necesitamos mucha agua para trabajar. Por eso nos instalamos junto al río."
+      },
+      {
+        "key": "cinematic_recycle_2_1",
+        "value": "Es cierto que vertemos residuos al agua, pero tenemos que trabajar, ¿no?"
+      },
+      {
+        "key": "cinematic_recycle_3_1",
+        "value": "El objetivo es reciclar ciertos componentes, pero no podemos reciclarlos todos. Seguro que hay materiales que deben devolverse a la naturaleza."
+      },
+      {
+        "key": "cinematic_recycle_3_2",
+        "value": "Entenderás el resto a medida que trabajes. Sólo presta atención al componente útil. Deja el resto en el río."
+      },
+      {
+        "key": "cinematic_end_1_1",
+        "value": "Ante la amenaza de destrucción de sus tierras, los habitantes de Trois Rivières se han sublevado."
+      },
+      {
+        "key": "cinematic_end_1_2",
+        "value": "Los industriales no pudieron con su determinación de proteger los ríos."
+      },
+      {
+        "key": "cinematic_end_2_1",
+        "value": "La obra no se llevó a cabo."
+      },
+      {
+        "key": "cinematic_end_2_2",
+        "value": "Los obreros y las máquinas se han marchado. El pueblo de Trois Rivière ha ganado"
+      },
+      {
+        "key": "cinematic_end_3_1",
+        "value": "El viento, que siempre había soplado sobre las colinas de Trois Rivières, se convertía ahora en fuente de vida."
+      },
+      {
+        "key": "cinematic_end_3_2",
+        "value": "Los habitantes habían elegido una energía limpia, respetuosa con su tierra."
+      },
+      {
+        "key": "cinematic_end_4_1",
+        "value": "Cada rayo de sol era un paso más hacia la autonomía y la armonía con la naturaleza."
+      },
+      {
+        "key": "cinematic_end_4_2",
+        "value": "Aunque algunos residentes lamentaron los portátiles y las innovaciones, la mayoría estaban contentos."
+      },
+      {
+        "key": "cinematic_end_5_1",
+        "value": "Los ríos habían recuperado su claridad, y la vida, su brillo."
+      },
+      {
+        "key": "cinematic_end_5_2",
+        "value": "El pueblo aún mostraba las cicatrices de su pasado industrial, pero estas cicatrices contaban una historia de victoria y resistencia."
+      },
+      {
+        "key": "cinematic_end_5_3",
+        "value": "Los habitantes de Trois Rivières habían elegido un futuro diferente. Un futuro en el que el hombre y la naturaleza pudieran coexistir en armonía."
+      },
+      {
+        "key": "cinematic_end_5_4",
+        "value": "Fin..."
+      }
+    ]
+  }
