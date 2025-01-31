@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 24695816bc23785448f4691b253e5900
+guid: 19288062b1fd7c44394d5a14209b5765
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -127230164973945566
-    second: spriteSheet_tiledLiquids_16x16_0
+      213: -8170612077769742964
+    second: Water+ 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,139 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_0
+      name: Water+ 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85a403ea972c9e80800000000000000
+      internalID: -8170612077769742964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water+ 1_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b1a0691fdc790439e5b1a280e3922e
+      internalID: 819679739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water+ 1_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a530171eef98abc4eb4e9da6b91a3272
+      internalID: 2144151361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water+ 1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d150629042da31d40b6f97f421a9a952
+      internalID: 1394178023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water+ 1_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66d2945759ce3944bede2dece6b4017
+      internalID: 333274931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water+ 1_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e13b8cc9521a4d428f8820192c7f1e7
+      internalID: -766375150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water+ 1_6
       rect:
         serializedVersion: 2
         x: 0
@@ -108,235 +240,59 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22d730cc6dcfb3ef0800000000000000
-      internalID: -127230164973945566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_1
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5400690f440dbae45b642e89f610ad2b
-      internalID: 353915467
+      spriteID: afcdf5fdb9cdf5f45b0a4827c2d1761a
+      internalID: -636423540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_2
+      name: Water+ 1_7
       rect:
         serializedVersion: 2
-        x: 34
+        x: 16
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67d50c2bcffeb7e4990ebe2e1b702bc0
-      internalID: 73848214
+      spriteID: 027ede6d0827a0d4f96f597945ed3114
+      internalID: -1973096217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_3
+      name: Water+ 1_8
       rect:
         serializedVersion: 2
-        x: 51
+        x: 32
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b28c0f6a2fccc94f991f50b806f7e78
-      internalID: 1751861947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_4
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7e61c230cd9dc84eaa2cc3cb6cb80d9
-      internalID: -733593345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_5
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e18f5598c62504a458d5bf4d6077fe29
-      internalID: 1669415357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_6
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84f635ab01b97e14d9d3d5608c0292b2
-      internalID: -1367788471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_7
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97bdd3fa2bbd9764aac08367a4a55f98
-      internalID: 968120263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_8
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa5ae624f0b9de843bc49d8950ec37cc
-      internalID: 889890999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_9
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0e476bda1162f3459ebbd1bd01dcc0f
-      internalID: -364507630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteSheet_tiledLiquids_16x16_10
-      rect:
-        serializedVersion: 2
-        x: 170
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7dd87271f5e8d714ab071b03e1f504e7
-      internalID: -379766376
+      spriteID: e418054d3ce743a43891308e5ff7a8ac
+      internalID: 1172800511
       vertices: []
       indices: 
       edges: []
@@ -345,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9ffcbccb6aac40b449f9e374cbaf7f9a
+    spriteID: 1b0ddaba5c3f189458310264da3f69eb
     internalID: 0
     vertices: []
     indices: 
@@ -355,17 +311,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      spriteSheet_tiledLiquids_16x16_0: -127230164973945566
-      spriteSheet_tiledLiquids_16x16_1: 353915467
-      spriteSheet_tiledLiquids_16x16_10: -379766376
-      spriteSheet_tiledLiquids_16x16_2: 73848214
-      spriteSheet_tiledLiquids_16x16_3: 1751861947
-      spriteSheet_tiledLiquids_16x16_4: -733593345
-      spriteSheet_tiledLiquids_16x16_5: 1669415357
-      spriteSheet_tiledLiquids_16x16_6: -1367788471
-      spriteSheet_tiledLiquids_16x16_7: 968120263
-      spriteSheet_tiledLiquids_16x16_8: 889890999
-      spriteSheet_tiledLiquids_16x16_9: -364507630
+      Water+ 1_0: -8170612077769742964
+      Water+ 1_1: 819679739
+      Water+ 1_2: 2144151361
+      Water+ 1_3: 1394178023
+      Water+ 1_4: 333274931
+      Water+ 1_5: -766375150
+      Water+ 1_6: -636423540
+      Water+ 1_7: -1973096217
+      Water+ 1_8: 1172800511
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
