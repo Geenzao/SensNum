@@ -859,6 +859,14 @@
     {
       "key": "EcoInfo_recyclage_2",
       "value": "El aumento de los residuos es una de las consecuencias más graves de la obsolescencia programada. Si no cambias de móvil todos los días, estás salvando los ríos."
+    },
+    {
+      "key": "2eMJM_Rules",
+      "value": "Los minerales y las rocas pasarán a través de la línea de agua. \nRecoge tantos minerales como puedas antes de que se acabe el tiempo. \n\t\tPulsa el botón verde para empezar."
+    },
+    {
+      "key": "3eMJM_Rules",
+      "value": "¡Acaba con todos los camiones que transportan minerales antes de que se acabe el tiempo! \n\t\tHaz clic en un camión para hacerlo avanzar."
     }
   ]
 }

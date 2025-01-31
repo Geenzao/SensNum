@@ -859,6 +859,14 @@
     {
       "key": "EcoInfo_recyclage_2",
       "value": "L'augmentation des déchets constitue l'une des conséquences les plus graves de l'obsolescence programmée. Ne pas changer tout les jours de portable c'est sauver les rivières"
+    },
+    {
+      "key": "2eMJM_Rules",
+      "value": "Des minerais et des rochers vont défilés dans cette ligne d'eau. \nRécupérer un maximum de minerais avant la fin du chronomètre. \n\t\tAppuyez sur le bouton vert pour commencer."
+    },
+    {
+      "key": "3eMJM_Rules",
+      "value": "Sortez tous les camions transportant des minerais avant la fin du chronomètre ! \n\t\tCliquez sur un camion pour le faire avancer."
     }
   ]
 }

@@ -833,7 +833,7 @@
         "value": "According to Ademe, it takes around 200 kilos of raw materials to produce a single smartphone.."
       },
       {
-        "key": "EcoInfo__mine_2",
+        "key": "EcoInfo_mine_2",
         "value": "Your phone's battery contains nickel, lithium, cobalt and many other elements."
       },
       {
@@ -859,6 +859,14 @@
       {
         "key": "EcoInfo_recyclage_2",
         "value": "Increased waste is one of the most serious consequences of programmed obsolescence. If you don't change your cell phone every day, you're saving the rivers."
+      },
+      {
+        "key": "2eMJM_Rules",
+        "value": "Minerals and rocks will pass through the water line. \nCollect as many ores as possible before the timer runs out. \n\t\tPress the green button to start."
+      },
+      {
+        "key": "3eMJM_Rules",
+        "value": "Get all the ore trucks out before the timer runs out! \n\t\tClick on a truck to move it forward."
       }
     ]
   }
