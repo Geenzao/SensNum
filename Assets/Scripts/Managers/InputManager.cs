@@ -118,7 +118,7 @@ public class InputManager : Singleton<InputManager>
             /*********************************/
             //Ajout version Portable
 
-            if (isMobilePlatform == false)
+            if (isMobilePlatform == false && UIManager.CurrentMenuState == UIManager.MenuState.None)
             {
                 //pour les mouvement du player
                 moveX = Input.GetAxisRaw("Horizontal");
