@@ -111,6 +111,11 @@ public class OptionsMenu : Menu
 
             // Ajouter les langues disponibles au dropdown
             languageDropdown.AddOptions(languages);
+            //Afficher les drapeaux
+            for (int i = 0; i < languages.Count; i++)
+            {
+                languageDropdown.options[i].image = languageFlags[i];
+            }
 
             // Définir la langue actuelle comme sélectionnée dans le dropdown
             string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
@@ -121,6 +126,9 @@ public class OptionsMenu : Menu
                 languageDropdown.value = currentLanguageIndex;
                 languageDropdown.RefreshShownValue();
             }
+
+            currentLanguageFlag.sprite = languageFlags[currentLanguageIndex];
+            currentLanguageFlag.gameObject.GetComponent<Image>().enabled = true;
         });
     }
 

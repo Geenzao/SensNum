@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
+using Unity.VisualScripting;
 
 public class Options : MonoBehaviour
 {
@@ -129,6 +131,11 @@ public class Options : MonoBehaviour
 
             // Ajouter les langues disponibles au dropdown
             languageDropdown.AddOptions(languages);
+            //Afficher les drapeaux
+            for (int i = 0; i < languages.Count; i++)
+            {
+                languageDropdown.options[i].image = languageFlags[i];
+            }
 
             // Définir la langue actuelle comme sélectionnée dans le dropdown
             string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
@@ -139,6 +146,9 @@ public class Options : MonoBehaviour
                 languageDropdown.value = currentLanguageIndex;
                 languageDropdown.RefreshShownValue();
             }
+
+            currentLanguageFlag.sprite = languageFlags[currentLanguageIndex];
+            currentLanguageFlag.gameObject.GetComponent<Image>().enabled = true;
         });
     }
 
@@ -153,6 +163,7 @@ public class Options : MonoBehaviour
 
         // Mettre à jour le drapeau de la langue actuelle
         currentLanguageFlag.sprite = languageFlags[index];
+        currentLanguageFlag.gameObject.GetComponent<Image>().enabled = true;
     }
 
     private void HandleMusicVolumeChanged(float newVal)
