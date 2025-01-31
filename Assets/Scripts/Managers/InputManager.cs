@@ -126,7 +126,9 @@ public class InputManager : Singleton<InputManager>
                 playerMovement.Instance.setMove(moveX, moveY);
 
                 //pour passer au dialogue suivant
-                if (dialogueManager.Instance.fctisDialogueActive() && Input.GetKeyDown(KeyCode.Space))
+                if (dialogueManager.Instance.fctisDialogueActive() 
+                    && Input.GetKeyDown(KeyCode.Space) 
+                    && dialogueManager.Instance.isAbleToNextSentence == true)
                 {
                     dialogueManager.Instance.DisplayNextSentence();
                 }

@@ -136,94 +136,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4797928136274714839}
     m_Modifications:
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: name
-      value: ChefMine
+    - target: {fileID: 974621797707648788, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.051
       objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: TextToucheInteractionUI
+    - target: {fileID: 974621797707648788, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.704
+      objectReference: {fileID: 0}
+    - target: {fileID: 2264383005939008090, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
+      propertyPath: 'tabPointDestination.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: listDialogue.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: listDialogue.Array.data[0].sentences.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: listDialogue.Array.data[1].sentences.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: listDialogue.Array.data[2].sentences.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[0].sentences.Array.data[0]'
-      value: "Bienvenue dans la grande Mine de Cuivre, la ressource la plus pr\xE9cieuse
-        que nous extrayons ici. \n\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[0].sentences.Array.data[1]'
-      value: "Tout ce que tu vois ici fonctionne jour et nuit pour extraire des tonnes
-        de minerai. \n\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[0].sentences.Array.data[2]'
-      value: "C\u2019est un travail acharn\xE9, mais c\u2019est le prix \xE0 payer
-        pour alimenter le monde connect\xE9 d\u2019aujourd\u2019hui.\n\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[1].sentences.Array.data[0]'
-      value: "L\u2019eau ? Ah oui, nous en utilisons des quantit\xE9s monstrueuses
-        pour refroidir les machines et laver le minerai. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[1].sentences.Array.data[1]'
-      value: "L\u2019impact sur les nappes phr\xE9atiques ? Disons que l\u2019eau
-        ne nous le reproche pas \xE0 haute voix, alors tout va bien, non ?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[1].sentences.Array.data[2]'
-      value: "Certains disent que nous laissons derri\xE8re nous des d\xE9serts st\xE9riles
-        et des rivi\xE8res mortes. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[1].sentences.Array.data[3]'
-      value: 'Mais je ne les crois pas et toi non plus pas vrai ? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[2].sentences.Array.data[0]'
-      value: "Tu veux du travail ? Nous avons toujours besoin de mains suppl\xE9mentaires
-        pour creuser plus profond\xE9ment.\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[2].sentences.Array.data[1]'
-      value: "Alors, tu es pr\xEAt \xE0 te salir les mains pour un peu d\u2019argent
-        et beaucoup de poussi\xE8re ? "
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[2].sentences.Array.data[2]'
-      value: "Certains disent que nous laissons derri\xE8re nous des d\xE9serts st\xE9riles
-        et des rivi\xE8res mortes. "
-      objectReference: {fileID: 0}
-    - target: {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: 'listDialogue.Array.data[2].sentences.Array.data[3]'
-      value: 'Mais je ne les crois pas et toi non plus pas vrai ? '
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 161630632758195682}
+    - target: {fileID: 2264383005939008090, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
+      propertyPath: 'tabPointDestination.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5770735481161157149}
+    - target: {fileID: 2264383005939008090, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
+      propertyPath: 'tabPointDestination.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6104315594499653721}
     - target: {fileID: 2534023256869782321, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
       propertyPath: m_Name
       value: pnj_chefMine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3872602028527382942, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 81f4bf368ac86bf4cb35abf622e7e07e, type: 2}
-    - target: {fileID: 6252938642324878258, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7223881481978899794, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -265,98 +200,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 812750417844568331, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2534023256869782321, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 8054100692566897677}
-    - targetCorrespondingSourceObject: {fileID: 2534023256869782321, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3574126916692850903}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
 --- !u!4 &2305669119018974978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7223881481978899794, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
   m_PrefabInstance: {fileID: 8916846019823096400}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &5620843288593277902 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3872602028527382942, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-  m_PrefabInstance: {fileID: 8916846019823096400}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6383193382325588321 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2534023256869782321, guid: beacdbd88ee292a459c4733e505e3bd8, type: 3}
-  m_PrefabInstance: {fileID: 8916846019823096400}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8054100692566897677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6383193382325588321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b654e9f39a35660479c46ef659787bbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listDialogue:
-  - sentences:
-    - "Bienvenue dans la grande Mine de Cuivre, la ressource la plus pr\xE9cieuse
-      que nous extrayons ici. \n\n"
-    - "Tout ce que tu vois ici fonctionne jour et nuit pour extraire des tonnes de
-      minerai. \n\n"
-    - "C\u2019est un travail acharn\xE9, mais c\u2019est le prix \xE0 payer pour
-      alimenter le monde connect\xE9 d\u2019aujourd\u2019hui.\n\n"
-  - sentences:
-    - "L\u2019eau ? Ah oui, nous en utilisons des quantit\xE9s monstrueuses pour
-      refroidir les machines et laver le minerai. "
-    - "L\u2019impact sur les nappes phr\xE9atiques ? Disons que l\u2019eau ne nous
-      le reproche pas \xE0 haute voix, alors tout va bien, non ?"
-    - "Certains disent que nous laissons derri\xE8re nous des d\xE9serts st\xE9riles
-      et des rivi\xE8res mortes. "
-    - 'Mais je ne les crois pas et toi non plus pas vrai ? '
-  - sentences:
-    - "Tu veux du travail ? Nous avons toujours besoin de mains suppl\xE9mentaires
-      pour creuser plus profond\xE9ment.\n"
-    - "Alors, tu es pr\xEAt \xE0 te salir les mains pour un peu d\u2019argent et
-      beaucoup de poussi\xE8re ? "
-  name: ChefMine
-  path: 0
-  actualScene: Mine
-  sceneCinematiqueToLoad: CinematiqueMine
-  x: -26
-  y: -13
-  beginingGameProgressState: 3
-  endGameProgressState: 6
---- !u!114 &3574126916692850903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6383193382325588321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef3585f462331dd4dba57bcc3f8d6732, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tabPointDestination:
-  - {fileID: 161630632758195682}
-  - {fileID: 5770735481161157149}
-  - {fileID: 6104315594499653721}
-  animator: {fileID: 5620843288593277902}
-  currentDestinationIndex: 0
-  isWalking: 1
-  vitesse: 2
-  idleDuration: 0
-  minIdleTime: 2
-  maxIdleTime: 5
-  minActionTime: 3
-  maxActionTime: 6
-  typePNJ: 0
-  initialScale: {x: 0, y: 0, z: 0}

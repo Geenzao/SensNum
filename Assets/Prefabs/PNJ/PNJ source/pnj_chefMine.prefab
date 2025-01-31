@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 7223881481978899794}
   - component: {fileID: 6252938642324878258}
   - component: {fileID: 3872602028527382942}
-  - component: {fileID: 812750417844568331}
+  - component: {fileID: 5322193524375478984}
   - component: {fileID: 5984276409888771459}
   - component: {fileID: 5833239438830209352}
+  - component: {fileID: 2264383005939008090}
+  - component: {fileID: 7516317400463619001}
   m_Layer: 0
   m_Name: pnj_chefMine
   m_TagString: Untagged
@@ -33,7 +35,8 @@ Transform:
   m_LocalPosition: {x: -2.772761, y: -3.6609015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 974621797707648788}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6252938642324878258
@@ -79,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -692003313702210500, guid: e44b7705806ef2648a2f6a99a1d52fba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101,7 +104,7 @@ Animator:
   m_GameObject: {fileID: 2534023256869782321}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ceb58d5bcd01d64792ed4c67f3c3bf5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 81f4bf368ac86bf4cb35abf622e7e07e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -113,7 +116,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &812750417844568331
+--- !u!114 &5322193524375478984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,14 +125,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 2534023256869782321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 310f712d3f9038d4697813dd9593bd48, type: 3}
+  m_Script: {fileID: 11500000, guid: b654e9f39a35660479c46ef659787bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tabDialogue:
+  listDialogue:
   - sentences:
-    - Je suis le chef de la mine
-    - Vien travailler pour moi
-  TextToucheInteractionUI: {fileID: 0}
+    - "Bienvenue dans la grande Mine de Cuivre, la ressource la plus pr\xE9cieuse
+      que nous extrayons ici. \n\n"
+    - "Tout ce que tu vois ici fonctionne jour et nuit pour extraire des tonnes de
+      minerai. \n\n"
+    - "C\u2019est un travail acharn\xE9, mais c\u2019est le prix \xE0 payer pour
+      alimenter le monde connect\xE9 d\u2019aujourd\u2019hui.\n\n"
+  - sentences:
+    - "L\u2019eau ? Ah oui, nous en utilisons des quantit\xE9s monstrueuses pour
+      refroidir les machines et laver le minerai. "
+    - "L\u2019impact sur les nappes phr\xE9atiques ? Disons que l\u2019eau ne nous
+      le reproche pas \xE0 haute voix, alors tout va bien, non ?"
+    - "Certains disent que nous laissons derri\xE8re nous des d\xE9serts st\xE9riles
+      et des rivi\xE8res mortes. "
+    - 'Mais je ne les crois pas et toi non plus pas vrai ? '
+  - sentences:
+    - "Tu veux du travail ? Nous avons toujours besoin de mains suppl\xE9mentaires
+      pour creuser plus profond\xE9ment.\n"
+    - "Alors, tu es pr\xEAt \xE0 te salir les mains pour un peu d\u2019argent et
+      beaucoup de poussi\xE8re ? "
+  name: ChefMine
+  path: 0
+  actualScene: Mine
+  sceneCinematiqueToLoad: CinematiqueMine
+  x: -26
+  y: -13
+  beginingGameProgressState: 3
+  endGameProgressState: 6
 --- !u!61 &5984276409888771459
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -222,3 +249,116 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
+--- !u!114 &2264383005939008090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534023256869782321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3585f462331dd4dba57bcc3f8d6732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabPointDestination:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  animator: {fileID: 3872602028527382942}
+  currentDestinationIndex: 0
+  vitesse: 2
+  idleDuration: 0
+  minIdleTime: 2
+  maxIdleTime: 5
+  minActionTime: 3
+  maxActionTime: 6
+  PNJHasArrivedToManifPoint: 0
+  typePNJ: 0
+  initialScale: {x: 0, y: 0, z: 0}
+--- !u!114 &7516317400463619001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2534023256869782321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7100c94524e20064a88d01cf48343104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warning: {fileID: 2394893682254395969}
+  animator: {fileID: 1133695100928359197}
+--- !u!1001 &1477869916375382570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7223881481978899794}
+    m_Modifications:
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 36.938255
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.228958
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3872583059493863531, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+      propertyPath: m_Name
+      value: Warning_indication
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+--- !u!4 &974621797707648788 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1802846708950758718, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+  m_PrefabInstance: {fileID: 1477869916375382570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1133695100928359197 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1961813980576284983, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+  m_PrefabInstance: {fileID: 1477869916375382570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2394893682254395969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3872583059493863531, guid: 34d12fdf283fea540b5fbade094ae85d, type: 3}
+  m_PrefabInstance: {fileID: 1477869916375382570}
+  m_PrefabAsset: {fileID: 0}
