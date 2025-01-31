@@ -108,8 +108,11 @@ public class dialoguePNJ : MonoBehaviour
                 gameObject.GetComponent<warningPNJ>().hideWarning();
 
             finishAlreadyReached = true;
-            if(changePathState)
+            if (changePathState)
+            {
                 PathManager.Instance.UpdatePathState(path);
+                InputManager.invokeOnPathStateChanged();
+            }
         }
         
     }

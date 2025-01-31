@@ -11,6 +11,7 @@ using System;
 public class InputManager : Singleton<InputManager>
 {
     public event Action OnUserActionDialogue;
+    public static event Action OnPathStateChanged;
     private UsineAssemblageUI UsineAssemblageUI;
 
     private bool isMobilePlatform = false;
@@ -28,7 +29,12 @@ public class InputManager : Singleton<InputManager>
             Debug.LogWarning("Le PlatformManager n'est pas instancié");
     }
 
-        // Update is called once per frame
+    public static void invokeOnPathStateChanged()
+    {
+        OnPathStateChanged?.Invoke();
+    }
+
+    // Update is called once per frame
     void Update()
     {
         if (GameManager.CurrentGameState != GameState.PREGAME)
@@ -48,6 +54,7 @@ public class InputManager : Singleton<InputManager>
             {
                 Debug.Log("F pressed");
                 PathManager.Instance.UpdatePathState(PathManager.PathState.Mine);
+                OnPathStateChanged?.Invoke();
             }
             if (Input.GetKeyDown(KeyCode.G))
             {

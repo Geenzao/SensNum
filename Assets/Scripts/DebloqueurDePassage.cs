@@ -3,14 +3,19 @@ using static PathManager;
 
 public class DebloqueurDePassage : MonoBehaviour
 {
-    public PathManager.PathState pathToActivate;
+    public PathState pathToActivate;
     public GameObject[] objectsToActivate;
     public GameObject[] objectsToDesactivate;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        if(PathManager.CurrentPathState == pathToActivate)
+        InputManager.OnPathStateChanged += UnlockPassage;
+    }
+
+    // Update is called once per frame
+    void UnlockPassage()
+    {
+        if (CurrentPathState == pathToActivate)
         {
             for(int i = 0; i < objectsToActivate.Length; i++)
             {
