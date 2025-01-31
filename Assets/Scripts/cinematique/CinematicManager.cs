@@ -117,6 +117,7 @@ public class CinematicManager : Singleton<CinematicManager>
 
     private void StartCinematic(int index)
     {
+        UIManager.Instance.UpdateMenuState(UIManager.MenuState.Cinematic);
         //Debug.Log($"Démarrage du clip : {tabCinematicBloc[index].clips.gameObject.name}");
 
         var currentBloc = tabCinematicBloc[index];

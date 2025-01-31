@@ -30,7 +30,8 @@ public class UIManager : Singleton<UIManager>
         AssemblyGame,
         CandyCrush,
         Loading,
-        Dialogue
+        Dialogue,
+        Cinematic
     }
 
     //\brief Currently displayed menu
