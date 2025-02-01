@@ -22,7 +22,8 @@ public class PuceBoard : MonoBehaviour
     public List<GameObject> pucesToDestroy = new();
 
     [SerializeField]
-    private Puce selectedPuce;
+    private Puce selectedPuce; //puce 1 sélectionnée par le joueur au clik
+    private Puce selectedPuce2; //puce 2 sélectionnée par le joueur au relachement du clik
 
     [SerializeField]
     private bool isProcessingMove;
@@ -43,25 +44,57 @@ public class PuceBoard : MonoBehaviour
 
     void Start()
     {
+        selectedPuce = null;
+        selectedPuce2 = null;
         InitializeBoard();
     }
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0)) 
-        { 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
-
-            if (hit.collider != null && hit.collider.gameObject.GetComponent<Puce>())
-            {
-                if (isProcessingMove) { return; }
-                Puce puce = hit.collider.gameObject.GetComponent<Puce>();
-                Debug.Log("i have clicked a puce :" + puce.gameObject);
-
-                SelectPuce(puce);
-            }
+        {
+            UserClicLeftDown();
         }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            UserClicLeftUp();
+        }
+    }
+
+    //fonction pour quand l'utilisateur click sur une puce
+    public void UserClicLeftDown()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+
+        if (hit.collider != null && hit.collider.gameObject.GetComponent<Puce>())
+        {
+            if (isProcessingMove) { return; }
+            Puce puce = hit.collider.gameObject.GetComponent<Puce>();
+            puce = hit.collider.gameObject.GetComponent<Puce>();
+            Debug.Log("i have clicked a puce :" + puce.gameObject);
+
+            SelectPuce(puce);
+        }
+    }
+
+    //fonction pour quand l'utilisateur relache le click sur une puce
+    public void UserClicLeftUp()
+    {
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+
+        if (hit.collider != null && hit.collider.gameObject.GetComponent<Puce>())
+        {
+            if (isProcessingMove) { return; }
+            Puce puce = hit.collider.gameObject.GetComponent<Puce>();
+            //selectedPuce2 = hit.collider.gameObject.GetComponent<Puce>();
+            Debug.Log("i have clicked a puce :" + puce.gameObject);
+
+            SelectPuce(puce);
+        }
+
     }
 
     public void InitializeBoard()
@@ -441,19 +474,26 @@ public class PuceBoard : MonoBehaviour
 
     public void SelectPuce(Puce _puce) 
     { 
-        if(selectedPuce == null)
+        //Si on a pour l'instant sélectionne aucune PUCE
+        if(selectedPuce == null && selectedPuce2 == null)
         {
-            Debug.Log(_puce);
+            print("Selection de la puce 1");
             selectedPuce = _puce;
         }
-        else if(selectedPuce == _puce)
+        //Si on a déjà sélectionné cette PUCE
+        else if (selectedPuce == _puce)
         {
+            print("Deselection de la puce 1");
             selectedPuce = null;
+            selectedPuce2 = null; //par précaution
         }
-        else if (selectedPuce != _puce)
+        else if (selectedPuce != _puce && selectedPuce2 == null)
         {
-            SwapPuce(selectedPuce, _puce);
+            print("Selection de la puce 2");
+            selectedPuce2 = _puce;
+            SwapPuce(selectedPuce, selectedPuce2);
             selectedPuce = null;
+            selectedPuce2 = null;
         }
     }
     private void SwapPuce(Puce _currentPuce, Puce _targetPuce)
@@ -462,7 +502,7 @@ public class PuceBoard : MonoBehaviour
         {
             return;
         }
-
+        Debug.LogWarning("Les puce sont adjacentes, on peut les échanger!");
         DoSwap(_currentPuce, _targetPuce);
 
         isProcessingMove = true;
@@ -473,6 +513,7 @@ public class PuceBoard : MonoBehaviour
 
     private void DoSwap(Puce _currentPuce, Puce _targetPuce)
     {
+        Debug.LogWarning("Echange des puces");
         GameObject temp = puceBoard[_currentPuce.xIndex,_currentPuce.yIndex].puce;
         puceBoard[_currentPuce.xIndex, _currentPuce.yIndex].puce = puceBoard[_targetPuce.xIndex, _targetPuce.yIndex].puce;
         puceBoard[_targetPuce.xIndex, _targetPuce.yIndex].puce = temp;
