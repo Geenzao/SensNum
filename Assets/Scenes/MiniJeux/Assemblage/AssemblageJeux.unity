@@ -859,6 +859,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 917376807}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: circuitSpeed
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: tapisRoulant
       value: 
       objectReference: {fileID: 7601988238634318534, guid: a670850fded80ab448c208c5a72199d6, type: 3}

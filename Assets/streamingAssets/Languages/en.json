@@ -269,6 +269,14 @@
       "value": "Be careful though... not everyone there is friendly."
     },
     {
+      "key": "pnj_oldman2_0_0",
+      "value": "Back from the mine? Did you see the river?"
+    },
+    {
+      "key": "pnj_oldman2_0_1",
+      "value": "It's all polluted from mining activities."
+    },
+    {
       "key": "pnj_barman_0_0",
       "value": "Hey, you're not from around here, are you? Things have changed a lot since the factory arrived. The river is almost dry now..."
     },
@@ -399,6 +407,22 @@
     {
       "key": "pnj_chefduvillage3_0_3",
       "value": "But remember, even if it’s not perfect, recycling is better than nothing."
+    },
+    {
+      "key": "pnj_oldman3_0_0",
+      "value": "You're back, it's been a long time since you left to work at the factory."
+    },
+    {
+      "key": "pnj_oldman3_0_1",
+      "value": "As you can see, our town has changed a lot too."
+    },
+    {
+      "key": "pnj_oldman3_0_2",
+      "value": "But this came at the cost of another of our rivers."
+    },
+    {
+      "key": "pnj_oldman3_0_3",
+      "value": "Look behind you, the assembly plant has almost completely pumped it out."
     },
     {
       "key": "pnj_cheffactoryassembly3_0_0",

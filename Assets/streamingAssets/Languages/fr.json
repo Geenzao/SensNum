@@ -269,6 +269,14 @@
       "value": "Mais fais attention... tout le monde n’y est pas amical."
     },
     {
+      "key": "pnj_oldman2_0_0",
+      "value": "Tu reviens de la mine ? Tu as vu la rivière ?"
+    },
+    {
+      "key": "pnj_oldman2_0_1",
+      "value": "Elle est toute polluée à cause des activités minières."
+    },
+    {
       "key": "pnj_barman_0_0",
       "value": "Hey, t'es pas d'ici, toi ? Les choses ont beaucoup changé depuis que l'usine est arrivée. La rivière est presque à sec maintenant..."
     },
@@ -399,6 +407,22 @@
     {
       "key": "pnj_chefduvillage3_0_3",
       "value": "Mais souviens-toi, même si ce n’est pas parfait, le recyclage vaut mieux que rien."
+    },
+    {
+      "key": "pnj_oldman3_0_0",
+      "value": "Te revoilà, bien des années se sont écoulées depuis que tu es parti travailler à l'usine."
+    },
+    {
+      "key": "pnj_oldman3_0_1",
+      "value": "Comme tu peux le voir, notre ville a elle aussi bien changé."
+    },
+    {
+      "key": "pnj_oldman3_0_2",
+      "value": "Mais cela s'est fait au prix d'une autre de nos rivières."
+    },
+    {
+      "key": "pnj_oldman3_0_3",
+      "value": "Regarde derrière toi, l'usine d'assemblage l'a presque complètement pompée."
     },
     {
       "key": "pnj_cheffactoryassembly3_0_0",
