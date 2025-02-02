@@ -19,6 +19,10 @@ public class Achievments : Menu
     [SerializeField] private GameObject panelButton;
     [SerializeField] private GameObject panelAchievments;
 
+    [Header("Animator")]
+    [SerializeField] private Animator animatorPanelArchievments;
+    private bool isActivated = false;
+
     private Coroutine blinkCoroutine;
     private int breaker = 0;
 
@@ -91,12 +95,24 @@ public class Achievments : Menu
     {
         if (panelAchievments.activeSelf)
         {
-            panelAchievments.SetActive(false);
+            animatorPanelArchievments.SetTrigger("close");
+            //panelAchievments.SetActive(false);
         }
         else
         {
-            panelAchievments.SetActive(true);
+            //panelAchievments.SetActive(true);
+            animatorPanelArchievments.SetTrigger("open");
         }
+
+    }
+
+    public void ShowPanel()
+    {
+        panelAchievments.SetActive(true);
+    }
+
+    public void HidePanel() {
+        panelAchievments.SetActive(false);
     }
 
     public void SetAchievment(int index)
