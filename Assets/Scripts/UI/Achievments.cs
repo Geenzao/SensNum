@@ -21,7 +21,8 @@ public class Achievments : Menu
 
     [Header("Animator")]
     [SerializeField] private Animator animatorPanelArchievments;
-    private bool isActivated = false;
+    [SerializeField] private bool isActivated = false;
+    [SerializeField] private bool isAnimationActive = false; //pour éviter de lancer plusieurs fois l'animation
 
     private Coroutine blinkCoroutine;
     private int breaker = 0;
@@ -47,10 +48,12 @@ public class Achievments : Menu
         if (visible)
         {
             panelButton.SetActive(visible);
+            panelAchievments.SetActive(visible);
         }
         else
         {
             panelButton.SetActive(visible);
+            panelAchievments.SetActive(visible);
         }
     }
 
@@ -93,17 +96,28 @@ public class Achievments : Menu
 
     private void OnAchievmentsButtonClicked()
     {
-        if (panelAchievments.activeSelf)
+        if (isAnimationActive)
+            return;
+        if (isActivated)
         {
-            animatorPanelArchievments.SetTrigger("close");
-            //panelAchievments.SetActive(false);
+            animatorPanelArchievments.SetTrigger("hide");
+            isActivated = false;
         }
         else
         {
-            //panelAchievments.SetActive(true);
-            animatorPanelArchievments.SetTrigger("open");
+            animatorPanelArchievments.SetTrigger("show");
+            isActivated = true;
         }
+    }
 
+    public void AnimationStart()
+    {
+        isAnimationActive = true;
+    }
+
+    public void AnimationEnd() 
+    {
+        isAnimationActive = false;
     }
 
     public void ShowPanel()

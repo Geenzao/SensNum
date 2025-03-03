@@ -9610,7 +9610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2227930466898631176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9631,7 +9631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 210}
   m_SizeDelta: {x: 458.27, y: 207.1}
   m_Pivot: {x: 1, y: 1}
 --- !u!95 &4249174699033322086
@@ -9743,7 +9743,7 @@ GameObject:
   - component: {fileID: 6699591267607256057}
   - component: {fileID: 3500275223467865078}
   - component: {fileID: 2500325733705123539}
-  - component: {fileID: 3033527326163923075}
+  - component: {fileID: 6571057722523916674}
   m_Layer: 5
   m_Name: UIachievments
   m_TagString: Untagged
@@ -9828,8 +9828,10 @@ MonoBehaviour:
   recycleAchievment: {fileID: 3360807410341164038}
   panelButton: {fileID: 6030810813398280533}
   panelAchievments: {fileID: 3812674969460977867}
-  animatorPanelArchievments: {fileID: 3033527326163923075}
---- !u!95 &3033527326163923075
+  animatorPanelArchievments: {fileID: 6571057722523916674}
+  isActivated: 0
+  isAnimationActive: 0
+--- !u!95 &6571057722523916674
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
