@@ -7,6 +7,11 @@ public class DebloqueurDePassage : MonoBehaviour
     public GameObject[] objectsToActivate;
     public GameObject[] objectsToDesactivate;
 
+    private void Start()
+    {
+        UnlockPassage();
+    }
+
     private void Awake()
     {
         InputManager.OnPathStateChanged += UnlockPassage;
