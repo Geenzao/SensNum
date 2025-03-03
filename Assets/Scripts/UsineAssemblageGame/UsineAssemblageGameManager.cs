@@ -430,6 +430,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
         timeGoal = 0f;
         playerHasWin = false;
         circuitSpeed = SpeedCircuitSave;
+        TapisRoulantManager.Instance.ResetSpeed();
 
         // 2. Suppression des objets actifs dans le jeu
         // Supprimer tous les circuits imprimés encore présents

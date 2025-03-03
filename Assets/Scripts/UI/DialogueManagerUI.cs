@@ -182,13 +182,15 @@ public class DialogueManagerUI : MonoBehaviour
 
     public void HidePanelInteraction()
     {
-
-        PanelUITextInteraction.SetActive(false);
+        //pour éviter une erreur
+        if(PanelUITextInteraction != null)
+            PanelUITextInteraction.SetActive(false);
     }
 
     public void ShowBtnNext()
     {
-        btnNextSentenceVisuel.SetActive(true);
+        if (btnNextSentenceVisuel != null)
+            btnNextSentenceVisuel.SetActive(true);
         dialogueManager.Instance.SetIsAbleToNextSentence(true);
     }
 

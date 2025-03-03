@@ -93,4 +93,9 @@ public class TapisRoulantManager : Singleton<TapisRoulantManager>
     {
         speed += additionalSpeed;
     }
+
+    public void ResetSpeed()
+    {
+        speed = UsineAssemblageGameManager.Instance.GetActualSpeed();
+    }
 }
