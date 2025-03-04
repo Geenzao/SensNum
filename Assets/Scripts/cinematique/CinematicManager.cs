@@ -217,8 +217,8 @@ public class CinematicManager : Singleton<CinematicManager>
 
     public void OnSkipButtonClicked()
     {
-        print("Vous voulez skip la cinematique");
         wantToSkip = true; // le joueur veux passer la cinematic
+        this.btnSkip.gameObject.SetActive(false);
     }
 
     public void EndCinematic()
