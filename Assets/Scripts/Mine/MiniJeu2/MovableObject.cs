@@ -6,11 +6,27 @@ public class MovableObject : MonoBehaviour
     private Vector2 startPosition;
     private bool isDragging = false;
     private bool isStopped = false;
+    private bool isUp = false;
     [SerializeField] private string objectTag;
+    [SerializeField] private OreCounter oreCounter;
 
     void Start()
     {
         startPosition = transform.position;
+
+        GameObject zonesRecoltes = GameObject.Find("ZonesRecoltes");
+        if (zonesRecoltes != null)
+        {
+            oreCounter = zonesRecoltes.GetComponent<OreCounter>();
+            if (oreCounter == null)
+            {
+                Debug.LogError("OreCounter component not found on ZonesRecoltes GameObject.");
+            }
+        }
+        else
+        {
+            Debug.LogError("GameObject 'ZonesRecoltes' not found.");
+        }
     }
 
     void Update()
@@ -25,6 +41,21 @@ public class MovableObject : MonoBehaviour
     {
         isDragging = true;
         startPosition = transform.position;
+
+        if (objectTag == "Gold" && isUp)
+        {
+            oreCounter.RmAu();
+        }
+        else if (objectTag == "Copper" && isUp)
+        {
+            oreCounter.RmCu();
+        }
+        else if (objectTag == "Lithium" && isUp)
+        {
+            oreCounter.RmLi();
+        }
+
+        isUp = false;
     }
 
     void OnMouseDrag()
@@ -50,6 +81,8 @@ public class MovableObject : MonoBehaviour
             DropZone dropZone = collider.GetComponent<DropZone>();
             if (dropZone != null && dropZone.CheckDroppedObject(gameObject))
             {
+                // ToDo : Si on clic sur l'objet alors on enlève 1 de l'oercounter 
+                isUp = true;
                 StopMovement();
                 validDrop = true;
                 break;
