@@ -9743,7 +9743,7 @@ GameObject:
   - component: {fileID: 6699591267607256057}
   - component: {fileID: 3500275223467865078}
   - component: {fileID: 2500325733705123539}
-  - component: {fileID: 6571057722523916674}
+  - component: {fileID: 1532523487942210185}
   m_Layer: 5
   m_Name: UIachievments
   m_TagString: Untagged
@@ -9828,10 +9828,10 @@ MonoBehaviour:
   recycleAchievment: {fileID: 3360807410341164038}
   panelButton: {fileID: 6030810813398280533}
   panelAchievments: {fileID: 3812674969460977867}
-  animatorPanelArchievments: {fileID: 6571057722523916674}
+  animatorPanelArchievments: {fileID: 1532523487942210185}
   isActivated: 0
   isAnimationActive: 0
---- !u!95 &6571057722523916674
+--- !u!95 &1532523487942210185
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
