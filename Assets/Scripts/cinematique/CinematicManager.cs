@@ -227,7 +227,7 @@ public class CinematicManager : Singleton<CinematicManager>
         var currentBloc = tabCinematicBloc[tabCinematicBloc.Length-1];
         currentBloc.clips.gameObject.SetActive(true);
         currentBloc.clips.isRening = false;
-
+        this.btnSkip.gameObject.SetActive(false);//on efface le btn skip
         StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgressState, actualScene, sceneToLoad, false));
         asBeenFinished = true;
         //Debug.Log("On arrete la cinematique !");
