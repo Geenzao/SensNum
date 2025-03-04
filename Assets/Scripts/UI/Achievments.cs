@@ -19,10 +19,11 @@ public class Achievments : Menu
     [SerializeField] private GameObject panelButton;
     [SerializeField] private GameObject panelAchievments;
 
-    [Header("Animator")]
-    [SerializeField] private Animator animatorPanelArchievments;
-    [SerializeField] private bool isActivated = false;
-    [SerializeField] private bool isAnimationActive = false; //pour éviter de lancer plusieurs fois l'animation
+    //LES ANIMATIONS NE MARCHE PAS !!!
+    //[Header("Animator")]
+    //[SerializeField] private Animator animatorPanelArchievments;
+    //[SerializeField] private bool isAnimationActive = false; //pour éviter de lancer plusieurs fois l'animation
+    //[SerializeField] private bool isActivated = false;
 
     private Coroutine blinkCoroutine;
     private int breaker = 0;
@@ -48,12 +49,12 @@ public class Achievments : Menu
         if (visible)
         {
             panelButton.SetActive(visible);
-            panelAchievments.SetActive(visible);
+            //panelAchievments.SetActive(visible);
         }
         else
         {
             panelButton.SetActive(visible);
-            panelAchievments.SetActive(visible);
+            //panelAchievments.SetActive(visible);
         }
     }
 
@@ -96,29 +97,31 @@ public class Achievments : Menu
 
     private void OnAchievmentsButtonClicked()
     {
-        if (isAnimationActive)
-            return;
-        if (isActivated)
+        //if (isAnimationActive)
+        //    return;
+        if (panelAchievments.activeSelf) 
         {
-            animatorPanelArchievments.SetTrigger("hide");
-            isActivated = false;
+            //animatorPanelArchievments.SetTrigger("hide");
+            panelAchievments.SetActive(false);
+           // isActivated = false;
         }
         else
         {
-            animatorPanelArchievments.SetTrigger("show");
-            isActivated = true;
+            //animatorPanelArchievments.SetTrigger("show");
+            panelAchievments.SetActive(true);
+            //isActivated = true;
         }
     }
 
-    public void AnimationStart()
-    {
-        isAnimationActive = true;
-    }
+    //public void AnimationStart()
+    //{
+    //    isAnimationActive = true;
+    //}
 
-    public void AnimationEnd() 
-    {
-        isAnimationActive = false;
-    }
+    //public void AnimationEnd() 
+    //{
+    //    isAnimationActive = false;
+    //}
 
     public void ShowPanel()
     {
