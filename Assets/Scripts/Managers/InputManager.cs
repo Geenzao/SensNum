@@ -122,6 +122,19 @@ public class InputManager : Singleton<InputManager>
                 UsineAssemblageGameManager.Instance.UserClicLeftUp();
             }
 
+            //pour le candy crush
+            if(Input.GetMouseButtonDown(0) &&
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.CandyCrush &&
+                UIManager.CurrentMenuState == UIManager.MenuState.CandyCrush)
+            {
+                PuceBoard.Instance.UserClicLeftDown();
+            }
+            if (Input.GetMouseButtonUp(0) &&
+                GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.CandyCrush &&
+                UIManager.CurrentMenuState == UIManager.MenuState.CandyCrush)
+            {
+                PuceBoard.Instance.UserClicLeftUp();
+            }
             /*********************************/
             //Ajout version Portable
 

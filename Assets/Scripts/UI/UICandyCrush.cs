@@ -124,6 +124,7 @@ public class UICandyCrush : Menu
                 {
                     isAlreadyFinished = true;
                     defeatPanel.SetActive(true);
+                    PuceBoard.Instance.isGameFinish = true; //pour empéché le joueur de jouer après la fin du jeu
                 }
             }
             if (CandyGameManager.Instance.nbDechets < 10)
@@ -151,6 +152,7 @@ public class UICandyCrush : Menu
         CandyGameManager.Instance.barredechet = 0;
         CandyGameManager.Instance.tempsDerniereExecution = 0.0f;
 
+        PuceBoard.Instance.isGameFinish = false; //pour permettre le joueur de jouer 
 
         UpdateTexts();
         isAlreadyFinished = false;

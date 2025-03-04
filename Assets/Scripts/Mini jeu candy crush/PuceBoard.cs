@@ -4,7 +4,7 @@ using System.Dynamic;
 using UnityEngine;
 using static TMPro.Examples.ObjectSpin;
 
-public class PuceBoard : MonoBehaviour
+public class PuceBoard : Singleton<PuceBoard>
 {
     //define the size of the board
     public int width = 6;
@@ -33,14 +33,17 @@ public class PuceBoard : MonoBehaviour
     //layoutArray
     public ArrayLayout arrayLayout;
     //public static of puceboard
-    public static PuceBoard Instance;
+    // public static PuceBoard Instance;
+
+    //pour empécher le joueur de jouer quand la parti est fini
+    public bool isGameFinish = false;
 
     private List<Puce> pucesToRemove = new();
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    //private void Awake()
+    //{
+    //    Instance = this;
+    //}
 
     void Start()
     {
@@ -49,22 +52,23 @@ public class PuceBoard : MonoBehaviour
         InitializeBoard();
     }
 
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(0)) 
-        {
-            UserClicLeftDown();
-        }
+    //private void Update()
+    //{
+    //    if (Input.GetMouseButtonDown(0)) 
+    //    {
+    //        UserClicLeftDown();
+    //    }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            UserClicLeftUp();
-        }
-    }
+    //    if (Input.GetMouseButtonUp(0))
+    //    {
+    //        UserClicLeftUp();
+    //    }
+    //}
 
     //fonction pour quand l'utilisateur click sur une puce
     public void UserClicLeftDown()
     {
+        if (isGameFinish) { return; }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
 
@@ -82,6 +86,7 @@ public class PuceBoard : MonoBehaviour
     //fonction pour quand l'utilisateur relache le click sur une puce
     public void UserClicLeftUp()
     {
+        if (isGameFinish) { return; }
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
 
