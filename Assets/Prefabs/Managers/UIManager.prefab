@@ -9804,7 +9804,6 @@ MonoBehaviour:
   recycleAchievment: {fileID: 3360807410341164038}
   panelButton: {fileID: 6030810813398280533}
   panelAchievments: {fileID: 3812674969460977867}
-  isActivated: 0
 --- !u!1 &4138696980049753192
 GameObject:
   m_ObjectHideFlags: 0
