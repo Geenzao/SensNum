@@ -19,8 +19,9 @@ public class UISecondMiniGame : Menu
     public TextMeshProUGUI texteTimer;
     public TextMeshProUGUI texteDebut;
     public TextMeshProUGUI texteFin;
-    [SerializeField] private TextMeshProUGUI titleWin;
-    [SerializeField] private TextMeshProUGUI scoreNumberWin;
+    [SerializeField] private TextMeshProUGUI titleWinText;
+    [SerializeField] private TextMeshProUGUI scoreNumberWinText;
+    [SerializeField] private TextMeshProUGUI scoreText;
 
     [Header("Button")]
     [SerializeField] private Button winRetryButton;
@@ -42,6 +43,7 @@ public class UISecondMiniGame : Menu
     private OreCounter oreCounter;
     private GameObject btnVert;
     private SpawnAndDropManager spawnAndDropManager; // Référence au SpawnAndDropManager
+    private float _timer;
 
     private void Awake()
     {
@@ -108,12 +110,14 @@ public class UISecondMiniGame : Menu
             if (gameStarted && !isStopped)
             {
                 timer -= Time.deltaTime;
-                texteTimer.text = "Chrono : " + Mathf.FloorToInt(timer);
+                _timer = timer;
+                UpdateTexts();
 
                 if (timer <= 0.0f)
                 {
                     timer = 0.0f;
-                    texteTimer.text = "Chrono : " + Mathf.FloorToInt(timer);
+                    _timer = timer;
+                    UpdateTexts();
                     EndGame();
                 }
             }
@@ -158,7 +162,7 @@ public class UISecondMiniGame : Menu
         if (!isStopped)
         {
             isStopped = true;
-            texteFin.text = "Fin du jeu !\nOr : " + oreCounter.cptAu.ToString() + "\nCuivre : " + oreCounter.cptCu.ToString() + "\nLithium : " + oreCounter.cptLi.ToString();
+            UpdateTexts();
             Time.timeScale = 0.0f;
             /*texteFin.gameObject.SetActive(true);*/
             /*panelTexteFin.gameObject.SetActive(true);*/
@@ -169,18 +173,13 @@ public class UISecondMiniGame : Menu
 
     private void UpdateUI()
     {
-        texteCptOr.text = LanguageManager.Instance.GetText("Or") + " " + oreCounter.cptAu.ToString();
-        texteCptCu.text = LanguageManager.Instance.GetText("Cuivre") + " " + oreCounter.cptCu.ToString();
-        texteCptLi.text = LanguageManager.Instance.GetText("Lithium") + " " + oreCounter.cptLi.ToString();
+        UpdateTexts();
     }
 
     // ----------------- TO DO : RECOMMENCER LE MINI-JEU -----------------\\
     private void OnRetryButtonClicked()
     {
         winPanel.gameObject.SetActive(false);
-        texteCptCu.text = LanguageManager.Instance.GetText("Cuivre") + " 0";
-        texteCptLi.text = LanguageManager.Instance.GetText("Lithium") + " 0";
-        texteCptOr.text = LanguageManager.Instance.GetText("Or") + " 0";
         oreCounter.cptAu = 0;
         oreCounter.cptCu = 0;
         oreCounter.cptLi = 0;
@@ -229,13 +228,29 @@ public class UISecondMiniGame : Menu
             Debug.LogError("Text elements are not assigned in the inspector.");
             return;
         }
-        scoreNumberWin.text = texteCptOr.text + "\n" + texteCptCu.text + "\n" + texteCptLi.text;
-        //texteCptOr.text = LanguageManager.Instance.GetText("Or");
-        //texteCptCu.text = LanguageManager.Instance.GetText("Cuivre");
-        //texteCptLi.text = LanguageManager.Instance.GetText("Lithium");
-        //texteTimer.text = LanguageManager.Instance.GetText("Chrono");
-        //texteDebut.text = LanguageManager.Instance.GetText("Debut");
-        //texteFin.text = LanguageManager.Instance.GetText("Fin");
-        titleWin.text = LanguageManager.Instance.GetText("win");
+
+        else
+        {
+            if (oreCounter == null)
+            {
+                Debug.Log("OreCounter is not assigned.");
+                return;
+            }
+
+            else
+            {
+                titleWinText.text = LanguageManager.Instance.GetText("win");
+                texteCptOr.text = LanguageManager.Instance.GetText("gold") + " : " + oreCounter.cptAu.ToString();
+                texteCptCu.text = LanguageManager.Instance.GetText("copper") + " : " + oreCounter.cptCu.ToString();
+                texteCptLi.text = LanguageManager.Instance.GetText("lithium") + " : " + oreCounter.cptLi.ToString();
+                texteTimer.text = LanguageManager.Instance.GetText("chrono") + " : " + Mathf.FloorToInt(_timer).ToString();
+                texteDebut.text = LanguageManager.Instance.GetText("begining");
+                texteFin.text = LanguageManager.Instance.GetText("end") + "\n" + texteCptOr.text + "\n" + texteCptCu.text + "\n" + texteCptLi.text;
+                scoreNumberWinText.text = texteCptOr.text + "\n" + texteCptCu.text + "\n" + texteCptLi.text;
+                scoreText.text = LanguageManager.Instance.GetText("score");
+            }
+        }
+            
     }
+
 }
