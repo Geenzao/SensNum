@@ -18,6 +18,8 @@ public class CandyGameManager : Singleton<CandyGameManager>
     public int nbMatchs = 0;
     public int points;
 
+    private bool gameassarted = false;
+
     public bool isGameEnded;
 
     public float tempsDerniereExecution = 0.0f; // stock le temps passé depuis la derniere execution;
@@ -26,20 +28,24 @@ public class CandyGameManager : Singleton<CandyGameManager>
 
     void Update()
     {
-        if (nbDechets < 15)
+        if (gameassarted)
         {
-            tempsDerniereExecution += Time.fixedDeltaTime;  // ajoute a chaque update le temps écoulé depuis le dernier Update		
-            if (tempsDerniereExecution > delai)
+            if (nbDechets < 15)
             {
-                MonAction();
-                tempsDerniereExecution = 0;
-            }
+                tempsDerniereExecution += Time.fixedDeltaTime;  // ajoute a chaque update le temps écoulé depuis le dernier Update		
+                if (tempsDerniereExecution > delai)
+                {
+                    MonAction();
+                    tempsDerniereExecution = 0;
+                }
 
+            }
+            if (nbDechets == 15)
+            {
+                //Lancer un event pour dire que le jeu est fini
+            }
         }
-        if (nbDechets == 15)
-        {
-            //Lancer un event pour dire que le jeu est fini
-        }
+        
     }
     void MonAction()
     {
@@ -62,6 +68,7 @@ public class CandyGameManager : Singleton<CandyGameManager>
 
     public void ProcessTurn(int pointGain,int coupRealise)
     {
+        gameassarted = true;
         points += pointGain;
         pointText = points;
 
