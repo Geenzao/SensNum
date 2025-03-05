@@ -9,36 +9,51 @@ public class OreCounter : MonoBehaviour
     public void AddAu()
     {
         cptAu++;
-        Debug.Log("Gold count: " + cptAu);
+        /*Debug.Log("Gold count: " + cptAu);*/
     }
 
     public void RmAu()
     {
-        cptAu--;
-        Debug.Log("Gold count: " + cptAu);
+        if (cptAu == 0) {
+            return;
+        } else
+        {
+            cptAu--;
+        }
+        /*Debug.Log("Gold count: " + cptAu);*/
     }
 
     public void AddCu()
     {
         cptCu++;
-        Debug.Log("Copper count: " + cptCu);
+        /*Debug.Log("Copper count: " + cptCu);*/
     }
 
     public void RmCu()
     {
-        cptCu--;
-        Debug.Log("Copper count: " + cptCu);
+        if (cptCu == 0) {
+            return;
+        } else {
+            cptCu--;
+        }
+        /*Debug.Log("Copper count: " + cptCu);*/
     }
 
     public void AddLi()
     {
         cptLi++;
-        Debug.Log("Lithium count: " + cptLi);
+        /*Debug.Log("Lithium count: " + cptLi);*/
     }
 
     public void RmLi()
     {
-        cptLi--;
-        Debug.Log("Lithium count: " + cptLi);
+        if (cptLi == 0) {
+            return;
+        }
+        else
+        {
+            cptLi--;
+        }
+        /*Debug.Log("Lithium count: " + cptLi);*/
     }
 }
