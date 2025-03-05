@@ -93,6 +93,30 @@
       "value": "Chargement"
     },
     {
+      "key": "gold",
+      "value": "or"
+    },
+    {
+      "key": "copper",
+      "value": "cuivre"
+    },
+    {
+      "key": "lithium",
+      "value": "lithium"
+    },
+    {
+      "key": "begining",
+      "value": "Des minerais et des rochers vont défilés dans cette ligne d'eau.\nRécupérer un maximum de minerais avant la fin du chronomètre.\nAppuyez sur le boution vert pour commencer."
+    },
+    {
+      "key": "end",
+      "value": "fin"
+    },
+    {
+      "key": "score",
+      "value": "score"
+    },
+    {
       "key": "pnj_chefduvillage_0_0",
       "value": "Qui es-tu ?"
     },

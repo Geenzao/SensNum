@@ -93,6 +93,30 @@
       "value": "Loading"
     },
     {
+      "key": "gold",
+      "value": "gold"
+    },
+    {
+      "key": "copper",
+      "value": "copper"
+    },
+    {
+      "key": "lithium",
+      "value": "lithium"
+    },
+    {
+      "key": "begining",
+      "value": "Ores and rocks will parade in this water line.\nCollect as many ores as possible before the timer runs out.\nPress the green button to begin."
+    },
+    {
+      "key": "end",
+      "value": "end"
+    },
+    {
+      "key": "score",
+      "value": "score"
+    },
+    {
       "key": "pnj_chefduvillage_0_0",
       "value": "Who are you ?"
     },

@@ -9904,8 +9904,9 @@ MonoBehaviour:
   texteTimer: {fileID: 7799327937023084998}
   texteDebut: {fileID: 1636242320515302731}
   texteFin: {fileID: 1856002262886480598}
-  titleWin: {fileID: 1265891208452824463}
-  scoreNumberWin: {fileID: 3277353453327026487}
+  titleWinText: {fileID: 1265891208452824463}
+  scoreNumberWinText: {fileID: 3277353453327026487}
+  scoreText: {fileID: 1995556555409981061}
   winRetryButton: {fileID: 8565495897504731154}
   winNextGameButton: {fileID: 5057312180259961454}
   winPanel: {fileID: 2553207412312553023}
