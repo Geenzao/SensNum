@@ -42,7 +42,7 @@ public class UISecondMiniGame : Menu
 
     private OreCounter oreCounter;
     private GameObject btnVert;
-    private SpawnAndDropManager spawnAndDropManager; // Référence au SpawnAndDropManager
+    private SpawnAndDropManager spawnAndDropManager;
     private float _timer;
 
     private void Awake()
@@ -98,7 +98,7 @@ public class UISecondMiniGame : Menu
     {
         base.HandleMenuStateChanged(newMS, oldMS);
         if (newMS == UIManager.MenuState.SecondGameMine)
-            TriggerVisibility(true); //true
+            TriggerVisibility(true);
         else
             TriggerVisibility(false);
     }
@@ -148,13 +148,12 @@ public class UISecondMiniGame : Menu
     {
         Time.timeScale = 1.0f;
         gameStarted = true;
-        /*texteDebut.gameObject.SetActive(false);*/
         panelTexteDebut.gameObject.SetActive(false);
         if (btnVert != null)
         {
-            btnVert.SetActive(false); // Cache le bouton après le démarrage du jeu
+            btnVert.SetActive(false);
         }
-        spawnAndDropManager.StartGame(); // Notifie le SpawnAndDropManager de démarrer le jeu
+        spawnAndDropManager.StartGame();
     }
 
     private void EndGame()
@@ -164,10 +163,27 @@ public class UISecondMiniGame : Menu
             isStopped = true;
             UpdateTexts();
             Time.timeScale = 0.0f;
-            /*texteFin.gameObject.SetActive(true);*/
-            /*panelTexteFin.gameObject.SetActive(true);*/
-            UpdateTexts();
             winPanel.gameObject.SetActive(true);
+            GameObject[] objectsG = GameObject.FindGameObjectsWithTag("Gold");
+            GameObject[] objectsC = GameObject.FindGameObjectsWithTag("Copper");
+            GameObject[] objectsL = GameObject.FindGameObjectsWithTag("Lithium");
+            GameObject[] objectsR = GameObject.FindGameObjectsWithTag("Rocks");
+            foreach (GameObject obj in objectsG)
+            {
+                Destroy(obj);
+            }
+            foreach (GameObject obj in objectsC)
+            {
+                Destroy(obj);
+            }
+            foreach (GameObject obj in objectsL)
+            {
+                Destroy(obj);
+            }
+            foreach (GameObject obj in objectsR)
+            {
+                Destroy(obj);
+            }
         }
     }
 
@@ -176,7 +192,6 @@ public class UISecondMiniGame : Menu
         UpdateTexts();
     }
 
-    // ----------------- TO DO : RECOMMENCER LE MINI-JEU -----------------\\
     private void OnRetryButtonClicked()
     {
         winPanel.gameObject.SetActive(false);
@@ -189,28 +204,6 @@ public class UISecondMiniGame : Menu
         panelTexteDebut.gameObject.SetActive(true);
         UpdateTexts();
         btnVert.SetActive(true);
-        //Faire en sorte de supprimer tous les objets de tags "Gold", "Copper", "Lithium" & "Rocks"
-        GameObject[] objectsG = GameObject.FindGameObjectsWithTag("Gold");
-        GameObject[] objectsC = GameObject.FindGameObjectsWithTag("Copper");
-        GameObject[] objectsL = GameObject.FindGameObjectsWithTag("Lithium");
-        GameObject[] objectsR = GameObject.FindGameObjectsWithTag("Rocks");
-        foreach (GameObject obj in objectsG)
-        {
-            Destroy(obj);
-        }
-        foreach (GameObject obj in objectsC)
-        {
-            Destroy(obj);
-        }
-        foreach (GameObject obj in objectsL)
-        {
-            Destroy(obj);
-        }
-        foreach (GameObject obj in objectsR)
-        {
-            Destroy(obj);
-        }
-
     }
 
     private void OnBackSceneButtonClicked()
