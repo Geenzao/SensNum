@@ -112,8 +112,12 @@ public class dialogueManager : Singleton<dialogueManager>
 
     public void BtnInteraction()
     {
-        print("On a lické sur le btn");
-        print(lastPNJ.getTypeDialogue());
+        //print("On a lické sur le btn");
+        //print(lastPNJ.getTypeDialogue());
+        //pour réglé le bug où on clic sur le bouton et que le menu paramètre est afficher
+        if (GameManager.CurrentGameState == GameState.PAUSED)
+            return;
+
         if (lastPNJ.getTypeDialogue() == 0)
             StartDialogue(lastPNJ.getLastPNJnormal());
         else if (lastPNJ.getTypeDialogue() == 1)

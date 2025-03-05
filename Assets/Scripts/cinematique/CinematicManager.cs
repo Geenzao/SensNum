@@ -73,8 +73,6 @@ public class CinematicManager : Singleton<CinematicManager>
         }
 
         btnSkip.onClick.AddListener(OnSkipButtonClicked);
-
-        
     }
 
     void InitializeCinematique()
@@ -113,8 +111,14 @@ public class CinematicManager : Singleton<CinematicManager>
 
     private void Update()
     {
+        // Si le joueur veut passer la cinématique
+        if (wantToSkip)
+        {
+            return;
+        }
+
         // Si toutes les cinématiques sont jouées, on arrête
-        if (currentCinematicClipIndex >= tabCinematicBloc.Length || wantToSkip == true)
+        if (currentCinematicClipIndex >= tabCinematicBloc.Length)
         {
             if(asBeenFinished == false)
                 EndCinematic();
@@ -123,7 +127,7 @@ public class CinematicManager : Singleton<CinematicManager>
 
 
         // Si clic de souris, gérer le dialogue ou changer de cinématique
-        if (Input.GetMouseButtonDown(0)) // Clic gauche de la souris
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) // Clic gauche de la souris ou barre espace
         {
             CinematicManager.Instance.HandleDialogueOrClipTransition();
         }
@@ -217,13 +221,29 @@ public class CinematicManager : Singleton<CinematicManager>
 
     public void OnSkipButtonClicked()
     {
-        wantToSkip = true; // le joueur veux passer la cinematic
-        this.btnSkip.gameObject.SetActive(false);
+        wantToSkip = true; // Le joueur veut passer la cinématique
+        btnSkip.gameObject.SetActive(false); // Désactiver le bouton Skip
+
+        // On empêche toute transition de dialogue ou de clip
+        StopAllCoroutines(); // Arrêter les animations de texte en cours
+
+        // Ne pas désactiver le clip en cours, mais stopper sa lecture s'il y a lieu
+        var currentBloc = tabCinematicBloc[currentCinematicClipIndex];
+        currentBloc.clips.isRening = false;
+
+        // Masquer l'UI de dialogue
+        PanelDialogueCinematicUI.SetActive(false);
+
+        // Lancer le chargement de la scène immédiatement
+        StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgressState, actualScene, sceneToLoad, false));
+        asBeenFinished = true;
     }
 
+
+
+    //fonction pour finir les cinematique et passé à la suite dans le jeux
     public void EndCinematic()
     {
-
         var currentBloc = tabCinematicBloc[tabCinematicBloc.Length-1];
         currentBloc.clips.gameObject.SetActive(true);
         currentBloc.clips.isRening = false;
@@ -238,13 +258,5 @@ public class CinematicManager : Singleton<CinematicManager>
         {
             EndCinematicClip(currentCinematicClipIndex);
         }
-
-        //TODO : faire la logique pour lancer la scene de jeux Mine
-        //GameManager.Instance.UnloadLevel(actualScene);
-        //GameManager.Instance.LoadLevel(sceneToLoad);
-        //GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
-        //StartCoroutine(ChargementTransitionManager.Instance.LoadScene(gameProgressState, actualScene, sceneToLoad, false));
-
     }
 }
-
