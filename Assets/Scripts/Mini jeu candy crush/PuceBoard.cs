@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Dynamic;
+
 using UnityEngine;
-using static TMPro.Examples.ObjectSpin;
+
 
 public class PuceBoard : Singleton<PuceBoard>
 {

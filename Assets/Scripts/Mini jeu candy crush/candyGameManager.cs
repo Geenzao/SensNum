@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.Build;
 
 
 public class CandyGameManager : Singleton<CandyGameManager>
@@ -18,7 +21,8 @@ public class CandyGameManager : Singleton<CandyGameManager>
     public bool isGameEnded;
 
     public float tempsDerniereExecution = 0.0f; // stock le temps passé depuis la derniere execution;
-    float delai = 5.0f;    // tu defini l'interval voulu, en seconde.	
+    float delai = 5.0f;
+    int nbcoup;// tu defini l'interval voulu, en seconde.	
 
     void Update()
     {
@@ -43,6 +47,11 @@ public class CandyGameManager : Singleton<CandyGameManager>
         if (nbDechets < 11)
         {
             barredechet = nbDechets / 10f;
+        }
+        if(nbcoup >= 5)
+        {
+            delai = delai - 0.5f;
+            nbcoup = 0;
         }
     }
 
