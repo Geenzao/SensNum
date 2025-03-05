@@ -142,6 +142,8 @@ public class UICandyCrush : Menu
 
         defeatPanel.gameObject.SetActive(false);
 
+        CandyGameManager.Instance.delai = 5.0f;
+        CandyGameManager.Instance.gameassarted = false;
         CandyGameManager.Instance.nbDechets = 0;
         CandyGameManager.Instance.points = 0;
         CandyGameManager.Instance.pointText = 0;
