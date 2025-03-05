@@ -73,8 +73,6 @@ public class CinematicManager : Singleton<CinematicManager>
         }
 
         btnSkip.onClick.AddListener(OnSkipButtonClicked);
-
-        
     }
 
     void InitializeCinematique()
@@ -123,7 +121,7 @@ public class CinematicManager : Singleton<CinematicManager>
 
 
         // Si clic de souris, gérer le dialogue ou changer de cinématique
-        if (Input.GetMouseButtonDown(0)) // Clic gauche de la souris
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) // Clic gauche de la souris ou barre espace
         {
             CinematicManager.Instance.HandleDialogueOrClipTransition();
         }
@@ -219,8 +217,14 @@ public class CinematicManager : Singleton<CinematicManager>
     {
         wantToSkip = true; // le joueur veux passer la cinematic
         this.btnSkip.gameObject.SetActive(false);
+
+
+
+
     }
 
+
+    //fonction pour finir les cinematique et passé à la suite dans le jeux
     public void EndCinematic()
     {
 
