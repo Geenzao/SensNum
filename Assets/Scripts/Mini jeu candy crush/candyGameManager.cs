@@ -18,12 +18,12 @@ public class CandyGameManager : Singleton<CandyGameManager>
     public int nbMatchs = 0;
     public int points;
 
-    private bool gameassarted = false;
+    public bool gameassarted = false;
 
     public bool isGameEnded;
 
     public float tempsDerniereExecution = 0.0f; // stock le temps passé depuis la derniere execution;
-    float delai = 5.0f;
+    public float delai = 5.0f;
     int nbcoup;// tu defini l'interval voulu, en seconde.	
 
     void Update()
@@ -55,7 +55,7 @@ public class CandyGameManager : Singleton<CandyGameManager>
         {
             barredechet = nbDechets / 10f;
         }
-        if(nbcoup >= 5)
+        if(nbcoup >= 2 && delai > 0.5f)
         {
             delai = delai - 0.5f;
             nbcoup = 0;
