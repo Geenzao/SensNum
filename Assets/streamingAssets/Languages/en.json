@@ -117,6 +117,18 @@
       "value": "score"
     },
     {
+      "key": "nbMatch",
+      "value": "number of matches"
+    },
+    {
+      "key": "nbSuperMatch",
+      "value": "number of super matches"
+    },
+    {
+      "key": "trashToRecycle",
+      "value": "trash to recycle"
+    },
+    {
       "key": "pnj_chefduvillage_0_0",
       "value": "Who are you ?"
     },

@@ -18,14 +18,19 @@ public class UICandyCrush : Menu
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI nbMatchText;
     [SerializeField] private TextMeshProUGUI nbSuperMatchText;
-    [SerializeField] private TextMeshProUGUI trashToRecycleText;
 
     [SerializeField] private TextMeshProUGUI scoreIntText;
     [SerializeField] private TextMeshProUGUI nbMatchIntText;
     [SerializeField] private TextMeshProUGUI nbSuperMatchIntText;
+    [SerializeField] private TextMeshProUGUI trashToRecycleText;
+
+    [SerializeField] private TextMeshProUGUI defeatText;
 
     [SerializeField] private TextMeshProUGUI titleLoose;
     [SerializeField] private TextMeshProUGUI scoreNumberLoose;
+
+    [SerializeField] private TextMeshProUGUI retryText;
+    [SerializeField] private TextMeshProUGUI backSceneButton;
 
     [Header("Image")]
     [SerializeField] private Image barredechet;
@@ -180,7 +185,19 @@ public class UICandyCrush : Menu
             Debug.LogError("Text elements are not assigned in the inspector.");
             return;
         }
-        scoreNumberLoose.text = scoreIntText.text;
+
+        scoreText.text = LanguageManager.Instance.GetText("score");
+        nbMatchText.text = LanguageManager.Instance.GetText("nbMatch");
+        nbSuperMatchText.text = LanguageManager.Instance.GetText("nbSuperMatch");
+
+        trashToRecycleText.text = LanguageManager.Instance.GetText("trashToRecycle");
+
+        defeatText.text = LanguageManager.Instance.GetText("lose");
+
         titleLoose.text = LanguageManager.Instance.GetText("lose");
+        scoreNumberLoose.text = scoreIntText.text;
+
+        retryText.text = LanguageManager.Instance.GetText("replay");
+        backSceneButton.text = LanguageManager.Instance.GetText("quit");
     }
 }

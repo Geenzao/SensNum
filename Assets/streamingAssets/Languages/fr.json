@@ -117,6 +117,18 @@
       "value": "score"
     },
     {
+      "key": "nbMatch",
+      "value": "nombre de matchs"
+    },
+    {
+      "key": "nbSuperMatch",
+      "value": "nombre de super matchs"
+    },
+    {
+      "key": "trashToRecycle",
+      "value": "déchets à recycler"
+    },
+    {
       "key": "pnj_chefduvillage_0_0",
       "value": "Qui es-tu ?"
     },
