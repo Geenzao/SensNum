@@ -50,6 +50,7 @@ public class CandyGameManager : Singleton<CandyGameManager>
     void MonAction()
     {
         nbDechets++;
+        nbcoup++;
         if (nbDechets < 11)
         {
             barredechet = nbDechets / 10f;
