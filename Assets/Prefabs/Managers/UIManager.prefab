@@ -2989,7 +2989,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478280487357488701}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &6539258172982894711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5121,12 +5121,15 @@ MonoBehaviour:
   scoreText: {fileID: 856702942114615086}
   nbMatchText: {fileID: 2591850000656377698}
   nbSuperMatchText: {fileID: 3630747819904384682}
-  trashToRecycleText: {fileID: 5760934525352857094}
   scoreIntText: {fileID: 5825752429958952177}
   nbMatchIntText: {fileID: 5405454937125202939}
   nbSuperMatchIntText: {fileID: 6986888452519908850}
+  trashToRecycleText: {fileID: 5760934525352857094}
+  defeatText: {fileID: 4169221468156317153}
   titleLoose: {fileID: 3775582677964536319}
   scoreNumberLoose: {fileID: 9006759263759874025}
+  retryText: {fileID: 1469198093272849553}
+  backSceneButton: {fileID: 3392535480737814255}
   barredechet: {fileID: 4197035610389718816}
   alerte: {fileID: 9220075550103272011}
   looseRetryButton: {fileID: 1309910833396711561}
@@ -16512,9 +16515,9 @@ RectTransform:
   - {fileID: 4684475477008905924}
   - {fileID: 5793718973674041268}
   - {fileID: 8008233026017455853}
+  - {fileID: 1451365768321770617}
   - {fileID: 9192368532579354047}
   - {fileID: 2567118547704453699}
-  - {fileID: 1451365768321770617}
   - {fileID: 475854854599339347}
   m_Father: {fileID: 5705511567923473080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -117,6 +117,18 @@
       "value": "puntaje"
     },
     {
+      "key": "nbMatch",
+      "value": "número de coincidencias"
+    },
+    {
+      "key": "nbSuperMatch",
+      "value": "número de super coincidencias"
+    },
+    {
+      "key": "trashToRecycle",
+      "value": "basura para reciclar"
+    },
+    {
       "key": "pnj_chefduvillage_0_0",
       "value": "¿Quién eres?"
     },
