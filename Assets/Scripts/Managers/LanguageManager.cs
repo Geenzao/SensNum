@@ -22,6 +22,7 @@ public class LanguageData
 public class LanguageList
 {
     public List<string> languages;
+    public List<string> fullname;
 }
 
 
@@ -45,17 +46,32 @@ public class LanguageManager : Singleton<LanguageManager>
 
     public void ChangeLanguage(string newLanguage)
     {
-        if (newLanguage != currentLanguage)
+        // Convertir le nom complet en code de langue
+        string languageCode = GetLanguageCode(newLanguage);
+        
+        if (languageCode != currentLanguage)
         {
-            StartCoroutine(LoadLanguage(newLanguage, success =>
+            StartCoroutine(LoadLanguage(languageCode, success =>
             {
                 if (success)
                 {
-                    currentLanguage = newLanguage;
+                    currentLanguage = languageCode;
                     Debug.LogWarning("Language changed to: " + currentLanguage);
-                    OnLanguageChanged?.Invoke(); // Déclenchement de l'événement
+                    OnLanguageChanged?.Invoke();
                 }
             }));
+        }
+    }
+
+    private string GetLanguageCode(string languageName)
+    {
+        // Cette méthode doit être implémentée pour convertir les noms complets en codes
+        switch (languageName.ToLower())
+        {
+            case "english": return "en";
+            case "français": return "fr";
+            case "español": return "es";
+            default: return languageName; // Si c'est déjà un code, on le retourne tel quel
         }
     }
 
@@ -140,12 +156,12 @@ public class LanguageManager : Singleton<LanguageManager>
             if (request.result == UnityWebRequest.Result.Success)
             {
                 LanguageList data = JsonUtility.FromJson<LanguageList>(request.downloadHandler.text);
-                callback(data.languages);
+                callback(data.fullname);
             }
             else
             {
                 Debug.LogError("Error loading language list: " + request.error);
-                callback(new List<string> { "en" });
+                callback(new List<string> { "english" });
             }
         }
     }
