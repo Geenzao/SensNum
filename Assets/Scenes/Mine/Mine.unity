@@ -66111,7 +66111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3630810569036116120, guid: 9fdb8edf968e32c48be1d61335d19478, type: 3}
       propertyPath: y
-      value: -19
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 3630810569036116120, guid: 9fdb8edf968e32c48be1d61335d19478, type: 3}
       propertyPath: path

@@ -48313,11 +48313,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2496511112409674851, guid: 542a50e59b92e444b85327b1d74e1a42, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 29.97
       objectReference: {fileID: 0}
     - target: {fileID: 2496511112409674851, guid: 542a50e59b92e444b85327b1d74e1a42, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 9.06
       objectReference: {fileID: 0}
     - target: {fileID: 2496511112409674851, guid: 542a50e59b92e444b85327b1d74e1a42, type: 3}
       propertyPath: m_LocalPosition.z
