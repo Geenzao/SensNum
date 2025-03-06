@@ -55,7 +55,7 @@ public class CandyGameManager : Singleton<CandyGameManager>
         {
             barredechet = nbDechets / 10f;
         }
-        if(nbcoup >= 2 && delai > 0.5f)
+        if(nbcoup >= 3 && delai > 0.5f)
         {
             delai = delai - 0.5f;
             nbcoup = 0;
