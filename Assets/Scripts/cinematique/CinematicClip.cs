@@ -46,7 +46,14 @@ public class CinematicClip : MonoBehaviour
             {
                 if (image != null && !initialPositions.ContainsKey(image))
                 {
-                    initialPositions[image] = image.transform.position;
+                    // initialPositions[image] = image.transform.position;
+                    RectTransform rectTransform = image.GetComponent<RectTransform>();
+
+                    if (rectTransform != null)
+                    {
+                        // Stocke la position relative (anchoredPosition) pour les UI Elements
+                        initialPositions[image] = rectTransform.anchoredPosition;
+                    }
                 }
             }
         }
@@ -80,7 +87,13 @@ public class CinematicClip : MonoBehaviour
                 if (image != null)
                 {
                     // Déplace l'image dans la direction donnée à la vitesse du layer auquel elle appartient
-                    image.transform.Translate(direction * tabSpeedLayer[i] * Time.deltaTime);
+                    //image.transform.Translate(direction * tabSpeedLayer[i] * Time.deltaTime);
+                    RectTransform rectTransform = image.GetComponent<RectTransform>();
+                    if (rectTransform != null)
+                    {
+                        Vector2 newPos = rectTransform.anchoredPosition + (Vector2)(direction * tabSpeedLayer[i] * Time.deltaTime * 100f);
+                        rectTransform.anchoredPosition = newPos;
+                    }
                 }
             }
         }
@@ -95,7 +108,13 @@ public class CinematicClip : MonoBehaviour
         {
             if (kvp.Key != null)
             {
-                kvp.Key.transform.position = kvp.Value;
+                //kvp.Key.transform.position = kvp.Value;
+                RectTransform rectTransform = kvp.Key.GetComponent<RectTransform>();
+                if (rectTransform != null)
+                {
+                    rectTransform.anchoredPosition = (Vector2)kvp.Value;
+
+                }
             }
         }
 
