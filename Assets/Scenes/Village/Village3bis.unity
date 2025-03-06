@@ -48615,6 +48615,10 @@ PrefabInstance:
       propertyPath: listDialogue.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5792958582559724193, guid: b5f3bec3e8dde6440a60b6fd85059719, type: 3}
+      propertyPath: tabPointDestination.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3536755204318260597, guid: b5f3bec3e8dde6440a60b6fd85059719, type: 3}
