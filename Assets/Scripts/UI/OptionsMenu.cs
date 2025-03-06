@@ -76,7 +76,7 @@ public class OptionsMenu : Menu
         volumeMusicScrollbar.value = 0.3f;
         volumeSoundScrollbar.value = 0.3f;
 
-        // Charger les textes en fonction de la langue s�lectionn�e
+        // Charger les textes en fonction de la langue sélectionnée
         if (LanguageManager.Instance != null)
         {
             UpdateTexts();
@@ -111,7 +111,15 @@ public class OptionsMenu : Menu
 
             // Ajouter les langues disponibles au dropdown
             languageDropdown.AddOptions(languages);
-            //Afficher les drapeaux
+
+            // Vérifier si le nombre de drapeaux correspond au nombre de langues
+            if (languageFlags.Count < languages.Count)
+            {
+                Debug.LogError("Le nombre de drapeaux ne correspond pas au nombre de langues disponibles");
+                return;
+            }
+
+            // Afficher les drapeaux
             for (int i = 0; i < languages.Count; i++)
             {
                 languageDropdown.options[i].image = languageFlags[i];
@@ -121,14 +129,13 @@ public class OptionsMenu : Menu
             string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
             int currentLanguageIndex = languages.IndexOf(currentLanguage);
 
-            if (currentLanguageIndex >= 0)
+            if (currentLanguageIndex >= 0 && currentLanguageIndex < languageFlags.Count)
             {
                 languageDropdown.value = currentLanguageIndex;
                 languageDropdown.RefreshShownValue();
+                currentLanguageFlag.sprite = languageFlags[currentLanguageIndex];
+                currentLanguageFlag.gameObject.GetComponent<Image>().enabled = true;
             }
-
-            currentLanguageFlag.sprite = languageFlags[currentLanguageIndex];
-            currentLanguageFlag.gameObject.GetComponent<Image>().enabled = true;
         });
     }
 
