@@ -58,6 +58,16 @@ public class MouvementPNJ : MonoBehaviour
     private bool ThisPnjSpeakToPlayer = false;
     public Vector3 initialScale;  // Pour sauvegarder la taille initiale du PNJ
 
+
+    /*pour la gestio nde l'audio avec différence corbeau, poul, pnj*/
+    public enum TypeAudioPnj
+    {
+        PNJ,
+        Corbeau,
+        Poule
+    }
+    public TypeAudioPnj typeAudioPnj = TypeAudioPnj.PNJ;
+
     void Awake()
     {
         initialScale = gameObject.transform.localScale;  // Sauvegarde la taille initiale
@@ -197,8 +207,35 @@ public class MouvementPNJ : MonoBehaviour
         switch (currentState)
         {
             case PNJState.Idle:
+            {
+                //pour que je corbeau jou son son
+                if(typeAudioPnj == TypeAudioPnj.Corbeau)
+                {
+                        //AudioManager.Instance.PlaySoundEffet(AudioType.Corbeau);
+                        int chanceDeParler = Random.Range(0, 5);
+                        AudioSource hh = GetComponent<AudioSource>();
+                        AudioClip clip = AudioManager.Instance.GetClip(AudioType.Corbeau);
+                        hh.clip = clip;
+                        hh.Play();
+                }
+
+                if(typeAudioPnj == TypeAudioPnj.Poule)
+                {
+                    //AudioManager.Instance.PlaySoundEffet(AudioType.Poule1);
+                    int chanceDeParler = Random.Range(0, 5);
+                    AudioSource hh = GetComponent<AudioSource>();
+
+                    AudioClip clip = AudioManager.Instance.GetClip(AudioType.Poule1);
+                    hh.clip = clip;
+
+                    if (chanceDeParler == 0 && hh != null)
+                        hh.Play();
+                }
+
                 animator.SetTrigger("idl");
                 break;
+
+            }
             case PNJState.ActionSpecific:
                 animator.SetTrigger("interaction");
                 break;

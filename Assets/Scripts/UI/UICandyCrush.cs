@@ -129,6 +129,7 @@ public class UICandyCrush : Menu
                 {
                     isAlreadyFinished = true;
                     defeatPanel.SetActive(true);
+                    AudioManager.Instance.PlaySoundEffet(AudioType.Deffaite);
                     PuceBoard.Instance.isGameFinish = true; //pour empéché le joueur de jouer après la fin du jeu
                 }
             }

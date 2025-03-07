@@ -41,7 +41,9 @@ public enum AudioType
     Victory, //17
     UsineAssemblyCompletedCircuit, //18
     UsineAssemblyCompletedOnComposant, //19
-    MineGame1PlayerTakeObject //20
+    MineGame1PlayerTakeObject, //20
+    Chat1,//21
+    Chat2//22
 }
 
 
@@ -102,6 +104,13 @@ public class AudioManager : Singleton<AudioManager>
         {
             audioSource.Stop();
         }
+    }
+
+
+    public AudioClip GetClip(AudioType at)
+    {
+        DicoAudioClips.TryGetValue(at, out AudioClip clip);
+        return clip;
     }
 
     //Cette fonction permet de jouer un effet sonnor

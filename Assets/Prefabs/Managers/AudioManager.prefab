@@ -70,8 +70,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8d07e4f8512b3db468bf5806b0770221, type: 3}
   - {fileID: 8300000, guid: 9a8ce8cd1622c324d863cef15f88989c, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 7084bd3d9a83b4e44a82e282e5cf6331, type: 3}
+  - {fileID: 8300000, guid: dba2299b101cb724c8bb27e89ad49dea, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
