@@ -157,6 +157,7 @@ public class UsineAssemblageUI : Menu
     //Fct pour rejouer une game
     public void OnReplayButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         state = UsineAssemblageState.rule;
 
         //On affiche les bon Panel
@@ -173,6 +174,7 @@ public class UsineAssemblageUI : Menu
     //Fct pour sortir du mini jeux
     public void OnQuitButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         Debug.Log("Quit button clicked. Hiding panels.");
         Time.timeScale = 1.0f;
         PanelLose.SetActive(false);

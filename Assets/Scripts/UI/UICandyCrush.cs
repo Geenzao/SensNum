@@ -143,6 +143,7 @@ public class UICandyCrush : Menu
     // ----------------- TO DO : RECOMMENCER LE MINI-JEU -----------------\\
     private void OnRetryButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         /*PuceBoard.Instance.InitializeBoard();*/
 
         defeatPanel.gameObject.SetActive(false);
@@ -168,6 +169,7 @@ public class UICandyCrush : Menu
     // ----------------- TO DO : RETOURNER A LA SCENE PRECEDENTE AVEC BON GAME PROGRESS-----------------\\
     private void OnBackSceneButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         defeatPanel.gameObject.SetActive(false);
         //GameManager.Instance.UnloadLevel("MiniJeuCandycrush");
         //GameManager.Instance.LoadLevelAndPositionPlayer(LastSceneName);
