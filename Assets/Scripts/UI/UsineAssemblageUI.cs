@@ -124,6 +124,7 @@ public class UsineAssemblageUI : Menu
         UpdateTexts();
 
         PanelLose.SetActive(true);
+        AudioManager.Instance.PlaySoundEffet(AudioType.Deffaite);
         PanelNotifyAcceleration.SetActive(false);
     }
 
@@ -136,7 +137,7 @@ public class UsineAssemblageUI : Menu
         UpdateTexts();
 
         PanelWin.SetActive(true);
-        Debug.Log("PANEK WIN ACTIVED.");
+        AudioManager.Instance.PlaySoundEffet(AudioType.Victory);
         PanelNotifyAcceleration.SetActive(false);
     }
 

@@ -193,6 +193,8 @@ public class UIThirdGameMine : Menu
     // ----------------- TO DO : RECOMMENCER LE MINI-JEU -----------------\\
     private void OnRetryButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         loosePanel.gameObject.SetActive(false);
         winPanel.gameObject.SetActive(false);
         ThirdMiniGame.Instance.counterTruck = 0;
@@ -213,6 +215,8 @@ public class UIThirdGameMine : Menu
 
     private void OnBackSceneButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         Time.timeScale = 1.0f;
         loosePanel.gameObject.SetActive(false);
         winPanel.gameObject.SetActive(false);
