@@ -21,9 +21,22 @@ public class chat_mouve : MonoBehaviour
 
             
             anim.SetTrigger("anim" + number);
-            
-            
-            
+
+            int numberAudio = Random.Range(1, 3); // Génère un nombre entre 1 et 2
+            AudioClip clip;
+            if (numberAudio == 1) 
+            {
+                clip = AudioManager.Instance.GetClip(AudioType.Chat2);
+            }
+            else
+            clip = AudioManager.Instance.GetClip(AudioType.Chat1);
+
+            AudioSource hh = GetComponent<AudioSource>();
+
+            hh.clip = clip;
+            hh.Play();
+
+
 
             yield return new WaitForSeconds(5); // Attend 5 secondes
             
