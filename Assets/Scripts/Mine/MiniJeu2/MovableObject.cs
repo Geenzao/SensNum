@@ -39,6 +39,7 @@ public class MovableObject : MonoBehaviour
 
     void OnMouseDown()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         isDragging = true;
         startPosition = transform.position;
 
@@ -82,6 +83,7 @@ public class MovableObject : MonoBehaviour
             if (dropZone != null && dropZone.CheckDroppedObject(gameObject))
             {
                 // ToDo : Si on clic sur l'objet alors on enlève 1 de l'oercounter 
+                AudioManager.Instance.PlaySoundEffet(AudioType.CandyCrushSuperMatch);
                 isUp = true;
                 StopMovement();
                 validDrop = true;

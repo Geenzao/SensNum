@@ -2205,7 +2205,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.7839928
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -42569,7 +42569,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.8980277
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -46935,7 +46935,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.0263174
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -47170,7 +47170,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.7839928
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -48407,7 +48407,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 2.678093
+  MinDistance: 1.9653726
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -48504,7 +48504,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.7412302
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -48601,7 +48601,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.8267565
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -48698,7 +48698,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.8125021
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -48795,7 +48795,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.7982469
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
