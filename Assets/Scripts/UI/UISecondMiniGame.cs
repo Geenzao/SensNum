@@ -160,6 +160,7 @@ public class UISecondMiniGame : Menu
     {
         if (!isStopped)
         {
+            AudioManager.Instance.PlaySoundEffet(AudioType.Victory);
             isStopped = true;
             UpdateTexts();
             Time.timeScale = 0.0f;

@@ -180,11 +180,13 @@ public class UIThirdGameMine : Menu
             {
                 UpdateTexts();
                 winPanel.SetActive(true);
+                AudioManager.Instance.PlaySoundEffet(AudioType.Victory);
             }
             else
             {
                 UpdateTexts();
                 loosePanel.SetActive(true);
+                AudioManager.Instance.PlaySoundEffet(AudioType.Deffaite);
             }
             Time.timeScale = 0.0f;
         }
