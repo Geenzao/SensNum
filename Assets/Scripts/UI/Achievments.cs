@@ -97,6 +97,7 @@ public class Achievments : Menu
 
     private void OnAchievmentsButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         //if (isAnimationActive)
         //    return;
         if (panelAchievments.activeSelf) 

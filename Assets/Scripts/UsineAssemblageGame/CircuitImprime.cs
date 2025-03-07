@@ -42,12 +42,14 @@ public class CircuitImprime : MonoBehaviour
         {
             this.lstComponentPlaceOnCircuit[indexComponentPlace].isFill = true;
             this.lstComponentPlaceOnCircuit[indexComponentPlace].component.SetActive(true);
+            AudioManager.Instance.PlaySoundEffet(AudioType.UsineAssemblyCompletedOnComposant);
         }
         //else Debug.LogWarning("Mauvais type");
 
         if(CheckValidity())
         {
             UsineAssemblageGameManager.Instance.AddGoodCircuit();
+            AudioManager.Instance.PlaySoundEffet(AudioType.UsineAssemblyCompletedCircuit);
         }
     }
 

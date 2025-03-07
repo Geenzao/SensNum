@@ -221,6 +221,7 @@ public class CinematicManager : Singleton<CinematicManager>
 
     public void OnSkipButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         wantToSkip = true; // Le joueur veut passer la cinématique
         btnSkip.gameObject.SetActive(false); // Désactiver le bouton Skip
 

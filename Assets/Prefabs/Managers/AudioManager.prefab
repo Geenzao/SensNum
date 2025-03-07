@@ -49,8 +49,34 @@ MonoBehaviour:
   - Item1: {fileID: 8300000, guid: 1703dddb46637a74b8cc9a3853e76990, type: 3}
     Item2: {fileID: 8300000, guid: adf4ddc3ea634c1479445bb1968ad46e, type: 3}
   tabSoundEffect:
-  - {fileID: 8300000, guid: 7b3e9e9707d06104bb5dc7f56ffa0def, type: 3}
-  - {fileID: 8300000, guid: 6848d0b7b97badc41adac95d7491accd, type: 3}
+  - {fileID: 8300000, guid: 36e16516caa2d684988967d6bd8483fd, type: 3}
+  - {fileID: 8300000, guid: 87ecef7672ecfee449d305a5dab4b4c0, type: 3}
+  - {fileID: 8300000, guid: 2c84389b0d6a1fc499bdc5d0dd073d2d, type: 3}
+  - {fileID: 8300000, guid: 8b2b67dc98c9a7d40bfcd4211243de29, type: 3}
+  - {fileID: 8300000, guid: 2c84389b0d6a1fc499bdc5d0dd073d2d, type: 3}
+  - {fileID: 8300000, guid: 684d72260bc835a42a35a9e4ef18b1af, type: 3}
+  - {fileID: 8300000, guid: dbb4ea9629ae2144dbf197963a34ee0d, type: 3}
+  - {fileID: 8300000, guid: 6b4e853227ba019418dbba4f08af1ae5, type: 3}
+  - {fileID: 8300000, guid: 0bc8b1c9344160540bfeb04c50c4ef31, type: 3}
+  - {fileID: 8300000, guid: fe9a9cbc4e283c14c91d0fe9b265cc84, type: 3}
+  - {fileID: 8300000, guid: c86cb9c408b4ade4fb03a6caac1bbcb2, type: 3}
+  - {fileID: 8300000, guid: ce44bc8142ed7ed468026996c88e42ba, type: 3}
+  - {fileID: 8300000, guid: 26ba70b7af1e35f43b3ead95f9fef925, type: 3}
+  - {fileID: 8300000, guid: eff3417c75fc623488eed792093b6183, type: 3}
+  - {fileID: 8300000, guid: c86cb9c408b4ade4fb03a6caac1bbcb2, type: 3}
+  - {fileID: 8300000, guid: ce44bc8142ed7ed468026996c88e42ba, type: 3}
+  - {fileID: 8300000, guid: b155398884c062e41b99b127e174fb01, type: 3}
+  - {fileID: 8300000, guid: c8e05cdcde8646f499ad7b9a538c57f5, type: 3}
+  - {fileID: 8300000, guid: 8d07e4f8512b3db468bf5806b0770221, type: 3}
+  - {fileID: 8300000, guid: 9a8ce8cd1622c324d863cef15f88989c, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   audioSource: {fileID: 8845364755385890098}
   soundEffectMixer: {fileID: 6107678594155169245, guid: 3f8f5b0d51eecfe4a9bc1ff759e88911, type: 2}
 --- !u!82 &8845364755385890098

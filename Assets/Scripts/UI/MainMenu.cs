@@ -68,6 +68,7 @@ public class MainMenu : Menu
 
     private void OnPlayButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         GameManager.Instance.UnloadLevel("Start");
         GameManager.Instance.LoadLevel(levelToLoad);
         GameProgressManager.Instance.UpdateGameProgressState(GameProgressManager.GameProgressState.Start);
@@ -76,6 +77,7 @@ public class MainMenu : Menu
 
     private void OnSettingsButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         panelSettings.SetActive(!panelSettings.activeSelf);
     }
 

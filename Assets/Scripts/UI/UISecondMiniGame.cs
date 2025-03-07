@@ -160,6 +160,7 @@ public class UISecondMiniGame : Menu
     {
         if (!isStopped)
         {
+            AudioManager.Instance.PlaySoundEffet(AudioType.Victory);
             isStopped = true;
             UpdateTexts();
             Time.timeScale = 0.0f;
@@ -194,6 +195,7 @@ public class UISecondMiniGame : Menu
 
     private void OnRetryButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         winPanel.gameObject.SetActive(false);
         oreCounter.cptAu = 0;
         oreCounter.cptCu = 0;
@@ -208,6 +210,7 @@ public class UISecondMiniGame : Menu
 
     private void OnBackSceneButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         winPanel.gameObject.SetActive(false);
         GameManager.Instance.UnloadLevel("Mine2emeJeux");
         GameManager.Instance.LoadLevel(LastSceneName);

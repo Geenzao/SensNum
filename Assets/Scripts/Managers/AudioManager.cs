@@ -19,6 +19,31 @@ using UnityEngine.Audio;
  * � la place, nous utilisons des fichiers .wav modifi�s pour int�grer des crescendos et decrescendos au d�but et � la fin de chaque morceau.
  */
 
+public enum AudioType
+{
+    UIButton, //0
+    BruitDePasTerre, //1
+    BruitDePasMetal, //2
+    BruitDePasBois, //3
+    BruitDePasBeton, //4
+    Camion, //5
+    CandyCrushAlert, //6
+    CandyCrushMatch, //7
+    CandyCrushSuperMatch, //8
+    Pioche, //9
+    Pioche1, //10
+    Pioche2, //11
+    Tronceneuse, //12
+    Corbeau, //13
+    Poule1, //14
+    Poule2, //15
+    Deffaite, //16
+    Victory, //17
+    UsineAssemblyCompletedCircuit, //18
+    UsineAssemblyCompletedOnComposant, //19
+    MineGame1PlayerTakeObject //20
+}
+
 
 public class AudioManager : Singleton<AudioManager>
 {
@@ -29,6 +54,8 @@ public class AudioManager : Singleton<AudioManager>
 
     [Header("Audio Clips Sound Effect")]
     public AudioClip[] tabSoundEffect;
+
+    private Dictionary<AudioType, AudioClip> DicoAudioClips = new Dictionary<AudioType, AudioClip>();
 
     [Header("Audio Sources")]
     public AudioSource audioSource; //responsable de jouer les musiques de fond
@@ -42,6 +69,11 @@ public class AudioManager : Singleton<AudioManager>
     void Start()
     {
         GameProgressManager.Instance.OnGameProgressStateChange.AddListener(HandleGameProgressStateChanged);
+
+        foreach (AudioType audioType in System.Enum.GetValues(typeof(AudioType)))
+        {
+            DicoAudioClips.Add(audioType, tabSoundEffect[(int)audioType]);
+        }
     }
 
     //Il faudrait qu'en fonction du GameProgressState, on joue une musique diff�rente, en premier la musique de d�but, puis la musique de boucle en boucle
@@ -74,20 +106,22 @@ public class AudioManager : Singleton<AudioManager>
 
     //Cette fonction permet de jouer un effet sonnor
     //Les autre classe on juste � l'appeler et � renseigner en param l'indice de l'effet sonnor plac� dans l'AudioManager
-    public AudioSource PlaySoundEffet(int index)
+    public AudioSource PlaySoundEffet(AudioType at)
     {
-        if (index < 0 || index > tabSoundEffect.Length)
+        //en fonction de l'audiotype et on jou le son correspondant dans le dico
+        DicoAudioClips.TryGetValue(at, out AudioClip clip);
+        if (clip == null)
         {
-            Debug.LogWarning("Index d'effet sonore invalide !");
+            Debug.LogError("AudioClip not found for AudioType : " + at);
             return null;
         }
 
         GameObject objectTempo = new GameObject("TempAudio");
         AudioSource audioSource = objectTempo.AddComponent<AudioSource>();//on ajoute un audio source au game object
-        audioSource.clip = tabSoundEffect[index];
+        audioSource.clip = clip;
         audioSource.outputAudioMixerGroup = soundEffectMixer; // on ajoute le mixer de l'audio source
         audioSource.Play();
-        Destroy(objectTempo, tabSoundEffect[index].length); // on d�truit l'objet une fois qu'on arrive a la fin du clip audio de l'objet
+        Destroy(objectTempo, clip.length); // on d�truit l'objet une fois qu'on arrive a la fin du clip audio de l'objet
         return audioSource;
     }
 

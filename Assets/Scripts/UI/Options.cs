@@ -202,6 +202,7 @@ public class Options : MonoBehaviour
 
     private void OnQuitButtonClicked()
     {
+        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         gameObject.SetActive(false);
     }
 
