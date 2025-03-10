@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build;
 
 
 public class CandyGameManager : Singleton<CandyGameManager>
