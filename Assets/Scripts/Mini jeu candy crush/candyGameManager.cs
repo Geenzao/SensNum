@@ -75,6 +75,7 @@ public class CandyGameManager : Singleton<CandyGameManager>
 
         if (coupRealise == 1)
         {
+            AudioManager.Instance.PlaySoundEffet(AudioType.CandyCrushMatch);
             nbMatchs++;
             if(nbDechets > 0)
             {
@@ -84,6 +85,7 @@ public class CandyGameManager : Singleton<CandyGameManager>
         }
         if (coupRealise == 2)
         {
+            AudioManager.Instance.PlaySoundEffet(AudioType.CandyCrushSuperMatch);
             nbSuperMatchs++;
             if (nbDechets > 0)
             {

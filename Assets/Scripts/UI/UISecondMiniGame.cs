@@ -140,6 +140,7 @@ public class UISecondMiniGame : Menu
 
         if (hit.collider != null && hit.collider.gameObject == btnVert)
         {
+            AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
             StartGame();
         }
     }
