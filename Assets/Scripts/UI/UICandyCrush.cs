@@ -24,8 +24,6 @@ public class UICandyCrush : Menu
     [SerializeField] private TextMeshProUGUI nbSuperMatchIntText;
     [SerializeField] private TextMeshProUGUI trashToRecycleText;
 
-    [SerializeField] private TextMeshProUGUI defeatText;
-
     [SerializeField] private TextMeshProUGUI titleLoose;
     [SerializeField] private TextMeshProUGUI scoreNumberLoose;
 
@@ -194,8 +192,6 @@ public class UICandyCrush : Menu
         nbSuperMatchText.text = LanguageManager.Instance.GetText("nbSuperMatch");
 
         trashToRecycleText.text = LanguageManager.Instance.GetText("trashToRecycle");
-
-        defeatText.text = LanguageManager.Instance.GetText("lose");
 
         titleLoose.text = LanguageManager.Instance.GetText("lose");
         scoreNumberLoose.text = scoreIntText.text;

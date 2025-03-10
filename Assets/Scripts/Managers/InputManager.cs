@@ -143,7 +143,8 @@ public class InputManager : Singleton<InputManager>
                 //pour les mouvement du player
                 moveX = Input.GetAxisRaw("Horizontal");
                 moveY = Input.GetAxisRaw("Vertical");
-                playerMovement.Instance.setMove(moveX, moveY);
+                if(playerMovement.Instance != null)
+                    playerMovement.Instance.setMove(moveX, moveY);
 
                 //pour les dialogue
                 if (dialogueManager.Instance.fctisDialogueActive() == false && Input.GetKeyDown(KeyCode.E))
