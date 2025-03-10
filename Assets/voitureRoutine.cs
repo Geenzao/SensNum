@@ -12,6 +12,7 @@ public class voitureRoutine : MonoBehaviour
     private Transform[] points;
     private int currentPointIndex;
     public float speed;
+    public GameObject colliderObject;
 
     // Start is called before the first frame update
     void Start()
@@ -48,18 +49,22 @@ public class voitureRoutine : MonoBehaviour
         if (points[currentPointIndex] == pointB.transform)
         {
             anim.SetTrigger("droite");
+            colliderObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         else if (points[currentPointIndex] == pointC.transform)
         {
             anim.SetTrigger("bas");
+            colliderObject.transform.rotation = Quaternion.Euler(0, 0, -90);
         }
         else if (points[currentPointIndex] == pointD.transform)
         {
             anim.SetTrigger("gauche");
+            colliderObject.transform.rotation = Quaternion.Euler(0, 0, 180);
         }
         else if (points[currentPointIndex] == pointA.transform)
         {
             anim.SetTrigger("haut");
+            colliderObject.transform.rotation = Quaternion.Euler(0, 0, 90);
         }
     }
 
