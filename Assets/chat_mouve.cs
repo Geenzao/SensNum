@@ -7,6 +7,8 @@ public class chat_mouve : MonoBehaviour
     public int number;
     public int numberofanimation;
 
+    public bool TypeChatSound = true;
+
     void Start()
     {
         StartCoroutine(GenerateRandomNumber());
@@ -22,19 +24,22 @@ public class chat_mouve : MonoBehaviour
             
             anim.SetTrigger("anim" + number);
 
-            int numberAudio = Random.Range(1, 3); // Génère un nombre entre 1 et 2
-            AudioClip clip;
-            if (numberAudio == 1) 
+            if(TypeChatSound == true)
             {
-                clip = AudioManager.Instance.GetClip(AudioType.Chat2);
+                int numberAudio = Random.Range(1, 3); // Génère un nombre entre 1 et 2
+                AudioClip clip;
+                if (numberAudio == 1) 
+                {
+                    clip = AudioManager.Instance.GetClip(AudioType.Chat2);
+                }
+                else
+                clip = AudioManager.Instance.GetClip(AudioType.Chat1);
+
+                AudioSource hh = GetComponent<AudioSource>();
+
+                hh.clip = clip;
+                hh.Play();
             }
-            else
-            clip = AudioManager.Instance.GetClip(AudioType.Chat1);
-
-            AudioSource hh = GetComponent<AudioSource>();
-
-            hh.clip = clip;
-            hh.Play();
 
 
 

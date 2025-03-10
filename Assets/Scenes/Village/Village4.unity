@@ -49172,6 +49172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cat
       objectReference: {fileID: 0}
+    - target: {fileID: 7814750075960578803, guid: 9734c94f44651cc46b41efaac0e552d1, type: 3}
+      propertyPath: TypeChatSound
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8512352735156185682, guid: 9734c94f44651cc46b41efaac0e552d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.11
