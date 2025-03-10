@@ -74,7 +74,7 @@ public class voitureRoutine : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            speed = 4;
+            speed = 8;
         }
     }
 }
