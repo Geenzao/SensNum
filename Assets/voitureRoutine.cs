@@ -62,4 +62,19 @@ public class voitureRoutine : MonoBehaviour
             anim.SetTrigger("haut");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            speed = 0;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            speed = 4;
+        }
+    }
 }
