@@ -50,37 +50,37 @@ public class InputManager : Singleton<InputManager>
                     GameManager.Instance.UpdateGameState(GameState.RUNNING);
                 }
             }
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                Debug.Log("F pressed");
-                PathManager.Instance.UpdatePathState(PathManager.PathState.Mine);
-                OnPathStateChanged?.Invoke();
-            }
-            if (Input.GetKeyDown(KeyCode.G))
-            {
-                Debug.Log("G pressed");
-                PathManager.Instance.UpdatePathState(PathManager.PathState.Village2);
-            }
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                Debug.Log("H pressed");
-                PathManager.Instance.UpdatePathState(PathManager.PathState.AssemblyFactory);
-            }
-            if (Input.GetKeyDown(KeyCode.J))
-            {
-                Debug.Log("J pressed");
-                PathManager.Instance.UpdatePathState(PathManager.PathState.Village3);
-            }
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                Debug.Log("K pressed");
-                PathManager.Instance.UpdatePathState(PathManager.PathState.RecycleFactory);
-            }
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                Debug.Log("L pressed");
-                PathManager.Instance.UpdatePathState(PathManager.PathState.Village3bis);
-            }
+            //if (Input.GetKeyDown(KeyCode.F))
+            //{
+            //    Debug.Log("F pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.Mine);
+            //    OnPathStateChanged?.Invoke();
+            //}
+            //if (Input.GetKeyDown(KeyCode.G))
+            //{
+            //    Debug.Log("G pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.Village2);
+            //}
+            //if (Input.GetKeyDown(KeyCode.H))
+            //{
+            //    Debug.Log("H pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.AssemblyFactory);
+            //}
+            //if (Input.GetKeyDown(KeyCode.J))
+            //{
+            //    Debug.Log("J pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.Village3);
+            //}
+            //if (Input.GetKeyDown(KeyCode.K))
+            //{
+            //    Debug.Log("K pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.RecycleFactory);
+            //}
+            //if (Input.GetKeyDown(KeyCode.L))
+            //{
+            //    Debug.Log("L pressed");
+            //    PathManager.Instance.UpdatePathState(PathManager.PathState.Village3bis);
+            //}
 
             //if (Input.GetKeyDown(KeyCode.J))
             //{
