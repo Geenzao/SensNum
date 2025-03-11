@@ -82,21 +82,21 @@ public class InputManager : Singleton<InputManager>
                 PathManager.Instance.UpdatePathState(PathManager.PathState.Village3bis);
             }
 
-            //if (Input.GetKeyDown(KeyCode.J))
-            //{
-            //    Debug.Log("J pressed");
-            //    PathManager.Instance.UpdatePathState(PathManager.PathState.Mine);
-            //}
-            //if (Input.GetKeyDown(KeyCode.K))
-            //{
-            //    Debug.Log("K pressed");
-            //    PathManager.Instance.UpdatePathState(PathManager.PathState.AssemblyFactory);
-            //}
-            //if (Input.GetKeyDown(KeyCode.L))
-            //{
-            //    Debug.Log("L pressed");
-            //    PathManager.Instance.UpdatePathState(PathManager.PathState.RecycleFactory);
-            //}
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                Debug.Log("J pressed");
+                PathManager.Instance.UpdatePathState(PathManager.PathState.Mine);
+            }
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                Debug.Log("K pressed");
+                PathManager.Instance.UpdatePathState(PathManager.PathState.AssemblyFactory);
+            }
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                Debug.Log("L pressed");
+                PathManager.Instance.UpdatePathState(PathManager.PathState.RecycleFactory);
+            }
 
             if (Input.GetMouseButtonDown(0) && 
                 UsineAssemblageUI.State == UsineAssemblageState.rule && 
