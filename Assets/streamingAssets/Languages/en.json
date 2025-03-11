@@ -30,7 +30,7 @@
     },
     {
       "key": "startThirdGameMine",
-      "value": "Get all the trucks carrying minerals out before the timer runs out! \n\t\t\t\n\t\t\tClick on a truck to make it move."
+      "value": "Get all the trucks carrying minerals out before the timer runs out! \n\nClick on a truck to make it move."
     },
     {
       "key": "truck",
@@ -922,11 +922,11 @@
     },
     {
       "key": "2eMJM_Rules",
-      "value": "Los minerales y las rocas pasarán a través de la línea de agua. \nRecoge tantos minerales como puedas antes de que se acabe el tiempo. \n\t\tPulsa el botón verde para empezar."
+      "value": "The minerals and rocks will pass through the water line. \nCollect as many minerals as you can before time runs out. \n\t\tPress the green button to start."
     },
     {
       "key": "3eMJM_Rules",
-      "value": "¡Acaba con todos los camiones que transportan minerales antes de que se acabe el tiempo! \n\t\tHaz clic en un camión para hacerlo avanzar."
+      "value": "Finish off all the trucks carrying minerals before time runs out! \n\t\tClick on a truck to make it move."
     }
   ]
 }

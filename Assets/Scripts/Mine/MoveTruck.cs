@@ -69,7 +69,7 @@ public class MoveTruck : MonoBehaviour
         if (CompareTag("Truck") || CompareTag("TruckOre"))
         {
             isMoving = true;
-            AudioManager.Instance.PlaySoundEffet(AudioType.Camion);
+            /*AudioManager.Instance.PlaySoundEffet(AudioType.Camion);*/
         }
     }
 

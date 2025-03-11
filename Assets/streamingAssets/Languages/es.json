@@ -30,7 +30,7 @@
     },
     {
       "key": "startThirdGameMine",
-      "value": "¡Saca todos los camiones que transportan minerales antes de que se acabe el tiempo! \n\t\t\t\n\t\t\tHaz clic en un camión para que se mueva."
+      "value": "¡Saca todos los camiones que transportan minerales antes de que se acabe el tiempo! \n\nHaz clic en un camión para que se mueva."
     },
     {
       "key": "truck",
