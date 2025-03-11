@@ -30,7 +30,7 @@
     },
     {
       "key": "startThirdGameMine",
-      "value": "Sortez tous les camions transportant des minerais avant la fin du chronomètre ! \n\t\t\t\n\t\t\tCliquez sur un camion pour le faire avancer."
+      "value": "Sortez tous les camions transportant des minerais avant la fin du chronomètre ! \n\nCliquez sur un camion pour le faire avancer."
     },
     {
       "key": "truck",
@@ -166,7 +166,7 @@
     },
     {
       "key": "pnj_chefduvillage_2_0",
-      "value": "Ahhh ! Tu n'entends pas, ils ont commencer à couper les arbres !"
+      "value": "Ahhh ! Tu n'entends pas, ils ont commencé à couper les arbres !"
     },
     {
       "key": "pnj_chefduvillage_2_1",
