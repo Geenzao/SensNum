@@ -76,6 +76,7 @@ public class AudioManager : Singleton<AudioManager>
         {
             DicoAudioClips.Add(audioType, tabSoundEffect[(int)audioType]);
         }
+        musicStateIndex = 0;
     }
 
     //Il faudrait qu'en fonction du GameProgressState, on joue une musique diff�rente, en premier la musique de d�but, puis la musique de boucle en boucle
@@ -83,14 +84,19 @@ public class AudioManager : Singleton<AudioManager>
     {
         if (audioSource.isPlaying == false)
         {
+            print(musicStateIndex);
+            print(tabMusic.Count);
             if (musicStateIndex >= 0 && musicStateIndex < tabMusic.Count)
             {
+                print("2");
                 if (musicToPlay == 0)
                 {
+                    print("3");
                     audioSource.clip = tabMusic[musicStateIndex].Item1;
                     audioSource.Play();
                     musicToPlay = 1;
                 } else {
+                    print("4");
                     audioSource.clip = tabMusic[musicStateIndex].Item2;
                     audioSource.Play();
                 }
