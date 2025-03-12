@@ -64101,6 +64101,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3630810569036116120, guid: 9fdb8edf968e32c48be1d61335d19478, type: 3}
+      propertyPath: changePathTrigger
+      value: 
+      objectReference: {fileID: 1291223274}
+    - target: {fileID: 3630810569036116120, guid: 9fdb8edf968e32c48be1d61335d19478, type: 3}
       propertyPath: listDialogue.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -64502,6 +64506,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+--- !u!1 &1291223274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 568176521287426654, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+  m_PrefabInstance: {fileID: 1291223273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1439134022
 GameObject:
   m_ObjectHideFlags: 0
