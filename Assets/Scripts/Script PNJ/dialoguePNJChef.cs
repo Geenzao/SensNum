@@ -26,6 +26,8 @@ public class dialoguePNJChef : MonoBehaviour
     [SerializeField] private GameProgressManager.GameProgressState beginingGameProgressState;
     [SerializeField] private GameProgressManager.GameProgressState endGameProgressState;
 
+    [SerializeField] private GameObject changePathTrigger;
+
 
     void Awake()
     {
@@ -128,7 +130,10 @@ public class dialoguePNJChef : MonoBehaviour
             print("On enleve le warning");
             //ON désactive le warning qui indique au joueur que le PNJ a fini de parler
             if(gameObject.GetComponent<warningPNJ>())
+            {
                 gameObject.GetComponent<warningPNJ>().hideWarning();
+                changePathTrigger.SetActive(true);
+            }
 
             finishAlreadyReached = true;
             if (GameProgressManager.CurrentGameProgressState == beginingGameProgressState)
