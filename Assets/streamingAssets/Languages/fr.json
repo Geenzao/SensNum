@@ -927,6 +927,38 @@
     {
       "key": "3eMJM_Rules",
       "value": "Sortez tous les camions transportant des minerais avant la fin du chronomètre ! \n\t\tCliquez sur un camion pour le faire avancer."
+    },
+    {
+      "key": "CandyCrush_Rules",
+      "value": "Des déchets vont arrivés, intervertit fais une ligne de minimum 3 puces pour les recycler, \ntu peux en intervertir deux à la fois !"
+    },
+    {
+      "key": "EndTextWin_MJ1",
+      "value": "Bravo ! Tu as réussi à récupérer des minerais ! \nPasse à la suite !"
+    },
+    {
+      "key": "EndTextLose_MJ1",
+      "value": "Tu n'as récupéré aucun minerais, recommence !"
+    },
+    {
+      "key": "EndTextWin_MJ2",
+      "value": "Bravo ! Tu as réussi à sortir tous les camions ! \nPasse à la suite !"
+    },
+    {
+      "key": "EndTextLose_MJ2",
+      "value": "Tu n'as pas réussi à sortir tous les camions, recommence !"
+    },
+    {
+      "key": "EndTextWin_MJ3",
+      "value": "T'as été rapide, bravo. Tu peux passer à la suite !"
+    },
+    {
+      "key": "EndTextLoose_MJ3",
+      "value": "Tu n'as pas été assez rapide, recommence !"
+    },
+    {
+      "key": "EndTextLose_MJ4",
+      "value": "Trop de déchets se sont accumulés on ne peut plus les recycler. \nPasse à la suite !"
     }
   ]
 }

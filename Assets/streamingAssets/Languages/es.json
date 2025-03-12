@@ -927,6 +927,38 @@
     {
       "key": "3eMJM_Rules",
       "value": "Get all the ore trucks out before the timer runs out! \n\t\tClick on a truck to move it forward."
+    },
+    {
+      "key": "CandyCrush_Rules",
+      "value": "Van a llegar residuos, intercambia para hacer una línea de al menos 3 fichas para reciclarlas, ¡puedes intercambiar dos a la vez!"
+    },
+    {
+      "key": "EndTextWin_MJ1",
+      "value": "¡Bien hecho! ¡Has logrado recoger minerales! ¡Pasa al siguiente nivel!"
+    },
+    {
+      "key": "EndTextLose_MJ1",
+      "value": "No has recogido ningún mineral, ¡inténtalo de nuevo!"
+    },
+    {
+      "key": "EndTextWin_MJ2",
+      "value": "¡Bien hecho! ¡Has logrado sacar todos los camiones! ¡Pasa al siguiente nivel!"
+    },
+    {
+      "key": "EndTextLose_MJ2",
+      "value": "No lograste sacar todos los camiones, ¡inténtalo de nuevo!"
+    },
+    {
+      "key": "EndTextWin_MJ3",
+      "value": "Has sido rápido, bien hecho. ¡Puedes pasar al siguiente nivel!"
+    },
+    {
+      "key": "EndTextLoose_MJ3",
+      "value": "No has sido lo suficientemente rápido, ¡inténtalo de nuevo!"
+    },
+    {
+      "key": "EndTextLose_MJ4",
+      "value": "Se ha acumulado demasiada basura, ya no se puede reciclar. ¡Pasa al siguiente nivel!"
     }
   ]
 }

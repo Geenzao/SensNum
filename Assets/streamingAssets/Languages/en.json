@@ -927,6 +927,38 @@
     {
       "key": "3eMJM_Rules",
       "value": "Finish off all the trucks carrying minerals before time runs out! \n\t\tClick on a truck to make it move."
+    },
+    {
+      "key": "CandyCrush_Rules",
+      "value": "Trash will arrive, swap to make a line of at least 3 chips to recycle them, you can swap two at a time!"
+    },
+    {
+      "key": "EndTextWin_MJ1",
+      "value": "Well done! You managed to collect some minerals! Move on to the next step!"
+    },
+    {
+      "key": "EndTextLose_MJ1",
+      "value": "You didn't collect any minerals, try again!"
+    },
+    {
+      "key": "EndTextWin_MJ2",
+      "value": "Well done! You managed to get all the trucks out! Move on to the next step!"
+    },
+    {
+      "key": "EndTextLose_MJ2",
+      "value": "You didn't manage to get all the trucks out, try again!"
+    },
+    {
+      "key": "EndTextWin_MJ3",
+      "value": "You were fast, well done. You can move on to the next step!"
+    },
+    {
+      "key": "EndTextLoose_MJ3",
+      "value": "You weren't fast enough, try again!"
+    },
+    {
+      "key": "EndTextLose_MJ4",
+      "value": "Too much waste has piled up, we can't recycle it anymore. Move on to the next step!"
     }
   ]
 }
