@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEditor;
 using UnityEngine;
 using static GameManager;
@@ -31,7 +32,8 @@ public class UIManager : Singleton<UIManager>
         CandyCrush,
         Loading,
         Dialogue,
-        Cinematic
+        Cinematic,
+        Credits
     }
 
     //\brief Currently displayed menu
@@ -87,7 +89,7 @@ public class UIManager : Singleton<UIManager>
                 Debug.Log("MenuState.None UIMANAGER");
                 UpdateMenuState(MenuState.None);
             }
-                
+
         }
     }
 
