@@ -145,6 +145,13 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         }
         return Vector2.zero;
     }
+
+    //fonction pour reset le joystick au centre
+    public void ResetJoystick()
+    {
+        input = Vector2.zero;
+        handle.anchoredPosition = Vector2.zero;
+    }
 }
 
 public enum AxisOptions { Both, Horizontal, Vertical }

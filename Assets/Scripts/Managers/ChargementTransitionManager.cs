@@ -7,6 +7,8 @@ public class ChargementTransitionManager : Singleton<ChargementTransitionManager
 {
     public static event Action OnLoadPage;
     public static event Action OnUnloadPage;
+    public static event Action OnResetJoystick;
+
 
     public GameProgressState gameProgressState;
 
@@ -31,6 +33,13 @@ public class ChargementTransitionManager : Singleton<ChargementTransitionManager
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.Loading);
         Debug.Log(gameProgressState);
         ChargementTransitionManager.Instance.gameProgressState = gameProgressState;
+
+        //Si on est en portable, on reset le joystick
+        if (PlatformManager.Instance.fctisMobile())
+        {
+            OnResetJoystick?.Invoke();
+        }
+
         yield return new WaitForSecondsRealtime(1.2f);
         if(GameObject.FindWithTag("Player") != null)
             GameManager.Instance.UnloadAndSavePosition(currentScene, x, y);
