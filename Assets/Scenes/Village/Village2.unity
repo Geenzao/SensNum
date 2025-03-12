@@ -40320,6 +40320,10 @@ PrefabInstance:
       propertyPath: 'sceneNameToGo.Array.data[1]'
       value: Mine
       objectReference: {fileID: 0}
+    - target: {fileID: 7907694327850387171, guid: ab01627059ac5fb46a47e207f387180e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
