@@ -860,23 +860,27 @@ PrefabInstance:
       objectReference: {fileID: 917376807}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: circuitSpeed
-      value: 1.8
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: tapisRoulant
       value: 
       objectReference: {fileID: 7601988238634318534, guid: a670850fded80ab448c208c5a72199d6, type: 3}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
+      propertyPath: nbCircuitGoal
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: spawnInterval
       value: 
       objectReference: {fileID: 2021842290}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: speedAcceleration
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: accelerationInterval
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 334567059015394569, guid: 72f406d9987feb8438bb3c8872316110, type: 3}
       propertyPath: 'tabComponent.Array.data[0]'
