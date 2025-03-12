@@ -16,6 +16,7 @@ public class PlatformManagerUI : Menu
     private void Awake()
     {
         btnPause.onClick.AddListener(OnPauseButtonClicked);
+        ChargementTransitionManager.OnResetJoystick += ResetPosJoystick;
     }
 
     protected override void TriggerVisibility(bool visible)
@@ -76,5 +77,10 @@ public class PlatformManagerUI : Menu
     {
         if (isMobile  && UIManager.CurrentMenuState == UIManager.MenuState.None && playerMovement.Instance != null)
             playerMovement.Instance.setMove(joystick.Horizontal, joystick.Vertical);
+    }
+
+    public void ResetPosJoystick()
+    {
+        joystick.ResetJoystick();
     }
 }
