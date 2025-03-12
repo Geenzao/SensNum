@@ -15189,6 +15189,26 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7055813969478423151, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
+      propertyPath: m_Size.x
+      value: 2.2471447
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055813969478423151, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9963269
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055813969478423151, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055813969478423151, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0039548874
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055813969478423151, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.03212738
+      objectReference: {fileID: 0}
     - target: {fileID: 7859682624274295875, guid: 1a8fc0a9b8e687246b9a2dbdf339a482, type: 3}
       propertyPath: m_Name
       value: pnj_chefFactoryAssembly_ensemble
