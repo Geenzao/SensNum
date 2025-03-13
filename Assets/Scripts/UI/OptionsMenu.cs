@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class OptionsMenu : Menu
 {
@@ -93,6 +94,8 @@ public class OptionsMenu : Menu
     {
         base.TriggerVisibility(visible);
         panelOptions.SetActive(visible);
+        if(visible)
+            InitializeLanguageDropdown();
     }
 
     private void InitializeLanguageDropdown()
@@ -127,7 +130,22 @@ public class OptionsMenu : Menu
 
             // Définir la langue actuelle comme sélectionnée dans le dropdown
             string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
-            int currentLanguageIndex = languages.IndexOf(currentLanguage);
+            
+            // Créer un mapping entre les codes de langue et les noms complets
+            var languageMapping = new Dictionary<string, string>
+            {
+                { "en", "English" },
+                { "fr", "Français" },
+                { "es", "Español" }
+                // Ajouter d'autres langues si nécessaire
+            };
+
+            // Convertir le code de langue en nom complet
+            string fullLanguageName = languageMapping.ContainsKey(currentLanguage) 
+                ? languageMapping[currentLanguage] 
+                : currentLanguage;
+
+            int currentLanguageIndex = languages.FindIndex(lang => lang.Equals(fullLanguageName, StringComparison.OrdinalIgnoreCase));
 
             if (currentLanguageIndex >= 0 && currentLanguageIndex < languageFlags.Count)
             {
@@ -135,6 +153,10 @@ public class OptionsMenu : Menu
                 languageDropdown.RefreshShownValue();
                 currentLanguageFlag.sprite = languageFlags[currentLanguageIndex];
                 currentLanguageFlag.gameObject.GetComponent<Image>().enabled = true;
+            }
+            else
+            {
+                Debug.LogError($"La langue actuelle '{currentLanguage}' (mappée en '{fullLanguageName}') n'a pas été trouvée dans la liste des langues disponibles");
             }
         });
     }
