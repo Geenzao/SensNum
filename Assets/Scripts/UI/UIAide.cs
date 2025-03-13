@@ -68,7 +68,7 @@ public class UIAide : Menu
     protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
     {
         base.HandleMenuStateChanged(newMS, oldMS);
-        if (newMS == UIManager.MenuState.SecondGameMine)
+        if (newMS == UIManager.MenuState.None)
             TriggerVisibility(true);
         else
             TriggerVisibility(false);
