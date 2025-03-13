@@ -84,7 +84,6 @@ public class Options : MonoBehaviour
         {
             Debug.LogError("LanguageManager instance is not initialized.");
         }
-        
     }
 
 
@@ -142,15 +141,27 @@ public class Options : MonoBehaviour
             // Afficher les drapeaux
             for (int i = 0; i < languages.Count; i++)
             {
-                if (i < languageFlags.Count) // Vérification supplémentaire
-                {
-                    languageDropdown.options[i].image = languageFlags[i];
-                }
+                languageDropdown.options[i].image = languageFlags[i];
             }
 
             // Définir la langue actuelle comme sélectionnée dans le dropdown
             string currentLanguage = LanguageManager.Instance.GetCurrentLanguage();
-            int currentLanguageIndex = languages.IndexOf(currentLanguage);
+            
+            // Créer un mapping entre les codes de langue et les noms complets
+            var languageMapping = new Dictionary<string, string>
+            {
+                { "en", "English" },
+                { "fr", "Français" },
+                { "es", "Español" }
+                // Ajouter d'autres langues si nécessaire
+            };
+
+            // Convertir le code de langue en nom complet
+            string fullLanguageName = languageMapping.ContainsKey(currentLanguage) 
+                ? languageMapping[currentLanguage] 
+                : currentLanguage;
+
+            int currentLanguageIndex = languages.FindIndex(lang => lang.Equals(fullLanguageName, StringComparison.OrdinalIgnoreCase));
 
             if (currentLanguageIndex >= 0 && currentLanguageIndex < languageFlags.Count)
             {
@@ -158,6 +169,10 @@ public class Options : MonoBehaviour
                 languageDropdown.RefreshShownValue();
                 currentLanguageFlag.sprite = languageFlags[currentLanguageIndex];
                 currentLanguageFlag.gameObject.GetComponent<Image>().enabled = true;
+            }
+            else
+            {
+                Debug.LogError($"La langue actuelle '{currentLanguage}' (mappée en '{fullLanguageName}') n'a pas été trouvée dans la liste des langues disponibles");
             }
         });
     }
