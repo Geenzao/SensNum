@@ -20,15 +20,18 @@ public class UISecondMiniGame : Menu
     public TextMeshProUGUI texteDebut;
     public TextMeshProUGUI texteFin;
     [SerializeField] private TextMeshProUGUI titleWinText;
+    [SerializeField] private TextMeshProUGUI titleLooseText;
     [SerializeField] private TextMeshProUGUI scoreNumberWinText;
     [SerializeField] private TextMeshProUGUI scoreText;
 
     [Header("Button")]
     [SerializeField] private Button winRetryButton;
+    [SerializeField] private Button looseRetryButton;
     [SerializeField] private Button winNextGameButton;
 
     [Header("Panel")]
     [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject loosePanel;
     public GameObject panelTexteDebut;
     public GameObject panelTexteFin;
     public GameObject panelTexteMinerai;
@@ -48,6 +51,7 @@ public class UISecondMiniGame : Menu
     private void Awake()
     {
         winRetryButton.onClick.AddListener(OnRetryButtonClicked);
+        looseRetryButton.onClick.AddListener(OnRetryButtonClicked);
         winNextGameButton.onClick.AddListener(OnBackSceneButtonClicked);
 
         LanguageManager.OnLanguageChanged += UpdateTexts;
@@ -165,7 +169,10 @@ public class UISecondMiniGame : Menu
             isStopped = true;
             UpdateTexts();
             Time.timeScale = 0.0f;
-            winPanel.gameObject.SetActive(true);
+            if (oreCounter.cptAu != 0 || oreCounter.cptCu != 0 || oreCounter.cptLi != 0)
+                winPanel.gameObject.SetActive(true);
+            else
+                loosePanel.gameObject.SetActive(true);
             GameObject[] objectsG = GameObject.FindGameObjectsWithTag("Gold");
             GameObject[] objectsC = GameObject.FindGameObjectsWithTag("Copper");
             GameObject[] objectsL = GameObject.FindGameObjectsWithTag("Lithium");
@@ -198,6 +205,7 @@ public class UISecondMiniGame : Menu
     {
         AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         winPanel.gameObject.SetActive(false);
+        loosePanel.gameObject.SetActive(false);
         oreCounter.cptAu = 0;
         oreCounter.cptCu = 0;
         oreCounter.cptLi = 0;
@@ -236,7 +244,8 @@ public class UISecondMiniGame : Menu
 
             else
             {
-                titleWinText.text = LanguageManager.Instance.GetText("win");
+                titleWinText.text = LanguageManager.Instance.GetText("EndTextWin_MJ1");
+                titleLooseText.text = LanguageManager.Instance.GetText("EndTextLose_MJ1");
                 texteCptOr.text = LanguageManager.Instance.GetText("gold") + " : " + oreCounter.cptAu.ToString();
                 texteCptCu.text = LanguageManager.Instance.GetText("copper") + " : " + oreCounter.cptCu.ToString();
                 texteCptLi.text = LanguageManager.Instance.GetText("lithium") + " : " + oreCounter.cptLi.ToString();

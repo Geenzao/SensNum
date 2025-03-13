@@ -21,7 +21,7 @@ public class UIThirdGameMine : Menu
 
     [Header("Button")]
     [SerializeField] private Button looseRetryButton;
-    [SerializeField] private Button looseBackSceneButton;
+    /*[SerializeField] private Button looseBackSceneButton;*/
     [SerializeField] private Button winRetryButton;
     [SerializeField] private Button winBackSceneButton;
 
@@ -52,7 +52,7 @@ public class UIThirdGameMine : Menu
     {
         /* ---------- Ajouts Aymeric Debut ---------- */
         looseRetryButton.onClick.AddListener(OnRetryButtonClicked);
-        looseBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);
+        /*looseBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);*/
         winRetryButton.onClick.AddListener(OnRetryButtonClicked);
         winBackSceneButton.onClick.AddListener(OnBackSceneButtonClicked);
         /* ---------- Ajout Aymeric Fin ---------- */
@@ -241,8 +241,8 @@ public class UIThirdGameMine : Menu
         timerText.text = LanguageManager.Instance.GetText("chrono") + " : " + Mathf.FloorToInt(timer);
         textDebut.text = LanguageManager.Instance.GetText("startThirdGameMine");
         /* ---------- Ajouts Aymeric Debut ---------- */
-        titleWin.text = LanguageManager.Instance.GetText("win");
-        titleLoose.text = LanguageManager.Instance.GetText("lose");
+        titleWin.text = LanguageManager.Instance.GetText("EndTextWin_MJ2");
+        titleLoose.text = LanguageManager.Instance.GetText("EndTextLose_MJ2");
         /* ---------- Ajout Aymeric Fin ---------- */
     }
 }
