@@ -77,9 +77,22 @@ public class AudioManager : Singleton<AudioManager>
             DicoAudioClips.Add(audioType, tabSoundEffect[(int)audioType]);
         }
         musicStateIndex = 0;
+        
+        // Ajouter cette ligne pour démarrer la musique immédiatement
+        PlayInitialMusic();
     }
 
-    //Il faudrait qu'en fonction du GameProgressState, on joue une musique diff�rente, en premier la musique de d�but, puis la musique de boucle en boucle
+    private void PlayInitialMusic()
+    {
+        if (tabMusic.Count > 0 && musicStateIndex >= 0)
+        {
+            audioSource.clip = tabMusic[musicStateIndex].Item1;
+            audioSource.Play();
+            musicToPlay = 1;
+        }
+    }
+
+    //Il faudrait qu'en fonction du GameProgressState, on joue une musique diffrente, en premier la musique de d�but, puis la musique de boucle en boucle
     private void Update()
     {
         if (audioSource.isPlaying == false)
