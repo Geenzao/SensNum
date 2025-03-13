@@ -16,7 +16,6 @@ public class UIAide : Menu
     public TextMeshProUGUI texteTextObj;
 
     [Header("Button")]
-    [SerializeField] private Button ClosePageAide;
     [SerializeField] private Button OpenPageAide;
 
     [Header("Panel")]
@@ -28,8 +27,7 @@ public class UIAide : Menu
     {
         LanguageManager.OnLanguageChanged += UpdateTexts;
 
-        ClosePageAide.onClick.AddListener(OnClosePageAide);
-        OpenPageAide.onClick.AddListener(OnOpenPageAide);
+        OpenPageAide.onClick.AddListener(OnBtnClicked);
     }
 
     protected override void Start()
@@ -58,6 +56,7 @@ public class UIAide : Menu
         if (visible)
         {
             PanelBtn.SetActive(visible);
+            //OpenPageAide.SetActive(visible);
         }
         else
         {
@@ -74,16 +73,23 @@ public class UIAide : Menu
             TriggerVisibility(false);
     }
 
-    public void OnOpenPageAide()
-    {
-        PanelAide.SetActive(true);
-        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
-    }
     
-    public void OnClosePageAide()
+    public void OnBtnClicked()
     {
-        PanelAide.SetActive(false);
+        print("Button clicked");
         AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
+        if (PanelAide.activeSelf)
+        {
+            //animatorPanelArchievments.SetTrigger("hide");
+            PanelAide.SetActive(false);
+            // isActivated = false;
+        }
+        else
+        {
+            //animatorPanelArchievments.SetTrigger("show");
+            PanelAide.SetActive(true);
+            //isActivated = true;
+        }
     }
 
     private void UpdateTexts()
