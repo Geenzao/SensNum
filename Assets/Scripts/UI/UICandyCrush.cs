@@ -34,7 +34,7 @@ public class UICandyCrush : Menu
     [SerializeField] private Image barredechet;
 
     [Header("GameObjects")]
-    [SerializeField] private GameObject alerte;
+    /*[SerializeField] private GameObject alerte;*/
 
     [Header("Button")]
     [SerializeField] private Button looseRetryButton;
@@ -131,10 +131,10 @@ public class UICandyCrush : Menu
                     PuceBoard.Instance.isGameFinish = true; //pour empéché le joueur de jouer après la fin du jeu
                 }
             }
-            if (CandyGameManager.Instance.nbDechets < 10)
+            /*if (CandyGameManager.Instance.nbDechets < 10)
                 alerte.SetActive(false);
             if (CandyGameManager.Instance.nbDechets >= 10)
-                alerte.SetActive(true);
+                alerte.SetActive(true);*/
         }
     }
 
@@ -193,7 +193,7 @@ public class UICandyCrush : Menu
 
         trashToRecycleText.text = LanguageManager.Instance.GetText("trashToRecycle");
 
-        titleLoose.text = LanguageManager.Instance.GetText("lose");
+        titleLoose.text = LanguageManager.Instance.GetText("EndTextLose_MJ4");
         scoreNumberLoose.text = scoreIntText.text;
 
         retryText.text = LanguageManager.Instance.GetText("replay");

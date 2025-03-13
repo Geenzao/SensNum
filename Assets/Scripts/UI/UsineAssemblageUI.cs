@@ -30,7 +30,7 @@ public class UsineAssemblageUI : Menu
     public TextMeshProUGUI txtWin;
     public TextMeshProUGUI txtLose;
     public TextMeshProUGUI txtReplayLose;
-    public TextMeshProUGUI txtQuitLose;
+/*    public TextMeshProUGUI txtQuitLose;*/
     public TextMeshProUGUI txtReplayWin;
     public TextMeshProUGUI txtQuitWin;
     public TextMeshProUGUI txtNotifyAcceleration;
@@ -49,7 +49,7 @@ public class UsineAssemblageUI : Menu
     public Button btnReplayWin;
     public Button btnReplayLose;
     public Button btnQuitWin;
-    public Button btnQuitLose;
+/*    public Button btnQuitLose;*/
 
     private int _time = 0;
     private UsineAssemblageState state;
@@ -80,7 +80,7 @@ public class UsineAssemblageUI : Menu
         btnReplayWin.onClick.AddListener(OnReplayButtonClicked);
         btnReplayLose.onClick.AddListener(OnReplayButtonClicked);
         btnQuitWin.onClick.AddListener(OnQuitButtonClicked);
-        btnQuitLose.onClick.AddListener(OnQuitButtonClicked);
+        /*btnQuitLose.onClick.AddListener(OnQuitButtonClicked);*/
     }
 
     protected override void TriggerVisibility(bool visible)
@@ -219,10 +219,10 @@ public class UsineAssemblageUI : Menu
         scoreNumberLoose.text = UsineAssemblageGameManager.Instance.GetNbCircuitWin() + " " + LanguageManager.Instance.GetText("completedCircuitLittle");
 
         txtRules.text = LanguageManager.Instance.GetText("rules");
-        txtWin.text = LanguageManager.Instance.GetText("win");
-        txtLose.text = LanguageManager.Instance.GetText("lose");
+        txtWin.text = LanguageManager.Instance.GetText("EndTextWin_MJ3");
+        txtLose.text = LanguageManager.Instance.GetText("EndTextLoose_MJ3");
         txtReplayLose.text = LanguageManager.Instance.GetText("replay");
-        txtQuitLose.text = LanguageManager.Instance.GetText("quit");
+ /*       txtQuitLose.text = LanguageManager.Instance.GetText("quit");*/
         txtReplayWin.text = LanguageManager.Instance.GetText("replay");
         txtQuitWin.text = LanguageManager.Instance.GetText("quit");
         txtNotifyAcceleration.text = LanguageManager.Instance.GetText("notifyAcceleration");
