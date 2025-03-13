@@ -959,6 +959,38 @@
     {
       "key": "EndTextLose_MJ4",
       "value": "Se ha acumulado demasiada basura, ya no se puede reciclar. ¡Pasa al siguiente nivel!"
-    }
+    },
+    {  
+      "key": "AideTitre",  
+      "value": "Ayuda"  
+    },  
+    {  
+      "key": "AideTitreControl",  
+      "value": "Controles"  
+    },  
+    {  
+      "key": "AideEspaceText",  
+      "value": "Diálogo/Corte siguiente"  
+    },  
+    {  
+      "key": "AideDeplacementText",  
+      "value": "Movimiento del jugador"  
+    },  
+    {  
+      "key": "AideInteractionText",  
+      "value": "Interacción"  
+    },  
+    {  
+      "key": "AidePauseText",  
+      "value": "Pausa"  
+    },  
+    {  
+      "key": "AideTitreObjectif",  
+      "value": "Objetivo del juego"  
+    },  
+    {  
+      "key": "AideObjectifText",  
+      "value": "Explora el pueblo y sus alrededores, luego completa los tres objetivos."  
+    }  
   ]
 }

@@ -2594,7 +2594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7971107815845907660
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20092,7 +20092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3058560678238554790
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22153,8 +22153,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3058560678238554790}
   - {fileID: 7971107815845907660}
+  - {fileID: 3058560678238554790}
   m_Father: {fileID: 475723371390136167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -22212,14 +22212,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d604a4f162841654fa139dd0071d5e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TitreAide: {fileID: 5307483955143106571}
-  TitrePanelControls: {fileID: 3054157125184352548}
-  TextEspace: {fileID: 7428934324357250261}
-  TextDeplacement: {fileID: 8334046727941075756}
-  TextInteractionE: {fileID: 9053392727752353007}
-  TextPause: {fileID: 6934425854460882813}
-  TitrePanelObj: {fileID: 9117225511545172188}
-  TextObj: {fileID: 8742707309654426273}
+  texteTitreAide: {fileID: 5307483955143106571}
+  texteTitrePanelControls: {fileID: 3054157125184352548}
+  texteTextEspace: {fileID: 7428934324357250261}
+  texteTextDeplacement: {fileID: 8334046727941075756}
+  texteTextInteractionE: {fileID: 9053392727752353007}
+  texteTextPause: {fileID: 6934425854460882813}
+  texteTitrePanelObj: {fileID: 9117225511545172188}
+  texteTextObj: {fileID: 8742707309654426273}
   ClosePageAide: {fileID: 3651929069815611267}
   OpenPageAide: {fileID: 752347121505700319}
   PanelAide: {fileID: 8139104557701008657}
