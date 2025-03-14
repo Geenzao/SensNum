@@ -39,6 +39,7 @@ public class UIAide : Menu
             TriggerVisibility(true);
         }
 
+
         if (LanguageManager.Instance != null)
         {
             UpdateTexts();
@@ -47,6 +48,7 @@ public class UIAide : Menu
         {
             Debug.LogError("LanguageManager instance is not initialized.");
         }
+       
     }
 
 
@@ -56,11 +58,12 @@ public class UIAide : Menu
         if (visible)
         {
             PanelBtn.SetActive(visible);
-            //OpenPageAide.SetActive(visible);
+            print("PanelBtn AIde active");
         }
         else
         {
-            PanelBtn.SetActive(false);
+            PanelBtn.SetActive(visible);
+            print("PanelBtn AIde NON active");
         }
     }
 
@@ -76,7 +79,7 @@ public class UIAide : Menu
     
     public void OnBtnClicked()
     {
-        print("Button clicked");
+        print("Button Aide clicked");
         AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         if (PanelAide.activeSelf)
         {
