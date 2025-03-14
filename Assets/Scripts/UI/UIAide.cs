@@ -6,17 +6,16 @@ using UnityEngine.UI;
 public class UIAide : Menu
 {
     [Header("Text")]
-    public TextMeshProUGUI TitreAide;
-    public TextMeshProUGUI TitrePanelControls;
-    public TextMeshProUGUI TextEspace;
-    public TextMeshProUGUI TextDeplacement;
-    public TextMeshProUGUI TextInteractionE;
-    public TextMeshProUGUI TextPause;
-    public TextMeshProUGUI TitrePanelObj;
-    public TextMeshProUGUI TextObj;
+    public TextMeshProUGUI texteTitreAide;
+    public TextMeshProUGUI texteTitrePanelControls;
+    public TextMeshProUGUI texteTextEspace;
+    public TextMeshProUGUI texteTextDeplacement;
+    public TextMeshProUGUI texteTextInteractionE;
+    public TextMeshProUGUI texteTextPause;
+    public TextMeshProUGUI texteTitrePanelObj;
+    public TextMeshProUGUI texteTextObj;
 
     [Header("Button")]
-    [SerializeField] private Button ClosePageAide;
     [SerializeField] private Button OpenPageAide;
 
     [Header("Panel")]
@@ -28,8 +27,7 @@ public class UIAide : Menu
     {
         LanguageManager.OnLanguageChanged += UpdateTexts;
 
-        ClosePageAide.onClick.AddListener(OnClosePageAide);
-        OpenPageAide.onClick.AddListener(OnOpenPageAide);
+        OpenPageAide.onClick.AddListener(OnBtnClicked);
     }
 
     protected override void Start()
@@ -41,6 +39,7 @@ public class UIAide : Menu
             TriggerVisibility(true);
         }
 
+
         if (LanguageManager.Instance != null)
         {
             UpdateTexts();
@@ -49,6 +48,7 @@ public class UIAide : Menu
         {
             Debug.LogError("LanguageManager instance is not initialized.");
         }
+       
     }
 
 
@@ -58,63 +58,63 @@ public class UIAide : Menu
         if (visible)
         {
             PanelBtn.SetActive(visible);
+            print("PanelBtn AIde active");
         }
         else
         {
-            PanelBtn.SetActive(false);
+            PanelBtn.SetActive(visible);
+            print("PanelBtn AIde NON active");
         }
     }
 
     protected override void HandleMenuStateChanged(UIManager.MenuState newMS, UIManager.MenuState oldMS)
     {
         base.HandleMenuStateChanged(newMS, oldMS);
-        if (newMS == UIManager.MenuState.SecondGameMine)
+        if (newMS == UIManager.MenuState.None)
             TriggerVisibility(true);
         else
             TriggerVisibility(false);
     }
 
-    public void OnOpenPageAide()
-    {
-        PanelAide.SetActive(true);
-        AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
-    }
     
-    public void OnClosePageAide()
+    public void OnBtnClicked()
     {
-        PanelAide.SetActive(false);
+        print("Button Aide clicked");
         AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
+        if (PanelAide.activeSelf)
+        {
+            //animatorPanelArchievments.SetTrigger("hide");
+            PanelAide.SetActive(false);
+            // isActivated = false;
+        }
+        else
+        {
+            //animatorPanelArchievments.SetTrigger("show");
+            PanelAide.SetActive(true);
+            //isActivated = true;
+        }
     }
 
     private void UpdateTexts()
     {
-        //if (texteCptOr == null || texteCptCu == null || texteCptLi == null || texteTimer == null || texteDebut == null || texteFin == null)
-        //{
-        //    Debug.LogError("Text elements are not assigned in the inspector.");
-        //    return;
-        //}
 
-        //else
-        //{
-        //    if (oreCounter == null)
-        //    {
-        //        Debug.Log("OreCounter is not assigned.");
-        //        return;
-        //    }
+        if (texteTitreAide == null || texteTitrePanelControls == null || texteTextEspace == null 
+            || texteTextDeplacement == null || texteTextInteractionE == null || texteTextPause == null || texteTextObj == null)
+        {
+            Debug.LogError("Text elements are not assigned in the inspector.");
+            return;
 
-        //    else
-        //    {
-        //        //titleWinText.text = LanguageManager.Instance.GetText("win");
-        //        //texteCptOr.text = LanguageManager.Instance.GetText("gold") + " : " + oreCounter.cptAu.ToString();
-        //        //texteCptCu.text = LanguageManager.Instance.GetText("copper") + " : " + oreCounter.cptCu.ToString();
-        //        //texteCptLi.text = LanguageManager.Instance.GetText("lithium") + " : " + oreCounter.cptLi.ToString();
-        //        //texteTimer.text = LanguageManager.Instance.GetText("chrono") + " : " + Mathf.FloorToInt(_timer).ToString();
-        //        //texteDebut.text = LanguageManager.Instance.GetText("begining");
-        //        //texteFin.text = LanguageManager.Instance.GetText("end") + "\n" + texteCptOr.text + "\n" + texteCptCu.text + "\n" + texteCptLi.text;
-        //        //scoreNumberWinText.text = texteCptOr.text + "\n" + texteCptCu.text + "\n" + texteCptLi.text;
-        //        //scoreText.text = LanguageManager.Instance.GetText("score");
-        //    }
-        //}
-
+        }
+        else
+        {
+            texteTitreAide.text = LanguageManager.Instance.GetText("AideTitre");
+            texteTitrePanelControls.text = LanguageManager.Instance.GetText("AideTitreControl");
+            texteTextEspace.text = LanguageManager.Instance.GetText("AideEspaceText");
+            texteTextDeplacement.text = LanguageManager.Instance.GetText("AideDeplacementText");
+            texteTextInteractionE.text = LanguageManager.Instance.GetText("AideInteractionText");
+            texteTextPause.text = LanguageManager.Instance.GetText("AidePauseText");
+            texteTitrePanelObj.text = LanguageManager.Instance.GetText("AideTitreObjectif");
+            texteTextObj.text = LanguageManager.Instance.GetText("AideObjectifText");
+        }
     }
 }

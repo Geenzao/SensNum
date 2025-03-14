@@ -959,6 +959,38 @@
     {
       "key": "EndTextLose_MJ4",
       "value": "Trop de déchets se sont accumulés on ne peut plus les recycler. \nPasse à la suite !"
+    },
+    {
+      "key":"AideTitre",
+      "value":"Aide"
+    },
+    {
+      "key":"AideTitreControl",
+      "value":"Controles"
+    },
+    {
+      "key":"AideEspaceText",
+      "value":"Dialogue/Cinematique suivante"
+    },
+    {
+      "key":"AideDeplacementText",
+      "value":"Déplacement du joueur"
+    },
+    {
+      "key":"AideInteractionText",
+      "value":"Interaction"
+    },
+    {
+      "key":"AidePauseText",
+      "value":"Pause"
+    },
+    {
+      "key":"AideTitreObjectif",
+      "value":"Objectif du jeu"
+    },
+    {
+      "key":"AideObjectifText",
+      "value":"Explore le village et ses environs, puis complète les trois objectifs"
     }
   ]
 }

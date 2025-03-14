@@ -33,7 +33,7 @@ public class Achievments : Menu
         buttonAchievments.onClick.AddListener(OnAchievmentsButtonClicked);
     }
 
-    private void Start()
+    protected override void Start()
     {
         base.Start();
 
@@ -49,12 +49,12 @@ public class Achievments : Menu
         if (visible)
         {
             panelButton.SetActive(visible);
-            //panelAchievments.SetActive(visible);
+            print("PanelBtn archivent active");
         }
         else
         {
             panelButton.SetActive(visible);
-            //panelAchievments.SetActive(visible);
+            print("PanelBtn archivent NON active");
         }
     }
 
@@ -97,6 +97,7 @@ public class Achievments : Menu
 
     private void OnAchievmentsButtonClicked()
     {
+        print("BTN archivement clicked");
         AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
         //if (isAnimationActive)
         //    return;

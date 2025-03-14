@@ -959,6 +959,38 @@
     {
       "key": "EndTextLose_MJ4",
       "value": "Too much waste has piled up, we can't recycle it anymore. Move on to the next step!"
-    }
+    },
+    {  
+      "key": "AideTitre",  
+      "value": "Help"  
+    },  
+    {  
+      "key": "AideTitreControl",  
+      "value": "Controls"  
+    },  
+    {  
+      "key": "AideEspaceText",  
+      "value": "Dialogue/Cutscene next"  
+    },  
+    {  
+      "key": "AideDeplacementText",  
+      "value": "Player movement"  
+    },  
+    {  
+      "key": "AideInteractionText",  
+      "value": "Interaction"  
+    },  
+    {  
+      "key": "AidePauseText",  
+      "value": "Pause"  
+    },  
+    {  
+      "key": "AideTitreObjectif",  
+      "value": "Objective of the game"  
+    },  
+    {  
+      "key": "AideObjectifText",  
+      "value": "Explore the village and its surroundings, then complete the three objectives."  
+    } 
   ]
 }
