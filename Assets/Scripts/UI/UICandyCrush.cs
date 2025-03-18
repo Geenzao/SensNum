@@ -62,7 +62,7 @@ public class UICandyCrush : Menu
 
         if (UIManager.CurrentMenuState == UIManager.MenuState.CandyCrush)
         {
-            Debug.Log("CandyCrush");
+            /*Debug.Log("CandyCrush");*/
             TriggerVisibility(true);
         }
 

@@ -49,9 +49,15 @@ public class PlatformManagerUI : Menu
 
 
         if(isMobile)
-            Debug.Log("On affiche le joystick");
+        {
+            return;
+        }
+            /*Debug.Log("On affiche le joystick");*/
         else
-            Debug.Log("On n'affiche PAS le joystick");
+        {
+            return;
+        }
+            /*Debug.Log("On n'affiche PAS le joystick");*/
 
         //On ne fait pas de snap  avec les joystick
         joystick.SnapX = true;

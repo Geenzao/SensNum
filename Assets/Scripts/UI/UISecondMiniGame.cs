@@ -238,7 +238,7 @@ public class UISecondMiniGame : Menu
         {
             if (oreCounter == null)
             {
-                Debug.Log("OreCounter is not assigned.");
+                /*Debug.Log("OreCounter is not assigned.");*/
                 return;
             }
 

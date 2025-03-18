@@ -77,7 +77,7 @@ public class PuceBoard : Singleton<PuceBoard>
             if (isProcessingMove) { return; }
             Puce puce = hit.collider.gameObject.GetComponent<Puce>();
             puce = hit.collider.gameObject.GetComponent<Puce>();
-            Debug.Log("i have clicked a puce :" + puce.gameObject);
+            /*Debug.Log("i have clicked a puce :" + puce.gameObject);*/
 
             SelectPuce(puce);
         }
@@ -95,7 +95,7 @@ public class PuceBoard : Singleton<PuceBoard>
             if (isProcessingMove) { return; }
             Puce puce = hit.collider.gameObject.GetComponent<Puce>();
             //selectedPuce2 = hit.collider.gameObject.GetComponent<Puce>();
-            Debug.Log("i have clicked a puce :" + puce.gameObject);
+            /*Debug.Log("i have clicked a puce :" + puce.gameObject);*/
 
             SelectPuce(puce);
         }
@@ -135,12 +135,12 @@ public class PuceBoard : Singleton<PuceBoard>
 
         if (CheckBoard())
         {
-            Debug.Log("We have matches let's re-create the board");
+            /*Debug.Log("We have matches let's re-create the board");*/
             InitializeBoard();
         }
         else
         {
-            Debug.Log("There are no matches, it's time to start the game!");
+            /*Debug.Log("There are no matches, it's time to start the game!");*/
             gameassarted = true;
         }
     }
@@ -159,7 +159,7 @@ public class PuceBoard : Singleton<PuceBoard>
 
     public bool CheckBoard()
     {
-        Debug.Log("Checking Board");
+        /*Debug.Log("Checking Board");*/
         bool hasMatched = false;
 
         pucesToRemove.Clear();
@@ -311,7 +311,7 @@ public class PuceBoard : Singleton<PuceBoard>
 
                 if (extraConnectedPuces.Count >= 2) 
                 {
-                    Debug.Log("I have a super Horizontal Match");
+                    /*Debug.Log("I have a super Horizontal Match");*/
                     extraConnectedPuces.AddRange(matchedResults.connectedPuces);
                     if (gameassarted)
                         CandyGameManager.Instance.ProcessTurn(1000, 2);
@@ -340,7 +340,7 @@ public class PuceBoard : Singleton<PuceBoard>
 
                 if (extraConnectedPuces.Count >= 2)
                 {
-                    Debug.Log("I have a super Vertical Match");
+                    /*Debug.Log("I have a super Vertical Match");*/
                     extraConnectedPuces.AddRange(matchedResults.connectedPuces);
                     if (gameassarted)
                         CandyGameManager.Instance.ProcessTurn(1000, 2);
@@ -375,7 +375,7 @@ public class PuceBoard : Singleton<PuceBoard>
         //have we made a 3 match? (Horizontal Match)
         if (connectedPuces.Count == 3)
         {
-            Debug.Log("I have a normal horizontal match, the color of my match is: " + connectedPuces[0].puceType);
+            /*Debug.Log("I have a normal horizontal match, the color of my match is: " + connectedPuces[0].puceType);*/
             if (gameassarted)
                 CandyGameManager.Instance.ProcessTurn(100, 1);
 
@@ -388,7 +388,7 @@ public class PuceBoard : Singleton<PuceBoard>
         //checking for more than 3 (Long horizontal Match)
         else if (connectedPuces.Count > 3)
         {
-            Debug.Log("I have a Long horizontal match, the color of my match is: " + connectedPuces[0].puceType);
+            /*Debug.Log("I have a Long horizontal match, the color of my match is: " + connectedPuces[0].puceType);*/
             if (gameassarted)
                 CandyGameManager.Instance.ProcessTurn(500, 1);
 
@@ -411,7 +411,7 @@ public class PuceBoard : Singleton<PuceBoard>
         //have we made a 3 match? (Vertical Match)
         if (connectedPuces.Count == 3)
         {
-            Debug.Log("I have a normal vertical match, the color of my match is: " + connectedPuces[0].puceType);
+            /*Debug.Log("I have a normal vertical match, the color of my match is: " + connectedPuces[0].puceType);*/
             if (gameassarted)
                 CandyGameManager.Instance.ProcessTurn(100, 1);
             return new MatchResult
@@ -423,7 +423,7 @@ public class PuceBoard : Singleton<PuceBoard>
         //checking for more than 3 (Long Vertical Match)
         else if (connectedPuces.Count > 3)
         {
-            Debug.Log("I have a Long vertical match, the color of my match is: " + connectedPuces[0].puceType);
+            /*Debug.Log("I have a Long vertical match, the color of my match is: " + connectedPuces[0].puceType);*/
             if (gameassarted)
                 CandyGameManager.Instance.ProcessTurn(500, 1);
             return new MatchResult

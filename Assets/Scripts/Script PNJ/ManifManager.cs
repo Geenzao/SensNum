@@ -60,7 +60,7 @@ public class ManifManager : Singleton<ManifManager>
         nbPNJArrived++;
         if (nbPNJArrived == nbPNJ)
         {
-            Debug.Log("Tous les PNJ sont arrivés");
+            /*Debug.Log("Tous les PNJ sont arrivés");*/
             if(couroutineRef != null)
                 StopCoroutine(couroutineRef);
             couroutineRef = StartCoroutine(Attendre());
@@ -83,7 +83,7 @@ public class ManifManager : Singleton<ManifManager>
         // Réinitialise les compteurs
         nbPNJArrived = 0;
 
-        Debug.Log("Les PNJ changent de direction !");
+        /*Debug.Log("Les PNJ changent de direction !");*/
     }
 
     private float GetEcartToDestination() => Random.Range(MinEcartToDestination, MaxEcartToDestination);

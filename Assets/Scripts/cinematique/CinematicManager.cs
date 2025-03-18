@@ -89,9 +89,9 @@ public class CinematicManager : Singleton<CinematicManager>
             while (true)
             {
                 string key = $"cinematic_{nomCinematique}_{i}_{j}";
-                Debug.Log(key);
+                /*Debug.Log(key);*/
                 string text = LanguageManager.Instance.GetText(key);
-                Debug.Log(text);
+                /*Debug.Log(text);*/
                 if (text == key) // Si le texte retourné est la clé, cela signifie qu'il n'y a plus de texte pour cette catégorie
                 {
                     break;
@@ -161,7 +161,7 @@ public class CinematicManager : Singleton<CinematicManager>
     private void StartCinematic(int index)
     {
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.Cinematic);
-        Debug.Log("CinematicManager : StartCinematic");
+        /*Debug.Log("CinematicManager : StartCinematic");*/
         //Debug.Log($"Démarrage du clip : {tabCinematicBloc[index].clips.gameObject.name}");
 
         var currentBloc = tabCinematicBloc[index];

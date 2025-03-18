@@ -86,7 +86,7 @@ public class UIManager : Singleton<UIManager>
                 GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.Recycling ||
                 GameProgressManager.CurrentGameProgressState == GameProgressManager.GameProgressState.Village4))
             {
-                Debug.Log("MenuState.None UIMANAGER");
+                /*Debug.Log("MenuState.None UIMANAGER");*/
                 UpdateMenuState(MenuState.None);
             }
 

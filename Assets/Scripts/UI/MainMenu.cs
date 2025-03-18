@@ -43,7 +43,7 @@ public class MainMenu : Menu
         if (LanguageManager.Instance != null)
         {
             UpdateTexts();
-            Debug.Log("LanguageManager instance is initialized.");
+            /*Debug.Log("LanguageManager instance is initialized.");*/
         }
         else
         {
