@@ -6,31 +6,31 @@
     },
     {
       "key": "MainMenu_Title",
-      "value": "the three rivers"
+      "value": "The Three Rivers"
     },
     {
       "key": "play",
-      "value": "play"
+      "value": "Play"
     },
     {
       "key": "music",
-      "value": "music"
+      "value": "Music"
     },
     {
       "key": "sound",
-      "value": "sound"
+      "value": "Sound"
     },
     {
       "key": "interaction_key",
-      "value": "E for interaction"
+      "value": "Press E to interact"
     },
     {
       "key": "language",
-      "value": "language"
+      "value": "Language"
     },
     {
       "key": "startThirdGameMine",
-      "value": "Get all the trucks carrying minerals out before the timer runs out! \n\nClick on a truck to make it move."
+      "value": "Get all the trucks carrying minerals out before the timer runs out!\n\nClick on a truck to move it forward."
     },
     {
       "key": "truck",
@@ -38,19 +38,19 @@
     },
     {
       "key": "chrono",
-      "value": "Chrono"
+      "value": "Timer"
     },
     {
       "key": "win",
-      "value": "Win"
+      "value": "Won"
     },
     {
       "key": "lose",
-      "value": "Lose"
+      "value": "Lost"
     },
     {
       "key": "completedCircuit",
-      "value": "Completed circuit"
+      "value": "Circuit completed"
     },
     {
       "key": "timeRemaining",
@@ -58,7 +58,7 @@
     },
     {
       "key": "completedCircuitLittle",
-      "value": "completed circuit"
+      "value": "circuit completed"
     },
     {
       "key": "poorlyMadeCircuit",
@@ -74,7 +74,7 @@
     },
     {
       "key": "rules",
-      "value": "You must complete 15 circuits with the correct components within the time limit.\n\nClicked and off we go!!"
+      "value": "Vous devez completer 15 circuits avec les bons composants dans le temps imparti.\n\nCliquez et c'est parti !!"
     },
     {
       "key": "replay",
@@ -94,803 +94,803 @@
     },
     {
       "key": "gold",
-      "value": "gold"
+      "value": "Gold"
     },
     {
       "key": "copper",
-      "value": "copper"
+      "value": "Copper"
     },
     {
       "key": "lithium",
-      "value": "lithium"
+      "value": "Lithium"
     },
     {
       "key": "begining",
-      "value": "Ores and rocks will parade in this water line.\nCollect as many ores as possible before the timer runs out.\nPress the green button to begin."
+      "value": "Des minerais et des rochers vont défilé dans cette ligne d'eau.\nRécupérez un maximum de minerais avant la fin du chronomètre.\nAppuyez sur le bouton vert pour commencer."
     },
     {
       "key": "end",
-      "value": "end"
+      "value": "End"
     },
     {
       "key": "score",
-      "value": "score"
+      "value": "Score"
     },
     {
       "key": "nbMatch",
-      "value": "number of matches"
+      "value": "nombre de matches"
     },
     {
       "key": "nbSuperMatch",
-      "value": "number of super matches"
+      "value": "nombre de super matches"
     },
     {
       "key": "trashToRecycle",
-      "value": "trash to recycle"
+      "value": "Trash to recycle"
     },
     {
       "key": "pnj_chefduvillage_0_0",
-      "value": "Who are you ?"
+      "value": "Qui es-tu ?"
     },
     {
       "key": "pnj_chefduvillage_0_1",
-      "value": "You're not welcome here !"
+      "value": "Tu n'as rien à faire dans notre village !"
     },
     {
       "key": "pnj_chefduvillage_0_2",
-      "value": "Go away !"
+      "value": "Va-t'en !"
     },
     {
       "key": "pnj_chefduvillage_1_0",
-      "value": "You're not a member of those industrialists who want to build a mine ?"
+      "value": "Tu ne fais pas parti de ces industriels qui veulent faire une mine ?"
     },
     {
       "key": "pnj_chefduvillage_1_1",
-      "value": "Sorry for my rude welcome…"
+      "value": "Désolé pour mon accueil brutal…"
     },
     {
       "key": "pnj_chefduvillage_1_2",
-      "value": "We're on edge for a few days now."
+      "value": "Nous sommes sur les nerfs depuis quelques jours."
     },
     {
       "key": "pnj_chefduvillage_1_3",
-      "value": "Since these men came to tell us that they would build a mine."
+      "value": "Depuis que ces hommes sont venu nous dire qu'ils construiraient une mine."
     },
     {
       "key": "pnj_chefduvillage_1_4",
-      "value": "To dig the ground, in search of precious materials."
+      "value": "Ils sont à la recherche de matières premières."
     },
     {
       "key": "pnj_chefduvillage_1_5",
-      "value": "But to mine they want to pollute one of our beautiful rivers."
+      "value": "Mais pour miner ils veulent polluer l'une de nos belles rivières."
     },
     {
       "key": "pnj_chefduvillage_2_0",
-      "value": "Ahhh! Can't you hear, they started cutting down the trees !"
+      "value": "Ahhh ! Tu n'entends pas, ils ont commencé à couper les arbres !"
     },
     {
       "key": "pnj_chefduvillage_2_1",
-      "value": "If you want to know more, you'll find them to the west !"
+      "value": "Si tu veux en savoir plus, tu les trouveras à l'ouest !"
     },
     {
       "key": "pnj_youngman_0_0",
-      "value": "Welcome to our village, stranger. You will see, our rivers are magnificent, finally not for long..."
+      "value": "Bienvenue dans notre village, étranger. Tu vas voir, nos rivières sont magnifique, enfin plus pour longtemps..."
     },
     {
       "key": "pnj_youngman_0_1",
-      "value": "If you want to know more, I advise you to go see the village chief."
+      "value": "Si tu veux en savoir plus, je te conseil d'aller voir le chef du village."
     },
     {
       "key": "pnj_man_0_0",
-      "value": "I don't like talking to strangers."
+      "value": "Je n'aime pas parler aux inconnus."
     },
     {
       "key": "pnj_man_1_0",
-      "value": "There are many problems because of the mine at the moment."
+      "value": "Il y a beaucoup de problèmes à cause de la mine en ce moment."
     },
     {
       "key": "pnj_man_1_1",
-      "value": "Leave me alone, I have carrots to grow !"
+      "value": "Laisse-moi tranquille, j'ai des carottes à faire pousser !"
     },
     {
       "key": "pnj_oldwoman_0_0",
-      "value": "Oh ! a new face."
+      "value": "Oh ! un nouveau visage."
     },
     {
       "key": "pnj_oldwoman_0_1",
-      "value": "Welcome to three rivers."
+      "value": "Bienvenue à Trois Rivière"
     },
     {
       "key": "pnj_ChefMine_0_0",
-      "value": "Welcome to the region's great Copper and Lithium Mine."
+      "value": "Bienvenue dans la grande Mine de Cuivre et de Lithium de la région."
     },
     {
       "key": "pnj_ChefMine_0_1",
-      "value": "Everything you see here works day and night to extract tons of ore."
+      "value": "Tout ce que tu vois ici fonctionne jour et nuit pour extraire des tonnes de minerai."
     },
     {
       "key": "pnj_ChefMine_0_2",
-      "value": "It's hard work, but it's the price you pay to power today's connected world."
+      "value": "C'est un travail acharné, mais c'est le prix à payer pour alimenter le monde connecté d'aujourd'hui."
     },
     {
       "key": "pnj_ChefMine_1_0",
-      "value": "Water? Oh yes, we use monstrous quantities of it to cool the machines and wash the ore."
+      "value": "L'eau ? Ah oui, nous en utilisons des quantités monstrueuses pour refroidir les machines et laver le minerai."
     },
     {
       "key": "pnj_ChefMine_1_1",
-      "value": "The impact on groundwater? Let's just say the water doesn't blame us out loud, so it's all good, right?"
+      "value": "L'impact sur les nappes phréatiques ? Disons que l'eau ne nous le reproche pas à haute voix, alors tout va bien, non ?"
     },
     {
       "key": "pnj_ChefMine_1_2",
-      "value": "Especially the people from the nearby village; they keep giving me problems."
+      "value": "En particulier ces gens du village à côté. Ils n'arrètent pas de me poser des problemes."
     },
     {
       "key": "pnj_ChefMine_1_3",
-      "value": "I hope you didn't come here because of them?"
+      "value": "J'espère que tu n'es pas venue à cause d'eux ?"
     },
     {
       "key": "pnj_ChefMine_2_0",
-      "value": "Do you want work? We always need extra hands to dig deeper."
+      "value": "Tu veux du travail ? Nous avons toujours besoin de mains supplémentaires pour creuser plus profondément."
     },
     {
       "key": "pnj_ChefMine_2_1",
-      "value": "So, are you willing to get your hands dirty for a little money and a lot of dust?"
+      "value": "Alors, tu es prêt à te salir les mains pour un peu d'argent et beaucoup de poussière ?"
     },
     {
       "key": "pnj_ChefMine_2_2",
-      "value": "In that case I have a job for you"
+      "value": "Dans ce cas j'ai un travail pour toi."
     },
     {
       "key": "pnj_ChefMine_end_0_0",
-      "value": "Good job, you've done well today."
+      "value": "Bon travail, tu as bien travaillé aujourd'hui."
     },
     {
       "key": "pnj_ChefMine_end_0_1",
-      "value": "You can go and rest, don't forget to come back sometimes."
+      "value": "Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres."
     },
     {
       "key": "pnj_ChefMine_boucle_0_0",
-      "value": "I don't have any more work for you, come back another day."
+      "value": "Je n'ai plus de travail pour toi, reviens un autre jours."
     },
     {
       "key": "pnj_mineurpelle1_0_0",
-      "value": "Lithium doesn't extract itself. Each battery demands sacrifices."
+      "value": "Le lithium ne s'extrait pas tout seul. Chaque batterie demande des sacrifices."
     },
     {
       "key": "pnj_mineurpelle1_0_1",
-      "value": "The earth here contains precious metals. Your talking time costs me too much !"
+      "value": "La terre ici contient des métaux précieux. Te parler me coute trop cher !"
     },
     {
       "key": "pnj_mineurpioche1_0_0",
-      "value": "Each minute here is more rare metals for our phones. Don't slow me down."
+      "value": "Chaque minute ici, c'est plus de métaux rares pour nos téléphones. Ne me ralentis pas."
     },
     {
       "key": "pnj_mineurpioche2_0_0",
-      "value": "I don't have time, I have to extract tons of copper for our printed circuits."
+      "value": "Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour nos circuits imprimés."
     },
     {
       "key": "pnj_chefduvillage2_0_0",
-      "value": "Wait... I know you. You were in Three Rivers years ago, weren't you?"
+      "value": "Attends... Je te connais. Tu étais à Trois-Rivières il y a des années, non ?"
     },
     {
       "key": "pnj_chefduvillage2_0_1",
-      "value": "Things have changed since then. We've changed."
+      "value": "Les choses ont changé depuis. Nous avons changé."
     },
     {
       "key": "pnj_chefduvillage2_0_2",
-      "value": "But not all for the better..."
+      "value": "Mais pas toujours en bien..."
     },
     {
       "key": "pnj_chefduvillage2_1_0",
-      "value": "You've seen the new river, haven't you? The one that's turned brown."
+      "value": "Tu as vu la nouvelle rivière, n'est-ce pas ? Celle qui est devenue marron."
     },
     {
       "key": "pnj_chefduvillage2_1_1",
-      "value": "It's the price we pay for progress. The assembly plant needs water, and it gives us technology in return."
+      "value": "C'est le prix à payer pour le progrès. L'usine d'assemblage a besoin d'eau, et elle nous donne de la technologie en échange."
     },
     {
       "key": "pnj_chefduvillage2_1_2",
-      "value": "But sometimes I wonder... was it worth it?"
+      "value": "Mais parfois je me demande... est-ce que ça valait le coup ?"
     },
     {
       "key": "pnj_chefduvillage2_2_0",
-      "value": "If you want to see the source of our problems, head north of the city."
+      "value": "Si tu veux voir la source de nos problèmes, va au nord de la ville."
     },
     {
       "key": "pnj_chefduvillage2_2_1",
-      "value": "That's where the assembly plant is. Maybe you'll understand why we're stuck between progress and destruction."
+      "value": "C'est là que se trouve l'usine d'assemblage. Peut-être que tu comprendras pourquoi nous sommes coincés entre progrès et destruction."
     },
     {
       "key": "pnj_chefduvillage2_2_2",
-      "value": "Be careful though... not everyone there is friendly."
+      "value": "Mais fais attention... tout le monde n'y est pas amical."
     },
     {
       "key": "pnj_oldman2_0_0",
-      "value": "Back from the mine? Did you see the river?"
+      "value": "Tu reviens de la mine ? Tu as vu la rivière ?"
     },
     {
       "key": "pnj_oldman2_0_1",
-      "value": "It's all polluted from mining activities."
+      "value": "Elle est toute polluée à cause des activités minières."
     },
     {
       "key": "pnj_barman_0_0",
-      "value": "Hey, you're not from around here, are you? Things have changed a lot since the factory arrived. The river is almost dry now..."
+      "value": "Hey, t'es pas d'ici, toi ? Les choses ont beaucoup changé depuis que l'usine est arrivée. La rivière est presque à sec maintenant..."
     },
     {
       "key": "pnj_barman_0_1",
-      "value": "If you want to know more, you should talk to the village chief. He's the one who knows everything."
+      "value": "Si tu veux en savoir plus, tu devrais parler au chef du village. C'est lui qui sait tout."
     },
     {
       "key": "pnj_barman_0_2",
-      "value": "Now, if you'll excuse me, I have customers to serve."
+      "value": "Maintenant, si tu veux bien m'excuser, j'ai des clients à servir."
     },
     {
       "key": "pnj_youngman2_0_0",
-      "value": "I used to swim in the river when I was a kid. Now it's just a trickle... Everything's changed since the factory came."
+      "value": "Je me baignais dans la rivière quand j'étais gamin. Maintenant, ce n'est plus qu'un filet d'eau... Tout a changé depuis que l'usine est arrivée."
     },
     {
       "key": "pnj_youngman2_0_1",
-      "value": "If you want to know more, go see the village chief. He'll tell you everything."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. Il te dira tout."
     },
     {
       "key": "pnj_youngman2_0_2",
-      "value": "I don't have time to chat, I have to get to work."
+      "value": "Je n'ai pas le temps de discuter, je dois aller travailler."
     },
     {
       "key": "pnj_oldwoman2_0_0",
-      "value": "Back in my day, the river was full of life. Now it's just a shadow of what it used to be..."
+      "value": "De mon temps, la rivière était pleine de vie. Maintenant, ce n'est plus qu'une ombre de ce qu'elle était..."
     },
     {
       "key": "pnj_oldwoman2_0_1",
-      "value": "If you want to know more, go see the village chief. He knows everything about what's happened."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. Il sait tout sur ce qui s'est passé."
     },
     {
       "key": "pnj_oldwoman2_0_2",
-      "value": "Now, leave me be, I need to rest."
+      "value": "Maintenant, laisse-moi tranquille, j'ai besoin de me reposer."
     },
     {
       "key": "pnj_man2_0_0",
-      "value": "I don't like talking to strangers, but I'll tell you this: the river is dying, and so is our way of life."
+      "value": "Je n'aime pas parler aux inconnus, mais je vais te dire ceci : la rivière est en train de mourir, et notre mode de vie aussi."
     },
     {
       "key": "pnj_man2_0_1",
-      "value": "If you want to know more, go see the village chief. He's the one who deals with these things."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. C'est lui qui s'occupe de ces choses."
     },
     {
       "key": "pnj_man2_0_2",
-      "value": "And if you can, tell him for me that I don't like the factory, even if he gives me a smartphone."
+      "value": "Et si tu peux, dis lui de ma part que je n'aime pas l'usine, même s'il mon donner un smartphone."
     },
     {
       "key": "pnj_man2_0_3",
-      "value": "Now, leave me alone. I have work to do."
+      "value": "Maintenant, laisse-moi tranquille."
     },
     {
       "key": "pnj_cheffactoryassembly_0_0",
-      "value": "Welcome to the assembly plant, the beating heart of modern industry."
+      "value": "Bienvenue à l'usine d'assemblage, le cœur battant de l'industrie moderne."
     },
     {
       "key": "pnj_cheffactoryassembly_0_1",
-      "value": "I am the head of this factory, it is me who runs it with a few workers from the Three Rivers village."
+      "value": "Je suis le chef de cette usine, c'est moi qui la fait tournée avec quelques ouvrier du village Trois Rivière."
     },
     {
       "key": "pnj_cheffactoryassembly_0_2",
-      "value": "We pump thousands of liters of water every day to extract rare metals essential for smartphones and other gadgets."
+      "value": "Nous pompons des milliers de litres d'eau chaque jour pour extraire des métaux rares indispensables aux smartphones et autres gadgets."
     },
     {
       "key": "pnj_cheffactoryassembly_1_0",
-      "value": "Every drop of contaminated water returns to the river, but people love their screens far more than clean air, don't they?"
+      "value": "Chaque goutte d'eau contaminée retourne à la rivière, mais les gens aiment leurs écrans bien plus que l'air pur, n'est-ce pas ?"
     },
     {
       "key": "pnj_cheffactoryassembly_1_1",
-      "value": "Me? I keep the machine running. As long as it's profitable, why stop?"
+      "value": "Moi ? Je fais tourner la machine. Tant que ça rapporte, pourquoi s'arrêter ?"
     },
     {
       "key": "pnj_cheffactoryassembly_2_0",
-      "value": "If you want to join us, there are always positions available for the brave."
+      "value": "Si tu veux te joindre à nous, il y a toujours des postes à pourvoir pour les courageux."
     },
     {
       "key": "pnj_cheffactoryassembly_end_0_0",
-      "value": "Good job, you've done well today."
+      "value": "Bon travail, tu as bien travaillé aujourd'hui."
     },
     {
       "key": "pnj_cheffactoryassembly_end_0_1",
-      "value": "You can go and rest, don't forget to come back sometimes."
+      "value": "Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres."
     },
     {
       "key": "pnj_cheffactoryassembly_boucle_0_0",
-      "value": "You can leave for now, I have other workers to replace you."
+      "value": "Tu peux partir pour l'instant, j'ai d'autres ouvriers pour te remplacer."
     },
     {
       "key": "pnj_workerassemblyfactory1_0_0",
-      "value": "Every day, I assemble hundreds of smartphones. It's a tough job, but it pays the bills."
+      "value": "Chaque jour, j'assemble des centaines de smartphones. C'est un travail difficile, mais ça paie les factures."
     },
     {
       "key": "pnj_workerassemblyfactory1_0_1",
-      "value": "It's not easy to work here, but it's better than nothing."
+      "value": "Il n'est pas facile de travailler ici, mais c'est mieux que rien."
     },
     {
       "key": "pnj_workerassemblyfactory1_0_2",
-      "value": "It's a shame that the river is so polluted, but what can we do?"
+      "value": "C'est dommage que la rivière soit si polluée, mais que pouvons-nous faire ?"
     },
     {
       "key": "pnj_workerassemblyfactory1_1_0",
-      "value": "It's not like we can stop the factory from working..."
+      "value": "On ne peut pas arrêter l'usine de fonctionner..."
     },
     {
       "key": "pnj_workerassemblyfactory1_1_1",
-      "value": "Now leave me, I have a lot of work."
+      "value": "Maintenant laisse moi, j'ai beaucoup de travail."
     },
     {
       "key": "pnj_workerbackassemblyfactory1_0_0",
-      "value": "I work on the line, no time to talk."
+      "value": "Je travaille à la chaîne, pas le temps de parler."
     },
     {
       "key": "pnj_workerbackassemblyfactory2_0_0",
-      "value": "I'm behind on production."
+      "value": "Je suis en retard sur la production."
     },
     {
       "key": "pnj_chefduvillage3_0_0",
-      "value": "You've come to see the recycling plant, haven't you? It's a blessing and a curse..."
+      "value": "Tu es venu voir l'usine de recyclage, n'est-ce pas ? C'est une bénédiction et une malédiction..."
     },
     {
       "key": "pnj_chefduvillage3_0_1",
-      "value": "We recycle what we can, but not everything can be saved. The river pays the price."
+      "value": "On recycle ce qu'on peut, mais tout ne peut pas être sauvé. La rivière en paie le prix."
     },
     {
       "key": "pnj_chefduvillage3_0_2",
-      "value": "If you want to understand how we got here, talk to the workers. They'll tell you the truth."
+      "value": "Va voir au centre de recyclage au nord ouest, après le pont."
     },
     {
       "key": "pnj_chefduvillage3_0_3",
-      "value": "But remember, even if it's not perfect, recycling is better than nothing."
+      "value": "Mais souviens-toi, même si ce n'est pas parfait, le recyclage vaut mieux que rien."
     },
     {
       "key": "pnj_oldman3_0_0",
-      "value": "You're back, it's been a long time since you left to work at the factory."
+      "value": "Te revoilà, bien des années se sont écoulées depuis que tu es parti travailler à l'usine."
     },
     {
       "key": "pnj_oldman3_0_1",
-      "value": "As you can see, our town has changed a lot too."
+      "value": "Comme tu peux le voir, notre ville a elle aussi bien changé."
     },
     {
       "key": "pnj_oldman3_0_2",
-      "value": "But this came at the cost of another of our rivers."
+      "value": "Mais cela s'est fait au prix d'une autre de nos rivières."
     },
     {
       "key": "pnj_oldman3_0_3",
-      "value": "Look behind you, the assembly plant has almost completely pumped it out."
+      "value": "Regarde derrière toi, l'usine d'assemblage l'a presque complètement pompée."
     },
     {
       "key": "pnj_cheffactoryassembly3_0_0",
-      "value": "Hi, it's my day off today."
+      "value": "Salut, c'est mon jour de congé aujourd'hui."
     },
     {
       "key": "pnj_workerassemblyfactory3_0_0",
-      "value": "Did you hear the news? A new factory opened"
+      "value": "T'as entendu la nouvelle ? Une nouvelle usine a ouvert"
     },
     {
       "key": "pnj_workerassemblyfactory3_0_1",
-      "value": "But I don't know any more than that. Go and ask the village chief to find out more."
+      "value": "Mais je n'en sais pas plus, va demander au chef du village pour en savoir plus"
     },
     {
       "key": "pnj_ChefMine3_0_0",
-      "value": "I remember you from your mining days."
+      "value": "Je me souviens de toi, tu as déjà travaillé à la mine"
     },
     {
       "key": "pnj_ChefMine3_0_1",
-      "value": "How am I doing? As you can see, I decided to settle here when the village became a town."
+      "value": "Comment je vais ? Comme tu peux le voir, j'ai décidé de m'installer ici quand le village est devenu une ville"
     },
     {
       "key": "pnj_ChefMine3_0_2",
-      "value": "I still run the mine, but these days all anyone talks about is the recycling plant."
+      "value": "J'exploite toujours la mine, mais de nos jours, tout le monde ne parle que de l'usine de recyclage."
     },
     {
       "key": "pnj_ChefMine3_1_0",
-      "value": "Bye-bye !"
+      "value": "Aller salut !"
     },
     {
       "key": "pnj_barman3_0_0",
-      "value": "This used to be a quiet village. Now, the recycling plant brings jobs... and pollution."
+      "value": "C'était un village tranquille avant. Maintenant, l'usine de recyclage amène du travail... et de la pollution."
     },
     {
       "key": "pnj_barman3_0_1",
-      "value": "If you want to know more, go see the village chief. He's the one who deals with all this."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. C'est lui qui gère tout ça."
     },
     {
       "key": "pnj_barman3_0_2",
-      "value": "Now if you'll excuse me, I have things to do."
+      "value": "Maintenant, si tu veux bien m'excuser, j'ai des chose a faire."
     },
     {
       "key": "pnj_man3_0_0",
-      "value": "The recycling plant is a double-edged sword. It helps, but it also destroys."
+      "value": "L'usine de recyclage est une épée à double tranchant. Elle aide, mais elle détruit aussi."
     },
     {
       "key": "pnj_man3_0_1",
-      "value": "I don't like talking to strangers. If you want answers, go see the village chief."
+      "value": "Je n'aime pas parler aux inconnus. Si tu veux des réponses, va voir le chef du village."
     },
     {
       "key": "pnj_man3_0_2",
-      "value": "Now, leave me alone."
+      "value": "Maintenant, laisse-moi tranquille."
     },
     {
       "key": "pnj_youngman3_0_0",
-      "value": "I work at the recycling plant. It's hard, but it's better than the assembly factory."
+      "value": "Je travaille à l'usine de recyclage. C'est dur, mais c'est mieux que l'usine d'assemblage."
     },
     {
       "key": "pnj_youngman3_0_1",
-      "value": "Still, I wish the river wasn't so polluted... It used to be so clean."
+      "value": "Pourtant, j'aimerais que la rivière ne soit pas si polluée... Elle était si propre avant."
     },
     {
       "key": "pnj_youngman3_0_2",
-      "value": "If you want to know more, go see the village chief. I need to get back to work."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. Je dois retourner travailler."
     },
     {
       "key": "pnj_oldwoman3_0_0",
-      "value": "Back in my day, the river was full of fish. Now, it's full of waste from the recycling plant."
+      "value": "De mon temps, la rivière était pleine de poissons. Maintenant, elle est pleine de déchets de l'usine de recyclage."
     },
     {
       "key": "pnj_oldwoman3_0_1",
-      "value": "But what can we do? At least the plant gives us jobs..."
+      "value": "Mais que pouvons-nous faire ? Au moins, l'usine nous donne du travail..."
     },
     {
       "key": "pnj_oldwoman3_0_2",
-      "value": "If you want to know more, go see the village chief. I need to rest now."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. J'ai besoin de me reposer maintenant."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_0",
-      "value": "Ah, a new face! Welcome to the recycling plant."
+      "value": "Ah, un nouveau visage ! Bienvenue à l'usine de recyclage."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_1",
-      "value": "The last line of defense against ecological disaster, or at least… that's what we like to say to reassure ourselves."
+      "value": "Le dernier rempart contre le désastre écologique, ou du moins… c'est ce qu'on aime dire."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_2",
-      "value": "Here, we give a second life to electronic devices, mainly mobile phones. These little wonders are full of precious metals like gold and copper."
+      "value": "Ici, nous donnons une seconde vie aux appareils électroniques, principalement des téléphones portables. Ces petites merveilles regorgent de métaux précieux comme l'or et le cuivre."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_0",
-      "value": "Every day, we dismantle, sort, and melt down components to get some."
+      "value": "Chaque jour, nous démontons, trions, et fondons les composants pour en récupérer."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_1",
-      "value": "But not everything is as green as we'd like. Look at the river behind the plant... It carries the residue of our work."
+      "value": "Mais tout n'est pas aussi vert qu'on le voudrait. Vois la rivière derrière l'usine… Elle transporte des résidus de notre travail."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_2",
-      "value": "Even with all our sophisticated machines, toxins still escape."
+      "value": "Même avec toutes nos machines sophistiquées, des toxines s'échappent."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_0",
-      "value": "Nevertheless, the world needs us."
+      "value": "Néanmoins, le monde a besoin de nous."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_1",
-      "value": "Without recycling, these wastes would end up in open-air landfills, poisoning the soil and the air."
+      "value": "Sans recyclage, ces déchets finiraient dans des décharges à ciel ouvert, empoisonnant sols et air."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_2",
-      "value": "So, what do you say? A little elbow grease to dismantle phones and help the future, or would you rather stay a spectator of this mess?"
+      "value": "Alors, que dis-tu ? Un peu d'huile de coude pour démonter des portables et aider l'avenir, ou préfères-tu rester spectateur de ce désordre ?"
     },
     {
       "key": "pnj_chefrecyclagefactory1_end_0_0",
-      "value": "Good job, you've done well today."
+      "value": "Qu'est-ce que tu nous as fait là ? tu es un bon à rien !"
     },
     {
       "key": "pnj_chefrecyclagefactory1_end_0_1",
-      "value": "You can go and rest, don't forget to come back sometimes."
+      "value": "Va-t'en ! Et que je ne te revois plus jamais ici !"
     },
     {
       "key": "pnj_chefrecyclagefactory1_boucle_0_0",
-      "value": "You worked well today, go and rest."
+      "value": "Qu'est-ce que j'ai dit ? Va-t'en !"
     },
     {
       "key": "pnj_workerbackrecyclagefactory1_0_0",
-      "value": "I'm just doing my job !"
+      "value": "J'ai beaucoup de travail pour démonter ces portables"
     },
     {
       "key": "pnj_workerbackrecyclagefactory1_0_1",
-      "value": "Go see the boss, I'm just doing my job."
+      "value": "Va voir la chef, moi je ne fais que mon travail"
     },
     {
       "key": "pnj_workerrecyclagefactory1_0_1",
-      "value": "Many parts can be reused, which reduces the need for new materials."
+      "value": "De nombreuses pièces peuvent être réutilisées, ce qui réduit le besoin de nouvelles matières premières."
     },
     {
       "key": "pnj_workerrecyclagefactory1_0_2",
-      "value": "But improper disposal of electronics can harm the environment."
+      "value": "Mais une élimination inappropriée des appareils électroniques peut nuire à l'environnement."
     },
     {
       "key": "pnj_workerrecyclagefactory1_0_3",
-      "value": "So, always think before you throw away your old devices!"
+      "value": "Alors, pense toujours avant de jeter tes anciens appareils !"
     },
     {
       "key": "pnj_workerrecyclagefactory1_1_0",
-      "value": "Go see the boss, I'm just doing my job"
+      "value": "Va voir la chef, moi je ne fais que mon travail"
     },
     {
       "key": "pnj_chefduvillage_3b_0_0",
-      "value": "Oh, you're just in time."
+      "value": "Oh tu tombes bien toi."
     },
     {
       "key": "pnj_chefduvillage_3b_0_1",
-      "value": "We learned that a data center was going to be built next to the village."
+      "value": "On a appris qu'un data center allait se construire à côté du village."
     },
     {
       "key": "pnj_chefduvillage_3b_0_2",
-      "value": "It's going to destroy the environment even more, and we've had enough of it! So we're protesting!"
+      "value": "Cela va encore plus détruire l'environnement et nous, on en a marre de tous ça ! Donc nous, on manifeste !"
     },
     {
       "key": "pnj_chefduvillage_3b_0_3",
-      "value": "Would you like to join us?"
+      "value": "Tu veux te joindre à nous ?"
     },
     {
       "key": "pnj_chefmine_3b_0_0",
-      "value": "This data center will consume enormous amounts of energy. And guess where they'll get it from?"
+      "value": "Ce data center va consommer une quantité énorme d'énergie. Et devine où ils vont la prendre ?"
     },
     {
       "key": "pnj_chefmine_3b_0_1",
-      "value": "They don't care if it drains our resources. As long as they make money, right?"
+      "value": "Ils s'en fichent si ça épuise nos ressources. Tant qu'ils font du profit, hein ?"
     },
     {
       "key": "pnj_cheffactoryassembly_3b_0_0",
-      "value": "They say it'll bring jobs, but at what cost?"
+      "value": "Ils disent que ça va créer des emplois, mais à quel prix ?"
     },
     {
       "key": "pnj_cheffactoryassembly_3b_0_1",
-      "value": "Pollution, water waste, and power outages... We've seen this before."
+      "value": "Pollution, gaspillage d'eau et coupures d'électricité... On connaît la chanson."
     },
     {
       "key": "pnj_chefrecyclagefactory_3b_0_0",
-      "value": "We fight every day to reduce waste, and now they want to build this monster?"
+      "value": "On se bat tous les jours pour réduire les déchets, et maintenant ils veulent construire ce monstre ?"
     },
     {
       "key": "pnj_chefrecyclagefactory_3b_0_1",
-      "value": "If they were serious about the environment, they wouldn't even consider this."
+      "value": "S'ils se souciaient vraiment de l'environnement, ils n'envisageraient même pas ça."
     },
     {
       "key": "pnj_chefmanif_3b_0_0",
-      "value": "We will not let them ruin our land without a fight!"
+      "value": "On ne les laissera pas saccager notre terre sans se battre !"
     },
     {
       "key": "pnj_chefmanif_3b_0_1",
-      "value": "Everyone, stay united! Our voices must be heard!"
+      "value": "Tout le monde, restez unis ! Nos voix doivent être entendues !"
     },
     {
       "key": "pnj_workermanif_1_3b_0_0",
-      "value": "This is our home, not a playground for corporations!"
+      "value": "C'est notre maison, pas un terrain de jeu pour les entreprises !"
     },
     {
       "key": "pnj_workermanif_1_3b_0_1",
-      "value": "If we don't act now, we'll regret it forever."
+      "value": "Si on n'agit pas maintenant, on le regrettera pour toujours."
     },
     {
       "key": "pnj_workermanif_2_3b_0_0",
-      "value": "They think we'll just accept it? Not this time!"
+      "value": "Ils pensent qu'on va juste accepter ça ? Pas cette fois !"
     },
     {
       "key": "pnj_workermanif_2_3b_0_1",
-      "value": "We have the power if we stand together!"
+      "value": "On a le pouvoir si on reste soudés !"
     },
     {
       "key": "pnj_youngman_3b_0_0",
-      "value": "Heh you! The adults have gathered in the town parking lot."
+      "value": "Heh toi ! Les grands ils se sont rassemblé sur le parking de la ville."
     },
     {
       "key": "pnj_youngman_3b_0_1",
-      "value": "I don't know what's going on, but they're angry."
+      "value": "Je ne sais pas ce qu'il se passe mais ils sont en colère."
     },
     {
       "key": "pnj_oldwoman_3b_0_0",
-      "value": "When I was young, this land was pure. Now, look at what they've done."
+      "value": "Quand j'étais jeune, cette terre était pure. Maintenant, regarde ce qu'ils en ont fait."
     },
     {
       "key": "pnj_oldwoman_3b_0_1",
-      "value": "My grandchildren deserve better than a future full of concrete and smoke."
+      "value": "Mes petits-enfants méritent mieux qu'un avenir rempli de béton et de fumée."
     },
     {
       "key": "pnj_chefduvillage4_0_0",
-      "value": "You've returned… and just in time to see what real change looks like."
+      "value": "Tu es revenu… et juste à temps pour voir à quoi ressemble un vrai changement."
     },
     {
       "key": "pnj_chefduvillage4_0_1",
-      "value": "The factories are gone. For the first time in years, the river flows clear."
+      "value": "Les usines sont partis. Pour la première fois depuis des années, la rivière coule à nouveau limpide."
     },
     {
       "key": "pnj_chefduvillage4_0_2",
-      "value": "For so long, we believed that to move forward we had to destroy what made us who we are, our"
+      "value": "Pendant si longtemps, nous avons cru que pour avancer nous devions détruire ce qui faisait de nous ce que nous sommes, nos rivières"
     },
     {
       "key": "pnj_chefduvillage4_0_3",
-      "value": "But we were wrong. Our people are happier. The land is healing."
+      "value": "Mais nous avions tort. Notre peuple est plus heureux. La terre guérit."
     },
     {
       "key": "pnj_chefduvillage4_1_0",
-      "value": "But don't think we've forgotten technology just yet."
+      "value": "Mais ne pense pas qu'on a oublié la technologie pour autant."
     },
     {
       "key": "pnj_chefduvillage4_1_1",
-      "value": "Quite simply, we've made the choice to consume better, to use healthier energi."
+      "value": "Simplement, on a fait le choix de consommer mieux, d'utiliser des énergies plus saines."
     },
     {
       "key": "pnj_chefduvillage4_1_2",
-      "value": "Our workers may build fewer cell phones, but they last longer."
+      "value": "Nos ouvirers construisent peut-être moins de portables, mais ils durent plus longtemps."
     },
     {
       "key": "pnj_chefduvillage4_2_0",
-      "value": "You played a part in all this, whether you wanted to or not. And for that, you have my gratitude."
+      "value": "Tu as joué un rôle dans tout cela, que tu l'aies voulu ou non. Et pour cela, tu as ma gratitude."
     },
     {
       "key": "pnj_chefduvillage4_2_1",
-      "value": "Stay as long as you like."
+      "value": "Reste aussi longtemps que tu le souhaites."
     },
     {
       "key": "pnj_youngman4_0_0",
-      "value": "It's good to see you again !"
+      "value": "Je suis content de te revoir !"
     },
     {
       "key": "pnj_youngman4_0_1",
-      "value": "Look around you, our village is much better! !"
+      "value": "Regarde autour de toi, notre village est bien mieux !"
     },
     {
       "key": "pnj_youngman4_0_2",
-      "value": "You've returned… and just in time to see what real change looks like."
+      "value": "En plus maintenant mon portable dure très longtemps et les rivières sont jolies"
     },
     {
       "key": "pnj_youngman4_0_3",
-      "value": "You'd better go and see the village chief, he'll be happy to see you again."
+      "value": "Tu ferais bien d'aller voir le chef du village, il sera heureux de te revoir"
     },
     {
       "key": "pnj_man4_0_0",
-      "value": "You again! I feel like I see you every time something new happens..."
+      "value": "Encore toi ! J'ai l'impression de te voir dès qu'il se passe quelque chose de nouveau..."
     },
     {
       "key": "pnj_man4_0_1",
-      "value": "But hey, for once I'm in a good mood, the village is better than ever."
+      "value": "Mais bon, pour une fois je suis de bonne humeur, le village est mieux que jamais."
     },
     {
       "key": "pnj_man4_0_2",
-      "value": "Any questions? The village chief will be happy to answer them."
+      "value": "T'as des questions ? Le chef du village se fera un plaisir de te répondre."
     },
     {
       "key": "pnj_oldwoman4_0_0",
-      "value": "The river is blue again! I never thought I'd see this day."
+      "value": "La rivière est redevenue bleue ! Je n'aurais jamais cru voir ce jour."
     },
     {
       "key": "pnj_oldwoman4_0_1",
-      "value": "No more pollution, no more noise… Just peace. And I like to see these windmills spinning."
+      "value": "Plus de pollution, plus de bruit… Juste la paix. Et j'aime bien voir ces éolienne qui tournent."
     },
     {
       "key": "pnj_oldman4_0_0",
-      "value": "Life feels normal again. It's like we can finally breathe."
+      "value": "La vie redevient normale. C'est comme si nous pouvions enfin respirer."
     },
     {
       "key": "cinematic_mine_1_1",
-      "value": "Ah, there you are! Come on, no time to lose, we've got work to do. Welcome to the open-cast mine!"
+      "value": "Ah, te voilà ! Allez, pas de temps à perdre, on a du travail. Bienvenue dans la mine à ciel ouvert !"
     },
     {
       "key": "cinematic_mine_1_2",
-      "value": "Here, we dig relentlessly to extract precious metals: lithium, cobalt, copper..."
+      "value": "Ici, on creuse sans relâche pour extraire des métaux précieux : le lithium, le cobalt, le cuivre..."
     },
     {
       "key": "cinematic_mine_2_1",
-      "value": "These little marvels power all your modern gadgets. But you know what? For a ton of rock, barely a few grams are useful."
+      "value": "Ces petites merveilles alimentent tous tes gadgets modernes. Mais tu sais quoi ? Pour une tonne de roche, à peine quelques grammes en sont utiles."
     },
     {
       "key": "cinematic_mine_2_2",
-      "value": "It's true that it uses a bit of fuel and that some rivers are polluted, but that's not my problem."
+      "value": "C'est vrai que ça consomme un peu de carburant et que certaines rivières sont polluées, mais ce n'est pas mon problème."
     },
     {
       "key": "cinematic_mine_3_1",
-      "value": "There, trucks send the materials to the assembly plant."
+      "value": "Là, les camions envoient les matériaux à l'usine d'assemblage."
     },
     {
       "key": "cinematic_mine_3_2",
-      "value": "Come on, get your pickaxe. If you hit it right, we might make a fortune... or just a little more pollution. Let's get started!"
+      "value": "Allez, prends ta pioche. Si tu tapes bien, on fera peut-être fortune… ou juste un peu plus de pollution. C'est parti !"
     },
     {
       "key": "cinematic_factory_1_1",
-      "value": "Hi, rookie! Welcome to the great digital dream factory."
+      "value": "Salut, recrue ! Bienvenue dans la grande fabrique des rêves numériques."
     },
     {
       "key": "cinematic_factory_1_2",
-      "value": "Here, smartphones are assembled on a production line, from sunrise to sunset."
+      "value": "Ici, on assemble des smartphones à la chaîne, du lever au coucher du soleil."
     },
     {
       "key": "cinematic_factory_2_1",
-      "value": "Every little component is a concentrate of technology and sweat."
+      "value": "Chaque petit composant est un concentré de technologie et de sueur."
     },
     {
       "key": "cinematic_factory_2_2",
-      "value": "Take a good look at the conveyor belts: motherboards, screens, batteries: treasures of precision."
+      "value": "Regarde bien les tapis roulants : cartes mères, écrans, batteries : des trésors de précision."
     },
     {
       "key": "cinematic_factory_3_1",
-      "value": "But nothing comes without sacrifice. It takes water, tons of water, to clean all this up. That's why we're pumping the river right here."
+      "value": "Mais rien ne se fait sans sacrifices. Il faut de l'eau, des tonnes d'eau, pour nettoyer tout ça. C'est pour ça qu'on pompe la rivière juste là."
     },
     {
       "key": "cinematic_factory_4_1",
-      "value": "It's true that over time it dries out, but it's got to be used if everyone wants their mobile!"
+      "value": "C'est vrai qu'avec le temps, elle s'assèche, mais il faut bien qu'on l'utilise si tout le monde veut son portable !"
     },
     {
       "key": "cinematic_factory_4_2",
-      "value": "Come on, get ready. You have to be quick and precise in this job."
+      "value": "Allez, tiens-toi prêt. Il faut être rapide et précis dans ce boulot."
     },
     {
       "key": "cinematic_recycle_1_1",
-      "value": "Welcome to the factory where everything broken and obsolete arrives. Here, old electronics are sorted to recover what can be reused."
+      "value": "Bienvenue dans l'usine où tout ce qui est cassé et obsolète arrive. Ici, on trie les vieux appareils électroniques pour récupérer ce qui peut être réutilisé."
     },
     {
       "key": "cinematic_recycle_1_2",
-      "value": "Every year, tens of millions of tonnes of electronic waste are generated."
+      "value": "Chaque année, des dizaines de millions de tonnes de déchets électroniques sont générés."
     },
     {
       "key": "cinematic_recycle_1_3",
-      "value": "So we need a lot of water to work. That's why we set up shop by the river."
+      "value": "Donc, on a besoin de beaucoup d'eau pour travailler. C'est pour ça qu'on s'est installés près de la rivière."
     },
     {
       "key": "cinematic_recycle_2_1",
-      "value": "It's true that we discharge waste into the water, but we have to work, don't we?"
+      "value": "C'est vrai qu'on rejette des déchets dans l'eau, mais il faut bien travailler, non ?"
     },
     {
       "key": "cinematic_recycle_3_1",
-      "value": "The aim is to recycle certain components, but we can't recycle them all. There are bound to be materials that have to be sent back to nature."
+      "value": "Le but, c'est de recycler certains composants, mais on ne peut pas tous les recycler. Il y a forcément des matériaux qu'on doit envoyer dans la nature."
     },
     {
       "key": "cinematic_recycle_3_2",
-      "value": "Well, you'll understand the rest as you work. Just pay attention to the useful component. Leave the rest in the river."
+      "value": "Bon, tu comprendras le reste en travaillant. Fais juste attention au composant utile. Le reste, laisse le dans la rivière."
     },
     {
       "key": "cinematic_end_1_1",
-      "value": "Faced with the threat of the destruction of their land, the inhabitants of Trois Rivières have risen up."
+      "value": "Face à la menace de la destruction de leurs terres, les habitants des Trois Rivières se sont levés."
     },
     {
       "key": "cinematic_end_1_2",
-      "value": "Industrialists were no match for their determination to protect rivers."
+      "value": "Les industriels n'ont rien pu faire face à leur détermination à protéger les rivières."
     },
     {
       "key": "cinematic_end_2_1",
-      "value": "The construction site did not take place."
+      "value": "Le chantier de construction n'a pas eu lieu."
     },
     {
       "key": "cinematic_end_2_2",
-      "value": "The workers and machines have left. The people of Trois Rivière have won"
+      "value": "Les ouvriers et les machines sont partis. Les habitants de Trois Rivière ont gagné"
     },
     {
       "key": "cinematic_end_3_1",
-      "value": "The wind, which had always blown over the hills of Trois Rivières, was now becoming a source of life."
+      "value": "Le vent, qui avait toujours soufflé sur les collines des Trois Rivières, devenait maintenant une source de vie."
     },
     {
       "key": "cinematic_end_3_2",
-      "value": "The inhabitants had chosen a clean energy, respectful of their land."
+      "value": "Les habitants avaient choisi une énergie propre, respectueuse de leurs terres."
     },
     {
       "key": "cinematic_end_4_1",
-      "value": "Every ray of sunlight was another step towards autonomy and harmony with nature."
+      "value": "Chaque rayon de soleil représentait un pas de plus vers l'autonomie et l'harmonie avec la nature."
     },
     {
       "key": "cinematic_end_4_2",
-      "value": "Although some residents regretted the laptops and innovations, the majority were happy."
+      "value": "Même si certains habitants regrettaient les portables et les innovations, la majorité était heureuse."
     },
     {
       "key": "cinematic_end_5_1",
-      "value": "The rivers had regained their clarity, and life, their brilliance."
+      "value": "Les rivières avaient retrouvé leur clarté, et la vie, leur éclat."
     },
     {
       "key": "cinematic_end_5_2",
-      "value": "The village still bore the scars of its industrial past, but these scars told a story of victory and resilience."
+      "value": "Le village portait encore les traces de son passé industriel, mais ces cicatrices racontaient une histoire de victoire et de résilience."
     },
     {
       "key": "cinematic_end_5_3",
-      "value": "The people of Trois Rivières had chosen a different future. A future where man and nature could coexist in harmony."
+      "value": "Les habitants des Trois Rivières avaient choisi un avenir différent. Un avenir où l'homme et la nature pouvaient coexister en harmonie"
     },
     {
       "key": "cinematic_end_5_4",
-      "value": "End..."
+      "value": "Fin..."
     },
     {
       "key": "EcoInfo_mine_1",
-      "value": "Según la Ademe, se necesitan unos 200 kilos de materias primas para fabricar un solo smartphone."
+      "value": "Selon l'Ademe, il faut environ 200 kilos de matières premières pour produire un seul smartphone."
     },
     {
       "key": "EcoInfo__mine_2",
@@ -898,99 +898,99 @@
     },
     {
       "key": "EcoInfo_village_1",
-      "value": "La batería de su teléfono contiene níquel, litio, cobalto y muchos otros elementos."
+      "value": "L'empreinte carbone du numérique représentait 3,6 % des émissions de gaz à effet de serre dans le monde en 2023."
     },
     {
       "key": "EcoInfo_village_2",
-      "value": "La fabricación de dispositivos electrónicos, como teléfonos inteligentes y ordenadores, contribuye al agotamiento de los recursos naturales."
+      "value": "La fabrication de dispositifs électroniques, tels que les smartphones et les ordinateurs, contribue à l'épuisement des ressources naturelles."
     },
     {
       "key": "EcoInfo_assembly_1",
-      "value": "La fabricación de semiconductores consume mucha agua, lo que aumenta la presión sobre los recursos hídricos."
+      "value": "La fabrication de semi-conducteurs consomme beaucoup d'eau, aggravant la pression sur les ressources hydriques."
     },
     {
       "key": "EcoInfo_assembly_2",
-      "value": "En 2018 se fabricaron 1.500 millones de teléfonos móviles en todo el mundo."
+      "value": "En 2018, 1.5 milliards de portables ont été produits dans le monde."
     },
     {
       "key": "EcoInfo_recyclage_1",
-      "value": "En 2023, la producción de aparatos electrónicos generará 58 millones de toneladas de residuos electrónicos"
+      "value": "En 2023, la production d'équipements électroniques a généré 58 millions de tonnes de déchets électroniques"
     },
     {
       "key": "EcoInfo_recyclage_2",
-      "value": "El aumento de los residuos es una de las consecuencias más graves de la obsolescencia programada. Si no cambias de móvil todos los días, estás salvando los ríos."
+      "value": "L'augmentation des déchets constitue l'une des conséquences les plus graves de l'obsolescence programmée. Ne pas changer tout les jours de portable c'est sauver les rivières"
     },
     {
       "key": "2eMJM_Rules",
-      "value": "The minerals and rocks will pass through the water line. \nCollect as many minerals as you can before time runs out. \n\t\tPress the green button to start."
+      "value": "Des minerais et des rochers vont défilé dans cette ligne d'eau. \nRécupérez un maximum de minerais avant la fin du chronomètre. \n\t\tAppuyez sur le bouton vert pour commencer."
     },
     {
       "key": "3eMJM_Rules",
-      "value": "Finish off all the trucks carrying minerals before time runs out! \n\t\tClick on a truck to make it move."
+      "value": "Sortez tous les camions transportant des minerais avant la fin du chronomètre ! \n\t\tCliquez sur un camion pour le faire avancer."
     },
     {
       "key": "CandyCrush_Rules",
-      "value": "Trash will arrive, swap to make a line of at least 3 chips to recycle them, you can swap two at a time!"
+      "value": "Des déchets vont arrivés, intervertit fais une ligne de minimum 3 puces pour les recycler, \ntu peux en intervertir deux à la fois !"
     },
     {
       "key": "EndTextWin_MJ1",
-      "value": "Well done! You managed to collect some minerals! Move on to the next step!"
+      "value": "Bravo ! Tu as réussi à récupérer des minerais ! \nPasse à la suite !"
     },
     {
       "key": "EndTextLose_MJ1",
-      "value": "You didn't collect any minerals, try again!"
+      "value": "Tu n'as récupéré aucun minerais, recommence !"
     },
     {
       "key": "EndTextWin_MJ2",
-      "value": "Well done! You managed to get all the trucks out! Move on to the next step!"
+      "value": "Bravo ! Tu as réussi à sortir tous les camions ! \nPasse à la suite !"
     },
     {
       "key": "EndTextLose_MJ2",
-      "value": "You didn't manage to get all the trucks out, try again!"
+      "value": "Tu n'as pas réussi à sortir tous les camions, recommence !"
     },
     {
       "key": "EndTextWin_MJ3",
-      "value": "You were fast, well done. You can move on to the next step!"
+      "value": "T'as été rapide, bravo. Tu peux passer à la suite !"
     },
     {
       "key": "EndTextLoose_MJ3",
-      "value": "You weren't fast enough, try again!"
+      "value": "Tu n'as pas été assez rapide, recommence !"
     },
     {
       "key": "EndTextLose_MJ4",
-      "value": "Too much waste has piled up, we can't recycle it anymore. Move on to the next step!"
+      "value": "Trop de déchets se sont accumulés on ne peut plus les recycler. \nPasse à la suite !"
     },
-    {  
-      "key": "AideTitre",  
-      "value": "Help"  
-    },  
-    {  
-      "key": "AideTitreControl",  
-      "value": "Controls"  
-    },  
-    {  
-      "key": "AideEspaceText",  
-      "value": "Dialogue/Cutscene next"  
-    },  
-    {  
-      "key": "AideDeplacementText",  
-      "value": "Player movement"  
-    },  
-    {  
-      "key": "AideInteractionText",  
-      "value": "Interaction"  
-    },  
-    {  
-      "key": "AidePauseText",  
-      "value": "Pause"  
-    },  
-    {  
-      "key": "AideTitreObjectif",  
-      "value": "Objective of the game"  
-    },  
-    {  
-      "key": "AideObjectifText",  
-      "value": "Explore the village and its surroundings, then complete the three objectives."  
-    } 
+    {
+      "key": "AideTitre",
+      "value": "Aide"
+    },
+    {
+      "key": "AideTitreControl",
+      "value": "Controles"
+    },
+    {
+      "key": "AideEspaceText",
+      "value": "Dialogue/Cinematique suivante"
+    },
+    {
+      "key": "AideDeplacementText",
+      "value": "Déplacement du joueur"
+    },
+    {
+      "key": "AideInteractionText",
+      "value": "Interaction"
+    },
+    {
+      "key": "AidePauseText",
+      "value": "Pause"
+    },
+    {
+      "key": "AideTitreObjectif",
+      "value": "Objectif du jeu"
+    },
+    {
+      "key": "AideObjectifText",
+      "value": "Explore le village et ses environs, puis complète les trois objectifs"
+    }
   ]
 }

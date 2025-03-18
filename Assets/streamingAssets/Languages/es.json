@@ -2,23 +2,23 @@
   "entries": [
     {
       "key": "settings",
-      "value": "Ajustes"
+      "value": "Opciones"
     },
     {
       "key": "MainMenu_Title",
-      "value": "Los tres ríos"
+      "value": "Los Tres Ríos"
     },
     {
       "key": "play",
-      "value": "jugar"
+      "value": "Jugar"
     },
     {
       "key": "music",
-      "value": "música"
+      "value": "Música"
     },
     {
       "key": "sound",
-      "value": "sonido"
+      "value": "Sonido"
     },
     {
       "key": "interaction_key",
@@ -26,11 +26,11 @@
     },
     {
       "key": "language",
-      "value": "idioma"
+      "value": "Idioma"
     },
     {
       "key": "startThirdGameMine",
-      "value": "¡Saca todos los camiones que transportan minerales antes de que se acabe el tiempo! \n\nHaz clic en un camión para que se mueva."
+      "value": "¡Saca todos los camiones que transportan minerales antes de que se acabe el tiempo!\n\nHaz clic en un camión para hacerlo avanzar."
     },
     {
       "key": "truck",
@@ -42,11 +42,11 @@
     },
     {
       "key": "win",
-      "value": "Ganar"
+      "value": "Ganado"
     },
     {
       "key": "lose",
-      "value": "Perder"
+      "value": "Perdido"
     },
     {
       "key": "completedCircuit",
@@ -66,7 +66,7 @@
     },
     {
       "key": "objectiveAchievedIn",
-      "value": "Objetivo alcanzado en"
+      "value": "Objetivo logrado en"
     },
     {
       "key": "seconds",
@@ -74,7 +74,7 @@
     },
     {
       "key": "rules",
-      "value": "Debes completar 15 circuitos con los componentes correctos dentro del límite de tiempo.\n\n¡Haz clic y comienza!"
+      "value": "Vous devez completer 15 circuits avec les bons composants dans le temps imparti.\n\nCliquez et c'est parti !!"
     },
     {
       "key": "replay",
@@ -94,795 +94,795 @@
     },
     {
       "key": "gold",
-      "value": "oro"
+      "value": "Oro"
     },
     {
       "key": "copper",
-      "value": "cobre"
+      "value": "Cobre"
     },
     {
       "key": "lithium",
-      "value": "litio"
+      "value": "Litio"
     },
     {
       "key": "begining",
-      "value": "Los minerales y las rocas pasarán a través de esta línea de agua.\nRecoge tantos minerales como puedas antes de que termine el cronómetro.\nPresiona el botón verde para comenzar."
+      "value": "Des minerais et des rochers vont défilé dans cette ligne d'eau.\nRécupérez un maximum de minerais avant la fin du chronomètre.\nAppuyez sur le bouton vert pour commencer."
     },
     {
       "key": "end",
-      "value": "fin"
+      "value": "Fin"
     },
     {
       "key": "score",
-      "value": "puntaje"
+      "value": "Puntuación"
     },
     {
       "key": "nbMatch",
-      "value": "número de coincidencias"
+      "value": "nombre de matches"
     },
     {
       "key": "nbSuperMatch",
-      "value": "número de super coincidencias"
+      "value": "nombre de super matches"
     },
     {
       "key": "trashToRecycle",
-      "value": "basura para reciclar"
+      "value": "Residuos para reciclar"
     },
     {
       "key": "pnj_chefduvillage_0_0",
-      "value": "¿Quién eres?"
+      "value": "Qui es-tu ?"
     },
     {
       "key": "pnj_chefduvillage_0_1",
-      "value": "¡No eres bienvenido aquí!"
+      "value": "Tu n'as rien à faire dans notre village !"
     },
     {
       "key": "pnj_chefduvillage_0_2",
-      "value": "¡Vete!"
+      "value": "Va-t'en !"
     },
     {
       "key": "pnj_chefduvillage_1_0",
-      "value": "¿No eres uno de esos industriales que quieren construir una mina?"
+      "value": "Tu ne fais pas parti de ces industriels qui veulent faire une mine ?"
     },
     {
       "key": "pnj_chefduvillage_1_1",
-      "value": "Disculpa mi brusco recibimiento…"
+      "value": "Désolé pour mon accueil brutal…"
     },
     {
       "key": "pnj_chefduvillage_1_2",
-      "value": "Estamos al límite desde hace unos días."
+      "value": "Nous sommes sur les nerfs depuis quelques jours."
     },
     {
       "key": "pnj_chefduvillage_1_3",
-      "value": "Desde que esos hombres vinieron a decirnos que construirían una mina."
+      "value": "Depuis que ces hommes sont venu nous dire qu'ils construiraient une mine."
     },
     {
       "key": "pnj_chefduvillage_1_4",
-      "value": "Para excavar la tierra, en busca de materiales preciosos."
+      "value": "Ils sont à la recherche de matières premières."
     },
     {
       "key": "pnj_chefduvillage_1_5",
-      "value": "Pero para minar quieren contaminar uno de nuestros hermosos ríos."
+      "value": "Mais pour miner ils veulent polluer l'une de nos belles rivières."
     },
     {
       "key": "pnj_chefduvillage_2_0",
-      "value": "¡Ahhh! ¿No lo oyes? ¡Han empezado a talar los árboles!"
+      "value": "Ahhh ! Tu n'entends pas, ils ont commencé à couper les arbres !"
     },
     {
       "key": "pnj_chefduvillage_2_1",
-      "value": "Si quieres saber más, ¡los encontrarás al oeste!"
+      "value": "Si tu veux en savoir plus, tu les trouveras à l'ouest !"
     },
     {
       "key": "pnj_youngman_0_0",
-      "value": "Bienvenido a nuestro pueblo, forastero. Verás, nuestros ríos son magníficos, aunque no por mucho tiempo..."
+      "value": "Bienvenue dans notre village, étranger. Tu vas voir, nos rivières sont magnifique, enfin plus pour longtemps..."
     },
     {
       "key": "pnj_youngman_0_1",
-      "value": "Si quieres saber más, te aconsejo que hables con el jefe del pueblo."
+      "value": "Si tu veux en savoir plus, je te conseil d'aller voir le chef du village."
     },
     {
       "key": "pnj_man_0_0",
-      "value": "No me gusta hablar con extraños."
+      "value": "Je n'aime pas parler aux inconnus."
     },
     {
       "key": "pnj_man_1_0",
-      "value": "Hay muchos problemas por la mina en este momento."
+      "value": "Il y a beaucoup de problèmes à cause de la mine en ce moment."
     },
     {
       "key": "pnj_man_1_1",
-      "value": "¡Déjame en paz, tengo zanahorias que cultivar!"
+      "value": "Laisse-moi tranquille, j'ai des carottes à faire pousser !"
     },
     {
       "key": "pnj_oldwoman_0_0",
-      "value": "¡Oh! Una cara nueva."
+      "value": "Oh ! un nouveau visage."
     },
     {
       "key": "pnj_oldwoman_0_1",
-      "value": "Bienvenido a Tres Ríos."
+      "value": "Bienvenue à Trois Rivière"
     },
     {
       "key": "pnj_ChefMine_0_0",
-      "value": "Bienvenido a la gran mina de cobre y litio de la región."
+      "value": "Bienvenue dans la grande Mine de Cuivre et de Lithium de la région."
     },
     {
       "key": "pnj_ChefMine_0_1",
-      "value": "Todo lo que ves aquí funciona día y noche para extraer toneladas de mineral."
+      "value": "Tout ce que tu vois ici fonctionne jour et nuit pour extraire des tonnes de minerai."
     },
     {
       "key": "pnj_ChefMine_0_2",
-      "value": "Es un trabajo duro, pero es el precio que hay que pagar para alimentar el mundo conectado de hoy."
+      "value": "C'est un travail acharné, mais c'est le prix à payer pour alimenter le monde connecté d'aujourd'hui."
     },
     {
       "key": "pnj_ChefMine_1_0",
-      "value": "¿Agua? Ah, sí, usamos cantidades monstruosas para enfriar las máquinas y lavar el mineral."
+      "value": "L'eau ? Ah oui, nous en utilisons des quantités monstrueuses pour refroidir les machines et laver le minerai."
     },
     {
       "key": "pnj_ChefMine_1_1",
-      "value": "¿El impacto en las aguas subterráneas? Digamos que el agua no nos lo reprocha en voz alta, así que todo está bien, ¿no?"
+      "value": "L'impact sur les nappes phréatiques ? Disons que l'eau ne nous le reproche pas à haute voix, alors tout va bien, non ?"
     },
     {
       "key": "pnj_ChefMine_1_2",
-      "value": "Especialmente la gente del pueblo cercano; no paran de darme problemas."
+      "value": "En particulier ces gens du village à côté. Ils n'arrètent pas de me poser des problemes."
     },
     {
       "key": "pnj_ChefMine_1_3",
-      "value": "Espero que no hayas venido por ellos."
+      "value": "J'espère que tu n'es pas venue à cause d'eux ?"
     },
     {
       "key": "pnj_ChefMine_2_0",
-      "value": "¿Quieres trabajo? Siempre necesitamos manos extra para cavar más profundo."
+      "value": "Tu veux du travail ? Nous avons toujours besoin de mains supplémentaires pour creuser plus profondément."
     },
     {
       "key": "pnj_ChefMine_2_1",
-      "value": "Entonces, ¿estás dispuesto a ensuciarte las manos por un poco de dinero y mucho polvo?"
+      "value": "Alors, tu es prêt à te salir les mains pour un peu d'argent et beaucoup de poussière ?"
     },
     {
       "key": "pnj_ChefMine_2_2",
-      "value": "En ese caso, tengo un trabajo para ti."
+      "value": "Dans ce cas j'ai un travail pour toi."
     },
     {
       "key": "pnj_ChefMine_end_0_0",
-      "value": "Buen trabajo, lo has hecho bien hoy."
+      "value": "Bon travail, tu as bien travaillé aujourd'hui."
     },
     {
       "key": "pnj_ChefMine_end_0_1",
-      "value": "Puedes ir a descansar, no olvides volver de vez en cuando."
+      "value": "Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres."
     },
     {
       "key": "pnj_ChefMine_boucle_0_0",
-      "value": "No tengo más trabajo para ti, vuelve otro día."
+      "value": "Je n'ai plus de travail pour toi, reviens un autre jours."
     },
     {
       "key": "pnj_mineurpelle1_0_0",
-      "value": "El litio no se extrae solo. Cada batería exige sacrificios."
+      "value": "Le lithium ne s'extrait pas tout seul. Chaque batterie demande des sacrifices."
     },
     {
       "key": "pnj_mineurpelle1_0_1",
-      "value": "La tierra aquí contiene metales preciosos. ¡Hablar contigo me cuesta demasiado!"
+      "value": "La terre ici contient des métaux précieux. Te parler me coute trop cher !"
     },
     {
       "key": "pnj_mineurpioche1_0_0",
-      "value": "Cada minuto aquí es más metal raro para nuestros teléfonos. No me retrases."
+      "value": "Chaque minute ici, c'est plus de métaux rares pour nos téléphones. Ne me ralentis pas."
     },
     {
       "key": "pnj_mineurpioche2_0_0",
-      "value": "No tengo tiempo, tengo que extraer toneladas de cobre para nuestros circuitos impresos."
+      "value": "Je n'ai pas le temps, je dois extraire des tonnes de cuivre pour nos circuits imprimés."
     },
     {
       "key": "pnj_chefduvillage2_0_0",
-      "value": "Espera... te conozco. ¿Estuviste en Tres Ríos hace años, no?"
+      "value": "Attends... Je te connais. Tu étais à Trois-Rivières il y a des années, non ?"
     },
     {
       "key": "pnj_chefduvillage2_0_1",
-      "value": "Las cosas han cambiado desde entonces. Nosotros hemos cambiado."
+      "value": "Les choses ont changé depuis. Nous avons changé."
     },
     {
       "key": "pnj_chefduvillage2_0_2",
-      "value": "Pero no siempre para mejor..."
+      "value": "Mais pas toujours en bien..."
     },
     {
       "key": "pnj_chefduvillage2_1_0",
-      "value": "¿Has visto el nuevo río, no? El que se ha vuelto marrón."
+      "value": "Tu as vu la nouvelle rivière, n'est-ce pas ? Celle qui est devenue marron."
     },
     {
       "key": "pnj_chefduvillage2_1_1",
-      "value": "Es el precio que pagamos por el progreso. La planta de ensamblaje necesita agua, y nos da tecnología a cambio."
+      "value": "C'est le prix à payer pour le progrès. L'usine d'assemblage a besoin d'eau, et elle nous donne de la technologie en échange."
     },
     {
       "key": "pnj_chefduvillage2_1_2",
-      "value": "Pero a veces me pregunto... ¿valió la pena?"
+      "value": "Mais parfois je me demande... est-ce que ça valait le coup ?"
     },
     {
       "key": "pnj_chefduvillage2_2_0",
-      "value": "Si quieres ver la fuente de nuestros problemas, dirígete al norte de la ciudad."
+      "value": "Si tu veux voir la source de nos problèmes, va au nord de la ville."
     },
     {
       "key": "pnj_chefduvillage2_2_1",
-      "value": "Ahí es donde está la planta de ensamblaje. Tal vez entiendas por qué estamos atrapados entre el progreso y la destrucción."
+      "value": "C'est là que se trouve l'usine d'assemblage. Peut-être que tu comprendras pourquoi nous sommes coincés entre progrès et destruction."
     },
     {
       "key": "pnj_chefduvillage2_2_2",
-      "value": "Pero ten cuidado... no todo el mundo es amigable allí."
+      "value": "Mais fais attention... tout le monde n'y est pas amical."
     },
     {
       "key": "pnj_oldman2_0_0",
-      "value": "¿De vuelta de la mina? ¿Viste el río?"
+      "value": "Tu reviens de la mine ? Tu as vu la rivière ?"
     },
     {
       "key": "pnj_oldman2_0_1",
-      "value": "Ha sido contaminado por actividades mineras."
+      "value": "Elle est toute polluée à cause des activités minières."
     },
     {
       "key": "pnj_barman_0_0",
-      "value": "Eh, ¿no eres de por aquí, verdad? Las cosas han cambiado mucho desde que llegó la fábrica. El río está casi seco ahora..."
+      "value": "Hey, t'es pas d'ici, toi ? Les choses ont beaucoup changé depuis que l'usine est arrivée. La rivière est presque à sec maintenant..."
     },
     {
       "key": "pnj_barman_0_1",
-      "value": "Si quieres saber más, deberías hablar con el jefe del pueblo. Él es el que sabe todo."
+      "value": "Si tu veux en savoir plus, tu devrais parler au chef du village. C'est lui qui sait tout."
     },
     {
       "key": "pnj_barman_0_2",
-      "value": "Ahora, si me disculpas, tengo clientes que atender."
+      "value": "Maintenant, si tu veux bien m'excuser, j'ai des clients à servir."
     },
     {
       "key": "pnj_youngman2_0_0",
-      "value": "Solía nadar en el río cuando era niño. Ahora es solo un hilo de agua... Todo ha cambiado desde que llegó la fábrica."
+      "value": "Je me baignais dans la rivière quand j'étais gamin. Maintenant, ce n'est plus qu'un filet d'eau... Tout a changé depuis que l'usine est arrivée."
     },
     {
       "key": "pnj_youngman2_0_1",
-      "value": "Si quieres saber más, ve a ver al jefe del pueblo. Él te lo contará todo."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. Il te dira tout."
     },
     {
       "key": "pnj_youngman2_0_2",
-      "value": "No tengo tiempo para charlar, tengo que ir a trabajar."
+      "value": "Je n'ai pas le temps de discuter, je dois aller travailler."
     },
     {
       "key": "pnj_oldwoman2_0_0",
-      "value": "En mis tiempos, el río estaba lleno de vida. Ahora es solo una sombra de lo que era..."
+      "value": "De mon temps, la rivière était pleine de vie. Maintenant, ce n'est plus qu'une ombre de ce qu'elle était..."
     },
     {
       "key": "pnj_oldwoman2_0_1",
-      "value": "Si quieres saber más, ve a ver al jefe del pueblo. Él sabe todo sobre lo que ha pasado."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. Il sait tout sur ce qui s'est passé."
     },
     {
       "key": "pnj_oldwoman2_0_2",
-      "value": "Ahora, déjame en paz, necesito descansar."
+      "value": "Maintenant, laisse-moi tranquille, j'ai besoin de me reposer."
     },
     {
       "key": "pnj_man2_0_0",
-      "value": "No me gusta hablar con extraños, pero te diré esto: el río está muriendo, y nuestro modo de vida también."
+      "value": "Je n'aime pas parler aux inconnus, mais je vais te dire ceci : la rivière est en train de mourir, et notre mode de vie aussi."
     },
     {
       "key": "pnj_man2_0_1",
-      "value": "Si quieres saber más, ve a ver al jefe del pueblo. Él es el que se ocupa de estas cosas."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. C'est lui qui s'occupe de ces choses."
     },
     {
       "key": "pnj_man2_0_2",
-      "value": "Y si puedes, dile de mi parte que no me gusta la fábrica, aunque me dé un smartphone."
+      "value": "Et si tu peux, dis lui de ma part que je n'aime pas l'usine, même s'il mon donner un smartphone."
     },
     {
       "key": "pnj_man2_0_3",
-      "value": "Ahora, déjame en paz."
+      "value": "Maintenant, laisse-moi tranquille."
     },
     {
       "key": "pnj_cheffactoryassembly_0_0",
-      "value": "Bienvenido a la planta de ensamblaje, el corazón palpitante de la industria moderna."
+      "value": "Bienvenue à l'usine d'assemblage, le cœur battant de l'industrie moderne."
     },
     {
       "key": "pnj_cheffactoryassembly_0_1",
-      "value": "Soy el jefe de esta fábrica, soy yo quien la hace funcionar con algunos trabajadores del pueblo de Tres Ríos."
+      "value": "Je suis le chef de cette usine, c'est moi qui la fait tournée avec quelques ouvrier du village Trois Rivière."
     },
     {
       "key": "pnj_cheffactoryassembly_0_2",
-      "value": "Bombeamos miles de litros de agua cada día para extraer metales raros esenciales para los smartphones y otros gadgets."
+      "value": "Nous pompons des milliers de litres d'eau chaque jour pour extraire des métaux rares indispensables aux smartphones et autres gadgets."
     },
     {
       "key": "pnj_cheffactoryassembly_1_0",
-      "value": "Cada gota de agua contaminada vuelve al río, pero la gente ama sus pantallas mucho más que el aire limpio, ¿no?"
+      "value": "Chaque goutte d'eau contaminée retourne à la rivière, mais les gens aiment leurs écrans bien plus que l'air pur, n'est-ce pas ?"
     },
     {
       "key": "pnj_cheffactoryassembly_1_1",
-      "value": "¿Yo? Hago funcionar la máquina. Mientras sea rentable, ¿por qué parar?"
+      "value": "Moi ? Je fais tourner la machine. Tant que ça rapporte, pourquoi s'arrêter ?"
     },
     {
       "key": "pnj_cheffactoryassembly_2_0",
-      "value": "Si quieres unirte a nosotros, siempre hay puestos disponibles para los valientes."
+      "value": "Si tu veux te joindre à nous, il y a toujours des postes à pourvoir pour les courageux."
     },
     {
       "key": "pnj_cheffactoryassembly_end_0_0",
-      "value": "Buen trabajo, lo has hecho bien hoy."
+      "value": "Bon travail, tu as bien travaillé aujourd'hui."
     },
     {
       "key": "pnj_cheffactoryassembly_end_0_1",
-      "value": "Puedes ir a descansar, no olvides volver de vez en cuando."
+      "value": "Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres."
     },
     {
       "key": "pnj_cheffactoryassembly_boucle_0_0",
-      "value": "Puedes irte por ahora, tengo otros trabajadores que te reemplazarán."
+      "value": "Tu peux partir pour l'instant, j'ai d'autres ouvriers pour te remplacer."
     },
     {
       "key": "pnj_workerassemblyfactory1_0_0",
-      "value": "Cada día, ensamblo cientos de smartphones. Es un trabajo duro, pero paga las facturas."
+      "value": "Chaque jour, j'assemble des centaines de smartphones. C'est un travail difficile, mais ça paie les factures."
     },
     {
       "key": "pnj_workerassemblyfactory1_0_1",
-      "value": "No es fácil trabajar aquí, pero es mejor que nada."
+      "value": "Il n'est pas facile de travailler ici, mais c'est mieux que rien."
     },
     {
       "key": "pnj_workerassemblyfactory1_0_2",
-      "value": "Es una pena que el río esté tan contaminado, pero ¿qué podemos hacer?"
+      "value": "C'est dommage que la rivière soit si polluée, mais que pouvons-nous faire ?"
     },
     {
       "key": "pnj_workerassemblyfactory1_1_0",
-      "value": "No es como si pudiéramos detener la fábrica..."
+      "value": "On ne peut pas arrêter l'usine de fonctionner..."
     },
     {
       "key": "pnj_workerassemblyfactory1_1_1",
-      "value": "Ahora déjame, tengo mucho trabajo."
+      "value": "Maintenant laisse moi, j'ai beaucoup de travail."
     },
     {
       "key": "pnj_workerbackassemblyfactory1_0_0",
-      "value": "Trabajo en la línea, no tengo tiempo para hablar."
+      "value": "Je travaille à la chaîne, pas le temps de parler."
     },
     {
       "key": "pnj_workerbackassemblyfactory2_0_0",
-      "value": "Estoy atrasado en la producción."
+      "value": "Je suis en retard sur la production."
     },
     {
       "key": "pnj_chefduvillage3_0_0",
-      "value": "Has venido a ver la planta de reciclaje, ¿no? Es una bendición y una maldición..."
+      "value": "Tu es venu voir l'usine de recyclage, n'est-ce pas ? C'est une bénédiction et une malédiction..."
     },
     {
       "key": "pnj_chefduvillage3_0_1",
-      "value": "Reciclamos lo que podemos, pero no todo se puede salvar. El río paga el precio."
+      "value": "On recycle ce qu'on peut, mais tout ne peut pas être sauvé. La rivière en paie le prix."
     },
     {
       "key": "pnj_chefduvillage3_0_2",
-      "value": "Si quieres entender cómo llegamos aquí, habla con los trabajadores. Ellos te dirán la verdad."
+      "value": "Va voir au centre de recyclage au nord ouest, après le pont."
     },
     {
       "key": "pnj_chefduvillage3_0_3",
-      "value": "Pero recuerda, aunque no sea perfecto, reciclar es mejor que nada."
+      "value": "Mais souviens-toi, même si ce n'est pas parfait, le recyclage vaut mieux que rien."
     },
     {
       "key": "pnj_oldman3_0_0",
-      "value": "Aquí estás de nuevo, ha pasado mucho tiempo desde que te fuiste a trabajar a la fábrica."
+      "value": "Te revoilà, bien des années se sont écoulées depuis que tu es parti travailler à l'usine."
     },
     {
       "key": "pnj_oldman3_0_1",
-      "value": "Como puede ver, nuestra ciudad también ha cambiado mucho."
+      "value": "Comme tu peux le voir, notre ville a elle aussi bien changé."
     },
     {
       "key": "pnj_oldman3_0_2",
-      "value": "Pero esto se hizo a costa de otro de nuestros ríos."
+      "value": "Mais cela s'est fait au prix d'une autre de nos rivières."
     },
     {
       "key": "pnj_oldman3_0_3",
-      "value": "Mira detrás de ti, la planta de montaje lo ha bombeado casi por completo."
+      "value": "Regarde derrière toi, l'usine d'assemblage l'a presque complètement pompée."
     },
     {
       "key": "pnj_cheffactoryassembly3_0_0",
-      "value": "Hola, hoy es mi día libre"
+      "value": "Salut, c'est mon jour de congé aujourd'hui."
     },
     {
       "key": "pnj_workerassemblyfactory3_0_0",
-      "value": "¿Has oído las noticias? Se ha abierto una nueva fábrica"
+      "value": "T'as entendu la nouvelle ? Une nouvelle usine a ouvert"
     },
     {
       "key": "pnj_workerassemblyfactory3_0_1",
-      "value": "Pero no sé más que eso. Ve y pregunta al jefe del pueblo para saber más."
+      "value": "Mais je n'en sais pas plus, va demander au chef du village pour en savoir plus"
     },
     {
       "key": "pnj_ChefMine3_0_0",
-      "value": "Te recuerdo de tus días de minero."
+      "value": "Je me souviens de toi, tu as déjà travaillé à la mine"
     },
     {
       "key": "pnj_ChefMine3_0_1",
-      "value": "¿Qué tal estoy? Como ves, decidí instalarme aquí cuando el pueblo se convirtió en ciudad."
+      "value": "Comment je vais ? Comme tu peux le voir, j'ai décidé de m'installer ici quand le village est devenu une ville"
     },
     {
       "key": "pnj_ChefMine3_0_2",
-      "value": "Aún dirijo la mina, pero ahora sólo se habla de la planta de reciclaje."
+      "value": "J'exploite toujours la mine, mais de nos jours, tout le monde ne parle que de l'usine de recyclage."
     },
     {
       "key": "pnj_ChefMine3_1_0",
-      "value": "¡Adiós!"
+      "value": "Aller salut !"
     },
     {
       "key": "pnj_barman3_0_0",
-      "value": "Esto solía ser un pueblo tranquilo. Ahora, la planta de reciclaje trae puestos de trabajo... y contaminación."
+      "value": "C'était un village tranquille avant. Maintenant, l'usine de recyclage amène du travail... et de la pollution."
     },
     {
       "key": "pnj_barman3_0_1",
-      "value": "Si quieres saber más, ve a ver al jefe del pueblo. Él es quien se ocupa de todo esto."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. C'est lui qui gère tout ça."
     },
     {
       "key": "pnj_barman3_0_2",
-      "value": "Ahora si me disculpas, tengo cosas que hacer."
+      "value": "Maintenant, si tu veux bien m'excuser, j'ai des chose a faire."
     },
     {
       "key": "pnj_man3_0_0",
-      "value": "La planta de reciclaje es un arma de doble filo. Ayuda, pero también destruye."
+      "value": "L'usine de recyclage est une épée à double tranchant. Elle aide, mais elle détruit aussi."
     },
     {
       "key": "pnj_man3_0_1",
-      "value": "No me gusta hablar con extraños. Si quieres respuestas, ve a ver al jefe del pueblo."
+      "value": "Je n'aime pas parler aux inconnus. Si tu veux des réponses, va voir le chef du village."
     },
     {
       "key": "pnj_man3_0_2",
-      "value": "Ahora, déjame en paz."
+      "value": "Maintenant, laisse-moi tranquille."
     },
     {
       "key": "pnj_youngman3_0_0",
-      "value": "Trabajo en la planta de reciclaje. Es duro, pero es mejor que la fábrica de montaje."
+      "value": "Je travaille à l'usine de recyclage. C'est dur, mais c'est mieux que l'usine d'assemblage."
     },
     {
       "key": "pnj_youngman3_0_1",
-      "value": "Aún así, me gustaría que el río no estuviera tan contaminado... Solía estar tan limpio."
+      "value": "Pourtant, j'aimerais que la rivière ne soit pas si polluée... Elle était si propre avant."
     },
     {
       "key": "pnj_youngman3_0_2",
-      "value": "Si quieres saber más, ve a ver al jefe del pueblo. Tengo que volver al trabajo."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. Je dois retourner travailler."
     },
     {
       "key": "pnj_oldwoman3_0_0",
-      "value": "En mis tiempos, el río estaba lleno de peces. Ahora, está lleno de residuos de la planta de reciclaje."
+      "value": "De mon temps, la rivière était pleine de poissons. Maintenant, elle est pleine de déchets de l'usine de recyclage."
     },
     {
       "key": "pnj_oldwoman3_0_1",
-      "value": "¿Pero qué podemos hacer? Al menos la planta nos da trabajo..."
+      "value": "Mais que pouvons-nous faire ? Au moins, l'usine nous donne du travail..."
     },
     {
       "key": "pnj_oldwoman3_0_2",
-      "value": "Si quieres saber más, ve a ver al jefe del pueblo. Ahora necesito descansar."
+      "value": "Si tu veux en savoir plus, va voir le chef du village. J'ai besoin de me reposer maintenant."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_0",
-      "value": "¡Ah, una cara nueva! Bienvenido a la planta de reciclaje."
+      "value": "Ah, un nouveau visage ! Bienvenue à l'usine de recyclage."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_1",
-      "value": "La última línea de defensa contra el desastre ecológico, o al menos... eso es lo que nos gusta decir para tranquilizarnos."
+      "value": "Le dernier rempart contre le désastre écologique, ou du moins… c'est ce qu'on aime dire."
     },
     {
       "key": "pnj_chefrecyclagefactory1_0_2",
-      "value": "Aquí damos una segunda vida a los aparatos electrónicos, principalmente los teléfonos móviles. Estas pequeñas maravillas están llenas de metales preciosos como oro y cobre."
+      "value": "Ici, nous donnons une seconde vie aux appareils électroniques, principalement des téléphones portables. Ces petites merveilles regorgent de métaux précieux comme l'or et le cuivre."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_0",
-      "value": "Todos los días, desmontamos, clasificamos y fundimos componentes para conseguir unos."
+      "value": "Chaque jour, nous démontons, trions, et fondons les composants pour en récupérer."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_1",
-      "value": "Pero no todo es tan verde como nos gustaría. Mira el río detrás de la planta... Lleva los residuos de nuestro trabajo."
+      "value": "Mais tout n'est pas aussi vert qu'on le voudrait. Vois la rivière derrière l'usine… Elle transporte des résidus de notre travail."
     },
     {
       "key": "pnj_chefrecyclagefactory1_1_2",
-      "value": "Incluso con todas nuestras sofisticadas máquinas, las toxinas siguen escapando."
+      "value": "Même avec toutes nos machines sophistiquées, des toxines s'échappent."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_0",
-      "value": "Sin embargo, el mundo nos necesita."
+      "value": "Néanmoins, le monde a besoin de nous."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_1",
-      "value": "Sin reciclaje, estos residuos acabarían en vertederos al aire libre, envenenando el suelo y el aire."
+      "value": "Sans recyclage, ces déchets finiraient dans des décharges à ciel ouvert, empoisonnant sols et air."
     },
     {
       "key": "pnj_chefrecyclagefactory1_2_2",
-      "value": "Entonces, ¿qué dices? ¿Un poco de grasa de codo para desmantelar teléfonos y ayudar al futuro, o prefieres quedarte como espectador de este lío?"
+      "value": "Alors, que dis-tu ? Un peu d'huile de coude pour démonter des portables et aider l'avenir, ou préfères-tu rester spectateur de ce désordre ?"
     },
     {
       "key": "pnj_chefrecyclagefactory1_end_0_0",
-      "value": "Buen trabajo, lo has hecho bien hoy."
+      "value": "Qu'est-ce que tu nous as fait là ? tu es un bon à rien !"
     },
     {
       "key": "pnj_chefrecyclagefactory1_end_0_1",
-      "value": "Puedes ir a descansar, no olvides volver de vez en cuando.."
+      "value": "Va-t'en ! Et que je ne te revois plus jamais ici !"
     },
     {
       "key": "pnj_chefrecyclagefactory1_boucle_0_0",
-      "value": "Hoy has trabajado bien, vete a descansar.."
+      "value": "Qu'est-ce que j'ai dit ? Va-t'en !"
     },
     {
       "key": "pnj_workerbackrecyclagefactory1_0_0",
-      "value": "Sólo hago mi trabajo !"
+      "value": "J'ai beaucoup de travail pour démonter ces portables"
     },
     {
       "key": "pnj_workerbackrecyclagefactory1_0_1",
-      "value": "Ve a ver al jefe, yo sólo hago mi trabajo."
+      "value": "Va voir la chef, moi je ne fais que mon travail"
     },
     {
       "key": "pnj_workerrecyclagefactory1_0_1",
-      "value": "Muchas piezas pueden reutilizarse, lo que reduce la necesidad de nuevos materiales."
+      "value": "De nombreuses pièces peuvent être réutilisées, ce qui réduit le besoin de nouvelles matières premières."
     },
     {
       "key": "pnj_workerrecyclagefactory1_0_2",
-      "value": "Pero la eliminación inadecuada de aparatos electrónicos puede dañar el medio ambiente."
+      "value": "Mais une élimination inappropriée des appareils électroniques peut nuire à l'environnement."
     },
     {
       "key": "pnj_workerrecyclagefactory1_0_3",
-      "value": "Así que, ¡piensa siempre antes de tirar tus viejos aparatos!"
+      "value": "Alors, pense toujours avant de jeter tes anciens appareils !"
     },
     {
       "key": "pnj_workerrecyclagefactory1_1_0",
-      "value": "Ve a ver al jefe, yo sólo hago mi trabajo."
+      "value": "Va voir la chef, moi je ne fais que mon travail"
     },
     {
       "key": "pnj_chefduvillage_3b_0_0",
-      "value": "Oh, llegas justo a tiempo."
+      "value": "Oh tu tombes bien toi."
     },
     {
       "key": "pnj_chefduvillage_3b_0_1",
-      "value": "Nos enteramos de que se iba a construir un centro de datos junto al pueblo."
+      "value": "On a appris qu'un data center allait se construire à côté du village."
     },
     {
       "key": "pnj_chefduvillage_3b_0_2",
-      "value": "Va a destruir aún más el medio ambiente, ¡y ya estamos hartos! Por eso protestamos."
+      "value": "Cela va encore plus détruire l'environnement et nous, on en a marre de tous ça ! Donc nous, on manifeste !"
     },
     {
       "key": "pnj_chefduvillage_3b_0_3",
-      "value": "¿Quiere unirse a nosotros??"
+      "value": "Tu veux te joindre à nous ?"
     },
     {
       "key": "pnj_chefmine_3b_0_0",
-      "value": "Este centro de datos consumirá enormes cantidades de energía. ¿Y adivina de dónde la sacarán?"
+      "value": "Ce data center va consommer une quantité énorme d'énergie. Et devine où ils vont la prendre ?"
     },
     {
       "key": "pnj_chefmine_3b_0_1",
-      "value": "No les importa si agota nuestros recursos. Mientras ganen dinero, ¿no?"
+      "value": "Ils s'en fichent si ça épuise nos ressources. Tant qu'ils font du profit, hein ?"
     },
     {
       "key": "pnj_cheffactoryassembly_3b_0_0",
-      "value": "Dicen que traerá empleo, pero ¿a qué precio?"
+      "value": "Ils disent que ça va créer des emplois, mais à quel prix ?"
     },
     {
       "key": "pnj_cheffactoryassembly_3b_0_1",
-      "value": "Contaminación, derroche de agua y cortes de electricidad... Ya lo hemos visto antes."
+      "value": "Pollution, gaspillage d'eau et coupures d'électricité... On connaît la chanson."
     },
     {
       "key": "pnj_chefrecyclagefactory_3b_0_0",
-      "value": "Luchamos cada día por reducir los residuos, ¿y ahora quieren construir este monstruo?"
+      "value": "On se bat tous les jours pour réduire les déchets, et maintenant ils veulent construire ce monstre ?"
     },
     {
       "key": "pnj_chefrecyclagefactory_3b_0_1",
-      "value": "Si se tomaran en serio el medio ambiente, ni se lo plantearían."
+      "value": "S'ils se souciaient vraiment de l'environnement, ils n'envisageraient même pas ça."
     },
     {
       "key": "pnj_chefmanif_3b_0_0",
-      "value": "No dejaremos que arruinen nuestra tierra sin luchar."
+      "value": "On ne les laissera pas saccager notre terre sans se battre !"
     },
     {
       "key": "pnj_chefmanif_3b_0_1",
-      "value": "¡Todos unidos! ¡Nuestras voces deben ser escuchadas!"
+      "value": "Tout le monde, restez unis ! Nos voix doivent être entendues !"
     },
     {
       "key": "pnj_workermanif_1_3b_0_0",
-      "value": "Este es nuestro hogar, no un patio de recreo para las empresas."
+      "value": "C'est notre maison, pas un terrain de jeu pour les entreprises !"
     },
     {
       "key": "pnj_workermanif_1_3b_0_1",
-      "value": "Si no actuamos ahora, nos arrepentiremos para siempre."
+      "value": "Si on n'agit pas maintenant, on le regrettera pour toujours."
     },
     {
       "key": "pnj_workermanif_2_3b_0_0",
-      "value": "¿Creen que lo aceptaremos sin más? Esta vez no."
+      "value": "Ils pensent qu'on va juste accepter ça ? Pas cette fois !"
     },
     {
       "key": "pnj_workermanif_2_3b_0_1",
-      "value": "Tenemos el poder si nos mantenemos unidos!"
+      "value": "On a le pouvoir si on reste soudés !"
     },
     {
       "key": "pnj_youngman_3b_0_0",
-      "value": "¡Heh, tú! Los adultos se han reunido en el aparcamiento del pueblo."
+      "value": "Heh toi ! Les grands ils se sont rassemblé sur le parking de la ville."
     },
     {
       "key": "pnj_youngman_3b_0_1",
-      "value": "No sé qué pasa, pero están enfadados."
+      "value": "Je ne sais pas ce qu'il se passe mais ils sont en colère."
     },
     {
       "key": "pnj_oldwoman_3b_0_0",
-      "value": "Cuando yo era joven, esta tierra era pura. Ahora, mira lo que han hecho."
+      "value": "Quand j'étais jeune, cette terre était pure. Maintenant, regarde ce qu'ils en ont fait."
     },
     {
       "key": "pnj_oldwoman_3b_0_1",
-      "value": "Mis nietos se merecen algo mejor que un futuro lleno de cemento y humo."
+      "value": "Mes petits-enfants méritent mieux qu'un avenir rempli de béton et de fumée."
     },
     {
       "key": "pnj_chefduvillage4_0_0",
-      "value": "Has vuelto... y justo a tiempo para ver cómo es el verdadero cambio."
+      "value": "Tu es revenu… et juste à temps pour voir à quoi ressemble un vrai changement."
     },
     {
       "key": "pnj_chefduvillage4_0_1",
-      "value": "Las fábricas han desaparecido. Por primera vez en años, el río fluye limpio."
+      "value": "Les usines sont partis. Pour la première fois depuis des années, la rivière coule à nouveau limpide."
     },
     {
       "key": "pnj_chefduvillage4_0_2",
-      "value": "Durante mucho tiempo hemos creído que para avanzar teníamos que destruir lo que nos hacía ser quienes somos, nuestro"
+      "value": "Pendant si longtemps, nous avons cru que pour avancer nous devions détruire ce qui faisait de nous ce que nous sommes, nos rivières"
     },
     {
       "key": "pnj_chefduvillage4_0_3",
-      "value": "Pero nos equivocamos. Nuestra gente es más feliz. La tierra se está curando."
+      "value": "Mais nous avions tort. Notre peuple est plus heureux. La terre guérit."
     },
     {
       "key": "pnj_chefduvillage4_1_0",
-      "value": "Pero no crea que nos hemos olvidado de la tecnología.."
+      "value": "Mais ne pense pas qu'on a oublié la technologie pour autant."
     },
     {
       "key": "pnj_chefduvillage4_1_1",
-      "value": "Sencillamente, hemos elegido consumir mejor, utilizar energías más sanas."
+      "value": "Simplement, on a fait le choix de consommer mieux, d'utiliser des énergies plus saines."
     },
     {
       "key": "pnj_chefduvillage4_1_2",
-      "value": "Puede que nuestros trabajadores fabriquen menos móviles, pero duran más."
+      "value": "Nos ouvirers construisent peut-être moins de portables, mais ils durent plus longtemps."
     },
     {
       "key": "pnj_chefduvillage4_2_0",
-      "value": "Has participado en todo esto, lo quisieras o no. Y por ello, tienes mi gratitud."
+      "value": "Tu as joué un rôle dans tout cela, que tu l'aies voulu ou non. Et pour cela, tu as ma gratitude."
     },
     {
       "key": "pnj_chefduvillage4_2_1",
-      "value": "Quédate todo el tiempo que quieras."
+      "value": "Reste aussi longtemps que tu le souhaites."
     },
     {
       "key": "pnj_youngman4_0_0",
-      "value": "Me alegro de volver a verte !"
+      "value": "Je suis content de te revoir !"
     },
     {
       "key": "pnj_youngman4_0_1",
-      "value": "¡Mira a tu alrededor, nuestro pueblo es mucho mejor!"
+      "value": "Regarde autour de toi, notre village est bien mieux !"
     },
     {
       "key": "pnj_youngman4_0_2",
-      "value": "Has vuelto... y justo a tiempo para ver cómo es el verdadero cambio."
+      "value": "En plus maintenant mon portable dure très longtemps et les rivières sont jolies"
     },
     {
       "key": "pnj_youngman4_0_3",
-      "value": "Será mejor que vayas a ver al jefe de la aldea, se alegrará de volver a verte."
+      "value": "Tu ferais bien d'aller voir le chef du village, il sera heureux de te revoir"
     },
     {
       "key": "pnj_man4_0_0",
-      "value": "¡Otra vez tú! Siento que te veo cada vez que ocurre algo nuevo..."
+      "value": "Encore toi ! J'ai l'impression de te voir dès qu'il se passe quelque chose de nouveau..."
     },
     {
       "key": "pnj_man4_0_1",
-      "value": "Pero bueno, por una vez estoy de buen humor, el pueblo está mejor que nunca."
+      "value": "Mais bon, pour une fois je suis de bonne humeur, le village est mieux que jamais."
     },
     {
       "key": "pnj_man4_0_2",
-      "value": "¿Alguna pregunta? El jefe del pueblo estará encantado de responderlas."
+      "value": "T'as des questions ? Le chef du village se fera un plaisir de te répondre."
     },
     {
       "key": "pnj_oldwoman4_0_0",
-      "value": "El río vuelve a ser azul. Nunca pensé que vería este día."
+      "value": "La rivière est redevenue bleue ! Je n'aurais jamais cru voir ce jour."
     },
     {
       "key": "pnj_oldwoman4_0_1",
-      "value": "No más contaminación, no más ruido... Sólo paz. Y me gusta ver estos molinos de viento girando."
+      "value": "Plus de pollution, plus de bruit… Juste la paix. Et j'aime bien voir ces éolienne qui tournent."
     },
     {
       "key": "pnj_oldman4_0_0",
-      "value": "La vida vuelve a ser normal. Es como si por fin pudiéramos respirar."
+      "value": "La vie redevient normale. C'est comme si nous pouvions enfin respirer."
     },
     {
       "key": "cinematic_mine_1_1",
-      "value": "¡Ahí estás! Vamos, no hay tiempo que perder, tenemos trabajo que hacer. ¡Bienvenidos a la mina a cielo abierto!"
+      "value": "Ah, te voilà ! Allez, pas de temps à perdre, on a du travail. Bienvenue dans la mine à ciel ouvert !"
     },
     {
       "key": "cinematic_mine_1_2",
-      "value": "Aquí cavamos sin descanso para extraer metales preciosos: litio, cobalto, cobre..."
+      "value": "Ici, on creuse sans relâche pour extraire des métaux précieux : le lithium, le cobalt, le cuivre..."
     },
     {
       "key": "cinematic_mine_2_1",
-      "value": "Estas pequeñas maravillas alimentan todos tus aparatos modernos. Pero, ¿sabes qué? Para una tonelada de roca, apenas sirven unos gramos."
+      "value": "Ces petites merveilles alimentent tous tes gadgets modernes. Mais tu sais quoi ? Pour une tonne de roche, à peine quelques grammes en sont utiles."
     },
     {
       "key": "cinematic_mine_2_2",
-      "value": "Es cierto que consume un poco de combustible y que algunos ríos están contaminados, pero ese no es mi problema."
+      "value": "C'est vrai que ça consomme un peu de carburant et que certaines rivières sont polluées, mais ce n'est pas mon problème."
     },
     {
       "key": "cinematic_mine_3_1",
-      "value": "Allí, los camiones envían los materiales a la planta de montaje."
+      "value": "Là, les camions envoient les matériaux à l'usine d'assemblage."
     },
     {
       "key": "cinematic_mine_3_2",
-      "value": "Vamos, coge tu pico. Si aciertas, podríamos ganar una fortuna... o sólo un poco más de contaminación. ¡Empecemos!"
+      "value": "Allez, prends ta pioche. Si tu tapes bien, on fera peut-être fortune… ou juste un peu plus de pollution. C'est parti !"
     },
     {
       "key": "cinematic_factory_1_1",
-      "value": "¡Hola, novato! Bienvenido a la gran fábrica de sueños digitales."
+      "value": "Salut, recrue ! Bienvenue dans la grande fabrique des rêves numériques."
     },
     {
       "key": "cinematic_factory_1_2",
-      "value": "Aquí, los smartphones se ensamblan en una cadena de producción, de sol a sol."
+      "value": "Ici, on assemble des smartphones à la chaîne, du lever au coucher du soleil."
     },
     {
       "key": "cinematic_factory_2_1",
-      "value": "Cada pequeño componente es un concentrado de tecnología y sudor."
+      "value": "Chaque petit composant est un concentré de technologie et de sueur."
     },
     {
       "key": "cinematic_factory_2_2",
-      "value": "Fíjese bien en las cintas transportadoras: placas base, pantallas, baterías: tesoros de precisión."
+      "value": "Regarde bien les tapis roulants : cartes mères, écrans, batteries : des trésors de précision."
     },
     {
       "key": "cinematic_factory_3_1",
-      "value": "Pero nada viene sin sacrificio. Se necesita agua, toneladas de agua, para limpiar todo esto. Por eso estamos bombeando el río justo aquí."
+      "value": "Mais rien ne se fait sans sacrifices. Il faut de l'eau, des tonnes d'eau, pour nettoyer tout ça. C'est pour ça qu'on pompe la rivière juste là."
     },
     {
       "key": "cinematic_factory_4_1",
-      "value": "Es cierto que con el tiempo se seca, ¡pero hay que usarla si todos quieren su móvil!"
+      "value": "C'est vrai qu'avec le temps, elle s'assèche, mais il faut bien qu'on l'utilise si tout le monde veut son portable !"
     },
     {
       "key": "cinematic_factory_4_2",
-      "value": "Vamos, prepárate. Tienes que ser rápido y preciso en este trabajo."
+      "value": "Allez, tiens-toi prêt. Il faut être rapide et précis dans ce boulot."
     },
     {
       "key": "cinematic_recycle_1_1",
-      "value": "Bienvenido a la fábrica donde llega todo lo roto y obsoleto. Aquí se clasifican los viejos aparatos electrónicos para recuperar lo que se puede reutilizar."
+      "value": "Bienvenue dans l'usine où tout ce qui est cassé et obsolète arrive. Ici, on trie les vieux appareils électroniques pour récupérer ce qui peut être réutilisé."
     },
     {
       "key": "cinematic_recycle_1_2",
-      "value": "Cada año se generan decenas de millones de toneladas de residuos electrónicos."
+      "value": "Chaque année, des dizaines de millions de tonnes de déchets électroniques sont générés."
     },
     {
       "key": "cinematic_recycle_1_3",
-      "value": "Así que necesitamos mucha agua para trabajar. Por eso nos instalamos junto al río."
+      "value": "Donc, on a besoin de beaucoup d'eau pour travailler. C'est pour ça qu'on s'est installés près de la rivière."
     },
     {
       "key": "cinematic_recycle_2_1",
-      "value": "Es cierto que vertemos residuos al agua, pero tenemos que trabajar, ¿no?"
+      "value": "C'est vrai qu'on rejette des déchets dans l'eau, mais il faut bien travailler, non ?"
     },
     {
       "key": "cinematic_recycle_3_1",
-      "value": "El objetivo es reciclar ciertos componentes, pero no podemos reciclarlos todos. Seguro que hay materiales que deben devolverse a la naturaleza."
+      "value": "Le but, c'est de recycler certains composants, mais on ne peut pas tous les recycler. Il y a forcément des matériaux qu'on doit envoyer dans la nature."
     },
     {
       "key": "cinematic_recycle_3_2",
-      "value": "Entenderás el resto a medida que trabajes. Sólo presta atención al componente útil. Deja el resto en el río."
+      "value": "Bon, tu comprendras le reste en travaillant. Fais juste attention au composant utile. Le reste, laisse le dans la rivière."
     },
     {
       "key": "cinematic_end_1_1",
-      "value": "Ante la amenaza de destrucción de sus tierras, los habitantes de Trois Rivières se han sublevado."
+      "value": "Face à la menace de la destruction de leurs terres, les habitants des Trois Rivières se sont levés."
     },
     {
       "key": "cinematic_end_1_2",
-      "value": "Los industriales no pudieron con su determinación de proteger los ríos."
+      "value": "Les industriels n'ont rien pu faire face à leur détermination à protéger les rivières."
     },
     {
       "key": "cinematic_end_2_1",
-      "value": "La obra no se llevó a cabo."
+      "value": "Le chantier de construction n'a pas eu lieu."
     },
     {
       "key": "cinematic_end_2_2",
-      "value": "Los obreros y las máquinas se han marchado. El pueblo de Trois Rivière ha ganado"
+      "value": "Les ouvriers et les machines sont partis. Les habitants de Trois Rivière ont gagné"
     },
     {
       "key": "cinematic_end_3_1",
-      "value": "El viento, que siempre había soplado sobre las colinas de Trois Rivières, se convertía ahora en fuente de vida."
+      "value": "Le vent, qui avait toujours soufflé sur les collines des Trois Rivières, devenait maintenant une source de vie."
     },
     {
       "key": "cinematic_end_3_2",
-      "value": "Los habitantes habían elegido una energía limpia, respetuosa con su tierra."
+      "value": "Les habitants avaient choisi une énergie propre, respectueuse de leurs terres."
     },
     {
       "key": "cinematic_end_4_1",
-      "value": "Cada rayo de sol era un paso más hacia la autonomía y la armonía con la naturaleza."
+      "value": "Chaque rayon de soleil représentait un pas de plus vers l'autonomie et l'harmonie avec la nature."
     },
     {
       "key": "cinematic_end_4_2",
-      "value": "Aunque algunos residentes lamentaron los portátiles y las innovaciones, la mayoría estaban contentos."
+      "value": "Même si certains habitants regrettaient les portables et les innovations, la majorité était heureuse."
     },
     {
       "key": "cinematic_end_5_1",
-      "value": "Los ríos habían recuperado su claridad, y la vida, su brillo."
+      "value": "Les rivières avaient retrouvé leur clarté, et la vie, leur éclat."
     },
     {
       "key": "cinematic_end_5_2",
-      "value": "El pueblo aún mostraba las cicatrices de su pasado industrial, pero estas cicatrices contaban una historia de victoria y resistencia."
+      "value": "Le village portait encore les traces de son passé industriel, mais ces cicatrices racontaient une histoire de victoire et de résilience."
     },
     {
       "key": "cinematic_end_5_3",
-      "value": "Los habitantes de Trois Rivières habían elegido un futuro diferente. Un futuro en el que el hombre y la naturaleza pudieran coexistir en armonía."
+      "value": "Les habitants des Trois Rivières avaient choisi un avenir différent. Un avenir où l'homme et la nature pouvaient coexister en harmonie"
     },
     {
       "key": "cinematic_end_5_4",
@@ -890,107 +890,107 @@
     },
     {
       "key": "EcoInfo_mine_1",
-      "value": "According to Ademe, it takes around 200 kilos of raw materials to produce a single smartphone.."
+      "value": "Selon l'Ademe, il faut environ 200 kilos de matières premières pour produire un seul smartphone."
     },
     {
-      "key": "EcoInfo_mine_2",
-      "value": "Your phone's battery contains nickel, lithium, cobalt and many other elements."
+      "key": "EcoInfo__mine_2",
+      "value": "La batterie de ton téléphone contient du nickel, du lithium et du cobalt et bien d'autres éléments."
     },
     {
       "key": "EcoInfo_village_1",
-      "value": "The digital sector's carbon footprint accounted for 3.6% of global greenhouse gas emissions in 2023."
+      "value": "L'empreinte carbone du numérique représentait 3,6 % des émissions de gaz à effet de serre dans le monde en 2023."
     },
     {
       "key": "EcoInfo_village_2",
-      "value": "The manufacture of electronic devices, such as smartphones and computers, contributes to the depletion of natural resources."
+      "value": "La fabrication de dispositifs électroniques, tels que les smartphones et les ordinateurs, contribue à l'épuisement des ressources naturelles."
     },
     {
       "key": "EcoInfo_assembly_1",
-      "value": "Semiconductor manufacturing consumes a lot of water, adding to the pressure on water resources."
+      "value": "La fabrication de semi-conducteurs consomme beaucoup d'eau, aggravant la pression sur les ressources hydriques."
     },
     {
       "key": "EcoInfo_assembly_2",
-      "value": "In 2018, 1.5 billion cell phones were produced worldwide."
+      "value": "En 2018, 1.5 milliards de portables ont été produits dans le monde."
     },
     {
       "key": "EcoInfo_recyclage_1",
-      "value": "In 2023, the production of electronic equipment generated 58 million tonnes of electronic waste."
+      "value": "En 2023, la production d'équipements électroniques a généré 58 millions de tonnes de déchets électroniques"
     },
     {
       "key": "EcoInfo_recyclage_2",
-      "value": "Increased waste is one of the most serious consequences of programmed obsolescence. If you don't change your cell phone every day, you're saving the rivers."
+      "value": "L'augmentation des déchets constitue l'une des conséquences les plus graves de l'obsolescence programmée. Ne pas changer tout les jours de portable c'est sauver les rivières"
     },
     {
       "key": "2eMJM_Rules",
-      "value": "Minerals and rocks will pass through the water line. \nCollect as many ores as possible before the timer runs out. \n\t\tPress the green button to start."
+      "value": "Des minerais et des rochers vont défilé dans cette ligne d'eau. \nRécupérez un maximum de minerais avant la fin du chronomètre. \n\t\tAppuyez sur le bouton vert pour commencer."
     },
     {
       "key": "3eMJM_Rules",
-      "value": "Get all the ore trucks out before the timer runs out! \n\t\tClick on a truck to move it forward."
+      "value": "Sortez tous les camions transportant des minerais avant la fin du chronomètre ! \n\t\tCliquez sur un camion pour le faire avancer."
     },
     {
       "key": "CandyCrush_Rules",
-      "value": "Van a llegar residuos, intercambia para hacer una línea de al menos 3 fichas para reciclarlas, ¡puedes intercambiar dos a la vez!"
+      "value": "Des déchets vont arrivés, intervertit fais une ligne de minimum 3 puces pour les recycler, \ntu peux en intervertir deux à la fois !"
     },
     {
       "key": "EndTextWin_MJ1",
-      "value": "¡Bien hecho! ¡Has logrado recoger minerales! ¡Pasa al siguiente nivel!"
+      "value": "Bravo ! Tu as réussi à récupérer des minerais ! \nPasse à la suite !"
     },
     {
       "key": "EndTextLose_MJ1",
-      "value": "No has recogido ningún mineral, ¡inténtalo de nuevo!"
+      "value": "Tu n'as récupéré aucun minerais, recommence !"
     },
     {
       "key": "EndTextWin_MJ2",
-      "value": "¡Bien hecho! ¡Has logrado sacar todos los camiones! ¡Pasa al siguiente nivel!"
+      "value": "Bravo ! Tu as réussi à sortir tous les camions ! \nPasse à la suite !"
     },
     {
       "key": "EndTextLose_MJ2",
-      "value": "No lograste sacar todos los camiones, ¡inténtalo de nuevo!"
+      "value": "Tu n'as pas réussi à sortir tous les camions, recommence !"
     },
     {
       "key": "EndTextWin_MJ3",
-      "value": "Has sido rápido, bien hecho. ¡Puedes pasar al siguiente nivel!"
+      "value": "T'as été rapide, bravo. Tu peux passer à la suite !"
     },
     {
       "key": "EndTextLoose_MJ3",
-      "value": "No has sido lo suficientemente rápido, ¡inténtalo de nuevo!"
+      "value": "Tu n'as pas été assez rapide, recommence !"
     },
     {
       "key": "EndTextLose_MJ4",
-      "value": "Se ha acumulado demasiada basura, ya no se puede reciclar. ¡Pasa al siguiente nivel!"
+      "value": "Trop de déchets se sont accumulés on ne peut plus les recycler. \nPasse à la suite !"
     },
-    {  
-      "key": "AideTitre",  
-      "value": "Ayuda"  
-    },  
-    {  
-      "key": "AideTitreControl",  
-      "value": "Controles"  
-    },  
-    {  
-      "key": "AideEspaceText",  
-      "value": "Diálogo/Corte siguiente"  
-    },  
-    {  
-      "key": "AideDeplacementText",  
-      "value": "Movimiento del jugador"  
-    },  
-    {  
-      "key": "AideInteractionText",  
-      "value": "Interacción"  
-    },  
-    {  
-      "key": "AidePauseText",  
-      "value": "Pausa"  
-    },  
-    {  
-      "key": "AideTitreObjectif",  
-      "value": "Objetivo del juego"  
-    },  
-    {  
-      "key": "AideObjectifText",  
-      "value": "Explora el pueblo y sus alrededores, luego completa los tres objetivos."  
-    }  
+    {
+      "key": "AideTitre",
+      "value": "Aide"
+    },
+    {
+      "key": "AideTitreControl",
+      "value": "Controles"
+    },
+    {
+      "key": "AideEspaceText",
+      "value": "Dialogue/Cinematique suivante"
+    },
+    {
+      "key": "AideDeplacementText",
+      "value": "Déplacement du joueur"
+    },
+    {
+      "key": "AideInteractionText",
+      "value": "Interaction"
+    },
+    {
+      "key": "AidePauseText",
+      "value": "Pause"
+    },
+    {
+      "key": "AideTitreObjectif",
+      "value": "Objectif du jeu"
+    },
+    {
+      "key": "AideObjectifText",
+      "value": "Explore le village et ses environs, puis complète les trois objectifs"
+    }
   ]
 }

@@ -9,12 +9,15 @@ using static GameManager;
 public class UICandyCrush : Menu
 {
     [Header("Panel")]
+    [SerializeField] private GameObject panelRuler;
     [SerializeField] private GameObject gamePanel;
     /*[SerializeField] private GameObject backgroundPanel;
     [SerializeField] private GameObject victoryPanel;*/
     [SerializeField] private GameObject defeatPanel;
 
     [Header("Text")]
+    [SerializeField] private TextMeshProUGUI txtRules;
+
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI nbMatchText;
     [SerializeField] private TextMeshProUGUI nbSuperMatchText;
@@ -98,6 +101,7 @@ public class UICandyCrush : Menu
         else
         {
             UpdateTexts();
+            panelRuler.SetActive(visible);
             gamePanel.SetActive(visible);
             defeatPanel.SetActive(false);
         }
@@ -116,6 +120,10 @@ public class UICandyCrush : Menu
     {
         if (CandyGameManager.Instance)
         {
+            if (CandyGameManager.Instance.gameassarted == true)
+            {
+                panelRuler.SetActive(false);
+            }
             barredechet.fillAmount = CandyGameManager.Instance.barredechet;
             scoreIntText.text = CandyGameManager.Instance.pointText.ToString();
             nbMatchIntText.text = CandyGameManager.Instance.nbMatchsText.ToString();
@@ -146,6 +154,7 @@ public class UICandyCrush : Menu
         /*PuceBoard.Instance.InitializeBoard();*/
 
         defeatPanel.gameObject.SetActive(false);
+        panelRuler.SetActive(true);
 
         CandyGameManager.Instance.delai = 5.0f;
         CandyGameManager.Instance.gameassarted = false;
@@ -186,7 +195,7 @@ public class UICandyCrush : Menu
             Debug.LogError("Text elements are not assigned in the inspector.");
             return;
         }
-
+        txtRules.text = LanguageManager.Instance.GetText("CandyCrush_Rules");
         scoreText.text = LanguageManager.Instance.GetText("score");
         nbMatchText.text = LanguageManager.Instance.GetText("nbMatch");
         nbSuperMatchText.text = LanguageManager.Instance.GetText("nbSuperMatch");
