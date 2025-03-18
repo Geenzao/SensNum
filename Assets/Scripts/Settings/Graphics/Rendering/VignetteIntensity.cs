@@ -26,7 +26,7 @@ namespace Settings.Graphics.Rendering.Volume
             if (_volume != null)
             {
                 _volume.profile.TryGet<Vignette>(out _compVignette);
-                Debug.Log(_volume.GetInstanceID());
+                /*Debug.Log(_volume.GetInstanceID());*/
                 if (_compVignette == null)
                 {
                     _compVignette = _volume.profile.Add<Vignette>();

@@ -233,7 +233,7 @@ public class GameManager : Singleton<GameManager>
         playerX = x;
         playerY = y;
 
-        Debug.Log("Save data: " + playerX + " " + playerY);
+        /*Debug.Log("Save data: " + playerX + " " + playerY);*/
 
         // Déchargez le niveau actuel
         if (!string.IsNullOrEmpty(levelName))

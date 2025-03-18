@@ -66,7 +66,7 @@ public class UIThirdGameMine : Menu
 
         if (UIManager.CurrentMenuState == UIManager.MenuState.ThirdGameMine)
         {
-            Debug.Log("ThirdGameMine");
+            /*Debug.Log("ThirdGameMine");*/
             TriggerVisibility(true);
         }
 

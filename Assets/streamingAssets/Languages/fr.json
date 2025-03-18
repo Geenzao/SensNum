@@ -74,7 +74,7 @@
     },
     {
       "key": "rules",
-      "value": "Vous devez completer 15 circuits avec les bons composants dans le temps impartie.\n\nClické et c'est partie !!"
+      "value": "Vous devez completer 15 circuits avec les bons composants dans le temps imparti.\n\nCliquez et c'est parti !!"
     },
     {
       "key": "replay",
@@ -106,7 +106,7 @@
     },
     {
       "key": "begining",
-      "value": "Des minerais et des rochers vont défilés dans cette ligne d'eau.\nRécupérer un maximum de minerais avant la fin du chronomètre.\nAppuyez sur le boution vert pour commencer."
+      "value": "Des minerais et des rochers vont défilé dans cette ligne d'eau.\nRécupérez un maximum de minerais avant la fin du chronomètre.\nAppuyez sur le bouton vert pour commencer."
     },
     {
       "key": "end",
@@ -118,11 +118,11 @@
     },
     {
       "key": "nbMatch",
-      "value": "nombre de matchs"
+      "value": "nombre de matches"
     },
     {
       "key": "nbSuperMatch",
-      "value": "nombre de super matchs"
+      "value": "nombre de super matches"
     },
     {
       "key": "trashToRecycle",
@@ -142,7 +142,7 @@
     },
     {
       "key": "pnj_chefduvillage_1_0",
-      "value": "Tu ne fais pas partie de ces industriels qui veulent faire une mine ?"
+      "value": "Tu ne fais pas parti de ces industriels qui veulent faire une mine ?"
     },
     {
       "key": "pnj_chefduvillage_1_1",
@@ -438,7 +438,7 @@
     },
     {
       "key": "pnj_chefduvillage3_0_2",
-      "value": "Si tu veux comprendre comment on en est arrivés là, parle aux ouvriers. Ils te diront la vérité."
+      "value": "Va voir au centre de recyclage au nord ouest, après le pont."
     },
     {
       "key": "pnj_chefduvillage3_0_3",
@@ -574,15 +574,15 @@
     },
     {
       "key": "pnj_chefrecyclagefactory1_end_0_0",
-      "value": "Bon travail, tu as bien travaillé aujourd'hui."
+      "value": "Qu'est-ce que tu nous as fait là ? tu es un bon à rien !"
     },
     {
       "key": "pnj_chefrecyclagefactory1_end_0_1",
-      "value": "Tu peux aller te reposer, n'oublie pas de revenir un de ces quatres."
+      "value": "Va-t'en ! Et que je ne te revois plus jamais ici !"
     },
     {
       "key": "pnj_chefrecyclagefactory1_boucle_0_0",
-      "value": "Tu as bien travaillé aujourd'hui, pars te reposer."
+      "value": "Qu'est-ce que j'ai dit ? Va-t'en !"
     },
     {
       "key": "pnj_workerbackrecyclagefactory1_0_0",
@@ -694,7 +694,7 @@
     },
     {
       "key": "pnj_chefduvillage4_0_1",
-      "value": "Les usines sont parties. Pour la première fois depuis des années, la rivière coule à nouveau limpide."
+      "value": "Les usines sont partis. Pour la première fois depuis des années, la rivière coule à nouveau limpide."
     },
     {
       "key": "pnj_chefduvillage4_0_2",
@@ -922,7 +922,7 @@
     },
     {
       "key": "2eMJM_Rules",
-      "value": "Des minerais et des rochers vont défilés dans cette ligne d'eau. \nRécupérer un maximum de minerais avant la fin du chronomètre. \n\t\tAppuyez sur le bouton vert pour commencer."
+      "value": "Des minerais et des rochers vont défilé dans cette ligne d'eau. \nRécupérez un maximum de minerais avant la fin du chronomètre. \n\t\tAppuyez sur le bouton vert pour commencer."
     },
     {
       "key": "3eMJM_Rules",
@@ -961,36 +961,36 @@
       "value": "Trop de déchets se sont accumulés on ne peut plus les recycler. \nPasse à la suite !"
     },
     {
-      "key":"AideTitre",
-      "value":"Aide"
+      "key": "AideTitre",
+      "value": "Aide"
     },
     {
-      "key":"AideTitreControl",
-      "value":"Controles"
+      "key": "AideTitreControl",
+      "value": "Controles"
     },
     {
-      "key":"AideEspaceText",
-      "value":"Dialogue/Cinematique suivante"
+      "key": "AideEspaceText",
+      "value": "Dialogue/Cinematique suivante"
     },
     {
-      "key":"AideDeplacementText",
-      "value":"Déplacement du joueur"
+      "key": "AideDeplacementText",
+      "value": "Déplacement du joueur"
     },
     {
-      "key":"AideInteractionText",
-      "value":"Interaction"
+      "key": "AideInteractionText",
+      "value": "Interaction"
     },
     {
-      "key":"AidePauseText",
-      "value":"Pause"
+      "key": "AidePauseText",
+      "value": "Pause"
     },
     {
-      "key":"AideTitreObjectif",
-      "value":"Objectif du jeu"
+      "key": "AideTitreObjectif",
+      "value": "Objectif du jeu"
     },
     {
-      "key":"AideObjectifText",
-      "value":"Explore le village et ses environs, puis complète les trois objectifs"
+      "key": "AideObjectifText",
+      "value": "Explore le village et ses environs, puis complète les trois objectifs"
     }
   ]
 }

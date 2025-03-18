@@ -24,14 +24,14 @@ public class ChargementTransitionManager : Singleton<ChargementTransitionManager
     public void StartGame()
     {
         OnUnloadPage?.Invoke();
-        Debug.Log("Fin Transition");
+        /*Debug.Log("Fin Transition");*/
         GameProgressManager.Instance.UpdateGameProgressState(gameProgressState);
     }
 
     public IEnumerator LoadScene(GameProgressState gameProgressState, string currentScene, string sceneNameToGo, bool playerInNextScene,float x = 0, float y = 0)
     {
         UIManager.Instance.UpdateMenuState(UIManager.MenuState.Loading);
-        Debug.Log(gameProgressState);
+        /*Debug.Log(gameProgressState);*/
         ChargementTransitionManager.Instance.gameProgressState = gameProgressState;
 
         //Si on est en portable, on reset le joystick

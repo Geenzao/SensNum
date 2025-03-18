@@ -26,7 +26,7 @@ public class PlatformManager : Singleton<PlatformManager>
             }
         }
 
-        Debug.Log(isMobile ? "Mobile détecté" : "Ordinateur détecté");
+        /*Debug.Log(isMobile ? "Mobile détecté" : "Ordinateur détecté");*/
     }
 
 

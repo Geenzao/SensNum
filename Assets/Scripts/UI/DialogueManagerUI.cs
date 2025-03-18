@@ -228,7 +228,7 @@ public class DialogueManagerUI : MonoBehaviour
         foreach (char lettre in sentence.ToCharArray())
         {
             dialogueTextUI.text += lettre;
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.005f);
         }
         currentCoroutine = null; // La coroutine est terminée
         ShowBtnNext();//On affiche le btn à la fin

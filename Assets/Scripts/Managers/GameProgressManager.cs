@@ -70,7 +70,7 @@ public class GameProgressManager : Singleton<GameProgressManager>
             default:
                 if(UIManager.PreviousMenuState == MenuState.Loading || UIManager.CurrentMenuState != MenuState.Loading)
                 {
-                    Debug.Log("MenuState.None GAMEPROGRESSMANAGER");
+                    /*Debug.Log("MenuState.None GAMEPROGRESSMANAGER");*/
                     UIManager.Instance.UpdateMenuState(MenuState.None);
                 }
                 break;

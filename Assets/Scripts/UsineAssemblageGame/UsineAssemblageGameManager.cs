@@ -152,7 +152,7 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
                 if (currentComponent != null)
                     Destroy(currentComponent);
                 currentComponent = null;
-                Debug.Log("Fin du jeu");
+                /*Debug.Log("Fin du jeu");*/
                 AnnalyseGame();
             }
         }

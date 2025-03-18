@@ -176,7 +176,7 @@ public class UsineAssemblageUI : Menu
     public void OnQuitButtonClicked()
     {
         AudioManager.Instance.PlaySoundEffet(AudioType.UIButton);
-        Debug.Log("Quit button clicked. Hiding panels.");
+        /*Debug.Log("Quit button clicked. Hiding panels.");*/
         Time.timeScale = 1.0f;
         PanelLose.SetActive(false);
         PanelWin.SetActive(false);
