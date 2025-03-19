@@ -199,6 +199,8 @@ public class UsineAssemblageGameManager : Singleton<UsineAssemblageGameManager>
             lstCircuitInGame.Add(newCircuit);
         else
             Debug.LogError("Le CircuitImprime instancié n'a pas de Renderer.");
+
+        print("Circuit spawn depuis le manager ");
     }
 
 

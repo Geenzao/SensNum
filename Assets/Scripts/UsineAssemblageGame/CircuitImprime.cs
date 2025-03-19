@@ -64,9 +64,9 @@ public class CircuitImprime : MonoBehaviour
         }
 
         //SI on a atteint un point précis, on dit au manager de faire apparaitre un autre circuit
-        if (Mathf.Abs(transform.position.x - positionSpawnOther) <= 0.04 && isAbleToSpawnOtherCircuit)
+        if (transform.position.x > positionSpawnOther && isAbleToSpawnOtherCircuit)
         {
-            //print("SPAWN OTHER CIRCUIT");
+            print("SPAWN OTHER CIRCUIT");
             UsineAssemblageGameManager.Instance.SpawnCircuitImprime();
             isAbleToSpawnOtherCircuit = false;
         }

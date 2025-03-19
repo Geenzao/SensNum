@@ -97,19 +97,14 @@ public class AudioManager : Singleton<AudioManager>
     {
         if (audioSource.isPlaying == false)
         {
-            print(musicStateIndex);
-            print(tabMusic.Count);
             if (musicStateIndex >= 0 && musicStateIndex < tabMusic.Count)
             {
-                print("2");
                 if (musicToPlay == 0)
                 {
-                    print("3");
                     audioSource.clip = tabMusic[musicStateIndex].Item1;
                     audioSource.Play();
                     musicToPlay = 1;
                 } else {
-                    print("4");
                     audioSource.clip = tabMusic[musicStateIndex].Item2;
                     audioSource.Play();
                 }
